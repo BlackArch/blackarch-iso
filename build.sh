@@ -241,6 +241,7 @@ if [[ ${arch} == "x86_64" ]];
 then
       #Add multilb to pacman.conf
       echo "modifying pacman.conf..." 
+      echo "modifying pacman.conf..."
       echo '[multilib]' >> ${pacman_conf}
       echo 'Include = /etc/pacman.d/mirrorlist' >> ${pacman_conf}
 fi
