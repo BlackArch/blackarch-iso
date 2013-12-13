@@ -1,0 +1,18 @@
+#!/bin/bash
+
+autof=/home/spirit/.config/openbox/autostart
+
+case "$1" in
+	on)
+	killall compton
+	sed -i 's/^[# ]*compton.*$/compton -cCgb \&/g;s/^compton.*$/compton -cCGb \&/g' ${autof}
+	compton -cCGb &
+	;;
+	off)
+	sed -i 's/^compton.*$/#compton \&/g' ${autof}
+	killall compton
+	;;
+	*)
+		echo 'unknown option'
+	;;
+esac
