@@ -15,13 +15,18 @@ cp -aT /etc/skel/ /root/
 
 # Create the user directory for live session
 if [ ! -d /home/blackarch ]; then
-    mkdir /home/blackarch && chown blackarch /home/blackarch
+    mkdir /home/blackarch && chown -R blackarch:users /home/blackarch
+else
+    chown -R blackarch:users /home/blackarch
 fi
+
 # Copy files over to home
 cp -aT /etc/skel /home/blackarch
+chown -R blackarch:users /home/blackarch
+chmod 755 /home/blackarch/.xinitrc
 
 #add entries for .xinitrc
-sed -i 's/# exec gnome-session/exec gnome-session/' /home/blackarch/.xinitrc
+#sed -i 's/# exec gnome-session/exec gnome-session/' /home/blackarch/.xinitrc
 
 chmod 750 /etc/sudoers.d
 chmod 440 /etc/sudoers.d/g_wheel
@@ -30,17 +35,14 @@ sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
 #start up systemctl processes
-systemctl enable multi-user.target pacman-init.service choose-mirror.service
-systemctl enable slim
+#systemctl enable multi-user.target pacman-init.service choose-mirror.service
+systemctl disable multi-user.target
+systemctl enable graphical.target pacman-init.service choose-mirror.service
+systemctl enable slim.service
 systemctl enable sshd
-
-
-
 
 #disable network interface names
 ln -s /dev/null /etc/udev/rules.d/80-net-name-slot.rules
 
 # set blackarch users password to reset at login
-chage -d0 blackarch
-
-
+#chage -d0 blackarch
