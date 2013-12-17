@@ -1,65 +1,80 @@
+# Intallation
 arch-install-scripts
-b43-fwcutter
-blackarch
-btrfs-progs
-crda
-darkhttpd
-ddrescue
-dhclient
-dialog
-dmraid
-dnsmasq
-dnsutils
-dosfstools
-elinks
-ethtool
-f2fs-tools
-fsarchiver
-gnu-netcat
-gpm
-gptfdisk
-grml-zsh-config
-grub
+#gummiboot-efi
+#grub-efi-x86_64
+refind-efi
 haveged
-hdparm
-ipw2100-fw
-ipw2200-fw
-irssi
-lftp
+dmraid
+hwdetect
+hwinfo
+squashfs-tools
+ntp
+dialog
+grub
 linux-atm
+tzdata
+usb_modeswitch
+
+# Console Apps
+gpm
+dialog
+ncurses
+sudo
 mc
-mtools
+tmux
+screen
+mlocate
+
+# BlackArch
+blackarch
+aircrack-ng
+gnu-netcat
+nmap
+wireshark-cli
+wireshark-gtk
+
+# Filesystems
+btrfs-progs
+dosfstools
+f2fs-tools
 nfs-utils
 nilfs-utils
-nmap
 ntfs-3g
-ntp
-openconnect
-openssh
-openvpn
+ntfsprogs
+parted
+gparted
+hdparm
+gptfdisk
+ddrescue
+fsarchiver
+mtools
 partclone
 parted
 partimage
-pptpclient
-ppp
-rfkill
-rp-pppoe
-rsync
 smartmontools
-speedtouch
-sudo
-tcpdump
 testdisk
-tzdata
-usb_modeswitch
-vpnc
-wget
-wireless_tools
-wpa_actiond
-wvdial
-xl2tpd
-zd1211-firmware
+
+# Servers
+darkhttpd
+openssh
+
+# Shells
+bash
+grml-zsh-config
 zsh
+
+# Development
+base-devel
+python
+python2
+git
+mercurial
+cmake
+emacs
+gvim
+vim
+
+# Xorg
 xf86-video-apm
 xf86-video-ark
 xf86-video-ast
@@ -97,39 +112,166 @@ xf86-video-vmware
 xf86-video-voodoo
 xorg-server
 xorg-xinit 
+xorg-utils
 xorg-server-utils 
 xorg-xdm
 mesa
+xorg-drivers
+xorg-xkill
+xorg-xbacklight
+nouveau-dri
+intel-dri
+ati-dri
+xf86-input-synaptics
+
+# VirtualBox
 virtualbox-guest-utils 
-mlocate 
-tmux 
-unrar 
-unzip 
-unace 
-p7zip
-git 
-mercurial 
-cmake 
-emacs 
-gvim
-vim
-dwb
-firefox
+virtualbox-guest-modules
 virtualbox-host-modules
+
+# Sound
+alsa-firmware
+alsa-utils
+alsa-oss
+volumeicon
+
+# Internet
+chromium
+firefox
+pidgin
+pidgin-otr
+#rtorrent
+#transmission-cli
+#transmission-gtk
+elinks
+irssi
+lftp
+ncftp
+tcpdump
+
+# Media plugins
+gstreamer0.10-plugins
+flashplugin
+
+# Window Manager Stuff
 openbox
+obconf
+obmenu
+oblogout
 openbox-themes
+nitrogen
+conky
+gmrun
+gnome-menus
 oblogout
 obconf
 obmenu
 dwm
+dwb
 tint2
-volumeicon
-wicd
-wicd-gtk
+spectrwm
+ratpoison
+awesome
 clipit
 spacefm
 slock
-spectrwm
 hsetroot
-xorg-xbacklight
+#xorg-xdm
+#xdm-archlinux
+#qiv
+#libxdg-basedir
+#archlinux-xdg-menu
+#xdg-utils
+#xdg-user-dirs
+#python-xdg
+#python2-xdg
+#python2-dirspec
+slim
+slim-themes
+
+# Xorg Extras
+cairo
+fontconfig
+terminator
+
+# Network
+ipw2100-fw
+ipw2200-fw
+zd1211-firmware
+wireless_tools
+wpa_actiond
+ethtool
+b43-fwcutter
+crda
+wicd
+wicd-gtk
 macchanger
+netctl
+dhclient
+dnsmasq
+dnsutils
+openconnect
+openvpn
+vpnc
+tinc
+pptpclient
+ppp
+rfkill
+rp-pppoe
+rsync
+speedtouch
+wget
+wvdial
+xl2tpd
+# backports-patched
+
+# Archive Tools
+unace 
+zip
+unzip
+unrar
+p7zip
+arj
+xz
+lzop
+unrar 
+cpio
+
+# Cryptography
+truecrypt
+john
+tor
+vidalia
+torsocks
+
+# Fonts
+ttf-dejavu
+ttf-bitstream-vera
+
+# openCL + CUDA
+## https://wiki.archlinux.org/index.php/GPGPU
+libcl
+llvm
+opencl-nvidia
+python2-pyopencl
+opencl-headers
+#amdapp-sdk << AUR
+#intel-opencl-sdk << AUR
+
+#libvdpau
+#nvidia << conflicts as follows ::
+#:: There are 3 providers available for libgl:
+#:: Repository extra
+#   1) mesa-libgl  2) nvidia-304xx-utils  3) nvidia-libgl
+#
+#error: unresolvable package conflicts detected
+#error: failed to prepare transaction (conflicting dependencies)
+#:: nvidia-libgl and mesa-libgl are in conflict
+
+#more nvidia
+# flashplugin
+# >> 
+# >> If you have an NVIDIA card that supports libvdpau or Broadcom Crystal HD chips,
+# >> uncomment EnableLinuxHWVideoDecode=1 from /etc/adobe/mms.cfg.
+# >> If you run into problems, please contact nVidia or Broadcom along with your system config info / driver version.
+# >> 

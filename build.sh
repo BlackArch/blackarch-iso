@@ -2,14 +2,13 @@
 
 set -e -u
 
-iso_name=archlinux
-iso_label="ARCH_$(date +%Y%m)"
+iso_name=blackarch
+iso_label="blackarch_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
 install_dir=arch
+arch=$(uname -m)
 work_dir=work
 out_dir=out
-
-arch=$(uname -m)
 verbose=""
 pacman_conf=${work_dir}/pacman.conf
 script_path=$(readlink -f ${0%/*})

@@ -1,0 +1,24 @@
+#!/bin/bash 
+
+set -e -u
+
+iso_name=blackarch
+iso_label="blackarch_$(date +%Y%m)"
+iso_version=$(date +%Y.%m.%d)
+install_dir=arch
+arch=$(uname -m)
+work_dir=work
+out_dir=out
+verbose=""
+
+run_qemu()
+{
+        if [[ ${arch} == "x86_64" ]]; then
+                qemu="qemu-system-x86_64"
+        else
+                qemu="qemu"
+        fi
+        ${qemu} -m 512 -cdrom "out/${iso_name}-${iso_version}-${arch}.iso"
+}
+
+run_qemu
