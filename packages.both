@@ -145,6 +145,7 @@ pidgin-otr
 #transmission-gtk
 elinks
 irssi
+hexchat
 lftp
 ncftp
 tcpdump
@@ -250,11 +251,11 @@ ttf-bitstream-vera
 
 # openCL + CUDA
 ## https://wiki.archlinux.org/index.php/GPGPU
-libcl
-llvm
-opencl-nvidia
-python2-pyopencl
-opencl-headers
+#libcl
+#llvm
+#opencl-nvidia
+#python2-pyopencl
+#opencl-headers
 #amdapp-sdk << AUR
 #intel-opencl-sdk << AUR
 
