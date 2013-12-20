@@ -140,7 +140,8 @@ chromium
 firefox
 pidgin
 pidgin-otr
-#rtorrent
+dwb
+rtorrent
 #transmission-cli
 #transmission-gtk
 elinks
@@ -168,7 +169,6 @@ oblogout
 obconf
 obmenu
 dwm
-dwb
 tint2
 spectrwm
 ratpoison
