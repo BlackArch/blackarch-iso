@@ -101,6 +101,21 @@ make_boot_extra() {
     cp ${work_dir}/${arch}/root-image/usr/share/licenses/common/GPL2/license.txt ${work_dir}/iso/${install_dir}/boot/memtest.COPYING
 }
 
+# Fetch packages for offline installation
+make_pkgcache() {
+    for pkg in $(grep -h -v ^# ${script_path}/pkgcache.{both,${iso_arch}})
+    do
+        rm -f /var/cache/pacman/pkg/${pkg}-*
+        # Get the download link from pacman
+		pkg_path=$(pacman -Sp ${pkg})
+        # Download the package
+		wget -P ${work_dir}/${iso_arch}/root-image/var/cache/pacman/pkg ${pkg_path}
+        # Download the signature file
+		wget -P ${work_dir}/${iso_arch}/root-image/var/cache/pacman/pkg ${pkg_path}.sig
+    done
+}
+
+
 # Prepare /${install_dir}/boot/syslinux
 make_syslinux() {
     mkdir -p ${work_dir}/iso/${install_dir}/boot/syslinux
@@ -246,34 +261,22 @@ then
 fi
 
 # Do all stuff for each root-image
-#for arch in i686 x86_64; do
-#for arch in $arch do;
-    run_once make_basefs
-    run_once make_packages
-    run_once make_setup_mkinitcpio
-    run_once make_customize_root_image
-#done
-
-
-#for arch in i686 x86_64; do
-#for arch in $arch; do
-    run_once make_boot
-#done
-
+run_once make_basefs
+run_once make_packages
+run_once make_setup_mkinitcpio
+run_once make_customize_root_image
+run_once make_boot
 # Do all stuff for "iso"
 run_once make_boot_extra
+run_once make_pkgcache
 run_once make_syslinux
 run_once make_isolinux
+
 if [[ ${arch} == "x86_64" ]];then
       run_once make_efi
       run_once make_efiboot
 fi
 
 run_once make_aitab
-
-#for arch in i686 x86_64; do
-#for arch in $arch; do
-    run_once make_prepare
-#done
-
+run_once make_prepare
 run_once make_iso
