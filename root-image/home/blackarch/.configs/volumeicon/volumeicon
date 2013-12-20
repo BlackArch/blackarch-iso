@@ -1,0 +1,18 @@
+
+[StatusIcon]
+stepsize=5
+lmb_slider=true
+mmb_mute=false
+onclick=lxterminal -e 'alsamixer'
+theme=Default
+
+[Hotkeys]
+up_enabled=false
+down_enabled=false
+mute_enabled=false
+up=XF86AudioRaiseVolume
+down=XF86AudioLowerVolume
+mute=XF86AudioMute
+
+[Alsa]
+card=hw:0
