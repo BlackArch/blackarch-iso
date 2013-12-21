@@ -28,7 +28,8 @@ mutt
 #canto in aur but its a nice console based rss reader
 mc
 ranger
-
+openssl
+arch-wiki-lite
 
 # BlackArch
 blackarch
@@ -65,7 +66,6 @@ openssh
 tftp-hpa
 vsftpd
 
-
 # Shells
 bash
 grml-zsh-config
@@ -84,6 +84,8 @@ cmake
 emacs
 gvim
 vim
+geany
+geany-plugins
 
 # Xorg
 xf86-video-apm
@@ -208,7 +210,6 @@ surfraw
 xcompmgr
 #xorg-xdm
 #xdm-archlinux
-#qiv
 #libxdg-basedir
 #archlinux-xdg-menu
 #xdg-utils
@@ -254,7 +255,6 @@ speedtouch
 wget
 wvdial
 xl2tpd
-# backports-patched
 
 # Archive Tools
 unace 
@@ -285,31 +285,3 @@ ttf-inconsolata
 ttf-liberation
 ttf-linux-libertine
 ttf-ubuntu-font-family
-
-# openCL + CUDA
-## https://wiki.archlinux.org/index.php/GPGPU
-#libcl
-#llvm
-#opencl-nvidia
-#python2-pyopencl
-#opencl-headers
-#amdapp-sdk << AUR
-#intel-opencl-sdk << AUR
-
-#libvdpau
-#nvidia << conflicts as follows ::
-#:: There are 3 providers available for libgl:
-#:: Repository extra
-#   1) mesa-libgl  2) nvidia-304xx-utils  3) nvidia-libgl
-#
-#error: unresolvable package conflicts detected
-#error: failed to prepare transaction (conflicting dependencies)
-#:: nvidia-libgl and mesa-libgl are in conflict
-
-#more nvidia
-# flashplugin
-# >> 
-# >> If you have an NVIDIA card that supports libvdpau or Broadcom Crystal HD chips,
-# >> uncomment EnableLinuxHWVideoDecode=1 from /etc/adobe/mms.cfg.
-# >> If you run into problems, please contact nVidia or Broadcom along with your system config info / driver version.
-# >> 
