@@ -33,6 +33,7 @@ arch-wiki-lite
 abs
 pwgen
 colordiff
+moreutils
 
 # BlackArch
 blackarch
@@ -166,6 +167,7 @@ surf
 lftp
 ncftp
 tcpdump
+rdesktop
 
 # Media plugins
 gstreamer0.10-plugins
@@ -233,6 +235,7 @@ cairo
 fontconfig
 terminator
 rxvt-unicode
+xclip
 
 # Network
 ipw2100-fw
