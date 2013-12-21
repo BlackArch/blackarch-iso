@@ -1,7 +1,5 @@
 # Intallation
 arch-install-scripts
-#gummiboot-efi
-#grub-efi-x86_64
 refind-efi
 haveged
 dmraid
@@ -14,6 +12,7 @@ grub
 linux-atm
 tzdata
 usb_modeswitch
+reflector
 
 # Console Apps
 gpm
@@ -24,6 +23,12 @@ mc
 tmux
 screen
 mlocate
+wgetpaste
+mutt
+#canto in aur but its a nice console based rss reader
+mc
+ranger
+
 
 # BlackArch
 blackarch
@@ -57,6 +62,9 @@ testdisk
 # Servers
 darkhttpd
 openssh
+tftp-hpa
+vsftpd
+
 
 # Shells
 bash
@@ -67,6 +75,9 @@ zsh
 base-devel
 python
 python2
+#pyparted if we want to use it we will need to add it to the repo
+python2-geoip
+python2-pyqt4
 git
 mercurial
 cmake
@@ -142,11 +153,11 @@ pidgin
 pidgin-otr
 dwb
 rtorrent
-#transmission-cli
-#transmission-gtk
+transmission-gtk
 elinks
 irssi
 hexchat
+surf
 lftp
 ncftp
 tcpdump
@@ -154,6 +165,12 @@ tcpdump
 # Media plugins
 gstreamer0.10-plugins
 flashplugin
+cmus
+mpd
+mpv
+xfburn
+bashburn
+vlc
 
 # Window Manager Stuff
 openbox
@@ -161,22 +178,34 @@ obconf
 obmenu
 oblogout
 openbox-themes
-nitrogen
+dzen2
 conky
-gmrun
-gnome-menus
-oblogout
-obconf
-obmenu
+dmenu
 dwm
 tint2
 spectrwm
 ratpoison
 awesome
+feh
 clipit
 spacefm
 slock
+scrot
+xautolock
 hsetroot
+xxkb
+apvlv
+abiword
+zim
+antiword
+aria2
+#detox in aur might be useful: http://kmandla.wordpress.com/software/
+#dict in aur might be useful: http://kmandla.wordpress.com/software/
+#hnb in aur might be useful: http://kmandla.wordpress.com/software/
+htop
+iftop
+surfraw
+xcompmgr
 #xorg-xdm
 #xdm-archlinux
 #qiv
@@ -194,6 +223,7 @@ slim-themes
 cairo
 fontconfig
 terminator
+rxvt-unicode
 
 # Network
 ipw2100-fw
@@ -235,19 +265,26 @@ p7zip
 arj
 xz
 lzop
-unrar 
+unrar
 cpio
 
 # Cryptography
 truecrypt
-john
 tor
 vidalia
 torsocks
+encfs
+gnupg
 
 # Fonts
 ttf-dejavu
 ttf-bitstream-vera
+terminus-font
+ttf-droid
+ttf-inconsolata
+ttf-liberation
+ttf-linux-libertine
+ttf-ubuntu-font-family
 
 # openCL + CUDA
 ## https://wiki.archlinux.org/index.php/GPGPU
