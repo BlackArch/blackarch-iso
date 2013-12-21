@@ -1,6 +1,8 @@
 tint2 &
 volumeicon &
 #hsetroot -fill /usr/share/wallpapers/archbang-sky.png &
+xsetroot -solid black &
+xautolock -time 10 -locker slock
 clipit &
 conky &
 # Enable as required
