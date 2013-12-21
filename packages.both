@@ -30,6 +30,9 @@ mc
 ranger
 openssl
 arch-wiki-lite
+abs
+pwgen
+colordiff
 
 # BlackArch
 blackarch
@@ -260,6 +263,7 @@ speedtouch
 wget
 wvdial
 xl2tpd
+tigervnc
 
 # Archive Tools
 unace
