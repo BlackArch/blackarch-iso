@@ -1,0 +1,9 @@
+#!/bin/bash
+binds_file="/home/live/.config/openbox/scripts/binds.txt"
+
+echo "<openbox_pipe_menu>"
+while IFS= read -r line
+do
+  echo "<item label=\"${line}\"></item>"
+done <"$binds_file"
+echo "</openbox_pipe_menu>"

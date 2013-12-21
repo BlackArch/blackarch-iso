@@ -124,9 +124,9 @@ xf86-video-vesa
 xf86-video-vmware
 xf86-video-voodoo
 xorg-server
-xorg-xinit 
+xorg-xinit
 xorg-utils
-xorg-server-utils 
+xorg-server-utils
 xorg-xdm
 mesa
 xorg-drivers
@@ -138,7 +138,7 @@ ati-dri
 xf86-input-synaptics
 
 # VirtualBox
-virtualbox-guest-utils 
+virtualbox-guest-utils
 virtualbox-guest-modules
 virtualbox-host-modules
 
@@ -179,6 +179,11 @@ openbox
 obconf
 obmenu
 oblogout
+obmenu-generator
+perl-linux-desktopfiles
+perl-data-dump
+scrot
+nitrogen
 openbox-themes
 dzen2
 conky
@@ -257,7 +262,7 @@ wvdial
 xl2tpd
 
 # Archive Tools
-unace 
+unace
 zip
 unzip
 unrar
