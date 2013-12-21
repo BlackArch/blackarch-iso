@@ -60,8 +60,13 @@ make_basefs() {
 
 # Additional packages (root-image)
 make_packages() {
-    setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${pacman_conf}" -D "${install_dir}" -p "$(grep -h -v ^# ${script_path}/packages.{both,${arch}})" install
+    if [[ ${arch} == "x86_64" ]]; then
+          # remove gcc-libs to avoid conflict with gcc-libs-multilib
+          setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${pacman_conf}" -D "${install_dir}" -r "pacman -Rdd --noconfirm gcc-libs" run
+    fi
+          setarch ${arch} mkarchiso ${verbose} -w "${work_dir}/${arch}" -C "${pacman_conf}" -D "${install_dir}" -p "$(grep -h -v ^# ${script_path}/packages.{both,${arch}})" install
 }
+
 
 # Copy mkinitcpio archiso hooks and build initramfs (root-image)
 make_setup_mkinitcpio() {
@@ -103,15 +108,15 @@ make_boot_extra() {
 
 # Fetch packages for offline installation
 make_pkgcache() {
-    for pkg in $(grep -h -v ^# ${script_path}/pkgcache.{both,${iso_arch}})
+    for pkg in $(grep -h -v ^# ${script_path}/pkgcache.{both,${arch}})
     do
         rm -f /var/cache/pacman/pkg/${pkg}-*
         # Get the download link from pacman
 		pkg_path=$(pacman -Sp ${pkg})
         # Download the package
-		wget -P ${work_dir}/${iso_arch}/root-image/var/cache/pacman/pkg ${pkg_path}
+		wget -P ${work_dir}/${arch}/root-image/var/cache/pacman/pkg ${pkg_path}
         # Download the signature file
-		wget -P ${work_dir}/${iso_arch}/root-image/var/cache/pacman/pkg ${pkg_path}.sig
+		wget -P ${work_dir}/${arch}/root-image/var/cache/pacman/pkg ${pkg_path}.sig
     done
 }
 
@@ -211,7 +216,7 @@ make_prepare() {
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" prepare
     rm -rf ${work_dir}/root-image
     # rm -rf ${work_dir}/${arch}/root-image (if low space, this helps)
-}
+}	
 
 # Build ISO
 make_iso() {
