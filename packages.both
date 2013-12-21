@@ -182,6 +182,8 @@ oblogout
 obmenu-generator
 perl-linux-desktopfiles
 perl-data-dump
+scrot
+nitrogen
 openbox-themes
 dzen2
 conky
