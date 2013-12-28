@@ -1,13 +1,11 @@
 abs
 arch-install-scripts
 b43-fwcutter
-blackarch
 btrfs-progs
 clipit
 cmake 
 colordiff
 crda
-darkhttpd
 ddrescue
 dhclient
 dialog
@@ -35,7 +33,6 @@ hdparm
 hsetroot
 ipw2100-fw
 ipw2200-fw
-irssi
 lftp
 linux-atm
 macchanger
@@ -73,7 +70,6 @@ smartmontools
 spacefm
 spectrwm
 speedtouch
-sudo
 tcpdump
 testdisk
 tint2
@@ -138,3 +134,93 @@ xorg-xdm
 xorg-xinit 
 zd1211-firmware
 zsh
+xl2tpd
+zd1211-firmware
+zsh
+
+### blackarch linux ###
+
+# blackarch-anti-forensic
+
+# blackarch-automation
+
+# blackarch-backdoor
+
+# blackarch-binary
+
+# blackarch-bluetooth
+
+# blackarch-code-audit
+
+# blackarch-cracker
+medusa
+
+# blackarch-cross-compiling
+
+# blackarch-crypto
+
+# blackarch-database
+
+# blackarch-debugger
+
+# blackarch-decompiler
+
+# blackarch-defensive
+
+# blackarch-disassembler
+
+# blackarch-dos
+
+# blackarch-drone
+
+# blackarch-exploitation
+
+# blackarch-fingerprint
+
+# blackarch-forensic
+
+# blackarch-fuzzer
+
+# blackarch-hardware
+
+# blackarch-honeypot
+
+# blackarch-keylogger
+
+# blackarch-malware
+
+# blackarch-misc
+
+# blackarch-mobile
+
+# blackarch-neckarch-nfc
+
+# blackarch-packer
+
+# blackarch-proxy
+
+# blackarch-recon
+
+# blackarch-reversing
+
+# blackarch-scanner
+
+# blackarch-sniffer
+
+# blackarch-social
+
+# blackarch-spoof
+
+# blackarch-threat-model
+
+# blackarch-tunnel
+
+# blackarch-unpacker
+
+# blackarch-voip
+
+# blackarch-webapp
+
+# blackarch-windows
+
+# blackarch-wireless

@@ -19,8 +19,6 @@ _usage ()
     echo "usage ${0} [options]"
     echo
     echo " General options:"
-    echo "    -A <arch>          Set the architecture (prefix)"
-    echo "                        Default: ${arch}"
     echo "    -N <iso_name>      Set an iso filename (prefix)"
     echo "                        Default: ${iso_name}"
     echo "    -V <iso_version>   Set an iso version (in filename)"
@@ -202,7 +200,7 @@ make_prepare() {
 # Build ISO
 make_iso() {
     mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" checksum
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-${arch}.iso"
+    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-dual.iso"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
@@ -215,9 +213,8 @@ if [[ ${arch} != x86_64 ]]; then
     _usage 1
 fi
 
-while getopts 'A:N:V:L:D:w:o:vh' arg; do
+while getopts 'N:V:L:D:w:o:vh' arg; do
     case "${arg}" in
-        A) arch="${OPTARG}" ;;
         N) iso_name="${OPTARG}" ;;
         V) iso_version="${OPTARG}" ;;
         L) iso_label="${OPTARG}" ;;
@@ -237,44 +234,29 @@ mkdir -p ${work_dir}
 
 run_once make_pacman_conf
 
-if [[ ${arch} == "x86_64" ]];
-then
-      #Add multilb to pacman.conf
-      echo "modifying pacman.conf..." 
-      echo "modifying pacman.conf..."
-      echo '[multilib]' >> ${pacman_conf}
-      echo 'Include = /etc/pacman.d/mirrorlist' >> ${pacman_conf}
-fi
-
 # Do all stuff for each root-image
-#for arch in i686 x86_64; do
-#for arch in $arch do;
+for arch in i686 x86_64; do
     run_once make_basefs
     run_once make_packages
     run_once make_setup_mkinitcpio
     run_once make_customize_root_image
-#done
+done
 
-
-#for arch in i686 x86_64; do
-#for arch in $arch; do
+for arch in i686 x86_64; do
     run_once make_boot
-#done
+done
 
 # Do all stuff for "iso"
 run_once make_boot_extra
 run_once make_syslinux
 run_once make_isolinux
-if [[ ${arch} == "x86_64" ]];then
-      run_once make_efi
-      run_once make_efiboot
-fi
+run_once make_efi
+run_once make_efiboot
 
 run_once make_aitab
 
-#for arch in i686 x86_64; do
-#for arch in $arch; do
+for arch in i686 x86_64; do
     run_once make_prepare
-#done
+done
 
 run_once make_iso
