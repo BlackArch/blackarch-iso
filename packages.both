@@ -1,4 +1,6 @@
 ### arch linux ###
+
+# default
 arch-install-scripts
 b43-fwcutter
 btrfs-progs
@@ -55,11 +57,29 @@ xl2tpd
 zd1211-firmware
 zsh
 
+# needed for blackarch
+virtualbox-guest-modules
+virtualbox-guest-utils
+xorg-server
+xorg-server-utils
+xorg-xinit
+lxdm
+feh
+fluxbox
+spectrwm
+blackarch-dwm
+openbox
+awesome
+i3-wm
+wmii
+
+
 ### blackarch linux ###
 
 # blackarch-anti-forensic
 
 # blackarch-automation
+sploitctl
 
 # blackarch-backdoor
 
@@ -70,6 +90,7 @@ zsh
 # blackarch-code-audit
 
 # blackarch-cracker
+hydra
 medusa
 
 # blackarch-cross-compiling
