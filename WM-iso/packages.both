@@ -1,0 +1,248 @@
+### arch linux ###
+
+# default
+abs
+arch-install-scripts
+b43-fwcutter
+btrfs-progs
+clipit
+cmake
+colordiff
+crda
+ddrescue
+dhclient
+dialog
+dmraid
+dnsmasq
+dnsutils
+dosfstools
+dwb
+dwm
+elinks
+emacs
+ethtool
+f2fs-tools
+firefox
+fsarchiver
+git
+gnu-netcat
+gpm
+gptfdisk
+grml-zsh-config
+grub
+gvim
+haveged
+hdparm
+hsetroot
+ipw2100-fw
+ipw2200-fw
+lftp
+linux-atm
+macchanger
+makepasswd
+mc
+mercurial
+mesa
+mlocate
+moreutils
+mtools
+nfs-utils
+nilfs-utils
+nmap
+ntfs-3g
+ntp
+obconf
+oblogout
+obmenu
+openbox
+openbox-themes
+openconnect
+openssh
+openvpn
+p7zip
+partclone
+parted
+partimage
+ppp
+pptpclient
+rfkill
+rp-pppoe
+rsync
+slock
+smartmontools
+spacefm
+spectrwm
+speedtouch
+tcpdump
+testdisk
+tint2
+tmux
+tzdata
+unace
+unrar
+unzip
+usb_modeswitch
+vim
+virtualbox-guest-utils
+virtualbox-host-modules
+volumeicon
+vpnc
+wget
+wicd
+wicd-gtk
+wireless_tools
+wpa_actiond
+wvdial
+xclip
+xf86-video-apm
+xf86-video-ark
+xf86-video-ast
+xf86-video-ati
+xf86-video-chips
+xf86-video-cirrus
+xf86-video-dummy
+xf86-video-fbdev
+xf86-video-glint
+xf86-video-i128
+xf86-video-i740
+xf86-video-intel
+xf86-video-mach64
+xf86-video-mga
+xf86-video-modesetting
+xf86-video-neomagic
+xf86-video-nouveau
+xf86-video-nv
+xf86-video-openchrome
+xf86-video-r128
+xf86-video-rendition
+xf86-video-s3
+xf86-video-s3virge
+xf86-video-savage
+xf86-video-siliconmotion
+xf86-video-sis
+xf86-video-sisimedia
+xf86-video-sisusb
+xf86-video-tdfx
+xf86-video-trident
+xf86-video-tseng
+xf86-video-v4l
+xf86-video-vesa
+xf86-video-vmware
+xf86-video-voodoo
+xl2tpd
+xorg-server
+xorg-server-utils
+xorg-xbacklight
+xorg-xdm
+xorg-xinit
+zd1211-firmware
+zsh
+xl2tpd
+zd1211-firmware
+zsh
+
+# needed for blackarch
+virtualbox-guest-modules
+virtualbox-guest-utils
+xorg-server
+xorg-server-utils
+xorg-xinit
+lxdm
+feh
+fluxbox
+spectrwm
+blackarch-dwm
+openbox
+awesome
+i3-wm
+wmii
+
+
+### blackarch linux ###
+
+# blackarch-anti-forensic
+
+# blackarch-automation
+sploitctl
+
+# blackarch-backdoor
+
+# blackarch-binary
+
+# blackarch-bluetooth
+
+# blackarch-code-audit
+
+# blackarch-cracker
+hydra
+medusa
+
+# blackarch-cross-compiling
+
+# blackarch-crypto
+
+# blackarch-database
+
+# blackarch-debugger
+
+# blackarch-decompiler
+
+# blackarch-defensive
+
+# blackarch-disassembler
+
+# blackarch-dos
+
+# blackarch-drone
+
+# blackarch-exploitation
+
+# blackarch-fingerprint
+
+# blackarch-forensic
+
+# blackarch-fuzzer
+
+# blackarch-hardware
+
+# blackarch-honeypot
+
+# blackarch-keylogger
+
+# blackarch-malware
+
+# blackarch-misc
+
+# blackarch-mobile
+
+# blackarch-neckarch-nfc
+
+# blackarch-packer
+
+# blackarch-proxy
+
+# blackarch-recon
+
+# blackarch-reversing
+
+# blackarch-scanner
+
+# blackarch-sniffer
+
+# blackarch-social
+
+# blackarch-spoof
+
+# blackarch-threat-model
+
+# blackarch-tunnel
+
+# blackarch-unpacker
+
+# blackarch-voip
+
+# blackarch-webapp
+
+# blackarch-windows
+
+# blackarch-wireless
