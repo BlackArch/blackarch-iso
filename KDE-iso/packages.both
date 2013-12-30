@@ -1,4 +1,6 @@
-### arch linux ###
+##############
+# arch linux #
+##############
 
 # default
 abs
@@ -17,20 +19,16 @@ dnsmasq
 dnsutils
 dosfstools
 dwb
-dwm
 elinks
 emacs
 ethtool
 f2fs-tools
-firefox
 fsarchiver
 git
 gnu-netcat
 gpm
 gptfdisk
 grml-zsh-config
-grub
-gvim
 haveged
 hdparm
 hsetroot
@@ -38,10 +36,6 @@ ipw2100-fw
 ipw2200-fw
 lftp
 linux-atm
-macchanger
-makepasswd
-mc
-mercurial
 mesa
 mlocate
 moreutils
@@ -51,11 +45,6 @@ nilfs-utils
 nmap
 ntfs-3g
 ntp
-obconf
-oblogout
-obmenu
-openbox
-openbox-themes
 openconnect
 openssh
 openvpn
@@ -71,20 +60,16 @@ rsync
 slock
 smartmontools
 spacefm
-spectrwm
 speedtouch
 tcpdump
 testdisk
 tint2
-tmux
 tzdata
 unace
 unrar
 unzip
 usb_modeswitch
 vim
-virtualbox-guest-utils
-virtualbox-host-modules
 volumeicon
 vpnc
 wget
@@ -147,18 +132,16 @@ virtualbox-guest-utils
 xorg-server
 xorg-server-utils
 xorg-xinit
-lxdm
-feh
-fluxbox
-spectrwm
-blackarch-dwm
-openbox
-awesome
-i3-wm
-wmii
+xterm
+firefox
+opera
+acpi
 
 
-### blackarch linux ###
+###################
+# blackarch linux #
+###################
+
 
 # blackarch-anti-forensic
 

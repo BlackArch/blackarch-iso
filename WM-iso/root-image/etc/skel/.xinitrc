@@ -1,1 +1,0 @@
-[ -f ~/.xsession ] && source ~/.xinitrc
