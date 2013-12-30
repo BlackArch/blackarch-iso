@@ -1,4 +1,0 @@
-#!/bin/sh
-#
-# Note: this is a sample and will not be run as is.
-test -x /usr/bin/pax11publish && /usr/bin/pax11publish -r

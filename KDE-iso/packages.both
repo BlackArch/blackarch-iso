@@ -70,6 +70,8 @@ unrar
 unzip
 usb_modeswitch
 vim
+virtualbox-guest-utils
+virtualbox-host-modules
 volumeicon
 vpnc
 wget
