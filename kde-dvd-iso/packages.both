@@ -20,7 +20,6 @@ dnsutils
 dosfstools
 dwb
 elinks
-emacs
 ethtool
 f2fs-tools
 fsarchiver
@@ -70,8 +69,6 @@ unrar
 unzip
 usb_modeswitch
 vim
-virtualbox-guest-utils
-virtualbox-host-modules
 volumeicon
 vpnc
 wget
@@ -129,6 +126,7 @@ zd1211-firmware
 zsh
 
 # needed for blackarch
+feh
 virtualbox-guest-modules
 virtualbox-guest-utils
 xorg-server
@@ -138,96 +136,55 @@ xterm
 firefox
 opera
 acpi
-
-
-###################
-# blackarch linux #
-###################
-
-
-# blackarch-anti-forensic
-
-# blackarch-automation
-sploitctl
-
-# blackarch-backdoor
-
-# blackarch-binary
-
-# blackarch-bluetooth
-
-# blackarch-code-audit
-
-# blackarch-cracker
-hydra
-medusa
-
-# blackarch-cross-compiling
-
-# blackarch-crypto
-
-# blackarch-database
-
-# blackarch-debugger
-
-# blackarch-decompiler
-
-# blackarch-defensive
-
-# blackarch-disassembler
-
-# blackarch-dos
-
-# blackarch-drone
-
-# blackarch-exploitation
-
-# blackarch-fingerprint
-
-# blackarch-forensic
-
-# blackarch-fuzzer
-
-# blackarch-hardware
-
-# blackarch-honeypot
-
-# blackarch-keylogger
-
-# blackarch-malware
-
-# blackarch-misc
-
-# blackarch-mobile
-
-# blackarch-neckarch-nfc
-
-# blackarch-packer
-
-# blackarch-proxy
-
-# blackarch-recon
-
-# blackarch-reversing
-
-# blackarch-scanner
-
-# blackarch-sniffer
-
-# blackarch-social
-
-# blackarch-spoof
-
-# blackarch-threat-model
-
-# blackarch-tunnel
-
-# blackarch-unpacker
-
-# blackarch-voip
-
-# blackarch-webapp
-
-# blackarch-windows
-
-# blackarch-wireless
+lxdm
+feh
+fluxbox
+spectrwm
+blackarch-dwm
+obconf
+oblogout
+obmenu
+openbox
+openbox-themes
+awesome
+i3-wm
+wmii
+tor
+torsocks
+wireshark-gtk
+wireshark-cli
+tcpreplay
+stunnel
+socat
+sleuthkit
+siege
+rkhunter
+proxytunnel
+proxychains
+ophcrack
+ngrep
+nbtscan
+mtr
+macchanger
+kismet
+john
+jad
+iputils
+iodine
+hping
+gdb
+fping
+frackzip
+extundelete
+exiv2
+ettercap
+etherape
+dsniff
+dnstracer
+ddrescue
+dcfldd
+darkstat
+cadaver
+bsdiff
+arp-scan
+aircrack-ng
