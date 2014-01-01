@@ -21,6 +21,7 @@ dosfstools
 dwb
 elinks
 ethtool
+expac
 f2fs-tools
 fsarchiver
 git
@@ -60,6 +61,7 @@ slock
 smartmontools
 spacefm
 speedtouch
+sudo
 tcpdump
 testdisk
 tint2
@@ -106,6 +108,7 @@ xf86-video-siliconmotion
 xf86-video-sis
 xf86-video-sisimedia
 xf86-video-sisusb
+xf86-input-synaptics
 xf86-video-tdfx
 xf86-video-trident
 xf86-video-tseng
@@ -139,6 +142,7 @@ lxdm
 feh
 fluxbox
 spectrwm
+dwm
 blackarch-dwm
 obconf
 oblogout

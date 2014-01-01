@@ -1,0 +1,128 @@
+[begin] (blackarch menu)
+
+    [submenu] (terminals)
+        [exec] (xterm (red\)) {xterm -bg black -fg red}
+        [exec] (xterm (green\)) {xterm -bg black -fg green}
+        [exec] (xterm (yellow\)) {xterm -bg black -fg yellow}
+        [exec] (xterm (white\)) {xterm -bg black -fg white}
+    [end]
+
+    [submenu] (browsers)
+        [exec] (firefox) {firefox}
+        [exec] (opera) {opera}
+    [end]
+
+    [submenu] (blackarch)
+        [submenu] (anti-forensic)
+        [end]
+        [submenu] (automation)
+        [end]
+        [submenu] (backdoor)
+        [end]
+        [submenu] (binary)
+        [end]
+        [submenu] (bluetooth)
+        [end]
+        [submenu] (code-audit)
+        [end]
+        [submenu] (cracker)
+        [end]
+        [submenu] (cross-compiling)
+        [end]
+        [submenu] (crypto)
+        [end]
+        [submenu] (database)
+        [end]
+        [submenu] (debugger)
+        [end]
+        [submenu] (decompiler)
+        [end]
+        [submenu] (defensive)
+        [end]
+        [submenu] (disassembler)
+        [end]
+        [submenu] (dos)
+        [end]
+        [submenu] (drone)
+        [end]
+        [submenu] (exploitation)
+        [end]
+        [submenu] (fingerprint)
+        [end]
+        [submenu] (forensic)
+        [end]
+        [submenu] (fuzzer)
+        [end]
+        [submenu] (hardware)
+        [end]
+        [submenu] (honeypot)
+        [end]
+        [submenu] (keylogger)
+        [end]
+        [submenu] (malware)
+        [end]
+        [submenu] (misc)
+        [end]
+        [submenu] (mobile)
+        [end]
+        [submenu] (networking)
+        [end]
+        [submenu] (nfc)
+        [end]
+        [submenu] (packer)
+        [end]
+        [submenu] (proxy)
+        [end]
+        [submenu] (recon)
+        [end]
+        [submenu] (reversing)
+        [end]
+        [submenu] (scanner)
+        [end]
+        [submenu] (sniffer)
+        [end]
+        [submenu] (social)
+        [end]
+        [submenu] (spoof)
+        [end]
+        [submenu] (threat-model)
+        [end]
+        [submenu] (tunnel)
+        [end]
+        [submenu] (unpacker)
+        [end]
+        [submenu] (voip)
+        [end]
+        [submenu] (webapp)
+        [end]
+        [submenu] (windows)
+        [end]
+        [submenu] (wireless)
+        [end]
+    [end]
+
+    [separator]
+
+    [submenu] (fluxbox menu)
+        [config] (Configure)
+            [submenu] (System Styles) {Choose a style...}
+                [stylesdir] (/usr/share/fluxbox/styles)
+            [end]
+            [submenu] (User Styles) {Choose a style...}
+                [stylesdir] (~/.fluxbox/styles)
+            [end]
+            [workspaces] (Workspace List)
+            [submenu] (Tools)
+                [exec] (Window name) \
+                {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+            [end]
+            [commanddialog] (Fluxbox Command)
+            [reconfig] (Reload config)
+            [restart] (Restart)
+            [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) \
+            2> /dev/null | xmessage -file - -center}
+            [separator]
+            [exit] (Exit)
+    [end]
+
+[end]

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="terminals-menu" label="terminals">
+	<item label="xterm (red)">
+		<action name="Execute">
+			<command>xterm -bg black -fg red</command>
+		</action>
+	</item>
+	<item label="xterm (green)">
+		<action name="Execute">
+			<command>xterm -bg black -fg green</command>
+		</action>
+	</item>
+	<item label="xterm (yellow)">
+		<action name="Execute">
+			<command>xterm -bg black -fg yellow</command>
+		</action>
+	</item>
+	<item label="xterm (white)">
+		<action name="Execute">
+			<command>xterm -bg black -fg white</command>
+		</action>
+	</item>
+</menu>
+
+<menu id="browsers-menu" label="browsers">
+	<item label="firefox">
+		<action name="Execute">
+			<command>firefox</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+				<wmclass>firefox</wmclass>
+			</startupnotify>
+		</action>
+	</item>
+	<item label="opera">
+		<action name="Execute">
+			<command>opera</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+				<wmclass>opera</wmclass>
+      		</startupnotify>
+		</action>
+	</item>
+</menu>
+
+<!-- blackarch related -->
+
+<menu id="blackarch-anti-forensic-menu" label="anti-forensic">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-automation-menu" label="automation">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-backdoor-menu" label="backdoor">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-binary-menu" label="binary">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-bluetooth-menu" label="bluetooth">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-code-audit-menu" label="code-audit">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-cracker-menu" label="cracker">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-crypto-menu" label="crypto">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-database-menu" label="database">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-debugger-menu" label="debugger">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-decompiler-menu" label="decompiler">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-defensive-menu" label="defensive">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-disassembler-menu" label="disassembler">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-dos-menu" label="dos">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-drone-menu" label="drone">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-exploitation-menu" label="exploitation">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-fingerprint-menu" label="fingerprint">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-forensic-menu" label="forensic">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-fuzzer-menu" label="fuzzer">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-hardware-menu" label="hardware">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-honeypot-menu" label="honeypot">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-keylogger-menu" label="keylogger">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-malware-menu" label="malware">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-misc-menu" label="misc">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-menu" label="mobile">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-networking-menu" label="networking">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-nfc-menu" label="nfc">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-packer-menu" label="packer">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-proxy-menu" label="proxy">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-recon-menu" label="recon">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-reversing-menu" label="reversing">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-scanner-menu" label="scanner">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-sniffer-menu" label="sniffer">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-social-menu" label="social">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-spoof-menu" label="spoof">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-threat-model-menu" label="threat-model">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-tunnel-menu" label="tunnel">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-unpacker-menu" label="unpacker">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-voip-menu" label="voip">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-webapp-menu" label="webapp">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-windows-menu" label="windows">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<menu id="blackarch-wireless-menu" label="wireless">
+	<item label="foo">
+	<action name="Execute">
+		<command>foo</commnd>
+	</action>
+	</item>
+</menu>
+
+<!-- blackarch related -->
+
+<menu id="system-menu" label="system">
+	<item label="openbox configuration manager">
+		<action name="Execute">
+			<command>obconf</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+			</startupnotify>
+		</action>
+	</item>
+	<separator />
+	<item label="reconfigure openbox">
+		<action name="reconfigure" />
+	</item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+	<separator label="applications" />
+	<menu id="terminals-menu"/>
+	<menu id="browsers-menu"/>
+	<separator label="blackarch" />
+	<menu id="blackarch-anti-forensic-menu"/>
+	<menu id="blackarch-automation-menu"/>
+	<menu id="blackarch-backdoor-menu"/>
+	<menu id="blackarch-binary-menu"/>
+	<menu id="blackarch-bluetooth-menu"/>
+	<menu id="blackarch-code-audit-menu"/>
+	<menu id="blackarch-cracker-menu"/>
+	<menu id="blackarch-crypto-menu"/>
+	<menu id="blackarch-database-menu"/>
+	<menu id="blackarch-debugger-menu"/>
+	<menu id="blackarch-decompiler-menu"/>
+	<menu id="blackarch-defensive-menu"/>
+	<menu id="blackarch-disassembler-menu"/>
+	<menu id="blackarch-dos-menu"/>
+	<menu id="blackarch-drone-menu"/>
+	<menu id="blackarch-exploitation-menu"/>
+	<menu id="blackarch-fingerprint-menu"/>
+	<menu id="blackarch-forensic-menu"/>
+	<menu id="blackarch-fuzzer-menu"/>
+	<menu id="blackarch-hardware-menu"/>
+	<menu id="blackarch-honeypot-menu"/>
+	<menu id="blackarch-keylogger-menu"/>
+	<menu id="blackarch-malware-menu"/>
+	<menu id="blackarch-miscc-menu"/>
+	<menu id="blackarch-mobile-menu"/>
+	<menu id="blackarch-networking-menu"/>
+	<menu id="blackarch-nfc-menu"/>
+	<menu id="blackarch-packer-menu"/>
+	<menu id="blackarch-proxy-menu"/>
+	<menu id="blackarch-recon-menu"/>
+	<menu id="blackarch-reversing-menu"/>
+	<menu id="blackarch-scanner-menu"/>
+	<menu id="blackarch-sniffer-menu"/>
+	<menu id="blackarch-social-menu"/>
+	<menu id="blackarch-spoof-menu"/>
+	<menu id="blackarch-threat-model-menu"/>
+	<menu id="blackarch-tunnel-menu"/>
+	<menu id="blackarch-unpacker-menu"/>
+	<menu id="blackarch-voip-menu"/>
+	<menu id="blackarch-webapp-menu"/>
+	<menu id="blackarch-windows-menu"/>
+	<menu id="blackarch-wireless-menu"/>
+	<separator label="system" />
+	<menu id="system-menu"/>
+	<separator />
+	<item label="log out">
+	<action name="exit">
+		<prompt>yes</prompt>
+	</action>
+	</item>
+</menu>
+
+</openbox_menu>

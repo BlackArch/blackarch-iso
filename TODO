@@ -1,5 +1,5 @@
-- add dwm
+- add dwm [done]
 - check packages menu in VM - executable missed
-- disable dhcpcd
-- add signing keys
-- sync databases initially
+- disable dhcpcd [done]
+- add signing keys [done]
+- sync databases initially [done]
