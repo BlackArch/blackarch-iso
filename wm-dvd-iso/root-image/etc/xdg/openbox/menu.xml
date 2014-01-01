@@ -49,59 +49,744 @@
 <!-- blackarch related -->
 
 <menu id="blackarch-anti-forensic-menu" label="anti-forensic">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="secure-delete">
+        <action name="Execute">
+            <command>secure-delete</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-automation-menu" label="automation">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="cewl">
+        <action name="Execute">
+            <command>cewl</command>
+        </action>
+    </item>
+    <item label="checksec">
+        <action name="Execute">
+            <command>checksec</command>
+        </action>
+    </item>
+    <item label="crunch">
+        <action name="Execute">
+            <command>crunch</command>
+        </action>
+    </item>
+    <item label="gooscan">
+        <action name="Execute">
+            <command>gooscan</command>
+        </action>
+    </item>
+    <item label="hackersh">
+        <action name="Execute">
+            <command>hackersh</command>
+        </action>
+    </item>
+    <item label="mitmap">
+        <action name="Execute">
+            <command>mitmap</command>
+        </action>
+    </item>
+    <item label="nfspy">
+        <action name="Execute">
+            <command>nfspy</command>
+        </action>
+    </item>
+    <item label="nfsshell">
+        <action name="Execute">
+            <command>nfsshell</command>
+        </action>
+    </item>
+    <item label="panoptic">
+        <action name="Execute">
+            <command>panoptic</command>
+        </action>
+    </item>
+    <item label="rsmangler">
+        <action name="Execute">
+            <command>rsmangler</command>
+        </action>
+    </item>
+    <item label="sakis3g">
+        <action name="Execute">
+            <command>sakis3g</command>
+        </action>
+    </item>
+    <item label="simple-ducky">
+        <action name="Execute">
+            <command>simple-ducky</command>
+        </action>
+    </item>
+    <item label="sipvicious">
+        <action name="Execute">
+            <command>sipvicious</command>
+        </action>
+    </item>
+    <item label="sploitctl">
+        <action name="Execute">
+            <command>sploitctl</command>
+        </action>
+    </item>
+    <item label="tiger">
+        <action name="Execute">
+            <command>tiger</command>
+        </action>
+    </item>
+    <item label="tlssled">
+        <action name="Execute">
+            <command>tlssled</command>
+        </action>
+    </item>
+    <item label="unix-privesc-check">
+        <action name="Execute">
+            <command>unix-privesc-check</command>
+        </action>
+    </item>
+    <item label="username-anarchy">
+        <action name="Execute">
+            <command>username-anarchy</command>
+        </action>
+    </item>
+    <item label="voiphopper">
+        <action name="Execute">
+            <command>voiphopper</command>
+        </action>
+    </item>
+    <item label="wiffy">
+        <action name="Execute">
+            <command>wiffy</command>
+        </action>
+    </item>
+    <item label="wnmap">
+        <action name="Execute">
+            <command>wnmap</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-backdoor-menu" label="backdoor">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="backdoor-factory">
+        <action name="Execute">
+            <command>backdoor-factory</command>
+        </action>
+    </item>
+    <item label="cymothoa">
+        <action name="Execute">
+            <command>cymothoa</command>
+        </action>
+    </item>
+    <item label="enyelkm">
+        <action name="Execute">
+            <command>enyelkm</command>
+        </action>
+    </item>
+    <item label="hotpatch">
+        <action name="Execute">
+            <command>hotpatch</command>
+        </action>
+    </item>
+    <item label="jynx2">
+        <action name="Execute">
+            <command>jynx2</command>
+        </action>
+    </item>
+    <item label="ms-sys">
+        <action name="Execute">
+            <command>ms-sys</command>
+        </action>
+    </item>
+    <item label="rrs">
+        <action name="Execute">
+            <command>rrs</command>
+        </action>
+    </item>
+    <item label="rubilyn">
+        <action name="Execute">
+            <command>rubilyn</command>
+        </action>
+    </item>
+    <item label="trixd00r">
+        <action name="Execute">
+            <command>trixd00r</command>
+        </action>
+    </item>
+    <item label="tsh">
+        <action name="Execute">
+            <command>tsh</command>
+        </action>
+    </item>
+    <item label="webacoo">
+        <action name="Execute">
+            <command>webacoo</command>
+        </action>
+    </item>
+    <item label="webshells">
+        <action name="Execute">
+            <command>webshells</command>
+        </action>
+    </item>
+    <item label="weevely">
+        <action name="Execute">
+            <command>weevely</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-binary-menu" label="binary">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="backdoor-factory">
+        <action name="Execute">
+            <command>backdoor-factory</command>
+        </action>
+    </item>
+    <item label="binwally">
+        <action name="Execute">
+            <command>binwally</command>
+        </action>
+    </item>
+    <item label="ms-sys">
+        <action name="Execute">
+            <command>ms-sys</command>
+        </action>
+    </item>
+    <item label="packerid">
+        <action name="Execute">
+            <command>packerid</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-bluetooth-menu" label="bluetooth">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="bluebugger">
+        <action name="Execute">
+            <command>bluebugger</command>
+        </action>
+    </item>
+    <item label="bluelog">
+        <action name="Execute">
+            <command>bluelog</command>
+        </action>
+    </item>
+    <item label="bluepot">
+        <action name="Execute">
+            <command>bluepot</command>
+        </action>
+    </item>
+    <item label="blueprint">
+        <action name="Execute">
+            <command>blueprint</command>
+        </action>
+    </item>
+    <item label="bluesnarfer">
+        <action name="Execute">
+            <command>bluesnarfer</command>
+        </action>
+    </item>
+    <item label="braces">
+        <action name="Execute">
+            <command>braces</command>
+        </action>
+    </item>
+    <item label="bss">
+        <action name="Execute">
+            <command>bss</command>
+        </action>
+    </item>
+    <item label="bt_audit">
+        <action name="Execute">
+            <command>bt_audit</command>
+        </action>
+    </item>
+    <item label="btcrack">
+        <action name="Execute">
+            <command>btcrack</command>
+        </action>
+    </item>
+    <item label="btscanner">
+        <action name="Execute">
+            <command>btscanner</command>
+        </action>
+    </item>
+    <item label="carwhisperer">
+        <action name="Execute">
+            <command>carwhisperer</command>
+        </action>
+    </item>
+    <item label="ghettotooth">
+        <action name="Execute">
+            <command>ghettotooth</command>
+        </action>
+    </item>
+    <item label="hidattack">
+        <action name="Execute">
+            <command>hidattack</command>
+        </action>
+    </item>
+    <item label="obexstress">
+        <action name="Execute">
+            <command>obexstress</command>
+        </action>
+    </item>
+    <item label="redfang">
+        <action name="Execute">
+            <command>redfang</command>
+        </action>
+    </item>
+    <item label="spooftooph">
+        <action name="Execute">
+            <command>spooftooph</command>
+        </action>
+    </item>
+    <item label="tbear">
+        <action name="Execute">
+            <command>tbear</command>
+        </action>
+    </item>
+    <item label="ubertooth">
+        <action name="Execute">
+            <command>ubertooth</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-code-audit-menu" label="code-audit">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="flawfinder">
+        <action name="Execute">
+            <command>flawfinder</command>
+        </action>
+    </item>
+    <item label="pscan">
+        <action name="Execute">
+            <command>pscan</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-cracker-menu" label="cracker">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="acccheck">
+        <action name="Execute">
+            <command>acccheck</command>
+        </action>
+    </item>
+    <item label="aesfix">
+        <action name="Execute">
+            <command>aesfix</command>
+        </action>
+    </item>
+    <item label="aeskeyfind">
+        <action name="Execute">
+            <command>aeskeyfind</command>
+        </action>
+    </item>
+    <item label="against">
+        <action name="Execute">
+            <command>against</command>
+        </action>
+    </item>
+    <item label="asleap">
+        <action name="Execute">
+            <command>asleap</command>
+        </action>
+    </item>
+    <item label="beleth">
+        <action name="Execute">
+            <command>beleth</command>
+        </action>
+    </item>
+    <item label="bios_memimage">
+        <action name="Execute">
+            <command>bios_memimage</command>
+        </action>
+    </item>
+    <item label="blackhash">
+        <action name="Execute">
+            <command>blackhash</command>
+        </action>
+    </item>
+    <item label="bob-the-butcher">
+        <action name="Execute">
+            <command>bob-the-butcher</command>
+        </action>
+    </item>
+    <item label="brutessh">
+        <action name="Execute">
+            <command>brutessh</command>
+        </action>
+    </item>
+    <item label="btcrack">
+        <action name="Execute">
+            <command>btcrack</command>
+        </action>
+    </item>
+    <item label="bully">
+        <action name="Execute">
+            <command>bully</command>
+        </action>
+    </item>
+    <item label="cewl">
+        <action name="Execute">
+            <command>cewl</command>
+        </action>
+    </item>
+    <item label="cisco-auditing-tool">
+        <action name="Execute">
+            <command>cisco-auditing-tool</command>
+        </action>
+    </item>
+    <item label="cisco-ocs">
+        <action name="Execute">
+            <command>cisco-ocs</command>
+        </action>
+    </item>
+    <item label="cmospwd">
+        <action name="Execute">
+            <command>cmospwd</command>
+        </action>
+    </item>
+    <item label="cowpatty">
+        <action name="Execute">
+            <command>cowpatty</command>
+        </action>
+    </item>
+    <item label="creddump">
+        <action name="Execute">
+            <command>creddump</command>
+        </action>
+    </item>
+    <item label="crunch">
+        <action name="Execute">
+            <command>crunch</command>
+        </action>
+    </item>
+    <item label="cupp">
+        <action name="Execute">
+            <command>cupp</command>
+        </action>
+    </item>
+    <item label="dbpwaudit">
+        <action name="Execute">
+            <command>dbpwaudit</command>
+        </action>
+    </item>
+    <item label="dpeparser">
+        <action name="Execute">
+            <command>dpeparser</command>
+        </action>
+    </item>
+    <item label="eapmd5pass">
+        <action name="Execute">
+            <command>eapmd5pass</command>
+        </action>
+    </item>
+    <item label="enabler">
+        <action name="Execute">
+            <command>enabler</command>
+        </action>
+    </item>
+    <item label="evilmaid">
+        <action name="Execute">
+            <command>evilmaid</command>
+        </action>
+    </item>
+    <item label="fang">
+        <action name="Execute">
+            <command>fang</command>
+        </action>
+    </item>
+    <item label="fern-wifi-cracker">
+        <action name="Execute">
+            <command>fern-wifi-cracker</command>
+        </action>
+    </item>
+    <item label="findmyhash">
+        <action name="Execute">
+            <command>findmyhash</command>
+        </action>
+    </item>
+    <item label="hashcat">
+        <action name="Execute">
+            <command>hashcat</command>
+        </action>
+    </item>
+    <item label="hashcat-utils">
+        <action name="Execute">
+            <command>hashcat-utils</command>
+        </action>
+    </item>
+    <item label="hashtag">
+        <action name="Execute">
+            <command>hashtag</command>
+        </action>
+    </item>
+    <item label="hydra">
+        <action name="Execute">
+            <command>hydra</command>
+        </action>
+    </item>
+    <item label="iheartxor">
+        <action name="Execute">
+            <command>iheartxor</command>
+        </action>
+    </item>
+    <item label="ikecrack">
+        <action name="Execute">
+            <command>ikecrack</command>
+        </action>
+    </item>
+    <item label="inguma">
+        <action name="Execute">
+            <command>inguma</command>
+        </action>
+    </item>
+    <item label="jbrute">
+        <action name="Execute">
+            <command>jbrute</command>
+        </action>
+    </item>
+    <item label="johnny">
+        <action name="Execute">
+            <command>johnny</command>
+        </action>
+    </item>
+    <item label="keimpx">
+        <action name="Execute">
+            <command>keimpx</command>
+        </action>
+    </item>
+    <item label="lodowep">
+        <action name="Execute">
+            <command>lodowep</command>
+        </action>
+    </item>
+    <item label="maskprocessor">
+        <action name="Execute">
+            <command>maskprocessor</command>
+        </action>
+    </item>
+    <item label="masscan">
+        <action name="Execute">
+            <command>masscan</command>
+        </action>
+    </item>
+    <item label="mdcrack">
+        <action name="Execute">
+            <command>mdcrack</command>
+        </action>
+    </item>
+    <item label="medusa">
+        <action name="Execute">
+            <command>medusa</command>
+        </action>
+    </item>
+    <item label="mfoc">
+        <action name="Execute">
+            <command>mfoc</command>
+        </action>
+    </item>
+    <item label="morxbrute">
+        <action name="Execute">
+            <command>morxbrute</command>
+        </action>
+    </item>
+    <item label="onesixtyone">
+        <action name="Execute">
+            <command>onesixtyone</command>
+        </action>
+    </item>
+    <item label="owabf">
+        <action name="Execute">
+            <command>owabf</command>
+        </action>
+    </item>
+    <item label="pack">
+        <action name="Execute">
+            <command>pack</command>
+        </action>
+    </item>
+    <item label="passcracking">
+        <action name="Execute">
+            <command>passcracking</command>
+        </action>
+    </item>
+    <item label="patator">
+        <action name="Execute">
+            <command>patator</command>
+        </action>
+    </item>
+    <item label="pdfcrack">
+        <action name="Execute">
+            <command>pdfcrack</command>
+        </action>
+    </item>
+    <item label="pdgmail">
+        <action name="Execute">
+            <command>pdgmail</command>
+        </action>
+    </item>
+    <item label="phoss">
+        <action name="Execute">
+            <command>phoss</command>
+        </action>
+    </item>
+    <item label="php-mt-seed">
+        <action name="Execute">
+            <command>php-mt-seed</command>
+        </action>
+    </item>
+    <item label="phrasendrescher">
+        <action name="Execute">
+            <command>phrasendrescher</command>
+        </action>
+    </item>
+    <item label="pipal">
+        <action name="Execute">
+            <command>pipal</command>
+        </action>
+    </item>
+    <item label="pyrit">
+        <action name="Execute">
+            <command>pyrit</command>
+        </action>
+    </item>
+    <item label="rainbowcrack">
+        <action name="Execute">
+            <command>rainbowcrack</command>
+        </action>
+    </item>
+    <item label="rarcrack">
+        <action name="Execute">
+            <command>rarcrack</command>
+        </action>
+    </item>
+    <item label="rcracki-mt">
+        <action name="Execute">
+            <command>rcracki-mt</command>
+        </action>
+    </item>
+    <item label="rdesktop-brute">
+        <action name="Execute">
+            <command>rdesktop-brute</command>
+        </action>
+    </item>
+    <item label="reaver">
+        <action name="Execute">
+            <command>reaver</command>
+        </action>
+    </item>
+    <item label="rootbrute">
+        <action name="Execute">
+            <command>rootbrute</command>
+        </action>
+    </item>
+    <item label="rsakeyfind">
+        <action name="Execute">
+            <command>rsakeyfind</command>
+        </action>
+    </item>
+    <item label="samdump2">
+        <action name="Execute">
+            <command>samdump2</command>
+        </action>
+    </item>
+    <item label="samydeluxe">
+        <action name="Execute">
+            <command>samydeluxe</command>
+        </action>
+    </item>
+    <item label="sidguesser">
+        <action name="Execute">
+            <command>sidguesser</command>
+        </action>
+    </item>
+    <item label="sipcrack">
+        <action name="Execute">
+            <command>sipcrack</command>
+        </action>
+    </item>
+    <item label="smbbf">
+        <action name="Execute">
+            <command>smbbf</command>
+        </action>
+    </item>
+    <item label="sqlpat">
+        <action name="Execute">
+            <command>sqlpat</command>
+        </action>
+    </item>
+    <item label="ssh-privkey-crack">
+        <action name="Execute">
+            <command>ssh-privkey-crack</command>
+        </action>
+    </item>
+    <item label="sshatter">
+        <action name="Execute">
+            <command>sshatter</command>
+        </action>
+    </item>
+    <item label="sshtrix">
+        <action name="Execute">
+            <command>sshtrix</command>
+        </action>
+    </item>
+    <item label="sslnuke">
+        <action name="Execute">
+            <command>sslnuke</command>
+        </action>
+    </item>
+    <item label="statsprocessor">
+        <action name="Execute">
+            <command>statsprocessor</command>
+        </action>
+    </item>
+    <item label="sucrack">
+        <action name="Execute">
+            <command>sucrack</command>
+        </action>
+    </item>
+    <item label="tftp-bruteforce">
+        <action name="Execute">
+            <command>tftp-bruteforce</command>
+        </action>
+    </item>
+    <item label="thc-pptp-bruter">
+        <action name="Execute">
+            <command>thc-pptp-bruter</command>
+        </action>
+    </item>
+    <item label="ufo-wardriving">
+        <action name="Execute">
+            <command>ufo-wardriving</command>
+        </action>
+    </item>
+    <item label="vnc-bypauth">
+        <action name="Execute">
+            <command>vnc-bypauth</command>
+        </action>
+    </item>
+    <item label="vncrack">
+        <action name="Execute">
+            <command>vncrack</command>
+        </action>
+    </item>
+    <item label="wifite">
+        <action name="Execute">
+            <command>wifite</command>
+        </action>
+    </item>
+    <item label="wmat">
+        <action name="Execute">
+            <command>wmat</command>
+        </action>
+    </item>
+    <item label="wyd">
+        <action name="Execute">
+            <command>wyd</command>
+        </action>
+    </item>
+    <item label="zulu">
+        <action name="Execute">
+            <command>zulu</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-crypto-menu" label="crypto">
