@@ -14,90 +14,894 @@
 
     [submenu] (blackarch)
         [submenu] (anti-forensic)
+			[exec] (secure-delete) {secure-delete}
         [end]
         [submenu] (automation)
+			[exec] (cewl) {cewl}
+			[exec] (checksec) {checksec}
+			[exec] (crunch) {crunch}
+			[exec] (gooscan) {gooscan}
+			[exec] (hackersh) {hackersh}
+			[exec] (mitmap) {mitmap}
+			[exec] (nfspy) {nfspy}
+			[exec] (nfsshell) {nfsshell}
+			[exec] (panoptic) {panoptic}
+			[exec] (rsmangler) {rsmangler}
+			[exec] (sakis3g) {sakis3g}
+			[exec] (simple-ducky) {simple-ducky}
+			[exec] (sipvicious) {sipvicious}
+			[exec] (sploitctl) {sploitctl}
+			[exec] (tiger) {tiger}
+			[exec] (tlssled) {tlssled}
+			[exec] (unix-privesc-check) {unix-privesc-check}
+			[exec] (username-anarchy) {username-anarchy}
+			[exec] (voiphopper) {voiphopper}
+			[exec] (wiffy) {wiffy}
+			[exec] (wnmap) {wnmap}
         [end]
         [submenu] (backdoor)
+			[exec] (backdoor-factory) {backdoor-factory}
+			[exec] (cymothoa) {cymothoa}
+			[exec] (enyelkm) {enyelkm}
+			[exec] (hotpatch) {hotpatch}
+			[exec] (jynx2) {jynx2}
+			[exec] (ms-sys) {ms-sys}
+			[exec] (rrs) {rrs}
+			[exec] (rubilyn) {rubilyn}
+			[exec] (trixd00r) {trixd00r}
+			[exec] (tsh) {tsh}
+			[exec] (webacoo) {webacoo}
+			[exec] (webshells) {webshells}
+			[exec] (weevely) {weevely}
         [end]
         [submenu] (binary)
+			[exec] (backdoor-factory) {backdoor-factory}
+			[exec] (binwally) {binwally}
+			[exec] (ms-sys) {ms-sys}
+			[exec] (packerid) {packerid}
         [end]
         [submenu] (bluetooth)
+			[exec] (bluebugger) {bluebugger}
+			[exec] (bluelog) {bluelog}
+			[exec] (bluepot) {bluepot}
+			[exec] (blueprint) {blueprint}
+			[exec] (bluesnarfer) {bluesnarfer}
+			[exec] (braces) {braces}
+			[exec] (bss) {bss}
+			[exec] (bt_audit) {bt_audit}
+			[exec] (btcrack) {btcrack}
+			[exec] (btscanner) {btscanner}
+			[exec] (carwhisperer) {carwhisperer}
+			[exec] (ghettotooth) {ghettotooth}
+			[exec] (hidattack) {hidattack}
+			[exec] (obexstress) {obexstress}
+			[exec] (redfang) {redfang}
+			[exec] (spooftooph) {spooftooph}
+			[exec] (tbear) {tbear}
+			[exec] (ubertooth) {ubertooth}
         [end]
         [submenu] (code-audit)
+			[exec] (flawfinder) {flawfinder}
+			[exec] (pscan) {pscan}
         [end]
         [submenu] (cracker)
-        [end]
-        [submenu] (cross-compiling)
+			[exec] (acccheck) {acccheck}
+			[exec] (aesfix) {aesfix}
+			[exec] (aeskeyfind) {aeskeyfind}
+			[exec] (against) {against}
+			[exec] (asleap) {asleap}
+			[exec] (beleth) {beleth}
+			[exec] (bios_memimage) {bios_memimage}
+			[exec] (blackhash) {blackhash}
+			[exec] (bob-the-butcher) {bob-the-butcher}
+			[exec] (brutessh) {brutessh}
+			[exec] (btcrack) {btcrack}
+			[exec] (bully) {bully}
+			[exec] (cewl) {cewl}
+			[exec] (cisco-auditing-tool) {cisco-auditing-tool}
+			[exec] (cisco-ocs) {cisco-ocs}
+			[exec] (cmospwd) {cmospwd}
+			[exec] (cowpatty) {cowpatty}
+			[exec] (creddump) {creddump}
+			[exec] (crunch) {crunch}
+			[exec] (cupp) {cupp}
+			[exec] (dbpwaudit) {dbpwaudit}
+			[exec] (dpeparser) {dpeparser}
+			[exec] (eapmd5pass) {eapmd5pass}
+			[exec] (enabler) {enabler}
+			[exec] (evilmaid) {evilmaid}
+			[exec] (fang) {fang}
+			[exec] (fern-wifi-cracker) {fern-wifi-cracker}
+			[exec] (findmyhash) {findmyhash}
+			[exec] (hashcat) {hashcat}
+			[exec] (hashcat-utils) {hashcat-utils}
+			[exec] (hashtag) {hashtag}
+			[exec] (hydra) {hydra}
+			[exec] (iheartxor) {iheartxor}
+			[exec] (ikecrack) {ikecrack}
+			[exec] (inguma) {inguma}
+			[exec] (jbrute) {jbrute}
+			[exec] (johnny) {johnny}
+			[exec] (keimpx) {keimpx}
+			[exec] (lodowep) {lodowep}
+			[exec] (maskprocessor) {maskprocessor}
+			[exec] (masscan) {masscan}
+			[exec] (mdcrack) {mdcrack}
+			[exec] (medusa) {medusa}
+			[exec] (mfoc) {mfoc}
+			[exec] (morxbrute) {morxbrute}
+			[exec] (onesixtyone) {onesixtyone}
+			[exec] (owabf) {owabf}
+			[exec] (pack) {pack}
+			[exec] (passcracking) {passcracking}
+			[exec] (patator) {patator}
+			[exec] (pdfcrack) {pdfcrack}
+			[exec] (pdgmail) {pdgmail}
+			[exec] (phoss) {phoss}
+			[exec] (php-mt-seed) {php-mt-seed}
+			[exec] (phrasendrescher) {phrasendrescher}
+			[exec] (pipal) {pipal}
+			[exec] (pyrit) {pyrit}
+			[exec] (rainbowcrack) {rainbowcrack}
+			[exec] (rarcrack) {rarcrack}
+			[exec] (rcracki-mt) {rcracki-mt}
+			[exec] (rdesktop-brute) {rdesktop-brute}
+			[exec] (reaver) {reaver}
+			[exec] (rootbrute) {rootbrute}
+			[exec] (rsakeyfind) {rsakeyfind}
+			[exec] (samdump2) {samdump2}
+			[exec] (samydeluxe) {samydeluxe}
+			[exec] (sidguesser) {sidguesser}
+			[exec] (sipcrack) {sipcrack}
+			[exec] (smbbf) {smbbf}
+			[exec] (sqlpat) {sqlpat}
+			[exec] (ssh-privkey-crack) {ssh-privkey-crack}
+			[exec] (sshatter) {sshatter}
+			[exec] (sshtrix) {sshtrix}
+			[exec] (sslnuke) {sslnuke}
+			[exec] (statsprocessor) {statsprocessor}
+			[exec] (sucrack) {sucrack}
+			[exec] (tftp-bruteforce) {tftp-bruteforce}
+			[exec] (thc-pptp-bruter) {thc-pptp-bruter}
+			[exec] (ufo-wardriving) {ufo-wardriving}
+			[exec] (vnc-bypauth) {vnc-bypauth}
+			[exec] (vncrack) {vncrack}
+			[exec] (wifite) {wifite}
+			[exec] (wmat) {wmat}
+			[exec] (wyd) {wyd}
+			[exec] (zulu) {zulu}
         [end]
         [submenu] (crypto)
+			[exec] (bletchley) {bletchley}
+			[exec] (ciphertest) {ciphertest}
+			[exec] (hash-identifier) {hash-identifier}
+			[exec] (nomorexor) {nomorexor}
+			[exec] (sbd) {sbd}
+			[exec] (xorbruteforcer) {xorbruteforcer}
+			[exec] (xorsearch) {xorsearch}
+			[exec] (xortool) {xortool}
         [end]
-        [submenu] (database)
-        [end]
-        [submenu] (debugger)
-        [end]
+		[submenu] (database)
+			[exec] (blindsql) {blindsql}
+			[exec] (getsids) {getsids}
+			[exec] (metacoretex) {metacoretex}
+			[exec] (minimysqlator) {minimysqlator}
+		[end]
+		[submenu] (debugger)
+			[exec] (edb) {edb}
+			[exec] (ollydbg) {ollydbg}
+			[exec] (radare2) {radare2}
+			[exec] (shellnoob) {shellnoob}
+			[exec] (vivisect) {vivisect}
+		[end]
         [submenu] (decompiler)
+			[exec] (flasm) {flasm}
         [end]
         [submenu] (defensive)
+			[exec] (arpalert) {arpalert}
+			[exec] (arpantispoofer) {arpantispoofer}
+			[exec] (arpon) {arpon}
+			[exec] (artillery) {artillery}
+			[exec] (chkrootkit) {chkrootkit}
+			[exec] (dbpwaudit) {dbpwaudit}
+			[exec] (inetsim) {inetsim}
+			[exec] (secure-delete) {secure-delete}
+			[exec] (sniffjoke) {sniffjoke}
+			[exec] (tor-autocircuit) {tor-autocircuit}
         [end]
         [submenu] (disassembler)
+			[exec] (inguma) {inguma}
+			[exec] (radare2) {radare2}
+			[exec] (vivisect) {vivisect}
         [end]
         [submenu] (dos)
+			(dnsdrdos) {dnsdrdos}
+			(hwk) {hwk}
+			(iaxflood) {iaxflood}
+			(mausezahn) {mausezahn}
+			(nkiller2) {nkiller2}
+			(slowhttptest) {slowhttptest}
+			(t50) {t50}
+			(thc-ipv6) {thc-ipv6}
+			(thc-ssl-dos) {thc-ssl-dos}
         [end]
         [submenu] (drone)
+			[exec] (skyjack) {skyjack}
         [end]
         [submenu] (exploitation)
+			[exec] (armitage) {armitage}
+			[exec] (arpoison) {arpoison}
+			[exec] (bbqsql) {bbqsql}
+			[exec] (bed) {bed}
+			[exec] (bfbtester) {bfbtester}
+			[exec] (cisco-global-exploiter) {cisco-global-exploiter}
+			[exec] (cisco-torch) {cisco-torch}
+			[exec] (darkd0rk3r) {darkd0rk3r}
+			[exec] (darkmysqli) {darkmysqli}
+			[exec] (dotdotpwn) {dotdotpwn}
+			[exec] (exploit-db) {exploit-db}
+			[exec] (fimap) {fimap}
+			[exec] (hamster) {hamster}
+			[exec] (hcraft) {hcraft}
+			[exec] (htexploit) {htexploit}
+			[exec] (htshells) {htshells}
+			[exec] (inguma) {inguma}
+			[exec] (irpas) {irpas}
+			[exec] (killerbee) {killerbee}
+			[exec] (leroy-jenkins) {leroy-jenkins}
+			[exec] (lfi-autopwn) {lfi-autopwn}
+			[exec] (loki) {loki}
+			[exec] (metasploit) {metasploit}
+			[exec] (miranda-upnp) {miranda-upnp}
+			[exec] (mitmap) {mitmap}
+			[exec] (mitmproxy) {mitmproxy}
+			[exec] (padbuster) {padbuster}
+			[exec] (paxtest) {paxtest}
+			[exec] (pblind) {pblind}
+			[exec] (pentbox) {pentbox}
+			[exec] (pirana) {pirana}
+			[exec] (powersploit) {powersploit}
+			[exec] (rebind) {rebind}
+			[exec] (rfcat) {rfcat}
+			[exec] (ropeme) {ropeme}
+			[exec] (ropgadget) {ropgadget}
+			[exec] (ruby-ronin-support) {ruby-ronin-support}
+			[exec] (set) {set}
+			[exec] (shellcodecs) {shellcodecs}
+			[exec] (shellnoob) {shellnoob}
+			[exec] (simple-ducky) {simple-ducky}
+			[exec] (sipvicious) {sipvicious}
+			[exec] (sploitctl) {sploitctl}
+			[exec] (sqlmap) {sqlmap}
+			[exec] (sqlninja) {sqlninja}
+			[exec] (sqlsus) {sqlsus}
+			[exec] (subterfuge) {subterfuge}
+			[exec] (tcpjunk) {tcpjunk}
+			[exec] (thc-ipv6) {thc-ipv6}
+			[exec] (veil) {veil}
+			[exec] (vnc-bypauth) {vnc-bypauth}
+			[exec] (websploit) {websploit}
+			[exec] (zarp) {zarp}
         [end]
         [submenu] (fingerprint)
+			[exec] (asp-audit) {asp-audit}
+			[exec] (blindelephant) {blindelephant}
+			[exec] (cisco-torch) {cisco-torch}
+			[exec] (cms-explorer) {cms-explorer}
+			[exec] (complemento) {complemento}
+			[exec] (dnsmap) {dnsmap}
+			[exec] (ftpmap) {ftpmap}
+			[exec] (httprint) {httprint}
+			[exec] (kolkata) {kolkata}
+			[exec] (p0f) {p0f}
+			[exec] (plecost) {plecost}
+			[exec] (propecia) {propecia}
+			[exec] (sinfp) {sinfp}
+			[exec] (smtpmap) {smtpmap}
+			[exec] (smtpscan) {smtpscan}
+			[exec] (xprobe2) {xprobe2}
         [end]
         [submenu] (forensic)
+			[exec] (aesfix) {aesfix}
+			[exec] (aeskeyfind) {aeskeyfind}
+			[exec] (afflib) {afflib}
+            [exec] (aimage) {aimage}
+            [exec] (air) {air}
+            [exec] (autopsy) {autopsy}
+            [exec] (bios_memimage) {bios_memimage}
+            [exec] (bulk-extractor) {bulk-extractor}
+            [exec] (canari) {canari}
+            [exec] (casefile) {casefile}
+            [exec] (chkrootkit) {chkrootkit}
+            [exec] (dc3dd) {dc3dd}
+            [exec] (eindeutig) {eindeutig}
+            [exec] (foremost) {foremost}
+            [exec] (galleta) {galleta}
+            [exec] (grokevt) {grokevt}
+            [exec] (guymager) {guymager}
+            [exec] (libewf) {libewf}
+            [exec] (magicrescue) {magicrescue}
+            [exec] (make-pdf) {make-pdf}
+            [exec] (maltego) {maltego}
+            [exec] (malwaredetect) {malwaredetect}
+            [exec] (md5deep) {md5deep}
+            [exec] (mdbtools) {mdbtools}
+            [exec] (memdump) {memdump}
+            [exec] (memfetch) {memfetch}
+            [exec] (nfex) {nfex}
+            [exec] (origami) {origami}
+            [exec] (pasco) {pasco}
+            [exec] (pdf-parser) {pdf-parser}
+            [exec] (pdfid) {pdfid}
+            [exec] (peepdf) {peepdf}
+            [exec] (pev) {pev}
+            [exec] (recoverjpeg) {recoverjpeg}
+            [exec] (reglookup) {reglookup}
+            [exec] (rifiuti2) {rifiuti2}
+            [exec] (rsakeyfind) {rsakeyfind}
+            [exec] (safecopy) {safecopy}
+            [exec] (scalpel) {scalpel}
+            [exec] (scrounge-ntfs) {scrounge-ntfs}
+            [exec] (vinetto) {vinetto}
+            [exec] (volatility) {volatility}
+            [exec] (wyd) {wyd}
         [end]
         [submenu] (fuzzer)
+            [exec] (browser-fuzzer) {browser-fuzzer}
+            [exec] (bss) {bss}
+            [exec] (bt_audit) {bt_audit}
+            [exec] (bunny) {bunny}
+            [exec] (burpsuite) {burpsuite}
+            [exec] (cirt-fuzzer) {cirt-fuzzer}
+            [exec] (cisco-auditing-tool) {cisco-auditing-tool}
+            [exec] (conscan) {conscan}
+            [exec] (cookie-cadger) {cookie-cadger}
+            [exec] (dotdotpwn) {dotdotpwn}
+            [exec] (easyfuzzer) {easyfuzzer}
+            [exec] (fimap) {fimap}
+            [exec] (firewalk) {firewalk}
+            [exec] (ftester) {ftester}
+            [exec] (ftp-fuzz) {ftp-fuzz}
+            [exec] (fusil) {fusil}
+            [exec] (fuzzball2) {fuzzball2}
+            [exec] (fuzzdb) {fuzzdb}
+            [exec] (fuzzdiff) {fuzzdiff}
+            [exec] (hexorbase) {hexorbase}
+            [exec] (http-fuzz) {http-fuzz}
+            [exec] (hwk) {hwk}
+            [exec] (ikeprober) {ikeprober}
+            [exec] (inguma) {inguma}
+            [exec] (jbrofuzz) {jbrofuzz}
+            [exec] (lfi-autopwn) {lfi-autopwn}
+            [exec] (mdk3) {mdk3}
+            [exec] (metasploit) {metasploit}
+            [exec] (nikto) {nikto}
+            [exec] (notspikefile) {notspikefile}
+            [exec] (oat) {oat}
+            [exec] (ohrwurm) {ohrwurm}
+            [exec] (oscanner) {oscanner}
+            [exec] (peach) {peach}
+            [exec] (powerfuzzer) {powerfuzzer}
+            [exec] (radamsa) {radamsa}
+            [exec] (ratproxy) {ratproxy}
+            [exec] (sfuzz) {sfuzz}
+            [exec] (skipfish) {skipfish}
+            [exec] (smtp-fuzz) {smtp-fuzz}
+            [exec] (spiderpig-pdffuzzer) {spiderpig-pdffuzzer}
+            [exec] (spike) {spike}
+            [exec] (sqlbrute) {sqlbrute}
+            [exec] (sqlmap) {sqlmap}
+            [exec] (sqlninja) {sqlninja}
+            [exec] (sulley) {sulley}
+            [exec] (taof) {taof}
+            [exec] (tcpcontrol-fuzzer) {tcpcontrol-fuzzer}
+            [exec] (tcpjunk) {tcpjunk}
+            [exec] (termineter) {termineter}
+            [exec] (tftp-fuzz) {tftp-fuzz}
+            [exec] (uniofuzz) {uniofuzz}
+            [exec] (uniscan) {uniscan}
+            [exec] (vulscan) {vulscan}
+            [exec] (wapiti) {wapiti}
+            [exec] (webscarab) {webscarab}
+            [exec] (webshag) {webshag}
+            [exec] (websploit) {websploit}
+            [exec] (wfuzz) {wfuzz}
+            [exec] (wsfuzzer) {wsfuzzer}
+            [exec] (zaproxy) {zaproxy}
+            [exec] (zzuf) {zzuf}
         [end]
         [submenu] (hardware)
+            [exec] (arduino) {arduino}
+            [exec] (dex2jar) {dex2jar}
+            [exec] (kautilya) {kautilya}
+            [exec] (smali) {smali}
         [end]
         [submenu] (honeypot)
+            [exec] (artillery) {artillery}
+            [exec] (bluepot) {bluepot}
+            [exec] (fakeap) {fakeap}
+            [exec] (fiked) {fiked}
+            [exec] (honeyd) {honeyd}
+            [exec] (inetsim) {inetsim}
+            [exec] (kippo) {kippo}
+            [exec] (wifi-honey) {wifi-honey}
         [end]
         [submenu] (keylogger)
         [end]
         [submenu] (malware)
+            [exec] (malwaredetect) {malwaredetect}
+            [exec] (peepdf) {peepdf}
+            [exec] (python2-yara) {python2-yara}
+            [exec] (yara) {yara}
+            [exec] (zerowine) {zerowine}
         [end]
         [submenu] (misc)
+            [exec] (3proxy) {3proxy}
+            [exec] (airgraph-ng) {airgraph-ng}
+            [exec] (binwalk) {binwalk}
+            [exec] (bulk-extractor) {bulk-extractor}
+            [exec] (cisco-router-config) {cisco-router-config}
+            [exec] (cryptcat) {cryptcat}
+            [exec] (dbd) {dbd}
+            [exec] (dhcdrop) {dhcdrop}
+            [exec] (elettra) {elettra}
+            [exec] (elettra-gui) {elettra-gui}
+            [exec] (ent) {ent}
+            [exec] (evilgrade) {evilgrade}
+            [exec] (fakemail) {fakemail}
+            [exec] (firmware-mod-kit) {firmware-mod-kit}
+            [exec] (flare) {flare}
+            [exec] (genlist) {genlist}
+            [exec] (geoedge) {geoedge}
+            [exec] (geoipgen) {geoipgen}
+            [exec] (hackersh) {hackersh}
+            [exec] (http-put) {http-put}
+            [exec] (inundator) {inundator}
+            [exec] (laudanum) {laudanum}
+            [exec] (leo) {leo}
+            [exec] (list-urls) {list-urls}
+            [exec] (mibble) {mibble}
+            [exec] (netactview) {netactview}
+            [exec] (oh-my-zsh-git) {oh-my-zsh-git}
+            [exec] (perl-tftp) {perl-tftp}
+            [exec] (pyinstaller) {pyinstaller}
+            [exec] (python-utidylib) {python-utidylib}
+            [exec] (sakis3g) {sakis3g}
+            [exec] (schnappi-dhcp) {schnappi-dhcp}
+            [exec] (sslcat) {sslcat}
+            [exec] (sslyze) {sslyze}
+            [exec] (stompy) {stompy}
+            [exec] (tcpxtract) {tcpxtract}
+            [exec] (tnscmd) {tnscmd}
+            [exec] (tpcat) {tpcat}
+            [exec] (uatester) {uatester}
+            [exec] (vfeed) {vfeed}
+            [exec] (wol-e) {wol-e}
         [end]
         [submenu] (mobile)
+            [exec] (android-udev-rules) {android-udev-rules}
         [end]
         [submenu] (networking)
+            [exec] (httping) {httping}
+            [exec] (hyenae) {hyenae}
+            [exec] (ipaudit) {ipaudit}
+            [exec] (jnetmap) {jnetmap}
+            [exec] (mausezahn) {mausezahn}
+            [exec] (middler) {middler}
+            [exec] (nbtool) {nbtool}
+            [exec] (netmap) {netmap}
+            [exec] (netsed) {netsed}
+            [exec] (nfex) {nfex}
+            [exec] (nfsshell) {nfsshell}
+            [exec] (nipper) {nipper}
+            [exec] (nkiller2) {nkiller2}
+            [exec] (packit) {packit}
+            [exec] (perl-tftp) {perl-tftp}
+            [exec] (ptunnel) {ptunnel}
+            [exec] (pwnat) {pwnat}
+            [exec] (pyminifakedns) {pyminifakedns}
+            [exec] (responder) {responder}
+            [exec] (rtpbreak) {rtpbreak}
+            [exec] (sbd) {sbd}
+            [exec] (scapy) {scapy}
+            [exec] (snmpcheck) {snmpcheck}
+            [exec] (sslstrip) {sslstrip}
+            [exec] (t50) {t50}
+            [exec] (tcptraceroute) {tcptraceroute}
+            [exec] (thc-ipv6) {thc-ipv6}
+            [exec] (udptunnel) {udptunnel}
+            [exec] (wol-e) {wol-e}
+            [exec] (yersinia) {yersinia}
+            [exec] (zarp) {zarp}
         [end]
         [submenu] (nfc)
+            [exec] (nfcutils) {nfcutils}
         [end]
         [submenu] (packer)
+            [exec] (packerid) {packerid}
         [end]
         [submenu] (proxy)
+            [exec] (burpsuite) {burpsuite}
+            [exec] (dnschef) {dnschef}
+            [exec] (fakedns) {fakedns}
+            [exec] (mitmproxy) {mitmproxy}
+            [exec] (pathod) {pathod}
+            [exec] (ratproxy) {ratproxy}
+            [exec] (sergio-proxy) {sergio-proxy}
+            [exec] (sslnuke) {sslnuke}
+            [exec] (webscarab) {webscarab}
         [end]
         [submenu] (recon)
+            [exec] (canari) {canari}
+            [exec] (casefile) {casefile}
+            [exec] (cutycapt) {cutycapt}
+            [exec] (dnsenum) {dnsenum}
+            [exec] (dnsrecon) {dnsrecon}
+            [exec] (dnsspider) {dnsspider}
+            [exec] (dnswalk) {dnswalk}
+            [exec] (enum4linux) {enum4linux}
+            [exec] (goodork) {goodork}
+            [exec] (goofile) {goofile}
+            [exec] (goog-mail) {goog-mail}
+            [exec] (gwtenum) {gwtenum}
+            [exec] (halcyon) {halcyon}
+            [exec] (httping) {httping}
+            [exec] (intrace) {intrace}
+            [exec] (isr-form) {isr-form}
+            [exec] (lbd) {lbd}
+            [exec] (ldapenum) {ldapenum}
+            [exec] (lft) {lft}
+            [exec] (linux-exploit-suggester) {linux-exploit-suggester}
+            [exec] (maltego) {maltego}
+            [exec] (metagoofil) {metagoofil}
+            [exec] (missidentify) {missidentify}
+            [exec] (nbtool) {nbtool}
+            [exec] (netdiscover) {netdiscover}
+            [exec] (netmask) {netmask}
+            [exec] (nipper) {nipper}
+            [exec] (nsec3walker) {nsec3walker}
+            [exec] (pastenum) {pastenum}
+            [exec] (recon-ng) {recon-ng}
+            [exec] (rifiuti2) {rifiuti2}
+            [exec] (ripdc) {ripdc}
+            [exec] (sctpscan) {sctpscan}
+            [exec] (smtp-user-enum) {smtp-user-enum}
+            [exec] (snmpcheck) {snmpcheck}
+            [exec] (spiderfoot) {spiderfoot}
+            [exec] (subdomainer) {subdomainer}
+            [exec] (theharvester) {theharvester}
+            [exec] (twofi) {twofi}
+            [exec] (whatweb) {whatweb}
         [end]
         [submenu] (reversing)
+            [exec] (capstone) {capstone}
+            [exec] (dex2jar) {dex2jar}
+            [exec] (edb) {edb}
+            [exec] (flasm) {flasm}
+            [exec] (javasnoop) {javasnoop}
+            [exec] (jd-gui) {jd-gui}
+            [exec] (js-beautify) {js-beautify}
+            [exec] (packerid) {packerid}
+            [exec] (pev) {pev}
+            [exec] (radare2) {radare2}
+            [exec] (recstudio) {recstudio}
+            [exec] (scanmem) {scanmem}
+            [exec] (swfintruder) {swfintruder}
+            [exec] (udis86) {udis86}
+            [exec] (vivisect) {vivisect}
+            [exec] (zerowine) {zerowine}
         [end]
         [submenu] (scanner)
+		    [exec] (admsnmp) {admsnmp}
+		    [exec] (allthevhosts) {allthevhosts}
+		    [exec] (asp-audit) {asp-audit}
+		    [exec] (bluelog) {bluelog}
+		    [exec] (braa) {braa}
+		    [exec] (bss) {bss}
+		    [exec] (btscanner) {btscanner}
+		    [exec] (burpsuite) {burpsuite}
+		    [exec] (canari) {canari}
+		    [exec] (casefile) {casefile}
+		    [exec] (checksec) {checksec}
+		    [exec] (cisco-auditing-tool) {cisco-auditing-tool}
+		    [exec] (cisco-torch) {cisco-torch}
+		    [exec] (ciscos) {ciscos}
+		    [exec] (complemento) {complemento}
+		    [exec] (conscan) {conscan}
+		    [exec] (cookie-cadger) {cookie-cadger}
+		    [exec] (creepy) {creepy}
+		    [exec] (davtest) {davtest}
+		    [exec] (deblaze) {deblaze}
+		    [exec] (dhcpig) {dhcpig}
+		    [exec] (dirb) {dirb}
+		    [exec] (dirbuster) {dirbuster}
+		    [exec] (dmitry) {dmitry}
+		    [exec] (dnmap) {dnmap}
+		    [exec] (dnsa) {dnsa}
+		    [exec] (dnsbf) {dnsbf}
+		    [exec] (dnsenum) {dnsenum}
+		    [exec] (dnsgoblin) {dnsgoblin}
+		    [exec] (dnspredict) {dnspredict}
+		    [exec] (dnsspider) {dnsspider}
+		    [exec] (dnswalk) {dnswalk}
+		    [exec] (dpscan) {dpscan}
+		    [exec] (driftnet) {driftnet}
+		    [exec] (dripper) {dripper}
+		    [exec] (enum4linux) {enum4linux}
+		    [exec] (enumiax) {enumiax}
+		    [exec] (fierce) {fierce}
+		    [exec] (firewalk) {firewalk}
+		    [exec] (flawfinder) {flawfinder}
+		    [exec] (ftpmap) {ftpmap}
+		    [exec] (ghost-phisher) {ghost-phisher}
+		    [exec] (grepforrfi) {grepforrfi}
+		    [exec] (gsa) {gsa}
+		    [exec] (gsd) {gsd}
+		    [exec] (halberd) {halberd}
+		    [exec] (hexorbase) {hexorbase}
+		    [exec] (http-enum) {http-enum}
+		    [exec] (hwk) {hwk}
+		    [exec] (icmpquery) {icmpquery}
+		    [exec] (ike-scan) {ike-scan}
+		    [exec] (inguma) {inguma}
+		    [exec] (ipscan) {ipscan}
+		    [exec] (jigsaw) {jigsaw}
+		    [exec] (jsql) {jsql}
+		    [exec] (ldapenum) {ldapenum}
+		    [exec] (lynis) {lynis}
+		    [exec] (maltego) {maltego}
+		    [exec] (masscan) {masscan}
+		    [exec] (metasploit) {metasploit}
+		    [exec] (miranda-upnp) {miranda-upnp}
+		    [exec] (mssqlscan) {mssqlscan}
+		    [exec] (nbtool) {nbtool}
+		    [exec] (nikto) {nikto}
+		    [exec] (nmbscan) {nmbscan}
+		    [exec] (onesixtyone) {onesixtyone}
+		    [exec] (openvas-administrator) {openvas-administrator}
+		    [exec] (openvas-cli) {openvas-cli}
+		    [exec] (openvas-client) {openvas-client}
+		    [exec] (openvas-manager) {openvas-manager}
+		    [exec] (openvas-scanner) {openvas-scanner}
+		    [exec] (paketto) {paketto}
+		    [exec] (pnscan) {pnscan}
+		    [exec] (propecia) {propecia}
+		    [exec] (ratproxy) {ratproxy}
+		    [exec] (rawr) {rawr}
+		    [exec] (redfang) {redfang}
+		    [exec] (relay-scanner) {relay-scanner}
+		    [exec] (ripdc) {ripdc}
+		    [exec] (scanssh) {scanssh}
+		    [exec] (sctpscan) {sctpscan}
+		    [exec] (skipfish) {skipfish}
+		    [exec] (smtp-user-enum) {smtp-user-enum}
+		    [exec] (smtp-vrfy) {smtp-vrfy}
+		    [exec] (snmpenum) {snmpenum}
+		    [exec] (snmpscan) {snmpscan}
+		    [exec] (sslcaudit) {sslcaudit}
+		    [exec] (sslscan) {sslscan}
+		    [exec] (subdomainer) {subdomainer}
+		    [exec] (synscan) {synscan}
+		    [exec] (tiger) {tiger}
+		    [exec] (tlssled) {tlssled}
+		    [exec] (unicornscan) {unicornscan}
+		    [exec] (uniscan) {uniscan}
+		    [exec] (unix-privesc-check) {unix-privesc-check}
+		    [exec] (upnpscan) {upnpscan}
+		    [exec] (videosnarf) {videosnarf}
+		    [exec] (vulscan) {vulscan}
+		    [exec] (waffit) {waffit}
+		    [exec] (wapiti) {wapiti}
+		    [exec] (webenum) {webenum}
+		    [exec] (webrute) {webrute}
+		    [exec] (webscarab) {webscarab}
+		    [exec] (webshag) {webshag}
+		    [exec] (websploit) {websploit}
+		    [exec] (wnmap) {wnmap}
+		    [exec] (wpscan) {wpscan}
+		    [exec] (yersinia) {yersinia}
+		    [exec] (zmap) {zmap}
         [end]
         [submenu] (sniffer)
+		    [exec] (cdpsnarf) {cdpsnarf}
+		    [exec] (driftnet) {driftnet}
+		    [exec] (hexinject) {hexinject}
+		    [exec] (mitmap) {mitmap}
+		    [exec] (netsniff-ng) {netsniff-ng}
+		    [exec] (p0f) {p0f}
+		    [exec] (passivedns) {passivedns}
+		    [exec] (phoss) {phoss}
+		    [exec] (pytacle) {pytacle}
+		    [exec] (ssldump) {ssldump}
+		    [exec] (sslsniff) {sslsniff}
+		    [exec] (tcpick) {tcpick}
+		    [exec] (tuxcut) {tuxcut}
+		    [exec] (wifi-monitor) {wifi-monitor}
+		    [exec] (xspy) {xspy}
         [end]
         [submenu] (social)
+		    [exec] (creepy) {creepy}
+		    [exec] (jigsaw) {jigsaw}
+		    [exec] (set) {set}
+		    [exec] (websploit) {websploit}
         [end]
         [submenu] (spoof)
+		    [exec] (admid-pack) {admid-pack}
+		    [exec] (arpoison) {arpoison}
+		    [exec] (fakedns) {fakedns}
+		    [exec] (inundator) {inundator}
+		    [exec] (lans) {lans}
+		    [exec] (lsrtunnel) {lsrtunnel}
+		    [exec] (multimac) {multimac}
+		    [exec] (nbnspoof) {nbnspoof}
+		    [exec] (netcommander) {netcommander}
+		    [exec] (pyminifakedns) {pyminifakedns}
+		    [exec] (sergio-proxy) {sergio-proxy}
         [end]
         [submenu] (threat-model)
+            [exec] (magictree) {magictree}
         [end]
         [submenu] (tunnel)
+		    [exec] (chownat) {chownat}
+		    [exec] (ctunnel) {ctunnel}
+		    [exec] (dns2tcp) {dns2tcp}
+		    [exec] (icmptx) {icmptx}
+		    [exec] (iodine) {iodine}
+		    [exec] (matahari) {matahari}
+		    [exec] (ptunnel) {ptunnel}
+		    [exec] (udptunnel) {udptunnel}
         [end]
         [submenu] (unpacker)
+            [exec] (js-beautify) {js-beautify}
         [end]
         [submenu] (voip)
+		    [exec] (ace) {ace}
+		    [exec] (erase-registrations) {erase-registrations}
+		    [exec] (iaxflood) {iaxflood}
+		    [exec] (pcapsipdump) {pcapsipdump}
+		    [exec] (redirectpoison) {redirectpoison}
+		    [exec] (rtp-flood) {rtp-flood}
+		    [exec] (siparmyknife) {siparmyknife}
+		    [exec] (sipcrack) {sipcrack}
+		    [exec] (sipp) {sipp}
+		    [exec] (sipsak) {sipsak}
+		    [exec] (teardown) {teardown}
+		    [exec] (vnak) {vnak}
+		    [exec] (voiper) {voiper}
+		    [exec] (voiphopper) {voiphopper}
+		    [exec] (voipong) {voipong}
         [end]
         [submenu] (webapp)
+		    [exec] (allthevhosts) {allthevhosts}
+		    [exec] (asp-audit) {asp-audit}
+		    [exec] (bbqsql) {bbqsql}
+		    [exec] (blindelephant) {blindelephant}
+		    [exec] (bsqlbf) {bsqlbf}
+		    [exec] (burpsuite) {burpsuite}
+		    [exec] (cms-explorer) {cms-explorer}
+		    [exec] (csrftester) {csrftester}
+		    [exec] (darkd0rk3r) {darkd0rk3r}
+		    [exec] (darkjumper) {darkjumper}
+		    [exec] (darkmysqli) {darkmysqli}
+		    [exec] (dff-scanner) {dff-scanner}
+		    [exec] (dirb) {dirb}
+		    [exec] (dirbuster) {dirbuster}
+		    [exec] (easyfuzzer) {easyfuzzer}
+		    [exec] (golismero) {golismero}
+		    [exec] (grabber) {grabber}
+		    [exec] (gwtenum) {gwtenum}
+		    [exec] (halberd) {halberd}
+		    [exec] (isr-form) {isr-form}
+		    [exec] (joomscan) {joomscan}
+		    [exec] (kolkata) {kolkata}
+		    [exec] (laudanum) {laudanum}
+		    [exec] (list-urls) {list-urls}
+		    [exec] (metoscan) {metoscan}
+		    [exec] (multiinjector) {multiinjector}
+		    [exec] (nikto) {nikto}
+		    [exec] (owtf) {owtf}
+		    [exec] (paros) {paros}
+		    [exec] (pblind) {pblind}
+		    [exec] (plecost) {plecost}
+		    [exec] (ratproxy) {ratproxy}
+		    [exec] (rawr) {rawr}
+		    [exec] (rww-attack) {rww-attack}
+		    [exec] (skipfish) {skipfish}
+		    [exec] (spike-proxy) {spike-proxy}
+		    [exec] (sqid) {sqid}
+		    [exec] (sqlbrute) {sqlbrute}
+		    [exec] (sqlmap) {sqlmap}
+		    [exec] (sqlninja) {sqlninja}
+		    [exec] (sqlsus) {sqlsus}
+		    [exec] (uatester) {uatester}
+		    [exec] (uniscan) {uniscan}
+		    [exec] (urlcrazy) {urlcrazy}
+		    [exec] (vega) {vega}
+		    [exec] (waffit) {waffit}
+		    [exec] (wapiti) {wapiti}
+		    [exec] (webacoo) {webacoo}
+		    [exec] (webenum) {webenum}
+		    [exec] (webhandler) {webhandler}
+		    [exec] (webrute) {webrute}
+		    [exec] (webscarab) {webscarab}
+		    [exec] (webshag) {webshag}
+		    [exec] (webshells) {webshells}
+		    [exec] (webslayer) {webslayer}
+		    [exec] (weevely) {weevely}
+		    [exec] (wfuzz) {wfuzz}
+		    [exec] (whatweb) {whatweb}
+		    [exec] (wmat) {wmat}
+		    [exec] (wpscan) {wpscan}
+		    [exec] (wsfuzzer) {wsfuzzer}
+		    [exec] (xsser) {xsser}
+		    [exec] (xsss) {xsss}
+		    [exec] (zaproxy) {zaproxy}
         [end]
         [submenu] (windows)
+		    [exec] (3proxy-win32) {3proxy-win32}
+		    [exec] (brutus) {brutus}
+		    [exec] (creddump) {creddump}
+		    [exec] (dumpacl) {dumpacl}
+		    [exec] (fport) {fport}
+		    [exec] (handle) {handle}
+		    [exec] (httprint-win32) {httprint-win32}
+		    [exec] (hyperion) {hyperion}
+		    [exec] (ikeprobe) {ikeprobe}
+		    [exec] (klogger) {klogger}
+		    [exec] (mbenum) {mbenum}
+		    [exec] (missidentify) {missidentify}
+		    [exec] (nbtenum) {nbtenum}
+		    [exec] (nishang) {nishang}
+		    [exec] (ollydbg) {ollydbg}
+		    [exec] (orakelcrackert) {orakelcrackert}
+		    [exec] (powersploit) {powersploit}
+		    [exec] (pstoreview) {pstoreview}
+		    [exec] (pwdump) {pwdump}
+		    [exec] (sipscan) {sipscan}
+		    [exec] (smbrelay) {smbrelay}
+		    [exec] (snscan) {snscan}
+		    [exec] (spade) {spade}
+		    [exec] (sqlping) {sqlping}
+		    [exec] (superscan) {superscan}
+		    [exec] (sysinternals-suite) {sysinternals-suite}
+		    [exec] (unsecure) {unsecure}
+		    [exec] (winfo) {winfo}
+		    [exec] (x-scan) {x-scan}
         [end]
         [submenu] (wireless)
+		    [exec] (airflood) {airflood}
+		    [exec] (airoscript) {airoscript}
+		    [exec] (airpwn) {airpwn}
+		    [exec] (batctl) {batctl}
+		    [exec] (batman-adv) {batman-adv}
+		    [exec] (bully) {bully}
+		    [exec] (cowpatty) {cowpatty}
+		    [exec] (eapmd5pass) {eapmd5pass}
+		    [exec] (fern-wifi-cracker) {fern-wifi-cracker}
+		    [exec] (g72x++) {g72x++}
+		    [exec] (giskismet) {giskismet}
+		    [exec] (gqrx) {gqrx}
+		    [exec] (hotspotter) {hotspotter}
+		    [exec] (hwk) {hwk}
+		    [exec] (killerbee) {killerbee}
+		    [exec] (kismet-earth) {kismet-earth}
+		    [exec] (mdk3) {mdk3}
+		    [exec] (mfcuk) {mfcuk}
+		    [exec] (mfoc) {mfoc}
+		    [exec] (netdiscover) {netdiscover}
+		    [exec] (pyrit) {pyrit}
+		    [exec] (rfdump) {rfdump}
+		    [exec] (rfidiot) {rfidiot}
+		    [exec] (rfidtool) {rfidtool}
+		    [exec] (spectools) {spectools}
+		    [exec] (ufo-wardriving) {ufo-wardriving}
+		    [exec] (wepbuster) {wepbuster}
+		    [exec] (wiffy) {wiffy}
+		    [exec] (wifi-honey) {wifi-honey}
+		    [exec] (wifitap) {wifitap}
+		    [exec] (wifite) {wifite}
+		    [exec] (wlan2eth) {wlan2eth}
+		    [exec] (zulu) {zulu}
         [end]
     [end]
 
