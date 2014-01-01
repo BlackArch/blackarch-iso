@@ -1583,33 +1583,388 @@
 </menu>
 
 <menu id="blackarch-fuzzer-menu" label="fuzzer">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="browser-fuzzer">
+        <action name="Execute">
+            <command>browser-fuzzer</command>
+        </action>
+    </item>
+    <item label="bss">
+        <action name="Execute">
+            <command>bss</command>
+        </action>
+    </item>
+    <item label="bt_audit">
+        <action name="Execute">
+            <command>bt_audit</command>
+        </action>
+    </item>
+    <item label="bunny">
+        <action name="Execute">
+            <command>bunny</command>
+        </action>
+    </item>
+    <item label="burpsuite">
+        <action name="Execute">
+            <command>burpsuite</command>
+        </action>
+    </item>
+    <item label="cirt-fuzzer">
+        <action name="Execute">
+            <command>cirt-fuzzer</command>
+        </action>
+    </item>
+    <item label="cisco-auditing-tool">
+        <action name="Execute">
+            <command>cisco-auditing-tool</command>
+        </action>
+    </item>
+    <item label="conscan">
+        <action name="Execute">
+            <command>conscan</command>
+        </action>
+    </item>
+    <item label="cookie-cadger">
+        <action name="Execute">
+            <command>cookie-cadger</command>
+        </action>
+    </item>
+    <item label="dotdotpwn">
+        <action name="Execute">
+            <command>dotdotpwn</command>
+        </action>
+    </item>
+    <item label="easyfuzzer">
+        <action name="Execute">
+            <command>easyfuzzer</command>
+        </action>
+    </item>
+    <item label="fimap">
+        <action name="Execute">
+            <command>fimap</command>
+        </action>
+    </item>
+    <item label="firewalk">
+        <action name="Execute">
+            <command>firewalk</command>
+        </action>
+    </item>
+    <item label="ftester">
+        <action name="Execute">
+            <command>ftester</command>
+        </action>
+    </item>
+    <item label="ftp-fuzz">
+        <action name="Execute">
+            <command>ftp-fuzz</command>
+        </action>
+    </item>
+    <item label="fusil">
+        <action name="Execute">
+            <command>fusil</command>
+        </action>
+    </item>
+    <item label="fuzzball2">
+        <action name="Execute">
+            <command>fuzzball2</command>
+        </action>
+    </item>
+    <item label="fuzzdb">
+        <action name="Execute">
+            <command>fuzzdb</command>
+        </action>
+    </item>
+    <item label="fuzzdiff">
+        <action name="Execute">
+            <command>fuzzdiff</command>
+        </action>
+    </item>
+    <item label="hexorbase">
+        <action name="Execute">
+            <command>hexorbase</command>
+        </action>
+    </item>
+    <item label="http-fuzz">
+        <action name="Execute">
+            <command>http-fuzz</command>
+        </action>
+    </item>
+    <item label="hwk">
+        <action name="Execute">
+            <command>hwk</command>
+        </action>
+    </item>
+    <item label="ikeprober">
+        <action name="Execute">
+            <command>ikeprober</command>
+        </action>
+    </item>
+    <item label="inguma">
+        <action name="Execute">
+            <command>inguma</command>
+        </action>
+    </item>
+    <item label="jbrofuzz">
+        <action name="Execute">
+            <command>jbrofuzz</command>
+        </action>
+    </item>
+    <item label="lfi-autopwn">
+        <action name="Execute">
+            <command>lfi-autopwn</command>
+        </action>
+    </item>
+    <item label="mdk3">
+        <action name="Execute">
+            <command>mdk3</command>
+        </action>
+    </item>
+    <item label="metasploit">
+        <action name="Execute">
+            <command>metasploit</command>
+        </action>
+    </item>
+    <item label="nikto">
+        <action name="Execute">
+            <command>nikto</command>
+        </action>
+    </item>
+    <item label="notspikefile">
+        <action name="Execute">
+            <command>notspikefile</command>
+        </action>
+    </item>
+    <item label="oat">
+        <action name="Execute">
+            <command>oat</command>
+        </action>
+    </item>
+    <item label="ohrwurm">
+        <action name="Execute">
+            <command>ohrwurm</command>
+        </action>
+    </item>
+    <item label="oscanner">
+        <action name="Execute">
+            <command>oscanner</command>
+        </action>
+    </item>
+    <item label="peach">
+        <action name="Execute">
+            <command>peach</command>
+        </action>
+    </item>
+    <item label="powerfuzzer">
+        <action name="Execute">
+            <command>powerfuzzer</command>
+        </action>
+    </item>
+    <item label="radamsa">
+        <action name="Execute">
+            <command>radamsa</command>
+        </action>
+    </item>
+    <item label="ratproxy">
+        <action name="Execute">
+            <command>ratproxy</command>
+        </action>
+    </item>
+    <item label="sfuzz">
+        <action name="Execute">
+            <command>sfuzz</command>
+        </action>
+    </item>
+    <item label="skipfish">
+        <action name="Execute">
+            <command>skipfish</command>
+        </action>
+    </item>
+    <item label="smtp-fuzz">
+        <action name="Execute">
+            <command>smtp-fuzz</command>
+        </action>
+    </item>
+    <item label="spiderpig-pdffuzzer">
+        <action name="Execute">
+            <command>spiderpig-pdffuzzer</command>
+        </action>
+    </item>
+    <item label="spike">
+        <action name="Execute">
+            <command>spike</command>
+        </action>
+    </item>
+    <item label="sqlbrute">
+        <action name="Execute">
+            <command>sqlbrute</command>
+        </action>
+    </item>
+    <item label="sqlmap">
+        <action name="Execute">
+            <command>sqlmap</command>
+        </action>
+    </item>
+    <item label="sqlninja">
+        <action name="Execute">
+            <command>sqlninja</command>
+        </action>
+    </item>
+    <item label="sulley">
+        <action name="Execute">
+            <command>sulley</command>
+        </action>
+    </item>
+    <item label="taof">
+        <action name="Execute">
+            <command>taof</command>
+        </action>
+    </item>
+    <item label="tcpcontrol-fuzzer">
+        <action name="Execute">
+            <command>tcpcontrol-fuzzer</command>
+        </action>
+    </item>
+    <item label="tcpjunk">
+        <action name="Execute">
+            <command>tcpjunk</command>
+        </action>
+    </item>
+    <item label="termineter">
+        <action name="Execute">
+            <command>termineter</command>
+        </action>
+    </item>
+    <item label="tftp-fuzz">
+        <action name="Execute">
+            <command>tftp-fuzz</command>
+        </action>
+    </item>
+    <item label="uniofuzz">
+        <action name="Execute">
+            <command>uniofuzz</command>
+        </action>
+    </item>
+    <item label="uniscan">
+        <action name="Execute">
+            <command>uniscan</command>
+        </action>
+    </item>
+    <item label="vulscan">
+        <action name="Execute">
+            <command>vulscan</command>
+        </action>
+    </item>
+    <item label="wapiti">
+        <action name="Execute">
+            <command>wapiti</command>
+        </action>
+    </item>
+    <item label="webscarab">
+        <action name="Execute">
+            <command>webscarab</command>
+        </action>
+    </item>
+    <item label="webshag">
+        <action name="Execute">
+            <command>webshag</command>
+        </action>
+    </item>
+    <item label="websploit">
+        <action name="Execute">
+            <command>websploit</command>
+        </action>
+    </item>
+    <item label="wfuzz">
+        <action name="Execute">
+            <command>wfuzz</command>
+        </action>
+    </item>
+    <item label="wsfuzzer">
+        <action name="Execute">
+            <command>wsfuzzer</command>
+        </action>
+    </item>
+    <item label="zaproxy">
+        <action name="Execute">
+            <command>zaproxy</command>
+        </action>
+    </item>
+    <item label="zzuf">
+        <action name="Execute">
+            <command>zzuf</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-hardware-menu" label="hardware">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="arduino">
+        <action name="Execute">
+            <command>arduino</command>
+        </action>
+    </item>
+    <item label="dex2jar">
+        <action name="Execute">
+            <command>dex2jar</command>
+        </action>
+    </item>
+    <item label="kautilya">
+        <action name="Execute">
+            <command>kautilya</command>
+        </action>
+    </item>
+    <item label="smali">
+        <action name="Execute">
+            <command>smali</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-honeypot-menu" label="honeypot">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="artillery">
+        <action name="Execute">
+            <command>artillery</command>
+        </action>
+    </item>
+    <item label="bluepot">
+        <action name="Execute">
+            <command>bluepot</command>
+        </action>
+    </item>
+    <item label="fakeap">
+        <action name="Execute">
+            <command>fakeap</command>
+        </action>
+    </item>
+    <item label="fiked">
+        <action name="Execute">
+            <command>fiked</command>
+        </action>
+    </item>
+    <item label="honeyd">
+        <action name="Execute">
+            <command>honeyd</command>
+        </action>
+    </item>
+    <item label="inetsim">
+        <action name="Execute">
+            <command>inetsim</command>
+        </action>
+    </item>
+    <item label="kippo">
+        <action name="Execute">
+            <command>kippo</command>
+        </action>
+    </item>
+    <item label="wifi-honey">
+        <action name="Execute">
+            <command>wifi-honey</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-keylogger-menu" label="keylogger">
-	<item label="foo">
+	<item label="dummy">
 	<action name="Execute">
-		<command>foo</commnd>
+		<command>dummy</command>
 	</action>
 	</item>
 </menu>
