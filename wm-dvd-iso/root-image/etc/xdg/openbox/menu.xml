@@ -1970,139 +1970,1599 @@
 </menu>
 
 <menu id="blackarch-malware-menu" label="malware">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="malwaredetect">
+        <action name="Execute">
+            <command>malwaredetect</command>
+        </action>
+    </item>
+    <item label="peepdf">
+        <action name="Execute">
+            <command>peepdf</command>
+        </action>
+    </item>
+    <item label="python2-yara">
+        <action name="Execute">
+            <command>python2-yara</command>
+        </action>
+    </item>
+    <item label="yara">
+        <action name="Execute">
+            <command>yara</command>
+        </action>
+    </item>
+    <item label="zerowine">
+        <action name="Execute">
+            <command>zerowine</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-misc-menu" label="misc">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="3proxy">
+        <action name="Execute">
+            <command>3proxy</command>
+        </action>
+    </item>
+    <item label="airgraph-ng">
+        <action name="Execute">
+            <command>airgraph-ng</command>
+        </action>
+    </item>
+    <item label="binwalk">
+        <action name="Execute">
+            <command>binwalk</command>
+        </action>
+    </item>
+    <item label="bulk-extractor">
+        <action name="Execute">
+            <command>bulk-extractor</command>
+        </action>
+    </item>
+    <item label="cisco-router-config">
+        <action name="Execute">
+            <command>cisco-router-config</command>
+        </action>
+    </item>
+    <item label="cryptcat">
+        <action name="Execute">
+            <command>cryptcat</command>
+        </action>
+    </item>
+    <item label="dbd">
+        <action name="Execute">
+            <command>dbd</command>
+        </action>
+    </item>
+    <item label="dhcdrop">
+        <action name="Execute">
+            <command>dhcdrop</command>
+        </action>
+    </item>
+    <item label="elettra">
+        <action name="Execute">
+            <command>elettra</command>
+        </action>
+    </item>
+    <item label="elettra-gui">
+        <action name="Execute">
+            <command>elettra-gui</command>
+        </action>
+    </item>
+    <item label="ent">
+        <action name="Execute">
+            <command>ent</command>
+        </action>
+    </item>
+    <item label="evilgrade">
+        <action name="Execute">
+            <command>evilgrade</command>
+        </action>
+    </item>
+    <item label="fakemail">
+        <action name="Execute">
+            <command>fakemail</command>
+        </action>
+    </item>
+    <item label="firmware-mod-kit">
+        <action name="Execute">
+            <command>firmware-mod-kit</command>
+        </action>
+    </item>
+    <item label="flare">
+        <action name="Execute">
+            <command>flare</command>
+        </action>
+    </item>
+    <item label="genlist">
+        <action name="Execute">
+            <command>genlist</command>
+        </action>
+    </item>
+    <item label="geoedge">
+        <action name="Execute">
+            <command>geoedge</command>
+        </action>
+    </item>
+    <item label="geoipgen">
+        <action name="Execute">
+            <command>geoipgen</command>
+        </action>
+    </item>
+    <item label="hackersh">
+        <action name="Execute">
+            <command>hackersh</command>
+        </action>
+    </item>
+    <item label="http-put">
+        <action name="Execute">
+            <command>http-put</command>
+        </action>
+    </item>
+    <item label="inundator">
+        <action name="Execute">
+            <command>inundator</command>
+        </action>
+    </item>
+    <item label="laudanum">
+        <action name="Execute">
+            <command>laudanum</command>
+        </action>
+    </item>
+    <item label="leo">
+        <action name="Execute">
+            <command>leo</command>
+        </action>
+    </item>
+    <item label="list-urls">
+        <action name="Execute">
+            <command>list-urls</command>
+        </action>
+    </item>
+    <item label="mibble">
+        <action name="Execute">
+            <command>mibble</command>
+        </action>
+    </item>
+    <item label="netactview">
+        <action name="Execute">
+            <command>netactview</command>
+        </action>
+    </item>
+    <item label="oh-my-zsh-git">
+        <action name="Execute">
+            <command>oh-my-zsh-git</command>
+        </action>
+    </item>
+    <item label="perl-tftp">
+        <action name="Execute">
+            <command>perl-tftp</command>
+        </action>
+    </item>
+    <item label="pyinstaller">
+        <action name="Execute">
+            <command>pyinstaller</command>
+        </action>
+    </item>
+    <item label="python-utidylib">
+        <action name="Execute">
+            <command>python-utidylib</command>
+        </action>
+    </item>
+    <item label="sakis3g">
+        <action name="Execute">
+            <command>sakis3g</command>
+        </action>
+    </item>
+    <item label="schnappi-dhcp">
+        <action name="Execute">
+            <command>schnappi-dhcp</command>
+        </action>
+    </item>
+    <item label="sslcat">
+        <action name="Execute">
+            <command>sslcat</command>
+        </action>
+    </item>
+    <item label="sslyze">
+        <action name="Execute">
+            <command>sslyze</command>
+        </action>
+    </item>
+    <item label="stompy">
+        <action name="Execute">
+            <command>stompy</command>
+        </action>
+    </item>
+    <item label="tcpxtract">
+        <action name="Execute">
+            <command>tcpxtract</command>
+        </action>
+    </item>
+    <item label="tnscmd">
+        <action name="Execute">
+            <command>tnscmd</command>
+        </action>
+    </item>
+    <item label="tpcat">
+        <action name="Execute">
+            <command>tpcat</command>
+        </action>
+    </item>
+    <item label="uatester">
+        <action name="Execute">
+            <command>uatester</command>
+        </action>
+    </item>
+    <item label="vfeed">
+        <action name="Execute">
+            <command>vfeed</command>
+        </action>
+    </item>
+    <item label="wol-e">
+        <action name="Execute">
+            <command>wol-e</command>
+        </action>
+    </item>
 </menu>
 
-<menu id="blackarch-menu" label="mobile">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+<menu id="blackarch-mobile-menu" label="mobile">
+    <item label="android-udev-rules">
+        <action name="Execute">
+            <command>android-udev-rules</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-networking-menu" label="networking">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="httping">
+        <action name="Execute">
+            <command>httping</command>
+        </action>
+    </item>
+    <item label="hyenae">
+        <action name="Execute">
+            <command>hyenae</command>
+        </action>
+    </item>
+    <item label="ipaudit">
+        <action name="Execute">
+            <command>ipaudit</command>
+        </action>
+    </item>
+    <item label="jnetmap">
+        <action name="Execute">
+            <command>jnetmap</command>
+        </action>
+    </item>
+    <item label="mausezahn">
+        <action name="Execute">
+            <command>mausezahn</command>
+        </action>
+    </item>
+    <item label="middler">
+        <action name="Execute">
+            <command>middler</command>
+        </action>
+    </item>
+    <item label="nbtool">
+        <action name="Execute">
+            <command>nbtool</command>
+        </action>
+    </item>
+    <item label="netmap">
+        <action name="Execute">
+            <command>netmap</command>
+        </action>
+    </item>
+    <item label="netsed">
+        <action name="Execute">
+            <command>netsed</command>
+        </action>
+    </item>
+    <item label="nfex">
+        <action name="Execute">
+            <command>nfex</command>
+        </action>
+    </item>
+    <item label="nfsshell">
+        <action name="Execute">
+            <command>nfsshell</command>
+        </action>
+    </item>
+    <item label="nipper">
+        <action name="Execute">
+            <command>nipper</command>
+        </action>
+    </item>
+    <item label="nkiller2">
+        <action name="Execute">
+            <command>nkiller2</command>
+        </action>
+    </item>
+    <item label="packit">
+        <action name="Execute">
+            <command>packit</command>
+        </action>
+    </item>
+    <item label="perl-tftp">
+        <action name="Execute">
+            <command>perl-tftp</command>
+        </action>
+    </item>
+    <item label="ptunnel">
+        <action name="Execute">
+            <command>ptunnel</command>
+        </action>
+    </item>
+    <item label="pwnat">
+        <action name="Execute">
+            <command>pwnat</command>
+        </action>
+    </item>
+    <item label="pyminifakedns">
+        <action name="Execute">
+            <command>pyminifakedns</command>
+        </action>
+    </item>
+    <item label="responder">
+        <action name="Execute">
+            <command>responder</command>
+        </action>
+    </item>
+    <item label="rtpbreak">
+        <action name="Execute">
+            <command>rtpbreak</command>
+        </action>
+    </item>
+    <item label="sbd">
+        <action name="Execute">
+            <command>sbd</command>
+        </action>
+    </item>
+    <item label="scapy">
+        <action name="Execute">
+            <command>scapy</command>
+        </action>
+    </item>
+    <item label="snmpcheck">
+        <action name="Execute">
+            <command>snmpcheck</command>
+        </action>
+    </item>
+    <item label="sslstrip">
+        <action name="Execute">
+            <command>sslstrip</command>
+        </action>
+    </item>
+    <item label="t50">
+        <action name="Execute">
+            <command>t50</command>
+        </action>
+    </item>
+    <item label="tcptraceroute">
+        <action name="Execute">
+            <command>tcptraceroute</command>
+        </action>
+    </item>
+    <item label="thc-ipv6">
+        <action name="Execute">
+            <command>thc-ipv6</command>
+        </action>
+    </item>
+    <item label="udptunnel">
+        <action name="Execute">
+            <command>udptunnel</command>
+        </action>
+    </item>
+    <item label="wol-e">
+        <action name="Execute">
+            <command>wol-e</command>
+        </action>
+    </item>
+    <item label="yersinia">
+        <action name="Execute">
+            <command>yersinia</command>
+        </action>
+    </item>
+    <item label="zarp">
+        <action name="Execute">
+            <command>zarp</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-nfc-menu" label="nfc">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="nfcutils">
+        <action name="Execute">
+            <command>nfcutils</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-packer-menu" label="packer">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="packerid">
+        <action name="Execute">
+            <command>packerid</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-proxy-menu" label="proxy">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="burpsuite">
+        <action name="Execute">
+            <command>burpsuite</command>
+        </action>
+    </item>
+    <item label="dnschef">
+        <action name="Execute">
+            <command>dnschef</command>
+        </action>
+    </item>
+    <item label="fakedns">
+        <action name="Execute">
+            <command>fakedns</command>
+        </action>
+    </item>
+    <item label="mitmproxy">
+        <action name="Execute">
+            <command>mitmproxy</command>
+        </action>
+    </item>
+    <item label="pathod">
+        <action name="Execute">
+            <command>pathod</command>
+        </action>
+    </item>
+    <item label="ratproxy">
+        <action name="Execute">
+            <command>ratproxy</command>
+        </action>
+    </item>
+    <item label="sergio-proxy">
+        <action name="Execute">
+            <command>sergio-proxy</command>
+        </action>
+    </item>
+    <item label="sslnuke">
+        <action name="Execute">
+            <command>sslnuke</command>
+        </action>
+    </item>
+    <item label="webscarab">
+        <action name="Execute">
+            <command>webscarab</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-recon-menu" label="recon">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="canari">
+        <action name="Execute">
+            <command>canari</command>
+        </action>
+    </item>
+    <item label="casefile">
+        <action name="Execute">
+            <command>casefile</command>
+        </action>
+    </item>
+    <item label="cutycapt">
+        <action name="Execute">
+            <command>cutycapt</command>
+        </action>
+    </item>
+    <item label="dnsenum">
+        <action name="Execute">
+            <command>dnsenum</command>
+        </action>
+    </item>
+    <item label="dnsrecon">
+        <action name="Execute">
+            <command>dnsrecon</command>
+        </action>
+    </item>
+    <item label="dnsspider">
+        <action name="Execute">
+            <command>dnsspider</command>
+        </action>
+    </item>
+    <item label="dnswalk">
+        <action name="Execute">
+            <command>dnswalk</command>
+        </action>
+    </item>
+    <item label="enum4linux">
+        <action name="Execute">
+            <command>enum4linux</command>
+        </action>
+    </item>
+    <item label="goodork">
+        <action name="Execute">
+            <command>goodork</command>
+        </action>
+    </item>
+    <item label="goofile">
+        <action name="Execute">
+            <command>goofile</command>
+        </action>
+    </item>
+    <item label="goog-mail">
+        <action name="Execute">
+            <command>goog-mail</command>
+        </action>
+    </item>
+    <item label="gwtenum">
+        <action name="Execute">
+            <command>gwtenum</command>
+        </action>
+    </item>
+    <item label="halcyon">
+        <action name="Execute">
+            <command>halcyon</command>
+        </action>
+    </item>
+    <item label="httping">
+        <action name="Execute">
+            <command>httping</command>
+        </action>
+    </item>
+    <item label="intrace">
+        <action name="Execute">
+            <command>intrace</command>
+        </action>
+    </item>
+    <item label="isr-form">
+        <action name="Execute">
+            <command>isr-form</command>
+        </action>
+    </item>
+    <item label="lbd">
+        <action name="Execute">
+            <command>lbd</command>
+        </action>
+    </item>
+    <item label="ldapenum">
+        <action name="Execute">
+            <command>ldapenum</command>
+        </action>
+    </item>
+    <item label="lft">
+        <action name="Execute">
+            <command>lft</command>
+        </action>
+    </item>
+    <item label="linux-exploit-suggester">
+        <action name="Execute">
+            <command>linux-exploit-suggester</command>
+        </action>
+    </item>
+    <item label="maltego">
+        <action name="Execute">
+            <command>maltego</command>
+        </action>
+    </item>
+    <item label="metagoofil">
+        <action name="Execute">
+            <command>metagoofil</command>
+        </action>
+    </item>
+    <item label="missidentify">
+        <action name="Execute">
+            <command>missidentify</command>
+        </action>
+    </item>
+    <item label="nbtool">
+        <action name="Execute">
+            <command>nbtool</command>
+        </action>
+    </item>
+    <item label="netdiscover">
+        <action name="Execute">
+            <command>netdiscover</command>
+        </action>
+    </item>
+    <item label="netmask">
+        <action name="Execute">
+            <command>netmask</command>
+        </action>
+    </item>
+    <item label="nipper">
+        <action name="Execute">
+            <command>nipper</command>
+        </action>
+    </item>
+    <item label="nsec3walker">
+        <action name="Execute">
+            <command>nsec3walker</command>
+        </action>
+    </item>
+    <item label="pastenum">
+        <action name="Execute">
+            <command>pastenum</command>
+        </action>
+    </item>
+    <item label="recon-ng">
+        <action name="Execute">
+            <command>recon-ng</command>
+        </action>
+    </item>
+    <item label="rifiuti2">
+        <action name="Execute">
+            <command>rifiuti2</command>
+        </action>
+    </item>
+    <item label="ripdc">
+        <action name="Execute">
+            <command>ripdc</command>
+        </action>
+    </item>
+    <item label="sctpscan">
+        <action name="Execute">
+            <command>sctpscan</command>
+        </action>
+    </item>
+    <item label="smtp-user-enum">
+        <action name="Execute">
+            <command>smtp-user-enum</command>
+        </action>
+    </item>
+    <item label="snmpcheck">
+        <action name="Execute">
+            <command>snmpcheck</command>
+        </action>
+    </item>
+    <item label="spiderfoot">
+        <action name="Execute">
+            <command>spiderfoot</command>
+        </action>
+    </item>
+    <item label="subdomainer">
+        <action name="Execute">
+            <command>subdomainer</command>
+        </action>
+    </item>
+    <item label="theharvester">
+        <action name="Execute">
+            <command>theharvester</command>
+        </action>
+    </item>
+    <item label="twofi">
+        <action name="Execute">
+            <command>twofi</command>
+        </action>
+    </item>
+    <item label="whatweb">
+        <action name="Execute">
+            <command>whatweb</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-reversing-menu" label="reversing">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="capstone">
+        <action name="Execute">
+            <command>capstone</command>
+        </action>
+    </item>
+    <item label="dex2jar">
+        <action name="Execute">
+            <command>dex2jar</command>
+        </action>
+    </item>
+    <item label="edb">
+        <action name="Execute">
+            <command>edb</command>
+        </action>
+    </item>
+    <item label="flasm">
+        <action name="Execute">
+            <command>flasm</command>
+        </action>
+    </item>
+    <item label="javasnoop">
+        <action name="Execute">
+            <command>javasnoop</command>
+        </action>
+    </item>
+    <item label="jd-gui">
+        <action name="Execute">
+            <command>jd-gui</command>
+        </action>
+    </item>
+    <item label="js-beautify">
+        <action name="Execute">
+            <command>js-beautify</command>
+        </action>
+    </item>
+    <item label="packerid">
+        <action name="Execute">
+            <command>packerid</command>
+        </action>
+    </item>
+    <item label="pev">
+        <action name="Execute">
+            <command>pev</command>
+        </action>
+    </item>
+    <item label="radare2">
+        <action name="Execute">
+            <command>radare2</command>
+        </action>
+    </item>
+    <item label="recstudio">
+        <action name="Execute">
+            <command>recstudio</command>
+        </action>
+    </item>
+    <item label="scanmem">
+        <action name="Execute">
+            <command>scanmem</command>
+        </action>
+    </item>
+    <item label="swfintruder">
+        <action name="Execute">
+            <command>swfintruder</command>
+        </action>
+    </item>
+    <item label="udis86">
+        <action name="Execute">
+            <command>udis86</command>
+        </action>
+    </item>
+    <item label="vivisect">
+        <action name="Execute">
+            <command>vivisect</command>
+        </action>
+    </item>
+    <item label="zerowine">
+        <action name="Execute">
+            <command>zerowine</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-scanner-menu" label="scanner">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="admsnmp">
+        <action name="Execute">
+            <command>admsnmp</command>
+        </action>
+    </item>
+    <item label="allthevhosts">
+        <action name="Execute">
+            <command>allthevhosts</command>
+        </action>
+    </item>
+    <item label="asp-audit">
+        <action name="Execute">
+            <command>asp-audit</command>
+        </action>
+    </item>
+    <item label="bluelog">
+        <action name="Execute">
+            <command>bluelog</command>
+        </action>
+    </item>
+    <item label="braa">
+        <action name="Execute">
+            <command>braa</command>
+        </action>
+    </item>
+    <item label="bss">
+        <action name="Execute">
+            <command>bss</command>
+        </action>
+    </item>
+    <item label="btscanner">
+        <action name="Execute">
+            <command>btscanner</command>
+        </action>
+    </item>
+    <item label="burpsuite">
+        <action name="Execute">
+            <command>burpsuite</command>
+        </action>
+    </item>
+    <item label="canari">
+        <action name="Execute">
+            <command>canari</command>
+        </action>
+    </item>
+    <item label="casefile">
+        <action name="Execute">
+            <command>casefile</command>
+        </action>
+    </item>
+    <item label="checksec">
+        <action name="Execute">
+            <command>checksec</command>
+        </action>
+    </item>
+    <item label="cisco-auditing-tool">
+        <action name="Execute">
+            <command>cisco-auditing-tool</command>
+        </action>
+    </item>
+    <item label="cisco-torch">
+        <action name="Execute">
+            <command>cisco-torch</command>
+        </action>
+    </item>
+    <item label="ciscos">
+        <action name="Execute">
+            <command>ciscos</command>
+        </action>
+    </item>
+    <item label="complemento">
+        <action name="Execute">
+            <command>complemento</command>
+        </action>
+    </item>
+    <item label="conscan">
+        <action name="Execute">
+            <command>conscan</command>
+        </action>
+    </item>
+    <item label="cookie-cadger">
+        <action name="Execute">
+            <command>cookie-cadger</command>
+        </action>
+    </item>
+    <item label="creepy">
+        <action name="Execute">
+            <command>creepy</command>
+        </action>
+    </item>
+    <item label="davtest">
+        <action name="Execute">
+            <command>davtest</command>
+        </action>
+    </item>
+    <item label="deblaze">
+        <action name="Execute">
+            <command>deblaze</command>
+        </action>
+    </item>
+    <item label="dhcpig">
+        <action name="Execute">
+            <command>dhcpig</command>
+        </action>
+    </item>
+    <item label="dirb">
+        <action name="Execute">
+            <command>dirb</command>
+        </action>
+    </item>
+    <item label="dirbuster">
+        <action name="Execute">
+            <command>dirbuster</command>
+        </action>
+    </item>
+    <item label="dmitry">
+        <action name="Execute">
+            <command>dmitry</command>
+        </action>
+    </item>
+    <item label="dnmap">
+        <action name="Execute">
+            <command>dnmap</command>
+        </action>
+    </item>
+    <item label="dnsa">
+        <action name="Execute">
+            <command>dnsa</command>
+        </action>
+    </item>
+    <item label="dnsbf">
+        <action name="Execute">
+            <command>dnsbf</command>
+        </action>
+    </item>
+    <item label="dnsenum">
+        <action name="Execute">
+            <command>dnsenum</command>
+        </action>
+    </item>
+    <item label="dnsgoblin">
+        <action name="Execute">
+            <command>dnsgoblin</command>
+        </action>
+    </item>
+    <item label="dnspredict">
+        <action name="Execute">
+            <command>dnspredict</command>
+        </action>
+    </item>
+    <item label="dnsspider">
+        <action name="Execute">
+            <command>dnsspider</command>
+        </action>
+    </item>
+    <item label="dnswalk">
+        <action name="Execute">
+            <command>dnswalk</command>
+        </action>
+    </item>
+    <item label="dpscan">
+        <action name="Execute">
+            <command>dpscan</command>
+        </action>
+    </item>
+    <item label="driftnet">
+        <action name="Execute">
+            <command>driftnet</command>
+        </action>
+    </item>
+    <item label="dripper">
+        <action name="Execute">
+            <command>dripper</command>
+        </action>
+    </item>
+    <item label="enum4linux">
+        <action name="Execute">
+            <command>enum4linux</command>
+        </action>
+    </item>
+    <item label="enumiax">
+        <action name="Execute">
+            <command>enumiax</command>
+        </action>
+    </item>
+    <item label="fierce">
+        <action name="Execute">
+            <command>fierce</command>
+        </action>
+    </item>
+    <item label="firewalk">
+        <action name="Execute">
+            <command>firewalk</command>
+        </action>
+    </item>
+    <item label="flawfinder">
+        <action name="Execute">
+            <command>flawfinder</command>
+        </action>
+    </item>
+    <item label="ftpmap">
+        <action name="Execute">
+            <command>ftpmap</command>
+        </action>
+    </item>
+    <item label="ghost-phisher">
+        <action name="Execute">
+            <command>ghost-phisher</command>
+        </action>
+    </item>
+    <item label="grepforrfi">
+        <action name="Execute">
+            <command>grepforrfi</command>
+        </action>
+    </item>
+    <item label="gsa">
+        <action name="Execute">
+            <command>gsa</command>
+        </action>
+    </item>
+    <item label="gsd">
+        <action name="Execute">
+            <command>gsd</command>
+        </action>
+    </item>
+    <item label="halberd">
+        <action name="Execute">
+            <command>halberd</command>
+        </action>
+    </item>
+    <item label="hexorbase">
+        <action name="Execute">
+            <command>hexorbase</command>
+        </action>
+    </item>
+    <item label="http-enum">
+        <action name="Execute">
+            <command>http-enum</command>
+        </action>
+    </item>
+    <item label="hwk">
+        <action name="Execute">
+            <command>hwk</command>
+        </action>
+    </item>
+    <item label="icmpquery">
+        <action name="Execute">
+            <command>icmpquery</command>
+        </action>
+    </item>
+    <item label="ike-scan">
+        <action name="Execute">
+            <command>ike-scan</command>
+        </action>
+    </item>
+    <item label="inguma">
+        <action name="Execute">
+            <command>inguma</command>
+        </action>
+    </item>
+    <item label="ipscan">
+        <action name="Execute">
+            <command>ipscan</command>
+        </action>
+    </item>
+    <item label="jigsaw">
+        <action name="Execute">
+            <command>jigsaw</command>
+        </action>
+    </item>
+    <item label="jsql">
+        <action name="Execute">
+            <command>jsql</command>
+        </action>
+    </item>
+    <item label="ldapenum">
+        <action name="Execute">
+            <command>ldapenum</command>
+        </action>
+    </item>
+    <item label="lynis">
+        <action name="Execute">
+            <command>lynis</command>
+        </action>
+    </item>
+    <item label="maltego">
+        <action name="Execute">
+            <command>maltego</command>
+        </action>
+    </item>
+    <item label="masscan">
+        <action name="Execute">
+            <command>masscan</command>
+        </action>
+    </item>
+    <item label="metasploit">
+        <action name="Execute">
+            <command>metasploit</command>
+        </action>
+    </item>
+    <item label="miranda-upnp">
+        <action name="Execute">
+            <command>miranda-upnp</command>
+        </action>
+    </item>
+    <item label="mssqlscan">
+        <action name="Execute">
+            <command>mssqlscan</command>
+        </action>
+    </item>
+    <item label="nbtool">
+        <action name="Execute">
+            <command>nbtool</command>
+        </action>
+    </item>
+    <item label="nikto">
+        <action name="Execute">
+            <command>nikto</command>
+        </action>
+    </item>
+    <item label="nmbscan">
+        <action name="Execute">
+            <command>nmbscan</command>
+        </action>
+    </item>
+    <item label="onesixtyone">
+        <action name="Execute">
+            <command>onesixtyone</command>
+        </action>
+    </item>
+    <item label="openvas-administrator">
+        <action name="Execute">
+            <command>openvas-administrator</command>
+        </action>
+    </item>
+    <item label="openvas-cli">
+        <action name="Execute">
+            <command>openvas-cli</command>
+        </action>
+    </item>
+    <item label="openvas-client">
+        <action name="Execute">
+            <command>openvas-client</command>
+        </action>
+    </item>
+    <item label="openvas-manager">
+        <action name="Execute">
+            <command>openvas-manager</command>
+        </action>
+    </item>
+    <item label="openvas-scanner">
+        <action name="Execute">
+            <command>openvas-scanner</command>
+        </action>
+    </item>
+    <item label="paketto">
+        <action name="Execute">
+            <command>paketto</command>
+        </action>
+    </item>
+    <item label="pnscan">
+        <action name="Execute">
+            <command>pnscan</command>
+        </action>
+    </item>
+    <item label="propecia">
+        <action name="Execute">
+            <command>propecia</command>
+        </action>
+    </item>
+    <item label="ratproxy">
+        <action name="Execute">
+            <command>ratproxy</command>
+        </action>
+    </item>
+    <item label="rawr">
+        <action name="Execute">
+            <command>rawr</command>
+        </action>
+    </item>
+    <item label="redfang">
+        <action name="Execute">
+            <command>redfang</command>
+        </action>
+    </item>
+    <item label="relay-scanner">
+        <action name="Execute">
+            <command>relay-scanner</command>
+        </action>
+    </item>
+    <item label="ripdc">
+        <action name="Execute">
+            <command>ripdc</command>
+        </action>
+    </item>
+    <item label="scanssh">
+        <action name="Execute">
+            <command>scanssh</command>
+        </action>
+    </item>
+    <item label="sctpscan">
+        <action name="Execute">
+            <command>sctpscan</command>
+        </action>
+    </item>
+    <item label="skipfish">
+        <action name="Execute">
+            <command>skipfish</command>
+        </action>
+    </item>
+    <item label="smtp-user-enum">
+        <action name="Execute">
+            <command>smtp-user-enum</command>
+        </action>
+    </item>
+    <item label="smtp-vrfy">
+        <action name="Execute">
+            <command>smtp-vrfy</command>
+        </action>
+    </item>
+    <item label="snmpenum">
+        <action name="Execute">
+            <command>snmpenum</command>
+        </action>
+    </item>
+    <item label="snmpscan">
+        <action name="Execute">
+            <command>snmpscan</command>
+        </action>
+    </item>
+    <item label="sslcaudit">
+        <action name="Execute">
+            <command>sslcaudit</command>
+        </action>
+    </item>
+    <item label="sslscan">
+        <action name="Execute">
+            <command>sslscan</command>
+        </action>
+    </item>
+    <item label="subdomainer">
+        <action name="Execute">
+            <command>subdomainer</command>
+        </action>
+    </item>
+    <item label="synscan">
+        <action name="Execute">
+            <command>synscan</command>
+        </action>
+    </item>
+    <item label="tiger">
+        <action name="Execute">
+            <command>tiger</command>
+        </action>
+    </item>
+    <item label="tlssled">
+        <action name="Execute">
+            <command>tlssled</command>
+        </action>
+    </item>
+    <item label="unicornscan">
+        <action name="Execute">
+            <command>unicornscan</command>
+        </action>
+    </item>
+    <item label="uniscan">
+        <action name="Execute">
+            <command>uniscan</command>
+        </action>
+    </item>
+    <item label="unix-privesc-check">
+        <action name="Execute">
+            <command>unix-privesc-check</command>
+        </action>
+    </item>
+    <item label="upnpscan">
+        <action name="Execute">
+            <command>upnpscan</command>
+        </action>
+    </item>
+    <item label="videosnarf">
+        <action name="Execute">
+            <command>videosnarf</command>
+        </action>
+    </item>
+    <item label="vulscan">
+        <action name="Execute">
+            <command>vulscan</command>
+        </action>
+    </item>
+    <item label="waffit">
+        <action name="Execute">
+            <command>waffit</command>
+        </action>
+    </item>
+    <item label="wapiti">
+        <action name="Execute">
+            <command>wapiti</command>
+        </action>
+    </item>
+    <item label="webenum">
+        <action name="Execute">
+            <command>webenum</command>
+        </action>
+    </item>
+    <item label="webrute">
+        <action name="Execute">
+            <command>webrute</command>
+        </action>
+    </item>
+    <item label="webscarab">
+        <action name="Execute">
+            <command>webscarab</command>
+        </action>
+    </item>
+    <item label="webshag">
+        <action name="Execute">
+            <command>webshag</command>
+        </action>
+    </item>
+    <item label="websploit">
+        <action name="Execute">
+            <command>websploit</command>
+        </action>
+    </item>
+    <item label="wnmap">
+        <action name="Execute">
+            <command>wnmap</command>
+        </action>
+    </item>
+    <item label="wpscan">
+        <action name="Execute">
+            <command>wpscan</command>
+        </action>
+    </item>
+    <item label="yersinia">
+        <action name="Execute">
+            <command>yersinia</command>
+        </action>
+    </item>
+    <item label="zmap">
+        <action name="Execute">
+            <command>zmap</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-sniffer-menu" label="sniffer">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="cdpsnarf">
+        <action name="Execute">
+            <command>cdpsnarf</command>
+        </action>
+    </item>
+    <item label="driftnet">
+        <action name="Execute">
+            <command>driftnet</command>
+        </action>
+    </item>
+    <item label="hexinject">
+        <action name="Execute">
+            <command>hexinject</command>
+        </action>
+    </item>
+    <item label="mitmap">
+        <action name="Execute">
+            <command>mitmap</command>
+        </action>
+    </item>
+    <item label="netsniff-ng">
+        <action name="Execute">
+            <command>netsniff-ng</command>
+        </action>
+    </item>
+    <item label="p0f">
+        <action name="Execute">
+            <command>p0f</command>
+        </action>
+    </item>
+    <item label="passivedns">
+        <action name="Execute">
+            <command>passivedns</command>
+        </action>
+    </item>
+    <item label="phoss">
+        <action name="Execute">
+            <command>phoss</command>
+        </action>
+    </item>
+    <item label="pytacle">
+        <action name="Execute">
+            <command>pytacle</command>
+        </action>
+    </item>
+    <item label="ssldump">
+        <action name="Execute">
+            <command>ssldump</command>
+        </action>
+    </item>
+    <item label="sslsniff">
+        <action name="Execute">
+            <command>sslsniff</command>
+        </action>
+    </item>
+    <item label="tcpick">
+        <action name="Execute">
+            <command>tcpick</command>
+        </action>
+    </item>
+    <item label="tuxcut">
+        <action name="Execute">
+            <command>tuxcut</command>
+        </action>
+    </item>
+    <item label="wifi-monitor">
+        <action name="Execute">
+            <command>wifi-monitor</command>
+        </action>
+    </item>
+    <item label="xspy">
+        <action name="Execute">
+            <command>xspy</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-social-menu" label="social">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="creepy">
+        <action name="Execute">
+            <command>creepy</command>
+        </action>
+    </item>
+    <item label="jigsaw">
+        <action name="Execute">
+            <command>jigsaw</command>
+        </action>
+    </item>
+    <item label="set">
+        <action name="Execute">
+            <command>set</command>
+        </action>
+    </item>
+    <item label="websploit">
+        <action name="Execute">
+            <command>websploit</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-spoof-menu" label="spoof">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="admid-pack">
+        <action name="Execute">
+            <command>admid-pack</command>
+        </action>
+    </item>
+    <item label="arpoison">
+        <action name="Execute">
+            <command>arpoison</command>
+        </action>
+    </item>
+    <item label="fakedns">
+        <action name="Execute">
+            <command>fakedns</command>
+        </action>
+    </item>
+    <item label="inundator">
+        <action name="Execute">
+            <command>inundator</command>
+        </action>
+    </item>
+    <item label="lans">
+        <action name="Execute">
+            <command>lans</command>
+        </action>
+    </item>
+    <item label="lsrtunnel">
+        <action name="Execute">
+            <command>lsrtunnel</command>
+        </action>
+    </item>
+    <item label="multimac">
+        <action name="Execute">
+            <command>multimac</command>
+        </action>
+    </item>
+    <item label="nbnspoof">
+        <action name="Execute">
+            <command>nbnspoof</command>
+        </action>
+    </item>
+    <item label="netcommander">
+        <action name="Execute">
+            <command>netcommander</command>
+        </action>
+    </item>
+    <item label="pyminifakedns">
+        <action name="Execute">
+            <command>pyminifakedns</command>
+        </action>
+    </item>
+    <item label="sergio-proxy">
+        <action name="Execute">
+            <command>sergio-proxy</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-threat-model-menu" label="threat-model">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="magictree">
+        <action name="Execute">
+            <command>magictree</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-tunnel-menu" label="tunnel">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="chownat">
+        <action name="Execute">
+            <command>chownat</command>
+        </action>
+    </item>
+    <item label="ctunnel">
+        <action name="Execute">
+            <command>ctunnel</command>
+        </action>
+    </item>
+    <item label="dns2tcp">
+        <action name="Execute">
+            <command>dns2tcp</command>
+        </action>
+    </item>
+    <item label="icmptx">
+        <action name="Execute">
+            <command>icmptx</command>
+        </action>
+    </item>
+    <item label="iodine">
+        <action name="Execute">
+            <command>iodine</command>
+        </action>
+    </item>
+    <item label="matahari">
+        <action name="Execute">
+            <command>matahari</command>
+        </action>
+    </item>
+    <item label="ptunnel">
+        <action name="Execute">
+            <command>ptunnel</command>
+        </action>
+    </item>
+    <item label="udptunnel">
+        <action name="Execute">
+            <command>udptunnel</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-unpacker-menu" label="unpacker">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="js-beautify">
+        <action name="Execute">
+            <command>js-beautify</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-voip-menu" label="voip">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="ace">
+        <action name="Execute">
+            <command>ace</command>
+        </action>
+    </item>
+    <item label="erase-registrations">
+        <action name="Execute">
+            <command>erase-registrations</command>
+        </action>
+    </item>
+    <item label="iaxflood">
+        <action name="Execute">
+            <command>iaxflood</command>
+        </action>
+    </item>
+    <item label="pcapsipdump">
+        <action name="Execute">
+            <command>pcapsipdump</command>
+        </action>
+    </item>
+    <item label="redirectpoison">
+        <action name="Execute">
+            <command>redirectpoison</command>
+        </action>
+    </item>
+    <item label="rtp-flood">
+        <action name="Execute">
+            <command>rtp-flood</command>
+        </action>
+    </item>
+    <item label="siparmyknife">
+        <action name="Execute">
+            <command>siparmyknife</command>
+        </action>
+    </item>
+    <item label="sipcrack">
+        <action name="Execute">
+            <command>sipcrack</command>
+        </action>
+    </item>
+    <item label="sipp">
+        <action name="Execute">
+            <command>sipp</command>
+        </action>
+    </item>
+    <item label="sipsak">
+        <action name="Execute">
+            <command>sipsak</command>
+        </action>
+    </item>
+    <item label="teardown">
+        <action name="Execute">
+            <command>teardown</command>
+        </action>
+    </item>
+    <item label="vnak">
+        <action name="Execute">
+            <command>vnak</command>
+        </action>
+    </item>
+    <item label="voiper">
+        <action name="Execute">
+            <command>voiper</command>
+        </action>
+    </item>
+    <item label="voiphopper">
+        <action name="Execute">
+            <command>voiphopper</command>
+        </action>
+    </item>
+    <item label="voipong">
+        <action name="Execute">
+            <command>voipong</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-webapp-menu" label="webapp">
@@ -2174,7 +3634,7 @@
 	<menu id="blackarch-honeypot-menu"/>
 	<menu id="blackarch-keylogger-menu"/>
 	<menu id="blackarch-malware-menu"/>
-	<menu id="blackarch-miscc-menu"/>
+	<menu id="blackarch-misc-menu"/>
 	<menu id="blackarch-mobile-menu"/>
 	<menu id="blackarch-networking-menu"/>
 	<menu id="blackarch-nfc-menu"/>
