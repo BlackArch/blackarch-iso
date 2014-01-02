@@ -3566,27 +3566,642 @@
 </menu>
 
 <menu id="blackarch-webapp-menu" label="webapp">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="allthevhosts">
+        <action name="Execute">
+            <command>allthevhosts</command>
+        </action>
+    </item>
+    <item label="asp-audit">
+        <action name="Execute">
+            <command>asp-audit</command>
+        </action>
+    </item>
+    <item label="bbqsql">
+        <action name="Execute">
+            <command>bbqsql</command>
+        </action>
+    </item>
+    <item label="blindelephant">
+        <action name="Execute">
+            <command>blindelephant</command>
+        </action>
+    </item>
+    <item label="bsqlbf">
+        <action name="Execute">
+            <command>bsqlbf</command>
+        </action>
+    </item>
+    <item label="burpsuite">
+        <action name="Execute">
+            <command>burpsuite</command>
+        </action>
+    </item>
+    <item label="cms-explorer">
+        <action name="Execute">
+            <command>cms-explorer</command>
+        </action>
+    </item>
+    <item label="csrftester">
+        <action name="Execute">
+            <command>csrftester</command>
+        </action>
+    </item>
+    <item label="darkd0rk3r">
+        <action name="Execute">
+            <command>darkd0rk3r</command>
+        </action>
+    </item>
+    <item label="darkjumper">
+        <action name="Execute">
+            <command>darkjumper</command>
+        </action>
+    </item>
+    <item label="darkmysqli">
+        <action name="Execute">
+            <command>darkmysqli</command>
+        </action>
+    </item>
+    <item label="dff-scanner">
+        <action name="Execute">
+            <command>dff-scanner</command>
+        </action>
+    </item>
+    <item label="dirb">
+        <action name="Execute">
+            <command>dirb</command>
+        </action>
+    </item>
+    <item label="dirbuster">
+        <action name="Execute">
+            <command>dirbuster</command>
+        </action>
+    </item>
+    <item label="easyfuzzer">
+        <action name="Execute">
+            <command>easyfuzzer</command>
+        </action>
+    </item>
+    <item label="golismero">
+        <action name="Execute">
+            <command>golismero</command>
+        </action>
+    </item>
+    <item label="grabber">
+        <action name="Execute">
+            <command>grabber</command>
+        </action>
+    </item>
+    <item label="gwtenum">
+        <action name="Execute">
+            <command>gwtenum</command>
+        </action>
+    </item>
+    <item label="halberd">
+        <action name="Execute">
+            <command>halberd</command>
+        </action>
+    </item>
+    <item label="isr-form">
+        <action name="Execute">
+            <command>isr-form</command>
+        </action>
+    </item>
+    <item label="joomscan">
+        <action name="Execute">
+            <command>joomscan</command>
+        </action>
+    </item>
+    <item label="kolkata">
+        <action name="Execute">
+            <command>kolkata</command>
+        </action>
+    </item>
+    <item label="laudanum">
+        <action name="Execute">
+            <command>laudanum</command>
+        </action>
+    </item>
+    <item label="list-urls">
+        <action name="Execute">
+            <command>list-urls</command>
+        </action>
+    </item>
+    <item label="metoscan">
+        <action name="Execute">
+            <command>metoscan</command>
+        </action>
+    </item>
+    <item label="multiinjector">
+        <action name="Execute">
+            <command>multiinjector</command>
+        </action>
+    </item>
+    <item label="nikto">
+        <action name="Execute">
+            <command>nikto</command>
+        </action>
+    </item>
+    <item label="owtf">
+        <action name="Execute">
+            <command>owtf</command>
+        </action>
+    </item>
+    <item label="paros">
+        <action name="Execute">
+            <command>paros</command>
+        </action>
+    </item>
+    <item label="pblind">
+        <action name="Execute">
+            <command>pblind</command>
+        </action>
+    </item>
+    <item label="plecost">
+        <action name="Execute">
+            <command>plecost</command>
+        </action>
+    </item>
+    <item label="ratproxy">
+        <action name="Execute">
+            <command>ratproxy</command>
+        </action>
+    </item>
+    <item label="rawr">
+        <action name="Execute">
+            <command>rawr</command>
+        </action>
+    </item>
+    <item label="rww-attack">
+        <action name="Execute">
+            <command>rww-attack</command>
+        </action>
+    </item>
+    <item label="skipfish">
+        <action name="Execute">
+            <command>skipfish</command>
+        </action>
+    </item>
+    <item label="spike-proxy">
+        <action name="Execute">
+            <command>spike-proxy</command>
+        </action>
+    </item>
+    <item label="sqid">
+        <action name="Execute">
+            <command>sqid</command>
+        </action>
+    </item>
+    <item label="sqlbrute">
+        <action name="Execute">
+            <command>sqlbrute</command>
+        </action>
+    </item>
+    <item label="sqlmap">
+        <action name="Execute">
+            <command>sqlmap</command>
+        </action>
+    </item>
+    <item label="sqlninja">
+        <action name="Execute">
+            <command>sqlninja</command>
+        </action>
+    </item>
+    <item label="sqlsus">
+        <action name="Execute">
+            <command>sqlsus</command>
+        </action>
+    </item>
+    <item label="uatester">
+        <action name="Execute">
+            <command>uatester</command>
+        </action>
+    </item>
+    <item label="uniscan">
+        <action name="Execute">
+            <command>uniscan</command>
+        </action>
+    </item>
+    <item label="urlcrazy">
+        <action name="Execute">
+            <command>urlcrazy</command>
+        </action>
+    </item>
+    <item label="vega">
+        <action name="Execute">
+            <command>vega</command>
+        </action>
+    </item>
+    <item label="waffit">
+        <action name="Execute">
+            <command>waffit</command>
+        </action>
+    </item>
+    <item label="wapiti">
+        <action name="Execute">
+            <command>wapiti</command>
+        </action>
+    </item>
+    <item label="webacoo">
+        <action name="Execute">
+            <command>webacoo</command>
+        </action>
+    </item>
+    <item label="webenum">
+        <action name="Execute">
+            <command>webenum</command>
+        </action>
+    </item>
+    <item label="webhandler">
+        <action name="Execute">
+            <command>webhandler</command>
+        </action>
+    </item>
+    <item label="webrute">
+        <action name="Execute">
+            <command>webrute</command>
+        </action>
+    </item>
+    <item label="webscarab">
+        <action name="Execute">
+            <command>webscarab</command>
+        </action>
+    </item>
+    <item label="webshag">
+        <action name="Execute">
+            <command>webshag</command>
+        </action>
+    </item>
+    <item label="webshells">
+        <action name="Execute">
+            <command>webshells</command>
+        </action>
+    </item>
+    <item label="webslayer">
+        <action name="Execute">
+            <command>webslayer</command>
+        </action>
+    </item>
+    <item label="weevely">
+        <action name="Execute">
+            <command>weevely</command>
+        </action>
+    </item>
+    <item label="wfuzz">
+        <action name="Execute">
+            <command>wfuzz</command>
+        </action>
+    </item>
+    <item label="whatweb">
+        <action name="Execute">
+            <command>whatweb</command>
+        </action>
+    </item>
+    <item label="wmat">
+        <action name="Execute">
+            <command>wmat</command>
+        </action>
+    </item>
+    <item label="wpscan">
+        <action name="Execute">
+            <command>wpscan</command>
+        </action>
+    </item>
+    <item label="wsfuzzer">
+        <action name="Execute">
+            <command>wsfuzzer</command>
+        </action>
+    </item>
+    <item label="xsser">
+        <action name="Execute">
+            <command>xsser</command>
+        </action>
+    </item>
+    <item label="xsss">
+        <action name="Execute">
+            <command>xsss</command>
+        </action>
+    </item>
+    <item label="zaproxy">
+        <action name="Execute">
+            <command>zaproxy</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-windows-menu" label="windows">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="3proxy-win32">
+        <action name="Execute">
+            <command>3proxy-win32</command>
+        </action>
+    </item>
+    <item label="brutus">
+        <action name="Execute">
+            <command>brutus</command>
+        </action>
+    </item>
+    <item label="creddump">
+        <action name="Execute">
+            <command>creddump</command>
+        </action>
+    </item>
+    <item label="dumpacl">
+        <action name="Execute">
+            <command>dumpacl</command>
+        </action>
+    </item>
+    <item label="fport">
+        <action name="Execute">
+            <command>fport</command>
+        </action>
+    </item>
+    <item label="handle">
+        <action name="Execute">
+            <command>handle</command>
+        </action>
+    </item>
+    <item label="httprint-win32">
+        <action name="Execute">
+            <command>httprint-win32</command>
+        </action>
+    </item>
+    <item label="hyperion">
+        <action name="Execute">
+            <command>hyperion</command>
+        </action>
+    </item>
+    <item label="ikeprobe">
+        <action name="Execute">
+            <command>ikeprobe</command>
+        </action>
+    </item>
+    <item label="klogger">
+        <action name="Execute">
+            <command>klogger</command>
+        </action>
+    </item>
+    <item label="mbenum">
+        <action name="Execute">
+            <command>mbenum</command>
+        </action>
+    </item>
+    <item label="missidentify">
+        <action name="Execute">
+            <command>missidentify</command>
+        </action>
+    </item>
+    <item label="nbtenum">
+        <action name="Execute">
+            <command>nbtenum</command>
+        </action>
+    </item>
+    <item label="nishang">
+        <action name="Execute">
+            <command>nishang</command>
+        </action>
+    </item>
+    <item label="ollydbg">
+        <action name="Execute">
+            <command>ollydbg</command>
+        </action>
+    </item>
+    <item label="orakelcrackert">
+        <action name="Execute">
+            <command>orakelcrackert</command>
+        </action>
+    </item>
+    <item label="powersploit">
+        <action name="Execute">
+            <command>powersploit</command>
+        </action>
+    </item>
+    <item label="pstoreview">
+        <action name="Execute">
+            <command>pstoreview</command>
+        </action>
+    </item>
+    <item label="pwdump">
+        <action name="Execute">
+            <command>pwdump</command>
+        </action>
+    </item>
+    <item label="sipscan">
+        <action name="Execute">
+            <command>sipscan</command>
+        </action>
+    </item>
+    <item label="smbrelay">
+        <action name="Execute">
+            <command>smbrelay</command>
+        </action>
+    </item>
+    <item label="snscan">
+        <action name="Execute">
+            <command>snscan</command>
+        </action>
+    </item>
+    <item label="spade">
+        <action name="Execute">
+            <command>spade</command>
+        </action>
+    </item>
+    <item label="sqlping">
+        <action name="Execute">
+            <command>sqlping</command>
+        </action>
+    </item>
+    <item label="superscan">
+        <action name="Execute">
+            <command>superscan</command>
+        </action>
+    </item>
+    <item label="sysinternals-suite">
+        <action name="Execute">
+            <command>sysinternals-suite</command>
+        </action>
+    </item>
+    <item label="unsecure">
+        <action name="Execute">
+            <command>unsecure</command>
+        </action>
+    </item>
+    <item label="winfo">
+        <action name="Execute">
+            <command>winfo</command>
+        </action>
+    </item>
+    <item label="x-scan">
+        <action name="Execute">
+            <command>x-scan</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="blackarch-wireless-menu" label="wireless">
-	<item label="foo">
-	<action name="Execute">
-		<command>foo</commnd>
-	</action>
-	</item>
+    <item label="airflood">
+        <action name="Execute">
+            <command>airflood</command>
+        </action>
+    </item>
+    <item label="airoscript">
+        <action name="Execute">
+            <command>airoscript</command>
+        </action>
+    </item>
+    <item label="airpwn">
+        <action name="Execute">
+            <command>airpwn</command>
+        </action>
+    </item>
+    <item label="batctl">
+        <action name="Execute">
+            <command>batctl</command>
+        </action>
+    </item>
+    <item label="batman-adv">
+        <action name="Execute">
+            <command>batman-adv</command>
+        </action>
+    </item>
+    <item label="bully">
+        <action name="Execute">
+            <command>bully</command>
+        </action>
+    </item>
+    <item label="cowpatty">
+        <action name="Execute">
+            <command>cowpatty</command>
+        </action>
+    </item>
+    <item label="eapmd5pass">
+        <action name="Execute">
+            <command>eapmd5pass</command>
+        </action>
+    </item>
+    <item label="fern-wifi-cracker">
+        <action name="Execute">
+            <command>fern-wifi-cracker</command>
+        </action>
+    </item>
+    <item label="g72x++">
+        <action name="Execute">
+            <command>g72x++</command>
+        </action>
+    </item>
+    <item label="giskismet">
+        <action name="Execute">
+            <command>giskismet</command>
+        </action>
+    </item>
+    <item label="gqrx">
+        <action name="Execute">
+            <command>gqrx</command>
+        </action>
+    </item>
+    <item label="hotspotter">
+        <action name="Execute">
+            <command>hotspotter</command>
+        </action>
+    </item>
+    <item label="hwk">
+        <action name="Execute">
+            <command>hwk</command>
+        </action>
+    </item>
+    <item label="killerbee">
+        <action name="Execute">
+            <command>killerbee</command>
+        </action>
+    </item>
+    <item label="kismet-earth">
+        <action name="Execute">
+            <command>kismet-earth</command>
+        </action>
+    </item>
+    <item label="mdk3">
+        <action name="Execute">
+            <command>mdk3</command>
+        </action>
+    </item>
+    <item label="mfcuk">
+        <action name="Execute">
+            <command>mfcuk</command>
+        </action>
+    </item>
+    <item label="mfoc">
+        <action name="Execute">
+            <command>mfoc</command>
+        </action>
+    </item>
+    <item label="netdiscover">
+        <action name="Execute">
+            <command>netdiscover</command>
+        </action>
+    </item>
+    <item label="pyrit">
+        <action name="Execute">
+            <command>pyrit</command>
+        </action>
+    </item>
+    <item label="rfdump">
+        <action name="Execute">
+            <command>rfdump</command>
+        </action>
+    </item>
+    <item label="rfidiot">
+        <action name="Execute">
+            <command>rfidiot</command>
+        </action>
+    </item>
+    <item label="rfidtool">
+        <action name="Execute">
+            <command>rfidtool</command>
+        </action>
+    </item>
+    <item label="spectools">
+        <action name="Execute">
+            <command>spectools</command>
+        </action>
+    </item>
+    <item label="ufo-wardriving">
+        <action name="Execute">
+            <command>ufo-wardriving</command>
+        </action>
+    </item>
+    <item label="wepbuster">
+        <action name="Execute">
+            <command>wepbuster</command>
+        </action>
+    </item>
+    <item label="wiffy">
+        <action name="Execute">
+            <command>wiffy</command>
+        </action>
+    </item>
+    <item label="wifi-honey">
+        <action name="Execute">
+            <command>wifi-honey</command>
+        </action>
+    </item>
+    <item label="wifitap">
+        <action name="Execute">
+            <command>wifitap</command>
+        </action>
+    </item>
+    <item label="wifite">
+        <action name="Execute">
+            <command>wifite</command>
+        </action>
+    </item>
+    <item label="wlan2eth">
+        <action name="Execute">
+            <command>wlan2eth</command>
+        </action>
+    </item>
+    <item label="zulu">
+        <action name="Execute">
+            <command>zulu</command>
+        </action>
+    </item>
 </menu>
 
 <!-- blackarch related -->
