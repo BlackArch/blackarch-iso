@@ -1,0 +1,7 @@
+[KNewStuff3]
+ProvidersUrl=http://download.kde.org/ocs/providers.xml
+Categories=KDM4 Theme
+TargetDir=kdm/themes/
+Scope=system
+# unpack the downloaded archive
+Uncompress=always

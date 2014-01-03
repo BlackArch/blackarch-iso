@@ -1,0 +1,15 @@
+#! /bin/sh
+# Xstartup - run as root before session starts
+
+# By convention, both xconsole and xterm -C check that the
+# console is owned by the invoking user and is readable before attaching
+# the console output.  This way a random user can invoke xterm -C without
+# causing serious grief; still, it can cause havoc, so xconsole is started
+# by Xsetup usually.
+# This is not required if you use PAM with the pam_console module.
+#
+#chown $USER /dev/console
+
+# XDM configurations typically have sessreg here. KDM has it built-in.
+
+# NOTE: The session is aborted if the last command returns non-zero.

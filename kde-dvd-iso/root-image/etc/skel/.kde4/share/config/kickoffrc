@@ -8,4 +8,4 @@ loadAll=false
 pluginWhiteList=places,shell,services,bookmarks,recentdocuments,locations
 
 [RecentlyUsed]
-Applications=BlackArch.desktop,foo.desktop,kde4-systemsettings.desktop,kde4-ark.desktop,kde4-konqbrowser.desktop
+Applications=foo.desktop,kde4-systemsettings.desktop,kde4-ark.desktop,kde4-konqbrowser.desktop,kde4-konsole.desktop

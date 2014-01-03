@@ -1,0 +1,31 @@
+[KopeteChatWindowIndividualMode]
+Height 480=300
+Height 600=400
+Height 768=400
+Height 800=400
+Height 1024=400
+Height 1050=400
+Height 1200=400
+Width 800=400
+Width 1024=400
+Width 1280=400
+Width 1400=400
+Width 1450=400
+Width 1600=400
+Width 1900=400
+
+[KopeteChatWindowGroupMode]
+Height 480=400
+Height 600=400
+Height 768=400
+Height 800=400
+Height 1024=400
+Height 1050=400
+Height 1200=400
+Width 800=650
+Width 1024=650
+Width 1280=650
+Width 1400=650
+Width 1450=650
+Width 1600=650
+Width 1900=650

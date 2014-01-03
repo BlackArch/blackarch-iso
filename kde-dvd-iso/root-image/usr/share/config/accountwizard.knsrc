@@ -1,0 +1,5 @@
+[KNewStuff3]
+ProvidersUrl=http://download.kde.org/ocs/providers.xml
+Categories=Akonadi Email Providers
+TargetDir=akonadi/accountwizard
+Uncompress=archive

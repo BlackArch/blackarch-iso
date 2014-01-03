@@ -1,0 +1,297 @@
+# This files includes the default behavior for some specific debug areas
+# This allows to leave the kDebug* calls in the code, but still have them
+# disabled for most users.
+#
+# This file will be installed as $KDEDIR/share/config/kdebugrc
+#
+# There are four levels of output: Info, Warn, Error and Fatal
+# corresponding to kDebug(), kdWarn(), kError(), kFatal()
+#
+# For every of them you can define a target by *Output=n
+# using the following numbers:
+#
+#   0 = file
+#   1 = message box
+#   2 = shell (stderr)
+#   3 = syslog
+#   4 = off
+#
+# For file output you can give a filename by *Filename=<file>
+# otherwise kdebug.dbg in the current directory is used.
+#
+# example:
+#
+# For the debug area 100 you want output of debug messages
+# to a file /var/log/dbg.log and error messages as message boxes.
+# Additionally the program should abort on fatal errors.
+#
+# [100]
+# InfoOutput=0
+# InfoFilename=/var/log/dbg.log
+# ErrorOutput=1
+# AbortFatal=1
+#
+
+# KGlobalAccel debug info off
+[125]
+InfoOutput=4
+
+# KAction debug info off
+[129]
+InfoOutput=4
+
+# KStartupInfo debug info off
+[172]
+InfoOutput=4
+
+# KLocale debug info off
+[173]
+InfoOutput=4
+
+# KMainWindow debug info off
+[200]
+InfoOutput=4
+
+# KFile debug info off
+[250]
+InfoOutput=4
+
+# KIconloader debug info off
+[264]
+InfoOutput=4
+
+# KSpell debug info off
+[750]
+InfoOutput=4
+
+# KHotKeys
+[1217]
+InfoOutput=4
+
+# KitchenSync (Syncing Algorithm)
+[5250]
+InfoOutput=4
+
+# calendarsystem debug info off
+[5400]
+InfoOutput=4
+
+# kabc/vcard
+[5710]
+InfoOutput=4
+
+# korganizer (verbose)
+[5855]
+InfoOutput=4
+
+# korgac (check)
+[5891]
+InfoOutput=4
+
+# kalarmd check
+[5901]
+InfoOutput=4
+
+# KDirWatch is quite verbose
+[7001]
+InfoOutput=4
+
+# kio_http_debug debug info off
+[7113]
+InfoOutput=4
+
+# kbzip2filter's debug info off
+[7118]
+InfoOutput=4
+
+# kio_nntp debug info off
+[7114]
+InfoOutput=4
+
+# KRun debug info off
+[7010]
+InfoOutput=4
+
+# KGame debug info off
+[11001]
+InfoOutput=4
+
+# generic koffice debug off 
+[31000]
+InfoOutput=4
+
+# koml debug info off (KOffice)
+[30001]
+InfoOutput=4
+
+# kostore debug info off (KOffice)
+[30002]
+InfoOutput=4
+
+# komain debug info off (KOffice)
+[30003]
+InfoOutput=4
+
+# koguitutils debug info off (KOffice)
+[30004]
+InfoOutput=4
+
+# kopainter debug info off (KOffice)
+[30005]
+InfoOutput=4
+
+# flake debug info off (KOffice)
+[30006]
+InfoOutput=4
+
+# pigment debug info off (KOffice)
+[30008]
+InfoOutput=4
+
+# resources debug info off (KOffice)
+[30009]
+InfoOutput=4
+
+# kopageapp debug info off (KOffice)
+[30010]
+InfoOutput=4
+
+# koffice filter manager debug info off (KOffice)
+[30500]
+InfoOutput=4
+
+# kword debug info off
+[32001]
+InfoOutput=4
+
+# kword formatting debug info off
+[32002]
+InfoOutput=4
+
+# kword ui debug info off
+[32003]
+InfoOutput=4
+
+# kword tables debug info off
+[32004]
+InfoOutput=4
+
+# kword kross scripting debug info off
+[32010]
+InfoOutput=4
+
+# kpresenter debug info off
+[33001]
+InfoOutput=4
+
+# kpresenter page transitions debug off
+[33002]
+InfoOutput=4
+
+# kpresenter shape animations debug off
+[33003]
+InfoOutput=4
+
+# kchart debug info off
+[35001]
+InfoOutput=4
+
+# kchart debug info off
+[36000]
+InfoOutput=4
+
+# kspread  debug info off
+[36001]
+InfoOutput=4
+
+# kspread formula debug info off
+[36002]
+InfoOutput=4
+
+# kspread opendocument debug info off
+[36003]
+InfoOutput=4
+
+# kspread painting debug info off
+[36004]
+InfoOutput=4
+
+# kspread ui debug info off
+[36005]
+InfoOutput=4
+
+# kspread style debug info off
+[36006]
+InfoOutput=4
+
+# kspread damage debug info off
+[36007]
+InfoOutput=4
+
+# kspread debug info off
+[37000]
+InfoOutput=4
+
+# kformula debug info off
+[39001]
+InfoOutput=4
+
+# kformula debug info off
+[40000]
+InfoOutput=4
+
+# krita debug info off
+[41000]
+InfoOutput=4
+
+# krita debug info off (core)
+[41001]
+InfoOutput=4
+
+# krita debug info off (registry)
+[41002]
+InfoOutput=4
+
+# krita debug info off (tools)
+[41003]
+InfoOutput=4
+
+# krita debug info off (tiles)
+[41004]
+InfoOutput=4
+
+# krita debug info off (filters)
+[41005]
+InfoOutput=4
+
+# krita debug info off (plugins)
+[41006]
+InfoOutput=4
+
+# krita debug info off (user interface)
+[41007]
+InfoOutput=4
+
+# krita debug info off (file handling)
+[41008]
+InfoOutput=4
+
+# krita debug info off (math)
+[41009]
+InfoOutput=4
+
+# krita debug info off (render)
+[41010]
+InfoOutput=4
+
+# krita debug info off (scripting)
+[41011]
+InfoOutput=4
+
+# kplato debug info off
+[42000]
+InfoOutput=4
+
+# kivio debug info off
+[43000]
+InfoOutput=4
