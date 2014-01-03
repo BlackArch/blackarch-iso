@@ -2,7 +2,7 @@
 
 set -e -u
 
-iso_name=blackarclinux
+iso_name=blackarchlinux
 iso_label="ARCH_$(date +%Y%m)"
 iso_version="$(date +%Y.%m.%d)-netinst"
 install_dir=arch
