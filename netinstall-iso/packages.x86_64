@@ -1,0 +1,9 @@
+##############
+# arch linux #
+##############
+
+# default
+gummiboot
+prebootloader
+refind-efi
+
