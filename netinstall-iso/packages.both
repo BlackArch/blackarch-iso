@@ -1,0 +1,46 @@
+##############
+# arch linux #
+##############
+
+# default
+abs
+arch-install-scripts
+b43-fwcutter
+btrfs-progs
+crda
+dhclient
+dosfstools
+#ethtool
+expac
+git
+grml-zsh-config
+#haveged
+ipw2100-fw
+ipw2200-fw
+linux-atm
+#moreutils
+#mtools
+#nfs-utils
+#nilfs-utils
+ntp
+openssh
+parted
+#ppp
+#pptpclient
+rfkill
+rp-pppoe
+speedtouch
+tzdata
+usb_modeswitch
+vim
+#wget
+wicd
+wicd-gtk
+wireless_tools
+wpa_actiond
+zd1211-firmware
+zsh
+
+# needed for blackarch
+#virtualbox-guest-modules
+#virtualbox-guest-utils
