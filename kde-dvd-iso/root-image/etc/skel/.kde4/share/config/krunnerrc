@@ -1,0 +1,11 @@
+[EdgePositions]
+Offset=0.5
+
+[General]
+PastQueries=\\0
+
+[Interface]
+Size=420,500
+
+[PlasmaRunnerManager]
+LaunchCounts=

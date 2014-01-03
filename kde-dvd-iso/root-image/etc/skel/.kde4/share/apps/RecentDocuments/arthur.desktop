@@ -1,0 +1,6 @@
+[Desktop Entry]
+Icon=inode-directory
+Name=root
+Type=Link
+URL[$e]=file://$HOME
+X-KDE-LastOpenedWith=dolphin

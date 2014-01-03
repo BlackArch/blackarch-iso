@@ -1,0 +1,3 @@
+[Agent]
+Name=Local Folders
+DesiredOnlineState=true

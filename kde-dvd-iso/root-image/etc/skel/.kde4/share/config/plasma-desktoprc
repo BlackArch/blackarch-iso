@@ -1,0 +1,30 @@
+[BackgroundConfigDialog]
+Height 900=719
+Width 1440=650
+
+[KFileDialog Settings]
+Height 900=437
+Recent Files[$e]=wallpaper.png,/usr/share/blackarch/wallpaper.png
+Recent URLs[$e]=/usr/share/blackarch/
+Width 1440=720
+
+[PlasmaViews][3]
+panelVisibility=0
+
+[PlasmaViews][3][Sizes]
+lastsize=1440
+
+[Updates]
+performed=/usr/share/apps/plasma-desktop/updates/set-hidden-single-vd-pager.js,/usr/share/apps/plasma-desktop/updates/addShowActivitiesManagerPlasmoid.js,/usr/share/apps/plasma-desktop/updates/systray-to-notifications-widget.js
+
+[ViewIds]
+13=3
+8=2
+
+[stopSuppressingScreenPowerManagement]
+__file=
+cookie=-1
+
+[stopSuppressingSleep]
+__file=
+cookie=-1

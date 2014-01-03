@@ -1,0 +1,174 @@
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kopete-update_yahoo_server.upd' for new updates
+2014-01-02T21:50:41 kopete-update_yahoo_server.upd: Found new update 'kopete-update-yahoo-server/r1'
+2014-01-02T21:50:41 kopete-update_yahoo_server.upd: Running script 'kopete-update_yahoo_server.pl'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kopete-gaim_to_pidgin_style.upd' for new updates
+2014-01-02T21:50:41 kopete-gaim_to_pidgin_style.upd: Found new update 'kopete0.70.85/r1'
+2014-01-02T21:50:41 kopete-gaim_to_pidgin_style.upd: Running script 'kopete-gaim_to_pidgin_style.pl'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kcalcrc.upd' for new updates
+2014-01-02T21:50:41 kcalcrc.upd: Found new update 'KDE_3_2_0'
+2014-01-02T21:50:41 kcalcrc.upd: File 'kcalcrc' does not exist or empty, skipping
+2014-01-02T21:50:41 kcalcrc.upd: Found new update 'KDE_4_3_0'
+2014-01-02T21:50:41 kcalcrc.upd: File 'kcalcrc' does not exist or empty, skipping
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kio_help.upd' for new updates
+2014-01-02T21:50:41 kio_help.upd: Found new update 'kde3_2'
+2014-01-02T21:50:41 kio_help.upd: Running script 'move_kio_help_cache.sh'
+2014-01-02T21:50:41 [Script] mv: cannot stat '/root/.kde4/share/apps/kio_help/cache': No such file or directory
+2014-01-02T21:50:41 [Script] rmdir: failed to remove '/root/.kde4/share/apps/kio_help': No such file or directory
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kcookiescfg.upd' for new updates
+2014-01-02T21:50:41 kcookiescfg.upd: Found new update 'kde2.2/b1'
+2014-01-02T21:50:41 kcookiescfg.upd: File 'kcookiejarrc' does not exist or empty, skipping
+2014-01-02T21:50:41 kcookiescfg.upd: Found new update 'kde3.1/cvs'
+2014-01-02T21:50:41 kcookiescfg.upd: File 'kcookiejarrc' does not exist or empty, skipping
+2014-01-02T21:50:41 kcookiescfg.upd: Found new update 'kde4.10/git'
+2014-01-02T21:50:41 kcookiescfg.upd: File 'kcookiejarrc' does not exist or empty, skipping
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kopete-account-kconf_update.upd' for new updates
+2014-01-02T21:50:41 kopete-account-kconf_update.upd: Found new update 'kopete0.7/r1'
+2014-01-02T21:50:41 kopete-account-kconf_update.upd: Running script 'kopete-account-kconf_update.sh'
+2014-01-02T21:50:41 [Script] /usr/share/apps/kconf_update/kopete-account-kconf_update.sh: line 9: kde-config: command not found
+2014-01-02T21:50:41 kopete-account-kconf_update.upd: Found new update 'kopete0.10/r1'
+2014-01-02T21:50:41 kopete-account-kconf_update.upd: Running script 'kopete-account-0.10.pl'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kded.upd' for new updates
+2014-01-02T21:50:41 kded.upd: Found new update 'kde3.0'
+2014-01-02T21:50:41 kded.upd: File 'kdedrc' does not exist or empty, skipping
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/konsole_remove_background_mode.upd' for new updates
+2014-01-02T21:50:41 konsole_remove_background_mode.upd: Found new update '2.11.0-remove-background-mode'
+2014-01-02T21:50:41 konsole_remove_background_mode.upd: File 'kglobalshortcutsrc' does not exist or empty, skipping
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kwin_translate_activity_rule.upd' for new updates
+2014-01-02T21:50:41 kwin_translate_activity_rule.upd: Found new update 'Kwin-4.10'
+2014-01-02T21:50:41 kwin_translate_activity_rule.upd: Running script 'kwin_translate_activity_rule.sh'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kopete-nameTracking.upd' for new updates
+2014-01-02T21:50:41 kopete-nameTracking.upd: Found new update 'kopete0.9/r1'
+2014-01-02T21:50:41 kopete-nameTracking.upd:3:'Script=kopete-nameTracking-kconf_update': Script 'kopete-nameTracking-kconf_update' not found
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kopete-jabberpriorityaddition-kconf_update.upd' for new updates
+2014-01-02T21:50:41 kopete-jabberpriorityaddition-kconf_update.upd: Found new update 'kopete0.9/r1'
+2014-01-02T21:50:41 kopete-jabberpriorityaddition-kconf_update.upd: Running script 'kopete-jabberpriorityaddition-kconf_update.sh'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/ksslcertificatemanager.upd' for new updates
+2014-01-02T21:50:41 ksslcertificatemanager.upd: Found new update 'kde4.2'
+2014-01-02T21:50:41 ksslcertificatemanager.upd: Running script 'ksslcertificatemanager.upd.sh'
+2014-01-02T21:50:41 [Script] rm: cannot remove '/root/.kde4//share/config/ksslcertificatemanager': No such file or directory
+2014-01-02T21:50:41 ksslcertificatemanager.upd: !! An error occurred while running 'sh /usr/share/apps/kconf_update/ksslcertificatemanager.upd.sh'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kwin_remove_delay_focus.upd' for new updates
+2014-01-02T21:50:41 kwin_remove_delay_focus.upd: Found new update 'Kwin-4.8'
+2014-01-02T21:50:41 kwin_remove_delay_focus.upd: Running script 'kwin_remove_delay_focus.sh'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/kopete-jabberproxytype-kconf_update.upd' for new updates
+2014-01-02T21:50:41 kopete-jabberproxytype-kconf_update.upd: Found new update 'kopete0.9/r1'
+2014-01-02T21:50:41 kopete-jabberproxytype-kconf_update.upd: Running script 'kopete-jabberproxytype-kconf_update.sh'
+2014-01-02T21:50:41 Checking update-file '/usr/share/apps/kconf_update/devicepreference.upd' for new updates
+2014-01-02T21:50:41 devicepreference.upd: Found new update 'DevicesMovedToPlatformPlugin'
+2014-01-02T21:50:41 devicepreference.upd: Running script 'phonon_devicepreference_update'
+2014-01-02T21:50:41 devicepreference.upd: Found new update 'DevicesUIDsChanged'
+2014-01-02T21:50:41 devicepreference.upd: Running script 'phonon_deviceuids_update'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/mailtransports.upd' for new updates
+2014-01-02T21:50:42 mailtransports.upd: Found new update 'initial-kmail-migration'
+2014-01-02T21:50:42 mailtransports.upd: File 'kmailrc' does not exist or empty, skipping
+2014-01-02T21:50:42 mailtransports.upd: Found new update 'initial-knode-migration'
+2014-01-02T21:50:42 mailtransports.upd: File 'knoderc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_update_411.upd' for new updates
+2014-01-02T21:50:42 kwin_update_411.upd: Found new update 'Kwin-4.11_0'
+2014-01-02T21:50:42 kwin_update_411.upd: Running script 'kwin_update_settings_411'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/drkonqi-rename-config-section.upd' for new updates
+2014-01-02T21:50:42 drkonqi-rename-config-section.upd: Found new update 'kde-4.11'
+2014-01-02T21:50:42 drkonqi-rename-config-section.upd: File 'drkonqirc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_update_tabbox_qml_settings.upd' for new updates
+2014-01-02T21:50:42 kwin_update_tabbox_qml_settings.upd: Found new update 'Kwin-4.8'
+2014-01-02T21:50:42 kwin_update_tabbox_qml_settings.upd: Running script 'kwin_update_tabbox_qml_settings'
+2014-01-02T21:50:42 [Script] QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/plasmarc-to-plasmadesktoprc.upd' for new updates
+2014-01-02T21:50:42 plasmarc-to-plasmadesktoprc.upd: Found new update '4.3plasma-desktop'
+2014-01-02T21:50:42 plasmarc-to-plasmadesktoprc.upd: Running script 'plasma-to-plasma-desktop'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_fsp_workarounds_1.upd' for new updates
+2014-01-02T21:50:42 kwin_fsp_workarounds_1.upd: Found new update 'kde351'
+2014-01-02T21:50:42 kwin_fsp_workarounds_1.upd: Running script 'kwin_update_default_rules' with arguments 'fsp_workarounds_1.kwinrules'
+2014-01-02T21:50:42 [Script] QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kuriikwsfilter.upd' for new updates
+2014-01-02T21:50:42 kuriikwsfilter.upd: Found new update 'post-kde3.1/cvs'
+2014-01-02T21:50:42 kuriikwsfilter.upd: File 'kuriikwsfilterrc' does not exist or empty, skipping
+2014-01-02T21:50:42 kuriikwsfilter.upd: Found new update 'pre-kde4.9'
+2014-01-02T21:50:42 kuriikwsfilter.upd: File 'kuriikwsfilterrc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kopete-update_icq_ssl.upd' for new updates
+2014-01-02T21:50:42 kopete-update_icq_ssl.upd: Found new update 'kopete-update-icq-ssl/r1'
+2014-01-02T21:50:42 kopete-update_icq_ssl.upd: Running script 'kopete-update_icq_ssl.pl'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/newmailnotifier.upd' for new updates
+2014-01-02T21:50:42 newmailnotifier.upd: Found new update 'initial-newmailnotifier-migration'
+2014-01-02T21:50:42 newmailnotifier.upd: File 'kmail2rc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kopete-update_icq_server.upd' for new updates
+2014-01-02T21:50:42 kopete-update_icq_server.upd: Found new update 'kopete-update-icq-server/r1'
+2014-01-02T21:50:42 kopete-update_icq_server.upd: Running script 'kopete-update_icq_server.pl'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/konsole.upd' for new updates
+2014-01-02T21:50:42 konsole.upd: Found new update '2.9.0-global-options'
+2014-01-02T21:50:42 konsole.upd: File 'konsolerc' does not exist or empty, skipping
+2014-01-02T21:50:42 konsole.upd: Found new update '2.9.0-colorscheme-bold-key'
+2014-01-02T21:50:42 konsole.upd: Running script 'konsole-2.9.0-colorscheme-bold-key.sh'
+2014-01-02T21:50:42 konsole.upd: Found new update '2.10.0-remove-menuindex-from-profiles'
+2014-01-02T21:50:42 konsole.upd: Running script 'konsole-2.10.0-remove-menuindex-from-profiles.sh'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/plasma-to-plasmadesktop-shortcuts.upd' for new updates
+2014-01-02T21:50:42 plasma-to-plasmadesktop-shortcuts.upd: Found new update '4.3plasma-desktop-shortcuts'
+2014-01-02T21:50:42 plasma-to-plasmadesktop-shortcuts.upd: File 'kglobalshortcutsrc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_update_tabbox_settings.upd' for new updates
+2014-01-02T21:50:42 kwin_update_tabbox_settings.upd: Found new update 'Kwin-4.4'
+2014-01-02T21:50:42 kwin_update_tabbox_settings.upd: Running script 'kwin_update_tabbox_settings'
+2014-01-02T21:50:42 [Script] QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kopete-pluginloader2.upd' for new updates
+2014-01-02T21:50:42 kopete-pluginloader2.upd: Found new update 'kopete0.8/r1'
+2014-01-02T21:50:42 kopete-pluginloader2.upd: Running script 'kopete-pluginloader2.sh'
+2014-01-02T21:50:42 [Script] /usr/share/apps/kconf_update/kopete-pluginloader2.sh: line 9: kde-config: command not found
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_remove_effects.upd' for new updates
+2014-01-02T21:50:42 kwin_remove_effects.upd: Found new update 'kwin4.7_effects'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kscreenlocker_locksession-shortcut.upd' for new updates
+2014-01-02T21:50:42 kscreenlocker_locksession-shortcut.upd: Found new update '4.9-locksession-shortcut'
+2014-01-02T21:50:42 kscreenlocker_locksession-shortcut.upd: File 'kglobalshortcutsrc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/notifications-to-orgkdenotifications.upd' for new updates
+2014-01-02T21:50:42 notifications-to-orgkdenotifications.upd: Found new update '4.10QmlNotifications'
+2014-01-02T21:50:42 notifications-to-orgkdenotifications.upd: Running script 'notifications-to-orgkdenotifications'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/oxygen.upd' for new updates
+2014-01-02T21:50:42 oxygen.upd: Found new update '1'
+2014-01-02T21:50:42 oxygen.upd: File 'oxygenrc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/klipper-kconfigxt.upd' for new updates
+2014-01-02T21:50:42 klipper-kconfigxt.upd: Found new update 'KlipperNoSpacesInKeyNames'
+2014-01-02T21:50:42 klipper-kconfigxt.upd: File 'klipperrc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_update_410.upd' for new updates
+2014-01-02T21:50:42 kwin_update_410.upd: Found new update 'Kwin-4.10_1'
+2014-01-02T21:50:42 kwin_update_410.upd: Running script 'kwin_update_settings_410'
+2014-01-02T21:50:42 [Script] QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/ksmserver_shortcuts.upd' for new updates
+2014-01-02T21:50:42 ksmserver_shortcuts.upd: Found new update 'kde4.10'
+2014-01-02T21:50:42 ksmserver_shortcuts.upd: Found new update 'kde4.10-remove-group-kscreenlocker'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/krdb_libpathwipe.upd' for new updates
+2014-01-02T21:50:42 krdb_libpathwipe.upd: Found new update 'LibraryPathWipeOut'
+2014-01-02T21:50:42 krdb_libpathwipe.upd: Running script 'krdb_clearlibrarypath'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kioslave.upd' for new updates
+2014-01-02T21:50:42 kioslave.upd: Found new update 'kde2.2/r1'
+2014-01-02T21:50:42 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2014-01-02T21:50:42 kioslave.upd: Skipping update 'kde2.2/r1'
+2014-01-02T21:50:42 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2014-01-02T21:50:42 kioslave.upd: Found new update 'kde2.2/r2'
+2014-01-02T21:50:42 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2014-01-02T21:50:42 kioslave.upd: Found new update 'kde2.2/r3'
+2014-01-02T21:50:42 kioslave.upd: File 'kioslaverc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kget.upd' for new updates
+2014-01-02T21:50:42 kget.upd: Found new update '2.8.0'
+2014-01-02T21:50:42 kget.upd: File 'kgetrc' does not exist or empty, skipping
+2014-01-02T21:50:42 kget.upd: Found new update '2.8.0/multiseg'
+2014-01-02T21:50:42 kget.upd: File 'kget_multisegkiofactory.rc' does not exist or empty, skipping
+2014-01-02T21:50:42 kget.upd: Found new update '2.8.0/sensitive'
+2014-01-02T21:50:42 kget.upd: File 'kgetrc' does not exist or empty, skipping
+2014-01-02T21:50:42 kget.upd: Found new update '2.8.0/limitdownloads'
+2014-01-02T21:50:42 kget.upd: File 'kgetrc' does not exist or empty, skipping
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kopete-initialstatus.upd' for new updates
+2014-01-02T21:50:42 kopete-initialstatus.upd: Found new update 'kopete0.60.80/r1'
+2014-01-02T21:50:42 kopete-initialstatus.upd: Running script 'kopete-initialstatus.pl'
+2014-01-02T21:50:42 kopete-initialstatus.upd: Script removes kopeterc:Behavior:autoConnect
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kopete-pluginloader.upd' for new updates
+2014-01-02T21:50:42 kopete-pluginloader.upd: Found new update 'kopete0.7/r1'
+2014-01-02T21:50:42 kopete-pluginloader.upd: Running script 'kopete-pluginloader.pl'
+2014-01-02T21:50:42 kopete-pluginloader.upd: Script removes kopeterc::Modules
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_translate_confrequest_rule.upd' for new updates
+2014-01-02T21:50:42 kwin_translate_confrequest_rule.upd: Found new update 'Kwin-4.11'
+2014-01-02T21:50:42 kwin_translate_confrequest_rule.upd: Running script 'kwin_translate_confrequest_rule.sh'
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/plasma-add-shortcut-to-menu.upd' for new updates
+2014-01-02T21:50:42 plasma-add-shortcut-to-menu.upd: Found new update '4.1LauncherShortcut'
+2014-01-02T21:50:42 plasma-add-shortcut-to-menu.upd:2:'Script=plasma-add-shortcut-to-menu-update': Script 'plasma-add-shortcut-to-menu-update' not found
+2014-01-02T21:50:42 Checking update-file '/usr/share/apps/kconf_update/kwin_update_49.upd' for new updates
+2014-01-02T21:50:42 kwin_update_49.upd: Found new update 'Kwin-4.9'
+2014-01-02T21:50:42 kwin_update_49.upd: Running script 'kwin_update_settings_49'
+2014-01-02T21:50:42 [Script] QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
