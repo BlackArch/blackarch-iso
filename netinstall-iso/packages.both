@@ -33,7 +33,7 @@ speedtouch
 tzdata
 usb_modeswitch
 vim
-#wget
+wget
 wicd
 wicd-gtk
 wireless_tools
@@ -44,3 +44,4 @@ zsh
 # needed for blackarch
 #virtualbox-guest-modules
 #virtualbox-guest-utils
+blackarch-install-scripts

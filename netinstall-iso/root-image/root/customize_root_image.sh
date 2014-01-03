@@ -38,3 +38,9 @@ su -c 'pacman-key --lsign-key 4345771566D76038C7FEB43863EC0ADBEA87E4E3' root
 
 # sync database
 su -c 'pacman -Syy --noconfirm' root
+
+# install - dev purposes
+su -c 'cd /root; git clone https://github.com/BlackArch/blackarch-install-scripts' root
+su -c 'cd /root; wget https://github.com/BlackArch/blackarch-install-scripts/archive/v0.2.tar.gz' root
+su -c 'git config --global user.email nrz@nullsecurity.net' root
+su -c 'git config --global user.name nrz' root
