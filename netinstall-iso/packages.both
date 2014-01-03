@@ -40,6 +40,7 @@ wireless_tools
 wpa_actiond
 zd1211-firmware
 zsh
+openssh
 
 # needed for blackarch
 #virtualbox-guest-modules
