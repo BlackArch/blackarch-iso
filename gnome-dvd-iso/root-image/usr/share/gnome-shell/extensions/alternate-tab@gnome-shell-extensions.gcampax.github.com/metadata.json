@@ -1,0 +1,11 @@
+{
+"extension-id": "alternate-tab",
+"uuid": "alternate-tab@gnome-shell-extensions.gcampax.github.com",
+"settings-schema": "org.gnome.shell.extensions.alternate-tab",
+"gettext-domain": "gnome-shell-extensions",
+"name": "AlternateTab",
+"description": "Substitute Alt-Tab with a window based switcher that does not group by application.\nThis extension is part of Classic Mode and is officially supported by GNOME. Please do not report bugs using the form below, use GNOME Bugzilla instead.",
+"original-authors": [  "jw@bargsten.org", "thomas.bouffon@gmail.com" ],
+"shell-version": [ "3.10" ],
+"url": "http://git.gnome.org/gnome-shell-extensions"
+}

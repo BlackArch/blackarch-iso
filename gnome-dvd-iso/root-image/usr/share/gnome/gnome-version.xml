@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gnome-version>
+ <platform>3</platform>
+ <minor>10</minor>
+ <micro>1</micro>
+ <distributor>Arch Linux</distributor>
+ <date>2013-11-16</date>
+</gnome-version>

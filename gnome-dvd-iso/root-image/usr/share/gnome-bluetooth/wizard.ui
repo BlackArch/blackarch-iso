@@ -1,0 +1,540 @@
+<?xml version="1.0"?>
+<interface>
+  <requires lib="gtk+" version="2.16"/>
+  <!-- interface-naming-policy toplevel-contextual -->
+  <object class="GtkAssistant" id="assistant">
+    <property name="title" translatable="yes">Bluetooth New Device Setup</property>
+    <property name="window_position">center</property>
+    <property name="default_width">440</property>
+    <property name="default_height">440</property>
+    <signal name="prepare" handler="prepare_callback"/>
+    <signal name="cancel" handler="quit_callback"/>
+    <signal name="close" handler="quit_callback"/>
+    <child>
+      <object class="GtkBox" id="page_search">
+	<property name="orientation">vertical</property>
+        <property name="visible">True</property>
+        <property name="border_width">24</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="BluetoothChooser" id="selector">
+            <property name="show-searching">True</property>
+            <property name="show-device-type">True</property>
+            <property name="show-device-category">False</property>
+            <property name="device-category-filter">3</property>
+            <property name="visible">True</property>
+            <signal name="selected-device-changed" handler="select_device_changed"/>
+          </object>
+          <packing>
+            <property name="position">0</property>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="pin_option_button">
+            <property name="label" translatable="yes">PIN _options...</property>
+            <property name="visible">True</property>
+            <property name="sensitive">False</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="use_underline">True</property>
+            <signal name="clicked" handler="pin_option_button_clicked"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Device Search</property>
+        <property name="page_type">intro</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="page_connecting">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkTable" id="table1">
+            <property name="visible">True</property>
+            <property name="n_rows">2</property>
+            <property name="n_columns">2</property>
+            <property name="row-spacing">12</property>
+            <property name="column-spacing">12</property>
+            <property name="border-width">12</property>
+            <child>
+              <object class="GtkLabel" id="label_connecting">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="yalign">0</property>
+                <property name="label">Connecting to 'Foobar'...</property>
+                <property name="wrap">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinner" id="spinner_connecting">
+                <property name="visible">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">1</property>
+                <property name="x-options">0</property>
+                <property name="y-options">0</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="position">0</property>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="padding">12</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Device Setup</property>
+        <property name="page_type">custom</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="page_setup">
+	<property name="orientation">vertical</property>
+        <property name="visible">True</property>
+        <property name="border_width">24</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="label_pin_help">
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="yalign">0</property>
+            <property name="label">Please enter the following PIN on 'Foobar':</property>
+            <property name="wrap">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_pin">
+            <property name="label">&lt;span font_desc="50" color="black" bgcolor="white"&gt;  123456  &lt;/span&gt;</property>
+            <property name="use_markup">True</property>
+            <property name="visible">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Device Setup</property>
+        <property name="page_type">custom</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="page_ssp_setup">
+	<property name="orientation">vertical</property>
+        <property name="visible">True</property>
+        <property name="border_width">24</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkLabel" id="label_ssp_pin_help">
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="yalign">0</property>
+            <property name="label">Please confirm that the PIN displayed on 'Foobar' matches this one</property>
+            <property name="wrap">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_ssp_pin">
+            <property name="label">&lt;span font_desc="50" color="black" bgcolor="white"&gt;  123456  &lt;/span&gt;</property>
+            <property name="use_markup">True</property>
+          </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Device Setup</property>
+        <property name="page_type">custom</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="page_finishing">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">6</property>
+        <child>
+          <object class="GtkTable" id="table2">
+            <property name="visible">True</property>
+            <property name="n_rows">2</property>
+            <property name="n_columns">2</property>
+            <property name="row-spacing">12</property>
+            <property name="column-spacing">12</property>
+            <property name="border-width">12</property>
+            <child>
+              <object class="GtkLabel" id="label_finishing">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="yalign">0</property>
+                <property name="label">Please wait while finishing setup on device 'Foobar'...</property>
+                <property name="wrap">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSpinner" id="spinner_finishing">
+                <property name="visible">True</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="right_attach">1</property>
+                <property name="x-options">0</property>
+                <property name="y-options">0</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="position">0</property>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="padding">12</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="title" translatable="yes">Finishing Setup</property>
+        <property name="page_type">custom</property>
+      </packing>
+    </child>
+    <child>
+      <object class="GtkBox" id="page_summary">
+	<property name="orientation">vertical</property>
+        <property name="visible">True</property>
+        <property name="border_width">24</property>
+        <property name="spacing">12</property>
+        <child>
+          <object class="GtkLabel" id="label_summary">
+            <property name="visible">True</property>
+            <property name="xalign">0</property>
+            <property name="yalign">0</property>
+            <property name="label">Successfully setup new device 'Foobar'</property>
+            <property name="wrap">True</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkBox" id="extra_config_vbox">
+            <property name="visible">True</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkLabel" id="extra_config_help_label">
+                <property name="xalign">0</property>
+                <property name="yalign">0</property>
+                <property name="label" translatable="yes">Select the additional services you want to use with your device:</property>
+                <property name="wrap">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+      <packing>
+        <property name="page_type">custom</property>
+        <property name="title" translatable="yes">Setup Summary</property>
+      </packing>
+    </child>
+  </object>
+  <object class="GtkDialog" id="pin_dialog">
+    <property name="border_width">5</property>
+    <property name="title" translatable="yes">PIN Options</property>
+    <property name="destroy_with_parent">True</property>
+    <property name="type_hint">normal</property>
+    <child internal-child="vbox">
+      <object class="GtkBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="orientation">vertical</property>
+        <property name="spacing">2</property>
+        <child>
+          <object class="GtkBox" id="vbox1">
+            <property name="visible">True</property>
+            <property name="border_width">12</property>
+            <property name="orientation">vertical</property>
+            <property name="spacing">6</property>
+            <child>
+              <object class="GtkRadioButton" id="radio_auto">
+                <property name="label" translatable="yes">_Automatic PIN selection</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="use_underline">True</property>
+                <property name="active">True</property>
+                <property name="draw_indicator">True</property>
+                <signal name="toggled" handler="set_user_pincode"/>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="label3">
+                <property name="visible">True</property>
+                <property name="xalign">0</property>
+                <property name="label" translatable="yes" comments="Translators: this is a PIN with a set value, such as 1111, or 0000">Fixed PIN</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="radio_0000">
+                <property name="label" translatable="yes">'0000' (most headsets, mice and GPS devices)</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="active">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">radio_auto</property>
+                <signal name="toggled" handler="set_user_pincode"/>
+              </object>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="radio_1111">
+                <property name="label" translatable="yes">'1111'</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="active">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">radio_auto</property>
+                <signal name="toggled" handler="set_user_pincode"/>
+              </object>
+              <packing>
+                <property name="position">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="radio_1234">
+                <property name="label" translatable="yes">'1234'</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="active">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">radio_auto</property>
+                <signal name="toggled" handler="set_user_pincode"/>
+              </object>
+              <packing>
+                <property name="position">4</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkRadioButton" id="radio_none">
+                <property name="label" translatable="yes">Do not pair</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">False</property>
+                <property name="active">True</property>
+                <property name="draw_indicator">True</property>
+                <property name="group">radio_auto</property>
+                <signal name="toggled" handler="set_user_pincode"/>
+              </object>
+              <packing>
+                <property name="position">6</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="hbox1">
+		<property name="orientation">horizontal</property>
+                <property name="visible">True</property>
+                <property name="spacing">12</property>
+                <child>
+                  <object class="GtkRadioButton" id="radio_custom">
+                    <property name="label" translatable="yes">Custom PIN:</property>
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="receives_default">False</property>
+                    <property name="active">True</property>
+                    <property name="draw_indicator">True</property>
+                    <property name="group">radio_auto</property>
+                    <signal name="toggled" handler="toggle_set_sensitive"/>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="entry_custom">
+                    <property name="visible">True</property>
+                    <property name="sensitive">False</property>
+                    <property name="can_focus">True</property>
+                    <property name="max_length">20</property>
+                    <property name="width_chars">20</property>
+                    <signal name="key-press-event" handler="entry_custom_event"/>
+                    <signal name="changed" handler="entry_custom_changed"/>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">5</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">False</property>
+            <property name="padding">6</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+            <child>
+              <placeholder/>
+            </child>
+            <child>
+              <object class="GtkButton" id="button1">
+                <property name="label">gtk-close</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <property name="use_stock">True</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="-3">button1</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkImage" id="image2">
+    <property name="visible">True</property>
+    <property name="stock">gtk-apply</property>
+  </object>
+  <object class="GtkImage" id="image1">
+    <property name="visible">True</property>
+    <property name="stock">gtk-cancel</property>
+  </object>
+  <object class="GtkImage" id="image4">
+    <property name="visible">True</property>
+    <property name="stock">gtk-apply</property>
+  </object>
+  <object class="GtkButton" id="restart_button">
+    <property name="label" translatable="yes">_Try Again</property>
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="receives_default">True</property>
+    <property name="image">image3</property>
+    <property name="use_underline">True</property>
+    <signal name="clicked" handler="restart_button_clicked"/>
+  </object>
+  <object class="GtkButton" id="quit_button">
+    <property name="label" translatable="yes">_Quit</property>
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="receives_default">True</property>
+    <property name="use_underline">True</property>
+    <signal name="clicked" handler="quit_callback"/>
+  </object>
+  <object class="GtkButton" id="cancel_button">
+    <property name="label" translatable="yes">_Cancel</property>
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="receives_default">True</property>
+    <property name="use_underline">True</property>
+    <signal name="clicked" handler="quit_callback"/>
+  </object>
+  <object class="GtkButton" id="does_not_match_button">
+    <property name="label" translatable="yes" comments="This is a button to answer: Does the PIN matches the one on the device?">Does not match</property>
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="receives_default">True</property>
+    <property name="image">image1</property>
+    <property name="use_underline">True</property>
+    <signal name="clicked" handler="does_not_match_cb"/>
+  </object>
+  <object class="GtkButton" id="matches_button">
+    <property name="label" translatable="yes" comments="This is a button to answer: Does the PIN matches the one on the device?">Matches</property>
+    <property name="visible">True</property>
+    <property name="can_focus">True</property>
+    <property name="receives_default">True</property>
+    <property name="image">image4</property>
+    <property name="use_underline">True</property>
+    <signal name="clicked" handler="matches_cb"/>
+  </object>
+  <object class="GtkImage" id="image3">
+    <property name="visible">True</property>
+    <property name="stock">gtk-goto-first</property>
+  </object>
+</interface>

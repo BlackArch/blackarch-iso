@@ -1,0 +1,9 @@
+.window-caption {
+    -shell-caption-spacing: 13px;		/* current caption height is 26px => set it to half of it. TODO: better solution needed */
+}
+
+.window-picker {
+    -horizontal-spacing: 32px;
+    -vertical-spacing: 32px;
+    padding: 64px 32px;
+}

@@ -1,0 +1,11 @@
+{
+    "shell-version": ["3.10" ],
+    "extension-id": "windowsNavigator",
+    "uuid": "windowsNavigator@gnome-shell-extensions.gcampax.github.com",
+    "settings-schema": "org.gnome.shell.extensions.windowsNavigator",
+    "gettext-domain": "gnome-shell-extensions",
+    "original-author": "zaspire@rambler.ru",
+    "name": "windowNavigator",
+    "description": "Allow keyboard selection of windows and workspaces in overlay mode. <Ctrl>number selects a workspace, and <Alt>number selects a window.",
+    "url": "http://git.gnome.org/gnome-shell-extensions"
+}

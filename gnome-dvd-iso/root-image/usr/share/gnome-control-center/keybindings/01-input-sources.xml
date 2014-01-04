@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyListEntries schema="org.gnome.desktop.wm.keybindings" group="system" name="Typing">
+
+  <KeyListEntry name="switch-input-source" description="Switch to next input source"></KeyListEntry>
+
+  <KeyListEntry name="switch-input-source-backward" description="Switch to previous input source"></KeyListEntry>
+
+</KeyListEntries>

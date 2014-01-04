@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyListEntries schema="org.gnome.settings-daemon.plugins.media-keys" group="system" name="Sound and Media">
+
+	<KeyListEntry name="volume-mute" description="Volume mute"></KeyListEntry>
+
+	<KeyListEntry name="volume-down" description="Volume down"></KeyListEntry>
+
+	<KeyListEntry name="volume-up" description="Volume up"></KeyListEntry>
+
+	<KeyListEntry name="media" description="Launch media player"></KeyListEntry>
+
+	<KeyListEntry name="play" description="Play (or play/pause)"></KeyListEntry>
+
+	<KeyListEntry name="pause" description="Pause playback"></KeyListEntry>
+
+	<KeyListEntry name="stop" description="Stop playback"></KeyListEntry>
+
+	<KeyListEntry name="previous" description="Previous track"></KeyListEntry>
+
+	<KeyListEntry name="next" description="Next track"></KeyListEntry>
+
+	<KeyListEntry name="eject" description="Eject"></KeyListEntry>
+
+</KeyListEntries>

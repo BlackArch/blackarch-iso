@@ -36,3 +36,7 @@ systemd-journal:x:190:
 git:x:999:
 vboxsf:x:109:
 avahi:x:84:
+gdm:x:120:
+usbmux:x:140:
+vboxsf:x:109:
+polkitd:x:102:

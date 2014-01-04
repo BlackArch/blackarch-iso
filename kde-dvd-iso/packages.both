@@ -120,7 +120,6 @@ xl2tpd
 xorg-server
 xorg-server-utils
 xorg-xbacklight
-xorg-xdm
 xorg-xinit
 zd1211-firmware
 zsh
@@ -131,9 +130,6 @@ zsh
 # needed for blackarch
 virtualbox-guest-modules
 virtualbox-guest-utils
-xorg-server
-xorg-server-utils
-xorg-xinit
 xterm
 firefox
 acpi

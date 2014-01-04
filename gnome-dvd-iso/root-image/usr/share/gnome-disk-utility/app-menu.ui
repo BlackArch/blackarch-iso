@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id='app-menu'>
+    <section>
+      <item>
+        <attribute name="label" translatable="yes">Attach Disk _Image…</attribute>
+        <attribute name="action">app.attach_disk_image</attribute>
+      </item>
+    </section>
+    <section>
+      <item>
+	<attribute name="action">app.help</attribute>
+	<attribute name="label" translatable="yes">_Help</attribute>
+        <attribute name="accel">F1</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_About Disks</attribute>
+        <attribute name="action">app.about</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">_Quit</attribute>
+        <attribute name="action">app.quit</attribute>
+        <attribute name="accel">&lt;Primary&gt;q</attribute>
+      </item>
+    </section>
+  </menu>
+</interface>

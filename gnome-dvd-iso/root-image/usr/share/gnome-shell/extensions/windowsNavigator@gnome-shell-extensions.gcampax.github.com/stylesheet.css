@@ -1,0 +1,9 @@
+.extension-windowsNavigator-window-tooltip {
+    color: #fefefe;
+    background: rgba(0,0,0,0.8);
+    border: 1px solid rgba(128,128,128,0.40);
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 2px 8px;
+    -shell-caption-spacing: 4px;
+}

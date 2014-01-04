@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<KeyListEntries schema="org.gnome.settings-daemon.plugins.media-keys" group="system" name="Screenshots">
+
+	
+	<KeyListEntry name="screenshot" description="Save a screenshot to $PICTURES"></KeyListEntry>
+
+	
+	<KeyListEntry name="window-screenshot" description="Save a screenshot of a window to $PICTURES"></KeyListEntry>
+
+	
+	<KeyListEntry name="area-screenshot" description="Save a screenshot of an area to $PICTURES"></KeyListEntry>
+
+	<KeyListEntry name="screenshot-clip" description="Copy a screenshot to clipboard"></KeyListEntry>
+
+	<KeyListEntry name="window-screenshot-clip" description="Copy a screenshot of a window to clipboard"></KeyListEntry>
+
+	<KeyListEntry name="area-screenshot-clip" description="Copy a screenshot of an area to clipboard"></KeyListEntry>
+
+	<KeyListEntry name="screencast" description="Record a short screencast"></KeyListEntry>
+
+</KeyListEntries>
