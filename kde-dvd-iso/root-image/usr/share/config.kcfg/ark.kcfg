@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+	<kcfgfile name="arkrc"/>
+	<group name="Extraction">
+		<entry name="openDestinationFolderAfterExtraction" type="Bool">
+			<label>Open destination folder after extraction</label>
+			<default>false</default>
+		</entry>
+		<entry name="closeAfterExtraction" type="Bool">
+			<label>Close Ark after extraction</label>
+			<default>false</default>
+		</entry>
+		<entry name="preservePaths" type="Bool">
+			<label>Preserve paths when extracting</label>
+			<default>true</default>
+		</entry>
+	</group>
+	<group name="MainWindow">
+		<entry name="splitterSizes" type="IntList" />
+		<entry name="splitterSizesWithBothWidgets" type="IntList" />
+	</group>
+</kcfg>

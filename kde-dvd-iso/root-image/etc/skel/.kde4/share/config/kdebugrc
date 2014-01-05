@@ -46,6 +46,9 @@ InfoOutput=2
 [kded]
 InfoOutput=4
 
+[kdesu (kdelibs)]
+InfoOutput=2
+
 [kdostartupconfig4]
 InfoOutput=4
 

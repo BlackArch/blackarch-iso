@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name="konquerorrc" />
+
+  <group name="UserSettings">
+    <entry key="HomeURL" type="Path">
+      <default>http://www.kde.org</default> 
+      <label>Home Page</label>
+      <whatsthis>This is the URL of the web page where Konqueror (as web browser) will jump to when the \"Home\" button is pressed. When Konqueror is started as a file manager, that button makes it jump to your local home folder instead.</whatsthis>
+      <!-- checked -->
+    </entry>
+  </group>
+
+<!-- konqundomanager.cpp -->
+  <group name="UndoManagerSettings">
+    <entry key="maxNumClosedItems" type="Int">
+      <default>20</default> 
+      <min>0</min>
+      <label>Maximum number of Closed Items</label>
+      <whatsthis>This sets the maximum number of closed items that will be stored in memory. This limit will not be surpassed.</whatsthis>
+      <!-- checked -->
+    </entry>
+  </group>
+
+  <group name="FMSettings">
+<!-- behaviour.cpp -->  
+    <entry key="AlwaysNewWin" type="Bool"> <!--TODO dolphinpart-->
+      <default>false</default> 
+      <label>Open folders in separate windows</label>
+      <whatsthis>If this option is checked, Konqueror will open a new window when you open a folder, rather than showing that folder's contents in the current window.</whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ShowFileTips" type="Bool"> <!--LIBKONQ-->
+      <default>true</default> 
+      <label>Show file tips</label>
+      <whatsthis>Here you can control if, when moving the mouse over a file, you want to see a small popup window with additional information about that file</whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="FileTipsItems" type="Int"> <!--LIBKONQ-->
+      <default>6</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ShowPreviewsInFileTips" type="Bool"> <!--LIBKONQ-->
+      <default>true</default> 
+      <label>Show previews in file tips</label>
+      <whatsthis>Here you can control if you want the popup window to contain a larger preview for the file, when moving the mouse over it</whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ShowDeleteCommand" type="Bool">
+      <default>true</default> 
+      <label>Show 'Delete' menu entries which bypass the trashcan</label>
+      <whatsthis>Check this if you want 'Delete' menu commands to be displayed on the desktop and in the file manager's menus and context menus. You can always delete files when hidden by holding the Shift key while calling 'Move to Trash'.</whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- konqmainwindow.cpp, gui in generalopts.cpp -->
+    <entry name="MmbOpensTab" key="MMBOpensTab" type="Bool">
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- konqviewmanager.cpp, gui in generalopts.cpp -->
+    <entry key="AlwaysTabbedMode" type="Bool">
+      <default>false</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- konqtabs.cpp, gui in generalopts.cpp (advancedTabOptions.ui) -->
+    <entry key="NewTabsInFront" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="OpenAfterCurrentPage" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="PermanentCloseButton" type="Bool">
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="KonquerorTabforExternalURL" type="Bool">
+      <default>false</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="PopupsWithinTabs" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="TabCloseActivatePrevious" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- konqtabs.cpp, gui in generalopts.cpp --> 
+    <entry key="MouseMiddleClickClosesTab" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="AddTabButton" type="Bool">
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="CloseTabButton" type="Bool">
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="MaximumTabLength" type="Int">
+      <default>30</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="MinimumTabLength" type="Int">
+      <default>3</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="TabPosition" type="String">
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="OpenWithItems" type="Int">
+      <default>2</default>
+      <label>Number of Open With items in the File menu</label>
+      <whatsthis>Number of Open With items in the File menu</whatsthis>
+      <!-- no writeEntry / hidden-->
+    </entry>
+  </group>
+
+  <group name="HTML Settings" >
+<!-- appearance.cpp -->
+    <entry key="StandardFont" type="Font"> <!--KHTML-->
+      <default code="true">QFont(HTML_DEFAULT_VIEW_SANSSERIF_FONT)</default> 
+      <label>Standard font</label>
+      <whatsthis>This is the font used to display text in Konqueror windows.</whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="MediumFontSize" type="Int"> <!--KHTML-->
+      <default>12</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="MinimumFontSize" type="Int"> <!--KHTML-->
+      <default code="true">HTML_DEFAULT_MIN_FONT_SIZE</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="Fonts" type="StringList"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="DefaultEncoding" type="String"> <!--KHTML-->
+      <default code="true">QString()</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- htmlopts.cpp -->
+    <entry key="ChangeCursor" type="Bool"> <!--KHTML-->
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry name="HtmlUnderlineLinks" key="UnderlineLinks" type="Bool"> <!--KHTML-->
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="HoverLinks" type="Bool"> <!--KHTML-->
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="AutoLoadImages" type="Bool"> <!--KHTML-->
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ShowAnimations" type="String"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="AutoDelayedActions" type="Bool"> <!--KHTML-->
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="FormCompletion" type="Bool"> <!--KHTML-->
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="MaxFormCompletionItems" type="Int"> <!--KHTML-->
+      <default>10</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- konqview.cpp -->
+    <entry key="EnableFavicon" type="Bool">
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- No writeEntry; hidden -->
+    </entry>
+<!-- KDELIBS/khtml_part.cpp -->
+    <entry key="AutomaticDetectionLanguage" type="Int"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+<!-- KDELIBS/khtml_settings.cpp -->
+    <entry key="EnforceDefaultCharset" type="Bool"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- Can't find writeEntry -->
+    </entry>
+<!-- kcmcss.cpp   KDELIBS/khtml_settings.cpp -->
+    <entry key="UserStyleSheetEnabled" type="Bool"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    
+<!-- Are these entries? Can't find writeEntry(..)! They belong maybe to DefaultEncoding.
+
+    <entry name="iso8859_1" key="iso8859-1" type="StringList"> </entry>
+    <entry name="iso8859_10" key="iso8859-10" type="StringList"> </entry>
+    <entry name="iso8859_13" key="iso8859-13" type="StringList"> </entry>
+    <entry name="iso8859_14" key="iso8859-14" type="StringList"> </entry>
+    <entry name="iso8859_15" key="iso8859-15" type="StringList"> </entry>
+    <entry name="iso8859_2" key="iso8859-2" type="StringList"> </entry>
+    <entry name="iso8859_3" key="iso8859-3" type="StringList"> </entry>
+    <entry name="iso8859_4" key="iso8859-4" type="StringList">  </entry>
+    <entry name="iso8859_5" key="iso8859-5" type="StringList">  </entry>
+    <entry name="iso8859_6" key="iso8859-6" type="StringList"> </entry>
+    <entry name="iso8859_7" key="iso8859-7" type="StringList"> </entry>
+    <entry name="iso8859_8" key="iso8859-8" type="StringList"> </entry>
+    <entry name="iso8859_9" key="iso8859-9" type="StringList"> </entry>
+    <entry name="iso8859_r" key="koi8-r" type="StringList">  </entry>
+    <entry name="iso8859_u" key="koi8-u" type="StringList"> </entry>
+    <entry name="microsoft_cp1251" key="microsoft-cp1251" type="StringList"> </entry>
+    <entry name="paratype_cp154" key="paratype-cp154" type="StringList"> </entry>
+ --> 
+  </group>
+
+  <group name="MainView Settings" >
+<!-- htmlopts.cpp --> 
+    <entry key="OpenMiddleClick" type="Bool"> <!--KHTML-->
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="BackRightClick" type="Bool"> <!--konqrmbeventfilter.cpp but also in KHTML !?-->
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- konqmainwindow.cpp -->
+    <entry name="HtmlAllowed" key="HTMLAllowed" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- konqguiclients.cpp -->
+    <entry key="ToggableViewsShown" type="StringList">
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+  </group>
+
+  <group name="HistorySettings" >
+<!-- history_module.cpp -->
+    <entry key="OpenGroups" type="String">
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+<!-- konqview.cpp -->
+    <entry key="MaximumHistoryEntriesPerView" type="Int">
+      <label>Maximum number of history items per view</label>
+      <default>50</default>
+      <whatsthis></whatsthis>
+    </entry>
+  </group>
+
+  <group name="Java/JavaScript Settings" >
+<!-- javaopts.cpp -->
+    <entry key="ShowJavaConsole" type="Bool">
+      <default>false</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="UseSecurityManager" type="Bool">
+      <default>true</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="UseKio" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ShutdownAppletServer" type="Bool">
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="AppletServerTimeout" type="Int">
+      <default>60</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="JavaPath" type="Path">
+      <default code="true">
+#if defined(PATH_JAVA)
+PATH_JAVA
+#else
+"java"
+#endif
+      </default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="JavaDomains" type="StringList"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="JavaDomainSettings" type="StringList">
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="JavaScriptDomainAdvice" type="StringList">
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="JavaArgs" type="String">
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- jsopts.cpp -->
+    <entry key="ECMADomains" type="StringList"> <!--KHTML-->
+      <default>true</default>
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ECMADomainSettings" type="StringList"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ReportJavaScriptErrors" type="Bool"> <!--KHTML-->
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="EnableJavaScriptDebug" type="Bool"> <!--KHTML-->
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+<!-- jspolicies.cpp -->
+    <entry key="EnableJavaScript" type="Bool"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="WindowOpenPolicy" type="UInt"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="WindowResizePolicy" type="UInt"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="WindowMovePolicy" type="UInt"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="WindowFocusPolicy" type="UInt"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="WindowStatusPolicy" type="UInt"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+<!-- pluginopts.cpp -->    
+    <entry key="EnablePlugins" type="Bool"> <!--KHTML-->
+      <default>true</default>
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="PluginDomains" type="StringList"> <!--KHTML-->
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+  </group>
+
+  <group name="Notification Messages" >
+<!-- advancedTabDialog.cpp konqmainwindow.cpp -->
+    <entry key="MultipleTabConfirm" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    
+    <entry name="plugin_application_x_shockwave_flash" key="plugin-application/x-shockwave-flash" type="String">
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry name="plugin_image_svg_xml" key="plugin-image/svg+xml" type="String">
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+  </group>
+   
+  <group name="Reusing" >
+    <entry key="SafeParts" type="StringList">
+      <default>SAFE</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="AlwaysHavePreloaded" type="Bool">
+      <default>false</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="MaxPreloadCount" type="Int">
+      <default>1</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="PreloadOnStartup" type="Bool">
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+  </group>
+  
+  <group name="Settings" >
+    <entry key="BgImage" type="String">
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="SaveURLInProfile" type="Bool">
+      <default>true</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry name="SettingsCompletionMode" key="CompletionMode" type="Enum">
+      <default code="true">KGlobalSettings::completionMode()</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+    <entry key="Number of most visited URLs" type="Int">
+      <default>10</default> 
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+  </group>
+
+  <group name="Trash" >
+    <!-- konq_operations.cpp, kcm in konq/behaviour.cpp -->
+    <entry key="ConfirmDelete" type="Bool">
+      <default>true</default>
+      <label>Ask confirmation for deleting a file.</label>
+      <whatsthis>This option tells Konqueror whether to ask for a confirmation when you delete a file without using the trash folder. Warning, deleted files can not be recovered, so it is recommended to leave this confirmation enabled.</whatsthis>
+      <!-- checked -->
+    </entry>
+    <entry key="ConfirmTrash" type="Bool">
+      <default>true</default>
+      <label>Ask confirmation for move to trash</label>
+      <whatsthis>This option tells Konqueror whether to ask for a confirmation when you move the file to your trash folder, from where it can be recovered very easily.</whatsthis>
+      <!-- checked -->
+    </entry>
+    <!-- konqsessiondlg.cpp -->
+    <entry key="OpenTabsInsideCurrentWindow" type="Bool">
+      <default>false</default>
+      <label>Open tabs inside current window</label>
+      <whatsthis>If true, when opening a session from within the sessions dialog the tabs will be opened inside current window.</whatsthis>
+    </entry>
+  </group>
+
+  <group name="SessionManagerSettings">
+<!-- konqsessionmanager.cpp -->
+    <entry key="AutoSaveInterval" type="Int">
+      <default>10</default>
+      <label></label>
+      <whatsthis></whatsthis>
+    </entry>
+  </group>
+
+</kcfg>

@@ -63,13 +63,27 @@ BlackArch=2014-01-02
 CMake=
 assistant-qt4=
 avahi-discover=
+bar=2014-01-04
 bssh=
 bvnc=
+cheese=2014-01-04
+dconf-editor=2014-01-04
 designer-qt4=
+empathy=2014-01-04
+eog=2014-01-04
+epiphany=2014-01-04
+evince=2014-01-04
 feh=
 firefox=
 foo=2014-01-03
+gcalctool=2014-01-04
 gimp=
+gnome-disks=2014-01-04
+gnome-font-viewer=2014-01-04
+gnome-system-monitor-kde=2014-01-04
+gnome-terminal=2014-01-04
+gucharmap=2014-01-04
+ibus-setup=2014-01-04
 kde4-Help=
 kde4-KCharSelect=
 kde4-KFloppy=
@@ -108,6 +122,9 @@ linguist-qt4=
 obconf=
 qdbusviewer-qt4=
 qv4l2=
+totem=2014-01-04
+tracker-needle=2014-01-04
+tracker-preferences=2014-01-04
 uxterm=
 xterm=
 
@@ -150,7 +167,7 @@ hideWhenSingleDesktop=true
 Order=2
 
 [Containments][13][Applets][17]
-geometry=174,2,964,25
+geometry=174,2,942,25
 immutability=1
 plugin=tasks
 zvalue=0
@@ -163,7 +180,7 @@ filemanager=preferred://filemanager, , ,\s
 Order=3
 
 [Containments][13][Applets][18]
-geometry=1142,2,141,25
+geometry=1120,2,141,25
 immutability=1
 plugin=systemtray
 zvalue=0
@@ -225,7 +242,7 @@ SystemTray-Klipper-18=Ctrl+Alt+V
 Order=4
 
 [Containments][13][Applets][19]
-geometry=1287,2,129,25
+geometry=1265,2,151,25
 immutability=1
 plugin=digital-clock
 zvalue=0

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <include>KApplication</include>
+  <include>KGlobalSettings</include>
+  <include>KColorScheme</include>
+  <include>KLocale</include>
+  <kcfgfile name="kcalcrc"/>
+  <group name="Colors">
+    <entry name="ForeColor" type="Color">
+      <label>The foreground color of the display.</label>
+      <code>KColorScheme schemeView(QPalette::Active, KColorScheme::View);
+            QColor defaultColor = schemeView.foreground().color();</code>
+      <default code="true">defaultColor</default>
+    </entry>
+    <entry name="BackColor" type="Color">
+      <label>The background color of the display.</label>
+      <code>defaultColor = schemeView.background().color();</code>
+      <default code="true">defaultColor</default>
+    </entry>
+    <entry name="NumberButtonsColor" type="Color">
+      <label>The color of number buttons.</label>
+      <code>KColorScheme schemeButtons(QPalette::Active, KColorScheme::Button);
+            QColor defaultButtonColor = schemeButtons.background().color();</code>
+      <default code="true">defaultButtonColor</default>
+    </entry>
+    <entry name="FunctionButtonsColor" type="Color">
+      <label>The color of function buttons.</label>
+      <default code="true">defaultButtonColor</default>
+    </entry>
+    <entry name="StatButtonsColor" type="Color">
+      <label>The color of statistical buttons.</label>
+      <default code="true">defaultButtonColor</default>
+    </entry>
+    <entry name="HexButtonsColor" type="Color">
+      <label>The color of hex buttons.</label>
+      <default code="true">defaultButtonColor</default>
+    </entry>
+    <entry name="MemoryButtonsColor" type="Color">
+      <label>The color of memory buttons.</label>
+      <default code="true">defaultButtonColor</default>
+    </entry>
+    <entry name="OperationButtonsColor" type="Color">
+      <label>The color of operation buttons.</label>
+      <default code="true">defaultButtonColor</default>
+    </entry>
+  </group>
+  <group name="Font">
+    <entry name="ButtonFont" type="Font">
+      <label>The font to use for the buttons.</label>
+      <default code="true">KGlobalSettings::generalFont()</default>
+    </entry>
+    <entry name="DisplayFont" type="Font">
+      <label>The font to use in the display.</label>
+      <default code="true">QFont(KGlobalSettings::generalFont().family(), 14, QFont::Bold)</default>
+    </entry>
+  </group>
+  <group name="Precision">
+    <entry name="Precision" type="UInt" key="precision">
+      <label>Maximum number of digits displayed.</label>
+      <whatsthis>
+	KCalc can compute with many more digits than the number that
+	fits on the display. This setting gives the maximum number of
+	digits displayed, before KCalc starts using scientific notation,
+	i.e. notation of the type 2.34e12.
+      </whatsthis> 
+      <default>12</default>
+      <min>8</min>
+      <max>200</max>
+    </entry>
+    <entry name="FixedPrecision" type="UInt" key="fixedprecision">
+      <label>Number of fixed decimal digits.</label>
+      <default>2</default>
+    </entry>
+    <entry name="Fixed" type="Bool" key="fixed">
+      <label>Whether to use fixed decimal places.</label>
+      <default>false</default>
+    </entry>
+  </group>
+  <group name="General">
+    <entry name="Beep" type="Bool" key="beep">
+      <label>Whether to beep on error.</label>
+      <default>true</default>
+    </entry>
+    <entry name="CaptionResult" type="Bool" key="captionresult">
+      <label>Whether to show the result in the window title.</label>
+      <default>false</default>
+    </entry>
+    <entry name="GroupDigits" type="Bool" key="groupdigits">
+      <label>Whether to group digits.</label>
+      <default>true</default>
+    </entry>
+    <entry name="TwosComplement" type="Bool" key="twoscomplement">
+      <label>Whether to use Two's Complement for non-decimal numbers.</label>
+      <whatsthis>
+        Select to use Two's Complement notation for Binary, Octal
+        and Hexidecimal numbers. This is a common notation to represent
+        negative numbers in computers.
+      </whatsthis>
+      <default>true</default>
+    </entry>
+    <entry name="CalculatorMode" type="Enum">
+      <choices>
+        <choice name="simple">
+          <label>Easy Calculator Mode</label>
+          <whatsthis>A very simple mode where only the basic calculator buttons are shown</whatsthis>
+        </choice>
+        <choice name="science">
+          <label>Science Calculator Mode</label>
+          <whatsthis>Mode with science buttons and optional constants buttons</whatsthis>
+        </choice>
+        <choice name="statistics">
+          <label>Statistic Calculator Mode</label>
+          <whatsthis>Mode with additional statistics buttons and optional constants buttons</whatsthis>
+        </choice>
+        <choice name="numeral">
+          <label>Numeral System Mode</label>
+          <whatsthis>Mode with logic buttons and selectable base. Optional bit edit available.</whatsthis>
+        </choice>
+      </choices>
+    </entry>
+    <entry name="ShowBitset" type="Bool">
+      <label>Whether to show the bit edit widget.</label>
+      <default>false</default>
+    </entry>
+    <entry name="ShowConstants" type="Bool">
+      <label>Whether to show constant buttons.</label>
+      <default>false</default>
+    </entry>
+    <entry name="AngleMode" type="UInt">
+      <label>Degrees, radians or grads</label>
+      <default>0</default>
+    </entry>
+    <entry name="BaseMode" type="UInt">
+      <label>Numeric base</label>
+      <default>10</default>
+    </entry>
+  </group>
+  <group name="Grouping">
+    <entry name="BinaryGrouping" type="UInt" key="binaryGrouping">
+        <label>Binary figures will be separated by a whitespace after every Xth digit.</label>
+        <whatsthis>
+            For easier readability it's possible to visible group the individual digits into pairs
+            for example instead of 10111001 you can display 1011 1001, by setting the setting to
+            4, thus inserting a whitespace after every 4th digit.
+        </whatsthis>
+        <default>4</default>
+    </entry>
+    <entry name="OctalGrouping" type="UInt" key="octalGrouping">
+        <label>Octal figures will be separated by a whitespace after every Xth digit.</label>
+        <whatsthis>
+            For easier readability it's possible to visible group the individual digits into pairs
+            for example instead of 42140213 you can display 4214 0213, by setting the setting to
+            4, thus inserting a whitespace after every 4th digit.
+        </whatsthis>
+        <default>4</default>
+    </entry>
+    <entry name="HexadecimalGrouping" type="UInt" key="hexadecimalGrouping">
+        <label>Hexadecimal figures will be separated by a whitespace after every Xth digit.</label>
+        <whatsthis>
+            For easier readability it's possible to visible group the individual digits into pairs
+            for example instead of AF1C42 you can display AF 1C 42, by setting the setting to
+            2, thus inserting a whitespace after every 2nd digit.
+        </whatsthis>
+        <default>2</default>
+    </entry>
+  </group>
+  <group name="UserConstants">
+	<entry name="nameConstant$(ConstIndex)" type="String" key="nameConstant$(ConstIndex)">
+	<label>Name of the user programmable constants.</label>
+	<parameter name="ConstIndex" type="Int" max="5"/>
+	<code>
+		QString nameConstant0 = i18nc("Name of the user programmable constant", "C1");
+		QString nameConstant1 = i18nc("Name of the user programmable constant", "C2");
+		QString nameConstant2 = i18nc("Name of the user programmable constant", "C3");
+		QString nameConstant3 = i18nc("Name of the user programmable constant", "C4");
+		QString nameConstant4 = i18nc("Name of the user programmable constant", "C5");
+		QString nameConstant5 = i18nc("Name of the user programmable constant", "C6");
+	</code>
+	<default param="0" code="true">nameConstant0</default>
+	<default param="1" code="true">nameConstant1</default>
+	<default param="2" code="true">nameConstant2</default>
+	<default param="3" code="true">nameConstant3</default>
+	<default param="4" code="true">nameConstant4</default>
+	<default param="5" code="true">nameConstant5</default>
+	</entry>
+
+	<entry name="valueConstant$(ConstIndex)" type="String" key="valueConstant$(ConstIndex)">
+	<label>List of user programmable constants</label>
+	<parameter name="ConstIndex" type="Int" max="5"/>
+	<default param="0">0</default>
+	<default param="1">0</default>
+	<default param="2">0</default>
+	<default param="3">0</default>
+	<default param="4">0</default>
+	<default param="5">0</default>
+	</entry>
+  </group>
+</kcfg>

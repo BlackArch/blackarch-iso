@@ -1,0 +1,122 @@
+<!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd'>
+<Menu>
+ <Menu>
+  <Name>Development</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>Translation</Menuname>
+   <Menuname>Web Development</Menuname>
+   <Menuname>X-KDE-KDevelopIDE</Menuname>
+   <Merge type="files"/>
+   <Filename>CMake.desktop</Filename>
+   <Filename>assistant-qt4.desktop</Filename>
+   <Filename>designer-qt4.desktop</Filename>
+   <Filename>linguist-qt4.desktop</Filename>
+   <Filename>qdbusviewer-qt4.desktop</Filename>
+  </Layout>
+  <Menu>
+   <Name>Translation</Name>
+   <Layout/>
+   <Include/>
+   <Exclude>
+    <Filename>BlackArch-2.desktop</Filename>
+   </Exclude>
+  </Menu>
+  <Include/>
+  <Exclude>
+   <Filename>BlackArch.desktop</Filename>
+  </Exclude>
+ </Menu>
+ <Menu>
+  <Name>anti-forensic</Name>
+  <Layout/>
+  <Directory>anti-forensic.directory</Directory>
+  <Menu>
+   <Name>automation</Name>
+   <Directory>automation.directory</Directory>
+   <Deleted/>
+  </Menu>
+  <Deleted/>
+ </Menu>
+ <Include>
+  <Filename>BlackArch-2.desktop</Filename>
+ </Include>
+ <Menu>
+  <Name>automation</Name>
+  <Directory>automation-2.directory</Directory>
+  <Deleted/>
+ </Menu>
+ <Menu>
+  <Name>.hidden</Name>
+  <Include>
+   <Filename>BlackArch.desktop</Filename>
+   <Filename>foo.desktop</Filename>
+  </Include>
+ </Menu>
+ <Layout>
+  <Merge type="menus"/>
+  <Menuname>Development</Menuname>
+  <Menuname>Education</Menuname>
+  <Menuname>Games</Menuname>
+  <Menuname>Graphics</Menuname>
+  <Menuname>Internet</Menuname>
+  <Menuname>Multimedia</Menuname>
+  <Menuname>Office</Menuname>
+  <Menuname>Science</Menuname>
+  <Menuname>Settingsmenu</Menuname>
+  <Menuname>System</Menuname>
+  <Menuname>Utilities</Menuname>
+  <Menuname>Arch Linux</Menuname>
+  <Menuname>Applications</Menuname>
+  <Merge type="files"/>
+  <Filename>kde4-kfind.desktop</Filename>
+  <Filename>kde4-Help.desktop</Filename>
+  <Menuname>BlackArch</Menuname>
+ </Layout>
+ <Menu>
+  <Name>BlackArch</Name>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>automation</Menuname>
+   <Menuname>anti-forensic</Menuname>
+  </Layout>
+  <Menu>
+   <Name>anti-forensic</Name>
+   <Directory>anti-forensic-3.directory</Directory>
+   <Include>
+    <Filename>-usr-bin-xterm.desktop</Filename>
+   </Include>
+   <Exclude>
+    <Filename>foo.desktop</Filename>
+   </Exclude>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>-usr-bin-xterm.desktop</Filename>
+   </Layout>
+  </Menu>
+  <Directory>BlackArch-2.directory</Directory>
+  <Menu>
+   <Name>automation</Name>
+   <Directory>automation-3.directory</Directory>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>foo.desktop</Filename>
+   </Layout>
+   <Include>
+    <Filename>foo.desktop</Filename>
+   </Include>
+  </Menu>
+ </Menu>
+ <Menu>
+  <Name>anti-forensic-2</Name>
+  <Directory>anti-forensic-2.directory</Directory>
+  <Menu>
+   <Name>BlackArch</Name>
+   <Directory>BlackArch.directory</Directory>
+  </Menu>
+  <Deleted/>
+ </Menu>
+ <Exclude>
+  <Filename>BlackArch.desktop</Filename>
+ </Exclude>
+</Menu>

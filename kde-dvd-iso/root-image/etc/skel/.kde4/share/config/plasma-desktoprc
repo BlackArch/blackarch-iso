@@ -11,8 +11,23 @@ Width 1440=720
 [PlasmaViews][3]
 panelVisibility=0
 
+[PlasmaViews][3][Horizontal1440]
+offset=0
+
 [PlasmaViews][3][Sizes]
 lastsize=1440
+
+[PlasmaViews][3][Sizes][Horizontal1024]
+max=1024,27
+min=1024,27
+offset=0
+size=1024,27
+
+[PlasmaViews][3][Sizes][Horizontal1440]
+max=-1,-1
+min=-1,-1
+offset=0
+size=682,512
 
 [Updates]
 performed=/usr/share/apps/plasma-desktop/updates/set-hidden-single-vd-pager.js,/usr/share/apps/plasma-desktop/updates/addShowActivitiesManagerPlasmoid.js,/usr/share/apps/plasma-desktop/updates/systray-to-notifications-widget.js

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+
+    <include>kglobalsettings.h</include>
+    <include>kgpg.h</include>
+    <kcfgfile name="kgpgrc"/>
+
+    <group name="Decryption">
+        <entry name="CustomDecrypt" type="String" key="custom_decrypt">
+            <label>Custom decryption command.</label>
+        </entry>
+    </group>
+
+    <group name="Encryption">
+        <entry name="CustomEncryptionOptions" type="String" key="custom_option">
+            <label>Custom encryption options</label>
+        </entry>
+        <entry name="AllowCustomEncryptionOptions" type="Bool" key="allow_custom_option">
+            <label>Allow custom encryption options</label>
+            <default>false</default>
+        </entry>
+        <entry name="FileEncryptionKey" type="String" key="file key">
+            <label>File encryption key.</label>
+        </entry>
+        <entry name="EncryptFilesTo" type="Bool" key="encrypt_files_to">
+            <label>Encrypt files</label>
+            <default>false</default>
+        </entry>
+        <entry name="AsciiArmor" type="Bool" key="Ascii_armor">
+            <label>Use ASCII armored encryption.</label>
+            <default>true</default>
+        </entry>
+        <entry name="AllowUntrustedKeys" type="Bool" key="Allow_untrusted_keys">
+            <label>Allow encryption with untrusted keys.</label>
+            <default>false</default>
+        </entry>
+        <entry name="AllowUntrustedGroupMembers" type="Bool" key="Allow_untrusted_group_members">
+            <label>Allow untrusted keys to become members of key groups.</label>
+            <default>false</default>
+        </entry>
+        <entry name="HideUserID" type="Bool" key="Hide_user_ID">
+            <label>Hide the user ID.</label>
+            <default>false</default>
+        </entry>
+        <entry name="PgpCompatibility" type="Bool" key="PGP_compatibility">
+            <label>Enable PGP 6 compatibility.</label>
+            <default>false</default>
+        </entry>
+        <entry name="PgpExtension" type="Bool" key="Pgp_extension">
+            <label>Use *.pgp extension for encrypted files.</label>
+            <default>false</default>
+        </entry>
+    </group>
+
+    <group name="GPG Settings">
+        <entry name="GpgConfigPath" type="Path" key="gpg_config_path">
+            <label>The path of the gpg configuration file.</label>
+        </entry>
+        <entry name="GpgBinaryPath" type="Path" key="gpg_bin_path">
+            <label>The path of the gpg binary used by KGpg.</label>
+            <default>gpg</default>
+        </entry>
+    </group>
+
+    <group name="General Options">
+        <entry name="PhotoProperties" type="Enum" key="photo properties">
+            <choices>
+                <choice name="Disable"/>
+                <choice name="Small"/>
+                <choice name="Medium"/>
+                <choice name="Big"/>
+            </choices>
+            <default>Disable</default>
+        </entry>
+        <entry name="FirstRun" type="Bool" key="First run">
+            <label>Is the first time the application runs.</label>
+            <default>true</default>
+        </entry>
+        <entry name="EditorGeometry" type="Size" key="Geometry">
+            <label>The size of the editor window.</label>
+        </entry>
+        <entry name="ShowTrust" type="Bool" key="show_trust">
+            <label>Show the trust value in key manager.</label>
+            <default>true</default>
+        </entry>
+        <entry name="ShowExpi" type="Bool" key="show_expi">
+            <label>Show the expiration value in key manager.</label>
+            <default>true</default>
+        </entry>
+        <entry name="ShowSize" type="Bool" key="show_size">
+            <label>Show the size value in key manager.</label>
+            <default>true</default>
+        </entry>
+        <entry name="ShowCreat" type="Bool" key="show_creat">
+            <label>Show the creation value in key manager.</label>
+            <default>true</default>
+        </entry>
+        <entry name="ShowSecret" type="Bool" key="show_secret">
+            <label>Show only secret keys in key manager.</label>
+            <default>false</default>
+        </entry>
+	<entry name="ShowLongKeyId" type="Bool" key="show_long_keyid">
+		<label>Show long key id in key manager.</label>
+		<default>false</default>
+	</entry>
+	<entry name="TrustLevel" type="Enum" key="trust filter">
+            <label>Show only keys with at least that trust level in key manager.</label>
+	    <choices>
+		    <choice name="Unknown"/>
+		    <choice name="Undefined"/>
+		    <choice name="Marginal"/>
+		    <choice name="Full"/>
+		    <choice name="Ultimate"/>
+	    </choices>
+	    <default>Undefined</default>
+        </entry>
+    </group>
+
+    <group name="User Interface">
+        <entry name="UseMouseSelection" type="Bool" key="selection_clipboard">
+            <label>Use the mouse selection instead of the clipboard.</label>
+            <default>false</default>
+        </entry>
+        <entry name="AutoStart" type="Bool">
+            <label>Start KGpg automatically at KDE startup.</label>
+            <default>false</default>
+        </entry>
+        <entry name="RemoteFileWarn" type="Bool" key="remote_file_warn">
+            <label>Display a warning before creating temporary files during remote file operations.</label>
+            <default>false</default>
+        </entry>
+        <entry name="LeftClick" type="Enum" key="left_click">
+            <label>Choose default left-click behavior</label>
+            <choices>
+                <choice name="KeyManager"/>
+                <choice name="Editor"/>
+            </choices>
+        </entry>
+        <entry name="EncryptedDropEvent" type="Enum" key="encrypted_drop_event">
+            <label>Handle encrypted drops</label>
+            <choices>
+                <choice name="DecryptAndSave"/>
+                <choice name="DecryptAndOpen"/>
+                <choice name="Ask"/>
+            </choices>
+        </entry>
+        <entry name="UnencryptedDropEvent" type="Enum" key="unencrypted_drop_event">
+            <label>Handle unencrypted drops</label>
+            <choices>
+                <choice name="Encrypt"/>
+                <choice name="Sign"/>
+                <choice name="Ask"/>
+            </choices>
+        </entry>
+        <entry name="SignMenu" type="Enum" key="sign_menu">
+            <label>Show the "sign file" service menu.</label>
+            <choices>
+                <choice name="Disabled"/>
+                <choice name="AllFiles"/>
+            </choices>
+            <default>Disabled</default>
+        </entry>
+        <entry name="DecryptMenu" type="Enum" key="decrypt_menu">
+            <label>Show the "decrypt file" service menu.</label>
+            <choices>
+                <choice name="Disabled"/>
+                <choice name="AllFiles"/>
+                <choice name="EncryptedFiles"/>
+            </choices>
+            <default>Disabled</default>
+        </entry>
+        <entry name="ShowSystray" type="Bool" key="systray_icon">
+            <label>Show the systray icon</label>
+            <default>true</default>
+        </entry>
+        <entry name="RecentFiles" type="UInt" key="recent_files">
+            <label>The number of recently opened files shown in the editor menu.</label>
+            <default>10</default>
+        </entry>
+    </group>
+
+    <group name="TipOfDay">
+        <entry name="ShowTipOfDay" type="Bool" key="RunOnStart">
+            <label>Show tip of the day.</label>
+            <default>true</default>
+        </entry>
+    </group>
+
+    <group name="Key Colors">
+        <entry name="ColorGood" type="Color" key="color_good">
+            <label>Color used for trusted keys.</label>
+            <default>144,255,0</default>
+        </entry>
+        <entry name="ColorRev" type="Color" key="color_revoked">
+            <label>Color used for revoked keys.</label>
+            <default>30,30,30</default>
+        </entry>
+        <entry name="ColorUnknown" type="Color" key="color_unknown">
+            <label>Color used for unknown keys.</label>
+            <default>255,255,255</default>
+        </entry>
+        <entry name="ColorBad" type="Color" key="color_bad">
+            <label>Color used for untrusted keys.</label>
+            <default>172,0,0</default>
+        </entry>
+        <entry name="ColorUltimate" type="Color" key="color_ultimate">
+            <label>Color used for ultimately trusted keys.</label>
+            <default>68,0,255</default>
+        </entry>
+        <entry name="ColorMarginal" type="Color" key="color_marginal">
+            <label>Color used for marginally trusted keys.</label>
+            <default>255,255,0</default>
+        </entry>
+        <entry name="ColorExpired" type="Color" key="color_expired">
+            <label>Color used for expired keys.</label>
+            <default>150,150,150</default>
+        </entry>
+    </group>
+
+    <group name="Text Font">
+        <entry name="Font" type="Font" key="KEditFont">
+            <label>Font</label>
+            <default code="true">KGlobalSettings::fixedFont()</default>
+        </entry>
+    </group>
+
+	<group name="Key List">
+		<entry name="EmailSorting" type="Enum" key="EmailSorting">
+			<choices>
+				<choice name="Alphabetical"/>
+				<choice name="TLDfirst"/>
+				<choice name="DomainFirst"/>
+				<choice name="FQDNFirst"/>
+			</choices>
+			<default>Alphabetical</default>
+		</entry>
+	</group>
+
+	<!-- 
+		Should in future be merged with Key Servers, for compatibility reasons
+		with kde 3.5 it is now in a separate group.
+	-->
+	<group name="Servers">
+		<entry name="KeyServers" type="StringList" key="Server_List">
+			<label>Key servers used by KGpg. The first server in the list is the default server.</label>
+			<default>hkp://wwwkeys.pgp.net,hkp://pgp.dtype.org,hkp://search.keyserver.net,hkp://subkeys.pgp.net,hkp://wwwkeys.pgp.net,hkp://wwwkeys.us.pgp.net</default>
+		</entry>
+		<entry name="InfoServers" type="StringList" key="Info_Server_List">
+			<label>List of URLs that show details and analysis of the given key. The first server in the list is the default server.</label>
+			<default>http://pgp.cs.uu.nl/stats/$$ID8$$.html,http://webware.lysator.liu.se/jc/wotsap/wots/latest/keystatistics/0x$$ID8$$.txt,http://pgp.surfnet.nl:11371/pks/lookup?op=vindex&amp;fingerprint=on&amp;search=0x$$ID8$$;http://biglumber.com/x/web?pk=$$FPR$$</default>
+		</entry>
+	</group>
+
+    <group name="Key Servers">
+        <entry name="UseProxy" type="Bool" key="use_proxy">
+            <label>Use HTTP proxy when available.</label>
+            <default>false</default>
+        </entry>
+    </group>
+
+	<group name="Key Signing">
+		<entry name="EmailTemplate" type="String" key="Email_Template">
+			<label>This is the text of the email sent by the "Sign and Mail User ID" action.</label>
+			<default code="true">i18n(EMailTemplateText)</default>
+		</entry>
+		<entry name="MailUats" type="Enum" key="Mail_Uats">
+			<choices>
+				<choice name="All"/>
+				<choice name="First"/>
+				<choice name="None"/>
+			</choices>
+			<default>All</default>
+		</entry>
+	</group>
+</kcfg>

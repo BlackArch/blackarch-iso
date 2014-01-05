@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd">
+    <include>kfileitemdelegate.h</include>
+
+<kcfgfile arg="true" />
+    <group name="Settings">
+        <entry name="HiddenFilesShown" type="Bool" >
+            <label context="@label">Hidden files shown</label>
+            <whatsthis context="@info:whatsthis">When this option is enabled hidden files, such as those starting with a '.', will be shown in the file view.</whatsthis>
+            <default>false</default>
+        </entry>
+    </group>
+
+    <group name="Dolphin">
+        <entry name="Version" type="Int" >
+            <label context="@label">Version</label>
+            <whatsthis context="@info:whatsthis">This option defines the used version of the view properties.</whatsthis>
+            <default>-1</default>
+        </entry>
+
+        <entry name="ViewMode" type="Int" >
+            <label context="@label">View Mode</label>
+            <whatsthis context="@info:whatsthis">This option controls the style of the view. Currently supported values include icons (0), details (1) and column (2) views.</whatsthis>
+            <default>DolphinView::IconsView</default>
+        </entry>
+
+        <entry name="PreviewsShown" type="Bool" >
+            <label context="@label">Previews shown</label>
+            <whatsthis context="@info:whatsthis">When this option is enabled, a preview of the file content is shown as an icon.</whatsthis>
+            <default>false</default>
+        </entry>
+
+        <entry name="GroupedSorting" type="Bool" >
+            <label context="@label">Grouped Sorting</label>
+            <whatsthis context="@info:whatsthis">When this option is enabled, the sorted items are categorized into groups.</whatsthis>
+            <default>false</default>
+        </entry>
+
+        <entry name="SortRole" type="String" >
+            <label context="@label">Sort files by</label>
+            <whatsthis context="@info:whatsthis">This option defines which attribute (text, size, date, etc.) sorting is performed on.</whatsthis>
+            <default>text</default>
+        </entry>
+
+        <entry name="SortOrder" type="Int" >
+            <label context="@label">Order in which to sort files</label>
+            <default code="true">Qt::AscendingOrder</default>
+            <min code="true">Qt::AscendingOrder</min>
+            <max code="true">Qt::DescendingOrder</max>
+        </entry>
+
+        <entry name="SortFoldersFirst" type="Bool" >
+            <label context="@label">Show folders first when sorting files and folders</label>
+            <default>true</default>
+        </entry>
+
+        <entry name="VisibleRoles" type="StringList">
+            <label context="@label">Visible roles</label>
+            <default></default>
+        </entry>
+
+        <entry name="HeaderColumnWidths" type="IntList">
+            <label context="@label">Header column widths</label>
+            <default></default>
+        </entry>
+
+        <entry name="Timestamp" type="DateTime" >
+            <label context="@label">Properties last changed</label>
+            <whatsthis context="@info:whatsthis">The last time these properties were changed by the user.</whatsthis>
+        </entry>
+
+        <!-- Obsolete - replaced by VisibleRoles -->
+        <entry name="AdditionalInfo" type="StringList">
+            <label context="@label">Additional Information</label>
+            <default></default>
+        </entry>
+    </group>
+</kcfg>
+
+
