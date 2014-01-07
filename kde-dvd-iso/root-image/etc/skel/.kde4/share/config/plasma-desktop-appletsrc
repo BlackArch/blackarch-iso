@@ -167,7 +167,7 @@ hideWhenSingleDesktop=true
 Order=2
 
 [Containments][13][Applets][17]
-geometry=174,2,942,25
+geometry=174,2,951,25
 immutability=1
 plugin=tasks
 zvalue=0
@@ -180,7 +180,7 @@ filemanager=preferred://filemanager, , ,\s
 Order=3
 
 [Containments][13][Applets][18]
-geometry=1120,2,141,25
+geometry=1129,2,141,25
 immutability=1
 plugin=systemtray
 zvalue=0
@@ -242,7 +242,7 @@ SystemTray-Klipper-18=Ctrl+Alt+V
 Order=4
 
 [Containments][13][Applets][19]
-geometry=1265,2,151,25
+geometry=1274,2,142,25
 immutability=1
 plugin=digital-clock
 zvalue=0

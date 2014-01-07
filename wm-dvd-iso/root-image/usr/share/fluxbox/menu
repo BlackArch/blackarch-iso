@@ -14,894 +14,1543 @@
 
     [submenu] (blackarch)
         [submenu] (anti-forensic)
-			[exec] (secure-delete) {secure-delete}
+            [exec] (sdel) {xterm -bg black -fg red -e 'sdel -h ; bash'}
+            [exec] (sfill) {xterm -bg black -fg red -e 'sfill -h ; bash'}
+            [exec] (smem-secure-delete) {xterm -bg black -fg red -e 'smem-secure-delete -h ; bash'}
+            [exec] (srm) {xterm -bg black -fg red -e 'srm -h ; bash'}
+            [exec] (sswap) {xterm -bg black -fg red -e 'sswap -h ; bash'}
+            [exec] (the_cleaner.sh) {xterm -bg black -fg red -e 'the_cleaner.sh -h ; bash'}
         [end]
         [submenu] (automation)
-			[exec] (cewl) {cewl}
-			[exec] (checksec) {checksec}
-			[exec] (crunch) {crunch}
-			[exec] (gooscan) {gooscan}
-			[exec] (hackersh) {hackersh}
-			[exec] (mitmap) {mitmap}
-			[exec] (nfspy) {nfspy}
-			[exec] (nfsshell) {nfsshell}
-			[exec] (panoptic) {panoptic}
-			[exec] (rsmangler) {rsmangler}
-			[exec] (sakis3g) {sakis3g}
-			[exec] (simple-ducky) {simple-ducky}
-			[exec] (sipvicious) {sipvicious}
-			[exec] (sploitctl) {sploitctl}
-			[exec] (tiger) {tiger}
-			[exec] (tlssled) {tlssled}
-			[exec] (unix-privesc-check) {unix-privesc-check}
-			[exec] (username-anarchy) {username-anarchy}
-			[exec] (voiphopper) {voiphopper}
-			[exec] (wiffy) {wiffy}
-			[exec] (wnmap) {wnmap}
+            [exec] (cewl) {xterm -bg black -fg red -e 'cewl -h ; bash'}
+            [exec] (cewl-fab) {xterm -bg black -fg red -e 'cewl -h ; bash'}
+            [exec] (checksec) {xterm -bg black -fg red -e 'checksec --help ; bash'}
+            [exec] (crunch) {xterm -bg black -fg red -e 'crunch -h ; bash'}
+            [exec] (gooscan) {xterm -bg black -fg red -e 'gooscan -h ; bash'}
+            [exec] (hackersh) {xterm -bg black -fg red -e 'hackersh -h ; bash'}
+            [exec] (mitmap) {xterm -bg black -fg red -e 'mitmap -h ; bash'}
+            [exec] (nfspy) {xterm -bg black -fg red -e 'nfspy -h ; bash'}
+            [exec] (nfspysh) {xterm -bg black -fg red -e 'nfspysh -h ; bash'}
+            [exec] (nfsshell) {xterm -bg black -fg red -e 'nfsshell -h ; bash}
+            [exec] (panoptic) {xterm -bg black -fg red -e 'panoptic -h ; bash}
+            [exec] (rsmangler) {xterm -bg black -fg red -e 'rsmangler -h ; bash}
+            [exec] (sakis3g) {sakis3g}
+            [exec] (simple-ducky) {xterm -bg black -fg red -e 'sudo simple-ducky ; bash'}
+            [exec] (svcrack) {xterm -bg black -fg red -e 'svcrack -h ; bash'}
+            [exec] (svcrash) {xterm -bg black -fg red -e 'svcrash -h ; bash'}
+            [exec] (svmap) {xterm -bg black -fg red -e 'svmap -h ; bash'}
+            [exec] (svreport) {xterm -bg black -fg red -e 'svreport -h ; bash'}
+            [exec] (svwar) {xterm -bg black -fg red -e 'svwar -h ; bash'}
+            [exec] (sploitctl) {xterm -bg black -fg red -e 'sploitctl -H ; bash'}
+            [exec] (tiger) {xterm -bg black -fg red -e 'tiger -h ; bash'}
+            [exec] (tigercron) {xterm -bg black -fg red -e 'tigercron -h ; bash'}
+            [exec] (tigexp) {xterm -bg black -fg red -e 'tigexp -h ; bash'}
+            [exec] (tlssled) {xterm -bg black -fg red -e 'tlssled -h ; bash'}
+            [exec] (unix-privesc-check) {xterm -bg black -fg red -e 'unix-privesc-check ; bash'}
+            [exec] (username-anarchy) {xterm -bg black -fg red -e 'username-anarchy -h ; bash'}
+            [exec] (voiphopper) {xterm -bg black -fg red -e 'voiphopper -h ; bash'}
+            [exec] (wiffy) {xterm -bg black -fg red -e 'sudo wiffy ; bash'}
+            [exec] (wnmap) {xterm -bg black -fg red -e 'wnmap -h ; bash'}
         [end]
         [submenu] (backdoor)
-			[exec] (backdoor-factory) {backdoor-factory}
-			[exec] (cymothoa) {cymothoa}
-			[exec] (enyelkm) {enyelkm}
-			[exec] (hotpatch) {hotpatch}
-			[exec] (jynx2) {jynx2}
-			[exec] (ms-sys) {ms-sys}
-			[exec] (rrs) {rrs}
-			[exec] (rubilyn) {rubilyn}
-			[exec] (trixd00r) {trixd00r}
-			[exec] (tsh) {tsh}
-			[exec] (webacoo) {webacoo}
-			[exec] (webshells) {webshells}
-			[exec] (weevely) {weevely}
+            [exec] (backdoor-factory) {xterm -bg black -fg red -e 'backdoor-factory -h ; bash'}
+            [exec] (bgrep) {xterm -bg black -fg red -e 'bgrep ; bash'}
+            [exec] (cymothoa) {xterm -bg black -fg red -e 'cymothoa -h ; bash'}
+            [exec] (udp_server) {xterm -bg black -fg red -e 'udp_server ; bash'}
+            [exec] (enyelkm) {xterm -bg black -fg red -e 'enyelkm -h ; bash'}
+            [exec] (hotpatcher) {xterm -bg black -fg red -e 'hotpatcher -h ; bash'}
+            [exec] (jynx2) {xterm -bg black -fg red -e 'jynx2 -h ; bash'}
+            [exec] (ms-sys) {xterm -bg black -fg red -e 'ms-sys -h ; bash'}
+            [exec] (rrs) {xterm -bg black -fg red -e 'rrs -h ; bash'}
+            [exec] (rubilyn) {xterm -bg black -fg red -e 'cd /usr/share/rubilyn ; ls ; bash'}
+            [exec] (trixd00r) {xterm -bg black -fg red -e 'trixd00r -H ; bash'}
+            [exec] (tsh) {xterm -bg black -fg red -e 'cd /usr/share/tsh ; ls ; bash'}
+            [exec] (webacoo) {xterm -bg black -fg red -e 'webacoo -h ; bash'}
+            [exec] (webshells) {xterm -bg black -fg red -e 'cd /usr/share/webshells ; ls ; bash'}
+            [exec] (weevely) {xterm -bg black -fg red -e 'weevely -h ; bash'}
         [end]
         [submenu] (binary)
-			[exec] (backdoor-factory) {backdoor-factory}
-			[exec] (binwally) {binwally}
-			[exec] (ms-sys) {ms-sys}
-			[exec] (packerid) {packerid}
+            [exec] (backdoor-factory) {xterm -bg black -fg red -e 'backdoor-factory -h ; bash'}
+            [exec] (binwally) {xterm -bg black -fg red -e 'binwally -h ; bash'}
+            [exec] (ms-sys) {xterm -bg black -fg red -e 'ms-sys -h ; bash'}
+            [exec] (packerid) {xterm -bg black -fg red -e 'packerid -h ; bash'}
         [end]
         [submenu] (bluetooth)
-			[exec] (bluebugger) {bluebugger}
-			[exec] (bluelog) {bluelog}
-			[exec] (bluepot) {bluepot}
-			[exec] (blueprint) {blueprint}
-			[exec] (bluesnarfer) {bluesnarfer}
-			[exec] (braces) {braces}
-			[exec] (bss) {bss}
-			[exec] (bt_audit) {bt_audit}
-			[exec] (btcrack) {btcrack}
-			[exec] (btscanner) {btscanner}
-			[exec] (carwhisperer) {carwhisperer}
-			[exec] (ghettotooth) {ghettotooth}
-			[exec] (hidattack) {hidattack}
-			[exec] (obexstress) {obexstress}
-			[exec] (redfang) {redfang}
-			[exec] (spooftooph) {spooftooph}
-			[exec] (tbear) {tbear}
-			[exec] (ubertooth) {ubertooth}
+            [exec] (bluebugger) {xterm -bg black -fg red -e 'bluebugger -h ; bash'}
+            [exec] (bluelog) {xterm -bg black -fg red -e 'bluelog -h ; bash'}
+            [exec] (bluepot) {bluepot}
+            [exec] (blueprint) {xterm -bg black -fg red -e 'blueprint -h ; bash'}
+            [exec] (bluesnarfer) {xterm -bg black -fg red -e 'bluesnarfer -h ; bash'}
+            [exec] (braces) {xterm -bg black -fg red -e 'braces -h ; bash'}
+            [exec] (bss) {xterm -bg black -fg red -e 'bss -h ; bash'}
+            [exec] (psm_scan) {xterm -bg black -fg red -e 'psm_scan -h ; bash'}
+            [exec] (rfcomm_scan) {xterm -bg black -fg red -e 'rfcomm_scan -h ; bash'}
+            [exec] (btscanner) {xterm -bg black -fg red -e 'btscanner -h ; bash'}
+            [exec] (carwhisperer) {xterm -bg black -fg red -e 'carwhisperer -h ; bash'}
+            [exec] (ghettotooth) {xterm -bg black -fg red -e 'ghettotooth ; bash'}
+            [exec] (hidattack) {xterm -bg black -fg red -e 'hidattack -h ; bash'}
+            [exec] (obexstress) {xterm -bg black -fg red -e 'obexstress -h ; bash'}
+            [exec] (redfang) {xterm -bg black -fg red -e 'redfang -h ; bash'}
+            [exec] (spooftooph) {xterm -bg black -fg red -e 'spooftooph -h ; bash'}
+            [exec] (tanya) {xterm -bg black -fg red -e 'tanya ; bash'}
+            [exec] (tbear) {xterm -bg black -fg red -e 'tbear -h ; bash'}
+            [exec] (tbsearch) {xterm -bg black -fg red -e 'tbsearch ; bash'}
+            [exec] (ubertooth-btle) {xterm -bg black -fg red -e 'ubertooth-btle -h ; bash'}
+            [exec] (ubertooth-dump) {xterm -bg black -fg red -e 'ubertooth-dump -h ; bash'}
+            [exec] (ubertooth-follow) {xterm -bg black -fg red -e 'ubertooth-follow -h ; bash'}
+            [exec] (ubertooth-hop) {xterm -bg black -fg red -e 'ubertooth-hop -h ; bash'}
+            [exec] (ubertooth-lap) {xterm -bg black -fg red -e 'ubertooth-lap -h ; bash'}
+            [exec] (ubertooth-specan) {xterm -bg black -fg red -e 'ubertooth-specan -h ; bash'}
+            [exec] (ubertooth-uap) {xterm -bg black -fg red -e 'ubertooth-uap -h ; bash'}
+            [exec] (ubertooth-util) {xterm -bg black -fg red -e 'ubertooth-util -h ; bash'}
         [end]
         [submenu] (code-audit)
-			[exec] (flawfinder) {flawfinder}
-			[exec] (pscan) {pscan}
+            [exec] (flawfinder) {xterm -bg black -fg red -e 'flawfinder -h ; bash'}
+            [exec] (pscan) {xterm -bg black -fg red -e 'pscan -h ; bash'}
         [end]
         [submenu] (cracker)
-			[exec] (acccheck) {acccheck}
-			[exec] (aesfix) {aesfix}
-			[exec] (aeskeyfind) {aeskeyfind}
-			[exec] (against) {against}
-			[exec] (asleap) {asleap}
-			[exec] (beleth) {beleth}
-			[exec] (bios_memimage) {bios_memimage}
-			[exec] (blackhash) {blackhash}
-			[exec] (bob-the-butcher) {bob-the-butcher}
-			[exec] (brutessh) {brutessh}
-			[exec] (btcrack) {btcrack}
-			[exec] (bully) {bully}
-			[exec] (cewl) {cewl}
-			[exec] (cisco-auditing-tool) {cisco-auditing-tool}
-			[exec] (cisco-ocs) {cisco-ocs}
-			[exec] (cmospwd) {cmospwd}
-			[exec] (cowpatty) {cowpatty}
-			[exec] (creddump) {creddump}
-			[exec] (crunch) {crunch}
-			[exec] (cupp) {cupp}
-			[exec] (dbpwaudit) {dbpwaudit}
-			[exec] (dpeparser) {dpeparser}
-			[exec] (eapmd5pass) {eapmd5pass}
-			[exec] (enabler) {enabler}
-			[exec] (evilmaid) {evilmaid}
-			[exec] (fang) {fang}
-			[exec] (fern-wifi-cracker) {fern-wifi-cracker}
-			[exec] (findmyhash) {findmyhash}
-			[exec] (hashcat) {hashcat}
-			[exec] (hashcat-utils) {hashcat-utils}
-			[exec] (hashtag) {hashtag}
-			[exec] (hydra) {hydra}
-			[exec] (iheartxor) {iheartxor}
-			[exec] (ikecrack) {ikecrack}
-			[exec] (inguma) {inguma}
-			[exec] (jbrute) {jbrute}
-			[exec] (johnny) {johnny}
-			[exec] (keimpx) {keimpx}
-			[exec] (lodowep) {lodowep}
-			[exec] (maskprocessor) {maskprocessor}
-			[exec] (masscan) {masscan}
-			[exec] (mdcrack) {mdcrack}
-			[exec] (medusa) {medusa}
-			[exec] (mfoc) {mfoc}
-			[exec] (morxbrute) {morxbrute}
-			[exec] (onesixtyone) {onesixtyone}
-			[exec] (owabf) {owabf}
-			[exec] (pack) {pack}
-			[exec] (passcracking) {passcracking}
-			[exec] (patator) {patator}
-			[exec] (pdfcrack) {pdfcrack}
-			[exec] (pdgmail) {pdgmail}
-			[exec] (phoss) {phoss}
-			[exec] (php-mt-seed) {php-mt-seed}
-			[exec] (phrasendrescher) {phrasendrescher}
-			[exec] (pipal) {pipal}
-			[exec] (pyrit) {pyrit}
-			[exec] (rainbowcrack) {rainbowcrack}
-			[exec] (rarcrack) {rarcrack}
-			[exec] (rcracki-mt) {rcracki-mt}
-			[exec] (rdesktop-brute) {rdesktop-brute}
-			[exec] (reaver) {reaver}
-			[exec] (rootbrute) {rootbrute}
-			[exec] (rsakeyfind) {rsakeyfind}
-			[exec] (samdump2) {samdump2}
-			[exec] (samydeluxe) {samydeluxe}
-			[exec] (sidguesser) {sidguesser}
-			[exec] (sipcrack) {sipcrack}
-			[exec] (smbbf) {smbbf}
-			[exec] (sqlpat) {sqlpat}
-			[exec] (ssh-privkey-crack) {ssh-privkey-crack}
-			[exec] (sshatter) {sshatter}
-			[exec] (sshtrix) {sshtrix}
-			[exec] (sslnuke) {sslnuke}
-			[exec] (statsprocessor) {statsprocessor}
-			[exec] (sucrack) {sucrack}
-			[exec] (tftp-bruteforce) {tftp-bruteforce}
-			[exec] (thc-pptp-bruter) {thc-pptp-bruter}
-			[exec] (ufo-wardriving) {ufo-wardriving}
-			[exec] (vnc-bypauth) {vnc-bypauth}
-			[exec] (vncrack) {vncrack}
-			[exec] (wifite) {wifite}
-			[exec] (wmat) {wmat}
-			[exec] (wyd) {wyd}
-			[exec] (zulu) {zulu}
+            [exec] (acccheck) {xterm -bg black -fg red -e 'acccheck -h ; bash'}
+            [exec] (aesfix) {xterm -bg black -fg red -e 'aesfix ; bash'}
+            [exec] (aeskeyfind) {xterm -bg black -fg red -e 'aeskeyfind -h ; bash'}
+            [exec] (against) {xterm -bg black -fg red -e 'against ; bash'}
+            [exec] (asleap) {xterm -bg black -fg red -e 'asleap -h ; bash'}
+            [exec] (genkeys) {xterm -bg black -fg red -e 'genkeys -h ; bash'}
+            [exec] (beleth) {xterm -bg black -fg red -e 'beleth -h ; bash'}
+            [exec] (pxedump) {xterm -bg black -fg red -e 'pxedump -h ; bash'}
+            [exec] (usbdump) {xterm -bg black -fg red -e 'usbdump -h ; bash'}
+            [exec] (blackhash) {xterm -bg black -fg red -e 'blackhash ; bash'}
+            [exec] (bob_admin-sse2) {xterm -bg black -fg red -e 'bob_admin-sse2 -h ; bash'}
+            [exec] (bob_client-sse2) {xterm -bg black -fg red -e 'bob_client-sse2 -h ; bash'}
+            [exec] (bob_server-sse2) {xterm -bg black -fg red -e 'bob_server_sse2 -h ; bash'}
+            [exec] (brutessh) {xterm -bg black -fg red -e 'sudo brutessh -h ; bash'}
+            [exec] (bully) {xterm -bg black -fg red -e 'bully -h ; bash'}
+            [exec] (cewl) {xterm -bg black -fg red -e 'cewl -h ; bash'}
+            [exec] (cewl-fab) {xterm -bg black -fg red -e 'cewl -h ; bash'}
+            [exec] (cisco-auditing-tool) {xterm -bg black -fg red -e 'cisco-auditing-tool ; bash'}
+            [exec] (cisco-ocs) {xterm -bg black -fg red -e 'cisco-ocs ; bash'}
+            [exec] (cmospwd) {xterm -bg black -fg red -e 'cmospwd -h ; bash'}
+            [exec] (cowpatty) {xterm -bg black -fg red -e 'cowpatty -h ; bash'}
+            [exec] (genpmk) {xterm -bg black -fg red -e 'genpmk -h ; bash'}
+            #[exec] (creddump) {xterm -bg black -fg red -e 'creddump}
+            [exec] (crunch) {xterm -bg black -fg red -e 'crunch ; bash'}
+            [exec] (cupp) {xterm -bg black -fg red -e 'cupp ; bash'}
+            [exec] (dbpwaudit) {xterm -bg black -fg red -e 'dbpwaudit ; bash'}
+            [exec] (dpeparser) {xterm -bg black -fg red -e 'dpeparser -h ; bash'}
+            [exec] (eapmd5pass) {xterm -bg black -fg red -e 'eapmd5pass ; bash'}
+            [exec] (enabler) {xterm -bg black -fg red -e 'enabler ; bash'}
+            #[exec] (evilmaid) {xterm -bg black -fg red -e 'evilmaid ; bash'}
+            [exec] (fang) {xterm -bg black -fg red -e 'fang -h ; bash'}
+            [exec] (fern) {xterm -bg black -fg red -e 'fern ; bash'}
+            [exec] (findmyhash) {xterm -bg black -fg red -e 'findmyhash -h ; bash'}
+            [exec] (hashcat) {xterm -bg black -fg red -e 'hashcat ; bash'}
+            [exec] (hashcat-combinator) {xterm -bg black -fg red -e 'hashcat-combinator ; bash'}
+            [exec] (hashcat-cutb) {xterm -bg black -fg red -e 'hashcat-cutb ; bash'}
+            [exec] (hashcat-expander) {xterm -bg black -fg red -e 'hashcat-expander -h ; bash'}
+            [exec] (hashcat-gate) {xterm -bg black -fg red -e 'hashcat-gate ; bash'}
+            [exec] (hashcat-hcstatgen) {xterm -bg black -fg red -e 'hashcat-hcstatgen ; bash'}
+            [exec] (hashcat-len) {xterm -bg black -fg red -e 'hashcat-len ; bash'}
+            [exec] (hashcat-morph) {xterm -bg black -fg red -e 'hashcat-morph ; bash'}
+            [exec] (hashcat-permute) {xterm -bg black -fg red -e 'hashcat-permute -h ; bash'}
+            [exec] (hashcat-prepare) {xterm -bg black -fg red -e 'hashcat-prepare -h ; bash'}
+            [exec] (hashcat-req) {xterm -bg black -fg red -e 'hashcat-req ; bash'}
+            [exec] (hashcat-rli) {xterm -bg black -fg red -e 'hashcat-rli ; bash'}
+            [exec] (hashcat-rli2) {xterm -bg black -fg red -e 'hashcat-rli2 ; bash'}
+            [exec] (hashcat-splitlen) {xterm -bg black -fg red -e 'hashcat-splitlen ; bash'}
+            [exec] (hashtag) {xterm -bg black -fg red -e 'hashtag -h ; bash'}
+            [exec] (dpl4hydra) {xterm -bg black -fg red -e 'dpl4hydra.sh -h ; bash'}
+            [exec] (hydra) {xterm -bg black -fg red -e 'hydra -h ; bash'}
+            [exec] (pw-inspector) {xterm -bg black -fg red -e 'pw-inspector -h ; bash'}
+            [exec] (xhydra) {xhydra}
+            [exec] (iheartxor) {xterm -bg black -fg red -e 'iheartxor ; bash'}
+            [exec] (ikecrack) {xterm -bg black -fg red -e 'ikecrack-snarf.pl'}
+            [exec] (inguma) {xterm -bg black -fg red -e 'inguma ; bash'}
+            [exec] (jbrute) {xterm -bg black -fg red -e 'jbrute --help ; bash'}
+            [exec] (johnny) {johnny}
+            [exec] (keimpx) {xterm -bg black -fg red -e 'keimpx -h ; bash'}
+            [exec] (lodowep) {xterm -bg black -fg red -e 'lodowep -h ; bash'}
+            [exec] (maskprocessor) {xterm -bg black -fg red -e 'maskprocessor -h ; bash'}
+            [exec] (masscan) {xterm -bg black -fg red -e 'masscan --help ; bash'}
+            [exec] (mdcrack) {xterm -bg black -fg red -e 'mdcrack ; bash'}
+            [exec] (medusa) {xterm -bg black -fg red -e 'medusa -h ; bash'}
+            [exec] (mfoc) {xterm -bg black -fg red -e 'mfoc -h ; bash'}
+            [exec] (morxbrute) {xterm -bg black -fg red -e 'MorXBrute ; bash'}
+            [exec] (onesixtyone) {xterm -bg black -fg red -e 'onesixtyone ; bash'}
+            [exec] (owabf) {xterm -bg black -fg red -e 'owabf ; bash'}
+            [exec] (maskgen) {xterm -bg black -fg red -e 'maskgen -h ; bash'}
+            [exec] (policygen) {xterm -bg black -fg red -e 'policygen -h ; bash'}
+            [exec] (rulegen) {xterm -bg black -fg red -e 'rulegen -h ; bash'}
+            [exec] (statsgen) {xterm -bg black -fg red -e 'statsgen -h ; bash'}
+            [exec] (passcracking) {xterm -bg black -fg red -e 'passcracking ; bash'}
+            [exec] (patator) {xterm -bg black -fg red -e 'patator --help ; bash'}
+            [exec] (pdfcrack) {xterm -bg black -fg red -e 'pdfcrack ; bash'}
+            [exec] (pdgmail) {xterm -bg black -fg red -e 'pdgmail -h ; bash'}
+            [exec] (phoss) {xterm -bg black -fg red -e 'PHoss -h ; bash'}
+            [exec] (php-mt-seed) {xterm -bg black -fg red -e 'php_mt_seed ; bash'}
+            [exec] (phrasendrescher) {xterm -bg black -fg red -e 'phrasendrescher -h ; bash'}
+            [exec] (pipal) {xterm -bg black -fg red -e 'pipal -h ; bash'}
+            [exec] (pyrit) {xterm -bg black -fg red -e 'pyrit -h ; bash'}
+            [exec] (rcrack) {xterm -bg black -fg red -e 'rcrack -h ; bash'}
+            [exec] (rtdump) {xterm -bg black -fg red -e 'rtdump -h ; bash'}
+            [exec] (rtgen) {xterm -bg black -fg red -e 'rtgen -h ; bash'}
+            [exec] (rtsort) {xterm -bg black -fg red -e 'rtsort ; bash'}
+            [exec] (rarcrack) {xterm -bg black -fg red -e 'rarcrack --help ; bash'}
+            [exec] (rcracki-mt) {xterm -bg black -fg red -e 'rcracki-mt ; bash'}
+            [exec] (rdesktop-brute) {xterm -bg black -fg red -e 'rdesktop-brute ; bash'}
+            [exec] (reaver) {xterm -bg black -fg red -e 'reaver -h ; bash'}
+            [exec] (wash) {xterm -bg black -fg red -e 'wash -h ; bash'}
+            [exec] (rootbrute) {xterm -bg black -fg red -e 'rootbrute.py ; bash'}
+            [exec] (rsakeyfind) {xterm -bg black -fg red -e 'rsakeyfind ; bash'}
+            [exec] (samdump2) {xterm -bg black -fg red -e 'samdump2 ; bash'}
+            [exec] (samydeluxe) {xterm -bg black -fg red -e 'samydeluxe ; bash'}
+            [exec] (sidguesser) {xterm -bg black -fg red -e 'sidguess ; bash'}
+            [exec] (sipcrack) {xterm -bg black -fg red -e 'sipcrack -h ; bash'}
+            [exec] (sipdump) {xterm -bg black -fg red -e 'sipdump -h ; bash'}
+            [exec] (nbdecode) {xterm -bg black -fg red -e 'nbdecode ; bash'}
+            [exec] (smbbf) {xterm -bg black -fg red -e 'smbbf ; bash'}
+            [exec] (smbdumpusers) {xterm -bg black -fg red -e 'smbdumpusers ; bash'}
+            [exec] (smbbf) {xterm -bg black -fg red -e 'smbgetserverinfo ; bash'}
+            [exec] (sqlpat) {xterm -bg black -fg red -e 'sqlbf ; bash'}
+            [exec] (ssh-privkey-crack) {xterm -bg black -fg red -e 'ssh-privkey-crack ; bash'}
+            [exec] (sshatter) {xterm -bg black -fg red -e 'sshatter ; bash'}
+            [exec] (sshtrix) {xterm -bg black -fg red -e 'sshtrix -H ; bash'}
+            [exec] (sslnuke) {xterm -bg black -fg red -e 'sslnuke ; bash'}
+            [exec] (statsprocessor) {xterm -bg black -fg red -e 'statsprocessor -h ; bash'}
+            [exec] (sucrack) {xterm -bg black -fg red -e 'sucrack ; bash'}
+            [exec] (tftp-bruteforce) {xterm -bg black -fg red -e 'tftpbrute ; bash'}
+            [exec] (thc-pptp-bruter) {xterm -bg black -fg red -e 'thc-pptp-bruter'}
+            [exec] (ufo-wardriving) {ufo-wardriving}
+            [exec] (vnc-bypauth) {xterm -bg black -fg red -e 'VNC_bypauth ; bash'}
+            [exec] (vncrack) {xterm -bg black -fg red -e 'vncrack ; bash'}
+            [exec] (wifite) {xterm -bg black -fg red -e 'sudo wifite ; bash'}
+            [exec] (wmat) {xterm -bg black -fg red -e 'wmat ; bash'}
+            [exec] (wyd) {xterm -bg black -fg red -e 'wyd ; bash'}
+            [exec] (zulu) {xterm -bg black -fg red -e 'zulu -h ; bash'}
         [end]
         [submenu] (crypto)
-			[exec] (bletchley) {bletchley}
-			[exec] (ciphertest) {ciphertest}
-			[exec] (hash-identifier) {hash-identifier}
-			[exec] (nomorexor) {nomorexor}
-			[exec] (sbd) {sbd}
-			[exec] (xorbruteforcer) {xorbruteforcer}
-			[exec] (xorsearch) {xorsearch}
-			[exec] (xortool) {xortool}
+            [exec] (bletchley-analyze) {xterm -bg black -fg red -e 'bletchley-analyze ; bash'}
+            [exec] (bletchley-decode) {xterm -bg black -fg red -e 'bletchley-decode ; bash'}
+            [exec] (bletchley-encode) {xterm -bg black -fg red -e 'bletchley-encode ; bash'}
+            [exec] (bletchley-http2py) {xterm -bg black -fg red -e 'bletchley-http2py ; bash'}
+            [exec] (bletchley-nextrand) {xterm -bg black -fg red -e 'bletchley-nextrand ; bash}
+            [exec] (ciphertest) {xterm -bg black -fg red -e 'ciphertest ; bash'}
+            [exec] (hash-identifier) {xterm -bg black -fg red -e 'hashid ; bash'}
+            [exec] (nomorexor) {xterm -bg black -fg red -e 'nomorexor ; bash'}
+            [exec] (sbd) {xterm -bg black -fg red -e 'sbd -h ; bash'}
+            [exec] (xorbruteforcer) {xterm -bg black -fg red -e 'xorbruteforcer ; bash'}
+            [exec] (xorsearch) {xterm -bg black -fg red -e 'xorsearch ; bash'}
+            [exec] (xortool) {xterm -bg black -fg red -e 'xortool -h ; bash'}
         [end]
-		[submenu] (database)
-			[exec] (blindsql) {blindsql}
-			[exec] (getsids) {getsids}
-			[exec] (metacoretex) {metacoretex}
-			[exec] (minimysqlator) {minimysqlator}
-		[end]
-		[submenu] (debugger)
-			[exec] (edb) {edb}
-			[exec] (ollydbg) {ollydbg}
-			[exec] (radare2) {radare2}
-			[exec] (shellnoob) {shellnoob}
-			[exec] (vivisect) {vivisect}
-		[end]
+        [submenu] (database)
+            [exec] (sqlcheck) {xterm -bg black -fg red -e 'sqlcheck -h ; bash'}
+            [exec] (sqldata) {xterm -bg black -fg red -e 'sqldata -h ; bash'}
+            [exec] (getsids) {xterm -bg black -fg red -e 'getsids ; bash'}
+            [exec] (metacoretex) {metacoretex}
+            [exec] (minimysqlator) {minimysqlator}
+        [end]
+        [submenu] (debugger)
+            [exec] (edb) {edb}
+            [exec] (ollydbg) {ollydbg}
+            [exec] (r2) {xterm -bg black -fg red -e 'r2 -h ; bash'}
+            [exec] (r2agent) {xterm -bg black -fg red -e 'r2agent -h ; bash'}
+            [exec] (rabin2) {xterm -bg black -fg red -e 'rabin2 -h ; bash'}
+            [exec] (radare2) {xterm -bg black -fg red -e 'radare2 -h ; bash'}
+            [exec] (radiff2) {xterm -bg black -fg red -e 'radiff2 -h ; bash'}
+            [exec] (rafind2) {xterm -bg black -fg red -e 'rafind2 -h ; bash'}
+            [exec] (ragg2) {xterm -bg black -fg red -e 'ragg2 -h ; bash'}
+            [exec] (ragg2-cc) {xterm -bg black -fg red -e 'ragg2-cc -h ; bash'}
+            [exec] (rahash2) {xterm -bg black -fg red -e 'rahash2 -h ; bash'}
+            [exec] (rarun2) {xterm -bg black -fg red -e 'rarun2 -h ; bash'}
+            [exec] (rasm2) {xterm -bg black -fg red -e 'rasm2 -h ; bash'}
+            [exec] (rax2) {xterm -bg black -fg red -e 'rax2 ; bash'}
+            [exec] (shellnoob) {xterm -bg black -fg red -e 'shellnoob ; bash'}
+            [exec] (vdbbin) {xterm -bg black -fg red -e 'vdbbin -h ; bash'}
+            [exec] (vivbin) {xterm -bg black -fg red -e 'vivbin -h ; bash'}
+        [end]
         [submenu] (decompiler)
-			[exec] (flasm) {flasm}
+            [exec] (flasm) {xterm -bg black -fg red -e 'flasm -h ; bash'}
         [end]
         [submenu] (defensive)
-			[exec] (arpalert) {arpalert}
-			[exec] (arpantispoofer) {arpantispoofer}
-			[exec] (arpon) {arpon}
-			[exec] (artillery) {artillery}
-			[exec] (chkrootkit) {chkrootkit}
-			[exec] (dbpwaudit) {dbpwaudit}
-			[exec] (inetsim) {inetsim}
-			[exec] (secure-delete) {secure-delete}
-			[exec] (sniffjoke) {sniffjoke}
-			[exec] (tor-autocircuit) {tor-autocircuit}
+            [exec] (arpalert) {xterm -bg black -fg red -e 'arpalert -h ; bash'}
+            [exec] (arpantispoofer) {xterm -bg black -fg red -e 'arpas -h ; bash'}
+            [exec] (arpon) {xterm -bg black -fg red -e 'sudo arpon -h ; bash}
+            [exec] (artillery) {xterm -bg black -fg red -e 'artillery ; bash'}
+            [exec] (chkrootkit) {xterm -bg black -fg red -e 'chkrootkit -h ; bash'}
+            [exec] (dbpwaudit) {xterm -bg black -fg red -e 'dbpwaudit ; bash'}
+            [exec] (inetsim) {xterm -bg black -fg red -e 'inetsim --help ; bash'}
+            [exec] (sniffjoke) {xterm -bg black -fg red -e 'sudo sniffjoke -h ; bash'}
+            [exec] (sniffjokectl) {xterm -bg black -fg red -e 'sniffjokectl -h ; bash'}
+            [exec] (tor-autocircuit) {xterm -bg black -fg red -e 'tor-autocircuit ; bash'}
         [end]
         [submenu] (disassembler)
-			[exec] (inguma) {inguma}
-			[exec] (radare2) {radare2}
-			[exec] (vivisect) {vivisect}
+            [exec] (inguma) {xterm -bg black -fg red -e 'inguma ; bash'}
+            [exec] (r2) {xterm -bg black -fg red -e 'r2 -h ; bash'}
+            [exec] (r2agent) {xterm -bg black -fg red -e 'r2agent -h ; bash'}
+            [exec] (rabin2) {xterm -bg black -fg red -e 'rabin2 -h ; bash'}
+            [exec] (radare2) {xterm -bg black -fg red -e 'radare2 -h ; bash'}
+            [exec] (radiff2) {xterm -bg black -fg red -e 'radiff2 -h ; bash'}
+            [exec] (rafind2) {xterm -bg black -fg red -e 'rafind2 -h ; bash'}
+            [exec] (ragg2) {xterm -bg black -fg red -e 'ragg2 -h ; bash'}
+            [exec] (ragg2-cc) {xterm -bg black -fg red -e 'ragg2-cc -h ; bash'}
+            [exec] (rahash2) {xterm -bg black -fg red -e 'rahash2 -h ; bash'}
+            [exec] (rarun2) {xterm -bg black -fg red -e 'rarun2 -h ; bash'}
+            [exec] (rasm2) {xterm -bg black -fg red -e 'rasm2 -h ; bash'}
+            [exec] (rax2) {xterm -bg black -fg red -e 'rax2 ; bash'}
+            [exec] (vdbbin) {xterm -bg black -fg red -e 'vdbbin -h ; bash'}
+            [exec] (vivbin) {xterm -bg black -fg red -e 'vivbin -h ; bash'}
         [end]
         [submenu] (dos)
-			(dnsdrdos) {dnsdrdos}
-			(hwk) {hwk}
-			(iaxflood) {iaxflood}
-			(mausezahn) {mausezahn}
-			(nkiller2) {nkiller2}
-			(slowhttptest) {slowhttptest}
-			(t50) {t50}
-			(thc-ipv6) {thc-ipv6}
-			(thc-ssl-dos) {thc-ssl-dos}
+            [exec] (dnsdrdos) {xterm -bg black -fg red -e 'dnsdrdos -H ; bash'}
+            [exec] (hawk) {xterm -bg black -fg red -e 'hawk --help ; bash'}
+            [exec] (hwk-eagle) {xterm -bg black -fg red -e 'hwk-eagle --help ; bash'}
+            [exec] (iaxflood) {xterm -bg black -fg red -e 'iaxflood ; bash'}
+            [exec] (mausezahn) {xterm -bg black -fg red -e 'sudo mz -h ; bash'}
+            [exec] (nkiller2) {xterm -bg black -fg red -e 'nkiller2 -h ; bash'}
+            [exec] (slowhttptest) {xterm -bg black -fg red -e 'slowhttptest -h ; bash'}
+            [exec] (t50) {xterm -bg black -fg red -e 't50 --help ; bash'}
+            [exec] (6to4test.sh) {xterm -bg black -fg red -e '6to4test.sh ; bash'}
+            [exec] (address6) {xterm -bg black -fg red -e 'address6 ; bash'}
+            [exec] (alive6) {xterm -bg black -fg red -e 'alive6 ; bash'}
+            [exec] (applypatch-msg.sample) {xterm -bg black -fg red -e 'applypatch-msg.sample ; bash'}
+            [exec] (commit-msg.sample) {xterm -bg black -fg red -e 'commit-msg.sample ; bash'}
+            [exec] (covert_send6) {xterm -bg black -fg red -e 'covert_send6 ; bash'}
+            [exec] (covert_send6d) {xterm -bg black -fg red -e 'covert_send6d ; bash'}
+            [exec] (denial6) {xterm -bg black -fg red -e 'denial6 ; bash'}
+            [exec] (detect-new-ip6) {xterm -bg black -fg red -e 'detect-new-ip6 ; bash'}
+            [exec] (detect_sniffer6) {xterm -bg black -fg red -e 'detect_sniffer6 ; bash'}
+            [exec] (dnsdict6) {xterm -bg black -fg red -e 'dnsdict6 ; bash'}
+            [exec] (dnsrevenum6) {xterm -bg black -fg red -e 'dnsrevenum6 ; bash'}
+            [exec] (dnssecwalk) {xterm -bg black -fg red -e 'dnssecwalk ; bash'}
+            [exec] (dos-new-ip6) {xterm -bg black -fg red -e 'dos-new-ip6 ; bash'}
+            [exec] (dos_mld.sh) {xterm -bg black -fg red -e 'dos_mld.sh ; bash'}
+            [exec] (dump_router6) {xterm -bg black -fg red -e 'dump_router6 ; bash'}
+            [exec] (exploit6) {xterm -bg black -fg red -e 'exploit6 ; bash'}
+            [exec] (extract_hosts6.sh) {xterm -bg black -fg red -e 'extract_hosts6.sh ; bash'}
+            [exec] (extract_networks6.sh) {xterm -bg black -fg red -e 'extract_networks6.sh ; bash'}
+            [exec] (fake_advertise6) {xterm -bg black -fg red -e 'fake_advertise6 ; bash'}
+            [exec] (fake_dhcps6) {xterm -bg black -fg red -e 'fake_dhcps6 ; bash'}
+            [exec] (fake_dns6d) {xterm -bg black -fg red -e 'fake_dns6d ; bash'}
+            [exec] (fake_dnsupdate6) {xterm -bg black -fg red -e 'fake_dnsupdate6 ; bash'}
+            [exec] (fake_mipv6) {xterm -bg black -fg red -e 'fake_mipv6 ; bash'}
+            [exec] (fake_mld26) {xterm -bg black -fg red -e 'fake_mld26 ; bash'}
+            [exec] (fake_mld6) {xterm -bg black -fg red -e 'fake_mld6 ; bash'}
+            [exec] (fake_mldrouter6) {xterm -bg black -fg red -e 'fake_mldrouter6 ; bash'}
+            [exec] (fake_pim6) {xterm -bg black -fg red -e 'fake_pim6 ; bash'}
+            [exec] (fake_router26) {xterm -bg black -fg red -e 'fake_router26 ; bash'}
+            [exec] (fake_router6) {xterm -bg black -fg red -e 'fake_router6 ; bash'}
+            [exec] (fake_solicitate6) {xterm -bg black -fg red -e 'fake_solicitate6 ; bash'}
+            [exec] (firewall6) {xterm -bg black -fg red -e 'firewall6 ; bash'}
+            [exec] (flood_advertise6) {xterm -bg black -fg red -e 'flood_advertise6 ; bash'}
+            [exec] (flood_dhcpc6) {xterm -bg black -fg red -e 'flood_dhcpc6 ; bash'}
+            [exec] (flood_mld26) {xterm -bg black -fg red -e 'flood_mld26 ; bash'}
+            [exec] (flood_mld6) {xterm -bg black -fg red -e 'flood_mld6 ; bash'}
+            [exec] (flood_mldrouter6) {xterm -bg black -fg red -e 'flood_mldrouter6 ; bash'}
+            [exec] (flood_router26) {xterm -bg black -fg red -e 'flood_router26 ; bash'}
+            [exec] (flood_router6) {xterm -bg black -fg red -e 'flood_router6 ; bash'}
+            [exec] (flood_solicitate6) {xterm -bg black -fg red -e 'flood_solicitate6 ; bash'}
+            [exec] (fragmentation6) {xterm -bg black -fg red -e 'fragmentation6 ; bash'}
+            [exec] (fuzz_ip6) {xterm -bg black -fg red -e 'fuzz_ip6 ; bash'}
+            [exec] (implementation6) {xterm -bg black -fg red -e 'implementation6 ; bash'}
+            [exec] (implementation6d) {xterm -bg black -fg red -e 'implementation6d ; bash'}
+            [exec] (inject_alive6) {xterm -bg black -fg red -e 'inject_alive6 ; bash'}
+            [exec] (inverse_lookup6) {xterm -bg black -fg red -e 'inverse_lookup6 ; bash'}
+            [exec] (kill_router6) {xterm -bg black -fg red -e 'kill_router6 ; bash'}
+            [exec] (ndpexhaust26) {xterm -bg black -fg red -e 'ndpexhaust26 ; bash'}
+            [exec] (ndpexhaust6) {xterm -bg black -fg red -e 'ndpexhaust6 ; bash'}
+            [exec] (node_query6) {xterm -bg black -fg red -e 'node_query6 ; bash'}
+            [exec] (parasite6) {xterm -bg black -fg red -e 'parasite6 ; bash'}
+            [exec] (passive_discovery6) {xterm -bg black -fg red -e 'passive_discovery6 ; bash'}
+            [exec] (post-update.sample) {xterm -bg black -fg red -e 'post-update.sample ; bash'}
+            [exec] (pre-applypatch.sample) {xterm -bg black -fg red -e 'pre-applypatch.sample ; bash'}
+            [exec] (pre-commit.sample) {xterm -bg black -fg red -e 'pre-commit.sample ; bash'}
+            [exec] (pre-push.sample) {xterm -bg black -fg red -e 'pre-push.sample ; bash'}
+            [exec] (pre-rebase.sample) {xterm -bg black -fg red -e 'pre-rebase.sample ; bash'}
+            [exec] (prepare-commit-msg.sample) {xterm -bg black -fg red -e 'prepare-commit-msg.sample ; bash'}
+            [exec] (randicmp6) {xterm -bg black -fg red -e 'randicmp6 ; bash'}
+            [exec] (redir6) {xterm -bg black -fg red -e 'redir6 ; bash'}
+            [exec] (redirsniff6) {xterm -bg black -fg red -e 'redirsniff6 ; bash'}
+            [exec] (rsmurf6) {xterm -bg black -fg red -e 'rsmurf6 ; bash'}
+            [exec] (sendpees6) {xterm -bg black -fg red -e 'sendpees6 ; bash'}
+            [exec] (sendpeesmp6) {xterm -bg black -fg red -e 'sendpeesmp6 ; bash'}
+            [exec] (smurf6) {xterm -bg black -fg red -e 'smurf6 ; bash'}
+            [exec] (thc-ipv6-setup.sh) {xterm -bg black -fg red -e 'thc-ipv6-setup.sh ; bash'}
+            [exec] (thcping6) {xterm -bg black -fg red -e 'thcping6 ; bash'}
+            [exec] (thcsyn6) {xterm -bg black -fg red -e 'thcsyn6 ; bash'}
+            [exec] (toobig6) {xterm -bg black -fg red -e 'toobig6 ; bash'}
+            [exec] (trace6) {xterm -bg black -fg red -e 'trace6 ; bash'}
+            [exec] (update.sample) {xterm -bg black -fg red -e 'update.sample ; bash'}
+            [exec] (thc-ssl-dos) {xterm -bg black -fg red -e 'thc-ssl-dos -h ; bash'}
         [end]
         [submenu] (drone)
-			[exec] (skyjack) {skyjack}
+            [exec] (skyjack) {xterm -bg black -fg red -e 'skyjack --help ; bash'}
         [end]
         [submenu] (exploitation)
-			[exec] (armitage) {armitage}
-			[exec] (arpoison) {arpoison}
-			[exec] (bbqsql) {bbqsql}
-			[exec] (bed) {bed}
-			[exec] (bfbtester) {bfbtester}
-			[exec] (cisco-global-exploiter) {cisco-global-exploiter}
-			[exec] (cisco-torch) {cisco-torch}
-			[exec] (darkd0rk3r) {darkd0rk3r}
-			[exec] (darkmysqli) {darkmysqli}
-			[exec] (dotdotpwn) {dotdotpwn}
-			[exec] (exploit-db) {exploit-db}
-			[exec] (fimap) {fimap}
-			[exec] (hamster) {hamster}
-			[exec] (hcraft) {hcraft}
-			[exec] (htexploit) {htexploit}
-			[exec] (htshells) {htshells}
-			[exec] (inguma) {inguma}
-			[exec] (irpas) {irpas}
-			[exec] (killerbee) {killerbee}
-			[exec] (leroy-jenkins) {leroy-jenkins}
-			[exec] (lfi-autopwn) {lfi-autopwn}
-			[exec] (loki) {loki}
-			[exec] (metasploit) {metasploit}
-			[exec] (miranda-upnp) {miranda-upnp}
-			[exec] (mitmap) {mitmap}
-			[exec] (mitmproxy) {mitmproxy}
-			[exec] (padbuster) {padbuster}
-			[exec] (paxtest) {paxtest}
-			[exec] (pblind) {pblind}
-			[exec] (pentbox) {pentbox}
-			[exec] (pirana) {pirana}
-			[exec] (powersploit) {powersploit}
-			[exec] (rebind) {rebind}
-			[exec] (rfcat) {rfcat}
-			[exec] (ropeme) {ropeme}
-			[exec] (ropgadget) {ropgadget}
-			[exec] (ruby-ronin-support) {ruby-ronin-support}
-			[exec] (set) {set}
-			[exec] (shellcodecs) {shellcodecs}
-			[exec] (shellnoob) {shellnoob}
-			[exec] (simple-ducky) {simple-ducky}
-			[exec] (sipvicious) {sipvicious}
-			[exec] (sploitctl) {sploitctl}
-			[exec] (sqlmap) {sqlmap}
-			[exec] (sqlninja) {sqlninja}
-			[exec] (sqlsus) {sqlsus}
-			[exec] (subterfuge) {subterfuge}
-			[exec] (tcpjunk) {tcpjunk}
-			[exec] (thc-ipv6) {thc-ipv6}
-			[exec] (veil) {veil}
-			[exec] (vnc-bypauth) {vnc-bypauth}
-			[exec] (websploit) {websploit}
-			[exec] (zarp) {zarp}
+            [exec] (armitage) {armitage}
+            [exec] (arpoison) {xterm -bg black -fg red -e 'arpoison -h ; bash'}
+            [exec] (bbqsql) {xterm -bg black -fg red -e 'bbqsql -h ; bash'}
+            [exec] (bed) {xterm -bg black -fg red -e 'bed -h ; bash'}
+            [exec] (bfbtester) {xterm -bg black -fg red -e 'bfbtester -h ; bash'}
+            [exec] (cisco-global-exploiter) {xterm -bg black -fg red -e 'cisco-global-exploiter -h ; bash'}
+            [exec] (cisco-torch) {xterm -bg black -fg red -e 'cisco-torch -h ; bash'}
+            [exec] (darkd0rk3r) {xterm -bg black -fg red -e 'darkd0rk3r ; rm -rf darkd0rk3r-*.txt ; bash'}
+            [exec] (darkmysqli) {xterm -bg black -fg red -e 'darkmysqli -h ; bash'}
+            [exec] (dotdotpwn) {xterm -bg black -fg red -e 'dotdotpwn -h ; bash'}
+            [exec] (fimap) {xterm -bg black -fg red -e 'fimap -h ; bash'}
+            [exec] (ferret) {xterm -bg black -fg red -e 'ferret ; bash'}
+            [exec] (hamster-http) {xterm -bg black -fg red -e 'hamster-http -h ; bash'}
+            [exec] (hcraft) {xterm -bg black -fg red -e 'hcraft ; bash'}
+            [exec] (htexploit) {xterm -bg black -fg red -e 'htexploit -h ; bash'}
+            [exec] (htshells) {xterm -bg black -fg red -e 'cd /usr/share/htshells ; ls ; bash'}
+            [exec] (inguma) {xterm -bg black -fg red -e 'inguma ; bash'}
+            [exec] (irpas-ass) {xterm -bg black -fg red -e 'irpas-ass ; bash'}
+            [exec] (irpas-cdp) {xterm -bg black -fg red -e 'irpas-cdp ; bash'}
+            [exec] (irpas-dfkaa) {xterm -bg black -fg red -e 'udo rpas-dfkaa ; bash'}
+            [exec] (irpas-dhcpx) {xterm -bg black -fg red -e 'irpas-dhcpx ; bash'}
+            [exec] (irpas-file2cable) {xterm -bg black -fg red -e 'irpas-file2cable ; bash'}
+            [exec] (irpas-hsrp) {xterm -bg black -fg red -e 'irpas-hsrp ; bash'}
+            [exec] (irpas-icmp_redirect) {xterm -bg black -fg red -e 'irpas-icmp_redirect ; bash'}
+            [exec] (irpas-igrp) {xterm -bg black -fg red -e 'irpas-igrp ; bash'}
+            [exec] (irpas-irdp) {xterm -bg black -fg red -e 'irpas-irdp ; bash'}
+            [exec] (irpas-irdpresponder) {xterm -bg black -fg red -e 'irpas-irdpresponder ; bash'}
+            [exec] (irpas-itrace) {xterm -bg black -fg red -e 'irpas-itrace ; bash'}
+            [exec] (irpas-netenum) {xterm -bg black -fg red -e 'irpas-netenum ; bash'}
+            [exec] (irpas-netmask) {xterm -bg black -fg red -e 'irpas-netmask ; bash'}
+            [exec] (irpas-protos) {xterm -bg black -fg red -e 'irpas-protos ; bash'}
+            [exec] (irpas-tctrace) {xterm -bg black -fg red -e 'irpas-tctrace ; bash'}
+            [exec] (irpas-timestamp) {xterm -bg black -fg red -e 'irpas-timestamp ; bash'}
+            [exec] (zbassocflood) {xterm -bg black -fg red -e 'zbassocflood ; bash'}
+            [exec] (zbconvert) {xterm -bg black -fg red -e 'zbconvert ; bash'}
+            [exec] (zbdsniff) {xterm -bg black -fg red -e 'zbdsniff ; bash'}
+            [exec] (zbdump) {xterm -bg black -fg red -e 'zbdump ; bash'}
+            [exec] (zbfind) {xterm -bg black -fg red -e 'zbfind ; bash'}
+            [exec] (zbgoodfind) {xterm -bg black -fg red -e 'zbgoodfind ; bash'}
+            [exec] (zbid) {xterm -bg black -fg red -e 'zbid ; bash'}
+            [exec] (zbkey) {xterm -bg black -fg red -e 'zbkey ; bash'}
+            [exec] (zbreplay) {xterm -bg black -fg red -e 'zbreplay ; bash'}
+            [exec] (zbscapy) {xterm -bg black -fg red -e 'zbscapy ; bash'}
+            [exec] (zbstumbler) {xterm -bg black -fg red -e 'zbstumbler ; bash'}
+            [exec] (zbwireshark) {xterm -bg black -fg red -e 'zbwireshark ; bash'}
+            [exec] (leroy-jenkins) {xterm -bg black -fg red -e 'leroy-jenkins ; bash'}
+            [exec] (lfi-autopwn) {xterm -bg black -fg red -e 'lfi-autopwn ; bash'}
+            [exec] (loki) {xterm -bg black -fg red -e 'sudo loki.py ; bash'}
+            [exec] (mpls_tunnel) {xterm -bg black -fg red -e 'mpls_tunnel ; bash'}
+            [exec] (msfbinscan) {xterm -bg black -fg red -e 'msfbinscan -h ; bash'}
+            [exec] (msfcli) {xterm -bg black -fg red -e 'msfcli -h ; bash'}
+            [exec] (msfconsole) {xterm -bg black -fg red -e 'msfconsole -h ; bash'}
+            [exec] (msfd) {xterm -bg black -fg red -e 'msfd -h ; bash'}
+            [exec] (msfelfscan) {xterm -bg black -fg red -e 'msfelfscan -h ; bash'}
+            [exec] (msfencode) {xterm -bg black -fg red -e 'msfencode -h ; bash'}
+            [exec] (msfmachscan) {xterm -bg black -fg red -e 'msfmachscan -h ; bash'}
+            [exec] (msfpayload) {xterm -bg black -fg red -e 'msfpayload -h ; bash'}
+            [exec] (msfpescan) {xterm -bg black -fg red -e 'msfpescan -h ; bash'}
+            [exec] (msfrop) {xterm -bg black -fg red -e 'msfrop -h ; bash'}
+            [exec] (msfrpc) {xterm -bg black -fg red -e 'msfrpc -h ; bash'}
+            [exec] (msfrpcd) {xterm -bg black -fg red -e 'msfrpcd -h ; bash'}
+            [exec] (msfupdate) {xterm -bg black -fg red -e 'msfupdate -h ; bash'}
+            [exec] (msfvenom) {xterm -bg black -fg red -e 'msfvenom -h ; bash'}
+            [exec] (msf_exec.py) {xterm -bg black -fg red -e 'msf_exec.py -h ; bash'}
+            [exec] (miranda-upnp) {xterm -bg black -fg red -e 'miranda-upnp -h ; bash'}
+            [exec] (miranda-upnp-portmapper) {xterm -bg black -fg red -e 'miranda-upnp-portmapper -h ; bash'}
+            [exec] (mitmap) {xterm -bg black -fg red -e 'mitmap.sh -h ; bash'}
+            [exec] (mitmdump) {xterm -bg black -fg red -e 'mitmdump -h ; bash'}
+            [exec] (mitmproxy) {xterm -bg black -fg red -e 'mitmproxy -h ; bash'}
+            [exec] (padbuster) {xterm -bg black -fg red -e 'padbuster -h ; bash'}
+            [exec] (paxtest) {xterm -bg black -fg red -e 'paxtest -h ; bash'}
+            [exec] (pblind) {xterm -bg black -fg red -e 'pblind ; bash'}
+            [exec] (pentbox) {xterm -bg black -fg red -e 'pentbox ; bash'}
+            [exec] (pirana) {xterm -bg black -fg red -e 'pirana -h ; bash'}
+            [exec] (powersploit) {xterm -bg black -fg red -e 'cd /usr/share/windows/powersploit ; ls ; bash'}
+            [exec] (rebind) {xterm -bg black -fg red -e 'rebind_dns -h ; bash'}
+            [exec] (rfcat) {xterm -bg black -fg red -e 'rfcat -h ; bash'}
+            [exec] (ropeme-exploit) {xterm -bg black -fg red -e 'ropeme-exploit ; bash'}
+            [exec] (ropeme-readelf) {xterm -bg black -fg red -e 'ropeme-readelf ; bash'}
+            [exec] (ropeme-search-gadgets) {xterm -bg black -fg red -e 'ropeme-search-gadgets ; bash'}
+            [exec] (ropshell) {xterm -bg black -fg red -e 'ropshell ; bash'}
+            [exec] (ropgadget) {xterm -bg black -fg red -e 'ropgadget ; bash'}
+            [exec] (seautomate) {xterm -bg black -fg red -e 'seautomate ; bash'}
+            [exec] (seproxy) {xterm -bg black -fg red -e 'seproxy ; bash'}
+            [exec] (setoolkit) {xterm -bg black -fg red -e 'setoolkit ; bash'}
+            [exec] (seupdate) {xterm -bg black -fg red -e 'seupdate ; bash'}
+            [exec] (seweb) {xterm -bg black -fg red -e 'seweb ; bash'}
+            [exec] (shellcodecs) {xterm -bg black -fg red -e 'shellcodecs ; ls ; bash'}
+            [exec] (shellnoob) {xterm -bg black -fg red -e 'shellnoob -h ; bash'}
+            [exec] (simple-ducky) {xterm -bg black -fg red -e 'sudo simple-ducky ; bash'}
+            [exec] (svcrack) {xterm -bg black -fg red -e 'svcrack -h ; bash'}
+            [exec] (svcrash) {xterm -bg black -fg red -e 'svcrash -h ; bash'}
+            [exec] (svmap) {xterm -bg black -fg red -e 'svmap -h ; bash'}
+            [exec] (svreport) {xterm -bg black -fg red -e 'svreport -h ; bash'}
+            [exec] (svwar) {xterm -bg black -fg red -e 'svwar -h ; bash'}
+            [exec] (sploitctl) {xterm -bg black -fg red -e 'sploitctl -H ; bash'}
+            [exec] (sqlmap) {xterm -bg black -fg red -e 'sqlmap -hh ; bash'}
+            [exec] (sqlninja) {xterm -bg black -fg red -e 'sqlninja -h ; bash'}
+            [exec] (sqlsus) {xterm -bg black -fg red -e 'sqlsus -h ; bash'}
+            [exec] (subterfuge) {xterm -bg black -fg red -e 'subterfuge ; bash'}
+            [exec] (tcpjunk) {xterm -bg black -fg red -e 'tcpjunk -h ; bash'}
+            [exec] (6to4test.sh) {xterm -bg black -fg red -e '6to4test.sh ; bash'}
+            [exec] (address6) {xterm -bg black -fg red -e 'address6 ; bash'}
+            [exec] (alive6) {xterm -bg black -fg red -e 'alive6 ; bash'}
+            [exec] (applypatch-msg.sample) {xterm -bg black -fg red -e 'applypatch-msg.sample ; bash'}
+            [exec] (commit-msg.sample) {xterm -bg black -fg red -e 'commit-msg.sample ; bash'}
+            [exec] (covert_send6) {xterm -bg black -fg red -e 'covert_send6 ; bash'}
+            [exec] (covert_send6d) {xterm -bg black -fg red -e 'covert_send6d ; bash'}
+            [exec] (denial6) {xterm -bg black -fg red -e 'denial6 ; bash'}
+            [exec] (detect-new-ip6) {xterm -bg black -fg red -e 'detect-new-ip6 ; bash'}
+            [exec] (detect_sniffer6) {xterm -bg black -fg red -e 'detect_sniffer6 ; bash'}
+            [exec] (dnsdict6) {xterm -bg black -fg red -e 'dnsdict6 ; bash'}
+            [exec] (dnsrevenum6) {xterm -bg black -fg red -e 'dnsrevenum6 ; bash'}
+            [exec] (dnssecwalk) {xterm -bg black -fg red -e 'dnssecwalk ; bash'}
+            [exec] (dos-new-ip6) {xterm -bg black -fg red -e 'dos-new-ip6 ; bash'}
+            [exec] (dos_mld.sh) {xterm -bg black -fg red -e 'dos_mld.sh ; bash'}
+            [exec] (dump_router6) {xterm -bg black -fg red -e 'dump_router6 ; bash'}
+            [exec] (exploit6) {xterm -bg black -fg red -e 'exploit6 ; bash'}
+            [exec] (extract_hosts6.sh) {xterm -bg black -fg red -e 'extract_hosts6.sh ; bash'}
+            [exec] (extract_networks6.sh) {xterm -bg black -fg red -e 'extract_networks6.sh ; bash'}
+            [exec] (fake_advertise6) {xterm -bg black -fg red -e 'fake_advertise6 ; bash'}
+            [exec] (fake_dhcps6) {xterm -bg black -fg red -e 'fake_dhcps6 ; bash'}
+            [exec] (fake_dns6d) {xterm -bg black -fg red -e 'fake_dns6d ; bash'}
+            [exec] (fake_dnsupdate6) {xterm -bg black -fg red -e 'fake_dnsupdate6 ; bash'}
+            [exec] (fake_mipv6) {xterm -bg black -fg red -e 'fake_mipv6 ; bash'}
+            [exec] (fake_mld26) {xterm -bg black -fg red -e 'fake_mld26 ; bash'}
+            [exec] (fake_mld6) {xterm -bg black -fg red -e 'fake_mld6 ; bash'}
+            [exec] (fake_mldrouter6) {xterm -bg black -fg red -e 'fake_mldrouter6 ; bash'}
+            [exec] (fake_pim6) {xterm -bg black -fg red -e 'fake_pim6 ; bash'}
+            [exec] (fake_router26) {xterm -bg black -fg red -e 'fake_router26 ; bash'}
+            [exec] (fake_router6) {xterm -bg black -fg red -e 'fake_router6 ; bash'}
+            [exec] (fake_solicitate6) {xterm -bg black -fg red -e 'fake_solicitate6 ; bash'}
+            [exec] (firewall6) {xterm -bg black -fg red -e 'firewall6 ; bash'}
+            [exec] (flood_advertise6) {xterm -bg black -fg red -e 'flood_advertise6 ; bash'}
+            [exec] (flood_dhcpc6) {xterm -bg black -fg red -e 'flood_dhcpc6 ; bash'}
+            [exec] (flood_mld26) {xterm -bg black -fg red -e 'flood_mld26 ; bash'}
+            [exec] (flood_mld6) {xterm -bg black -fg red -e 'flood_mld6 ; bash'}
+            [exec] (flood_mldrouter6) {xterm -bg black -fg red -e 'flood_mldrouter6 ; bash'}
+            [exec] (flood_router26) {xterm -bg black -fg red -e 'flood_router26 ; bash'}
+            [exec] (flood_router6) {xterm -bg black -fg red -e 'flood_router6 ; bash'}
+            [exec] (flood_solicitate6) {xterm -bg black -fg red -e 'flood_solicitate6 ; bash'}
+            [exec] (fragmentation6) {xterm -bg black -fg red -e 'fragmentation6 ; bash'}
+            [exec] (fuzz_ip6) {xterm -bg black -fg red -e 'fuzz_ip6 ; bash'}
+            [exec] (implementation6) {xterm -bg black -fg red -e 'implementation6 ; bash'}
+            [exec] (implementation6d) {xterm -bg black -fg red -e 'implementation6d ; bash'}
+            [exec] (inject_alive6) {xterm -bg black -fg red -e 'inject_alive6 ; bash'}
+            [exec] (inverse_lookup6) {xterm -bg black -fg red -e 'inverse_lookup6 ; bash'}
+            [exec] (kill_router6) {xterm -bg black -fg red -e 'kill_router6 ; bash'}
+            [exec] (ndpexhaust26) {xterm -bg black -fg red -e 'ndpexhaust26 ; bash'}
+            [exec] (ndpexhaust6) {xterm -bg black -fg red -e 'ndpexhaust6 ; bash'}
+            [exec] (node_query6) {xterm -bg black -fg red -e 'node_query6 ; bash'}
+            [exec] (parasite6) {xterm -bg black -fg red -e 'parasite6 ; bash'}
+            [exec] (passive_discovery6) {xterm -bg black -fg red -e 'passive_discovery6 ; bash'}
+            [exec] (post-update.sample) {xterm -bg black -fg red -e 'post-update.sample ; bash'}
+            [exec] (pre-applypatch.sample) {xterm -bg black -fg red -e 'pre-applypatch.sample ; bash'}
+            [exec] (pre-commit.sample) {xterm -bg black -fg red -e 'pre-commit.sample ; bash'}
+            [exec] (pre-push.sample) {xterm -bg black -fg red -e 'pre-push.sample ; bash'}
+            [exec] (pre-rebase.sample) {xterm -bg black -fg red -e 'pre-rebase.sample ; bash'}
+            [exec] (prepare-commit-msg.sample) {xterm -bg black -fg red -e 'prepare-commit-msg.sample ; bash'}
+            [exec] (randicmp6) {xterm -bg black -fg red -e 'randicmp6 ; bash'}
+            [exec] (redir6) {xterm -bg black -fg red -e 'redir6 ; bash'}
+            [exec] (redirsniff6) {xterm -bg black -fg red -e 'redirsniff6 ; bash'}
+            [exec] (rsmurf6) {xterm -bg black -fg red -e 'rsmurf6 ; bash'}
+            [exec] (sendpees6) {xterm -bg black -fg red -e 'sendpees6 ; bash'}
+            [exec] (sendpeesmp6) {xterm -bg black -fg red -e 'sendpeesmp6 ; bash'}
+            [exec] (smurf6) {xterm -bg black -fg red -e 'smurf6 ; bash'}
+            [exec] (thc-ipv6-setup.sh) {xterm -bg black -fg red -e 'thc-ipv6-setup.sh ; bash'}
+            [exec] (thcping6) {xterm -bg black -fg red -e 'thcping6 ; bash'}
+            [exec] (thcsyn6) {xterm -bg black -fg red -e 'thcsyn6 ; bash'}
+            [exec] (toobig6) {xterm -bg black -fg red -e 'toobig6 ; bash'}
+            [exec] (trace6) {xterm -bg black -fg red -e 'trace6 ; bash'}
+            [exec] (update.sample) {xterm -bg black -fg red -e 'update.sample ; bash'}
+            [exec] (veil) {xterm -bg black -fg red -e 'veil ; bash'}
+            [exec] (vnc-bypauth) {xterm -bg black -fg red -e 'VNC_bypauth ; bash'}
+            [exec] (websploit) {xterm -bg black -fg red -e 'websploit ; bash'}
+            [exec] (zarp) {xterm -bg black -fg red -e 'sudo zarp -h ; bash'}
         [end]
         [submenu] (fingerprint)
-			[exec] (asp-audit) {asp-audit}
-			[exec] (blindelephant) {blindelephant}
-			[exec] (cisco-torch) {cisco-torch}
-			[exec] (cms-explorer) {cms-explorer}
-			[exec] (complemento) {complemento}
-			[exec] (dnsmap) {dnsmap}
-			[exec] (ftpmap) {ftpmap}
-			[exec] (httprint) {httprint}
-			[exec] (kolkata) {kolkata}
-			[exec] (p0f) {p0f}
-			[exec] (plecost) {plecost}
-			[exec] (propecia) {propecia}
-			[exec] (sinfp) {sinfp}
-			[exec] (smtpmap) {smtpmap}
-			[exec] (smtpscan) {smtpscan}
-			[exec] (xprobe2) {xprobe2}
+            [exec] (asp-audit) {xterm -bg black -fg red -e 'asp-audit ; bash'}
+            [exec] (blindelephant) {xterm -bg black -fg red -e 'blindelephant ; bash'}
+            [exec] (cisco-torch) {xterm -bg black -fg red -e 'cisco-torch ; bash '}
+            [exec] (cms-explorer) {xterm -bg black -fg red -e 'cms-explorer ; bash'}
+            [exec] (httsquash) {xterm -bg black -fg red -e 'httsquash ; bash'}
+            [exec] (letdown) {xterm -bg black -fg red -e 'letdown ; bash'}
+            [exec] (reverseraider) {xterm -bg black -fg red -e 'reverseraider ; bash'}
+            [exec] (dnsmap) {xterm -bg black -fg red -e 'dnsmap ; bash'}
+            [exec] (dnsmap-bulk) {xterm -bg black -fg red -e 'dnsmap-bulk ; bash'}
+            [exec] (ftpmap) {xterm -bg black -fg red -e 'ftpmap -h ; bash'}
+            [exec] (httprint) {xterm -bg black -fg red -e 'httprint -h ; bash'}
+            [exec] (kolkata) {xterm -bg black -fg red -e 'kolkata ; bash'}
+            [exec] (p0f) {xterm -bg black -fg red -e 'p0f -h ; bash'}
+            [exec] (p0f-client) {xterm -bg black -fg red -e 'p0f-client -h ; bash'}
+            [exec] (p0f-sendsyn) {xterm -bg black -fg red -e 'p0f-sendsyn -h ; bash'}
+            [exec] (p0f-sendsyn6) {xterm -bg black -fg red -e 'p0f-sendsyn6 -h ; bash'}
+            [exec] (plecost) {xterm -bg black -fg red -e 'plecost -h ; bash'}
+            [exec] (propecia) {xterm -bg black -fg red -e 'propecia -h ; bash'}
+            [exec] (sinfp) {xterm -bg black -fg red -e 'sinfp -h ; bash'}
+            [exec] (smtpmap) {xterm -bg black -fg red -e 'smtpmap -h ; bash'}
+            [exec] (smtpscan) {xterm -bg black -fg red -e 'smtpscan -h ; bash'}
+            [exec] (xprobe2) {xterm -bg black -fg red -e 'xprobe2 ; bash'}
         [end]
         [submenu] (forensic)
-			[exec] (aesfix) {aesfix}
-			[exec] (aeskeyfind) {aeskeyfind}
-			[exec] (afflib) {afflib}
-            [exec] (aimage) {aimage}
-            [exec] (air) {air}
-            [exec] (autopsy) {autopsy}
-            [exec] (bios_memimage) {bios_memimage}
-            [exec] (bulk-extractor) {bulk-extractor}
-            [exec] (canari) {canari}
-            [exec] (casefile) {casefile}
-            [exec] (chkrootkit) {chkrootkit}
-            [exec] (dc3dd) {dc3dd}
-            [exec] (eindeutig) {eindeutig}
-            [exec] (foremost) {foremost}
-            [exec] (galleta) {galleta}
-            [exec] (grokevt) {grokevt}
-            [exec] (guymager) {guymager}
-            [exec] (libewf) {libewf}
-            [exec] (magicrescue) {magicrescue}
-            [exec] (make-pdf) {make-pdf}
-            [exec] (maltego) {maltego}
-            [exec] (malwaredetect) {malwaredetect}
-            [exec] (md5deep) {md5deep}
-            [exec] (mdbtools) {mdbtools}
-            [exec] (memdump) {memdump}
-            [exec] (memfetch) {memfetch}
-            [exec] (nfex) {nfex}
-            [exec] (origami) {origami}
-            [exec] (pasco) {pasco}
-            [exec] (pdf-parser) {pdf-parser}
-            [exec] (pdfid) {pdfid}
-            [exec] (peepdf) {peepdf}
-            [exec] (pev) {pev}
-            [exec] (recoverjpeg) {recoverjpeg}
-            [exec] (reglookup) {reglookup}
-            [exec] (rifiuti2) {rifiuti2}
-            [exec] (rsakeyfind) {rsakeyfind}
-            [exec] (safecopy) {safecopy}
-            [exec] (scalpel) {scalpel}
-            [exec] (scrounge-ntfs) {scrounge-ntfs}
-            [exec] (vinetto) {vinetto}
-            [exec] (volatility) {volatility}
-            [exec] (wyd) {wyd}
+            [exec] (aesfix) {xterm -bg black -fg red -e 'aesfix ; bash'}
+            [exec] (aeskeyfind) {xterm -bg black -fg red -e 'aeskeyfind ; bash'}
+            [exec] (affcat) {xterm -bg black -fg red -e 'affcat ; bash'}
+            [exec] (affcompare) {xterm -bg black -fg red -e 'affcompare ; bash'}
+            [exec] (affconvert) {xterm -bg black -fg red -e 'affconvert ; bash'}
+            [exec] (affcopy) {xterm -bg black -fg red -e 'affcopy ; bash'}
+            [exec] (affcrypto) {xterm -bg black -fg red -e 'affcrypto ; bash'}
+            [exec] (affdiskprint) {xterm -bg black -fg red -e 'affdiskprint ; bash'}
+            [exec] (affinfo) {xterm -bg black -fg red -e 'affinfo ; bash'}
+            [exec] (affix) {xterm -bg black -fg red -e 'affix ; bash'}
+            [exec] (affrecover) {xterm -bg black -fg red -e 'affrecover ; bash'}
+            [exec] (affsegment) {xterm -bg black -fg red -e 'affsegment ; bash'}
+            [exec] (affsign) {xterm -bg black -fg red -e 'affsign ; bash'}
+            [exec] (affstats) {xterm -bg black -fg red -e 'affstats ; bash'}
+            [exec] (affuse) {xterm -bg black -fg red -e 'affuse ; bash'}
+            [exec] (affverify) {xterm -bg black -fg red -e 'affverify ; bash'}
+            [exec] (affxml) {xterm -bg black -fg red -e 'affxml ; bash'}
+            [exec] (aimage) {xterm -bg black -fg red -e 'aimage -h ; bash'}
+            [exec] (air) {xterm -bg black -fg red -e 'air ; bash'}
+            [exec] (air-counter) {xterm -bg black -fg red -e 'air-counter ; bash'}
+            [exec] (tailer) {xterm -bg black -fg red -e 'tailer --help ; bash'}
+            [exec] (autopsy) {xterm -bg black -fg red -e 'autopsy -h ; bash'}
+            [exec] (pxedump) {xterm -bg black -fg red -e 'pxedump ; bash'}
+            [exec] (usbdump) {xterm -bg black -fg red -e 'usbdump ; bash'}
+            [exec] (BEViewer) {xterm -bg black -fg red -e 'BEViewer -h ; bash'}
+            [exec] (bulk-extractor) {xterm -bg black -fg red -e 'bulk-extractor ; bash'}
+            [exec] (canari) {xterm -bg black -fg red -e 'canari ; bash'}
+            [exec] (dispatcher) {xterm -bg black -fg red -e 'dispatcher -h ; bash'}
+            [exec] (pysudo) {xterm -bg black -fg red -e 'pysudo -h ; bash'}
+            [exec] (casefile) {xterm -bg black -fg red -e 'casefile -h ; bash'}
+            [exec] (casefile) {xterm -bg black -fg red -e 'maltego -h ; bash'}
+            [exec] (chkrootkit) {xterm -bg black -fg red -e 'chkrootkit -h ; bash'}
+            [exec] (dc3dd) {xterm -bg black -fg red -e 'dc3dd --help ; bash'}
+            [exec] (eindeutig) {xterm -bg black -fg red -e 'dbxparse -h ; bash'}
+            [exec] (foremost) {xterm -bg black -fg red -e 'foremost -h ; bash'}
+            [exec] (galleta) {xterm -bg black -fg red -e 'galleta ; bash'}
+            [exec] (grokevt-addlog) {xterm -bg black -fg red -e 'grokevt-addlog ; bash'}
+            [exec] (grokevt-builddb) {xterm -bg black -fg red -e 'grokevt-builddb ; bash'}
+            [exec] (grokevt-dumpmsgs) {xterm -bg black -fg red -e 'grokevt-dumpmsgs ; bash'}
+            [exec] (grokevt-findlogs) {xterm -bg black -fg red -e 'grokevt-findlogs ; bash'}
+            [exec] (grokevt-parselog) {xterm -bg black -fg red -e 'grokevt-parselog ; bash'}
+            [exec] (grokevt-ripdll) {xterm -bg black -fg red -e 'grokevt-ripdll ; bash'}
+            [exec] (guymager) {xterm -bg black -fg red -e 'guymager ; bash'}
+            [exec] (ewfacquire) {xterm -bg black -fg red -e 'ewfacquire ; bash'}
+            [exec] (ewfacquirestream) {xterm -bg black -fg red -e 'ewfacquirestream ; bash'}
+            [exec] (ewfdebug) {xterm -bg black -fg red -e 'ewfdebug ; bash'}
+            [exec] (ewfexport) {xterm -bg black -fg red -e 'ewfexport ; bash'}
+            [exec] (ewfinfo) {xterm -bg black -fg red -e 'ewfinfo ; bash'}
+            [exec] (ewfmount) {xterm -bg black -fg red -e 'ewfmount ; bash'}
+            [exec] (ewfrecover) {xterm -bg black -fg red -e 'ewfrecover ; bash'}
+            [exec] (ewfverify) {xterm -bg black -fg red -e 'ewfverify ; bash'}
+            [exec] (dupemap) {xterm -bg black -fg red -e 'dupemap ; bash'}
+            [exec] (magicrescue) {xterm -bg black -fg red -e 'magicrescue ; bash'}
+            [exec] (magicsort) {xterm -bg black -fg red -e 'magicsort ; bash'}
+            [exec] (make-pdf) {xterm -bg black -fg red -e 'make-pdf-javascript ; bash'}
+            [exec] (maltego) {xterm -bg black -fg red -e 'maltego -h ; bash'}
+            [exec] (malwaredetect) {xterm -bg black -fg red -e 'malwaredetect ; bash'}
+            [exec] (hashdeep) {xterm -bg black -fg red -e 'hashdeep -h ; bash'}
+            [exec] (md5deep) {xterm -bg black -fg red -e 'md5deep -h ; bash'}
+            [exec] (sha1deep) {xterm -bg black -fg red -e 'sha1deep -h ; bash'}
+            [exec] (sha256deep) {xterm -bg black -fg red -e 'sha256deep -h ; bash'}
+            [exec] (tigerdeep) {xterm -bg black -fg red -e 'tigerdeep -h ; bash'}
+            [exec] (whirlpooldeep) {xterm -bg black -fg red -e 'whirlpooldeep -h ; bash'}
+            [exec] (gmdb2) {xterm -bg black -fg red -e 'gmdb2 ; bash'}
+            [exec] (mdb-array) {xterm -bg black -fg red -e 'mdb-array ; bash'}
+            [exec] (mdb-export) {xterm -bg black -fg red -e 'mdb-export ; bash'}
+            [exec] (mdb-header) {xterm -bg black -fg red -e 'mdb-header ; bash'}
+            [exec] (mdb-hexdump) {xterm -bg black -fg red -e 'mdb-hexdump ; bash'}
+            [exec] (mdb-parsecsv) {xterm -bg black -fg red -e 'mdb-parsecsv ; bash'}
+            [exec] (mdb-prop) {xterm -bg black -fg red -e 'mdb-prop ; bash'}
+            [exec] (mdb-schema) {xterm -bg black -fg red -e 'mdb-schema ; bash'}
+            [exec] (mdb-sql) {xterm -bg black -fg red -e 'mdb-sql ; bash'}
+            [exec] (mdb-tables) {xterm -bg black -fg red -e 'mdb-tables ; bash'}
+            [exec] (mdb-ver) {xterm -bg black -fg red -e 'mdb-ver ; bash'}
+            [exec] (memdump) {xterm -bg black -fg red -e 'memdump -h ; bash'}
+            [exec] (memfetch) {xterm -bg black -fg red -e 'memfetch ; bash'}
+            [exec] (nfex) {xterm -bg black -fg red -e 'nfex ; bash'}
+            [exec] (origami) {xterm -bg black -fg red -e 'cd /usr/share/origami ; ls ; bash'}
+            [exec] (pasco) {xterm -bg black -fg red -e 'pasco ; bash'}
+            [exec] (pdf-parser) {xterm -bg black -fg red -e 'pdf-parser ; bash'}
+            [exec] (pdfid) {xterm -bg black -fg red -e 'pdfid ; bash'}
+            [exec] (peepdf) {xterm -bg black -fg red -e 'peepdf ; bash '}
+            [exec] (ofs2rva) {xterm -bg black -fg red -e 'ofs2rva ; bash'}
+            [exec] (pedis) {xterm -bg black -fg red -e 'pedis ; bash'}
+            [exec] (pehash) {xterm -bg black -fg red -e 'pehash ; bash'}
+            [exec] (pepack) {xterm -bg black -fg red -e 'pepack ; bash'}
+            [exec] (pescan) {xterm -bg black -fg red -e 'pescan ; bash'}
+            [exec] (pesec) {xterm -bg black -fg red -e 'pesec ; bash'}
+            [exec] (pestr) {xterm -bg black -fg red -e 'pestr ; bash'}
+            [exec] (readpe) {xterm -bg black -fg red -e 'readpe ; bash'}
+            [exec] (rva2ofs) {xterm -bg black -fg red -e 'rva2ofs ; bash'}
+            [exec] (recoverjpeg) {xterm -bg black -fg red -e 'recoverjpeg ; bash'}
+            [exec] (recovermov) {xterm -bg black -fg red -e 'recovermov ; bash'}
+            [exec] (remove-duplicates) {xterm -bg black -fg red -e 'remove-duplicates ; bash'}
+            [exec] (sort-pictures) {xterm -bg black -fg red -e 'sort-pictures ; bash'}
+            [exec] (reglookup) {xterm -bg black -fg red -e 'reglookup ; bash'}
+            [exec] (reglookup-recover) {xterm -bg black -fg red -e 'reglookup-recover ; bash'}
+            [exec] (reglookup-timeline) {xterm -bg black -fg red -e 'reglookup-timeline ; bash'}
+            [exec] (rifiuti) {xterm -bg black -fg red -e 'rifiuti -h ; bash'}
+            [exec] (rifiuti-vista) {xterm -bg black -fg red -e 'rifiuti-vista -h ; bash'}
+            [exec] (rsakeyfind) {xterm -bg black -fg red -e 'rsakeyfind ; bash'}
+            [exec] (safecopy) {xterm -bg black -fg red -e 'safecopy ; bash'}
+            [exec] (scalpel) {xterm -bg black -fg red -e 'scalpel ; bash'}
+            [exec] (scrounge-ntfs) {xterm -bg black -fg red -e 'scrounge-ntfs -h ; bash'}
+            [exec] (vinetto) {xterm -bg black -fg red -e 'vinetto -h ; bash'}
+            [exec] (volatility) {xterm -bg black -fg red -e 'volatility -h ; bash}
+            [exec] (wyd) {xterm -bg black -fg red -e 'wyd ; bash'}
         [end]
         [submenu] (fuzzer)
-            [exec] (browser-fuzzer) {browser-fuzzer}
-            [exec] (bss) {bss}
-            [exec] (bt_audit) {bt_audit}
-            [exec] (bunny) {bunny}
+            [exec] (browser-fuzzer) {xterm -bg black -fg red -e 'bf3 ; bash'}
+            [exec] (bss) {xterm -bg black -fg red -e 'sudo bss ; bash'}
+            [exec] (psm_scan) {xterm -bg black -fg red -e 'psm_scan ; bash'}
+            [exec] (rfcomm_scan) {xterm -bg black -fg red -e 'rfcomm_scan ; bash'}
+            [exec] (bunny) {xterm -bg black -fg red -e 'cd /usr/share/bunny ; ls ; bash'}
             [exec] (burpsuite) {burpsuite}
-            [exec] (cirt-fuzzer) {cirt-fuzzer}
-            [exec] (cisco-auditing-tool) {cisco-auditing-tool}
-            [exec] (conscan) {conscan}
-            [exec] (cookie-cadger) {cookie-cadger}
-            [exec] (dotdotpwn) {dotdotpwn}
-            [exec] (easyfuzzer) {easyfuzzer}
-            [exec] (fimap) {fimap}
-            [exec] (firewalk) {firewalk}
-            [exec] (ftester) {ftester}
-            [exec] (ftp-fuzz) {ftp-fuzz}
-            [exec] (fusil) {fusil}
-            [exec] (fuzzball2) {fuzzball2}
-            [exec] (fuzzdb) {fuzzdb}
-            [exec] (fuzzdiff) {fuzzdiff}
-            [exec] (hexorbase) {hexorbase}
-            [exec] (http-fuzz) {http-fuzz}
-            [exec] (hwk) {hwk}
-            [exec] (ikeprober) {ikeprober}
-            [exec] (inguma) {inguma}
-            [exec] (jbrofuzz) {jbrofuzz}
-            [exec] (lfi-autopwn) {lfi-autopwn}
-            [exec] (mdk3) {mdk3}
-            [exec] (metasploit) {metasploit}
-            [exec] (nikto) {nikto}
-            [exec] (notspikefile) {notspikefile}
-            [exec] (oat) {oat}
-            [exec] (ohrwurm) {ohrwurm}
-            [exec] (oscanner) {oscanner}
-            [exec] (peach) {peach}
+            [exec] (cirt-fuzzer) {xterm -bg black -fg red -e 'cirt-fuzzer -help ; bash'}
+            [exec] (cisco-auditing-tool) {xterm -bg black -fg red -e 'cisco-auditing-tool ; bash'}
+            [exec] (conscan) {xterm -bg black -fg red -e 'conscan -h ; bash'}
+            [exec] (cookie-cadger) {xterm -bg black -fg red -e 'cookie-cadger ; bash'}
+            [exec] (dotdotpwn) {xterm -bg black -fg red -e 'dotdotpwn ; bash'}
+            [exec] (easyfuzzer) {xterm -bg black -fg red -e 'easyfuzzer ; bash'}
+            [exec] (easyfuzzer-proxy) {xterm -bg black -fg red -e 'easyfuzzer-proxy ; bash'}
+            [exec] (easyfuzzer-proxy-misc) {xterm -bg black -fg red -e 'easyfuzzer-proxy-misc ; bash'}
+            [exec] (mycrawler2) {xterm -bg black -fg red -e 'mycrawler2 ; bash'}
+            [exec] (prepare4easyfuzzer) {xterm -bg black -fg red -e 'prepare4easyfuzzer ; bash'}
+            [exec] (prepare4easyfuzzer-misc) {xterm -bg black -fg red -e 'prepare4easyfuzzer-misc ; bash'}
+            [exec] (prepare4sqlfuzzer) {xterm -bg black -fg red -e 'prepare4sqlfuzzer ; bash'}
+            [exec] (sqlfuzzer) {xterm -bg black -fg red -e 'sqlfuzzer ; bash'}
+            [exec] (sqlfuzzer-proxy) {xterm -bg black -fg red -e 'sqlfuzzer-proxy ; bash'}
+            [exec] (wbxml2request) {xterm -bg black -fg red -e 'wbxml2request ; bash'}
+            [exec] (wsdl2request) {xterm -bg black -fg red -e 'wsdl2request ; bash'}
+            [exec] (fimap) {xterm -bg black -fg red -e 'fimap -h ; bash'}
+            [exec] (firewalk) {xterm -bg black -fg red -e 'firewalk ; bash'}
+            [exec] (freport) {xterm -bg black -fg red -e 'freport ; bash'}
+            [exec] (ftest) {xterm -bg black -fg red -e 'ftest ; bash'}
+            [exec] (ftestd) {xterm -bg black -fg red -e 'ftestd ; bash'}
+            [exec] (ftp-fuzz) {xterm -bg black -fg red -e 'ftp-fuzz -h ; bash'}
+            [exec] (fusil-clamav) {xterm -bg black -fg red -e 'fusil-clamav ; bash'}
+            [exec] (fusil-firefox) {xterm -bg black -fg red -e 'fusil-firefox ; bash'}
+            [exec] (fusil-gettext) {xterm -bg black -fg red -e 'fusil-gettext ; bash'}
+            [exec] (fusil-gimp) {xterm -bg black -fg red -e 'fusil-gimp ; bash'}
+            [exec] (fusil-gstreamer) {xterm -bg black -fg red -e 'fusil-gstreamer ; bash'}
+            [exec] (fusil-imagemagick) {xterm -bg black -fg red -e 'fusil-imagemagick ; bash'}
+            [exec] (fusil-libc-printf) {xterm -bg black -fg red -e 'fusil-libc-printf ; bash'}
+            [exec] (fusil-mplayer) {xterm -bg black -fg red -e 'fusil-mplayer ; bash'}
+            [exec] (fusil-ogg123) {xterm -bg black -fg red -e 'fusil-ogg123 ; bash'}
+            [exec] (fusil-php) {xterm -bg black -fg red -e 'fusil-php ; bash'}
+            [exec] (fusil-poppler) {xterm -bg black -fg red -e 'fusil-poppler ; bash'}
+            [exec] (fusil-python) {xterm -bg black -fg red -e 'fusil-python ; bash'}
+            [exec] (fusil-vlc) {xterm -bg black -fg red -e 'fusil-vlc ; bash'}
+            [exec] (fusil-wizzard) {xterm -bg black -fg red -e 'fusil-wizzard ; bash'}
+            [exec] (fusil-zzuf) {xterm -bg black -fg red -e 'fusil-zzuf ; bash'}
+            [exec] (fuzzball2) {xterm -bg black -fg red -e 'sudo fuzzball2 -h ; bash'}
+            [exec] (fuzzdb) {xterm -bg black -fg red -e 'cd /usr/share/fuzzdb ; ls ; bash'}
+            [exec] (fuzzdiff) {xterm -bg black -fg red -e 'fuzzdiff ; bash'}
+            [exec] (hexorbase) {xterm -bg black -fg red -e 'hexorbase ; bash'}
+            [exec] (http-fuzz) {xterm -bg black -fg red -e 'http-fuzz ; bash'}
+            [exec] (hawk) {xterm -bg black -fg red -e 'hawk --help ; bash'}
+            [exec] (hwk-eagle) {xterm -bg black -fg red -e 'hwk-eagle --help ; bash'}
+            [exec] (ikeprober) {xterm -bg black -fg red -e 'ikeprober ; bash'}
+            [exec] (inguma) {xterm -bg black -fg red -e 'inguma ; bash'}
+            [exec] (jbrofuzz) {xterm -bg black -fg red -e 'jbrofuzz ; bash'}
+            [exec] (lfi-autopwn) {xterm -bg black -fg red -e 'lfi-autopwn ; bash'}
+            [exec] (mdk3) {xterm -bg black -fg red -e 'sudo mdk3 ; bash'}
+            [exec] (msfbinscan) {xterm -bg black -fg red -e 'msfbinscan -h ; bash'}
+            [exec] (msfcli) {xterm -bg black -fg red -e 'msfcli -h ; bash'}
+            [exec] (msfconsole) {xterm -bg black -fg red -e 'msfconsole -h ; bash'}
+            [exec] (msfd) {xterm -bg black -fg red -e 'msfd -h ; bash'}
+            [exec] (msfelfscan) {xterm -bg black -fg red -e 'msfelfscan -h ; bash'}
+            [exec] (msfencode) {xterm -bg black -fg red -e 'msfencode -h ; bash'}
+            [exec] (msfmachscan) {xterm -bg black -fg red -e 'msfmachscan -h ; bash'}
+            [exec] (msfpayload) {xterm -bg black -fg red -e 'msfpayload -h ; bash'}
+            [exec] (msfpescan) {xterm -bg black -fg red -e 'msfpescan -h ; bash'}
+            [exec] (msfrop) {xterm -bg black -fg red -e 'msfrop -h ; bash'}
+            [exec] (msfrpc) {xterm -bg black -fg red -e 'msfrpc -h ; bash'}
+            [exec] (msfrpcd) {xterm -bg black -fg red -e 'msfrpcd -h ; bash'}
+            [exec] (msfupdate) {xterm -bg black -fg red -e 'msfupdate -h ; bash'}
+            [exec] (msfvenom) {xterm -bg black -fg red -e 'msfvenom -h ; bash'}
+            [exec] (msf_exec.py) {xterm -bg black -fg red -e 'msf_exec.py -h ; bash'}
+            [exec] (nikto) {xterm -bg black -fg red -e 'nikto -H ; bash'}
+            [exec] (notspikefile) {xterm -bg black -fg red -e 'notspikefile ; bash'}
+            [exec] (oat) {xterm -bg black -fg red -e 'oat ; bash'}
+            [exec] (ohrwurm) {xterm -bg black -fg red -e 'sudo ohrwurm -h ; bash'}
+            [exec] (oscanner) {xterm -bg black -fg red -e 'oscanner -h ; bash'}
+            [exec] (reportviewer) {xterm -bg black -fg red -e 'reportviewer -h ; bash'}
+            [exec] (peach) {xterm -bg black -fg red -e 'peach ; bash'}
             [exec] (powerfuzzer) {powerfuzzer}
-            [exec] (radamsa) {radamsa}
-            [exec] (ratproxy) {ratproxy}
-            [exec] (sfuzz) {sfuzz}
-            [exec] (skipfish) {skipfish}
-            [exec] (smtp-fuzz) {smtp-fuzz}
-            [exec] (spiderpig-pdffuzzer) {spiderpig-pdffuzzer}
-            [exec] (spike) {spike}
-            [exec] (sqlbrute) {sqlbrute}
-            [exec] (sqlmap) {sqlmap}
-            [exec] (sqlninja) {sqlninja}
-            [exec] (sulley) {sulley}
-            [exec] (taof) {taof}
-            [exec] (tcpcontrol-fuzzer) {tcpcontrol-fuzzer}
-            [exec] (tcpjunk) {tcpjunk}
-            [exec] (termineter) {termineter}
-            [exec] (tftp-fuzz) {tftp-fuzz}
-            [exec] (uniofuzz) {uniofuzz}
-            [exec] (uniscan) {uniscan}
-            [exec] (vulscan) {vulscan}
-            [exec] (wapiti) {wapiti}
+            [exec] (radamsa) {xterm -bg black -fg red -e 'radamsa -h ; bash'}
+            [exec] (ratproxy) {xterm -bg black -fg red -e 'ratproxy -h ; bash'}
+            [exec] (sfo) {xterm -bg black -fg red -e 'sfo ; bash'}
+            [exec] (sfuzz) {xterm -bg black -fg red -e 'sfuzz -h ; bash'}
+            [exec] (sfscandiff) {xterm -bg black -fg red -e 'sfscandiff -h ; bash'}
+            [exec] (skipfish) {xterm -bg black -fg red -e 'skipfish -h ; bash'}
+            [exec] (smtp-fuzz) {xterm -bg black -fg red -e 'smtp-fuzz ; bash'}
+            [exec] (spiderpig-pdffuzzer) {xterm -bg black -fg red -e 'spiderpig-pdffuzzer ; bash}
+            [exec] (spike-citrix) {xterm -bg black -fg red -e 'spike-citrix ; bash'}
+            [exec] (spike-closed-source_web_server_fuzz) {xterm -bg black -fg red -e 'spike-closed-source_web_server_fuzz ; bash'}
+            [exec] (spike-dceoversmb) {xterm -bg black -fg red -e 'spike-dceoversmb ; bash'}
+            [exec] (spike-dltest) {xterm -bg black -fg red -e 'spike-dltest ; bash'}
+            [exec] (spike-do-post) {xterm -bg black -fg red -e 'spike-do-post ; bash'}
+            [exec] (spike-generic-chunked) {xterm -bg black -fg red -e 'spike-generic-chunked ; bash'}
+            [exec] (spike-generic-listen_tcp) {xterm -bg black -fg red -e 'spike-generic-listen_tcp ; bash'}
+            [exec] (spike-generic-send_tcp) {xterm -bg black -fg red -e 'spike-generic-send_tcp ; bash'}
+            [exec] (spike-generic-send_udp) {xterm -bg black -fg red -e 'spike-generic-send_udp ; bash'}
+            [exec] (spike-generic-web_server_fuzz) {xterm -bg black -fg red -e 'spike-generic-web_server_fuzz ; bash'}
+            [exec] (spike-generic-web_server_fuzz2) {xterm -bg black -fg red -e 'spike-generic-web_server_fuzz2 ; bash'}
+            [exec] (spike-gopherd) {xterm -bg black -fg red -e 'spike-gopherd ; bash'}
+            [exec] (spike-halflife) {xterm -bg black -fg red -e 'spike-halflife ; bash'}
+            [exec] (spike-line-send_tcp) {xterm -bg black -fg red -e 'spike-line-send_tcp ; bash'}
+            [exec] (spike-msrpcfuzz) {xterm -bg black -fg red -e 'spike-msrpcfuzz ; bash'}
+            [exec] (spike-msrpcfuzz-udp) {xterm -bg black -fg red -e 'spike-msrpcfuzz-udp ; bash'}
+            [exec] (spike-ntlm-brute) {xterm -bg black -fg red -e 'spike-ntlm-brute ; bash'}
+            [exec] (spike-ntlm2) {xterm -bg black -fg red -e 'spike-ntlm2 ; bash'}
+            [exec] (spike-pmspike) {xterm -bg black -fg red -e 'spike-pmspike ; bash'}
+            [exec] (spike-post-fuzz) {xterm -bg black -fg red -e 'spike-post-fuzz ; bash'}
+            [exec] (spike-post-spike) {xterm -bg black -fg red -e 'spike-post-spike ; bash'}
+            [exec] (spike-quake) {xterm -bg black -fg red -e 'spike-quake ; bash'}
+            [exec] (spike-quakeserver) {xterm -bg black -fg red -e 'spike-quakeserver ; bash'}
+            [exec] (spike-sendmsrpc) {xterm -bg black -fg red -e 'spike-sendmsrpc ; bash'}
+            [exec] (spike-ss-spike) {xterm -bg black -fg red -e 'spike-ss-spike ; bash'}
+            [exec] (spike-statd-spike) {xterm -bg black -fg red -e 'spike-statd-spike ; bash'}
+            [exec] (spike-sunrpcfuzz) {xterm -bg black -fg red -e 'spike-sunrpcfuzz ; bash'}
+            [exec] (spike-webfuzz) {xterm -bg black -fg red -e 'spike-webfuzz ; bash'}
+            [exec] (spike-x11-spike) {xterm -bg black -fg red -e 'spike-x11-spike ; bash'}
+            [exec] (sqlbrute) {xterm -bg black -fg red -e 'sqlbrute.py ; bash'}
+            [exec] (sqlmap) {xterm -bg black -fg red -e 'sqlmap -hh ; bash'}
+            [exec] (sqlninja) {xterm -bg black -fg red -e 'sqlninja -h ; bash'}
+            [exec] (sulley) {xterm -bg black -fg red -e 'cd /usr/share/sulley ; ls ; bash}
+            [exec] (taof) {xterm -bg black -fg red -e 'taof ; bash'}
+            [exec] (tcpcontrol-fuzzer) {xterm -bg black -fg red -e 'tcpcontrol-fuzzer.pl ; bash'}
+            [exec] (tcpjunk) {xterm -bg black -fg red -e 'tcpjunk -h ; bash'}
+            [exec] (termineter) {xterm -bg black -fg red -e 'termineter -h ; bash'}
+            [exec] (tftp-fuzz) {xterm -bg black -fg red -e 'tftp-fuzz -h ; bash'}
+            [exec] (uniofuzz) {xterm -bg black -fg red -e 'uniofuzz -h ; bash'}
+            [exec] (uniscan) {xterm -bg black -fg red -e 'uniscan --help ; bash'}
+            [exec] (vulscan) {xterm -bg black -fg red -e 'vulscan ; bash'}
+            [exec] (wapiti) {xterm -bg black -fg red -e 'wapiti -h ; bash'}
+            [exec] (wapiti-cookie) {xterm -bg black -fg red -e 'wapiti-cookie ; bash'}
+            [exec] (wapiti-getcookie) {xterm -bg black -fg red -e 'wapiti-getcookie ; bash'}
             [exec] (webscarab) {webscarab}
-            [exec] (webshag) {webshag}
-            [exec] (websploit) {websploit}
-            [exec] (wfuzz) {wfuzz}
-            [exec] (wsfuzzer) {wsfuzzer}
+            [exec] (webshag_cli) {xterm -bg black -fg red -e 'webshag_cli -h ; bash'}
+            [exec] (webshag_gui) {webshag_gui}
+            [exec] (websploit) {xterm -bg black -fg red -e 'websploit ; bash'}
+            [exec] (wfuzz) {xterm -bg black -fg red -e 'wfuzz ; bash'}
+            [exec] (wsfuzzer) {xterm -bg black -fg red -e 'wsfuzzer ; bash'}
             [exec] (zaproxy) {zaproxy}
-            [exec] (zzuf) {zzuf}
+            [exec] (zzuf) {xterm -bg black -fg red -e 'zzuf -h ; bash'}
         [end]
         [submenu] (hardware)
             [exec] (arduino) {arduino}
-            [exec] (dex2jar) {dex2jar}
-            [exec] (kautilya) {kautilya}
-            [exec] (smali) {smali}
+            [exec] (d2j-apk-sign) {xterm -bg black -fg red -e 'd2j-apk-sign ; bash'}
+            [exec] (d2j-asm-verify) {xterm -bg black -fg red -e 'd2j-asm-verify ; bash'}
+            [exec] (d2j-decrpyt-string) {xterm -bg black -fg red -e 'd2j-decrpyt-string ; bash'}
+            [exec] (d2j-dex-asmifier) {xterm -bg black -fg red -e 'd2j-dex-asmifier ; bash'}
+            [exec] (d2j-dex-dump) {xterm -bg black -fg red -e 'd2j-dex-dump ; bash'}
+            [exec] (d2j-dex2jar) {xterm -bg black -fg red -e 'd2j-dex2jar ; bash'}
+            [exec] (d2j-init-deobf) {xterm -bg black -fg red -e 'd2j-init-deobf ; bash'}
+            [exec] (d2j-jar-access) {xterm -bg black -fg red -e 'd2j-jar-access ; bash'}
+            [exec] (d2j-jar-remap) {xterm -bg black -fg red -e 'd2j-jar-remap ; bash'}
+            [exec] (d2j-jar2dex) {xterm -bg black -fg red -e 'd2j-jar2dex ; bash'}
+            [exec] (d2j-jar2jasmin) {xterm -bg black -fg red -e 'd2j-jar2jasmin ; bash'}
+            [exec] (d2j-jasmin2jar) {xterm -bg black -fg red -e 'd2j-jasmin2jar ; bash'}
+            [exec] (kautilya) {xterm -bg black -fg red -e 'kautilya ; bash'}
+            [exec] (baksmali) {xterm -bg black -fg red -e 'baksmali -h ; bash'}
+            [exec] (smali) {xterm -bg black -fg red -e 'smali -h ; bash'}
         [end]
         [submenu] (honeypot)
-            [exec] (artillery) {artillery}
+            [exec] (artillery) {xterm -bg black -fg red -e 'sudo artillery ; bash}
             [exec] (bluepot) {bluepot}
-            [exec] (fakeap) {fakeap}
-            [exec] (fiked) {fiked}
-            [exec] (honeyd) {honeyd}
-            [exec] (inetsim) {inetsim}
-            [exec] (kippo) {kippo}
-            [exec] (wifi-honey) {wifi-honey}
+            [exec] (fakeap) {xterm -bg black -fg red -e 'fakeap ; bash'}
+            [exec] (fiked) {xterm -bg black -fg red -e 'fiked ; bash'}
+            [exec] (honeyd) {xterm -bg black -fg red -e 'honeyd -h ; bash'}
+            [exec] (honeydctl) {xterm -bg black -fg red -e 'honeydctl -h ; bash'}
+            [exec] (honeydstats) {xterm -bg black -fg red -e 'honeydstats -h ; bash'}
+            [exec] (hsniff) {xterm -bg black -fg red -e 'hsniff -h ; bash'}
+            [exec] (inetsim) {xterm -bg black -fg red -e 'inetsim --help ; bash'}
+            [exec] (kippo) {xterm -bg black -fg red -e 'cd /usr/share/kippo ; ls ; bash'}
+            [exec] (wifi-honey) {xterm -bg black -fg red -e 'wifi-honey -h ; bash'}
         [end]
         [submenu] (keylogger)
         [end]
         [submenu] (malware)
-            [exec] (malwaredetect) {malwaredetect}
-            [exec] (peepdf) {peepdf}
-            [exec] (python2-yara) {python2-yara}
-            [exec] (yara) {yara}
-            [exec] (zerowine) {zerowine}
+            [exec] (malwaredetect) {xterm -bg black -fg red -e 'malwaredetect ; bash'}
+            [exec] (peepdf) {xterm -bg black -fg red -e 'peepdf -h ; bash'}
+            [exec] (yara) {xterm -bg black -fg red -e 'yara ; bash'}
+            [exec] (zerowine) {xterm -bg black -fg red -e 'cd /usr/share/zerowine ; ls ; bash'}
         [end]
         [submenu] (misc)
-            [exec] (3proxy) {3proxy}
+            [exec] (3proxy) {xterm -bg black -fg red -e '3proxy --help ; bash'}
+            [exec] (countersutil) {xterm -bg black -fg red -e 'countersutil ; bash'}
+            [exec] (dighosts) {xterm -bg black -fg red -e 'dighosts ; bash'}
+            [exec] (ftppr) {xterm -bg black -fg red -e 'ftppr --help ; bash'}
+            [exec] (mycrypt) {xterm -bg black -fg red -e 'mycrypt  ; bash'}
+            [exec] (pop3p) {xterm -bg black -fg red -e 'pop3p --help ; bash'}
+            [exec] (socks) {xterm -bg black -fg red -e 'socks --help ; bash'}
+            [exec] (tcppm) {xterm -bg black -fg red -e 'tcppm --help ; bash'}
+            [exec] (udppm) {xterm -bg black -fg red -e 'udppm --help ; bash'}
             [exec] (airgraph-ng) {airgraph-ng}
-            [exec] (binwalk) {binwalk}
-            [exec] (bulk-extractor) {bulk-extractor}
-            [exec] (cisco-router-config) {cisco-router-config}
-            [exec] (cryptcat) {cryptcat}
-            [exec] (dbd) {dbd}
-            [exec] (dhcdrop) {dhcdrop}
-            [exec] (elettra) {elettra}
+            [exec] (binwalk) {xterm -bg black -fg red -e 'binwalk ; bash'}
+            [exec] (BEViewer) {xterm -bg black -fg red -e 'BEViewer ; bash'}
+            [exec] (bulk-extractor) {xterm -bg black -fg red -e 'bulk-extractor ; bash'}
+            [exec] (copy-router-config.pl) {xterm -bg black -fg red -e 'copy-router-config.pl ; bash'}
+            [exec] (merge-router-config.pl) {xterm -bg black -fg red -e 'merge-router-config.pl ; bash'}
+            [exec] (cryptcat) {xterm -bg black -fg red -e 'cryptcat -h ; bash'}
+            [exec] (dbd) {xterm -bg black -fg red -e 'dbd -h ; bash'}
+            [exec] (dhcdrop) {xterm -bg black -fg red -e 'dhcdrop -h ; bash'}
+            [exec] (elettra) {xterm -bg black -fg red -e 'elettra ; bash'}
             [exec] (elettra-gui) {elettra-gui}
-            [exec] (ent) {ent}
-            [exec] (evilgrade) {evilgrade}
-            [exec] (fakemail) {fakemail}
-            [exec] (firmware-mod-kit) {firmware-mod-kit}
-            [exec] (flare) {flare}
-            [exec] (genlist) {genlist}
-            [exec] (geoedge) {geoedge}
-            [exec] (geoipgen) {geoipgen}
-            [exec] (hackersh) {hackersh}
-            [exec] (http-put) {http-put}
-            [exec] (inundator) {inundator}
-            [exec] (laudanum) {laudanum}
-            [exec] (leo) {leo}
-            [exec] (list-urls) {list-urls}
-            [exec] (mibble) {mibble}
+            [exec] (ent) {xterm -bg black -fg red -e 'ent ; bash'}
+            [exec] (evilgrade) {xterm -bg black -fg red -e 'evilgrade ; bash'}
+            [exec] (fakemail) {xterm -bg black -fg red -e 'fakemail -h ; bash'}
+            [exec] (firmware-mod-kit) {xterm -bg black -fg red -e 'firmware-mod-kit ; bash'}
+            [exec] (flare) {xterm -bg black -fg red -e 'flare -h ; bash'}
+            [exec] (genlist) {xterm -bg black -fg red -e 'genlist ; bash'}
+            [exec] (geoedge) {xterm -bg black -fg red -e 'geoedge ; bash'}
+            [exec] (geoipgen) {xterm -bg black -fg red -e 'geoipgen -h ; bash'}
+            [exec] (hackersh) {xterm -bg black -fg red -e 'hackersh -h ; bash'}
+            [exec] (http-put) {xterm -bg black -fg red -e 'http-put -h ; bash'}
+            [exec] (inundator) {xterm -bg black -fg red -e 'inundator ; bash'}
+            [exec] (laudanum) {xterm -bg black -fg red -e 'cd /usr/share/laudanum ; ls ; bash'}
+            [exec] (leo) {xterm -bg black -fg red -e 'leo -h ; bash'}
+            [exec] (leo-install.py) {xterm -bg black -fg red -e 'leo-install.py ; bash'}
+            [exec] (leoc) {xterm -bg black -fg red -e 'leoc -h ; bash'}
+            [exec] (list-urls) {xterm -bg black -fg red -e 'list-urls ; bash'}
+            [exec] (MibbleBrowser) {xterm -bg black -fg red -e 'MibbleBrowser ; bash'}
+            [exec] (MibblePrinter) {xterm -bg black -fg red -e 'MibblePrinter ; bash'}
+            [exec] (MibbleValidator) {xterm -bg black -fg red -e 'MibbleValidator ; bash'}
             [exec] (netactview) {netactview}
-            [exec] (oh-my-zsh-git) {oh-my-zsh-git}
-            [exec] (perl-tftp) {perl-tftp}
-            [exec] (pyinstaller) {pyinstaller}
-            [exec] (python-utidylib) {python-utidylib}
-            [exec] (sakis3g) {sakis3g}
-            [exec] (schnappi-dhcp) {schnappi-dhcp}
-            [exec] (sslcat) {sslcat}
-            [exec] (sslyze) {sslyze}
-            [exec] (stompy) {stompy}
-            [exec] (tcpxtract) {tcpxtract}
-            [exec] (tnscmd) {tnscmd}
-            [exec] (tpcat) {tpcat}
-            [exec] (uatester) {uatester}
-            [exec] (vfeed) {vfeed}
-            [exec] (wol-e) {wol-e}
+            [exec] (oh-my-zsh-git) {xterm -bg black -fg red -e 'cd /usr/share/oh-my-zsh ; ls ; bash'}
+            [exec] (pyinstaller) {xterm -bg black -fg red -e 'pyinstaller ; bash'}
+            [exec] (sakis3g) {xterm -bg black -fg red -e 'sakis3g --help ; bash'}
+            [exec] (schnappi-dhcp) {xterm -bg black -fg red -e 'schnappi-dhcp --help ; bash'}
+            [exec] (sslcat) {xterm -bg black -fg red -e 'sslcat ; bash'}
+            [exec] (sslyze) {xterm -bg black -fg red -e 'sslyze -h ; bash'}
+            [exec] (stompy) {xterm -bg black -fg red -e 'stompy ; bash'}
+            [exec] (tcpxtract) {xterm -bg black -fg red -e 'tcpxtract -h ; bash'}
+            [exec] (tnscmd) {xterm -bg black -fg red -e 'tnscmd ; bash'}
+            [exec] (tpcat) {xterm -bg black -fg red -e 'tpcat ; bash'}
+            [exec] (uatester) {xterm -bg black -fg red -e 'uatester ; bash'}
+            [exec] (vfeed) {xterm -bg black -fg red -e 'vfeed ; bash'}
+            [exec] (wol-e) {xterm -bg black -fg red -e 'wol-e -h ; bash'}
         [end]
         [submenu] (mobile)
             [exec] (android-udev-rules) {android-udev-rules}
         [end]
         [submenu] (networking)
-            [exec] (httping) {httping}
-            [exec] (hyenae) {hyenae}
-            [exec] (ipaudit) {ipaudit}
+            [exec] (httping) {xterm -bg black -fg red -e 'httping --help ; bash'}
+            [exec] (hyenae) {xterm -bg black -fg red -e 'sudo hyenae --help ; bash'}
+            [exec] (hyenaed) {xterm -bg black -fg red -e 'sudo hyenaed --help ; bash'}
+            [exec] (total) {xterm -bg black -fg red -e 'total ; bash'}
+            [exec] (ipaudit) {xterm -bg black -fg red -e 'ipaudit ; bash'}
+            [exec] (ipstrings) {xterm -bg black -fg red -e 'ipstrings ; bash'}
             [exec] (jnetmap) {jnetmap}
-            [exec] (mausezahn) {mausezahn}
-            [exec] (middler) {middler}
-            [exec] (nbtool) {nbtool}
-            [exec] (netmap) {netmap}
-            [exec] (netsed) {netsed}
-            [exec] (nfex) {nfex}
-            [exec] (nfsshell) {nfsshell}
-            [exec] (nipper) {nipper}
-            [exec] (nkiller2) {nkiller2}
-            [exec] (packit) {packit}
-            [exec] (perl-tftp) {perl-tftp}
-            [exec] (ptunnel) {ptunnel}
-            [exec] (pwnat) {pwnat}
-            [exec] (pyminifakedns) {pyminifakedns}
-            [exec] (responder) {responder}
-            [exec] (rtpbreak) {rtpbreak}
-            [exec] (sbd) {sbd}
-            [exec] (scapy) {scapy}
-            [exec] (snmpcheck) {snmpcheck}
-            [exec] (sslstrip) {sslstrip}
-            [exec] (t50) {t50}
-            [exec] (tcptraceroute) {tcptraceroute}
-            [exec] (thc-ipv6) {thc-ipv6}
-            [exec] (udptunnel) {udptunnel}
-            [exec] (wol-e) {wol-e}
-            [exec] (yersinia) {yersinia}
-            [exec] (zarp) {zarp}
+            [exec] (mausezahn) {xterm -bg black -fg red -e 'sudo mz ; bash}
+            [exec] (middler) {xterm -bg black -fg red -e 'middler -h ; bash'}
+            [exec] (dnscat) {xterm -bg black -fg red -e 'dnscat ; bash'}
+            [exec] (dnslogger) {xterm -bg black -fg red -e 'sudo dnslogger -h ; bash'}
+            [exec] (dnstest) {xterm -bg black -fg red -e 'dnstest -h ; bash'}
+            [exec] (dnsxss) {xterm -bg black -fg red -e 'sudo dnsxss -h ; bash'}
+            [exec] (nbquery) {xterm -bg black -fg red -e 'nbquery -h ; bash'}
+            [exec] (nbsniff) {xterm -bg black -fg red -e 'sudo nbsniff -h ; bash'}
+            [exec] (makelist) {xterm -bg black -fg red -e 'makelist -h ; bash'}
+            [exec] (netmap) {xterm -bg black -fg red -e 'netmap -h ; bash'}
+            [exec] (netsed) {xterm -bg black -fg red -e 'netsed -h ; bash'}
+            [exec] (nfex) {xterm -bg black -fg red -e 'nfex -h ; bash'}
+            [exec] (nfsshell) {xterm -bg black -fg red -e 'nfsshell -h ; bash'}
+            [exec] (nipper) {xterm -bg black -fg red -e 'nipper --help ; bash'}
+            [exec] (nkiller2) {xterm -bg black -fg red -e 'nkiller2 -h ; bash'}
+            [exec] (packit) {xterm -bg black -fg red -e 'packit ; bash'}
+            [exec] (ptunnel) {xterm -bg black -fg red -e 'ptunnel -h ; bash'}
+            [exec] (pwnat) {xterm -bg black -fg red -e 'pwnat -h ; bash'}
+            [exec] (pyminifakedns) {xterm -bg black -fg red -e 'pyminifakedns ; bash'}
+            [exec] (responder) {xterm -bg black -fg red -e 'responder -h ; bash'}
+            [exec] (rtpbreak) {xterm -bg black -fg red -e 'rtpbreak -h ; bash'}
+            [exec] (sbd) {xterm -bg black -fg red -e 'sbd -h ; bash'}
+            [exec] (scapy) {xterm -bg black -fg red -e 'scapy -h ; bash'}
+            [exec] (snmpcheck) {xterm -bg black -fg red -e 'snmpcheck-nothink ; bash'}
+            [exec] (sslstrip) {xterm -bg black -fg red -e 'sslstrip -h ; bash'}
+            [exec] (t50) {xterm -bg black -fg red -e 't50 --help ; bash'}
+            [exec] (tcptraceroute) {xterm -bg black -fg red -e 'tcptraceroute ; bash'}
+            [exec] (thc-ipv6) {xterm -bg black -fg red -e 'thc-ipv6 ; bash'}
+            [exec] (udptunnel) {xterm -bg black -fg red -e 'udptunnel ; bash'}
+            [exec] (wol-e) {xterm -bg black -fg red -e 'wol-e -h ; bash'}
+            [exec] (yersinia) {xterm -bg black -fg red -e 'sudo yersinia --help ; bash'}
+            [exec] (zarp) {xterm -bg black -fg red -e 'sudo zarp -h ; bash'}
         [end]
         [submenu] (nfc)
-            [exec] (nfcutils) {nfcutils}
+            [exec] (nfcutils) {xterm -bg black -fg red -e 'lsnfc ; bash'}
         [end]
         [submenu] (packer)
-            [exec] (packerid) {packerid}
+            [exec] (packerid) {xterm -bg black -fg red -e 'packerid ; bash'}
         [end]
         [submenu] (proxy)
             [exec] (burpsuite) {burpsuite}
-            [exec] (dnschef) {dnschef}
-            [exec] (fakedns) {fakedns}
-            [exec] (mitmproxy) {mitmproxy}
-            [exec] (pathod) {pathod}
-            [exec] (ratproxy) {ratproxy}
-            [exec] (sergio-proxy) {sergio-proxy}
-            [exec] (sslnuke) {sslnuke}
+            [exec] (dnschef) {xterm -bg black -fg red -e 'dnschef -h ; bash'}
+            [exec] (fakedns) {xterm -bg black -fg red -e 'sudo fakedns ; bash'}
+            [exec] (mitmdump) {xterm -bg black -fg red -e 'mitmdump -h ; bash'}
+            [exec] (mitmproxy) {xterm -bg black -fg red -e 'mitmproxy -h ; bash'}
+            [exec] (pathoc) {xterm -bg black -fg red -e 'pathoc -h ; bash'}
+            [exec] (pathod) {xterm -bg black -fg red -e 'pathod -h ; bash'}
+            [exec] (ratproxy) {xterm -bg black -fg red -e 'ratproxy -h ; bash'}
+            [exec] (sergio-proxy) {xterm -bg black -fg red -e 'sergio-proxy -h ; bash'}
+            [exec] (sslnuke) {xterm -bg black -fg red -e 'sslnuke ; bash'}
             [exec] (webscarab) {webscarab}
         [end]
         [submenu] (recon)
-            [exec] (canari) {canari}
-            [exec] (casefile) {casefile}
-            [exec] (cutycapt) {cutycapt}
-            [exec] (dnsenum) {dnsenum}
-            [exec] (dnsrecon) {dnsrecon}
-            [exec] (dnsspider) {dnsspider}
-            [exec] (dnswalk) {dnswalk}
-            [exec] (enum4linux) {enum4linux}
-            [exec] (goodork) {goodork}
-            [exec] (goofile) {goofile}
-            [exec] (goog-mail) {goog-mail}
-            [exec] (gwtenum) {gwtenum}
-            [exec] (halcyon) {halcyon}
-            [exec] (httping) {httping}
-            [exec] (intrace) {intrace}
-            [exec] (isr-form) {isr-form}
-            [exec] (lbd) {lbd}
-            [exec] (ldapenum) {ldapenum}
-            [exec] (lft) {lft}
-            [exec] (linux-exploit-suggester) {linux-exploit-suggester}
+            [exec] (canari) {xterm -bg black -fg red -e 'canari -h ; bash'}
+            [exec] (dispatcher) {xterm -bg black -fg red -e 'dispatcher -h ; bash'}
+            [exec] (pysudo) {xterm -bg black -fg red -e 'pysudo -h ; bash'}
+            [exec] (casefile) {xterm -bg black -fg red -e 'casefile --help ; bash'}
+            [exec] (cutycapt) {CutyCapt}
+            [exec] (dnsenum) {xterm -bg black -fg red -e 'dnsenum.pl -h ; bash'}
+            [exec] (dnsrecon) {xterm -bg black -fg red -e 'dnsrecon -h ; bash'}
+            [exec] (dnsspider) {xterm -bg black -fg red -e 'dnsspider -h ; bash'}
+            [exec] (dnswalk) {xterm -bg black -fg red -e 'dnswalk --help ; bash}
+            [exec] (enum4linux) {xterm -bg black -fg red -e 'enum4linux ; bash'}
+            [exec] (goodork) {xterm -bg black -fg red -e 'goodork ; bash'}
+            [exec] (goofile) {xterm -bg black -fg red -e 'goofile ; bash'}
+            [exec] (goog-mail) {xterm -bg black -fg red -e 'goog-mail ; bash'}
+            [exec] (gwtenum) {xterm -bg black -fg red -e 'gwtenum -h ; bash'}
+            [exec] (gwtfuzzer) {xterm -bg black -fg red -e 'gwtfuzzer -h ; bash'}
+            [exec] (gwtparse) {xterm -bg black -fg red -e 'gwtparse -h ; bash'}
+            [exec] (halcyon) {xterm -bg black -fg red -e 'halcyon -h ; bash'}
+            [exec] (httping) {xterm -bg black -fg red -e 'httping --help ; bash'}
+            [exec] (intrace) {xterm -bg black -fg red -e 'intrace ; bash'}
+            [exec] (isr-form) {xterm -bg black -fg red -e 'isr-form -h ; bash'}
+            [exec] (lbd) {xterm -bg black -fg red -e 'lbd ; bash'}
+            [exec] (ldapenum) {xterm -bg black -fg red -e 'ldapenum.pl ; bash'}
+            [exec] (lft) {xterm -bg black -fg red -e 'lft ; bash'}
+            [exec] (whob) {xterm -bg black -fg red -e 'whob ; bash'}
+            [exec] (linux-exploit-suggester) {xterm -bg black -fg red -e 'linux-exploit-suggester -h ; bash'}
             [exec] (maltego) {maltego}
-            [exec] (metagoofil) {metagoofil}
-            [exec] (missidentify) {missidentify}
-            [exec] (nbtool) {nbtool}
-            [exec] (netdiscover) {netdiscover}
-            [exec] (netmask) {netmask}
-            [exec] (nipper) {nipper}
-            [exec] (nsec3walker) {nsec3walker}
-            [exec] (pastenum) {pastenum}
-            [exec] (recon-ng) {recon-ng}
-            [exec] (rifiuti2) {rifiuti2}
-            [exec] (ripdc) {ripdc}
-            [exec] (sctpscan) {sctpscan}
-            [exec] (smtp-user-enum) {smtp-user-enum}
-            [exec] (snmpcheck) {snmpcheck}
-            [exec] (spiderfoot) {spiderfoot}
-            [exec] (subdomainer) {subdomainer}
-            [exec] (theharvester) {theharvester}
-            [exec] (twofi) {twofi}
-            [exec] (whatweb) {whatweb}
+            [exec] (metagoofil) {xterm -bg black -fg red -e 'python2 /usr/bin/metagoofil ; bash'}
+            [exec] (missidentify) {xterm -bg black -fg red -e 'missidentify -h ; bash'}
+            [exec] (dnscat) {xterm -bg black -fg red -e 'dnscat -h ; bash'}
+            [exec] (dnslogger) {xterm -bg black -fg red -e 'dnslogger -h ; bash'}
+            [exec] (dnstest) {xterm -bg black -fg red -e 'dnstest -h ; bash'}
+            [exec] (dnsxss) {xterm -bg black -fg red -e 'dnsxss -h ; bash'}
+            [exec] (nbquery) {xterm -bg black -fg red -e 'nbquery -h ; bash'}
+            [exec] (nbsniff) {xterm -bg black -fg red -e 'nbsniff -h ; bash'}
+            [exec] (netdiscover) {xterm -bg black -fg red -e 'netdiscover -h ; bash'}
+            [exec] (netmask) {xterm -bg black -fg red -e 'netmask --help ; bash'}
+            [exec] (nipper) {xterm -bg black -fg red -e 'nipper --help ; bash'}
+            [exec] (nsec3walker-collect) {xterm -bg black -fg red -e 'nsec3walker-collect ; bash'}
+            [exec] (nsec3walker-dicthashes) {xterm -bg black -fg red -e 'nsec3walker-dicthashes ; bash'}
+            [exec] (nsec3walker-query) {xterm -bg black -fg red -e 'nsec3walker-query ; bash'}
+            [exec] (nsec3walker-randomhashes) {xterm -bg black -fg red -e 'nsec3walker-randomhashes ; bash'}
+            [exec] (nsec3walker-unhash) {xterm -bg black -fg red -e 'nsec3walker-unhash ; bash'}
+            [exec] (pastenum) {xterm -bg black -fg red -e 'pastenum -h ; bash'}
+            [exec] (recon-ng) {xterm -bg black -fg red -e 'cd /usr/share/recon-ng ; ./recon-ng -h ; bash'}
+            [exec] (rifiuti) {xterm -bg black -fg red -e 'rifiuti --help-all ; bash'}
+            [exec] (rifiuti-vista) {xterm -bg black -fg red -e 'rifiuti-vista -h ; bash'}
+            [exec] (ripdc) {xterm -bg black -fg red -e 'ripdc -H ; bash'}
+            [exec] (sctpscan) {xterm -bg black -fg red -e 'sctpscan -h ; bash'}
+            [exec] (smtp-user-enum) {xterm -bg black -fg red -e 'smtp-user-enum.pl ; bash'}
+            [exec] (snmpcheck) {xterm -bg black -fg red -e 'snmpcheck-nothink -h ; bash'}
+            [exec] (spiderfoot) {xterm -bg black -fg red -e 'spiderfoot ; bash'}
+            [exec] (subdomainer) {xterm -bg black -fg red -e 'subdomainer.py -h ; bash'}
+            [exec] (theharvester) {xterm -bg black -fg red -e 'theharvester ; bash'}
+            [exec] (twofi) {xterm -bg black -fg red -e 'twofi --help ; bash'}
+            [exec] (whatweb) {xterm -bg black -fg red -e 'whatweb -h ; bash'}
         [end]
         [submenu] (reversing)
-            [exec] (capstone) {capstone}
-            [exec] (dex2jar) {dex2jar}
+            [exec] (d2j-apk-sign) {xterm -bg black -fg red -e 'd2j-apk-sign ; bash'}
+            [exec] (d2j-asm-verify) {xterm -bg black -fg red -e 'd2j-asm-verify ; bash'}
+            [exec] (d2j-decrpyt-string) {xterm -bg black -fg red -e 'd2j-decrpyt-string ; bash'}
+            [exec] (d2j-dex-asmifier) {xterm -bg black -fg red -e 'd2j-dex-asmifier ; bash'}
+            [exec] (d2j-dex-dump) {xterm -bg black -fg red -e 'd2j-dex-dump ; bash'}
+            [exec] (d2j-dex2jar) {xterm -bg black -fg red -e 'd2j-dex2jar ; bash'}
+            [exec] (d2j-init-deobf) {xterm -bg black -fg red -e 'd2j-init-deobf ; bash'}
+            [exec] (d2j-jar-access) {xterm -bg black -fg red -e 'd2j-jar-access ; bash'}
+            [exec] (d2j-jar-remap) {xterm -bg black -fg red -e 'd2j-jar-remap ; bash'}
+            [exec] (d2j-jar2dex) {xterm -bg black -fg red -e 'd2j-jar2dex ; bash'}
+            [exec] (d2j-jar2jasmin) {xterm -bg black -fg red -e 'd2j-jar2jasmin ; bash'}
+            [exec] (d2j-jasmin2jar) {xterm -bg black -fg red -e 'd2j-jasmin2jar ; bash'}
             [exec] (edb) {edb}
-            [exec] (flasm) {flasm}
+            [exec] (flasm) {xterm -bg black -fg red -e 'flasm -h ; bash'}
             [exec] (javasnoop) {javasnoop}
             [exec] (jd-gui) {jd-gui}
-            [exec] (js-beautify) {js-beautify}
-            [exec] (packerid) {packerid}
-            [exec] (pev) {pev}
-            [exec] (radare2) {radare2}
+            [exec] (js-beautify) {xterm -bg black -fg red -e 'js-beautify -h ; bash'}
+            [exec] (packerid) {xterm -bg black -fg red -e 'packerid -h ; bash'}
+            [exec] (ofs2rva) {xterm -bg black -fg red -e 'ofs2rva ; bash'}
+            [exec] (pedis) {xterm -bg black -fg red -e 'pedis ; bash'}
+            [exec] (pehash) {xterm -bg black -fg red -e 'pehash ; bash'}
+            [exec] (pepack) {xterm -bg black -fg red -e 'pepack ; bash'}
+            [exec] (pescan) {xterm -bg black -fg red -e 'pescan ; bash'}
+            [exec] (pesec) {xterm -bg black -fg red -e 'pesec ; bash'}
+            [exec] (pestr) {xterm -bg black -fg red -e 'pestr ; bash'}
+            [exec] (readpe) {xterm -bg black -fg red -e 'readpe ; bash'}
+            [exec] (rva2ofs) {xterm -bg black -fg red -e 'rva2ofs ; bash'}
+            [exec] (r2) {xterm -bg black -fg red -e 'r2 -h ; bash'}
+            [exec] (r2agent) {xterm -bg black -fg red -e 'r2agent -h ; bash'}
+            [exec] (rabin2) {xterm -bg black -fg red -e 'rabin2 -h ; bash'}
+            [exec] (radare2) {xterm -bg black -fg red -e 'radare2 -h ; bash'}
+            [exec] (radiff2) {xterm -bg black -fg red -e 'radiff2 -h ; bash'}
+            [exec] (rafind2) {xterm -bg black -fg red -e 'rafind2 -h ; bash'}
+            [exec] (ragg2) {xterm -bg black -fg red -e 'ragg2 -h ; bash'}
+            [exec] (ragg2-cc) {xterm -bg black -fg red -e 'ragg2-cc -h ; bash'}
+            [exec] (rahash2) {xterm -bg black -fg red -e 'rahash2 -h ; bash'}
+            [exec] (rarun2) {xterm -bg black -fg red -e 'rarun2 -h ; bash'}
+            [exec] (rasm2) {xterm -bg black -fg red -e 'rasm2 -h ; bash'}
+            [exec] (rax2) {xterm -bg black -fg red -e 'rax2 ; bash'}
+            [exec] (RecStudio4CLI) {xterm -bg black -fg red -e 'cd /opt/recstudio/bin ; ./RecStudio4CLI ; bash'}
+            [exec] (RecStudioLinux) {xterm -bg black -fg red -e 'cd /opt/recstudio/bin ; ./RecStudioLinux ; bash'}
             [exec] (recstudio) {recstudio}
-            [exec] (scanmem) {scanmem}
-            [exec] (swfintruder) {swfintruder}
-            [exec] (udis86) {udis86}
-            [exec] (vivisect) {vivisect}
-            [exec] (zerowine) {zerowine}
+            [exec] (gameconqueror) {gameconqueror}
+            [exec] (scanmem) {xterm -bg black -fg red -e 'scanmem -h ; bash'}
+            [exec] (swfintruder) {xterm -bg black -fg red -e 'cd /usr/share/swfintruder ; ls ; bash'}
+            [exec] (udis86) {xterm -bg black -fg red -e 'udcli -h ; bash'}
+            [exec] (vdbbin) {xterm -bg black -fg red -e 'vdbbin -h ; bash'}
+            [exec] (vivbin) {xterm -bg black -fg red -e 'vivbin -h ; bash'}
+            [exec] (zerowine) {xterm -bg black -fg red -e 'cd /usr/share/zerowine ; ls ; bash'}
         [end]
         [submenu] (scanner)
-		    [exec] (admsnmp) {admsnmp}
-		    [exec] (allthevhosts) {allthevhosts}
-		    [exec] (asp-audit) {asp-audit}
-		    [exec] (bluelog) {bluelog}
-		    [exec] (braa) {braa}
-		    [exec] (bss) {bss}
-		    [exec] (btscanner) {btscanner}
-		    [exec] (burpsuite) {burpsuite}
-		    [exec] (canari) {canari}
-		    [exec] (casefile) {casefile}
-		    [exec] (checksec) {checksec}
-		    [exec] (cisco-auditing-tool) {cisco-auditing-tool}
-		    [exec] (cisco-torch) {cisco-torch}
-		    [exec] (ciscos) {ciscos}
-		    [exec] (complemento) {complemento}
-		    [exec] (conscan) {conscan}
-		    [exec] (cookie-cadger) {cookie-cadger}
-		    [exec] (creepy) {creepy}
-		    [exec] (davtest) {davtest}
-		    [exec] (deblaze) {deblaze}
-		    [exec] (dhcpig) {dhcpig}
-		    [exec] (dirb) {dirb}
-		    [exec] (dirbuster) {dirbuster}
-		    [exec] (dmitry) {dmitry}
-		    [exec] (dnmap) {dnmap}
-		    [exec] (dnsa) {dnsa}
-		    [exec] (dnsbf) {dnsbf}
-		    [exec] (dnsenum) {dnsenum}
-		    [exec] (dnsgoblin) {dnsgoblin}
-		    [exec] (dnspredict) {dnspredict}
-		    [exec] (dnsspider) {dnsspider}
-		    [exec] (dnswalk) {dnswalk}
-		    [exec] (dpscan) {dpscan}
-		    [exec] (driftnet) {driftnet}
-		    [exec] (dripper) {dripper}
-		    [exec] (enum4linux) {enum4linux}
-		    [exec] (enumiax) {enumiax}
-		    [exec] (fierce) {fierce}
-		    [exec] (firewalk) {firewalk}
-		    [exec] (flawfinder) {flawfinder}
-		    [exec] (ftpmap) {ftpmap}
-		    [exec] (ghost-phisher) {ghost-phisher}
-		    [exec] (grepforrfi) {grepforrfi}
-		    [exec] (gsa) {gsa}
-		    [exec] (gsd) {gsd}
-		    [exec] (halberd) {halberd}
-		    [exec] (hexorbase) {hexorbase}
-		    [exec] (http-enum) {http-enum}
-		    [exec] (hwk) {hwk}
-		    [exec] (icmpquery) {icmpquery}
-		    [exec] (ike-scan) {ike-scan}
-		    [exec] (inguma) {inguma}
-		    [exec] (ipscan) {ipscan}
-		    [exec] (jigsaw) {jigsaw}
-		    [exec] (jsql) {jsql}
-		    [exec] (ldapenum) {ldapenum}
-		    [exec] (lynis) {lynis}
-		    [exec] (maltego) {maltego}
-		    [exec] (masscan) {masscan}
-		    [exec] (metasploit) {metasploit}
-		    [exec] (miranda-upnp) {miranda-upnp}
-		    [exec] (mssqlscan) {mssqlscan}
-		    [exec] (nbtool) {nbtool}
-		    [exec] (nikto) {nikto}
-		    [exec] (nmbscan) {nmbscan}
-		    [exec] (onesixtyone) {onesixtyone}
-		    [exec] (openvas-administrator) {openvas-administrator}
-		    [exec] (openvas-cli) {openvas-cli}
-		    [exec] (openvas-client) {openvas-client}
-		    [exec] (openvas-manager) {openvas-manager}
-		    [exec] (openvas-scanner) {openvas-scanner}
-		    [exec] (paketto) {paketto}
-		    [exec] (pnscan) {pnscan}
-		    [exec] (propecia) {propecia}
-		    [exec] (ratproxy) {ratproxy}
-		    [exec] (rawr) {rawr}
-		    [exec] (redfang) {redfang}
-		    [exec] (relay-scanner) {relay-scanner}
-		    [exec] (ripdc) {ripdc}
-		    [exec] (scanssh) {scanssh}
-		    [exec] (sctpscan) {sctpscan}
-		    [exec] (skipfish) {skipfish}
-		    [exec] (smtp-user-enum) {smtp-user-enum}
-		    [exec] (smtp-vrfy) {smtp-vrfy}
-		    [exec] (snmpenum) {snmpenum}
-		    [exec] (snmpscan) {snmpscan}
-		    [exec] (sslcaudit) {sslcaudit}
-		    [exec] (sslscan) {sslscan}
-		    [exec] (subdomainer) {subdomainer}
-		    [exec] (synscan) {synscan}
-		    [exec] (tiger) {tiger}
-		    [exec] (tlssled) {tlssled}
-		    [exec] (unicornscan) {unicornscan}
-		    [exec] (uniscan) {uniscan}
-		    [exec] (unix-privesc-check) {unix-privesc-check}
-		    [exec] (upnpscan) {upnpscan}
-		    [exec] (videosnarf) {videosnarf}
-		    [exec] (vulscan) {vulscan}
-		    [exec] (waffit) {waffit}
-		    [exec] (wapiti) {wapiti}
-		    [exec] (webenum) {webenum}
-		    [exec] (webrute) {webrute}
-		    [exec] (webscarab) {webscarab}
-		    [exec] (webshag) {webshag}
-		    [exec] (websploit) {websploit}
-		    [exec] (wnmap) {wnmap}
-		    [exec] (wpscan) {wpscan}
-		    [exec] (yersinia) {yersinia}
-		    [exec] (zmap) {zmap}
+            [exec] (admsnmp) {xterm -bg black -fg red -e 'admsnmp ; bash'}
+            [exec] (allthevhosts) {xterm -bg black -fg red -e 'allthevhosts ; bash'}
+            [exec] (asp-audit) {xterm -bg black -fg red -e 'asp-audit ; bash'}
+            [exec] (bluelog) {xterm -bg black -fg red -e 'bluelog -h ; bash'}
+            [exec] (braa) {xterm -bg black -fg red -e 'braa -h ; bash'}
+            [exec] (bss) {xterm -bg black -fg red -e 'sudo bss ; bash'}
+            [exec] (btscanner) {xterm -bg black -fg red -e 'btscanner --help ; bash'}
+            [exec] (burpsuite) {burpsuite}
+            [exec] (canari) {xterm -bg black -fg red -e 'canari ; bash'}
+            [exec] (dispatcher) {xterm -bg black -fg red -e 'dispatcher ; bash'}
+            [exec] (pysudo) {xterm -bg black -fg red -e 'pysudo ; bash'}
+            [exec] (casefile) {casefile}
+            [exec] (checksec) {xterm -bg black -fg red -e 'checksec --help ; bash'}
+            [exec] (cisco-auditing-tool) {xterm -bg black -fg red -e 'cisco-auditing-tool ; bash'}
+            [exec] (cisco-torch) {xterm -bg black -fg red -e 'cisco-torch ; bash'}
+            [exec] (ciscos) {xterm -bg black -fg red -e 'ciscos ; bash'}
+            [exec] (httsquash) {xterm -bg black -fg red -e 'httsquash ; bash'}
+            [exec] (letdown) {xterm -bg black -fg red -e 'letdown ; bash'}
+            [exec] (reverseraider) {xterm -bg black -fg red -e 'reverseraider ; bash'}
+            [exec] (conscan) {xterm -bg black -fg red -e 'conscan -h ; bash'}
+            [exec] (cookie-cadger) {xterm -bg black -fg red -e 'cookie-cadger ; bash'}
+            [exec] (creepy) {creepy}
+            [exec] (davtest) {xterm -bg black -fg red -e 'davtest ; bash'}
+            [exec] (deblaze) {xterm -bg black -fg red -e 'deblaze ; bash'}
+            [exec] (dhcpig) {xterm -bg black -fg red -e 'dhcpig -h ; bash'}
+            [exec] (dirb) {xterm -bg black -fg red -e 'dirb ; bash'}
+            [exec] (dirbuster) {dirbuster}
+            [exec] (dmitry) {xterm -bg black -fg red -e 'dmitry ; bash'}
+            [exec] (dnmap_client) {xterm -bg black -fg red -e 'dnmap_client -h ; bash'}
+            [exec] (dnmap_server) {xterm -bg black -fg red -e 'dnmap_server -h ; bash'}
+            [exec] (dnsa) {xterm -bg black -fg red -e 'dnsa ; bash'}
+            [exec] (dnsbf) {xterm -bg black -fg red -e 'dnsbf ; bash'}
+            [exec] (dnsenum) {xterm -bg black -fg red -e 'dnsenum.pl -h ; bash'}
+            [exec] (dnsgoblin) {xterm -bg black -fg red -e 'dnsgoblin ; bash'}
+            [exec] (dnspredict) {xterm -bg black -fg red -e 'sudo dnspredict --help ; bash'}
+            [exec] (dnsspider) {xterm -bg black -fg red -e 'dnsspider -h ; bash'}
+            [exec] (dnswalk) {xterm -bg black -fg red -e 'dnswalk --help ; bash'}
+            [exec] (dpscan) {xterm -bg black -fg red -e 'dpscan ; bash'}
+            [exec] (driftnet) {driftnet}
+            [exec] (dripper) {xterm -bg black -fg red -e 'dripper -h ; bash'}
+            [exec] (enum4linux) {xterm -bg black -fg red -e 'enum4linux ; bash'}
+            [exec] (enumiax) {xterm -bg black -fg red -e 'enumiax ; bash'}
+            [exec] (fierce) {xterm -bg black -fg red -e 'fierce.pl -h ; bash'}
+            [exec] (firewalk) {xterm -bg black -fg red -e 'firewalk -h ; bash'}
+            [exec] (flawfinder) {xterm -bg black -fg red -e 'flawfinder -h ; bash'}
+            [exec] (ftpmap) {xterm -bg black -fg red -e 'ftpmap -h ; bash'}
+            [exec] (ghost-phisher) {ghost-phisher}
+            [exec] (grepforrfi) {xterm -bg black -fg red -e 'grepforrfi ; bash'}
+            [exec] (gsa) {xterm -bg black -fg red -e 'gsad -h ; bash'}
+            [exec] (gsd) {xterm -bg black -fg red -e 'gsd -h ; bash'}
+            [exec] (halberd) {xterm -bg black -fg red -e 'halberd -h ; bash'}
+            [exec] (hexorbase) {hexorbase}
+            [exec] (http-enum) {xterm -bg black -fg red -e 'http-enum -h ; bash'}
+            [exec] (hwk) {xterm -bg black -fg red -e 'hawk --help ; bash'}
+            [exec] (hwk) {xterm -bg black -fg red -e 'hwk-eagle --help ; bash'}
+            [exec] (icmpquery) {xterm -bg black -fg red -e 'icmpquery ; bash'}
+            [exec] (ike-scan) {xterm -bg black -fg red -e 'ike-scan -h ; bash'}
+            [exec] (psk-crack) {xterm -bg black -fg red -e 'psk-crack -h ; bash'}
+            [exec] (inguma) {xterm -bg black -fg red -e 'sudo inguma ; bash'}
+            [exec] (ipscan) {ipscan}
+            [exec] (jigsaw) {xterm -bg black -fg red -e 'jigsaw -h ; bash'}
+            [exec] (jsql) {jsql}
+            [exec] (ldapenum) {xterm -bg black -fg red -e 'ldapenum.pl ; bash'}
+            [exec] (lynis) {xterm -bg black -fg red -e 'sudo lynis -h ; bash'}
+            [exec] (maltego) {maltego}
+            [exec] (masscan) {xterm -bg black -fg red -e 'masscan --help ; bash'}
+            [exec] (msfbinscan) {xterm -bg black -fg red -e 'msfbinscan -h ; bash'}
+            [exec] (msfcli) {xterm -bg black -fg red -e 'msfcli -h ; bash'}
+            [exec] (msfconsole) {xterm -bg black -fg red -e 'msfconsole ; bash'}
+            [exec] (msfd) {xterm -bg black -fg red -e 'msfd ; bash'}
+            [exec] (msfelfscan) {xterm -bg black -fg red -e 'msfelfscan -h ; bash'}
+            [exec] (msfencode) {xterm -bg black -fg red -e 'msfencode -h ; bash'}
+            [exec] (msfmachscan) {xterm -bg black -fg red -e 'msfmachscan -h ; bash'}
+            [exec] (msfpayload) {xterm -bg black -fg red -e 'msfpayload -h ; bash'}
+            [exec] (msfpescan) {xterm -bg black -fg red -e 'msfpescan -h ; bash'}
+            [exec] (msfrop) {xterm -bg black -fg red -e 'msfrop -h ; bash'}
+            [exec] (msfrpc) {xterm -bg black -fg red -e 'msfrpc -h ; bash'}
+            [exec] (msfrpcd) {xterm -bg black -fg red -e 'msfrpcd -h ; bash'}
+            [exec] (msfupdate) {xterm -bg black -fg red -e 'msfupdate -h ; bash'}
+            [exec] (msfvenom) {xterm -bg black -fg red -e 'msfvenom -h ; bash'}
+            [exec] (msf_exec.py) {xterm -bg black -fg red -e 'msf_exec.py ; bash'}
+            [exec] (miranda-upnp) {xterm -bg black -fg red -e 'miranda-upnp -h ; bash'}
+            [exec] (miranda-upnp-portmapper) {xterm -bg black -fg red -e 'miranda-upnp-portmapper ; bash'}
+            [exec] (mssqlscan) {xterm -bg black -fg red -e 'mssqlscan ; bash'}
+            [exec] (dnscat) {xterm -bg black -fg red -e 'dnscat -h ; bash'}
+            [exec] (dnslogger) {xterm -bg black -fg red -e 'dnslogger -h ; bash'}
+            [exec] (dnstest) {xterm -bg black -fg red -e 'dnstest -h ; bash'}
+            [exec] (dnsxss) {xterm -bg black -fg red -e 'dnsxss -h ; bash'}
+            [exec] (nbquery) {xterm -bg black -fg red -e 'nbquery -h ; bash'}
+            [exec] (nbsniff) {xterm -bg black -fg red -e 'nbsniff -h ; bash'}
+            [exec] (nikto) {xterm -bg black -fg red -e 'nikto -H ; bash'}
+            [exec] (nmbscan) {xterm -bg black -fg red -e 'nmbscan ; bash'}
+            [exec] (onesixtyone) {xterm -bg black -fg red -e 'onesixtyone ; bash'}
+            [exec] (openvas-administrator) {xterm -bg black -fg red -e 'openvas-openvasad -h ; bash'}
+            [exec] (check_omp) {xterm -bg black -fg red -e 'check_omp -h ; bash'}
+            [exec] (omp) {xterm -bg black -fg red -e 'omp --help ; bash'}
+            [exec] (omp-dialog) {xterm -bg black -fg red -e 'omp-dialog --help ; bash'}
+            [exec] (openvas-client) {OpenVAS-Client}
+            [exec] (greenbone-certdata-sync) {xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'}
+            [exec] (greenbone-scapdata-sync) {xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'}
+            [exec] (openvas-certdata-sync) {xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'}
+            [exec] (openvas-scapdata-sync) {xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'}
+            [exec] (openvasmd) {xterm -bg black -fg red -e 'openvasmd -h ; bash'}
+            [exec] (greenbone-nvt-sync) {xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'}
+            [exec] (openvas-adduser) {xterm -bg black -fg red -e 'openvas-adduser -h ; bash'}
+            [exec] (openvas-mkcert) {xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'}
+            [exec] (openvas-mkcert-client) {xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'}
+            [exec] (openvas-nvt-sync) {xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'}
+            [exec] (openvas-rmuser) {xterm -bg black -fg red -e 'openvas-rmuser -h ; bash'}
+            [exec] (openvassd) {xterm -bg black -fg red -e 'openvassd -h ; bash'}
+            [exec] (minewt) {xterm -bg black -fg red -e 'minewt -h; bash'}
+            [exec] (paketto-lc) {xterm -bg black -fg red -e 'sudo paketto-lc -h ; bash'}
+            [exec] (paratrace) {xterm -bg black -fg red -e 'sudo paratrace -h ; bash'}
+            [exec] (phentropy) {xterm -bg black -fg red -e 'phentropy -h ; bash'}
+            [exec] (scanrand) {xterm -bg black -fg red -e 'sudo scanrand -h ; bash'}
+            [exec] (ipsort) {xterm -bg black -fg red -e 'ipsort --help ; bash'}
+            [exec] (pnscan) {xterm -bg black -fg red -e 'pnscan -h ; bash'}
+            [exec] (propecia) {xterm -bg black -fg red -e 'propecia ; bash'}
+            [exec] (ratproxy) {xterm -bg black -fg red -e 'ratproxy -h ; bash'}
+            [exec] (rawr) {xterm -bg black -fg red -e 'rawr ; bash'}
+            [exec] (redfang) {xterm -bg black -fg red -e 'redfang --help ; bash'}
+            [exec] (relay-scanner) {xterm -bg black -fg red -e 'relay-scanner -help ; bash'}
+            [exec] (ripdc) {xterm -bg black -fg red -e 'ripdc -H ; bash'}
+            [exec] (scanssh) {xterm -bg black -fg red -e 'scanssh -h ; bash'}
+            [exec] (sctpscan) {xterm -bg black -fg red -e 'sctpscan ; bash'}
+            [exec] (sfscandiff) {xterm -bg black -fg red -e 'skscandiff -h ; bash'}
+            [exec] (skipfish) {xterm -bg black -fg red -e 'skipfish -h ; bash'}
+            [exec] (smtp-user-enum) {xterm -bg black -fg red -e 'smtp-user-enum.pl ; bash'}
+            [exec] (smtp-vrfy) {xterm -bg black -fg red -e 'smtp-vrfy ; bash'}
+            [exec] (snmpenum) {xterm -bg black -fg red -e 'snmpenum ; bash'}
+            [exec] (snmpscan) {xterm -bg black -fg red -e 'snmpscan -h ; bash'}
+            [exec] (sslcaudit) {xterm -bg black -fg red -e 'sslcaudit -h ; bash'}
+            [exec] (sslscan) {xterm -bg black -fg red -e 'sslscan ; bash'}
+            [exec] (subdomainer) {xterm -bg black -fg red -e 'subdomainer.py -h ; bash'}
+            [exec] (synscan) {xterm -bg black -fg red -e 'sslog -h ; bash'}
+            [exec] (synscan) {xterm -bg black -fg red -e 'synscan -h ; bash'}
+            [exec] (tiger) {xterm -bg black -fg red -e 'tiger -h ; bash'}
+            [exec] (tigercron) {xterm -bg black -fg red -e 'tigercron -h ; bash'}
+            [exec] (tigexp) {xterm -bg black -fg red -e 'tigexp -h ; bash'}
+            [exec] (getpermit) {xterm -bg black -fg red -e 'getpermit ; bash'}
+            [exec] (realpath) {xterm -bg black -fg red -e 'realpath --help ; bash'}
+            [exec] (tlssled) {xterm -bg black -fg red -e 'tlssled -h ; bash'}
+            [exec] (unicornscan) {xterm -bg black -fg red -e 'unicornscan -h ; bash'}
+            [exec] (uniscan) {xterm -bg black -fg red -e 'sudo uniscan --help ; bash'}
+            [exec] (unix-privesc-check) {xterm -bg black -fg red -e 'unix-privesc-check ; bash'}
+            [exec] (upnpscan) {xterm -bg black -fg red -e 'upnpscan -h ; bash'}
+            [exec] (videosnarf) {xterm -bg black -fg red -e 'videosnarf ; bash'}
+            [exec] (vulscan) {xterm -bg black -fg red -e 'cd /usr/share/nmap/scripts/vulscan ; ls ; bash'}
+            [exec] (waffit) {xterm -bg black -fg red -e 'wafw00f -h ; bash'}
+            [exec] (wapiti) {xterm -bg black -fg red -e 'wapiti -h ; bash'}
+            [exec] (wapiti-cookie) {xterm -bg black -fg red -e 'wapiti-cookie -h ; bash'}
+            [exec] (wapiti-getcookie) {xterm -bg black -fg red -e 'wapiti-getcookie -h ; bash'}
+            [exec] (webenum) {xterm -bg black -fg red -e 'webenum -h ; bash'}
+            [exec] (webrute) {xterm -bg black -fg red -e 'webrute.pl -help ; bash'}
+            [exec] (webscarab) {webscarab}
+            [exec] (webshag_cli) {xterm -bg black -fg red -e 'webshag_cli -h ; bash'}
+            [exec] (webshag_gui) {webshag_gui}
+            [exec] (websploit) {xterm -bg black -fg red -e 'websploit ; bash'}
+            [exec] (wnmap) {xterm -bg black -fg red -e 'wnmap -h ; bash'}
+            [exec] (wpscan) {xterm -bg black -fg red -e 'wpscan -h ; bash'}
+            [exec] (yersinia) {xterm -bg black -fg red -e 'sudo yersinia -h ; bash'}
+            [exec] (zmap) {xterm -bg black -fg red -e 'zmap -h ; bash'}
         [end]
         [submenu] (sniffer)
-		    [exec] (cdpsnarf) {cdpsnarf}
-		    [exec] (driftnet) {driftnet}
-		    [exec] (hexinject) {hexinject}
-		    [exec] (mitmap) {mitmap}
-		    [exec] (netsniff-ng) {netsniff-ng}
-		    [exec] (p0f) {p0f}
-		    [exec] (passivedns) {passivedns}
-		    [exec] (phoss) {phoss}
-		    [exec] (pytacle) {pytacle}
-		    [exec] (ssldump) {ssldump}
-		    [exec] (sslsniff) {sslsniff}
-		    [exec] (tcpick) {tcpick}
-		    [exec] (tuxcut) {tuxcut}
-		    [exec] (wifi-monitor) {wifi-monitor}
-		    [exec] (xspy) {xspy}
+            [exec] (cdpsnarf) {xterm -bg black -fg red -e 'cdpsnarf -h ; bash'}
+            [exec] (driftnet) {xterm -bg black -fg red -e 'driftnet -h ; bash'}
+            [exec] (hex2raw) {xterm -bg black -fg red -e 'hex2raw -h ; bash'}
+            [exec] (hexinject) {xterm -bg black -fg red -e 'hexinject -h ; bash'}
+            [exec] (prettypacket) {xterm -bg black -fg red -e 'prettypacket -h ; bash'}
+            [exec] (mitmap) {xterm -bg black -fg red -e 'mitmap.sh ; bash'}
+            [exec] (ashunt) {xterm -bg black -fg red -e 'sudo ashunt -h ; bash'}
+            [exec] (bpfc) {xterm -bg black -fg red -e 'bpfc ; bash'}
+            [exec] (ifpps) {xterm -bg black -fg red -e 'ifpps ; bash'}
+            [exec] (p0f) {xterm -bg black -fg red -e 'p0f -h ; bash'}
+            [exec] (p0f-client) {xterm -bg black -fg red -e 'p0f-client ; bash'}
+            [exec] (p0f-sendsyn) {xterm -bg black -fg red -e 'p0f-sendsyn ; bash'}
+            [exec] (p0f-sendsyn6) {xterm -bg black -fg red -e 'p0f-sendsyn6 ; bash'}
+            [exec] (passivedns) {xterm -bg black -fg red -e 'passivedns -h ; bash'}
+            [exec] (phoss) {xterm -bg black -fg red -e 'PHoss -h ; bash'}
+            [exec] (pytacle) {xterm -bg black -fg red -e 'pytacle ; bash'}
+            [exec] (ssldump) {xterm -bg black -fg red -e 'ssldump -h ; bash'}
+            [exec] (sslsniff) {xterm -bg black -fg red -e 'sslsniff -h ; bash'}
+            [exec] (tcpick) {xterm -bg black -fg red -e 'tcpick --help ; bash'}
+            [exec] (tuxcut) {tuxcut}
+            [exec] (wifi-monitor) {xterm -bg black -fg red -e 'wifi-monitor -h ; bash'}
+            [exec] (xspy) {xterm -bg black -fg red -e 'xspy -h ; bash'}
         [end]
         [submenu] (social)
-		    [exec] (creepy) {creepy}
-		    [exec] (jigsaw) {jigsaw}
-		    [exec] (set) {set}
-		    [exec] (websploit) {websploit}
+            [exec] (creepy) {creepy}
+            [exec] (jigsaw) {xterm -bg black -fg red -e 'jigsaw ; bash'}
+            [exec] (seautomate) {xterm -bg black -fg red -e 'seautomate ; bash'}
+            [exec] (seproxy) {xterm -bg black -fg red -e 'seproxy ; bash'}
+            [exec] (setoolkit) {xterm -bg black -fg red -e 'setoolkit ; bash'}
+            [exec] (seupdate) {xterm -bg black -fg red -e 'seupdate ; bash'}
+            [exec] (seweb) {xterm -bg black -fg red -e 'seweb ; bash'}
+            [exec] (websploit) {xterm -bg black -fg red -e 'websploit ; bash'}
         [end]
         [submenu] (spoof)
-		    [exec] (admid-pack) {admid-pack}
-		    [exec] (arpoison) {arpoison}
-		    [exec] (fakedns) {fakedns}
-		    [exec] (inundator) {inundator}
-		    [exec] (lans) {lans}
-		    [exec] (lsrtunnel) {lsrtunnel}
-		    [exec] (multimac) {multimac}
-		    [exec] (nbnspoof) {nbnspoof}
-		    [exec] (netcommander) {netcommander}
-		    [exec] (pyminifakedns) {pyminifakedns}
-		    [exec] (sergio-proxy) {sergio-proxy}
+            [exec] (ADMdnsfuckr) {xterm -bg black -fg red -e 'ADMdnsfuckr ; bash'}
+            [exec] (ADMkillDNS) {xterm -bg black -fg red -e 'ADMkillDNS ; bash'}
+            [exec] (ADMnOg00d) {xterm -bg black -fg red -e 'ADMnOg00d ; bash'}
+            [exec] (ADMsnOOfID) {xterm -bg black -fg red -e 'ADMsnOOfID ; bash'}
+            [exec] (ADMsniffID) {xterm -bg black -fg red -e 'ADMsniffID ; bash'}
+            [exec] (arpoison) {xterm -bg black -fg red -e 'sudo arpoison -h ; bash'}
+            [exec] (fakedns) {xterm -bg black -fg red -e 'sudo fakedns ; bash'}
+            [exec] (inundator) {xterm -bg black -fg red -e 'inundator ; bash'}
+            [exec] (lans) {xterm -bg black -fg red -e 'lans -h ; bash'}
+            [exec] (lsrtunnel) {xterm -bg black -fg red -e 'sudo lsrtunnel ; bash'}
+            [exec] (multimac) {xterm -bg black -fg red -e 'multimac -h ; bash'}
+            [exec] (nbnspoof) {xterm -bg black -fg red -e 'nbnspoof.py ; bash'}
+            [exec] (netcommander) {xterm -bg black -fg red -e 'netcmd -h ; bash'}
+            [exec] (pyminifakedns) {xterm -bg black -fg red -e 'sudo pyminifakedns ; bash'}
+            [exec] (sergio-proxy) {xterm -bg black -fg red -e 'sergio-proxy -h ; bash'}
         [end]
         [submenu] (threat-model)
             [exec] (magictree) {magictree}
         [end]
         [submenu] (tunnel)
-		    [exec] (chownat) {chownat}
-		    [exec] (ctunnel) {ctunnel}
-		    [exec] (dns2tcp) {dns2tcp}
-		    [exec] (icmptx) {icmptx}
-		    [exec] (iodine) {iodine}
-		    [exec] (matahari) {matahari}
-		    [exec] (ptunnel) {ptunnel}
-		    [exec] (udptunnel) {udptunnel}
+            [exec] (chownat) {xterm -bg black -fg red -e 'chownat -h ; bash'}
+            [exec] (ctunnel) {xterm -bg black -fg red -e 'ctunnel -h ; bash'}
+            [exec] (dns2tcpc) {xterm -bg black -fg red -e 'dns2tcpc ; bash'}
+            [exec] (dns2tcpd) {xterm -bg black -fg red -e 'dns2tcpd ; bash'}
+            [exec] (icmptx) {xterm -bg black -fg red -e 'sudo icmptx ; bash'}
+            [exec] (iodine) {xterm -bg black -fg red -e 'iodine ; bash'}
+            [exec] (iodined) {xterm -bg black -fg red -e 'iodined ; bash'}
+            [exec] (matahari) {xterm -bg black -fg red -e 'matahari ; bash'}
+            [exec] (ptunnel) {xterm -bg black -fg red -e 'ptunnel -h ; bash'}
+            [exec] (udptunnel) {xterm -bg black -fg red -e 'udptunnel -h ; bash'}
         [end]
         [submenu] (unpacker)
-            [exec] (js-beautify) {js-beautify}
+            [exec] (js-beautify) {xterm -bg black -fg red -e 'js-beautify ; bash'}
         [end]
         [submenu] (voip)
-		    [exec] (ace) {ace}
-		    [exec] (erase-registrations) {erase-registrations}
-		    [exec] (iaxflood) {iaxflood}
-		    [exec] (pcapsipdump) {pcapsipdump}
-		    [exec] (redirectpoison) {redirectpoison}
-		    [exec] (rtp-flood) {rtp-flood}
-		    [exec] (siparmyknife) {siparmyknife}
-		    [exec] (sipcrack) {sipcrack}
-		    [exec] (sipp) {sipp}
-		    [exec] (sipsak) {sipsak}
-		    [exec] (teardown) {teardown}
-		    [exec] (vnak) {vnak}
-		    [exec] (voiper) {voiper}
-		    [exec] (voiphopper) {voiphopper}
-		    [exec] (voipong) {voipong}
+            [exec] (ace) {xterm -bg black -fg red -e 'ace -h ; bash'}
+            [exec] (erase-registrations) {xterm -bg black -fg red -e 'erase_registrations ; bash'}
+            [exec] (iaxflood) {xterm -bg black -fg red -e 'iaxflood ; bash'}
+            [exec] (pcapsipdump) {xterm -bg black -fg red -e 'pcapsipdump ; bash'}
+            [exec] (redirectpoison) {xterm -bg black -fg red -e 'redirectpoison ; bash'}
+            [exec] (rtp-flood) {xterm -bg black -fg red -e 'rtpflood -h ; bash'}
+            [exec] (siparmyknife) {xterm -bg black -fg red -e 'siparmyknife ; bash'}
+            [exec] (sipcrack) {xterm -bg black -fg red -e 'sipcrack -h ; bash'}
+            [exec] (sipdump) {xterm -bg black -fg red -e 'sipdump -h ; bash'}
+            [exec] (sipp) {xterm -bg black -fg red -e 'sipp ; bash'}
+            [exec] (sipsak) {xterm -bg black -fg red -e 'sipsak ; bash'}
+            [exec] (teardown) {xterm -bg black -fg red -e 'teardown ; bash'}
+            [exec] (vnak) {xterm -bg black -fg red -e 'vnak ; bash'}
+            [exec] (voiper) {xterm -bg black -fg red -e 'cd /usr/share/voiper ; ls ; bash'}
+            [exec] (voiphopper) {xterm -bg black -fg red -e 'voiphopper ; bash'}
+            [exec] (voipctl) {xterm -bg black -fg red -e 'voipctl -h ; bash'}
+            [exec] (voipong) {xterm -bg black -fg red -e 'voipong -h ; bash'}
         [end]
         [submenu] (webapp)
-		    [exec] (allthevhosts) {allthevhosts}
-		    [exec] (asp-audit) {asp-audit}
-		    [exec] (bbqsql) {bbqsql}
-		    [exec] (blindelephant) {blindelephant}
-		    [exec] (bsqlbf) {bsqlbf}
-		    [exec] (burpsuite) {burpsuite}
-		    [exec] (cms-explorer) {cms-explorer}
-		    [exec] (csrftester) {csrftester}
-		    [exec] (darkd0rk3r) {darkd0rk3r}
-		    [exec] (darkjumper) {darkjumper}
-		    [exec] (darkmysqli) {darkmysqli}
-		    [exec] (dff-scanner) {dff-scanner}
-		    [exec] (dirb) {dirb}
-		    [exec] (dirbuster) {dirbuster}
-		    [exec] (easyfuzzer) {easyfuzzer}
-		    [exec] (golismero) {golismero}
-		    [exec] (grabber) {grabber}
-		    [exec] (gwtenum) {gwtenum}
-		    [exec] (halberd) {halberd}
-		    [exec] (isr-form) {isr-form}
-		    [exec] (joomscan) {joomscan}
-		    [exec] (kolkata) {kolkata}
-		    [exec] (laudanum) {laudanum}
-		    [exec] (list-urls) {list-urls}
-		    [exec] (metoscan) {metoscan}
-		    [exec] (multiinjector) {multiinjector}
-		    [exec] (nikto) {nikto}
-		    [exec] (owtf) {owtf}
-		    [exec] (paros) {paros}
-		    [exec] (pblind) {pblind}
-		    [exec] (plecost) {plecost}
-		    [exec] (ratproxy) {ratproxy}
-		    [exec] (rawr) {rawr}
-		    [exec] (rww-attack) {rww-attack}
-		    [exec] (skipfish) {skipfish}
-		    [exec] (spike-proxy) {spike-proxy}
-		    [exec] (sqid) {sqid}
-		    [exec] (sqlbrute) {sqlbrute}
-		    [exec] (sqlmap) {sqlmap}
-		    [exec] (sqlninja) {sqlninja}
-		    [exec] (sqlsus) {sqlsus}
-		    [exec] (uatester) {uatester}
-		    [exec] (uniscan) {uniscan}
-		    [exec] (urlcrazy) {urlcrazy}
-		    [exec] (vega) {vega}
-		    [exec] (waffit) {waffit}
-		    [exec] (wapiti) {wapiti}
-		    [exec] (webacoo) {webacoo}
-		    [exec] (webenum) {webenum}
-		    [exec] (webhandler) {webhandler}
-		    [exec] (webrute) {webrute}
-		    [exec] (webscarab) {webscarab}
-		    [exec] (webshag) {webshag}
-		    [exec] (webshells) {webshells}
-		    [exec] (webslayer) {webslayer}
-		    [exec] (weevely) {weevely}
-		    [exec] (wfuzz) {wfuzz}
-		    [exec] (whatweb) {whatweb}
-		    [exec] (wmat) {wmat}
-		    [exec] (wpscan) {wpscan}
-		    [exec] (wsfuzzer) {wsfuzzer}
-		    [exec] (xsser) {xsser}
-		    [exec] (xsss) {xsss}
-		    [exec] (zaproxy) {zaproxy}
+            [exec] (allthevhosts) {xterm -bg black -fg red -e 'allthevhosts ; bash'}
+            [exec] (asp-audit) {xterm -bg black -fg red -e 'asp-audit ; bash'}
+            [exec] (bbqsql) {xterm -bg black -fg red -e 'bbqsql -h ; bash'}
+            [exec] (blindelephant) {xterm -bg black -fg red -e 'blindelephant -h ; bash'}
+            [exec] (bsqlbf) {xterm -bg black -fg red -e 'bsqlbf.pl ; bash'}
+            [exec] (burpsuite) {burpsuite}
+            [exec] (cms-explorer) {xterm -bg black -fg red -e 'cms-explorer -h ; bash'}
+            [exec] (csrftester) {csrftester}
+            [exec] (darkd0rk3r) {xterm -bg black -fg red -e 'darkd0rk3r ; bash'}
+            [exec] (darkjumper) {xterm -bg black -fg red -e 'cd /usr/share/darkjumper ; ls ; bash'}
+            [exec] (darkmysqli) {xterm -bg black -fg red -e 'darkmysqli -h ; bash'}
+            [exec] (dff-scanner) {xterm -bg black -fg red -e 'cd /usr/share/dff-scanner ; bash'}
+            [exec] (dirb) {xterm -bg black -fg red -e 'dirb ; bash'}
+            [exec] (dirbuster) {dirbuster}
+            [exec] (easyfuzzer) {xterm -bg black -fg red -e 'easyfuzzer ; bash'}
+            [exec] (easyfuzzer-proxy) {xterm -bg black -fg red -e 'easyfuzzer-proxy ; bash'}
+            [exec] (easyfuzzer-proxy-misc) {xterm -bg black -fg red -e 'easyfuzzer-proxy-misc ; bash'}
+            [exec] (mycrawler2) {xterm -bg black -fg red -e 'mycrawler2 ; bash'}
+            [exec] (prepare4easyfuzzer) {xterm -bg black -fg red -e 'prepare4easyfuzzer ; bash'}
+            [exec] (prepare4easyfuzzer-misc) {xterm -bg black -fg red -e 'prepare4easyfuzzer-misc ; bash'}
+            [exec] (prepare4sqlfuzzer) {xterm -bg black -fg red -e 'prepare4sqlfuzzer ; bash'}
+            [exec] (sqlfuzzer) {xterm -bg black -fg red -e 'sqlfuzzer ; bash'}
+            [exec] (sqlfuzzer-proxy) {xterm -bg black -fg red -e 'sqlfuzzer-proxy ; bash'}
+            [exec] (wbxml2request) {xterm -bg black -fg red -e 'wbxml2request ; bash'}
+            [exec] (wsdl2request) {xterm -bg black -fg red -e 'wsdl2request ; bash'}
+            [exec] (golismero) {xterm -bg black -fg red -e 'golismero -h ; bash'}
+            [exec] (grabber) {xterm -bg black -fg red -e 'grabber-scanner -h ; bash'}
+            [exec] (gwtenum) {xterm -bg black -fg red -e 'gwtenum ; bash'}
+            [exec] (gwtfuzzer) {xterm -bg black -fg red -e 'gwtfuzzer ; bash'}
+            [exec] (gwtparse) {xterm -bg black -fg red -e 'gwtparse ; bash'}
+            [exec] (halberd) {xterm -bg black -fg red -e 'halberd ; bash'}
+            [exec] (isr-form) {xterm -bg black -fg red -e 'isr-form ; bash'}
+            [exec] (joomscan) {xterm -bg black -fg red -e 'joomscan -h ; bash'}
+            [exec] (kolkata) {xterm -bg black -fg red -e 'kolkata ; bash'}
+            [exec] (laudanum) {xterm -bg black -fg red -e 'cd /usr/share/laudanum ; ls ; bash'}
+            [exec] (list-urls) {xterm -bg black -fg red -e 'list-urls ; bash'}
+            [exec] (metoscan) {xterm -bg black -fg red -e 'metoscan ; bash'}
+            [exec] (multiinjector) {xterm -bg black -fg red -e 'python2 /usr/bin/MultiInjector.py ; bash'}
+            [exec] (nikto) {xterm -bg black -fg red -e 'nikto -H ; bash'}
+            [exec] (owtf) {xterm -bg black -fg red -e 'owtf ; bash'}
+            [exec] (paros) {paros}
+            [exec] (pblind) {xterm -bg black -fg red -e 'pblind.py ; bash'}
+            [exec] (plecost) {xterm -bg black -fg red -e 'plecost ; bash'}
+            [exec] (ratproxy) {xterm -bg black -fg red -e 'ratproxy -h ; bash'}
+            [exec] (rawr) {xterm -bg black -fg red -e 'rawr -h ; bash'}
+            [exec] (rww-attack) {xterm -bg black -fg red -e 'rww-attack ; bash'}
+            [exec] (skipfish) {xterm -bg black -fg red -e 'skipfish -h ; bash'}
+            [exec] (spike-proxy) {xterm -bg black -fg red -e 'spike-proxy -h ; bash'}
+            [exec] (sqid) {xterm -bg black -fg red -e 'sqid -h ; bash'}
+            [exec] (sqlbrute) {xterm -bg black -fg red -e 'python2 /usr/bin/sqlbrute.py ; bash'}
+            [exec] (sqlmap) {xterm -bg black -fg red -e 'sqlmap -hh ; bash'}
+            [exec] (sqlninja) {xterm -bg black -fg red -e 'sqlninja -h ; bash'}
+            [exec] (sqlsus) {xterm -bg black -fg red -e 'sqlsus -h ; bash'}
+            [exec] (uatester) {xterm -bg black -fg red -e 'uatester ; bash'}
+            [exec] (uniscan) {xterm -bg black -fg red -e 'sudo uniscan -h ; bash'}
+            [exec] (urlcrazy) {xterm -bg black -fg red -e 'urlcrazy -h ; bash'}
+            [exec] (vega) {xterm -bg black -fg red -e 'vega ; bash'}
+            [exec] (waffit) {xterm -bg black -fg red -e 'wafw00f -h ; bash'}
+            [exec] (wapiti) {xterm -bg black -fg red -e 'wapiti -h ; bash'}
+            [exec] (wapiti-cookie) {xterm -bg black -fg red -e 'wapiti-cookie -h ; bash'}
+            [exec] (wapiti-getcookie) {xterm -bg black -fg red -e 'wapiti-getcookie -h ; bash'}
+            [exec] (webacoo) {xterm -bg black -fg red -e 'webacoo -h ; bash'}
+            [exec] (webenum) {xterm -bg black -fg red -e 'webenum ; bash'}
+            [exec] (webhandler) {xterm -bg black -fg red -e 'webhandler ; bash'}
+            [exec] (webrute) {xterm -bg black -fg red -e 'webrute.pl -help ; bash'}
+            [exec] (webscarab) {webscarab}
+            [exec] (webshag_cli) {xterm -bg black -fg red -e 'webshag_cli -h ; bash'}
+            [exec] (webshag_gui) {webshag_gui}
+            [exec] (webshells) {xterm -bg black -fg red -e 'cd /usr/share/webshells ; ls ; bash'}
+            [exec] (webslayer) {webslayer}
+            [exec] (weevely) {xterm -bg black -fg red -e 'weevely ; bash'}
+            [exec] (wfuzz) {xterm -bg black -fg red -e 'wfuzz ; bash'}
+            [exec] (whatweb) {xterm -bg black -fg red -e 'whatweb ; bash'}
+            [exec] (wmat) {xterm -bg black -fg red -e 'wmat ; bash'}
+            [exec] (wpscan) {xterm -bg black -fg red -e 'wpscan ; bash'}
+            [exec] (wsfuzzer) {xterm -bg black -fg red -e 'wsfuzzer ; bash'}
+            [exec] (xsser) {xterm -bg black -fg red -e 'xsser -h ; bash'}
+            [exec] (xsss) {xterm -bg black -fg red -e 'xsss ; bash'}
+            [exec] (zaproxy) {zaproxy}
         [end]
         [submenu] (windows)
-		    [exec] (3proxy-win32) {3proxy-win32}
-		    [exec] (brutus) {brutus}
-		    [exec] (creddump) {creddump}
-		    [exec] (dumpacl) {dumpacl}
-		    [exec] (fport) {fport}
-		    [exec] (handle) {handle}
-		    [exec] (httprint-win32) {httprint-win32}
-		    [exec] (hyperion) {hyperion}
-		    [exec] (ikeprobe) {ikeprobe}
-		    [exec] (klogger) {klogger}
-		    [exec] (mbenum) {mbenum}
-		    [exec] (missidentify) {missidentify}
-		    [exec] (nbtenum) {nbtenum}
-		    [exec] (nishang) {nishang}
-		    [exec] (ollydbg) {ollydbg}
-		    [exec] (orakelcrackert) {orakelcrackert}
-		    [exec] (powersploit) {powersploit}
-		    [exec] (pstoreview) {pstoreview}
-		    [exec] (pwdump) {pwdump}
-		    [exec] (sipscan) {sipscan}
-		    [exec] (smbrelay) {smbrelay}
-		    [exec] (snscan) {snscan}
-		    [exec] (spade) {spade}
-		    [exec] (sqlping) {sqlping}
-		    [exec] (superscan) {superscan}
-		    [exec] (sysinternals-suite) {sysinternals-suite}
-		    [exec] (unsecure) {unsecure}
-		    [exec] (winfo) {winfo}
-		    [exec] (x-scan) {x-scan}
+            [exec] (3proxy-win32) {xterm -bg black -fg red -e 'cd /usr/share/windows/3proxy-win32 ; ls ; bash'}
+            [exec] (brutus) {xterm -bg black -fg red -e 'cd /usr/share/windows/brutus ; ls ; bash'}
+            [exec] (creddump) {xterm -bg black -fg red -e 'cd /usr/share/windows/creddump ; ls ; bash'}
+            [exec] (dumpacl) {xterm -bg black -fg red -e 'cd /usr/share/windows/dumpacl ; ls ; bash'}
+            [exec] (fport) {xterm -bg black -fg red -e 'cd /usr/share/windows/fport ; ls ; bash'}
+            [exec] (handle) {xterm -bg black -fg red -e 'cd /usr/share/windows/handle ; ls ; bash'}
+            [exec] (httprint-win32) {xterm -bg black -fg red -e 'cd /usr/share/windows/httprint-win32 ; ls ; bash'}
+            [exec] (hyperion) {xterm -bg black -fg red -e 'cd /usr/share/windows/hyperion ; ls ; bash'}
+            [exec] (ikeprobe) {xterm -bg black -fg red -e 'cd /usr/share/windows/ikeprobe-latest ; ls ; bash'}
+            [exec] (klogger) {xterm -bg black -fg red -e 'cd /usr/share/windows/klogger ; ls ; bash'}
+            [exec] (mbenum) {xterm -bg black -fg red -e 'cd /usr/share/windows/mbenum-1.5.0 ; ls ; bash'}
+            [exec] (nbtenum) {xterm -bg black -fg red -e 'cd /usr/share/windows/nbtenum ; ls ; bash'}
+            [exec] (nishang) {xterm -bg black -fg red -e 'cd /usr/share/windows/nishang ; ls ; bash'}
+            [exec] (ollydbg) {xterm -bg black -fg red -e 'ollydbg ; bash'}
+            [exec] (orakelcrackert) {xterm -bg black -fg red -e 'cd /usr/share/windows/orakelcrackert ; ls ; bash'}
+            [exec] (powersploit) {xterm -bg black -fg red -e 'cd /usr/share/windows/powersploit ; ls ; bash'}
+            [exec] (pstoreview) {xterm -bg black -fg red -e 'cd /usr/share/windows/pstoreview ; ls ; bash'}
+            [exec] (pwdump) {xterm -bg black -fg red -e 'cd /usr/share/windows/pwdump ; ls ; bash'}
+            [exec] (sipscan) {xterm -bg black -fg red -e 'cd /usr/share/windows/sipscan ; ls ; bash'}
+            [exec] (smbrelay) {xterm -bg black -fg red -e 'cd /usr/share/windows/smbrelay ; ls ; bash'}
+            [exec] (snscan) {xterm -bg black -fg red -e 'cd /usr/share/windows/snscan ; ls ; bash'}
+            [exec] (spade) {xterm -bg black -fg red -e 'cd /usr/share/windows/spade ; ls ; bash'}
+            [exec] (sqlping) {xterm -bg black -fg red -e 'cd /usr/share/windows/sqlping ; ls ; bash}
+            [exec] (superscan) {xterm -bg black -fg red -e 'cd /usr/share/windows/superscan-4 ; ls ; bash'}
+            [exec] (sysinternals-suite) {xterm -bg black -fg red -e 'cd /usr/share/windows/sysinternals-suite ; ls ; bash'}
+            [exec] (unsecure) {xterm -bg black -fg red -e 'cd /usr/share/windows/unsecure ; ls ; bash'}
+            [exec] (winfo) {xterm -bg black -fg red -e 'cd /usr/share/windows/winfo ; ls ; bash'}
+            [exec] (x-scan) {xterm -bg black -fg red -e 'cd /usr/share/windows/x-scan ; ls ; bash'}
         [end]
         [submenu] (wireless)
-		    [exec] (airflood) {airflood}
-		    [exec] (airoscript) {airoscript}
-		    [exec] (airpwn) {airpwn}
-		    [exec] (batctl) {batctl}
-		    [exec] (batman-adv) {batman-adv}
-		    [exec] (bully) {bully}
-		    [exec] (cowpatty) {cowpatty}
-		    [exec] (eapmd5pass) {eapmd5pass}
-		    [exec] (fern-wifi-cracker) {fern-wifi-cracker}
-		    [exec] (g72x++) {g72x++}
-		    [exec] (giskismet) {giskismet}
-		    [exec] (gqrx) {gqrx}
-		    [exec] (hotspotter) {hotspotter}
-		    [exec] (hwk) {hwk}
-		    [exec] (killerbee) {killerbee}
-		    [exec] (kismet-earth) {kismet-earth}
-		    [exec] (mdk3) {mdk3}
-		    [exec] (mfcuk) {mfcuk}
-		    [exec] (mfoc) {mfoc}
-		    [exec] (netdiscover) {netdiscover}
-		    [exec] (pyrit) {pyrit}
-		    [exec] (rfdump) {rfdump}
-		    [exec] (rfidiot) {rfidiot}
-		    [exec] (rfidtool) {rfidtool}
-		    [exec] (spectools) {spectools}
-		    [exec] (ufo-wardriving) {ufo-wardriving}
-		    [exec] (wepbuster) {wepbuster}
-		    [exec] (wiffy) {wiffy}
-		    [exec] (wifi-honey) {wifi-honey}
-		    [exec] (wifitap) {wifitap}
-		    [exec] (wifite) {wifite}
-		    [exec] (wlan2eth) {wlan2eth}
-		    [exec] (zulu) {zulu}
+            [exec] (airflood) {xterm -bg black -fg red -e 'sudo airflood -h ; bash'}
+            [exec] (airopdate) {xterm -bg black -fg red -e 'sudo airopdate ; bash'}
+            [exec] (airoscript-ng) {xterm -bg black -fg red -e 'sudo airoscript-ng ; bash'}
+            [exec] (airoscwordlist) {xterm -bg black -fg red -e 'airoscwordlist ; bash'}
+            [exec] (airpwn) {xterm -bg black -fg red -e 'airpwn -h ; bash'}
+            [exec] (wep_keygen) {xterm -bg black -fg red -e 'wep_keygen ; bash'}
+            [exec] (batctl) {xterm -bg black -fg red -e 'batctl ; bash'}
+            [exec] (batman-adv) {xterm -bg black -fg red -e 'batman-adv ; bash'}
+            [exec] (bully) {xterm -bg black -fg red -e 'bully -h ; bash'}
+            [exec] (cowpatty) {xterm -bg black -fg red -e 'cowpatty -h ; bash'}
+            [exec] (genpmk) {xterm -bg black -fg red -e 'genpmk -h ; bash'}
+            [exec] (eapmd5pass) {xterm -bg black -fg red -e 'eapmd5pass ; bash'}
+            [exec] (fern-wifi-cracker) {fern}
+            [exec] (g72x++) {xterm -bg black -fg red -e 'decode-g72x -h ; bash'}
+            [exec] (giskismet) {xterm -bg black -fg red -e 'giskismet ; bash'}
+            [exec] (gqrx) {xterm -bg black -fg red -e 'gqrx ; bash'}
+            [exec] (hotspotter) {xterm -bg black -fg red -e 'hotspotter ; bash'}
+            [exec] (hawk) {xterm -bg black -fg red -e 'hawk --help ; bash'}
+            [exec] (hwk-eagle) {xterm -bg black -fg red -e 'hwk-eagle --help ; bash'}
+            [exec] (zbassocflood) {xterm -bg black -fg red -e 'zbassocflood ; bash'}
+            [exec] (zbconvert) {xterm -bg black -fg red -e 'zbconvert ; bash'}
+            [exec] (zbdsniff) {xterm -bg black -fg red -e 'zbdsniff ; bash'}
+            [exec] (zbdump) {xterm -bg black -fg red -e 'zbdump ; bash'}
+            [exec] (zbfind) {zbfind}
+            [exec] (zbgoodfind) {xterm -bg black -fg red -e 'zbgoodfind ; bash'}
+            [exec] (zbid) {xterm -bg black -fg red -e 'zbid ; bash'}
+            [exec] (zbkey) {xterm -bg black -fg red -e 'zbkey ; bash'}
+            [exec] (zbreplay) {xterm -bg black -fg red -e 'zbreplay ; bash'}
+            [exec] (zbscapy) {xterm -bg black -fg red -e 'zbscapy ; bash'}
+            [exec] (zbstumbler) {xterm -bg black -fg red -e 'zbstumbler -h ; bash'}
+            [exec] (zbwireshark) {xterm -bg black -fg red -e 'zbwireshark ; bash'}
+            [exec] (kismet-earth) {xterm -bg black -fg red -e 'cd /usr/share/kismet-earth ; ls ; bash'}
+            [exec] (mdk3) {xterm -bg black -fg red -e 'sudo mdk3 --help ; bash'}
+            [exec] (mfcuk) {xterm -bg black -fg red -e 'mfcuk ; bash'}
+            [exec] (mfoc) {xterm -bg black -fg red -e 'mfoc -h ; bash'}
+            [exec] (netdiscover) {xterm -bg black -fg red -e 'netdiscover -h ; bash'}
+            [exec] (pyrit) {xterm -bg black -fg red -e 'pyrit -h ; bash'}
+            [exec] (rfdump) {rfdump}
+            [exec] (rfidiot-ChAP) {xterm -bg black -fg red -e 'rfidiot-ChAP -h ; bash'}
+            [exec] (rfidiot-cardselect) {xterm -bg black -fg red -e 'rfidiot-cardselect -h ; bash'}
+            [exec] (rfidiot-copytag) {xterm -bg black -fg red -e 'rfidiot-copytag -h ; bash'}
+            [exec] (rfidiot-demotag) {xterm -bg black -fg red -e 'rfidiot-demotag -h ; bash'}
+            [exec] (rfidiot-eeprom) {xterm -bg black -fg red -e 'rfidiot-eeprom -h ; bash'}
+            [exec] (rfidiot-fdxbnum) {xterm -bg black -fg red -e 'rfidiot-fdxbnum -h ; bash'}
+            [exec] (rfidiot-formatmifare1kvalue) {xterm -bg black -fg red -e 'rfidiot-formatmifare1kvalue -h ; bash'}
+            [exec] (rfidiot-froschtest) {xterm -bg black -fg red -e 'rfidiot-froschtest -h ; bash'}
+            [exec] (rfidiot-hidprox) {xterm -bg black -fg red -e 'rfidiot-hidprox -h ; bash'}
+            [exec] (rfidiot-hitag2brute) {xterm -bg black -fg red -e 'rfidiot-hitag2brute -h ; bash'}
+            [exec] (rfidiot-hitag2reset) {xterm -bg black -fg red -e 'rfidiot-hitag2reset -h ; bash'}
+            [exec] (rfidiot-isotype) {xterm -bg black -fg red -e 'rfidiot-isotype -h ; bash'}
+            [exec] (rfidiot-jcopmifare) {xterm -bg black -fg red -e 'rfidiot-jcopmifare -h; bash'}
+            [exec] (rfidiot-jcopsetatrhist) {xterm -bg black -fg red -e 'rfidiot-jcopsetatrhist -h ; bash'}
+            [exec] (rfidiot-jcoptool) {xterm -bg black -fg red -e 'rfidiot-jcoptool -h ; bash'}
+            [exec] (rfidiot-lfxtype) {xterm -bg black -fg red -e 'rfidiot-lfxtype -h ; bash'}
+            [exec] (rfidiot-loginall) {xterm -bg black -fg red -e 'rfidiot-loginall -h ; bash'}
+            [exec] (rfidiot-mifarekeys) {xterm -bg black -fg red -e 'rfidiot-mifarekeys -h ; bash'}
+            [exec] (rfidiot-mrpkey) {xterm -bg black -fg red -e 'rfidiot-mrpkey -h ; bash'}
+            [exec] (rfidiot-multiselect) {xterm -bg black -fg red -e 'rfidiot-multiselect -h ; bash'}
+            [exec] (rfidiot-pn532emulate) {xterm -bg black -fg red -e 'rfidiot-pn532emulate -h; bash'}
+            [exec] (rfidiot-pn532mitm) {xterm -bg black -fg red -e 'rfidiot-pn532mitm -h ; bash'}
+            [exec] (rfidiot-q5reset) {xterm -bg black -fg red -e 'rfidiot-q5reset -h ; bash'}
+            [exec] (rfidiot-readlfx) {xterm -bg black -fg red -e 'rfidiot-readlfx -h ; bash'}
+            [exec] (rfidiot-readmifare1k) {xterm -bg black -fg red -e 'rfidiot-readmifare1k -h ; bash'}
+            [exec] (rfidiot-readmifaresimple) {xterm -bg black -fg red -e 'rfidiot-readmifaresimple -h ; bash'}
+            [exec] (rfidiot-readmifareultra) {xterm -bg black -fg red -e 'rfidiot-readmifareultra -h ; bash'}
+            [exec] (rfidiot-readtag) {xterm -bg black -fg red -e 'rfidiot-readtag -h ; bash'}
+            [exec] (rfidiot-rfidiot-cli) {xterm -bg black -fg red -e 'rfidiot-rfidiot-cli -h ; bash'}
+            [exec] (rfidiot-send-apdu) {xterm -bg black -fg red -e 'rfidiot-send-apdu -h ; bash'}
+            [exec] (rfidiot-sod) {xterm -bg black -fg red -e 'rfidiot-sod -h ; bash'}
+            [exec] (rfidiot-transit) {xterm -bg black -fg red -e 'rfidiot-transit -h ; bash'}
+            [exec] (rfidiot-unique) {xterm -bg black -fg red -e 'rfidiot-unique -h ; bash'}
+            [exec] (rfidiot-writelfx) {xterm -bg black -fg red -e 'rfidiot-writelfx -h; bash'}
+            [exec] (rfidiot-writemifare1k) {xterm -bg black -fg red -e 'rfidiot-writemifare1k ; bash'}
+            [exec] (rfidtool) {xterm -bg black -fg red -e 'rfidtool ; bash'}
+            [exec] (spectool_curses) {xterm -bg black -fg red -e 'spectool_curses -h ; bash'}
+            [exec] (spectool_gtk) {spectool_gtk}
+            [exec] (spectool_net) {xterm -bg black -fg red -e 'spectool_net -h ; bash'}
+            [exec] (spectool_raw) {xterm -bg black -fg red -e 'spectool_raw -h ; bash'}
+            [exec] (ufo-wardriving) {ufo-wardriving}
+            [exec] (wepbuster) {xterm -bg black -fg red -e 'wepbuster --help ; bash'}
+            [exec] (wiffy) {xterm -bg black -fg red -e 'sudo wiffy -h ; bash'}
+            [exec] (wifi-honey) {xterm -bg black -fg red -e 'wifi-honey -h ; bash'}
+            [exec] (wifiarp) {xterm -bg black -fg red -e 'wifiarp ; bash'}
+            [exec] (wifidns) {xterm -bg black -fg red -e 'wifidns ; bash'}
+            [exec] (wifiping) {xterm -bg black -fg red -e 'wifiping ; bash'}
+            [exec] (wifite) {xterm -bg black -fg red -e 'sudo wifite -h ; bash'}
+            [exec] (wlan2eth) {xterm -bg black -fg red -e 'wlan2eth ; bash'}
+            [exec] (zulu) {xterm -bg black -fg red -e 'zulu ; bash'}
         [end]
     [end]
 
@@ -917,8 +1566,7 @@
             [end]
             [workspaces] (Workspace List)
             [submenu] (Tools)
-                [exec] (Window name) \
-                {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+                [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
             [end]
             [commanddialog] (Fluxbox Command)
             [reconfig] (Reload config)

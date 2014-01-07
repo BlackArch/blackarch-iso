@@ -2,7 +2,7 @@
 active=-1
 activities1=
 count=1
-desktop=1
+desktop=3
 desktop1=-1
 fsrestore1=0,0,0,0
 fullscreen1=0
@@ -14,7 +14,7 @@ opacity1=1
 resourceClass1=plasma-desktop
 resourceName1=plasma-desktop
 restore1=0,873,1440,27
-sessionId1=10135cdd3c6000138883717600000004120001
+sessionId1=10135cdd3c6000138886874400000004720001
 shaded1=false
 shortcut1=
 skipPager1=false
