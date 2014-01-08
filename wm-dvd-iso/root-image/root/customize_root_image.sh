@@ -50,3 +50,4 @@ su -c 'rm -rf /usr/bin/blackarch-install; ln -s /usr/share/blackarch-install-scr
 su -c 'cd root; cd blackarch-install-scripts; cp blackarch-install.txt /root' root
 su -c 'cd /root;rm -rf blackarch-install-scripts' root
 su -c 'rm -rf /root/install.txt' root
+su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
