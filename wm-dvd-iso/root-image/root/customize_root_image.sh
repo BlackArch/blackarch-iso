@@ -38,3 +38,15 @@ su -c 'pacman-key --lsign-key 4345771566D76038C7FEB43863EC0ADBEA87E4E3' root
 
 # sync database
 su -c 'pacman -Syy --noconfirm' root
+
+# fix wrong permissions for blackarch-dwm
+su -c 'chmod 755 /usr/local/bin/blackarch-dwm'
+
+# blackarch-install (dev version)
+su -c 'cd /root; git clone https://github.com/BlackArch/blackarch-install-scripts' root
+su -c 'mkdir /usr/share/blackarch-install-scripts' root
+su -c 'cd /root;cd blackarch-install-scripts; cp -R blackarch-install chroot-install grub /usr/share/blackarch-install-scripts/' root
+su -c 'rm -rf /usr/bin/blackarch-install; ln -s /usr/share/blackarch-install-scripts/blackarch-install /usr/bin/' root
+su -c 'cd root; cd blackarch-install-scripts; cp blackarch-install.txt /root' root
+su -c 'cd /root;rm -rf blackarch-install-scripts' root
+su -c 'rm -rf /root/install.txt' root

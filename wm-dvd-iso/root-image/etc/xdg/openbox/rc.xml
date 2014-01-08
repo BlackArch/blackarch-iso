@@ -46,7 +46,7 @@
 </placement>
 
 <theme>
-  <name>Artwiz-boxed</name>
+  <name>blackarch</name>
   <titleLayout>NLIMC</titleLayout>
   <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -64,7 +64,7 @@
     <name>sans</name>
     <size>8</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
@@ -73,14 +73,14 @@
     <name>sans</name>
     <size>8</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuHeader">
     <name>sans</name>
-    <size>9</size>
+    <size>8</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -89,7 +89,7 @@
   </font>
   <font place="MenuItem">
     <name>sans</name>
-    <size>9</size>
+    <size>8</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -98,18 +98,18 @@
   </font>
   <font place="ActiveOnScreenDisplay">
     <name>sans</name>
-    <size>9</size>
+    <size>8</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveOnScreenDisplay">
     <name>sans</name>
-    <size>9</size>
+    <size>8</size>
     <!-- font size in points -->
-    <weight>bold</weight>
+    <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
     <slant>normal</slant>
     <!-- 'italic' or 'normal' -->
@@ -339,7 +339,7 @@
     </mousebind>
     <mousebind button="A-Right" action="Drag">
       <action name="Resize"/>
-    </mousebind> 
+    </mousebind>
 
     <mousebind button="A-Middle" action="Press">
       <action name="Lower"/>
@@ -591,7 +591,7 @@
     <!-- Menus -->
     <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
-    </mousebind> 
+    </mousebind>
     <mousebind button="Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
@@ -669,7 +669,7 @@
   # order that they appear in this list
 
 
-    # each rule element can be left out or set to 'default' to specify to not 
+    # each rule element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>
