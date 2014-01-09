@@ -37,7 +37,7 @@ su -c 'pacman-key -r 4345771566D76038C7FEB43863EC0ADBEA87E4E3' root
 su -c 'pacman-key --lsign-key 4345771566D76038C7FEB43863EC0ADBEA87E4E3' root
 
 # sync database
-su -c 'pacman -Syy --noconfirm' root
+su -c 'pacman -Syyu --noconfirm' root
 
 # fix wrong permissions for blackarch-dwm
 su -c 'chmod 755 /usr/local/bin/blackarch-dwm'
