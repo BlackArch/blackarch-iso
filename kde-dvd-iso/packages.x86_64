@@ -462,7 +462,7 @@ cisco-router-config
 cryptcat
 dbd
 dhcdrop
-dradis
+#dradis
 elettra
 elettra-gui
 ent
@@ -519,7 +519,7 @@ sslnuke
 webscarab
 
 # blackarch-recon
-bing-ip2hosts
+#bing-ip2hosts
 canari
 casefile
 cutycapt
