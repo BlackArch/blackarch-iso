@@ -7,6 +7,7 @@
 secure-delete
 
 # blackarch-automation
+#blueranger
 cewl
 checksec
 crunch
@@ -25,6 +26,7 @@ tiger
 tlssled
 unix-privesc-check
 username-anarchy
+#veil
 voiphopper
 wiffy
 wnmap
@@ -40,6 +42,7 @@ rrs
 rubilyn
 trixd00r
 tsh
+#u3-pwn
 webacoo
 webshells
 weevely
@@ -55,10 +58,12 @@ bluebugger
 bluelog
 bluepot
 blueprint
+#blueranger
 bluesnarfer
 braces
 bss
 bt_audit
+btaudit
 btcrack
 btscanner
 carwhisperer
@@ -75,8 +80,91 @@ flawfinder
 pscan
 
 # blackarch-cracker
+acccheck
+aesfix
+aeskeyfind
+against
+asleap
+beleth
+#bios_memimage
+blackhash
+#bob-the-butcher
+brutessh
+btcrack
+bully
+cewl
+cisco-auditing-tool
+cisco-ocs
+cmospwd
+cowpatty
+creddump
+crunch
+cupp
+dbpwaudit
+dpeparser
+eapmd5pass
+enabler
+evilmaid
+fang
+fern-wifi-cracker
+findmyhash
+hashcat
+#hashcat-utils
+hashtag
 hydra
+iheartxor
+ikecrack
+inguma
+jbrute
+johnny
+keimpx
+lodowep
+maskprocessor
+masscan
+mdcrack
 medusa
+mfoc
+morxbrute
+onesixtyone
+owabf
+pack
+passcracking
+patator
+#pdfcrack
+pdgmail
+phoss
+php-mt-seed
+#phrasendrescher
+pipal
+pyrit
+rainbowcrack
+rarcrack
+rcracki-mt
+#rdesktop-brute
+reaver
+rootbrute
+#rsakeyfind
+samdump2
+#samydeluxe
+sidguesser
+sipcrack
+smbbf
+#sqlpat
+ssh-privkey-crack
+sshatter
+sshtrix
+sslnuke
+statsprocessor
+sucrack
+tftp-bruteforce
+thc-pptp-bruter
+ufo-wardriving
+vnc-bypauth
+vncrack
+wifite
+wmat
+wyd
+zulu
 
 # blackarch-cross-compiling
 
@@ -143,6 +231,7 @@ armitage
 arpoison
 bbqsql
 bed
+#beef
 bfbtester
 cisco-global-exploiter
 cisco-torch
@@ -157,6 +246,7 @@ htexploit
 htshells
 inguma
 irpas
+#jboss-autopwn
 killerbee
 leroy-jenkins
 lfi-autopwn
@@ -189,6 +279,7 @@ subterfuge
 tcpjunk
 thc-ipv6
 #veil
+#viproxy-voipkit
 vnc-bypauth
 websploit
 zarp
@@ -229,6 +320,7 @@ foremost
 galleta
 #grokevt
 guymager
+#ipba2
 libewf
 magicrescue
 make-pdf
@@ -291,6 +383,7 @@ oat
 ohrwurm
 oscanner
 peach
+pentbox
 powerfuzzer
 radamsa
 ratproxy
@@ -299,6 +392,7 @@ skipfish
 smtp-fuzz
 spiderpig-pdffuzzer
 spike
+#sploitego
 sqlbrute
 sqlmap
 sqlninja
@@ -386,6 +480,7 @@ tnscmd
 tpcat
 uatester
 vfeed
+#winexe
 wol-e
 
 # blackarch-mobile
@@ -425,6 +520,7 @@ halcyon
 #httping
 intrace
 isr-form
+#lanmap2
 lbd
 ldapenum
 lft
@@ -469,6 +565,7 @@ vivisect
 #zerowine
 
 # blackarch-scanner
+#0trace
 admsnmp
 allthevhosts
 asp-audit
@@ -694,6 +791,7 @@ uatester
 uniscan
 urlcrazy
 #vega
+w3af
 waffit
 wapiti
 webacoo
@@ -751,6 +849,7 @@ airoscript
 airpwn
 batctl
 batman-adv
+batman-alfred
 bully
 cowpatty
 eapmd5pass

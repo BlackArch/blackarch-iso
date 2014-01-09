@@ -3,14 +3,9 @@
 ##############
 
 # default
-abs
-arch-install-scripts
 b43-fwcutter
 btrfs-progs
-clipit
 cmake
-colordiff
-crda
 ddrescue
 dhclient
 dialog
@@ -18,12 +13,9 @@ dmraid
 dnsmasq
 dnsutils
 dosfstools
-dwb
 elinks
-ethtool
 expac
 f2fs-tools
-fsarchiver
 git
 gnu-netcat
 gpm
@@ -31,7 +23,6 @@ gptfdisk
 grml-zsh-config
 haveged
 hdparm
-hsetroot
 ipw2100-fw
 ipw2200-fw
 lftp
@@ -57,21 +48,17 @@ pptpclient
 rfkill
 rp-pppoe
 rsync
-slock
 smartmontools
-spacefm
 speedtouch
 sudo
 tcpdump
 testdisk
-tint2
 tzdata
 unace
 unrar
 unzip
 usb_modeswitch
 vim
-volumeicon
 vpnc
 wget
 wicd
@@ -79,7 +66,6 @@ wicd-gtk
 wireless_tools
 wpa_actiond
 wvdial
-xclip
 xf86-video-apm
 xf86-video-ark
 xf86-video-ast
@@ -120,6 +106,7 @@ xl2tpd
 xorg-server
 xorg-server-utils
 xorg-xbacklight
+xorg-xdm
 xorg-xinit
 zd1211-firmware
 zsh
@@ -130,10 +117,26 @@ zsh
 # needed for blackarch
 virtualbox-guest-modules
 virtualbox-guest-utils
+xorg-server
+xorg-server-utils
+xorg-xinit
 xterm
 firefox
+opera
 acpi
+lxdm
 feh
+fluxbox
+spectrwm
+blackarch-dwm
+obconf
+oblogout
+obmenu
+openbox
+openbox-themes
+awesome
+i3-wm
+wmii
 tor
 torsocks
 wireshark-gtk
@@ -173,7 +176,4 @@ cadaver
 bsdiff
 arp-scan
 aircrack-ng
-kdebase
-kdenetwork
-kdeutils
-kdeadmin
+blackarch-install-scripts
