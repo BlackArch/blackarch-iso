@@ -7,7 +7,7 @@
 secure-delete
 
 # blackarch-automation
-blueranger
+#blueranger
 cewl
 checksec
 crunch
@@ -26,7 +26,7 @@ tiger
 tlssled
 unix-privesc-check
 username-anarchy
-veil
+#veil
 voiphopper
 wiffy
 wnmap
@@ -42,7 +42,7 @@ rrs
 rubilyn
 trixd00r
 tsh
-u3-pwn
+#u3-pwn
 webacoo
 webshells
 weevely
@@ -58,7 +58,7 @@ bluebugger
 bluelog
 bluepot
 blueprint
-blueranger
+#blueranger
 bluesnarfer
 braces
 bss
@@ -86,9 +86,9 @@ aeskeyfind
 against
 asleap
 beleth
-bios_memimage
+#bios_memimage
 blackhash
-bob-the-butcher
+#bob-the-butcher
 brutessh
 btcrack
 bully
@@ -109,7 +109,7 @@ fang
 fern-wifi-cracker
 findmyhash
 hashcat
-hashcat-utils
+#hashcat-utils
 hashtag
 hydra
 iheartxor
@@ -130,26 +130,26 @@ owabf
 pack
 passcracking
 patator
-pdfcrack
+#pdfcrack
 pdgmail
 phoss
 php-mt-seed
-phrasendrescher
+#phrasendrescher
 pipal
 pyrit
 rainbowcrack
 rarcrack
 rcracki-mt
-rdesktop-brute
+#rdesktop-brute
 reaver
 rootbrute
-rsakeyfind
+#rsakeyfind
 samdump2
-samydeluxe
+#samydeluxe
 sidguesser
 sipcrack
 smbbf
-sqlpat
+#sqlpat
 ssh-privkey-crack
 sshatter
 sshtrix
@@ -231,7 +231,7 @@ armitage
 arpoison
 bbqsql
 bed
-beef
+#beef
 bfbtester
 cisco-global-exploiter
 cisco-torch
@@ -246,7 +246,7 @@ htexploit
 htshells
 inguma
 irpas
-jboss-autopwn
+#jboss-autopwn
 killerbee
 leroy-jenkins
 lfi-autopwn
@@ -279,7 +279,7 @@ subterfuge
 tcpjunk
 thc-ipv6
 #veil
-viproxy-voipkit
+#viproxy-voipkit
 vnc-bypauth
 websploit
 zarp
@@ -320,7 +320,7 @@ foremost
 galleta
 #grokevt
 guymager
-ipba2
+#ipba2
 libewf
 magicrescue
 make-pdf
@@ -392,7 +392,7 @@ skipfish
 smtp-fuzz
 spiderpig-pdffuzzer
 spike
-sploitego
+#sploitego
 sqlbrute
 sqlmap
 sqlninja
@@ -480,7 +480,7 @@ tnscmd
 tpcat
 uatester
 vfeed
-winexe
+#winexe
 wol-e
 
 # blackarch-mobile
@@ -520,7 +520,7 @@ halcyon
 #httping
 intrace
 isr-form
-lanmap2
+#lanmap2
 lbd
 ldapenum
 lft
@@ -565,7 +565,7 @@ vivisect
 #zerowine
 
 # blackarch-scanner
-0trace
+#0trace
 admsnmp
 allthevhosts
 asp-audit
