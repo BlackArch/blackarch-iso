@@ -241,7 +241,7 @@ armitage
 arpoison
 bbqsql
 bed
-beef
+#beef
 bfbtester
 cisco-global-exploiter
 cisco-torch
@@ -274,7 +274,7 @@ rebind
 rfcat
 ropeme
 ropgadget
-ruby-ronin
+#ruby-ronin
 ruby-ronin-support
 set
 shellcodecs
@@ -289,7 +289,7 @@ subterfuge
 tcpjunk
 thc-ipv6
 veil
-viproy-voipkit
+#viproy-voipkit
 vnc-bypauth
 websploit
 zarp
@@ -416,7 +416,7 @@ termineter
 tftp-fuzz
 uniofuzz
 uniscan
-viproy-voipkit
+#viproy-voipkit
 vulscan
 w3af
 wapiti
@@ -495,7 +495,7 @@ tnscmd
 tpcat
 uatester
 vfeed
-winexe
+#winexe
 wol-e
 
 # blackarch-mobile
@@ -536,7 +536,7 @@ halcyon
 httping
 intrace
 isr-form
-lanmap2
+#lanmap2
 lbd
 ldapenum
 lft
@@ -582,7 +582,7 @@ vivisect
 zerowine
 
 # blackarch-scanner
-0trace
+#0trace
 admsnmp
 allthevhosts
 asp-audit
@@ -682,7 +682,7 @@ uniscan
 unix-privesc-check
 upnpscan
 videosnarf
-viproy-voipkit
+#viproy-voipkit
 vulscan
 w3af
 waffit
@@ -743,7 +743,7 @@ dns2tcp
 icmptx
 iodine
 matahari
-packet-o-matic
+#packet-o-matic
 ptunnel
 udptunnel
 
@@ -863,7 +863,7 @@ sqlping
 superscan
 sysinternals-suite
 unsecure
-winexe
+#winexe
 winfo
 x-scan
 
