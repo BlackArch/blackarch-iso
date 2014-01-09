@@ -196,7 +196,7 @@ minimysqlator
 
 # blackarch-debugger
 edb
-ollydbg
+#ollydbg
 radare2
 shellnoob
 vivisect
@@ -850,13 +850,13 @@ mbenum
 missidentify
 nbtenum
 nishang
-ollydbg
+#ollydbg
 orakelcrackert
 powersploit
 pstoreview
 pwdump
 sipscan
-smbrelay
+#smbrelay
 snscan
 spade
 sqlping
