@@ -115,28 +115,17 @@ zd1211-firmware
 zsh
 
 # needed for blackarch
+gnome
+gnome-shell
 virtualbox-guest-modules
 virtualbox-guest-utils
 xorg-server
 xorg-server-utils
 xorg-xinit
-xterm
 firefox
 opera
 acpi
-lxdm
 feh
-fluxbox
-spectrwm
-blackarch-dwm
-obconf
-oblogout
-obmenu
-openbox
-openbox-themes
-awesome
-i3-wm
-wmii
 tor
 torsocks
 wireshark-gtk

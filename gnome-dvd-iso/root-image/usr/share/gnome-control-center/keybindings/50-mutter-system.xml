@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<KeyListEntries wm_name="Mutter" schema="org.gnome.desktop.wm.keybindings" package="mutter" group="system" name="System">
-
-	<KeyListEntry name="panel-run-dialog" description="Show the run command prompt"></KeyListEntry>
-
-	<KeyListEntry name="panel-main-menu" description="Show the activities overview"></KeyListEntry>
-
-</KeyListEntries>

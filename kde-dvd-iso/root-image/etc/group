@@ -36,6 +36,7 @@ systemd-journal:x:190:
 git:x:999:
 vboxsf:x:109:
 avahi:x:84:
-kdm:x:135:
 usbmux:x:140:
-polkitd:x:102:
+mysql:x:89:
+adbusers:x:148:
+stunnel:x:199:

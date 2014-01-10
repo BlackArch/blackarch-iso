@@ -1,3 +1,0 @@
-[GNOME Session]
-Name=Display Manager
-RequiredComponents=gnome-shell;gnome-settings-daemon;
