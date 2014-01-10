@@ -66,24 +66,24 @@ avahi-discover=
 bar=2014-01-04
 bssh=
 bvnc=
-cheese=2014-01-04
-dconf-editor=2014-01-04
+cheese=
+dconf-editor=
 designer-qt4=
-empathy=2014-01-04
-eog=2014-01-04
-epiphany=2014-01-04
-evince=2014-01-04
+empathy=
+eog=
+epiphany=
+evince=
 feh=
 firefox=
 foo=2014-01-03
-gcalctool=2014-01-04
+gcalctool=
 gimp=
-gnome-disks=2014-01-04
-gnome-font-viewer=2014-01-04
-gnome-system-monitor-kde=2014-01-04
-gnome-terminal=2014-01-04
-gucharmap=2014-01-04
-ibus-setup=2014-01-04
+gnome-disks=
+gnome-font-viewer=
+gnome-system-monitor-kde=
+gnome-terminal=
+gucharmap=
+ibus-setup=
 kde4-Help=
 kde4-KCharSelect=
 kde4-KFloppy=
@@ -120,13 +120,18 @@ kde4-sweeper=
 kde4-systemsettings=
 linguist-qt4=
 obconf=
+obtheme=2014-01-10
 qdbusviewer-qt4=
 qv4l2=
-totem=2014-01-04
-tracker-needle=2014-01-04
-tracker-preferences=2014-01-04
+totem=
+tracker-needle=
+tracker-preferences=
 uxterm=
 xterm=
+
+[Containments][1][Applets][6][Configuration][Applets][12][PopupApplet]
+DialogHeight=92
+DialogWidth=310
 
 [Containments][13]
 activity=
@@ -167,7 +172,7 @@ hideWhenSingleDesktop=true
 Order=2
 
 [Containments][13][Applets][17]
-geometry=174,2,951,25
+geometry=174,2,960,25
 immutability=1
 plugin=tasks
 zvalue=0
@@ -180,7 +185,7 @@ filemanager=preferred://filemanager, , ,\s
 Order=3
 
 [Containments][13][Applets][18]
-geometry=1129,2,141,25
+geometry=1138,2,141,25
 immutability=1
 plugin=systemtray
 zvalue=0
@@ -242,7 +247,7 @@ SystemTray-Klipper-18=Ctrl+Alt+V
 Order=4
 
 [Containments][13][Applets][19]
-geometry=1274,2,142,25
+geometry=1283,2,133,25
 immutability=1
 plugin=digital-clock
 zvalue=0

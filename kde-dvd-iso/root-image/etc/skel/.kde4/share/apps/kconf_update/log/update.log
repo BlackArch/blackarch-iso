@@ -209,3 +209,24 @@
 2014-01-04T12:57:09 Checking update-file '/usr/share/apps/kconf_update/kcalcrc.upd' for new updates
 2014-01-04T12:57:09 Checking update-file '/usr/share/apps/kconf_update/kcookiescfg.upd' for new updates
 2014-01-04T12:57:09 Checking update-file '/usr/share/apps/kconf_update/plasmarc-to-plasmadesktoprc.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_update_410.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/plasma-add-shortcut-to-menu.upd' for new updates
+2014-01-10T19:02:57 plasma-add-shortcut-to-menu.upd: Found new update '4.1LauncherShortcut'
+2014-01-10T19:02:57 plasma-add-shortcut-to-menu.upd:2:'Script=plasma-add-shortcut-to-menu-update': Script 'plasma-add-shortcut-to-menu-update' not found
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/krdb_libpathwipe.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/notifications-to-orgkdenotifications.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_fsp_workarounds_1.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_update_tabbox_qml_settings.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_translate_confrequest_rule.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/oxygen.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kscreenlocker_locksession-shortcut.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/ksmserver_shortcuts.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_remove_effects.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_remove_delay_focus.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/klipper-kconfigxt.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_update_49.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/plasma-to-plasmadesktop-shortcuts.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_update_tabbox_settings.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_translate_activity_rule.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/kwin_update_411.upd' for new updates
+2014-01-10T19:02:57 Checking update-file '/usr/share/apps/kconf_update/plasmarc-to-plasmadesktoprc.upd' for new updates

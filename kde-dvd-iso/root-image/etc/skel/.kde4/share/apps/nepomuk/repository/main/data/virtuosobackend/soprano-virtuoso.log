@@ -24,3 +24,18 @@
 21:52:28 Error executing a server init statement : 22023: JSO_LOAD_GRAPH has not found expected metadata in the graph -- DB.DBA.RDF_INIT_SINGLE_SERVER ()
 
 21:52:28 The transaction log file has been produced by different server instance.
+
+		Fri Jan 10 2014
+19:03:00 It is impossible to have a database file /root/.kde4/share/apps/nepomuk/repository/main/data/virtuosobackend/soprano-virtuoso.db with a length not multiple of 2MB.
+19:03:00 The process must have last terminated while growing the file.
+19:03:00 Please contact OpenLink Customer Support
+
+		Fri Jan 10 2014
+19:09:24 It is impossible to have a database file /root/.kde4/share/apps/nepomuk/repository/main/data/virtuosobackend/soprano-virtuoso.db with a length not multiple of 2MB.
+19:09:24 The process must have last terminated while growing the file.
+19:09:24 Please contact OpenLink Customer Support
+
+		Fri Jan 10 2014
+19:16:10 It is impossible to have a database file /root/.kde4/share/apps/nepomuk/repository/main/data/virtuosobackend/soprano-virtuoso.db with a length not multiple of 2MB.
+19:16:10 The process must have last terminated while growing the file.
+19:16:10 Please contact OpenLink Customer Support

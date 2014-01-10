@@ -45,3 +45,6 @@ su -c 'chmod 755 /usr/local/bin/blackarch-dwm'
 # blackarch-install (dev version)
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
 su -c 'rm -rf /root/install.txt' root
+
+# temporary fix for metasploit
+su -c 'cd /usr/share/metasploit/ && bundle-1.9 install' root

@@ -1,48 +1,48 @@
 kcminputrc Mouse cursorTheme 'Oxygen_White'
-/home/arthur/.kde4/share/config/kcminputrc
+/root/.kde4/share/config/kcminputrc
 !/usr/share/config/kcminputrc
 *
 kcminputrc Mouse cursorSize ''
-/home/arthur/.kde4/share/config/kcminputrc
+/root/.kde4/share/config/kcminputrc
 !/usr/share/config/kcminputrc
 *
 ksplashrc KSplash Theme Default
-/home/arthur/.kde4/share/config/ksplashrc
+/root/.kde4/share/config/ksplashrc
 !/usr/share/config/ksplashrc
 *
 ksplashrc KSplash Engine KSplashX
-/home/arthur/.kde4/share/config/ksplashrc
+/root/.kde4/share/config/ksplashrc
 !/usr/share/config/ksplashrc
 *
 krandrrc Display ApplyOnStartup false
-!/home/arthur/.kde4/share/config/krandrrc
+!/root/.kde4/share/config/krandrrc
 !/usr/share/config/krandrrc
 *
 krandrrc Display StartupCommands ''
-!/home/arthur/.kde4/share/config/krandrrc
+!/root/.kde4/share/config/krandrrc
 !/usr/share/config/krandrrc
 *
 krandrrc [Screen0]
-!/home/arthur/.kde4/share/config/krandrrc
+!/root/.kde4/share/config/krandrrc
 !/usr/share/config/krandrrc
 *
 krandrrc [Screen1]
-!/home/arthur/.kde4/share/config/krandrrc
+!/root/.kde4/share/config/krandrrc
 !/usr/share/config/krandrrc
 *
 krandrrc [Screen2]
-!/home/arthur/.kde4/share/config/krandrrc
+!/root/.kde4/share/config/krandrrc
 !/usr/share/config/krandrrc
 *
 krandrrc [Screen3]
-!/home/arthur/.kde4/share/config/krandrrc
+!/root/.kde4/share/config/krandrrc
 !/usr/share/config/krandrrc
 *
 kcmfonts General forceFontDPI 0
-!/home/arthur/.kde4/share/config/kcmfonts
+!/root/.kde4/share/config/kcmfonts
 !/usr/share/config/kcmfonts
 *
 kdeglobals Locale Language '' # trigger requesting languages from KLocale
-/home/arthur/.kde4/share/config/kdeglobals
+/root/.kde4/share/config/kdeglobals
 !/usr/share/config/kdeglobals
 *

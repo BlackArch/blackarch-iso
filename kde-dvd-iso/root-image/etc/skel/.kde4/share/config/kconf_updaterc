@@ -41,9 +41,9 @@ done=kde2.2/r2,kde2.2/r3
 mtime=1386880433
 
 [klipper-kconfigxt.upd]
-ctime=1388817318
+ctime=1389188915
 done=KlipperNoSpacesInKeyNames
-mtime=1372439444
+mtime=1388690870
 
 [konsole.upd]
 ctime=1388817307
@@ -110,19 +110,19 @@ done=kopete-update-yahoo-server/r1
 mtime=1386790524
 
 [krdb_libpathwipe.upd]
-ctime=1388817318
+ctime=1389188915
 done=LibraryPathWipeOut
-mtime=1372439444
+mtime=1388690869
 
 [kscreenlocker_locksession-shortcut.upd]
-ctime=1388817318
+ctime=1389188915
 done=4.9-locksession-shortcut
-mtime=1372439444
+mtime=1388690870
 
 [ksmserver_shortcuts.upd]
-ctime=1388817318
+ctime=1389188915
 done=kde4.10,kde4.10-remove-group-kscreenlocker
-mtime=1372439444
+mtime=1388690870
 
 [ksslcertificatemanager.upd]
 ctime=1388817298
@@ -135,54 +135,54 @@ done=post-kde3.1/cvs,pre-kde4.9
 mtime=1386787213
 
 [kwin_fsp_workarounds_1.upd]
-ctime=1388817318
+ctime=1389188915
 done=kde351
-mtime=1372439444
+mtime=1388690870
 
 [kwin_remove_delay_focus.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.8
-mtime=1372439444
+mtime=1388690870
 
 [kwin_remove_effects.upd]
-ctime=1388817318
+ctime=1389188915
 done=kwin4.7_effects
-mtime=1372439444
+mtime=1388690870
 
 [kwin_translate_activity_rule.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.10
-mtime=1377709178
+mtime=1388690870
 
 [kwin_translate_confrequest_rule.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.11
-mtime=1377709178
+mtime=1388690870
 
 [kwin_update_410.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.10_1
-mtime=1372439444
+mtime=1388690870
 
 [kwin_update_411.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.11_0
-mtime=1377709178
+mtime=1388690870
 
 [kwin_update_49.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.9
-mtime=1372439444
+mtime=1388690870
 
 [kwin_update_tabbox_qml_settings.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.8
-mtime=1372439444
+mtime=1388690870
 
 [kwin_update_tabbox_settings.upd]
-ctime=1388817318
+ctime=1389188915
 done=Kwin-4.4
-mtime=1372439444
+mtime=1388690870
 
 [mailtransports.upd]
 ctime=1388817313
@@ -195,25 +195,25 @@ done=initial-newmailnotifier-migration
 mtime=1386655635
 
 [notifications-to-orgkdenotifications.upd]
-ctime=1388817318
+ctime=1389188915
 done=4.10QmlNotifications
-mtime=1372439444
+mtime=1388690872
 
 [oxygen.upd]
-ctime=1388817318
+ctime=1389188915
 done=1
-mtime=1377709178
+mtime=1388690870
 
 [plasma-add-shortcut-to-menu.upd]
-ctime=1388817318
-mtime=1372439444
+ctime=1389188915
+mtime=1388690872
 
 [plasma-to-plasmadesktop-shortcuts.upd]
-ctime=1388817318
+ctime=1389188915
 done=4.3plasma-desktop-shortcuts
-mtime=1372439444
+mtime=1388690872
 
 [plasmarc-to-plasmadesktoprc.upd]
-ctime=1388817318
+ctime=1389188915
 done=4.3plasma-desktop
-mtime=1372439444
+mtime=1388690872
