@@ -1,0 +1,9 @@
+[Protocol]
+exec=kio_metainfo
+protocol=metainfo
+input=stream
+output=stream
+reading=true
+writing=true
+source=false
+Icon=help-about

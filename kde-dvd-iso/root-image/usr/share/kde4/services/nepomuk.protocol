@@ -1,0 +1,17 @@
+[Protocol]
+exec=kio_nepomuk
+protocol=nepomuk
+input=none
+output=filesystem
+reading=true
+writing=false
+deleting=true
+linking=false
+makedir=false
+moving=false
+listing=Name,Type,Size,Date,AccessDate,Access,Owner,Group,Link
+source=false
+Icon=nepomuk
+Class=:local
+determineMimetypeFromExtension=false
+maxInstances=10

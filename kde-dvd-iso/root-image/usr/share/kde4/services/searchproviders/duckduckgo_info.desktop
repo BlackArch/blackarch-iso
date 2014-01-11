@@ -1,0 +1,120 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=duckduckgoinfo,ddi
+Name=Duck Duck Go Info
+Name[ar]= معلومات Duck Duck Go
+Name[ast]=Duck Duck Go Info
+Name[bg]=Информация в Duck Duck Go
+Name[bn]=ডাক ডাক গো তথ্য
+Name[bs]=Dak dak go (informacije)
+Name[ca]=Duck Duck Go Info
+Name[ca@valencia]=Duck Duck Go Info
+Name[cs]=Duck Duck Go Info
+Name[da]=Duck Duck Go info
+Name[de]=Duck Duck Go Info
+Name[el]=Duck Duck Go Info
+Name[en_GB]=Duck Duck Go Info
+Name[eo]=Informoj de Duck Duck Go
+Name[es]=Duck Duck Go Info
+Name[et]=Duck Duck Go Info
+Name[eu]=Duck Duck Go Info
+Name[fa]=اطلاعات Duck Duck Go
+Name[fi]=Duck Duck Go -tietohaku
+Name[fr]=Informations « Duck Duck Go »
+Name[ga]=Eolas Duck Duck Go
+Name[gl]=Información en Duck Duck Go
+Name[gu]=ડક ડક ગો માહિતી
+Name[he]=Duck Duck Go Info
+Name[hi]=बतख़ जा जा जानकारी
+Name[hr]=Duck Duck Go Info
+Name[hu]=Duck Duck Go Info
+Name[ia]=Duck Duck Go Info
+Name[id]=Info Duck Duck Go
+Name[is]=Duck Duck Go upplýsingar
+Name[it]=Informazioni di Duck Duck Go
+Name[ja]=Duck Duck Go Info
+Name[kk]=Duck Duck Go Info
+Name[km]=ព័ត៌មាន​របស់ Duck Duck Go
+Name[kn]=ಡಕ್ ಡಕ್ ಗೊ ಮಾಹಿತಿ
+Name[ko]=Duck Duck Go 정보
+Name[lt]=Duck Duck Go Info
+Name[lv]=Duck Duck Go informācija
+Name[ml]=ഡക്ക് ഡക്ക് ഗോ വിവരം
+Name[mr]=डक डक गो माहिती
+Name[nb]=Duck Duck Go Info
+Name[nds]=Duck Duck Go - Informatschonen
+Name[nl]=Duck Duck Go Info
+Name[nn]=Duck Duck Go-informasjon
+Name[pa]=ਡੱਕ ਡੱਕ ਗੋ ਜਾਣਕਾਰੀ
+Name[pl]=Duck Duck Go Info
+Name[pt]=Informação do Duck Duck Go
+Name[pt_BR]=Informações do Duck Duck Go
+Name[ro]=Informații Duck Duck Go
+Name[ru]=Поиск Duck Duck Go: информация
+Name[si]=Duck Duck Go තොරතුරු
+Name[sk]=Duck Duck Go Info
+Name[sl]=Duck Duck Go – podrobnosti
+Name[sr]=Дак дак го (информације)
+Name[sr@ijekavian]=Дак дак го (информације)
+Name[sr@ijekavianlatin]=Duck Duck Go (informacije)
+Name[sr@latin]=Duck Duck Go (informacije)
+Name[sv]=Duck Duck Go information
+Name[tg]=Маълумоти Duck Duck Go
+Name[th]=ข้อมูลของ Duck Duck Go
+Name[tr]=Duck Duck Go Bilgileri
+Name[ug]=Duck Duck Go ئۇچۇرى
+Name[uk]=Duck Duck Go Info
+Name[vi]=Duck Duck Go Thông Tin
+Name[wa]=Duck Duck Go Info
+Name[x-test]=xxDuck Duck Go Infoxx
+Name[zh_CN]=Duck Duck Go 信息
+Name[zh_TW]=Duck Duck Go Info
+Query=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[bg]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[bs]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ca]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ca@valencia]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[cs]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[da]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[de]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[el]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[es]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[eu]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[fi]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[fr]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[gl]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[hi]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[hu]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ia]=http://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[is]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[it]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ja]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[kk]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ko]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[lt]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[nb]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[nl]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[nn]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[pa]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[pl]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[pt]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[pt_BR]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ro]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ru]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[sk]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[sl]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[sr]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[sr@ijekavian]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[sr@ijekavianlatin]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[sr@latin]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[sv]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[tr]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[ug]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[uk]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[wa]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[x-test]=xxhttps://duckduckgo.com/?q=\\{@}&v=r&t=kdexx
+Query[zh_CN]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+Query[zh_TW]=https://duckduckgo.com/?q=\\{@}&v=r&t=kde
+ServiceTypes=SearchProvider
+Type=Service

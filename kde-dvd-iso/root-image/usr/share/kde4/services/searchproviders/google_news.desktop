@@ -1,0 +1,143 @@
+[Desktop Entry]
+Type=Service
+Name=Google News
+Name[af]=Google Nuus
+Name[ar]=أخبار جوجل
+Name[as]=Google News
+Name[ast]=Noticies de Google
+Name[be]=Навіны Google
+Name[be@latin]=Naviny „Google”
+Name[bg]=Новини в Google
+Name[bn]=গুগল্ সংবাদ
+Name[bn_IN]=Google খবরাখবর
+Name[br]=Keleier Google
+Name[bs]=Google novosti
+Name[ca]=Notícies de Google
+Name[ca@valencia]=Notícies de Google
+Name[cs]=Google News
+Name[csb]=Google - nowinë
+Name[cy]=Newyddion Google
+Name[da]=Google nyheder
+Name[de]=Google-Nachrichten
+Name[el]=Google νέα
+Name[en_GB]=Google News
+Name[eo]=Guglo Novaĵoj
+Name[es]=Noticias de Google
+Name[et]=Google News
+Name[eu]=Google News
+Name[fa]=اخبار گوگل
+Name[fi]=Googlen uutiset
+Name[fr]=Actualités « Google »
+Name[fy]=Google-nijs
+Name[ga]=Nuacht Google
+Name[gl]=Novas de Google
+Name[gu]=ગુગલ સમાચારો
+Name[he]=חדשות Google
+Name[hi]=गूगल समाचार
+Name[hne]=गूगल समाचार
+Name[hr]=Google novosti
+Name[hsb]=Google nowiny
+Name[hu]=Google hírek
+Name[ia]=Google News - Novas de Google
+Name[id]=Google News
+Name[is]=Google fréttir
+Name[it]=Notizie di Google
+Name[ja]=Google ニュース
+Name[ka]=Google სიახლეები
+Name[kk]=Google жаңалықтар
+Name[km]=ព័ត៌មាន​តាម​ហ្គូហ្គល
+Name[kn]=ಗೂಗಲ್ ವಾರ್ತೆಗಳು
+Name[ko]=Google 뉴스
+Name[ku]=Nûçeyên Google
+Name[lt]=Google naujienos
+Name[lv]=Google ziņas
+Name[mai]=गूगल समाचार
+Name[mk]=Google Вести
+Name[ml]=ഗൂഗിള്‍ വാര്‍ത്തകള്‍
+Name[mr]=गूगल समाचार
+Name[ms]=Berita Google
+Name[nb]=Google nyheter
+Name[nds]=Google-Narichten
+Name[ne]=गुगल समाचार
+Name[nl]=Google-nieuws
+Name[nn]=Google-nyheiter
+Name[oc]=Novèlas Google
+Name[or]=Google ଖବର
+Name[pa]=Google ਖ਼ਬਰਾਂ
+Name[pl]=Google - wiadomości
+Name[pt]=Notícias Google
+Name[pt_BR]=Google News
+Name[ro]=Știri Google
+Name[ru]=Новости Google
+Name[se]=Google ođđasat
+Name[si]=Google ප්‍රවෘත්ති
+Name[sk]=Google správy
+Name[sl]=Google News
+Name[sr]=Гугл‑вести
+Name[sr@ijekavian]=Гугл‑вести
+Name[sr@ijekavianlatin]=Google-vesti
+Name[sr@latin]=Google-vesti
+Name[sv]=Google diskussionsgrupper
+Name[ta]=கூகுல் செய்திகள்
+Name[te]=గూగుల్ వార్తలు
+Name[tg]=Ахбороти Google
+Name[th]=กลุ่มข่าวต่าง ๆ จากกูเกิล
+Name[tr]=Google Haberleri
+Name[ug]=گۇگىل  خەۋەرلىرى
+Name[uk]=Новини Google
+Name[uz]=Google - Yangiliklar
+Name[uz@cyrillic]=Google - Янгиликлар
+Name[vi]=Tin tức Google
+Name[wa]=Google News
+Name[x-test]=xxGoogle Newsxx
+Name[zh_CN]=Google 新闻
+Name[zh_TW]=Google 新聞
+X-KDE-ServiceTypes=SearchProvider
+Keys=ggn,googlenews
+Query=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[bg]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[bs]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ca]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ca@valencia]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[cs]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[da]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[de]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[el]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[es]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[eu]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[fi]=https://news.google.fi/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[fr]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[gl]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[hi]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[hu]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ia]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[is]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[it]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ja]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[kk]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ko]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[lt]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[nb]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[nl]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[nn]=https://news.google.com/news?hl=nn&q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pa]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pl]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pt]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pt_BR]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ro]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ru]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sk]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sl]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr@ijekavian]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr@ijekavianlatin]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr@latin]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sv]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[tr]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ug]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[uk]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[wa]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[x-test]=xxhttps://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8xx
+Query[zh_CN]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[zh_TW]=https://news.google.com/news?q=\\{@}&ie=UTF-8&oe=UTF-8
+Charset=utf8

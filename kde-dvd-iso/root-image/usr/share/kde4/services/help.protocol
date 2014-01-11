@@ -1,0 +1,10 @@
+[Protocol]
+exec=kio_help
+protocol=help
+input=none
+output=filesystem
+reading=true
+defaultMimetype=text/html
+Icon=help-browser
+Class=:local
+X-DocPath=kioslave/help/index.html

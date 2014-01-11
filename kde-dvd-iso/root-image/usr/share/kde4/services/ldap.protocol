@@ -1,0 +1,17 @@
+[Protocol]
+exec=kio_ldap
+protocol=ldap
+input=none
+output=filesystem
+listing=Name,
+reading=true
+source=true
+writing=true
+#makedir=true
+deleting=true
+#linking=true
+#moving=true
+mimetype=text/plain
+determineMimetypeFromExtension=false
+X-DocPath=kioslave/ldap/index.html
+Icon=office-address-book

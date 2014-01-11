@@ -5,18 +5,18 @@ screenCount=1
 count=0
 
 [Session: saved at previous logout]
-clientId1=10135cdd3c6000138937736200000016310000
-clientId2=10135cdd3c6000138937737400000016310006
+clientId1=10135cdd3c6000138940022700000196040003
+clientId2=10135cdd3c6000138940024300000196040008
 count=2
-discardCommand1[$e]=rm,$HOME/.kde4/share/config/session/kwin_10135cdd3c6000138937736200000016310000_1389377760_340652
+discardCommand1[$e]=rm,$HOME/.kde4/share/config/session/kwin_10135cdd3c6000138940022700000196040003_1389400459_230718
 discardCommand2[$e]=
-program1=kwin
+program1=/usr/bin/kwin
 program2=pulseaudio
-restartCommand1=kwin,-session,10135cdd3c6000138937736200000016310000_1389377760_340652
+restartCommand1=/usr/bin/kwin,-session,10135cdd3c6000138940022700000196040003_1389400459_230718
 restartCommand2=
 restartStyleHint1=0
 restartStyleHint2=0
 userId1=root
 userId2=root
-wasWm1=true
+wasWm1=false
 wasWm2=false

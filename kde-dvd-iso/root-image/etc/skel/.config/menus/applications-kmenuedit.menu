@@ -1,223 +1,54 @@
 <!DOCTYPE Menu PUBLIC '-//freedesktop//DTD Menu 1.0//EN' 'http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd'>
 <Menu>
- <Layout>
-  <Merge type="menus"/>
-  <Menuname>anti-forensic</Menuname>
-  <Menuname>Development</Menuname>
-  <Menuname>Education</Menuname>
-  <Merge type="files"/>
-  <Filename>kde4-kfind.desktop</Filename>
-  <Menuname>Games</Menuname>
-  <Menuname>Graphics</Menuname>
-  <Filename>kde4-Help.desktop</Filename>
-  <Menuname>Internet</Menuname>
-  <Menuname>Applications</Menuname>
-  <Menuname>Multimedia</Menuname>
-  <Menuname>Office</Menuname>
-  <Menuname>Science</Menuname>
-  <Menuname>Settingsmenu</Menuname>
-  <Menuname>System</Menuname>
-  <Menuname>Utilities</Menuname>
- </Layout>
- <Menu>
-  <Name>anti-forensic</Name>
-  <Layout>
-   <Merge type="menus"/>
-   <Menuname>automation</Menuname>
-   <Menuname>anti-forensic</Menuname>
-  </Layout>
-  <Menu>
-   <Name>automation</Name>
-   <Layout>
-    <Merge type="files"/>
-    <Filename>bar.desktop</Filename>
-   </Layout>
-   <Directory>automation.directory</Directory>
-   <Include>
-    <Filename>bar.desktop</Filename>
-   </Include>
-  </Menu>
-  <Menu>
-   <Name>anti-forensic</Name>
-   <Layout>
-    <Merge type="files"/>
-    <Filename>foo.desktop</Filename>
-   </Layout>
-   <Directory>anti-forensic-2.directory</Directory>
-   <Include>
-    <Filename>foo.desktop</Filename>
-   </Include>
-  </Menu>
-  <Directory>anti-forensic.directory</Directory>
- </Menu>
  <Menu>
   <Name>Development</Name>
   <Layout>
+   <Merge type="menus"/>
+   <Menuname>Translation</Menuname>
+   <Menuname>Web Development</Menuname>
+   <Menuname>X-KDE-KDevelopIDE</Menuname>
    <Merge type="files"/>
    <Filename>assistant-qt4.desktop</Filename>
    <Filename>designer-qt4.desktop</Filename>
    <Filename>linguist-qt4.desktop</Filename>
    <Filename>qdbusviewer-qt4.desktop</Filename>
-   <Merge type="menus"/>
-   <Menuname>Translation</Menuname>
-   <Menuname>Web Development</Menuname>
-   <Menuname>X-KDE-KDevelopIDE</Menuname>
   </Layout>
- </Menu>
- <Menu>
-  <Name>Education</Name>
-  <Layout>
-   <Merge type="menus"/>
-   <Menuname>Languages</Menuname>
-   <Menuname>Mathematics</Menuname>
-   <Menuname>Miscellaneous</Menuname>
-   <Menuname>Science</Menuname>
-   <Menuname>Tools</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>Games</Name>
-  <Layout>
-   <Merge type="menus"/>
-   <Menuname>Arcade</Menuname>
-   <Menuname>Board</Menuname>
-   <Menuname>Card</Menuname>
-   <Menuname>Kidsgames</Menuname>
-   <Menuname>Logic</Menuname>
-   <Menuname>TacticStrategy</Menuname>
-   <Menuname>Toys</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>Graphics</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>evince.desktop</Filename>
-   <Filename>eog.desktop</Filename>
-   <Separator/>
-   <Merge type="menus"/>
-   <Menuname>More</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>Internet</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>bssh.desktop</Filename>
-   <Filename>bvnc.desktop</Filename>
-   <Filename>empathy.desktop</Filename>
-   <Filename>kde4-knetattach.desktop</Filename>
-   <Filename>kde4-konqbrowser.desktop</Filename>
-   <Merge type="menus"/>
-   <Menuname>Terminal</Menuname>
-   <Filename>epiphany.desktop</Filename>
-   <Separator/>
-   <Menuname>More</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>Multimedia</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>cheese.desktop</Filename>
-   <Filename>qv4l2.desktop</Filename>
-   <Filename>totem.desktop</Filename>
-   <Separator/>
-   <Merge type="menus"/>
-   <Menuname>More</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>Office</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>evince.desktop</Filename>
-   <Separator/>
-   <Merge type="menus"/>
-   <Menuname>More</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>Settingsmenu</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>ibus-setup.desktop</Filename>
-   <Filename>tracker-preferences.desktop</Filename>
-   <Filename>kde4-systemsettings.desktop</Filename>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>System</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>avahi-discover.desktop</Filename>
-   <Filename>dconf-editor.desktop</Filename>
-   <Filename>kde4-dolphin.desktop</Filename>
-   <Filename>gnome-system-monitor-kde.desktop</Filename>
-   <Filename>kde4-kdf.desktop</Filename>
-   <Filename>kde4-kinfocenter.desktop</Filename>
-   <Filename>kde4-konsole.desktop</Filename>
-   <Filename>kde4-krandrtray.desktop</Filename>
-   <Filename>kde4-ksysguard.desktop</Filename>
-   <Filename>kde4-ksystemlog.desktop</Filename>
-   <Filename>kde4-kuser.desktop</Filename>
-   <Filename>kde4-kwalletmanager.desktop</Filename>
-   <Filename>kde4-kwikdisk.desktop</Filename>
-   <Filename>kde4-nepomukbackup.desktop</Filename>
-   <Filename>kde4-nepomukcleaner.desktop</Filename>
-   <Merge type="menus"/>
-   <Menuname>ScreenSavers</Menuname>
-   <Filename>gnome-terminal.desktop</Filename>
-   <Menuname>Terminal</Menuname>
-   <Separator/>
-   <Menuname>More</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>Utilities</Name>
-  <Layout>
-   <Merge type="files"/>
-   <Filename>kde4-akonaditray.desktop</Filename>
-   <Filename>kde4-ark.desktop</Filename>
-   <Filename>gcalctool.desktop</Filename>
-   <Filename>gucharmap.desktop</Filename>
-   <Filename>tracker-needle.desktop</Filename>
-   <Filename>gnome-disks.desktop</Filename>
-   <Filename>kde4-filelight.desktop</Filename>
-   <Filename>gnome-font-viewer.desktop</Filename>
-   <Filename>kde4-kcalc.desktop</Filename>
-   <Filename>kde4-KCharSelect.desktop</Filename>
-   <Filename>kde4-KFloppy.desktop</Filename>
-   <Filename>kde4-kgpg.desktop</Filename>
-   <Filename>kde4-klipper.desktop</Filename>
-   <Filename>kde4-ktimer.desktop</Filename>
-   <Filename>kde4-kwrite.desktop</Filename>
-   <Filename>kde4-nepomukbackup.desktop</Filename>
-   <Filename>kde4-nepomukcleaner.desktop</Filename>
-   <Filename>kde4-superkaramba.desktop</Filename>
-   <Filename>kde4-sweeper.desktop</Filename>
-   <Merge type="menus"/>
-   <Menuname>XUtilities</Menuname>
-   <Separator/>
-   <Menuname>More</Menuname>
-  </Layout>
- </Menu>
- <Menu>
-  <Name>BlackArch</Name>
-  <Deleted/>
+  <Menu>
+   <Name>Translation</Name>
+   <Layout/>
+   <Menu>
+    <Name>BlackArch</Name>
+    <Directory>BlackArch-2.directory</Directory>
+    <Deleted/>
+   </Menu>
+   <Menu>
+    <Name>dsaads</Name>
+    <Directory>dsaads.directory</Directory>
+    <Deleted/>
+   </Menu>
+  </Menu>
+  <Menu>
+   <Name>BlackArch</Name>
+   <Directory>BlackArch.directory</Directory>
+   <Deleted/>
+  </Menu>
  </Menu>
  <Menu>
   <Name>Arch Linux</Name>
-  <Deleted/>
- </Menu>
- <Include/>
- <Exclude>
-  <Filename>BlackArch.desktop</Filename>
- </Exclude>
- <Menu>
-  <Name>.hidden</Name>
-  <Include>
-   <Filename>BlackArch.desktop</Filename>
-  </Include>
+  <Layout>
+   <Merge type="menus"/>
+   <Menuname>anti-forensic</Menuname>
+  </Layout>
+  <Menu>
+   <Name>anti-forensic</Name>
+   <Layout>
+    <Merge type="files"/>
+    <Filename>xterm-2.desktop</Filename>
+   </Layout>
+   <Directory>anti-forensic.directory</Directory>
+   <Include>
+    <Filename>xterm-2.desktop</Filename>
+   </Include>
+  </Menu>
  </Menu>
 </Menu>

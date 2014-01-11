@@ -1,0 +1,121 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=identicagroups,identig,identicag,idg
+Name=Identi.ca Groups
+Name[ar]=مجموعات Identi.ca
+Name[ast]=Grupos Identi.ca
+Name[bg]=Групи в Identi.ca
+Name[bn]=Identi.ca গোষ্ঠীসমূহ
+Name[bs]=Identika-grupe
+Name[ca]=Grups a Identi.ca
+Name[ca@valencia]=Grups a Identi.ca
+Name[cs]=Skupiny Identi.ca
+Name[da]=Identi.ca-grupper
+Name[de]=Identi.ca Groups
+Name[el]=Identi.ca Groups
+Name[en_GB]=Identi.ca Groups
+Name[eo]=Grupoj de Identi.ko
+Name[es]=Grupos Identi.ca
+Name[et]=Identi.ca grupid
+Name[eu]=Identi.ca Taldeak
+Name[fa]=گروههای Identi.ca
+Name[fi]=Identi.ca-ryhmähaku
+Name[fr]=Groupes « Identi.ca »
+Name[ga]=Grúpaí Identi.ca
+Name[gl]=Grupos de Identi.ca
+Name[gu]=આઈડેન્ટિ.કા સમૂહો
+Name[he]=Identi.ca Groups
+Name[hi]=Identi.ca समूह
+Name[hr]=Grupe na Identi.ci
+Name[hu]=Identi.ca csoportok
+Name[ia]=Gruppos de Identi.ca
+Name[id]=Identi.ca Groups
+Name[is]=Identi.ca hópar
+Name[it]=Gruppi di Identi.ca
+Name[ja]=Identi.ca Groups
+Name[kk]=Identi.ca тобтар
+Name[km]=ក្រុម​របស់ Identi.ca
+Name[kn]=identi.ca ಗುಂಪುಗಳು
+Name[ko]=Identi.ca 그룹
+Name[lt]=Identi.ca grupės
+Name[lv]=Identi.ca grupas
+Name[mai]=Identi.ca समूह
+Name[ml]=ഐഡന്റിക്ക ഗ്രൂപ്പുകള്‍
+Name[mr]=Identi.ca ग्रुप्स
+Name[nb]=Identi.ca-grupper
+Name[nds]=Identi.ca - Koppeln
+Name[nl]=Identi.ca Groepen
+Name[nn]=Identi.ca-grupper
+Name[pa]=Identi.ca ਗਰੁੱਪ
+Name[pl]=Grupy Identi.ca
+Name[pt]=Grupos do Identi.ca
+Name[pt_BR]=Grupos do Identi.ca
+Name[ro]=Identi.ca Grupuri
+Name[ru]=Identi.ca: группы
+Name[si]=Identi.ca සමූහ
+Name[sk]=Identi.ca skupiny
+Name[sl]=Identi.ca - skupine
+Name[sr]=Идентика-групе
+Name[sr@ijekavian]=Идентика-групе
+Name[sr@ijekavianlatin]=identi.ca‑grupe
+Name[sr@latin]=identi.ca‑grupe
+Name[sv]=Identi.ca grupper
+Name[tg]=Гурӯҳи Identi.ca
+Name[th]=กลุ่มต่าง ๆ ของ Identi.ca
+Name[tr]=Identi.ca Grupları
+Name[ug]=Identi.ca گۇرۇپپىلار
+Name[uk]=Групи Identi.ca
+Name[vi]=Identi.ca Nhóm
+Name[wa]=Identi.ca Groupes
+Name[x-test]=xxIdenti.ca Groupsxx
+Name[zh_CN]=Identi.ca 群组
+Name[zh_TW]=Identi.ca Groups
+Query=https://identi.ca/search/group?q=\\{@}
+Query[bg]=https://identi.ca/search/group?q=\\{@}
+Query[bs]=https://identi.ca/search/group?q=\\{@}
+Query[ca]=https://identi.ca/search/group?q=\\{@}
+Query[ca@valencia]=https://identi.ca/search/group?q=\\{@}
+Query[cs]=https://identi.ca/search/group?q=\\{@}
+Query[da]=https://identi.ca/search/group?q=\\{@}
+Query[de]=https://identi.ca/search/group?q=\\{@}
+Query[el]=https://identi.ca/search/group?q=\\{@}
+Query[es]=https://identi.ca/search/group?q=\\{@}
+Query[eu]=https://identi.ca/search/group?q=\\{@}
+Query[fi]=https://identi.ca/search/group?q=\\{@}
+Query[fr]=https://identi.ca/search/group?q=\\{@}
+Query[gl]=https://identi.ca/search/group?q=\\{@}
+Query[hi]=https://identi.ca/search/group?q=\\{@}
+Query[hu]=https://identi.ca/search/group?q=\\{@}
+Query[ia]=https://identi.ca/search/group?q=\\{@}
+Query[is]=https://identi.ca/search/group?q=\\{@}
+Query[it]=https://identi.ca/search/group?q=\\{@}
+Query[ja]=https://identi.ca/search/group?q=\\{@}
+Query[kk]=https://identi.ca/search/group?q=\\{@}
+Query[ko]=https://identi.ca/search/group?q=\\{@}
+Query[lt]=https://identi.ca/search/group?q=\\{@}
+Query[nb]=https://identi.ca/search/group?q=\\{@}
+Query[nl]=https://identi.ca/search/group?q=\\{@}
+Query[nn]=https://identi.ca/search/group?q=\\{@}
+Query[pa]=https://identi.ca/search/group?q=\\{@}
+Query[pl]=https://identi.ca/search/group?q=\\{@}
+Query[pt]=https://identi.ca/search/group?q=\\{@}
+Query[pt_BR]=https://identi.ca/search/group?q=\\{@}
+Query[ro]=https://identi.ca/search/group?q=\\{@}
+Query[ru]=https://identi.ca/search/group?q=\\{@}
+Query[sk]=https://identi.ca/search/group?q=\\{@}
+Query[sl]=https://identi.ca/search/group?q=\\{@}
+Query[sr]=https://identi.ca/search/group?q=\\{@}
+Query[sr@ijekavian]=https://identi.ca/search/group?q=\\{@}
+Query[sr@ijekavianlatin]=https://identi.ca/search/group?q=\\{@}
+Query[sr@latin]=https://identi.ca/search/group?q=\\{@}
+Query[sv]=https://identi.ca/search/group?q=\\{@}
+Query[tr]=https://identi.ca/search/group?q=\\{@}
+Query[ug]=https://identi.ca/search/group?q=\\{@}
+Query[uk]=https://identi.ca/search/group?q=\\{@}
+Query[wa]=https://identi.ca/search/group?q=\\{@}
+Query[x-test]=xxhttps://identi.ca/search/group?q=\\{@}xx
+Query[zh_CN]=https://identi.ca/search/group?q=\\{@}
+Query[zh_TW]=https://identi.ca/search/group?q=\\{@}
+ServiceTypes=SearchProvider
+Type=Service

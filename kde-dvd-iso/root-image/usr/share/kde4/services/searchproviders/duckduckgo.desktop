@@ -1,0 +1,120 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=duckduckgo,dd,dukgo
+Name=Duck Duck Go
+Name[ar]=Duck Duck Go
+Name[ast]=Duck Duck Go
+Name[bg]=Duck Duck Go
+Name[bn]=ডাক ডাক গো
+Name[bs]=Dak dak go
+Name[ca]=Duck Duck Go
+Name[ca@valencia]=Duck Duck Go
+Name[cs]=Duck Duck Go
+Name[da]=Duck Duck Go
+Name[de]=Duck Duck Go
+Name[el]=Duck Duck Go
+Name[en_GB]=Duck Duck Go
+Name[eo]=Duck Duck Go
+Name[es]=Duck Duck Go
+Name[et]=Duck Duck Go
+Name[eu]=Duck Duck Go
+Name[fa]=Duck Duck Go
+Name[fi]=Duck Duck Go
+Name[fr]=Duck Duck Go
+Name[ga]=Duck Duck Go
+Name[gl]=Duck Duck Go
+Name[gu]=ડક ડક ગો
+Name[he]=Duck Duck Go
+Name[hi]=बतख़ जा जा
+Name[hr]=Duck Duck Go
+Name[hu]=Duck Duck Go
+Name[ia]=Duck Duck Go
+Name[id]=Duck Duck Go
+Name[is]=Duck Duck Go
+Name[it]=Duck Duck Go
+Name[ja]=Duck Duck Go
+Name[kk]=Duck Duck Go
+Name[km]=Duck Duck Go
+Name[kn]=ಡಕ್ ಡಕ್ ಗೊ
+Name[ko]=Duck Duck Go
+Name[lt]=Duck Duck Go
+Name[lv]=Duck Duck Go
+Name[ml]=ഡക്ക് ഡക്ക് ഗോ
+Name[mr]=डक डक गो
+Name[nb]=Duck Duck Go
+Name[nds]=Duck Duck Go
+Name[nl]=Duck Duck Go
+Name[nn]=Duck Duck Go
+Name[pa]=ਡੱਕ ਡੱਕ ਗੋ
+Name[pl]=Duck Duck Go
+Name[pt]=Duck Duck Go
+Name[pt_BR]=Duck Duck Go
+Name[ro]=Duck Duck Go
+Name[ru]=Поиск Duck Duck Go
+Name[si]=Duck Duck Go
+Name[sk]=Duck Duck Go
+Name[sl]=Duck Duck Go
+Name[sr]=Дак дак го
+Name[sr@ijekavian]=Дак дак го
+Name[sr@ijekavianlatin]=Duck Duck Go
+Name[sr@latin]=Duck Duck Go
+Name[sv]=Duck Duck Go
+Name[tg]=Duck Duck Go
+Name[th]=Duck Duck Go
+Name[tr]=Duck Duck Go
+Name[ug]=Duck Duck Go
+Name[uk]=Duck Duck Go
+Name[vi]=Duck Duck Go
+Name[wa]=Duck Duck Go
+Name[x-test]=xxDuck Duck Goxx
+Name[zh_CN]=Duck Duck Go
+Name[zh_TW]=Duck Duck Go
+Query=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[bg]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[bs]=httpa://duckduckgo.com/?q=\\{@}&t=kde
+Query[ca]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[ca@valencia]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[cs]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[da]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[de]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[el]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[es]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[eu]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[fi]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[fr]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[gl]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[hi]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[hu]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[ia]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[is]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[it]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[ja]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[kk]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[ko]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[lt]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[nb]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[nl]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[nn]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[pa]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[pl]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[pt]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[pt_BR]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[ro]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[ru]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[sk]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[sl]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[sr]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[sr@ijekavian]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[sr@ijekavianlatin]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[sr@latin]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[sv]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[tr]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[ug]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[uk]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[wa]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[x-test]=xxhttps://duckduckgo.com/?q=\\{@}&t=kdexx
+Query[zh_CN]=https://duckduckgo.com/?q=\\{@}&t=kde
+Query[zh_TW]=https://duckduckgo.com/?q=\\{@}&t=kde
+ServiceTypes=SearchProvider
+Type=Service

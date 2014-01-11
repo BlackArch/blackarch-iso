@@ -1,0 +1,11 @@
+[Protocol]
+exec=kio_filter
+protocol=bzip2
+archiveMimetype=application/x-bzip2
+determineMimetypeFromExtension=false
+input=stream
+output=stream
+reading=true
+source=false
+X-DocPath=kioslave/bzip2/index.html
+Icon=package-x-generic

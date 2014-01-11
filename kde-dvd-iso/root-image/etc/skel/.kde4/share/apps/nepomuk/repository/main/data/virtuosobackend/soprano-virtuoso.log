@@ -39,3 +39,13 @@
 19:16:10 It is impossible to have a database file /root/.kde4/share/apps/nepomuk/repository/main/data/virtuosobackend/soprano-virtuoso.db with a length not multiple of 2MB.
 19:16:10 The process must have last terminated while growing the file.
 19:16:10 Please contact OpenLink Customer Support
+
+		Fri Jan 10 2014
+19:17:30 It is impossible to have a database file /root/.kde4/share/apps/nepomuk/repository/main/data/virtuosobackend/soprano-virtuoso.db with a length not multiple of 2MB.
+19:17:30 The process must have last terminated while growing the file.
+19:17:30 Please contact OpenLink Customer Support
+
+		Sat Jan 11 2014
+01:34:27 It is impossible to have a database file /root/.kde4/share/apps/nepomuk/repository/main/data/virtuosobackend/soprano-virtuoso.db with a length not multiple of 2MB.
+01:34:27 The process must have last terminated while growing the file.
+01:34:27 Please contact OpenLink Customer Support

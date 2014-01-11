@@ -1,0 +1,182 @@
+[Desktop Entry]
+Type=Service
+Name=Ruby Application Archive
+Name[af]=Ruby Toepassing Argief
+Name[ar]=ارشيف تطبيقات روبي
+Name[as]=Ruby Application Archive
+Name[ast]=Ficheru d'aplicaciones en Ruby
+Name[be]=Архіў праграмаў Ruby
+Name[be@latin]=Aplikacyi „Ruby”
+Name[bg]=Архив на Ruby
+Name[bn]=রুবি  অ্যাপলিকেশন আর্কাইভ
+Name[bn_IN]=Ruby অ্যাপ্লিকেশন আর্কাইভ
+Name[br]=Diell arloadoù Ruby
+Name[bs]=Arhiva rubijevskih programa
+Name[ca]=Arxiu d'aplicacions Ruby
+Name[ca@valencia]=Arxiu d'aplicacions Ruby
+Name[cs]=Archiv aplikací Ruby
+Name[csb]=Ruby - archiwa programów
+Name[cy]=Archif Cymhwysiadau Ruby
+Name[da]=Ruby programarkiv
+Name[de]=Ruby-Anwendungsarchiv
+Name[el]=Αρχειοθήκη εφαρμογών Ruby
+Name[en_GB]=Ruby Application Archive
+Name[eo]=Arkivo  de aplikaĵo Ruby
+Name[es]=Archivo de aplicaciones en Ruby
+Name[et]=Ruby Application Archive
+Name[eu]=Ruby aplikazio fitxategia
+Name[fa]=بایگانی کاربرد Ruby
+Name[fi]=Ruby-sovellusarkisto
+Name[fr]=Archive d'applications Ruby
+Name[fy]=Ruby programma-argyf
+Name[ga]=Cartlann Feidhmchlár Ruby
+Name[gl]=Arquivo de programas en Ruby
+Name[gu]=રૂબી કાર્યક્રમ અર્કાઇવ
+Name[he]=ארכיון יישומי Ruby
+Name[hi]=रूबी अनुप्रयोग आर्काइव
+Name[hne]=रूबी अनुपरयोग आर्काइव
+Name[hr]=Arhiva Ruby aplikacija
+Name[hsb]=Ruby-archiw programow
+Name[hu]=Ruby alkalmazásarchívum
+Name[ia]=Archivo de application de Ruby
+Name[id]=Arsip Aplikasi Ruby
+Name[is]=Ruby Application Archive
+Name[it]=Archivio di applicazioni Ruby
+Name[ja]=Ruby アプリケーションアーカイブ
+Name[kk]=Ruby қолданбалар архиві
+Name[km]=ប័ណ្ណសារ​កម្មវិធី​មគ្គុទ្ទេសក៍​សូរសព្ទ
+Name[kn]=ರೂಬಿ ಅನ್ವಯ ಕಡತಾಗಾರ (ಆರ್ಕೈವ್)
+Name[ko]=Ruby 프로그램 저장소
+Name[ku]=Arşîva Sepanên Ruby
+Name[lt]=Ruby taikomųjų programų archyvas
+Name[lv]=Ruby programmu arhīvs
+Name[mai]=रूबी अनुप्रयोग आर्काइव
+Name[mk]=Архива со Ruby-апликации
+Name[ml]=റൂബി പ്രയോഗങ്ങളുടെ ശേഖരം
+Name[mr]=रूबी अनुप्रयोग संग्रह
+Name[ms]=Arkib Aplikasi Ruby
+Name[nb]=Ruby programarkiv
+Name[nds]=Ruby-Programmarchiv
+Name[ne]=रुबी अनुप्रयोग सङ्ग्रह
+Name[nl]=Ruby programma-archief
+Name[nn]=Ruby-programarkiv
+Name[or]=Ruby ପ୍ରୟୋଗ ଅଭିଲେଖନ
+Name[pa]=Ruby ਕਾਰਜ ਅਕਾਇਵ
+Name[pl]=Ruby (język programowania) - programy
+Name[pt]=Arquivo de Aplicações Ruby
+Name[pt_BR]=Arquivo de aplicativos Ruby
+Name[ro]=Arhiva de aplicații Ruby
+Name[ru]=Архив приложений Ruby
+Name[se]=Ruby-prográmmavuorká
+Name[si]=Ruby භාවිතයෙදවුම් සංරක්‍ෂකය
+Name[sk]=Archív aplikácií Ruby
+Name[sl]=Arhiv programov Ruby
+Name[sr]=Архива рубијевских програма
+Name[sr@ijekavian]=Архива рубијевских програма
+Name[sr@ijekavianlatin]=Arhiva ruby programa
+Name[sr@latin]=Arhiva ruby programa
+Name[sv]=Ruby Application Archive
+Name[ta]=ரூபி பயன்பாட்டு களஞ்சியம்
+Name[te]=Ruby అనువర్తన ఆర్చివ్
+Name[tg]=Бойгонии барномаи Ruby
+Name[th]=คลังโปรแกรมภาษารูบี้
+Name[tr]=Ruby Uygulama Arşivi
+Name[ug]=Ruby پروگرامما ئارخىپى
+Name[uk]=Архів програм мовою Ruby
+Name[uz]=Ruby dastur arxivi
+Name[uz@cyrillic]=Ruby дастур архиви
+Name[vi]=Kho lưu trữ ứng dụng Ruby
+Name[wa]=Årtchives di programes Ruby
+Name[xh]=Indawo ye Ruby yokugcina Isicelo
+Name[x-test]=xxRuby Application Archivexx
+Name[zh_CN]=Ruby 应用程序档案
+Name[zh_TW]=Ruby 應用程式檔案庫
+X-KDE-ServiceTypes=SearchProvider
+Keys=raa
+Query=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[af]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ar]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[as]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ast]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[be]=http://raa.ruby-lang.org/search.rhtml?search=\\{@}
+Query[be@latin]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[bg]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[bn]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[bn_IN]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[bs]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ca]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ca@valencia]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[cs]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[csb]=http://raa.ruby-lang.org/search.rhtml?search=\\{@}
+Query[da]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[de]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[el]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[en_GB]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[eo]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[es]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[et]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[eu]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[fa]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[fi]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[fr]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[fy]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ga]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[gl]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[gu]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[he]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[hi]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[hne]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[hr]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[hsb]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[hu]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ia]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[id]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[is]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[it]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ja]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[kk]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[km]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[kn]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ko]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ku]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[lt]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[lv]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[mai]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ml]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[mr]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[nb]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[nds]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ne]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[nl]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[nn]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[oc]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[or]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[pa]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[pl]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[pt]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[pt_BR]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ro]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ru]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[se]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[si]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[sk]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[sl]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[sr]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[sr@ijekavian]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[sr@ijekavianlatin]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[sr@latin]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[sv]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ta]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[te]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[tg]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[th]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[tr]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[ug]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[uk]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[uz]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[uz@cyrillic]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[vi]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[wa]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[x-test]=xxhttp://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}xx
+Query[zh_CN]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}
+Query[zh_TW]=http://www.ruby-lang.org/en/raa-list.rhtml?name=\\{@}

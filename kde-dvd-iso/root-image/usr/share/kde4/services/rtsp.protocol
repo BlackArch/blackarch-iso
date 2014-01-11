@@ -1,0 +1,15 @@
+[Protocol]
+defaultMimetype=audio/x-pn-realaudio
+exec=
+protocol=rtsp
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
+Icon=www
+Class=:internet
+URIMode=url

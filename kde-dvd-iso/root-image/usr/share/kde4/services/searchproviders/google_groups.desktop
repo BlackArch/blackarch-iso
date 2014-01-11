@@ -1,0 +1,143 @@
+[Desktop Entry]
+Type=Service
+Name=Google Groups
+Name[af]=Google Groepe
+Name[ar]=مجموعات جوجل
+Name[as]=Google Groups
+Name[ast]=Grupos de Google
+Name[be]=Групы Google
+Name[be@latin]=Hrupy „Google”
+Name[bg]=Групи в Google
+Name[bn]=গুগল্ গ্রুপস
+Name[bn_IN]=Google Groups (গ্রুপ)
+Name[br]=Stroladoù Google
+Name[bs]=Google Grupe
+Name[ca]=Grups a Google
+Name[ca@valencia]=Grups a Google
+Name[cs]=Google - diskuzní skupiny
+Name[csb]=Google - archiwa diskùsjowëch karnów
+Name[cy]=Grwpiau Google
+Name[da]=Google-grupper
+Name[de]=Google-Newsgruppen
+Name[el]=Ομάδες του Google
+Name[en_GB]=Google Groups
+Name[eo]=Guglo Grupoj
+Name[es]=Grupos de Google
+Name[et]=Google uudisegrupid
+Name[eu]=Google taldeak
+Name[fa]=گروههای گوگل
+Name[fi]=Googlen keskusteluryhmät
+Name[fr]=Groupes « Google »
+Name[fy]=Google Diskusjegroepen
+Name[ga]=Grúpaí Google
+Name[gl]=Grupos de Google
+Name[gu]=ગુગલ સમૂહો
+Name[he]=קבוצות דיון ב־Google
+Name[hi]=गूगल समूह
+Name[hne]=गूगल समूह
+Name[hr]=Google Grupe
+Name[hsb]=Google Groups
+Name[hu]=Google Groups
+Name[ia]=Google Groups : Gruppos de Google
+Name[id]=Google Grup
+Name[is]=Google - Ráðstefnur
+Name[it]=Google gruppi
+Name[ja]=Google グループ
+Name[ka]=Google ჯგუფები
+Name[kk]=Google топтары
+Name[km]=ក្រុម​ហ្គូហ្គល
+Name[kn]=ಗೂಗಲ್ ಗುಂಪುಗಳು
+Name[ko]=Google 그룹스
+Name[ku]=Komên Googleyê
+Name[lt]=Google grupės
+Name[lv]=Google grupas
+Name[mai]=गूगल समूह
+Name[mk]=Google-групи
+Name[ml]=ഗൂഗിള്‍ കൂട്ടങ്ങള്‍
+Name[mr]=Google समूह
+Name[ms]=Kumpulan Google
+Name[nb]=Google-grupper
+Name[nds]=Google-Koppeln
+Name[ne]=गुगल समूह
+Name[nl]=Google Groepen
+Name[nn]=Google Groups
+Name[oc]=Grops Google
+Name[or]=Google Groups
+Name[pa]=Google ਗਰੁੱਪ
+Name[pl]=Google - archiwum grup dyskusyjnych
+Name[pt]=Grupos do Google
+Name[pt_BR]=Grupos do Google
+Name[ro]=Grupuri Google
+Name[ru]=Группы Google
+Name[se]=Google Groups
+Name[si]=ගූගල් සමූහ
+Name[sk]=Diskusné skupiny Google
+Name[sl]=Skupine Google
+Name[sr]=Гугл‑групе
+Name[sr@ijekavian]=Гугл‑групе
+Name[sr@ijekavianlatin]=Google-grupe
+Name[sr@latin]=Google-grupe
+Name[sv]=Google-grupper
+Name[ta]=கூகுல் குழுக்கள்
+Name[te]=గూగుల్ గుంపులు
+Name[tg]=Гурӯҳҳои Google
+Name[th]=กลุ่มต่าง ๆ ของกูเกิล
+Name[tr]=Google Grupları
+Name[ug]=Google گۇرۇپپا
+Name[uk]=Групи Google
+Name[uz]=Google - Guruhlar
+Name[uz@cyrillic]=Google - Гуруҳлар
+Name[vi]=Google Nhóm
+Name[wa]=Google Groups
+Name[xh]=Amaqela e Google
+Name[x-test]=xxGoogle Groupsxx
+Name[zh_CN]=Google 兴趣小组
+Name[zh_TW]=Google 群組
+X-KDE-ServiceTypes=SearchProvider
+Keys=ggg,groups,dj,deja
+Query=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[bg]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[bs]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ca]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ca@valencia]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[cs]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[da]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[de]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[el]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[es]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[eu]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[fi]=https://groups.google.fi/groups?oi=djq&as_q=\\{@}
+Query[fr]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[gl]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[hi]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[hu]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ia]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[is]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[it]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ja]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[kk]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ko]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[lt]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[nb]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[nl]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[nn]=https://groups.google.com/groups?hl=nn&oi=djq&as_q=\\{@}
+Query[pa]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[pl]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[pt]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[pt_BR]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ro]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ru]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[sk]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[sl]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[sr]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[sr@ijekavian]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[sr@ijekavianlatin]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[sr@latin]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[sv]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[tr]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[ug]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[uk]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[wa]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[x-test]=xxhttps://groups.google.com/groups?oi=djq&as_q=\\{@}xx
+Query[zh_CN]=https://groups.google.com/groups?oi=djq&as_q=\\{@}
+Query[zh_TW]=https://groups.google.com/groups?oi=djq&as_q=\\{@}

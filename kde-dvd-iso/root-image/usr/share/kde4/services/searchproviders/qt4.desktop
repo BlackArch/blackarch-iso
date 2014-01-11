@@ -1,0 +1,96 @@
+[Desktop Entry]
+Type=Service
+Name=Qt4 Documentation
+Name[bg]=Документация за Qt4
+Name[bs]=Dokumentacija QT4
+Name[ca]=Documentació de Qt4
+Name[ca@valencia]=Documentació de Qt4
+Name[cs]=Qt4 Documentation
+Name[da]=Qt4-dokumentation
+Name[de]=Qt4-Dokumentation
+Name[el]=Τεκμηρίωση Qt
+Name[es]=Documentación de Qt4
+Name[eu]=Qt4 Documentazioa
+Name[fi]=Qt4-dokumentaatio
+Name[fr]=Documentation de Qt4
+Name[gl]=Documentación de Qt4
+Name[hi]=क्यूटी4 दस्तावेज़
+Name[hu]=Qt4 dokumentáció
+Name[ia]=Documentation de Qt4
+Name[is]=Qt4 handbækur
+Name[it]=Documentazione di Qt4
+Name[ja]=Qt4 ドキュメント
+Name[kk]=Qt4 құжаттамасы
+Name[ko]=Qt4 문서
+Name[lt]=Qt4 dokumentacija
+Name[nb]=Qt4-dokumentasjon
+Name[nl]=Qt4-documentatie
+Name[nn]=Qt4-dokumentasjon
+Name[pa]=Qt4 ਡੌਕੂਮੈਂਟੇਸ਼ਨ
+Name[pl]=Dokumentacja Qt4
+Name[pt]=Documentação do Qt4
+Name[pt_BR]=Documentação do Qt4
+Name[ro]=Documentația Qt4
+Name[ru]=Документация по Qt4
+Name[sk]=Dokumentácia Qt4
+Name[sl]=Dokumentacija za Qt4
+Name[sr]=Документација КуТ‑а 4
+Name[sr@ijekavian]=Документација КуТ‑а 4
+Name[sr@ijekavianlatin]=Dokumentacija Qt‑a 4
+Name[sr@latin]=Dokumentacija Qt‑a 4
+Name[sv]=Qt4-dokumentation
+Name[tr]=Qt4 Belgelendirmesi
+Name[ug]=Qt4 قوللانمىسى
+Name[uk]=Документація з Qt4
+Name[wa]=Documintåcion di Qt4
+Name[x-test]=xxQt4 Documentationxx
+Name[zh_CN]=Qt4 文档
+Name[zh_TW]=Qt4 文件
+X-KDE-ServiceTypes=SearchProvider
+Keys=qt4
+Query=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[bg]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[bs]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ca]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ca@valencia]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[cs]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[da]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[de]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[el]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[es]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[eu]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[fi]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[fr]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[gl]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[hi]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[hu]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ia]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[is]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[it]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ja]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[kk]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ko]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[lt]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[nb]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[nl]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[nn]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[pa]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[pl]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[pt]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[pt_BR]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ro]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ru]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[sk]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[sl]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[sr]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[sr@ijekavian]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[sr@ijekavianlatin]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[sr@latin]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[sv]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[tr]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[ug]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[uk]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[wa]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[x-test]=xxhttp://qt-project.org/doc/search/qt-4.8?search=\\{@}xx
+Query[zh_CN]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}
+Query[zh_TW]=http://qt-project.org/doc/search/qt-4.8?search=\\{@}

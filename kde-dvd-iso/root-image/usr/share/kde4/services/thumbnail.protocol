@@ -1,0 +1,9 @@
+[Protocol]
+exec=kio_thumbnail
+protocol=thumbnail
+input=stream
+output=stream
+reading=true
+source=false
+X-DocPath=kioslave/thumbnail/index.html
+Icon=view-preview

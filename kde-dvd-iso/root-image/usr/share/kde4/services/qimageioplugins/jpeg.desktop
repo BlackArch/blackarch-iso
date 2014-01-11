@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=QImageIOPlugins
+X-KDE-ImageFormat=jpeg,jpg
+X-KDE-MimeType=image/jpeg
+X-KDE-Read=true
+X-KDE-Write=true

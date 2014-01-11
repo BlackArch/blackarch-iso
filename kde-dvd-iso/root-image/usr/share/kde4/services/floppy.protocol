@@ -1,0 +1,14 @@
+[Protocol]
+exec=kio_floppy
+protocol=floppy
+input=none
+output=filesystem
+listing=Name,Type,Size,Date
+reading=true
+writing=true
+makedir=true
+deleting=true
+moving=true
+Icon=media-floppy
+X-DocPath=kioslave/floppy/index.html
+Class=:local

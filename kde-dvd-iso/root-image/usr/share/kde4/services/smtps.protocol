@@ -1,0 +1,15 @@
+[Protocol]
+exec=kio_smtp
+protocol=smtps
+Capabilities=SASL
+input=none
+output=filesystem
+listing=Name,Type,Size
+reading=false
+writing=true
+deleting=false
+source=true
+makedir=false
+linking=false
+moving=false
+Icon=mail-folder-outbox

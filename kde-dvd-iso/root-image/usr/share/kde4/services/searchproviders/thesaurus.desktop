@@ -1,0 +1,184 @@
+[Desktop Entry]
+Type=Service
+Name=Merriam-Webster Thesaurus
+Name[af]=Merriam-Webster Thesaurus
+Name[ar]=قاموس مرادفات ميريام ويبستر
+Name[as]=Merriam-Webster Thesaurus
+Name[ast]=Sinónimos Merriam-Webster
+Name[be]=Тэзаўрус Merriam-Webster
+Name[be@latin]=Tezaŭrus „Merriam-Webster”
+Name[bg]=Речник Merriam-Webster
+Name[bn]=মেরিয়াম-ওয়েবস্টার থেসরাস
+Name[bn_IN]=মেরিয়াম-ওয়েবস্টার শব্দকোষ
+Name[br]=Tezorus Merriam-Webster
+Name[bs]=Merijam-Vebster (sinonimar)
+Name[ca]=Tesaurus Merriam-Webster
+Name[ca@valencia]=Tesaurus Merriam-Webster
+Name[cs]=Slovník synonym Merriam-Webster
+Name[csb]=Merriam-Webster - słowôrz blëskòznacznëch słów (thesaurus)
+Name[cy]=Thesawrws Merriam-Webster
+Name[da]=Merriam-Webster-begrebsordbog
+Name[de]=Merriam-Webster-Thesaurus
+Name[el]=Θησαυρός λέξεων Merriam-Webster
+Name[en_GB]=Merriam-Webster Thesaurus
+Name[eo]=Tezaŭro de Merriam-Webster
+Name[es]=Sinónimos Merriam-Webster
+Name[et]=Merriam-Websteri tesaurus
+Name[eu]=Merriam-Webster thesaurus-a
+Name[fa]=فرهنگ جامع Merriam-Webster
+Name[fi]=Merriam–Webster-synonyymit
+Name[fr]=Thésaurus « Merriam-Webster »
+Name[fy]=Merriam-Webster Thesaurus
+Name[ga]=Teasáras Merriam-Webster
+Name[gl]=Tesauro de Merriam-Webster
+Name[gu]=મેર્રિયમ-વેબસ્ટર થીસોરસ
+Name[he]=אגרון מילים Merriam-Webster
+Name[hi]=मरियम-वेबस्टर समांतर शब्दकोश
+Name[hne]=मरियम-वेबस्टर समांतर सब्दकोस
+Name[hr]=Merriam-Webster rječnik sinonima
+Name[hsb]=Merriam-Webster Thesaurus
+Name[hu]=Merriam-Webster szinonimaszótár
+Name[ia]=Merriam-Webster Thesauro
+Name[id]=Tesaurus Merriam-Webster
+Name[is]=Merriam-Webster samheitaorðabók
+Name[it]=Dizionario dei sinonimi e contrari Merriam-Webster
+Name[ja]=Merriam-Webster Thesaurus
+Name[kk]=Merriam-Webster тезаурусы
+Name[km]=កម្រង​វេវចន​សព្ទ Merriam-Webster
+Name[kn]=ಮೆರಿಯಾಮೆ-ವೆಬ್ಸ್ಟರ್ ಸಮಾನ/ವಿರುದ್ಧಾರ್ಥ ಪದಕೋಶ
+Name[ko]=Merriam-Webster 시소러스
+Name[ku]=Navlêkên Merriam-Webster 
+Name[lt]=Merriam-Webster sinonimų žodynas
+Name[lv]=Merriam-Webster tēzaurs
+Name[mai]=मरियम-वेबस्टर समांतर शब्दकोश
+Name[mk]=Merriam-Webster Енциклопедија
+Name[ml]=മെറിയാം-വെബ്സ്റ്റര്‍ പര്യായനിഘണ്ടു
+Name[mr]=मरियम-वेबस्टर शब्दकोश
+Name[ms]=Merriam-Webster Thesaurus
+Name[nb]=Merriam-Webster Thesaurus
+Name[nds]=Merriam-Webster-Thesaurus
+Name[ne]=मेरियम-वेबस्टर पर्यायकोष
+Name[nl]=Merriam-Webster Thesaurus
+Name[nn]=Merriam-Webster Thesaurus
+Name[pa]=Merriam-ਵੈੱਬ ਥੀਸਾਰਸ ਕੋਸ਼
+Name[pl]=Merriam-Webster - słownik wyrazów bliskoznacznych
+Name[pt]=Merriam-Gramática do Webster
+Name[pt_BR]=Merriam-Webster Thesaurus
+Name[ro]=Dicționarul Merriam-Webster
+Name[ru]=Тезаурус Merriam-Webster
+Name[se]=Merriam-Webster Thesaurus
+Name[si]=Merriam-Webster Thesaurus
+Name[sk]=Merriam-Webster synonymá
+Name[sl]=Merriam-Websterjev tezaver
+Name[sr]=Меријам-Вебстер (синонимар)
+Name[sr@ijekavian]=Меријам-Вебстер (синонимар)
+Name[sr@ijekavianlatin]=Merijam-Vebster (sinonimar)
+Name[sr@latin]=Merijam-Vebster (sinonimar)
+Name[sv]=Merriam-Websters synonymlexikon
+Name[ta]=மெர்ரியம்-வெப்ஸ்டர் சொற்களஞ்சியம்
+Name[te]=మెరియమ్-వెబ్‌స్టర్ థెసారెస్
+Name[tg]=Тезауруси Merriam-Webster
+Name[th]=พจนานุกรมคำพ้อง Merriam-Webster
+Name[tr]=Merriam-Webster Thesaurus
+Name[ug]=Merriam-Webster Thesaurus
+Name[uk]=Словник синонімів Merriam-Webster
+Name[uz]=Merriam-Vebster lugʻati
+Name[uz@cyrillic]=Мерриам-Вебстер луғати
+Name[vi]=Từ điển đồng nghĩa Merriam-Webster
+Name[wa]=Diccionaire Merriam-Webster
+Name[xh]=Merriam-Webster Thesaurus
+Name[x-test]=xxMerriam-Webster Thesaurusxx
+Name[zh_CN]=韦氏辞典
+Name[zh_TW]=韋氏辭典
+X-KDE-ServiceTypes=SearchProvider
+Keys=ths,thesaurus
+Query=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[af]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ar]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[as]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ast]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[be]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[be@latin]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[bg]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[bn]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[bn_IN]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[br]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[bs]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ca]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ca@valencia]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[cs]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[csb]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[da]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[de]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[el]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[en_GB]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[eo]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[es]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[et]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[eu]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[fa]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[fi]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[fr]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[fy]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ga]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[gl]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[gu]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[he]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[hi]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[hne]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[hr]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[hsb]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[hu]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ia]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[id]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[is]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[it]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ja]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ka]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[kk]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[km]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[kn]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ko]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ku]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[lt]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[lv]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[mai]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ml]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[mr]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ms]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[nb]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[nds]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ne]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurusva=\\{@}
+Query[nl]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[nn]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[oc]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[or]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[pa]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[pl]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[pt]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[pt_BR]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ro]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ru]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[se]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[si]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[sk]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[sl]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[sr]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[sr@ijekavian]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[sr@ijekavianlatin]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[sr@latin]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[sv]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ta]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[te]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[tg]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[th]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[tr]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[ug]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[uk]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[uz]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[uz@cyrillic]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[vi]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[wa]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[x-test]=xxhttp://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}xx
+Query[zh_CN]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}
+Query[zh_TW]=http://www.m-w.com/cgi-bin/thesaurus?book=Thesaurus&va=\\{@}

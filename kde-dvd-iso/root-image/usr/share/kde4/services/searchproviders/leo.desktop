@@ -1,0 +1,185 @@
+[Desktop Entry]
+Type=Service
+Name=LEO-Translate
+Name[af]=LEO-Vertaal
+Name[ar]=LEO-ترجم
+Name[as]=LEO-Translate
+Name[ast]=LEO-Translate
+Name[be]=LEO-Translate
+Name[be@latin]=Pierakład „LEO”
+Name[bg]=LEO-превод
+Name[bn]=LEO-Translate
+Name[bn_IN]=LEO-Translate
+Name[bs]=Leo‑prevod
+Name[ca]=LEO-Translate
+Name[ca@valencia]=LEO-Translate
+Name[cs]=LEO-Translate
+Name[csb]=LEO - dwastarnowi anielskò-miemiecczi
+Name[cy]=LEO-Cyfieithu
+Name[da]=LEO-Translate
+Name[de]=LEO – Übersetzung
+Name[el]=LEO-Translate
+Name[en_GB]=LEO-Translate
+Name[eo]=LEO-Tradukilo
+Name[es]=LEO-Translate
+Name[et]=LEO-Translate
+Name[eu]=LEO-Translate
+Name[fa]=LEO - ترجمه کردن
+Name[fi]=LEO-käännös
+Name[fr]=LEO-Translate
+Name[fy]=LEO-oersetting (oersetting: Dûtsk-Ingelsk-Dûtsk)
+Name[ga]=Aistriúchán LEO
+Name[gl]=Tradución con LEO
+Name[gu]=લીઓ-ટ્રાન્સલેટ
+Name[he]=תרגום LEO
+Name[hi]=लिओ-अनुवाद
+Name[hne]=लिओ-अनुवाद
+Name[hr]=LEO-Prevođenje
+Name[hsb]=LEO-přełožowanje
+Name[hu]=LEO-Translate
+Name[ia]=LEO-Traduce
+Name[id]=LEO-Translate
+Name[is]=LEO-þýðandi
+Name[it]=Traduzioni LEO
+Name[ja]=LEO-Translate
+Name[ka]=LEO-Translate
+Name[kk]=LEO-аудару
+Name[km]=LEO-បកប្រែ
+Name[kn]=ಲಿಯೋ-ಅನುವಾದ
+Name[ko]=LEO-번역
+Name[ku]=LEO-Wergerandin
+Name[lt]=LEO-Translate
+Name[lv]=LEO-tulkošana
+Name[mai]=लिओ-अनुवाद
+Name[mk]=LEO - превод
+Name[ml]=ലിയോ-പരിഭാഷ
+Name[mr]=लिओ-अनुवाद
+Name[ms]=LEO-Terjemah
+Name[nb]=LEO-oversetter
+Name[nds]=LEO-Översetten
+Name[ne]=LEO-अनुवाद
+Name[nl]=LEO-Translate (Vertaling Duits-Engels-Duits)
+Name[nn]=LEO-Translate
+Name[or]=LEO-ଅନୁବାଦ
+Name[pa]=LEO-ਟਰਾਂਸਲੇਟ
+Name[pl]=LEO - dwustronny słownik angielsko-niemiecki
+Name[pt]=LEO-Translate
+Name[pt_BR]=LEO-Tradutor
+Name[ro]=LEO-Translate
+Name[ru]=LEO-Translate
+Name[se]=LEO-Translate
+Name[si]=LEO-Translate
+Name[sk]=LEO-Translate
+Name[sl]=LEO-Translate
+Name[sr]=Лео‑превод
+Name[sr@ijekavian]=Лео‑превод
+Name[sr@ijekavianlatin]=Leo‑prevod
+Name[sr@latin]=Leo‑prevod
+Name[sv]=LEO-Translate
+Name[ta]=லியோ-மொழிபெயர்ப்பு
+Name[te]=LEO-అనువదించు
+Name[tg]=Тарҷумаҳои LEO
+Name[th]=บริการแปลภาษาของ LEO
+Name[tr]=LEO-Translate
+Name[ug]=LEO تەرجىمە
+Name[uk]=LEO-Translate
+Name[uz]=LEO tarjima
+Name[uz@cyrillic]=LEO таржима
+Name[vi]=Dịch bằng LEO
+Name[wa]=LEO-Translate
+Name[xh]=LEO-Guqulela
+Name[x-test]=xxLEO-Translatexx
+Name[zh_CN]=LEO-Translate
+Name[zh_TW]=LEO-Translate
+X-KDE-ServiceTypes=SearchProvider
+Keys=leo
+Query=http://dict.leo.org/?search=\\{@}
+Query[af]=http://dict.leo.org/?search=\\{@}
+Query[ar]=http://dict.leo.org/?search=\\{@}
+Query[as]=http://dict.leo.org/?search=\\{@}
+Query[ast]=http://dict.leo.org/?search=\\{@}
+Query[be]=http://dict.leo.org/?search=\\{@}
+Query[be@latin]=http://dict.leo.org/?search=\\{@}
+Query[bg]=http://dict.leo.org/?search=\\{@}
+Query[bn]=http://dict.leo.org/?search=\\{@}
+Query[bn_IN]=http://dict.leo.org/?search=\\{@}
+Query[br]=http://dict.leo.org/?search=\\{@}
+Query[bs]=http://dict.lio.org/?search=\\{@}
+Query[ca]=http://dict.leo.org/?search=\\{@}
+Query[ca@valencia]=http://dict.leo.org/?search=\\{@}
+Query[cs]=http://dict.leo.org/?search=\\{@}
+Query[csb]=http://dict.leo.org/?search=\\{@}
+Query[da]=http://dict.leo.org/?search=\\{@}
+Query[de]=http://dict.leo.org/?search=\\{@}
+Query[el]=http://dict.leo.org/?search=\\{@}
+Query[en_GB]=http://dict.leo.org/?search=\\{@}
+Query[eo]=http://dict.leo.org/?search=\\{@}
+Query[es]=http://dict.leo.org/?search=\\{@}
+Query[et]=http://dict.leo.org/?search=\\{@}
+Query[eu]=http://dict.leo.org/?search=\\{@}
+Query[fa]=http://dict.leo.org/?search=\\{@}
+Query[fi]=http://dict.leo.org/?search=\\{@}
+Query[fr]=http://dict.leo.org/?search=\\{@}
+Query[fy]=http://dict.leo.org/?search=\\{@}
+Query[ga]=http://dict.leo.org/?search=\\{@}
+Query[gl]=http://dict.leo.org/?search=\\{@}
+Query[gu]=http://dict.leo.org/?search=\\{@}
+Query[he]=http://dict.leo.org/?search=\\{@}
+Query[hi]=http://dict.leo.org/?search=\\{@}
+Query[hne]=http://dict.leo.org/?search=\\{@}
+Query[hr]=http://dict.leo.org/?search=\\{@}
+Query[hsb]=http://dict.leo.org/?search=\\{@}
+Query[hu]=http://dict.leo.org/?search=\\{@}
+Query[ia]=http://dict.leo.org/?search=\\{@}
+Query[id]=http://dict.leo.org/?search=\\{@}
+Query[is]=http://dict.leo.org/?search=\\{@}
+Query[it]=http://dict.leo.org/?search=\\{@}
+Query[ja]=http://dict.leo.org/?search=\\{@}
+Query[ka]=http://dict.leo.org/?search=\\{@}
+Query[kk]=http://dict.leo.org/?search=\\{@}
+Query[km]=http://dict.leo.org/?search=\\{@}
+Query[kn]=http://dict.leo.org/?search=\\{@}
+Query[ko]=http://dict.leo.org/?search=\\{@}
+Query[ku]=http://dict.leo.org/?search=\\{@}
+Query[lt]=http://dict.leo.org/?search=\\{@}
+Query[lv]=http://dict.leo.org/?search=\\{@}
+Query[mai]=http://dict.leo.org/?search=\\{@}
+Query[ml]=http://dict.leo.org/?search=\\{@}
+Query[mr]=http://dict.leo.org/?search=\\{@}
+Query[ms]=http://dict.leo.org/?search=\\{@}
+Query[nb]=http://dict.leo.org/?search=\\{@}
+Query[nds]=http://dict.leo.org/?search=\\{@}
+Query[ne]=http://dict.leo.org/?search=\\{@}
+Query[nl]=http://dict.leo.org/?search=\\{@}
+Query[nn]=http://dict.leo.org/?search=\\{@}
+Query[oc]=http://dict.leo.org/?search=\\{@}
+Query[or]=http://dict.leo.org/?search=\\{@}
+Query[pa]=http://dict.leo.org/?search=\\{@}
+Query[pl]=http://dict.leo.org/?search=\\{@}
+Query[pt]=http://dict.leo.org/?search=\\{@}
+Query[pt_BR]=http://dict.leo.org/?search=\\{@}
+Query[ro]=http://dict.leo.org/?search=\\{@}
+Query[ru]=http://dict.leo.org/?search=\\{@}
+Query[se]=http://dict.leo.org/?search=\\{@}
+Query[si]=http://dict.leo.org/?search=\\{@}
+Query[sk]=http://dict.leo.org/?search=\\{@}
+Query[sl]=http://dict.leo.org/?search=\\{@}
+Query[sr]=http://dict.leo.org/?search=\\{@}
+Query[sr@ijekavian]=http://dict.leo.org/?search=\\{@}
+Query[sr@ijekavianlatin]=http://dict.leo.org/?search=\\{@}
+Query[sr@latin]=http://dict.leo.org/?search=\\{@}
+Query[sv]=http://dict.leo.org/?search=\\{@}
+Query[ta]=http://dict.leo.org/?search=\\{@}
+Query[te]=http://dict.leo.org/?search=\\{@}
+Query[tg]=http://dict.leo.org/?search=\\{@}
+Query[th]=http://dict.leo.org/?search=\\{@}
+Query[tr]=http://dict.leo.org/?search=\\{@}
+Query[ug]=http://dict.leo.org/?search=\\{@}
+Query[uk]=http://dict.leo.org/?search=\\{@}
+Query[uz]=http://dict.leo.org/?search=\\{@}
+Query[uz@cyrillic]=http://dict.leo.org/?search=\\{@}
+Query[vi]=http://dict.leo.org/?search=\\{@}
+Query[wa]=http://dict.leo.org/?search=\\{@}
+Query[x-test]=xxhttp://dict.leo.org/?search=\\{@}xx
+Query[zh_CN]=http://dict.leo.org/?search=\\{@}
+Query[zh_TW]=http://dict.leo.org/?search=\\{@}

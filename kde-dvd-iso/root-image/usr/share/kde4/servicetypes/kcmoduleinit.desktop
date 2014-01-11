@@ -1,0 +1,99 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=KCModuleInit
+Name=KDE Configuration Initialization
+Name[af]=KDE konfigurasie opstelling
+Name[ar]=تمهيد إعدادات كدي
+Name[as]=KDE বিন্যাস আৰম্ভ কৰা
+Name[ast]=Aniciu de la configuración de KDE
+Name[be@latin]=Inicyjalizacyja naładžvańnia KDE
+Name[bg]=Стартиране настройването на KDE
+Name[bn]=কে.ডি.ই. কনফিগারেশন সূচনা
+Name[bn_IN]=KDE কনফিগারেশন প্রারম্ভকরণ
+Name[bs]=Pripremanje postave KDE‑a
+Name[ca]=Inicialització de la configuració del KDE
+Name[ca@valencia]=Inicialització de la configuració del KDE
+Name[cs]=Inicializace nastavení KDE
+Name[csb]=Inicjalëzacëjô kònfigùracëji KDE
+Name[da]=Konfigurationsinitialisering for KDE
+Name[de]=Kontrollmodul-Initialisierung
+Name[el]=Αρχικοποίηση ρυθμίσεων του KDE
+Name[en_GB]=KDE Configuration Initialisation
+Name[eo]=Pravalorizo de KDE-agordo
+Name[es]=Inicialización de la configuración de KDE
+Name[et]=KDE seadistamise initsialiseerimine
+Name[eu]=KDE konfigurazio hasierapena
+Name[fa]=مقداردهی اولیه پیکربندی KDE
+Name[fi]=KDE:n asetusten alustus
+Name[fr]=Initialisation de la configuration de KDE
+Name[fy]=KDE-konfiguraasje tarieding
+Name[ga]=Túsú Cumraíochta KDE
+Name[gl]=Inicialización da configuración do KDE
+Name[gu]=KDE રૂપરેખાંકન શરૂઆત
+Name[he]=איתחול ההגדרות של KDE
+Name[hi]=केडीई कॉन्फ़िगरेशन इनिशिअलाइज़ेशन
+Name[hne]=केडीई कान्फिगरेसन इनिसिअलाइजेसन
+Name[hr]=Inicijalizacija KDE-ove konfiguracije
+Name[hsb]=Inicializacija za konfiguraciju KDE
+Name[hu]=KDE konfigurációkészítő
+Name[ia]=Initialization de le configuration de KDE
+Name[id]=Inisialisasi Konfigurasi KDE
+Name[is]=Ræsing KDE stillinga
+Name[it]=Inizializzazione della configurazione KDE
+Name[ja]=KDE 設定の初期化
+Name[kk]=KDE баптауын бастау күйіне келтіру
+Name[km]=ការ​ចាប់​ផ្តើម​ការ​កំណត់​រចនាសម្ព័ន្ធ​ KDE
+Name[kn]=ಕೆಡಿಇ ಸಂರಚನಾ ಮೊದಲುಗೊಳಿಸುವಿಕೆ
+Name[ko]=KDE 설정 초기화
+Name[ku]=Destpêka Veavakirina KDE
+Name[lt]=KDE konfigūravimo inicijavimas
+Name[lv]=KDE konfigurācijas inicializācija
+Name[mai]=केडीई बिन्यास आरंभीकरण
+Name[mk]=Иницијализација на конфигурација за KDE
+Name[ml]=കെഡിഇയിലെ സജ്ജീകരണങ്ങളുടെ തുടക്കം
+Name[mr]=केडीई व्यूहरचना प्रारंभ
+Name[nb]=Klargjøring av KDE-oppsett
+Name[nds]=KDE-Instellentorechtmaken
+Name[ne]=केडीई कन्फिगरेसन सुरुआत
+Name[nl]=KDE-configuratie initialiseren
+Name[nn]=KDE-oppsettsklargjering
+Name[or]=KDE ବିନ୍ୟାସ ପ୍ରାରମ୍ଭିକରଣ
+Name[pa]=KDE ਸੰਰਚਨਾ ਸ਼ੁਰੂਆਤ
+Name[pl]=Inicjacja konfiguracji KDE
+Name[ps]=کډي سازونې پېلونه
+Name[pt]=Inicialização da Configuração do KDE
+Name[pt_BR]=Inicialização da configuração do KDE
+Name[ro]=Inițializare configurare KDE
+Name[ru]=Открытие конфигурации KDE
+Name[se]=KDE-heivehusgárvvisteapmi
+Name[sk]=Inicializácia konfigurácie KDE
+Name[sl]=Začetno nastavljanje KDE-ja
+Name[sr]=Припремање поставе КДЕ‑а
+Name[sr@ijekavian]=Припремање поставе КДЕ‑а
+Name[sr@ijekavianlatin]=Pripremanje postave KDE‑a
+Name[sr@latin]=Pripremanje postave KDE‑a
+Name[sv]=Initiering av KDE-inställningar
+Name[ta]=கேபசூ வடிவமைப்பு தொடங்கி
+Name[tg]=Омодасозии танзимшавандаи KDE
+Name[th]=เริ่มการปรับแต่งค่า KDE
+Name[tr]=KDE Yapılandırma İlklendirmesi
+Name[tt]=KDE көйләүләрен башлап җибә
+Name[ug]=KDE سەپلىمە دەسلەپلەشتۈرۈش
+Name[uk]=Ініціалізація налаштувань KDE
+Name[vi]=Khởi tạo cấu hình KDE
+Name[wa]=Inicialijhaedje di l' apontiaedje di KDE
+Name[x-test]=xxKDE Configuration Initializationxx
+Name[zh_CN]=KDE 配置初始化
+Name[zh_TW]=KDE 控制初始化
+
+# the symbol (with or without the kcminit_ prefix) used by kcminit
+[PropertyDef::X-KDE-Init-Symbol]
+Type=QString
+
+# the library (with or without the kcminit_ prefix) used by kcminit (if it's not specified it defaults to X-KDE-Library with kcm_ prefix)
+[PropertyDef::X-KDE-Init-Library]
+Type=QString
+
+# the startup phase in which the kcminit code should be called
+[PropertyDef::X-KDE-Init-Phase]
+Type=Int

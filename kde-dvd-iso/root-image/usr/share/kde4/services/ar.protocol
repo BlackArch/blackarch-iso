@@ -1,0 +1,11 @@
+[Protocol]
+exec=kio_archive
+protocol=ar
+archiveMimetype=application/x-archive
+input=filesystem
+output=filesystem
+listing=Name,Type,Size,Date,Access,Owner,Group,Link
+reading=true
+source=true
+Icon=package-x-generic
+Class=:local

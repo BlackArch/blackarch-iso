@@ -40,7 +40,7 @@ su -c 'pacman-key --lsign-key 4345771566D76038C7FEB43863EC0ADBEA87E4E3' root
 su -c 'pacman -Syyu --noconfirm' root
 
 # fix wrong permissions for blackarch-dwm
-su -c 'chmod 755 /usr/local/bin/blackarch-dwm'
+#su -c 'chmod 755 /usr/local/bin/blackarch-dwm'
 
 # blackarch-install (dev version)
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root

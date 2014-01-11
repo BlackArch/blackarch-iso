@@ -40,3 +40,4 @@ usbmux:x:140:
 mysql:x:89:
 adbusers:x:148:
 stunnel:x:199:
+gdm:x:120:

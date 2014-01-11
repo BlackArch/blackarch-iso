@@ -1,0 +1,96 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=SystemSettingsCategory
+Name=System Settings Category
+Name[ar]=فئة إعدادات النظام
+Name[ast]=Categoría de preferencies del sistema
+Name[be]=Катэгорыя сістэмных настаўленняў
+Name[be@latin]=Katehoryja systemnych naładaŭ
+Name[bg]=Категория системни настройки
+Name[bn]=সিস্টেম সেটিংস শ্রেণী
+Name[bs]=Kategorija sistemskih postavki
+Name[ca]=Categoria d'arranjament del sistema
+Name[ca@valencia]=Categoria d'arranjament del sistema
+Name[cs]=Kategorie systémových nastavení
+Name[csb]=Kategòrëjô systemòwégò nastôwù
+Name[da]=Kategori af Systemindstillinger
+Name[de]=Systemeinstellungen-Kategorie
+Name[el]=Κατηγορία ρυθμίσεων συστήματος
+Name[en_GB]=System Settings Category
+Name[eo]=Sistemagorda kategorio
+Name[es]=Categoría de preferencias del sistema
+Name[et]=Süsteemi seadistuste kategooria
+Name[eu]=Sistema ezarpenen kategoria
+Name[fa]=دسته تنظیمات سیستم
+Name[fi]=Järjestelmäasetusten luokka
+Name[fr]=Catégorie des paramètres du système
+Name[fy]=Systeem ynstellings katogory
+Name[ga]=Catagóir Socruithe an Chórais
+Name[gl]=Categoría de configuración do sistema
+Name[gu]=સિસ્ટમ ગોઠવણીઓ વર્ગ
+Name[he]=קטגוריית הגדרות מערכת
+Name[hi]=तंत्र विन्यास वर्ग
+Name[hne]=तंत्र सेटिंग वर्ग
+Name[hr]=Kategorija sustavskih postavki
+Name[hu]=Rendszerbeállítási kategória
+Name[ia]=Categoria de preferentias de systema
+Name[id]=Kategori Pengaturan Sistem
+Name[is]=Kerfisstillingaflokkur
+Name[it]=Categoria delle impostazioni di sistema
+Name[ja]=システム設定のカテゴリ
+Name[kk]=Жүйе параметрлер санаты
+Name[km]=ប្រភេទ​ការ​កំណត់​ប្រព័ន្ធ​
+Name[kn]=ವ್ಯವಸ್ಥಾ ಸಂಯೋಜನೆಗಳ ಪಂಗಡ
+Name[ko]=시스템 설정 분류
+Name[ku]=Kategoriya Mîhengên Pergalê
+Name[lt]=Sistemos nustatymų kategorija
+Name[lv]=Sistēmas iestatījumu kategorija
+Name[mai]=तंत्र सेटिंग वर्ग
+Name[mk]=Категорија со системски поставувања
+Name[ml]=സിസ്റ്റം സജ്ജീകരണങ്ങളുടെ വിഭാഗം
+Name[mr]=प्रणाली संयोजना वर्ग
+Name[nb]=Kategori for systeminnstillinger
+Name[nds]=Kategorie Systeeminstellen
+Name[ne]=प्रणाली सेटिङ कोटि
+Name[nl]=Systeeminstellingen-catagorie
+Name[nn]=Kategori for systemval
+Name[or]=ତନ୍ତ୍ର ବିନ୍ୟାସ ବିଭାଗ
+Name[pa]=ਸਿਸਟਮ ਸੈਟਿੰਗ ਕੈਟਾਗਰੀ
+Name[pl]=Kategoria ustawień systemowych
+Name[pt]=Categoria da Configuração do Sistema
+Name[pt_BR]=Categoria das configurações do sistema
+Name[ro]=Categorie Configurări de sistem
+Name[ru]=Настройка системы
+Name[se]=Vuogádatheivehusaid láhki
+Name[si]=පද්ධති සැකසුම් ප්‍රභේද
+Name[sk]=Kategória systémových nastavení
+Name[sl]=Kategorija sistemskih nastavitev
+Name[sr]=Категорија системских поставки
+Name[sr@ijekavian]=Категорија системских поставки
+Name[sr@ijekavianlatin]=Kategorija sistemskih postavki
+Name[sr@latin]=Kategorija sistemskih postavki
+Name[sv]=Systeminställningskategori
+Name[ta]=System Settings Category
+Name[te]=సిస్టమ్ అమరికల వర్గము
+Name[tg]=Категория параметров системы
+Name[th]=หมวดหมู่การตั้งค่าระบบ
+Name[tr]=Sistem Ayarları Kategorisi
+Name[ug]=سىستېما تەڭشەك كاتېگورىيىسى
+Name[uk]=Категорія системних параметрів
+Name[vi]=Thể loại trong Thiết lập hệ thống
+Name[wa]=Categoreye d' apontiaedjes do sistinme
+Name[x-test]=xxSystem Settings Categoryxx
+Name[zh_CN]=系统设置类别
+Name[zh_TW]=系統設定類別
+
+# the category identifier
+[PropertyDef::X-KDE-System-Settings-Category]
+Type=QString
+
+# the parent category identifier
+[PropertyDef::X-KDE-System-Settings-Parent-Category]
+Type=QString
+
+# parent category identifier version 2
+[PropertyDef::X-KDE-System-Settings-Parent-Category-V2]
+Type=QString

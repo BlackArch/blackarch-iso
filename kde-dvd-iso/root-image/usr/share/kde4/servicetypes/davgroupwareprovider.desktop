@@ -1,0 +1,67 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=DavGroupwareProvider
+Name=DAV Groupware resource provider
+Name[bs]=DAV dobavljać grupnih resursa
+Name[ca]=Proveïdor de recurs de treball en grup DAV
+Name[ca@valencia]=Proveïdor de recurs de treball en grup DAV
+Name[da]=Ressourceudbyder til DAV-groupware
+Name[de]=DAV-Groupware-Ressource-Anbieter
+Name[el]=Πάροχος πόρου DAV groupware
+Name[es]=Proveedor de recurso de trabajo en grupo DAV
+Name[et]=DAV grupitöö ressursi pakkuja
+Name[fi]=DAV-työryhmäresurssitarjoaja
+Name[fr]=Fournisseur de ressources pour logiciels de collaboration DAV
+Name[ga]=Soláthraí acmhainní groupware DAV
+Name[gl]=Fornecedor de recursos de grupo DAV
+Name[hu]=DAV csoportmunka-erőforrás szolgáltató
+Name[ia]=Fornitor de ressource de DAV Groupware
+Name[it]=Fornitore di risorsa di groupware DAV
+Name[kk]=DAV топтық жұмыс ресурс провайдері
+Name[km]=ក្រុមហ៊ុន​ផ្ដល់​ធនធាន DAV Groupware
+Name[ko]=DAV 그룹웨어 자원 공급자
+Name[lt]=DAV grupinės įrangos išteklių tiekėjas
+Name[lv]=DAV grupprogrammatūras resursa nodrošinātājs
+Name[nb]=DAV Groupware-ressursleverandør
+Name[nds]=Anbeder vun en DAV-Arbeitkoppel-Ressource
+Name[nl]=Leverancier van DAV-groupware-hulpbron
+Name[pl]=Dostawca zasobu Groupware DAV
+Name[pt]=Fornecedor de recursos de 'groupware' em DAV
+Name[pt_BR]=Provedor de recursos de groupware em DAV
+Name[ru]=Поставщик ресурсов совместной работы DAV
+Name[sk]=Poskytovateľ zdroja DAV Groupware
+Name[sl]=Ponudnik vira za skupinsko delo DAV
+Name[sr]=Добављач групверских ДАВ ресурса
+Name[sr@ijekavian]=Добављач групверских ДАВ ресурса
+Name[sr@ijekavianlatin]=Dobavljač grupverskih DAV resursa
+Name[sr@latin]=Dobavljač grupverskih DAV resursa
+Name[sv]=Leverantör av DAV-grupprogramresurs
+Name[tr]=DAV Groupware kaynak sağlayıcı
+Name[uk]=Надавач ресурсу групової роботи DAV
+Name[x-test]=xxDAV Groupware resource providerxx
+Name[zh_CN]=DAV 群件资源提供方
+Name[zh_TW]=DAV 群組資源提供者
+
+[PropertyDef::X-DavGroupware-SupportedProtocols]
+Type=QStringList
+
+[PropertyDef::X-DavGroupware-InstallationPath]
+Type=QString
+
+[PropertyDef::X-DavGroupware-ProviderUsesSSL]
+Type=bool
+
+[PropertyDef::X-DavGroupware-CalDavHost]
+Type=QString
+
+[PropertyDef::X-DavGroupware-CalDavPath]
+Type=QString
+
+[PropertyDef::X-DavGroupware-CardDavHost]
+Type=QString
+
+[PropertyDef::X-DavGroupware-CardDavPath]
+Type=QString
+
+[PropertyDef::X-DavGroupware-GroupDavPath]
+Type=QString

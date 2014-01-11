@@ -3,10 +3,13 @@ State=AAAA/wAAAAD9AAAAAAAABNIAAAKGAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG
 Width 1440=1234
 
 [General]
+ShowHidden=false
 SplitterSizes=567,664
 
 [KFileDialog Settings]
 Height 900=437
+Recent Files[$e]=blackarch.png,/home/arthur/blackarch/own/blackarchiso/elken/blackarch/blackarch.png
+Recent URLs[$e]=/home/arthur/blackarch/own/blackarchiso/elken/blackarch/
 Width 1440=720
 
 [MainWindow]
@@ -14,3 +17,11 @@ Height 900=696
 State=AAAA/wAAAAD9AAAAAAAABNIAAAKGAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 Width 1440=1234
+
+[Spelling]
+backgroundCheckerEnabled=true
+checkUppercase=true
+checkerEnabledByDefault=false
+defaultClient=
+defaultLanguage=en_US
+skipRunTogether=true

@@ -128,10 +128,14 @@ tracker-needle=
 tracker-preferences=
 uxterm=
 xterm=
+xterm-2=2014-01-11
 
 [Containments][1][Applets][6][Configuration][Applets][12][PopupApplet]
 DialogHeight=92
 DialogWidth=310
+
+[Containments][1][Applets][6][Configuration][Shortcuts]
+SystemTray-Klipper-6=Ctrl+Alt+V
 
 [Containments][13]
 activity=
@@ -172,20 +176,19 @@ hideWhenSingleDesktop=true
 Order=2
 
 [Containments][13][Applets][17]
-geometry=174,2,960,25
+geometry=174,2,942,25
 immutability=1
 plugin=tasks
 zvalue=0
 
 [Containments][13][Applets][17][Configuration][Launchers]
-Items=preferred://filemanager?wmClass=%20
-filemanager=preferred://filemanager, , ,\s
+Items=
 
 [Containments][13][Applets][17][LayoutInformation]
 Order=3
 
 [Containments][13][Applets][18]
-geometry=1138,2,141,25
+geometry=1120,2,141,25
 immutability=1
 plugin=systemtray
 zvalue=0
@@ -214,6 +217,10 @@ geometry=0,0,24,24
 immutability=1
 plugin=org.kde.notifications
 zvalue=0
+
+[Containments][13][Applets][18][Configuration][Applets][21][PopupApplet]
+DialogHeight=107
+DialogWidth=342
 
 [Containments][13][Applets][18][Configuration][Applets][21][Shortcuts]
 global=
@@ -247,7 +254,7 @@ SystemTray-Klipper-18=Ctrl+Alt+V
 Order=4
 
 [Containments][13][Applets][19]
-geometry=1283,2,133,25
+geometry=1265,2,151,25
 immutability=1
 plugin=digital-clock
 zvalue=0
@@ -281,6 +288,9 @@ geometry=0,2,25,25
 immutability=1
 plugin=simplelauncher
 zvalue=0
+
+[Containments][13][Applets][26][Configuration]
+icon=/home/arthur/blackarch/own/blackarchiso/elken/blackarch/blackarch.png
 
 [Containments][13][Applets][26][LayoutInformation]
 Order=0

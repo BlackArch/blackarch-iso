@@ -1,0 +1,29 @@
+[Protocol]
+# The executable, of course
+#### Temporary name
+exec=kio_imap4
+# protocol that will appear in URLs
+protocol=imap
+
+# input/output can be one of: filesystem, stream, none
+input=stream
+output=filesystem
+
+# Headings for file listings?
+listing=Name,Type,Size,Owner
+deleting=true
+linking=false
+# For now, reading yes, writing no
+reading=true
+writing=false
+# For now, no moving
+moving=false
+
+# Can be source protocol
+source=true
+
+# List of capabilities (e.g. special() commands)
+Capabilities=Subscription,ACL,Quota
+
+Icon=mail-folder-inbox
+X-DocPath=kioslave/imap/index.html

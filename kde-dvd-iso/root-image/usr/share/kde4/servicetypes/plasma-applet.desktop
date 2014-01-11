@@ -1,0 +1,96 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=Plasma/Applet
+
+Comment=Plasma applet
+Comment[ar]=بريمج بلازما
+Comment[as]=Plasma এপ্লেট
+Comment[ast]=Miniaplicación Plasma
+Comment[be@latin]=Aplet „Plasma”
+Comment[bg]=Аплет за Plasma
+Comment[bn]=প্লাসমা অ্যাপলেট
+Comment[bn_IN]=Plasma অ্যাপ্লেট
+Comment[bs]=Plazma aplet
+Comment[ca]=Miniaplicació del Plasma
+Comment[ca@valencia]=Miniaplicació del Plasma
+Comment[cs]=Plasma applet
+Comment[da]=Plasma-applet
+Comment[de]=Plasma-Miniprogramm
+Comment[el]=Μικροεφαρμογή plasma
+Comment[en_GB]=Plasma applet
+Comment[eo]=Plasma apleto
+Comment[es]=Miniaplicación para Plasma
+Comment[et]=Plasma aplett
+Comment[eu]=Plasma appleta
+Comment[fi]=Plasma-sovelma
+Comment[fr]=Applet Plasma
+Comment[fy]=Plasma Applet
+Comment[ga]=Feidhmchláirín Plasma
+Comment[gl]=Applet de Plasma
+Comment[gu]=પ્લાઝમા એપ્લેટ
+Comment[he]=יישומון של Plasma
+Comment[hi]=प्लासमा एप्पलेट
+Comment[hne]=प्लाज्मा एपलेट
+Comment[hr]=Plasma applet
+Comment[hsb]=Plasma applet
+Comment[hu]=Plasma-kisalkalmazás
+Comment[hy]=Պլազմա ապլետ
+Comment[ia]=Applet Plasma
+Comment[id]=Applet Plasma
+Comment[is]=Plasma smáforrit
+Comment[it]=Applet Plasma
+Comment[ja]=Plasma アプレット
+Comment[kk]=Plasma апплеті
+Comment[km]=អាប់ភ្លេត​ប្លាស្មា
+Comment[kn]=ಪ್ಲಾಸ್ಮಾ ಅನ್ವಯಾಂಶ (ಆಪ್ಲೆಟ್)
+Comment[ko]=Plasma 애플릿
+Comment[ku]=Sepanoka Plasma
+Comment[lt]=Plasma įskiepis
+Comment[lv]=Plasma aplets
+Comment[mai]=प्लाजमा एप्पलेट
+Comment[ml]=പ്ലാസ്മ ലഘുപ്രയോഗം
+Comment[mr]=प्लाज्मा एप्लेट
+Comment[nb]=Plasma miniprogram
+Comment[nds]=Plasma-Lüttprogramm
+Comment[nl]=Plasma-applet
+Comment[nn]=Plasma-element
+Comment[pa]=ਪਾਲਜ਼ਮਾ ਐਪਲਿਟ
+Comment[pl]=Aplet Plazmy
+Comment[pt]='Applet' do Plasma
+Comment[pt_BR]=Miniaplicativo do Plasma
+Comment[ro]=Miniaplicație Plasma
+Comment[ru]=Виджет Plasma
+Comment[se]=Plasma-prográmmaš
+Comment[si]=Plasma යෙදුම්පත
+Comment[sk]=Plasma aplet
+Comment[sl]=Plasma aplet
+Comment[sr]=Плазма аплет
+Comment[sr@ijekavian]=Плазма аплет
+Comment[sr@ijekavianlatin]=Plasma aplet
+Comment[sr@latin]=Plasma aplet
+Comment[sv]=Plasma-miniprogram
+Comment[ta]=பிளாஸ்மா ஆப்லெட்
+Comment[tg]=Барномаи Plasma
+Comment[th]=แอพเพล็ตของพลาสมา
+Comment[tr]=Plasma programcığı
+Comment[tt]=Plasma кушымтасы
+Comment[ug]=Plasma قوللانچاق
+Comment[uk]=Аплет Плазми
+Comment[vi]=Tiểu dụng Plasma
+Comment[wa]=Aplikete di Plasma
+Comment[x-test]=xxPlasma appletxx
+Comment[zh_CN]=Plasma 小程序
+Comment[zh_TW]=Plasma 小程式
+
+[PropertyDef::X-Plasma-API]
+Type=QString
+
+[PropertyDef::X-Plasma-DropMimeTypes]
+Type=QStringList
+
+[PropertyDef::X-Plasma-DropUrlPatterns]
+Type=QStringList
+
+[PropertyDef::X-Plasma-DefaultSize]
+Type=QSize
+

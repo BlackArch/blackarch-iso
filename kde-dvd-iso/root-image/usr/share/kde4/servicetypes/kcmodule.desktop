@@ -1,0 +1,116 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=KCModule
+Name=KDE Configuration Module
+Name[af]=KDE konfigurasiemodule
+Name[ar]=وحدة تحكم كدي
+Name[as]=KDE বিন্যাসৰ অংশ
+Name[ast]=Modulu de configuración de KDE
+Name[be]=Модуль настаўлення KDE
+Name[be@latin]=Modul naładžvańnia KDE
+Name[bg]=Контролен модул на KDE
+Name[bn]=কে.ডি.ই. কনফিগারেশন মডিউল
+Name[bn_IN]=KDE কনফিগারেশন মডিউল
+Name[br]=Mollad kreizenn ren KDE
+Name[bs]=KDE modul za podešavanje
+Name[ca]=Mòdul de configuració del KDE
+Name[ca@valencia]=Mòdul de configuració del KDE
+Name[cs]=Ovládací modul KDE
+Name[csb]=Kòntrolny mòduł pùltu KDE
+Name[da]=KDE konfigurationsmodul
+Name[de]=KDE-Kontrollmodul
+Name[el]=Άρθρωμα ρύθμισης του KDE
+Name[en_GB]=KDE Configuration Module
+Name[eo]=KDE-agordomodulo
+Name[es]=Módulo de configuración de KDE
+Name[et]=KDE seadistamismoodul
+Name[eu]=KDE konfigurazio modulua
+Name[fa]=پیمانه پیکربندی KDE
+Name[fi]=KDE:n asetusosio
+Name[fr]=Module de configuration de KDE
+Name[fy]=KDE konfiguraasjemodule
+Name[ga]=Modúl Cumraíochta KDE
+Name[gl]=Módulo de configuración do KDE
+Name[gu]=KDE રૂપરેખાંકન મોડ્યુલ
+Name[he]=מודול הגדרות של KDE
+Name[hi]=केडीई कॉन्फ़िगरेशन मॉड्यूल
+Name[hne]=केडीई कान्फिगरेसन माड्यूल
+Name[hr]=KDE-ov konfiguracijski modul
+Name[hsb]=Modul za konfigurowanje KDE
+Name[hu]=KDE beállítómodul
+Name[hy]=KDE-ի կերպարանքի մոդուլ
+Name[ia]=Modulo de configuration de KDE
+Name[id]=Modul Konfigurasi KDE
+Name[is]=KDE stillingaeining
+Name[it]=Modulo di configurazione KDE
+Name[ja]=KDE 設定モジュール
+Name[kk]=KDE баптау модулі
+Name[km]=ម៉ូឌុល​កំណត់​រចនាសម្ព័ន្ធ​របស់ KDE
+Name[kn]=ಕೆಡಿಇ ಸಂರಚನಾ ಘಟಕ
+Name[ko]=KDE 제어 모듈
+Name[ku]=Modûla Veavakirina KDE
+Name[lt]=KDE konfigūravimo modulis
+Name[lv]=KDE konfigurācijas modulis
+Name[mai]=केडीई बिन्यास मोड्यूल
+Name[mk]=KDE-модул за конфигурација
+Name[ml]=കെഡിഇയിലെ സജ്ജീകരണങ്ങള്‍ക്കുള്ള മൊഡ്യൂള്‍
+Name[mr]=केडीई व्यूहरचना विभाग
+Name[nb]=KDE kontrollsenter-modul
+Name[nds]=KDE-Kuntrullmoduul
+Name[ne]=केडीई कन्फिगरेसन मोड्युल
+Name[nl]=KDE-configuratiemodule
+Name[nn]=KDE-oppsettsmodul
+Name[or]=KDE ବିନ୍ୟାସ ଏକକାଂଶ
+Name[pa]=KDE ਸੰਰਚਨਾ ਮੋਡੀਊਲ
+Name[pl]=Moduł konfiguracji KDE
+Name[ps]=کډي سازونې بېلګه
+Name[pt]=Módulo de Configuração do KDE
+Name[pt_BR]=Módulo de configuração do KDE
+Name[ro]=Modul de configurare KDE
+Name[ru]=Модуль настройки KDE
+Name[se]=KDE-heivehusmodula
+Name[si]=KDE සැකසුම් මොඩියුලය
+Name[sk]=Ovládací modul KDE
+Name[sl]=Modul za nastavljanje KDE
+Name[sr]=КДЕ модул за подешавање
+Name[sr@ijekavian]=КДЕ модул за подешавање
+Name[sr@ijekavianlatin]=KDE modul za podešavanje
+Name[sr@latin]=KDE modul za podešavanje
+Name[sv]=KDE-inställningsmodul
+Name[ta]=கேபசூ வடிவமைப்பு பாகம்
+Name[te]=కెడిఈ అమరిక మాడ్యూల్
+Name[tg]=Модули танзимшавандаи KDE
+Name[th]=มอดูลปรับแต่งค่าของ KDE
+Name[tr]=KDE Yapılandırma Modülü
+Name[tt]=KDE көйләү модуле
+Name[ug]=KDE سەپلىمە بۆلىكى
+Name[uk]=Модуль налаштування KDE
+Name[vi]=Mô-đun Cấu hình KDE
+Name[wa]=Module d' apontiaedje di KDE
+Name[x-test]=xxKDE Configuration Modulexx
+Name[zh_CN]=KDE 配置模块
+Name[zh_TW]=KDE 控制模組
+
+# the name of the method (with or without the init_ prefix) returning the factory object
+[PropertyDef::X-KDE-FactoryName]
+Type=QString
+
+# a list of all components this KCM belongs to
+[PropertyDef::X-KDE-ParentComponents]
+Type=QStringList
+
+# the id of the parent in the TreeList
+[PropertyDef::X-KDE-CfgDlgHierarchy]
+Type=QString
+
+# the id of the parent in the TreeList for System Settings
+[PropertyDef::X-KDE-System-Settings-Parent-Category]
+Type=QString
+
+# the id of the parent category in the TreeList for KInfoCenter
+[PropertyDef::X-KDE-KInfoCenter-Category]
+Type=QString
+
+# sets the order of the modules in the TreeList/IconList
+[PropertyDef::X-KDE-Weight]
+Type=int

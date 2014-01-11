@@ -1,0 +1,144 @@
+[Desktop Entry]
+Type=Service
+Name=Google Movies
+Name[af]=Google Films
+Name[ar]=أفلام جوجل
+Name[as]=Google Movies
+Name[ast]=Películes de Google
+Name[be]=Фільмы Google
+Name[be@latin]=Filmy „Google”
+Name[bg]=Филми в Google
+Name[bn]=গুগল্ মুভিস্
+Name[bn_IN]=Google মুভিস
+Name[br]=Filmoù Google
+Name[bs]=Google filmovi
+Name[ca]=Pel·lícules Google
+Name[ca@valencia]=Pel·lícules Google
+Name[cs]=Google filmy
+Name[csb]=Google - filmë
+Name[da]=Google film
+Name[de]=Google-Filmesuche
+Name[el]=Google ταινίες
+Name[en_GB]=Google Movies
+Name[eo]=Guglo Filmoj
+Name[es]=Películas de Google
+Name[et]=Google Movies
+Name[eu]=Google filmak
+Name[fa]=فیلمهای گوگل
+Name[fi]=Googlen elokuvahaku
+Name[fr]=Vidéos « Google »
+Name[fy]=Google Films
+Name[ga]=Scannáin Google
+Name[gl]=Google Movies
+Name[gu]=ગુગલ ચિત્રપટો
+Name[he]=‏Google סרטים
+Name[hi]=गूगल सिनेमा
+Name[hne]=गूगल सिनेमा
+Name[hr]=Google filmovi
+Name[hsb]=Google filmy
+Name[hu]=Google filmek
+Name[ia]=Google Movies
+Name[id]=Google Movies
+Name[is]=Google kvikmyndir
+Name[it]=Film di Google
+Name[ja]=Google Movies
+Name[ka]=Google ფილმები
+Name[kk]=Google фильмдер
+Name[km]=ភាព​យន្ត​តាម​​ហ្គូហ្គល
+Name[kn]=ಗೂಗಲ್ ಚಲಚ್ಚಿತ್ರಗಳು
+Name[ko]=Google 영화
+Name[ku]=Fîlmên Google
+Name[lt]=Google filmai
+Name[lv]=Google filmas
+Name[mai]=गूगल सिनेमा
+Name[mk]=Google - филмови
+Name[ml]=ഗൂഗിള്‍ ചലചിത്രങ്ങള്‍
+Name[mr]=गूगल सिनेमा
+Name[ms]=Wayang Google
+Name[nb]=Filmsøk i Google
+Name[nds]=Google-Filmen
+Name[ne]=गुगल चलचित्र
+Name[nl]=Google Movies
+Name[nn]=Google filmar
+Name[oc]=Films Google
+Name[or]=Google ଚଳଚିତ୍ର
+Name[pa]=Google ਫਿਲਮਾਂ
+Name[pl]=Google - filmy
+Name[pt]=Filmes do Google
+Name[pt_BR]=Google Movies
+Name[ro]=Filme Google
+Name[ru]=Киноафиша Google
+Name[se]=Google filmmat
+Name[si]=Google සිනමා
+Name[sk]=Google filmy
+Name[sl]=Filmi Google
+Name[sr]=Гугл‑филмови
+Name[sr@ijekavian]=Гугл‑филмови
+Name[sr@ijekavianlatin]=Google-filmovi
+Name[sr@latin]=Google-filmovi
+Name[sv]=Google filmer
+Name[ta]=கூகுல் படங்கள்
+Name[te]=గూగుల్ చలనచిత్రాలు
+Name[tg]=Видеоҳои Google
+Name[th]=ค้นหาภาพยนตร์ด้วยกูเกิล
+Name[tr]=Google Filmleri
+Name[ug]=Google كىنولار
+Name[uk]=Фільми на Google
+Name[uz]=Google - Kino
+Name[uz@cyrillic]=Google - Кино
+Name[vi]=Tìm phim ảnh qua Google
+Name[wa]=Google Movies
+Name[x-test]=xxGoogle Moviesxx
+Name[zh_CN]=Google 电影
+Name[zh_TW]=Google 電影
+X-KDE-ServiceTypes=SearchProvider
+Keys=ggmovie
+Query=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[bg]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[bs]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ca]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ca@valencia]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[cs]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[da]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[de]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[el]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[es]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[eu]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[fi]=http://www.google.fi/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[fr]=http://www.google.fr/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[gl]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[hi]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[hr]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[hu]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ia]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[is]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[it]=http://www.google.it/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ja]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[kk]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ko]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[lt]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[nb]=http://www.google.no/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[nl]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[nn]=http://www.google.com/search?hl=nn&q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pa]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pl]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pt]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[pt_BR]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ro]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ru]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[se]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sk]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sl]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr@ijekavian]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr@ijekavianlatin]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sr@latin]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[sv]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[tr]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[ug]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[uk]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[wa]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[x-test]=xxhttp://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8xx
+Query[zh_CN]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[zh_TW]=http://www.google.com/search?q=\\{@}&ie=UTF-8&oe=UTF-8
+Charset=utf8

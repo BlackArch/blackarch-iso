@@ -1,0 +1,120 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=ggc,googlecode,ggcode
+Name=Google Code
+Name[ar]=شفرة جوجل
+Name[ast]=Google Code
+Name[bg]=Код в Google
+Name[bn]=গুগল কোড
+Name[bs]=Google Code
+Name[ca]=Google Code
+Name[ca@valencia]=Google Code
+Name[cs]=Google Code
+Name[da]=Google Code
+Name[de]=Google Code
+Name[el]=Google Code
+Name[en_GB]=Google Code
+Name[eo]=Guglo Kodo
+Name[es]=Google Code
+Name[et]=Google Code
+Name[eu]=Google Code
+Name[fa]=گوگل کد
+Name[fi]=Google Code
+Name[fr]=Code « Google »
+Name[ga]=Cód Google
+Name[gl]=Google Code
+Name[gu]=ગુગલ કોડ
+Name[he]=Google Code
+Name[hi]=गूगल कोड
+Name[hr]=Google Code
+Name[hu]=Google Code
+Name[ia]=Google Movies
+Name[id]=Google Code
+Name[is]=Google kóði
+Name[it]=Codice di Google
+Name[ja]=Google Code
+Name[kk]=Google Code
+Name[km]=កូដ​​​ហ្គូហ្គល
+Name[kn]=ಗೂಗಲ್ ಕೋಡ್
+Name[ko]=Google 코드
+Name[lt]=Google Kodas
+Name[lv]=Google Code
+Name[mai]=गूगल कोड
+Name[mr]=गूगल कोड
+Name[nb]=Google Code
+Name[nds]=Google-Kode
+Name[nl]=Google Code
+Name[nn]=Google Code
+Name[pa]=Google ਕੋਡ
+Name[pl]=Google - kod źródłowy
+Name[pt]=Código do Google
+Name[pt_BR]=Google Code
+Name[ro]=Cod Google
+Name[ru]=Google Code
+Name[si]=Google කේතය
+Name[sk]=Google Code
+Name[sl]=Google Code
+Name[sr]=Гугл‑код
+Name[sr@ijekavian]=Гугл‑код
+Name[sr@ijekavianlatin]=Google‑kod
+Name[sr@latin]=Google‑kod
+Name[sv]=Google kod
+Name[tg]=Рамзи Google
+Name[th]=Google Code
+Name[tr]=Google Code
+Name[ug]=Google Code
+Name[uk]=Google Code
+Name[vi]=Google Mã
+Name[wa]=Google Côde
+Name[x-test]=xxGoogle Codexx
+Name[zh_CN]=Google Code
+Name[zh_TW]=Google Code
+Query=https://code.google.com/query/#q=\\{%2520}
+Query[bg]=https://code.google.com/query/#q=\\{%2520}
+Query[bs]=https://code.google.com/query/#q=\\{%2520}
+Query[ca]=https://code.google.com/query/#q=\\{%2520}
+Query[ca@valencia]=https://code.google.com/query/#q=\\{%2520}
+Query[cs]=https://code.google.com/query/#q=\\{%2520}
+Query[da]=https://code.google.com/query/#q=\\{%2520}
+Query[de]=https://code.google.com/query/#q=\\{%2520}
+Query[el]=https://code.google.com/query/#q=\\{%2520}
+Query[es]=https://code.google.com/query/#q=\\{%2520}
+Query[eu]=https://code.google.com/query/#q=\\{%2520}
+Query[fi]=https://code.google.com/query/#q=\\{%2520}
+Query[fr]=https://code.google.com/query/#q=\\{%2520}
+Query[gl]=https://code.google.com/query/#q=\\{%2520}
+Query[hi]=https://code.google.com/query/#q=\\{%2520}
+Query[hu]=https://code.google.com/query/#q=\\{%2520}
+Query[ia]=https://code.google.com/query/#q=\\{%2520}
+Query[is]=https://code.google.com/query/#q=\\{%2520}
+Query[it]=https://code.google.com/query/#q=\\{%2520}
+Query[ja]=https://code.google.com/query/#q=\\{%2520}
+Query[kk]=https://code.google.com/query/#q=\\{%2520}
+Query[ko]=https://code.google.com/query/#q=\\{%2520}
+Query[lt]=https://code.google.com/query/#q=\\{%2520}
+Query[nb]=https://code.google.com/query/#q=\\{%2520}
+Query[nl]=https://code.google.com/query/#q=\\{%2520}
+Query[nn]=https://code.google.com/query/#q=\\{%2520}
+Query[pa]=https://code.google.com/query/#q=\\{%2520}
+Query[pl]=https://code.google.com/query/#q=\\{%2520}
+Query[pt]=https://code.google.com/query/#q=\\{%2520}
+Query[pt_BR]=https://code.google.com/query/#q=\\{%2520}
+Query[ro]=https://code.google.com/query/#q=\\{%2520}
+Query[ru]=https://code.google.com/query/#q=\\{%2520}
+Query[sk]=https://code.google.com/query/#q=\\{%2520}
+Query[sl]=https://code.google.com/query/#q=\\{%2520}
+Query[sr]=https://code.google.com/query/#q=\\{%2520}
+Query[sr@ijekavian]=https://code.google.com/query/#q=\\{%2520}
+Query[sr@ijekavianlatin]=https://code.google.com/query/#q=\\{%2520}
+Query[sr@latin]=https://code.google.com/query/#q=\\{%2520}
+Query[sv]=https://code.google.com/query/#q=\\{%2520}
+Query[tr]=https://code.google.com/query/#q=\\{%2520}
+Query[ug]=https://code.google.com/query/#q=\\{%2520}
+Query[uk]=https://code.google.com/query/#q=\\{%2520}
+Query[wa]=https://code.google.com/query/#q=\\{%2520}
+Query[x-test]=xxhttps://code.google.com/query/#q=\\{%2520}xx
+Query[zh_CN]=https://code.google.com/query/#q=\\{%2520}
+Query[zh_TW]=https://code.google.com/query/#q=\\{%2520}
+ServiceTypes=SearchProvider
+Type=Service

@@ -1,0 +1,56 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=ActivityManager/Plugin
+
+Comment=Activity manager plugin
+Comment[bs]=Priključak za praćenje aktivnosti
+Comment[ca]=Connector del gestor d'activitats
+Comment[ca@valencia]=Connector del gestor d'activitats
+Comment[cs]=Modul Správce aktivit
+Comment[da]=Aktivitetshåndtering-plugin
+Comment[de]=Modul für Aktivitätenverwaltung
+Comment[el]=Πρόσθετο διαχειριστή δραστηριοτήτων
+Comment[es]=Complemento del gestor de actividades
+Comment[et]=Tegevuste haldamise plugin
+Comment[eu]=Jarduera kudeatzailearen plugina
+Comment[fi]=Aktiviteettihallintaliitännäinen
+Comment[fr]=Module externe de gestionnaire d'activités
+Comment[ga]=Breiseán bainisteora gníomhaíochta
+Comment[gl]=Complemento de xestión da actividade
+Comment[he]=תוסף מנהל פעילויות
+Comment[hu]=Aktivitáskezelő bővítmény
+Comment[ia]=Plugin de gerente de activitate
+Comment[is]=Virknistjórnunarviðbót
+Comment[it]=Estensione di gestione delle attività
+Comment[kk]=Белсенділік менеджер плагині
+Comment[km]=កម្មវិធី​ជំនួយ​កម្មវិធី​គ្រប់គ្រង​សកម្មភាព
+Comment[ko]=활동 관리자 플러그인
+Comment[lt]=Veiklų tvarkyklės priedas
+Comment[mr]=कार्यपध्दती व्यवस्थापक प्लगइन
+Comment[nb]=Programtillegg for aktivitetsbehandler
+Comment[nds]=Aktivitetenpleger-Moduul
+Comment[nl]=Plug-in van activiteitenbeheerder
+Comment[pa]=ਐਕਟੀਵਿਟੀ ਮੈਨੇਜਰ ਪਲੱਗਇਨ
+Comment[pl]=Wtyczka menadżera działań
+Comment[pt]='Plugin' de gestão de actividades
+Comment[pt_BR]=Plugin do gerenciador de atividades
+Comment[ro]=Extensie pentru gestionarul de activități
+Comment[ru]=Расширение «Диспетчер комнат»
+Comment[se]=Lassemodula aktivitehtagieđahallamii
+Comment[sk]=Plugin správcu aktivít
+Comment[sl]=Vstavek upravljalnika dejavnosti
+Comment[sr]=Прикључак менаџера активности
+Comment[sr@ijekavian]=Прикључак менаџера активности
+Comment[sr@ijekavianlatin]=Priključak menadžera aktivnosti
+Comment[sr@latin]=Priključak menadžera aktivnosti
+Comment[sv]=Insticksprogram för aktivitetshantering
+Comment[tr]=Etkinlik yöneticisi eklentisi
+Comment[ug]=پائالىيەت باشقۇرغۇچ قىستۇرمىسى
+Comment[uk]=Додаток керування просторами дій
+Comment[x-test]=xxActivity manager pluginxx
+Comment[zh_CN]=活动管理器插件
+Comment[zh_TW]=活動管理員外掛程式
+
+[PropertyDef::X-ActivityManager-PluginOverrides]
+Type=QString
+

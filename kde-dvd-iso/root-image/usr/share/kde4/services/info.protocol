@@ -1,0 +1,11 @@
+[Protocol]
+exec=kio_info
+protocol=info
+input=none
+output=filesystem
+reading=true
+defaultMimetype=text/html
+determineMimetypeFromExtension=false
+X-DocPath=kioslave/info/index.html
+Icon=help-contents
+Class=:local

@@ -1,0 +1,11 @@
+[Protocol]
+exec=kio_filter
+protocol=xz
+archiveMimetype=application/x-xz
+determineMimetypeFromExtension=false
+input=stream
+output=stream
+reading=true
+source=false
+X-DocPath=kioslave/xz/index.html
+Icon=package-x-generic

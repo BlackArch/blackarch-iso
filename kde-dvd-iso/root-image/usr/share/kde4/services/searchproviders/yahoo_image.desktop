@@ -1,0 +1,143 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=yahooimage,yhi
+Name=Yahoo Images
+Name[ar]=صور ياهو
+Name[ast]=Yahoo Imáxenes
+Name[bg]=Изображения в Yahoo
+Name[bn]=ইয়াহু ছবি
+Name[bs]=Jahu‑slike
+Name[ca]=Imatges a Yahoo
+Name[ca@valencia]=Imatges a Yahoo
+Name[cs]=Obrázky Yahoo
+Name[da]=Yahoo Images
+Name[de]=Yahoo Images
+Name[el]=Yahoo Εικόνες
+Name[en_GB]=Yahoo Images
+Name[eo]=Bildoj de Jahuo
+Name[es]=Yahoo Imágenes
+Name[et]=Yahoo pildid
+Name[eu]=Yahoo irudiak
+Name[fa]=تصاویر یاهو
+Name[fi]=Yahoon kuvahaku
+Name[fr]=Images « Yahoo »
+Name[ga]=Íomhánna Yahoo
+Name[gl]=Yahoo Imaxes
+Name[gu]=Yahoo ઇમેજો
+Name[he]=תמונות Yahoo
+Name[hi]=याहू छवियाँ
+Name[hr]=Yahoo Slike
+Name[hu]=Yahoo Images
+Name[ia]=Yahoo Images
+Name[id]=Yahoo Images
+Name[is]=Yahoo myndir
+Name[it]=Immagini di Yahoo
+Name[ja]=Yahoo Images
+Name[kk]=Yahoo кескіндер
+Name[km]=រូបភាព​របស់​យ៉ាហ៊ូ
+Name[kn]=ಯಾಹೂ ಚಿತ್ರಗಳು
+Name[ko]=Yahoo 그림
+Name[lt]=Yahoo paveikslėliai
+Name[lv]=Yahoo attēli
+Name[mai]=Yahoo चित्र
+Name[ml]=യാഹൂ ചിത്രങ്ങള്‍
+Name[mr]=याहू प्रतिमा
+Name[nb]=Yahoo bilder
+Name[nds]=Yahoo - Biller
+Name[nl]=Yahoo afbeeldingen
+Name[nn]=Yahoo Images
+Name[pa]=ਯਾਹੂ ਚਿੱਤਰ
+Name[pl]=Yahoo - obrazy
+Name[pt]=Imagens do Yahoo
+Name[pt_BR]=Imagens do Yahoo
+Name[ro]=Yahoo Imagini
+Name[ru]=Yahoo: Картинки
+Name[si]=Yahoo පින්තූර
+Name[sk]=Yahoo obrázky
+Name[sl]=Yahoo - slike
+Name[sr]=Јаху‑слике
+Name[sr@ijekavian]=Јаху‑слике
+Name[sr@ijekavianlatin]=Yahoo-slike
+Name[sr@latin]=Yahoo-slike
+Name[sv]=Yahoo bilder
+Name[tg]=Тасвирҳои Yahoo
+Name[th]=Yahoo Images
+Name[tr]=Yahoo Resimleri
+Name[ug]=ياخۇ سۈرەتلىرى
+Name[uk]=Зображення Yahoo
+Name[vi]=Yahoo Ảnh
+Name[wa]=Yahoo Imådjes
+Name[x-test]=xxYahoo Imagesxx
+Name[zh_CN]=Yahoo 图像
+Name[zh_TW]=Yahoo Images
+Query=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ar]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ast]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[bg]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[bn]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[bs]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ca]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ca@valencia]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[cs]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[da]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[de]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[el]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[en_GB]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[eo]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[es]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[et]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[eu]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[fa]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[fi]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[fr]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ga]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[gl]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[gu]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[he]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[hi]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[hr]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[hu]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ia]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[id]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[is]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[it]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ja]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[kk]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[km]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[kn]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ko]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[lt]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[lv]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ml]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[mr]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[nb]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[nds]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[nl]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[nn]=http://no.images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[pa]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[pl]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[pt]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[pt_BR]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ro]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ru]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[si]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[sk]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[sl]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[sr]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[sr@ijekavian]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[sr@ijekavianlatin]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[sr@latin]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[sv]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[tg]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[th]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[tr]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[ug]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[uk]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[vi]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[wa]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[x-test]=xxhttp://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701xx
+Query[zh_CN]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+Query[zh_TW]=http://images.search.yahoo.com/search/images;_ylt=A0geuy0K6JZLsVkB4m1XNyoA?ei=UTF-8&p=\\{@}&y=0&fr2=tab-web&fr=yfp-t-701
+ServiceTypes=SearchProvider
+Type=Service

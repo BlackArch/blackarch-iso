@@ -1,0 +1,67 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=KInfoCenterCategory
+Name=KInfoCenter Category
+Name[ar]=فئة مركز معلومات كدي
+Name[ast]=Categoría de KInfoCenter
+Name[bg]=Категория в информационния център
+Name[bs]=Kategorija K‑infocentra
+Name[ca]=Categoria del KInfoCenter
+Name[ca@valencia]=Categoria del KInfoCenter
+Name[cs]=Kategorie KInfoCenter
+Name[da]=KInfoCenter-kategori
+Name[de]=Infozentrum-Kategorie
+Name[el]=Κατηγορία κέντρου πληροφοριών
+Name[en_GB]=KInfoCentre Category
+Name[es]=Categoría de KInfoCenter
+Name[et]=KDE infokeskuse kategooria
+Name[eu]=KInfoCenter kategoria
+Name[fi]=KDE:n tietokeskuksen luokka
+Name[fr]=Catégorie de KInfoCenter
+Name[ga]=Catagóir KInfoCenter
+Name[gl]=Categoría de KInfoCenter
+Name[he]=קטגוריית KInfoCenter
+Name[hi]=के-इन्फ़ोसेंटर वर्ग
+Name[hr]=Kategorija KInfoCentera
+Name[hu]=KInfoCenter kategória
+Name[ia]=Categoria de KInfoCenter
+Name[is]=Flokkur í KInfoCenter
+Name[it]=Categoria del centro d'informazione
+Name[ja]=KInfoCenter カテゴリ
+Name[kk]=KInfoCenter санаты
+Name[km]=ប្រភេទ KInfoCenter
+Name[kn]=KInfoCenter ಪಂಗಡ
+Name[ko]=KInfoCenter 분류
+Name[lt]=KInfoCenter kategorija
+Name[lv]=KInfoCenter kategorija
+Name[mr]=केइन्फोसेंटर विभाग
+Name[nb]=KInfoCenter-kategori
+Name[nds]=KDE-Infozentrum-Kategorie
+Name[nl]=Categorie KInfoCenter
+Name[pa]=ਕੇ-ਜਾਣਕਾਰੀ ਸੈਂਟਰ ਕੈਟਾਗਰੀ
+Name[pl]=Kategoria centrum informacyjnego
+Name[pt]=Categoria do KInfoCenter
+Name[pt_BR]=Categoria do KInfoCenter
+Name[ro]=Categorie Centru de informații KDE
+Name[ru]=Категория «Информации о системе»
+Name[sk]=KInfoCenter kategória
+Name[sl]=Kategorija v KInfoCenter
+Name[sr]=Категорија К‑инфоцентра
+Name[sr@ijekavian]=Категорија К‑инфоцентра
+Name[sr@ijekavianlatin]=Kategorija K‑infocentra
+Name[sr@latin]=Kategorija K‑infocentra
+Name[sv]=Kategori i informationscentralen
+Name[th]=หมวดศูนย์ข้อมูล-K
+Name[tr]=KDE Bilgi Merkezi Kategorisi
+Name[ug]=KInfoCenter كاتېگورىيە
+Name[uk]=Категорія KInfoCenter
+Name[vi]=Thể loại trong KInfoCenter
+Name[wa]=Categoreye do Cinte d' informåcions K
+Name[x-test]=xxKInfoCenter Categoryxx
+Name[zh_CN]=KInfoCenter 分类
+Name[zh_TW]=KInfoCenter 類別
+
+# Cat Ident
+[PropertyDef::X-KDE-KInfoCenter-Category]
+Type=QString
+

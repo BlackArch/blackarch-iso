@@ -1,0 +1,135 @@
+[Desktop Entry]
+Hidden=false
+Keys=cia
+Name=CIA World Fact Book
+Name[af]=CIA Wêreldfeiteboek
+Name[ar]=كتاب وكالة المخابرات المركزية لحقائق العالم
+Name[as]=CIA World Fact Book
+Name[ast]=Llibru del estáu del mundu de la CIA
+Name[be]=CIA World Factbook
+Name[be@latin]=Zbor źviestak CIA
+Name[bg]=Факти за света от ЦРУ
+Name[bn]=সি-আই-এ ওয়ার্ল্ড ফ্যাক্ট বুক
+Name[bn_IN]=CIA World Fact Book
+Name[bs]=CIA Knjiga svjetskih podataka
+Name[ca]=CIA World Fact Book
+Name[ca@valencia]=CIA World Fact Book
+Name[cs]=Světová kniha faktů CIA
+Name[csb]=Swiatowé wëdarzenia CIA (CIA World Factbook)
+Name[da]=CIA bog over verdens fakta
+Name[de]=CIA World Factbook
+Name[el]=Παγκόσμιο βιβλίο στοιχείων της CIA
+Name[en_GB]=CIA World Fact Book
+Name[eo]=Monda faktlibro de CIA
+Name[es]=Libro del estado del mundo de la CIA
+Name[et]=CIA World Fact Book
+Name[eu]=CIA World Fact Book
+Name[fa]=کتاب واقعیت دنیای سیا
+Name[fi]=CIA World Factbook
+Name[fr]=Banque de données mondiales de la CIA
+Name[fy]=CIA Wrâld Feitboek
+Name[ga]=CIA World Fact Book
+Name[gl]=CIA World Fact Book
+Name[gu]=CIA દુનિયા વિશેનું પુસ્તક
+Name[he]=ספר העובדות העולמי של ה־CIA
+Name[hi]=सीआईए वर्ल्ड फैक्ट बुक
+Name[hne]=सीआईए वर्ल्ड फैक्ट बुक
+Name[hr]=CIA World Fact Book
+Name[hsb]=CIA World Fact Book
+Name[hu]=CIA World Fact Book
+Name[ia]=CIA World Fact Book
+Name[id]=Buku Fakta Dunia CIA
+Name[is]=CIA World Fact Book
+Name[it]=World Fact Book della CIA
+Name[ja]=CIA World Fact Book
+Name[kk]=CIA World Fact Book
+Name[km]=សៀវភៅ​ហេតុការណ៍​ពិត​នៃ​​ពិភពលោក​ CIA
+Name[kn]=CIAಯ ವಿಶ್ವ ವಾಸ್ತವಾಂಶ ಪುಸ್ತಕ
+Name[ko]=CIA 월드 팩트 북
+Name[ku]=CIA Pirtûka Rastiyên Gerdûnê
+Name[lt]=CŽV pasaulio faktų knyga
+Name[lv]=CIA pasaules faktu grāmata
+Name[mai]=सीआईए वर्ल्ड फैक्ट बुक
+Name[mk]=Книга на CIA со факти за светот
+Name[ml]=സിഐഎ വേള്‍ഡ് ഫാക്റ്റ് ബുക്ക്
+Name[mr]=CIA वर्ल्ड फैक्ट बुक
+Name[nb]=CIA World Fact Book
+Name[nds]=CIA-Weltfaktenbook
+Name[ne]=CIA विश्व यथार्थता पुस्तक
+Name[nl]=CIA World Factbook
+Name[nn]=CIA World Fact Book
+Name[or]=CIA ବିଶ୍ଵ ତଥ୍ଯ ବହି
+Name[pa]=CIA ਵਰਲਡ ਫੈਕਟ ਕਿਤਾਬ
+Name[pl]=Światowe wydarzenia CIA (CIA World Factbook)
+Name[pt]=Livro de Factos Mundiais da CIA
+Name[pt_BR]=Livro dos fatos mundiais da CIA
+Name[ro]=CIA World Fact Book
+Name[ru]=Всемирная книга фактов (ЦРУ)
+Name[se]=CIA máilbmediehtogirji
+Name[si]=CIA ලෝක කරුණු පොත
+Name[sk]=CIA svetová kniha faktov
+Name[sl]=CIA World Fact Book
+Name[sr]=Цијина Књига светских података
+Name[sr@ijekavian]=Цијина Књига свјетских података
+Name[sr@ijekavianlatin]=Cijina Knjiga svjetskih podataka
+Name[sr@latin]=Cijina Knjiga svetskih podataka
+Name[sv]=CIA-världsfaktabok
+Name[ta]=CIA உலக தகவல் புத்தகம்
+Name[te]=CIA ప్రపంచ వాస్తవ పుస్తకం
+Name[tg]=Китоби воқеиятҳои умумиҷаҳонӣ CIA
+Name[th]=CIA World Fact Book
+Name[tr]=CIA World Fact Book
+Name[ug]=CIA World Fact Book
+Name[uk]=Світова книга фактів ЦРУ
+Name[vi]=Sách sự thật Thế giới CIA
+Name[wa]=World Fact Book del CIA
+Name[x-test]=xxCIA World Fact Bookxx
+Name[zh_CN]=CIA World Fact Book
+Name[zh_TW]=CIA World Fact Book
+Query=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[bg]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[bs]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ca]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ca@valencia]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[cs]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[da]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[de]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[el]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[es]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[eu]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[fi]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[fr]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[gl]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[hi]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[hu]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ia]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[is]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[it]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ja]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[kk]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ko]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[nb]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[nl]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[nn]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[pa]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[pl]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[pt]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[pt_BR]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ro]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ru]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[sk]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[sl]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[sr]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[sr@ijekavian]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[sr@ijekavianlatin]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[sr@latin]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[sv]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[tr]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[ug]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[uk]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[wa]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[x-test]=xxhttps://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1xx
+Query[zh_CN]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+Query[zh_TW]=https://www.cia.gov/search?q=\\{@}&site=WORLD_FACTBOOK&btnG=Search&client=CIA&myAction=/search&proxystylesheet=CIA&submitMethod=get&oe=UTF-8&ie=UTF-8&ud=1
+X-KDE-ServiceTypes=SearchProvider
+Type=Service

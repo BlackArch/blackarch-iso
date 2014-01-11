@@ -1,0 +1,180 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=kde
+Icon=kde
+Name=KDE API Documentation
+Name[af]=KDE API Dokumentasie
+Name[ar]=وثائق الواجهة البرمجية لكدي
+Name[as]=KDE API Documentation
+Name[ast]=Documentación de l'API de KDE
+Name[be]=Дакументацыя па KDE API
+Name[be@latin]=Dakumenty pra API KDE
+Name[bg]=Документация на KDE API
+Name[bn]=কে.ডি.ই. এ-পি-আই নির্দেশিকা
+Name[bn_IN]=KDE API সংক্রান্ত নথিপত্র
+Name[br]=Teuliadur API KDE
+Name[bs]=KDE API dokumentacija
+Name[ca]=Documentació de l'API de KDE
+Name[ca@valencia]=Documentació de l'API de KDE
+Name[cs]=KDE API dokumentace
+Name[csb]=Dokùmentacëjô API KDE
+Name[cy]=Dogfenniaeth API KDE
+Name[da]=KDE API Dokumentation
+Name[de]=KDE-API-Dokumentation
+Name[el]=Τεκμηρίωση KDE API
+Name[en_GB]=KDE API Documentation
+Name[eo]=Dokumentado de API de KDE
+Name[es]=Documentación de la API de KDE
+Name[et]=KDE API dokumentatsioon
+Name[eu]=KDEren API dokumentazioa
+Name[fa]=مستندات KDE ِAPI
+Name[fi]=KDE:n API-dokumentaatio
+Name[fr]=Documentation de l'API de KDE
+Name[fy]=KDE API Dokumintaasje
+Name[ga]=Doiciméadú API KDE
+Name[gl]=Documentación da API de KDE
+Name[gu]=KDE API દસ્તાવેજ
+Name[he]=תיעוד ה־API של KDE
+Name[hi]=केडीई एपीआई दस्तावेज़ीकरण
+Name[hne]=केडीई एपीआई कागद
+Name[hr]=KDE API dokumentacija
+Name[hsb]=KDE API-dokumentacija
+Name[hu]=A KDE API dokumentációja
+Name[ia]=Documentation de KDE API 
+Name[id]=Dokumentasi API KDE
+Name[is]=KDE forritunarviðmótsleiðbeiningar
+Name[it]=Documentazione dell'API di KDE
+Name[ja]=KDE API 文書
+Name[kk]=KDE API құжаттамасы
+Name[km]=ឯកសារ API របស់ KDE
+Name[kn]=ಕೆಡಿಇ ಎಪಿಐ ದಸ್ತಾವೇಜೀಕರಣ
+Name[ko]=KDE API 문서
+Name[ku]=Belgekirina KDE API
+Name[lt]=KDE API dokumentacija
+Name[lv]=KDE API dokumentācija
+Name[mai]=केडीई एपीआई दस्ताबेजीकरण
+Name[mk]=KDE API документација
+Name[ml]=കെഡിഇ എപിഐ വിവരണം
+Name[mr]=केडीई API दस्तऐवजीकरण
+Name[ms]=Dokumentasi API KDE
+Name[nb]=KDE API-dokumentasjon
+Name[nds]=KDE-API-Dokmentatschoon
+Name[ne]=केडीई एपीआई मिसिलिकरण
+Name[nl]=KDE API Documentatie
+Name[nn]=KDE API-dokumentasjon
+Name[or]=KDE API ଦଲିଲିକରଣ
+Name[pa]=KDE API ਡੌਕੂਮੈਂਟੇਸ਼ਨ
+Name[pl]=Dokumentacja API KDE
+Name[pt]=Documentação da API do KDE
+Name[pt_BR]=Documentação da API do KDE
+Name[ro]=Documentația API KDE
+Name[ru]=Документация по API KDE
+Name[se]=KDE API-dokumentašuvdna
+Name[si]=KDE API ප්‍රලේඛනය
+Name[sk]=KDE API dokumentácia
+Name[sl]=Dokumentacija KDE API
+Name[sr]=КДЕ АПИ документација
+Name[sr@ijekavian]=КДЕ АПИ документација
+Name[sr@ijekavianlatin]=KDE API dokumentacija
+Name[sr@latin]=KDE API dokumentacija
+Name[sv]=Dokumentation av KDE:s programmeringsgränssnitt
+Name[ta]=KDE  API ஆவணமாக்கல்
+Name[te]=KDE API పత్రికీకరణ
+Name[tg]=Китобҳои KDE дар бораи API
+Name[th]=เอกสารอธิบาย API ของระบบ KDE
+Name[tr]=KDE API Belgeleri
+Name[ug]=KDE API پۈتۈكلىرى
+Name[uk]=Документація по API KDE
+Name[uz]=KDE API boʻyicha qoʻllanmalar
+Name[uz@cyrillic]=KDE API бўйича қўлланмалар
+Name[vi]=Tài liệu về API của KDE
+Name[wa]=Documintåcion di l' API di KDE
+Name[x-test]=xxKDE API Documentationxx
+Name[zh_CN]=KDE API 文档
+Name[zh_TW]=KDE API 文件
+Query=http://api.kde.org/classmapper.php?class=\\{@}
+Query[af]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ar]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[as]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ast]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[be@latin]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[bg]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[bn]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[bn_IN]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[bs]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ca]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ca@valencia]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[cs]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[csb]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[da]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[de]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[el]=http://developer.kde.org/documentation/library/classmapper.php?class=\\{@}
+Query[en_GB]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[eo]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[es]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[et]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[eu]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[fa]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[fi]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[fr]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[fy]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ga]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[gl]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[gu]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[he]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[hi]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[hne]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[hr]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[hsb]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[hu]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ia]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[id]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[is]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[it]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ja]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[kk]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[km]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[kn]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ko]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ku]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[lt]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[lv]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[mai]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ml]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[mr]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[nb]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[nds]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[nl]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[nn]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[or]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[pa]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[pl]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[pt]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[pt_BR]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ro]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ru]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[si]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[sk]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[sl]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[sr]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[sr@ijekavian]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[sr@ijekavianlatin]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[sr@latin]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[sv]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ta]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[te]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[tg]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[th]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[tr]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[ug]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[uk]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[uz]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[uz@cyrillic]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[vi]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[wa]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[x-test]=xxhttp://api.kde.org/classmapper.php?class=\\{@}xx
+Query[zh_CN]=http://api.kde.org/classmapper.php?class=\\{@}
+Query[zh_TW]=http://api.kde.org/classmapper.php?class=\\{@}
+X-KDE-ServiceTypes=SearchProvider
+Type=Service

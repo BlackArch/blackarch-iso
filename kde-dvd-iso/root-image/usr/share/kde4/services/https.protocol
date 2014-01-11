@@ -1,0 +1,16 @@
+[Protocol]
+exec=kio_http
+protocol=https
+input=none
+output=filesystem
+reading=true
+deleting=true
+writing=true
+defaultMimetype=application/octet-stream
+determineMimetypeFromExtension=false
+Icon=text-html
+maxInstances=20
+maxInstancesPerHost=5
+config=http
+X-DocPath=kioslave/http/index.html
+Class=:internet

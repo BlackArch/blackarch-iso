@@ -1,0 +1,180 @@
+[Desktop Entry]
+Type=Service
+Name=Technorati Tags
+Name[af]=Technorati Tags
+Name[ar]=وسوم Technorati
+Name[as]=Technorati Tags
+Name[ast]=Etiquetes de Technorati
+Name[be]=Тэгі Technorati
+Name[be@latin]=Technorati Tags
+Name[bg]=Етикети в Technorati
+Name[bn]=টেক্‌নোক্রেটি ট্যাগ
+Name[bn_IN]=Technorati Tags
+Name[br]=Liketennoù Technorati
+Name[bs]=Tehnoratijeve oznake
+Name[ca]=Etiquetes Technorati
+Name[ca@valencia]=Etiquetes Technorati
+Name[cs]=Technorati značky
+Name[csb]=Merczi Technorati
+Name[da]=Technorati mærker
+Name[de]=Technorati-Themen
+Name[el]=Ετικέτες Technorati
+Name[en_GB]=Technorati Tags
+Name[eo]=Etikedoj de Technorati
+Name[es]=Etiquetas de Technorati
+Name[et]=Technorati sildid
+Name[eu]=Technorati etiketak
+Name[fa]=برچسبهای Technorati
+Name[fi]=Technorati-tunnisteet
+Name[fr]=Balises « Technorati »
+Name[fy]=Technorati-markearring
+Name[ga]=Clibeanna Technorati
+Name[gl]=Etiquetas de Technorati
+Name[gu]=ટેકનોરાતી ટેગ્સ
+Name[he]=תגיות Technorati
+Name[hi]=टेक्नोराती टैग्स
+Name[hne]=टेक्नोराती टैग्स
+Name[hr]=Technorati oznake
+Name[hsb]=Technorati Tags
+Name[hu]=Technorati Tags
+Name[ia]=Technorati Etiquettas
+Name[id]=Tag Technorati
+Name[is]=Technorati tög
+Name[it]=Etichette di technorati
+Name[ja]=Technorati Tag
+Name[ka]=Technorati-ს ჭდეები
+Name[kk]=Technorati Tags
+Name[km]=ស្លាក Technorati
+Name[kn]=ಟೆಕ್ನೋರೆಟಿ ತಲೆಚೀಟಿಗಳು (ಟಾಗ್ಸ್)
+Name[ko]=Technorati 태그
+Name[ku]=Etîketên Technorati
+Name[lt]=Technorati Tags
+Name[lv]=Technorati tagi
+Name[mai]=टेक्नोराती टैग्स
+Name[mk]=Technorati Tags
+Name[ml]=ടെക്നോരാറ്റി ടാഗുകള്‍
+Name[mr]=टेक्नोराती टैग्स
+Name[nb]=Technorati-tagger
+Name[nds]=Technorati-Themas
+Name[ne]=टेक्नोरती ट्याग
+Name[nl]=Technorati-tags
+Name[nn]=Technorati-taggar
+Name[or]=Technorati Tags
+Name[pa]=Technorati ਟੈਗ
+Name[pl]=Znaczniki Technorati
+Name[pt]=Marcas do Technorati
+Name[pt_BR]=Etiquetas do Technorati
+Name[ro]=Etichete Technorati
+Name[ru]=Статьи Technorati
+Name[se]=Technorati gilkorat
+Name[si]=Technorati Tags
+Name[sk]=Technorati Tags
+Name[sl]=Oznake Technorati
+Name[sr]=Техноратијеве ознаке
+Name[sr@ijekavian]=Техноратијеве ознаке
+Name[sr@ijekavianlatin]=Technoratijeve oznake
+Name[sr@latin]=Technoratijeve oznake
+Name[sv]=Technorati-taggar
+Name[ta]=Technorati Tags
+Name[te]=Technorati టాగ్‍స్‌
+Name[tg]=Қайдҳои Technorati
+Name[th]=Technorati Tags
+Name[tr]=Technorati Etiketleri
+Name[ug]=Technorati بەلگە
+Name[uk]=Статті Technorati
+Name[vi]=Thẻ Technorati
+Name[wa]=Tags Technocrati
+Name[x-test]=xxTechnorati Tagsxx
+Name[zh_CN]=Technorati 标签
+Name[zh_TW]=Technorati Tags
+X-KDE-ServiceTypes=SearchProvider
+Keys=tags,tag,technoratitags
+Query=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[af]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ar]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[as]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ast]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[be]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[be@latin]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[bg]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[bn]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[bn_IN]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[br]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[bs]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ca]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ca@valencia]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[cs]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[csb]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[da]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[de]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[el]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[en_GB]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[eo]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[es]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[et]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[eu]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[fa]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[fi]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[fr]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[fy]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ga]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[gl]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[gu]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[he]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[hi]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[hne]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[hr]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[hsb]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[hu]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ia]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[id]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[is]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[it]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ja]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[kk]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[km]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[kn]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ko]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ku]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[lt]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[lv]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[mai]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ml]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[mr]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[nb]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[nds]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ne]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[nl]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[nn]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[oc]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[or]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[pa]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[pl]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[pt]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[pt_BR]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ro]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ru]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[se]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[si]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[sk]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[sl]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[sr]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[sr@ijekavian]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[sr@ijekavianlatin]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[sr@latin]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[sv]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ta]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[te]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[tg]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[th]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[tr]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[ug]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[uk]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[uz]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[uz@cyrillic]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[vi]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[wa]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[x-test]=xxhttp://technorati.com/tag/\\{@}?sourceid=kde-searchxx
+Query[zh_CN]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Query[zh_TW]=http://technorati.com/tag/\\{@}?sourceid=kde-search
+Charset=utf8

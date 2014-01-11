@@ -1,0 +1,177 @@
+[Desktop Entry]
+Charset=iso 8859-15
+Type=Service
+Name=Internet Book List
+Name[af]=Internet boeklys
+Name[ar]=لائحة عناوين الإنترنت
+Name[as]=ইন্টাৰ্নে'ট কিতাপৰ তালিকা
+Name[ast]=Llista de llibros d'Internet
+Name[be]=Спіс інтэрнет-кніг
+Name[be@latin]=Internet Book List
+Name[bg]=Internet Book List
+Name[bn]=ইন্টারনেট বই তালিকা
+Name[bn_IN]=ইন্টারনেট বইয়ের তালিকা
+Name[bs]=Internet spisak knjiga
+Name[ca]=Internet Book List
+Name[ca@valencia]=Internet Book List
+Name[cs]=Internetový seznam knih
+Name[csb]=Lësta internetowich ksążków
+Name[da]=Bogliste på internettet
+Name[de]=Internet-Buchliste
+Name[el]=Λίστα δικτυακών βιβλίων
+Name[en_GB]=Internet Book List
+Name[eo]=Interreta librolisto
+Name[es]=Lista de libros de Internet
+Name[et]=Internet Book List
+Name[eu]=Internet liburu zerrenda
+Name[fa]=فهرست کتاب اینترنت
+Name[fi]=Internet Book List
+Name[fr]=Liste de livres sur Internet
+Name[fy]=Ynternet boeklist
+Name[ga]=Internet Book List
+Name[gl]=Lista de libros de Internet
+Name[gu]=ઇન્ટરનેટ પુસ્તક યાદી
+Name[he]=רשימת הספרים האינטרנטית
+Name[hi]=इंटरनेट पुस्तक सूची
+Name[hne]=इंटरनेट पुस्तक सूची
+Name[hr]=Popis internetskih knjiga
+Name[hsb]=Internetowa lisćina knihow
+Name[hu]=Internetes könyvlista
+Name[ia]=Lista de libro de Internet (Internet Book List)
+Name[id]=Senarai Buku Internet
+Name[is]=Bókalisti á internetinu
+Name[it]=Internet Book List
+Name[ja]=Internet Book List
+Name[kk]=Интернет кітап тізімі
+Name[km]=បញ្ជី​សៀវភៅ​អ៊ីនធឺណិត​
+Name[kn]=ಜಾಲ ಪುಸ್ತಕ ಪಟ್ಟಿ
+Name[ko]=인터넷 책 목록
+Name[ku]=Lîsteya Pirtûkên Înternetê
+Name[lt]=Interneto knygų sąrašas
+Name[lv]=Grāmatu saraksts internetā
+Name[mai]=इंटरनेट पुस्तक सूची
+Name[mk]=Листа на книги на Интернет
+Name[ml]=ഇന്റര്‍നെറ്റ് ബുക്കു് ലിസ്റ്റ്
+Name[mr]=इंटरनेट पुस्तक सूची
+Name[nb]=Internetts bokliste
+Name[nds]=Internet-Booklist
+Name[ne]=इन्टरनेट पुस्तक सूची
+Name[nl]=Internet-boekenlijst
+Name[nn]=Internet Book List
+Name[or]=ଇଣ୍ଟରନେଟ ବହି ତାଲିକା
+Name[pa]=ਇੰਟਰਨੈੱਟ ਕਿਤਾਬ ਲਿਸਟ
+Name[pl]=Lista książek w Internecie
+Name[pt]=Lista de Livros na Internet
+Name[pt_BR]=Lista de livros na Internet
+Name[ro]=Internet Book List
+Name[ru]=Интернет-база книг
+Name[se]=Interneahta girjelistu
+Name[si]=අන්තර්ජාල පොත් ලැයිස්තුව
+Name[sk]=Internetový zoznam kníh
+Name[sl]=Spletni seznam knjig
+Name[sr]=Интернет списак књига
+Name[sr@ijekavian]=Интернет списак књига
+Name[sr@ijekavianlatin]=Internet spisak knjiga
+Name[sr@latin]=Internet spisak knjiga
+Name[sv]=Internet boklista
+Name[ta]=இணைய புத்தகப் பட்டியல்
+Name[te]=ఇంటర్నెట్ పుస్తక జాబిత
+Name[tg]=Рӯйхати китобҳои Интернетӣ
+Name[th]=รายการหนังสือทางอินเทอร์เน็ต
+Name[tr]=Internet Book List
+Name[ug]=ئىنتېرنېت كىتاب تىزىمى
+Name[uk]=Список книг Internet
+Name[vi]=Danh sách cuốn sách Mạng
+Name[wa]=Djivêye des lives sol daegntoele
+Name[x-test]=xxInternet Book Listxx
+Name[zh_CN]=互联网图书列表
+Name[zh_TW]=網際網路書目列表
+X-KDE-ServiceTypes=SearchProvider
+Keys=ibl
+Query=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[af]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ar]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[as]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ast]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[be]=http://www.feedster.com/search.php?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[be@latin]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[bg]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[bn]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[bn_IN]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[bs]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ca]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ca@valencia]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[cs]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[csb]=http://www.feedster.com/search.php?q=\\{@}&ie=UTF-8&oe=UTF-8
+Query[da]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[de]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[el]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[en_GB]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[eo]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[es]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[et]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[eu]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[fa]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[fi]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[fr]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[fy]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ga]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[gl]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[gu]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[he]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[hi]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[hne]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[hr]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[hsb]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[hu]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ia]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[id]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[is]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[it]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ja]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[kk]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[km]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[kn]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ko]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ku]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[lt]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[lv]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[mai]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ml]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[mr]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[nb]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[nds]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ne]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[nl]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[nn]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[oc]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[or]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[pa]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[pl]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[pt]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[pt_BR]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ro]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ru]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[se]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[si]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[sk]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[sl]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[sr]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[sr@ijekavian]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[sr@ijekavianlatin]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[sr@latin]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[sv]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ta]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[te]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[tg]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[th]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[tr]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[ug]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[uk]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[uz]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[uz@cyrillic]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[vi]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[wa]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[x-test]=xxhttp://www.iblist.com/search/search.php?item=\\{@}&submit=Searchxx
+Query[zh_CN]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search
+Query[zh_TW]=http://www.iblist.com/search/search.php?item=\\{@}&submit=Search

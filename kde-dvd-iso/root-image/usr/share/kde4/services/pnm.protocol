@@ -1,0 +1,15 @@
+[Protocol]
+defaultMimetype=uri/pnm
+exec=
+protocol=pnm
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false
+Icon=www
+Class=:internet
+URIMode=url

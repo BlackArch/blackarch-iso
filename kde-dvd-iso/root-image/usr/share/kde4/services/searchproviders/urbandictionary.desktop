@@ -1,0 +1,143 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=urbandictionary,ud
+Name=Urban Dictionary
+Name[ar]=القاموس المتمدّن
+Name[ast]=Urban Dictionary
+Name[bg]=Urban Dictionary
+Name[bn]=Urban Dictionary
+Name[bs]=Urbani rječnik
+Name[ca]=Urban Dictionary
+Name[ca@valencia]=Urban Dictionary
+Name[cs]=Urban Dictionary
+Name[da]=Urban Dictionary
+Name[de]=Urban Dictionary
+Name[el]=Urban Dictionary(Λεξικό)
+Name[en_GB]=Urban Dictionary
+Name[eo]=Urba vortaro
+Name[es]=Urban Dictionary
+Name[et]=Urban Dictionary
+Name[eu]=Urban hiztegia
+Name[fa]=Urban Dictionary
+Name[fi]=Urban Dictionary
+Name[fr]=Dictionnaire « Urban »
+Name[ga]=Urban Dictionary
+Name[gl]=Dicionario Urbano
+Name[gu]=અર્બન ડિક્શનરી
+Name[he]=Urban Dictionary
+Name[hi]=शहरी शब्दकोश
+Name[hr]=Urbani rječnik
+Name[hu]=Urban Dictionary
+Name[ia]=Dictionario Urban
+Name[id]=Kamus Urban
+Name[is]=Urban orðabókin
+Name[it]=Dizionario urbano
+Name[ja]=Urban Dictionary
+Name[kk]=Urban Dictionary
+Name[km]=វចនុក្រម Urban
+Name[kn]=ಅರ್ಬಾನ್(Urban) ಶಬ್ದಕೋಶ 
+Name[ko]=Urban Dictionary
+Name[lt]=Miesto žodynas
+Name[lv]=Urban Dictionary
+Name[ml]=അര്‍ബന്‍ നിഘണ്ടു
+Name[mr]=अर्बन शब्दकोश
+Name[nb]=Urban ordbok
+Name[nds]=Urban-Wöörbook
+Name[nl]=Urban woordenboek
+Name[nn]=Urban Dictionary
+Name[pa]=ਅਰਬਨ ਡਿਕਸ਼ਨਰੀ
+Name[pl]=Słownik miejski (Urban Dictionary)
+Name[pt]=Dicionário Urbano
+Name[pt_BR]=Urban Dictionary
+Name[ro]=Dicționar urban
+Name[ru]=Urban Dictionary
+Name[si]=නාගරික ශබ්දකෝෂය
+Name[sk]=Slovník Urban
+Name[sl]=Urban Dictionary
+Name[sr]=Урбани речник
+Name[sr@ijekavian]=Урбани речник
+Name[sr@ijekavianlatin]=Urbani rečnik
+Name[sr@latin]=Urbani rečnik
+Name[sv]=Slangordlista
+Name[tg]=Луғати шаҳрнишинӣ
+Name[th]=พจนานุกรม Urban
+Name[tr]=Urban Dictionary
+Name[ug]=Urban لۇغىتى
+Name[uk]=Urban Dictionary
+Name[vi]=Urban Dictionary
+Name[wa]=Urban Dictionary
+Name[x-test]=xxUrban Dictionaryxx
+Name[zh_CN]=都市词典
+Name[zh_TW]=Urban Dictionary
+Query=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ar]=http://www.hyperdictionary.com/search.aspx?define=\\{@}
+Query[ast]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[bg]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[bn]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[bs]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ca]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ca@valencia]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[cs]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[da]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[de]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[el]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[en_GB]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[eo]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[es]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[et]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[eu]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[fa]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[fi]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[fr]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ga]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[gl]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[gu]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[he]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[hi]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[hr]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[hu]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ia]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[id]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[is]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[it]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ja]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[kk]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[km]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[kn]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ko]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[lt]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[lv]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[mai]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ml]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[mr]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[nb]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[nds]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[nl]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[nn]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[pa]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[pl]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[pt]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[pt_BR]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ro]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ru]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[si]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[sk]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[sl]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[sr]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[sr@ijekavian]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[sr@ijekavianlatin]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[sr@latin]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[sv]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[tg]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[th]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[tr]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[ug]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[uk]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[vi]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[wa]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[x-test]=xxhttp://www.urbandictionary.com/define.php?term=\\{@}xx
+Query[zh_CN]=http://www.urbandictionary.com/define.php?term=\\{@}
+Query[zh_TW]=http://www.urbandictionary.com/define.php?term=\\{@}
+ServiceTypes=SearchProvider
+Type=Service

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=QImageIOPlugins
+X-KDE-ImageFormat=tga
+X-KDE-MimeType=image/x-tga
+X-KDE-Read=true
+X-KDE-Write=true

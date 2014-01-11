@@ -1,0 +1,65 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=Kontact/Plugin
+Name=Kontact Plugin
+Name[bs]=Priključak za kontakt
+Name[ca]=Connector pel Kontact
+Name[ca@valencia]=Connector pel Kontact
+Name[cs]=Modul aplikace Kontact
+Name[da]=Kontact-plugin
+Name[de]=Kontact-Modul
+Name[el]=Πρόσθετο Kontact
+Name[en_GB]=Kontact Plugin
+Name[es]=Complemento de Kontact
+Name[et]=Kontacti plugin
+Name[fi]=Kontact-liitännäinen
+Name[fr]=Module externe pour Kontact
+Name[ga]=Breiseán Kontact
+Name[gl]=Engadido de Kontact
+Name[he]=תוסף Kontact
+Name[hu]=Kontact-modul
+Name[ia]=Plug-in de Kontact 
+Name[it]=Estensione di Kontact
+Name[ja]=Kontact プラグイン
+Name[kk]=Kontact плагині
+Name[km]=កម្មវិធី​ជំនួយ Kontact
+Name[lt]=Kontact priedas
+Name[lv]=Kontact spraudnis
+Name[mr]=कॉन्टॅक्ट प्लगइन
+Name[nb]=Kontact-programtillegg
+Name[nds]=Kontact-Moduul
+Name[nl]=Kontact-plug-in
+Name[nn]=Kontakt-tillegg
+Name[pa]=ਕੇਸੰਪਰਕ ਪਲੱਗਇਨ
+Name[pl]=Wtyczka Kontact
+Name[pt]='Plugin' do Kontact
+Name[pt_BR]=Plugin do Kontact
+Name[ro]=Modul Kontact
+Name[ru]=Модуль Kontact
+Name[sk]=Plugin Kontact
+Name[sl]=Vstavek za Kontact
+Name[sr]=Прикључак за Контакт
+Name[sr@ijekavian]=Прикључак за Контакт
+Name[sr@ijekavianlatin]=Priključak za Kontact
+Name[sr@latin]=Priključak za Kontact
+Name[sv]=Insticksprogram för Kontact
+Name[th]=ส่วนเสริมของ Kontact
+Name[tr]=Kontact Eklentisi
+Name[uk]=Додаток до Kontact
+Name[wa]=Tchôke divins di Kontact
+Name[x-test]=xxKontact Pluginxx
+Name[zh_CN]=Kontact 插件
+Name[zh_TW]=Kontact 外掛程式
+
+[PropertyDef::X-KDE-KontactPluginVersion]
+Type=int
+[PropertyDef::X-KDE-KontactPartLibraryName]
+Type=QString
+[PropertyDef::X-KDE-KontactPartExecutableName]
+Type=QString
+[PropertyDef::X-KDE-KontactPartLoadOnStart]
+Type=bool
+[PropertyDef::X-KDE-KontactPluginHasSummary]
+Type=bool
+[PropertyDef::X-KDE-KontactPluginHasPart]
+Type=bool

@@ -8,6 +8,20 @@ This automatically generated configuration consists of the following files:
 - /usr/share/config/kdm/Xsession
 - /usr/share/config/kdm/backgroundrc
 
+This config was derived from existing files. As the used algorithms are
+pretty dumb, it may be broken.
+Information from these files was extracted:
+- /usr/share/config/kdm/kdmrc
+These files were directly incorporated:
+- /usr/share/config/kdm/Xaccess
+- /usr/share/config/kdm/Xwilling
+- /usr/share/config/kdm/Xsetup
+- /usr/share/config/kdm/Xstartup
+- /usr/share/config/kdm/Xreset
+- /usr/share/config/kdm/Xsession
+- /usr/share/config/kdm/backgroundrc
+Old files that would have been overwritten were renamed to <oldname>.bak.
+
 Try 'genkdmconf --help' if you want to generate another configuration.
 
 You may delete this README.

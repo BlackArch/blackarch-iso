@@ -1,0 +1,14 @@
+[Protocol]
+exec=kio_mbox
+protocol=mbox
+input=none
+output=filesystem
+listing=Name,Type,Size
+reading=true
+writing=false
+makedir=false
+deleting=false
+Icon=mail-folder-inbox
+maxInstances=2
+X-DocPath=kioslave/mbox/index.html
+Class=:local

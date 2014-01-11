@@ -1,0 +1,101 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=QImageIOPlugins
+Comment=QImageIOHandler plugin
+Comment[af]=QImageIOHandler inprop
+Comment[ar]=ملحق QImageIOHandler
+Comment[as]=QImageIOHandler plugin
+Comment[ast]=Complementu QImageIOHandler
+Comment[be@latin]=Plugin dla QImageIOHandler
+Comment[bg]=Приставка за QImageIOHandler
+Comment[bn]=QImageIOHandler প্লাগ-ইন
+Comment[bn_IN]=QImageIOHandler প্লাগ-ইন
+Comment[bs]=Priključak QImageIO rukovaoca
+Comment[ca]=Connector del QImageIOHandler
+Comment[ca@valencia]=Connector del QImageIOHandler
+Comment[cs]=Modul QImageIOHandler
+Comment[csb]=Wtëkôcz QImageIOHandler
+Comment[da]=QImageIOHandler-plugin
+Comment[de]=QImageIOHandler-Modul
+Comment[el]=Πρόσθετο QImageIOHandler
+Comment[en_GB]=QImageIOHandler plugin
+Comment[eo]=QImageIOHandler-kromprogramo
+Comment[es]=Complemento QImageIOHandler
+Comment[et]=QImageIOHandleri plugin
+Comment[eu]=QImageIOHandler plugin-a
+Comment[fa]=وصله QImageIOHandler
+Comment[fi]=QImageIOHandler-liitännäinen
+Comment[fr]=Module externe « QImageIOHandler »
+Comment[fy]=QImageIOHandler plugin
+Comment[ga]=Breiseán QImageIOHandler
+Comment[gl]=Complemento QImageIOHandler
+Comment[gu]=QImageIOHandler પ્લગઇન
+Comment[he]=תוסף QImageIOHandler
+Comment[hi]=क्यूइमेजआईओहैंडलर प्लगइन
+Comment[hne]=क्यूइमेजआईओ हेंडलर प्लगइन
+Comment[hr]=QImageIOHandler priključak
+Comment[hsb]=QImageIOHandler plugin
+Comment[hu]=QImageIOHandler modul
+Comment[hy]=QImageIOHandler հարմարանք
+Comment[ia]=Plugin de QImageHandler
+Comment[id]=Plugin QImageIOHandler
+Comment[is]=QImageIOHandler íforrit
+Comment[it]=Estensione QImageIOHandler
+Comment[ja]=QImageIOHandler プラグイン
+Comment[kk]=QImageIOHandler плагин модулі
+Comment[km]=កម្មវិធី​ជំនួយ QImageIOHandler
+Comment[kn]=QImageIOHandler ಮಿಳಿತಾನ್ವಯ (ಪ್ಲಗಿನ್)
+Comment[ko]=QImageIOHandler 플러그인
+Comment[ku]=Pêveka QWêneIORêveber
+Comment[lt]=QImageIOHandler priedas
+Comment[lv]=QImageIOHandler spraudnis
+Comment[mai]=क्यूइमेजआईओहैंडलर प्लगइन
+Comment[mk]=QImageIOHandler-приклучок
+Comment[ml]=ക്യു ഇമേജ് ഹാന്‍ഡ്ലര്‍ സംയോജകം
+Comment[mr]=QImageIOHandler प्लगइन
+Comment[nb]=QImageIOHandler-programtillegg
+Comment[nds]=QImage-In-/Utgaavmoduul
+Comment[ne]=QImageIOHandler प्लगइन
+Comment[nl]=QImageIOHandler-plugin
+Comment[nn]=QImageIOHandler-tillegg
+Comment[or]=QImageIOHandler ପ୍ଲଗଇନ
+Comment[pa]=QImageIOHandler ਪਲੱਗਇਨ
+Comment[pl]=Wtyczka QImageIOHandler
+Comment[pt]='Plugin' do QImageIOHandler
+Comment[pt_BR]=Plugin do QImageIOHandler
+Comment[ro]=Modul QImageIOHandler
+Comment[ru]=Расширение QImageIOHandler
+Comment[se]=QImageIOHandler-modula
+Comment[si]=QImageIOHandler ප්ලගීනය
+Comment[sk]=Modul QImageIOHandler
+Comment[sl]=Vstavek QImageIOHandler
+Comment[sq]=QImageIOHandler plugin
+Comment[sr]=Прикључак QImageIO руковаоца
+Comment[sr@ijekavian]=Прикључак QImageIO руковаоца
+Comment[sr@ijekavianlatin]=Priključak QImageIO rukovaoca
+Comment[sr@latin]=Priključak QImageIO rukovaoca
+Comment[sv]=Insticksprogram för QImage I/O-hantering
+Comment[ta]=QImageIOHandler plugin
+Comment[tg]=Васлкунаки QImageIOHandler
+Comment[th]=โปรแกรมเสริม QImageIOHandler
+Comment[tr]=QImageIOHandler eklentisi
+Comment[tt]=QImageIOHandler өстәмәсе
+Comment[ug]=QImage ئوقۇش يېزىش بىر تەرەپ قىلىش قىستۇرمىسى
+Comment[uk]=Додаток QImageIOHandler
+Comment[vi]=Bổ sung QImageIOHandler
+Comment[wa]=Tchôke-divins QImageIOHandler
+Comment[x-test]=xxQImageIOHandler pluginxx
+Comment[zh_CN]=QImage 读写处理插件
+Comment[zh_TW]=QImageIOHandler plugin
+
+[PropertyDef::X-KDE-ImageFormat]
+Type=QStringList
+
+[PropertyDef::X-KDE-MimeType]
+Type=QString
+
+[PropertyDef::X-KDE-Read]
+Type=bool
+
+[PropertyDef::X-KDE-Write]
+Type=bool

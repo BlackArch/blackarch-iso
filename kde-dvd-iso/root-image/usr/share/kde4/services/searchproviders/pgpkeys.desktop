@@ -1,0 +1,141 @@
+[Desktop Entry]
+Keys=pgp,pgpkeys
+Name=OpenPGP Key Search
+Name[af]=OpenPGP Sleutel Soektog
+Name[ar]=البحث عن مفتاح OpenPGP
+Name[as]=OpenPGP চাবিৰ অনুসন্ধান
+Name[ast]=Gueta de contraseña OpenPGP
+Name[be]=Пошук ключа OpenPGP
+Name[be@latin]=Pošuk klučoŭ „OpenPGP”
+Name[bg]=Търсене на ключ в OpenPGP
+Name[bn]=ওপেন-পিজিপি কী (key) অনুসন্ধান
+Name[bn_IN]=OpenPGP-কি অনুসন্ধান
+Name[bs]=OpenPGP ključevi
+Name[ca]=Cerca de claus OpenPGP
+Name[ca@valencia]=Cerca de claus OpenPGP
+Name[cs]=Vyhledávání OpenPGP klíčů
+Name[csb]=Szëkôrz kluczów OpenPGP
+Name[cy]=Chwilio Allwedd PGPAgored
+Name[da]=OpenPGP-nøglesøgning
+Name[de]=Suche nach OpenPGP-Schlüssel
+Name[el]=Αναζήτηση κλειδιού OpenPGP
+Name[en_GB]=OpenPGP Key Search
+Name[eo]=Ŝlosilserĉo de OpenPGP
+Name[es]=Búsqueda de clave OpenPGP
+Name[et]=OpenPGP võtme otsing
+Name[eu]=OpenPGP gako bilaketa
+Name[fa]=جستجوی کلید OpenPGP
+Name[fi]=OpenPGP-avainhaku
+Name[fr]=Recherche de clés « OpenPGP »
+Name[fy]=Sykje nei OpenPGP-Kaaien
+Name[ga]=Cuardach Eochracha OpenPGP
+Name[gl]=Busca de chaves de OpenPGP
+Name[gu]=OpenPGP કી શોધ
+Name[he]=חיפוש מפתחות OpenPGP
+Name[hi]=ओपनपीजीपी कुंजी खोज
+Name[hne]=ओपनपीजीपी कुंजी खोज
+Name[hr]=Pretraživanje OpenPGP ključeva
+Name[hsb]=OpenPGP pytanje klučow
+Name[hu]=OpenPGP kulcskereső
+Name[ia]=Cerca de clave OpenPGP
+Name[id]=Pencari Kunci OpenPGP
+Name[is]=OpenPGP lykilleit
+Name[it]=Ricerca di chiavi OpenPGP
+Name[ja]=OpenPGP キー検索
+Name[ka]=OpenPGP კოდის ძიება
+Name[kk]=OpenPGP кілттерін табу
+Name[km]=ស្វែងរក​កូនសោ​តាម​រយៈ OpenPGP
+Name[kn]=ಮುಕ್ತ PGP ಕೀಲಿಕೈ ಹುಡುಕಾಟ
+Name[ko]=OpenPGP 키 검색
+Name[ku]=Lêgerîna Mifteya Open PGP
+Name[lt]=OpenPGP raktų paieška
+Name[lv]=OpenPGP atslēgu meklēšana
+Name[mai]=ओपनपीजीपी कुँजी खोज
+Name[mk]=Пребарување на OpenPGP клучеви
+Name[ml]=ഓപ്പണ്‍പിജിപി (OpenPGP) കീ തെരച്ചില്‍
+Name[mr]=OpenPGP किल्ली शोध
+Name[ms]=Carian Kekunci OpenPGP
+Name[nb]=OpenPGP nøkkelsøk
+Name[nds]=OpenPGP-Slötel-Söök
+Name[ne]=खुला PGP कुञ्जी खोजी
+Name[nl]=Zoeken naar OpenPGP-sleutels
+Name[nn]=OpenPGP-nøkkelsøk
+Name[or]=OpenPGP କି ସନ୍ଧାନ
+Name[pa]=OpenPGP ਕੁੰਜੀ ਖੋਜ
+Name[pl]=Przeszukiwarka kluczy OpenPGP
+Name[pt]=Pesquisa de Chaves do OpenPGP
+Name[pt_BR]=Busca de chaves OpenPGP
+Name[ro]=Căutare chei OpenPGP
+Name[ru]=Поиск ключей OpenPGP
+Name[se]=Oza OpenPGP-čoavdagiid
+Name[si]=OpenPGP යතුරු සෙවුම
+Name[sk]=Hľadanie kľúčov OpenPGP
+Name[sl]=Iskanje ključa OpenPGP
+Name[sr]=ОпенПГП кључеви
+Name[sr@ijekavian]=ОпенПГП кључеви
+Name[sr@ijekavianlatin]=OpenPGP ključevi
+Name[sr@latin]=OpenPGP ključevi
+Name[sv]=OpenPGP-nyckelsökning
+Name[ta]=OpenPGP வார்த்தை தேடுதல்
+Name[te]=OpenPGP కీ శోధన
+Name[tg]=Ҷустуҷӯи калидҳои OpenPGP
+Name[th]=ค้นหารหัสกุญแจ OpenPGP
+Name[tr]=OpenPGP anahtar Arayıcı
+Name[ug]=OpenPGP ئاچقۇچلۇق سۆز بويىچە ئىزدە
+Name[uk]=Пошук ключів OpenPGP
+Name[uz]=OpenPGP kalitlarni qidirish
+Name[uz@cyrillic]=OpenPGP калитларни қидириш
+Name[vi]=Tìm kiếm khoá OpenPGP
+Name[wa]=Cweraedje d' ene clé OpenPGP
+Name[xh]=Uphendlo Lwesitshixo se OpenPGP
+Name[x-test]=xxOpenPGP Key Searchxx
+Name[zh_CN]=OpenPGP 密钥搜索
+Name[zh_TW]=OpenPGP 金鑰搜尋
+Query=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[bg]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[bs]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ca]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ca@valencia]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[cs]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[da]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[de]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[el]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[es]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[eu]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[fi]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[fr]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[gl]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[hi]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[hu]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ia]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[is]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[it]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ja]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[kk]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ko]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[lt]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[nb]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[nl]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[nn]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[pa]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[pl]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[pt]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[pt_BR]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ro]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ru]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[sk]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[sl]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[sr]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[sr@ijekavian]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[sr@ijekavianlatin]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[sr@latin]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[sv]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[tr]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[ug]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[uk]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[wa]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[x-test]=xxhttp://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindexxx
+Query[zh_CN]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+Query[zh_TW]=http://pgp.mit.edu:11371/pks/lookup?search=\\{@}&op=vindex
+X-KDE-ServiceTypes=SearchProvider
+Type=Service

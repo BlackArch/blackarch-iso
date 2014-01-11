@@ -8,4 +8,4 @@ loadAll=false
 pluginWhiteList=places,shell,services,bookmarks,recentdocuments,locations
 
 [RecentlyUsed]
-Applications=kde4-konsole.desktop
+Applications=kde4-systemsettings.desktop,firefox.desktop,xterm-2.desktop,kde4-konsole.desktop,gnome-terminal.desktop

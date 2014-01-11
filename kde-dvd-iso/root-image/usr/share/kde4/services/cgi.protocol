@@ -1,0 +1,8 @@
+[Protocol]
+exec=kio_cgi
+protocol=cgi
+input=none
+output=filesystem
+reading=true
+X-DocPath=kioslave/cgi/index.html
+Icon=text-html

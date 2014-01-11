@@ -1,0 +1,142 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=py,python
+Name=Python Reference Manual
+Name[af]=Python Verwysing Handleiding
+Name[ar]=كتيّب Python المرجعي
+Name[as]=Python প্ৰসঙ্গৰ হাতপুথি
+Name[ast]=Manual de referencia de Python
+Name[be]=Падручнік Python
+Name[be@latin]=Daviednik dla „Python”
+Name[bg]=Python Reference Manual
+Name[bn]=পাইথন রেফারেন্স ম্যানুয়াল
+Name[bn_IN]=Python রেফারেন্স সহায়িকা
+Name[bs]=Referentni priručnik pitona
+Name[ca]=Manual de referència de Python
+Name[ca@valencia]=Manual de referència de Python
+Name[cs]=Manuál jazyka Python
+Name[csb]=Python - pòdrãcznik
+Name[cy]=Llawlyfr Cyfeiriol Python
+Name[da]=Python reference-manual
+Name[de]=Python-Handbuch
+Name[el]=Εγχειρίδιο αναφοράς Python
+Name[en_GB]=Python Reference Manual
+Name[eo]=Manlibro de Pitono
+Name[es]=Manual de referencia de Python
+Name[et]=Python Reference Manual
+Name[eu]=Python-en erreferentzia eskuliburua
+Name[fa]=راهنمای مرجع Python
+Name[fi]=Python Reference Manual
+Name[fr]=Manuel de référence de Python
+Name[fy]=Python Reference Manual
+Name[ga]=Lámhleabhar Python
+Name[gl]=Manual de referencia de Python
+Name[gu]=Python સંદર્ભ ગ્રંથ
+Name[he]=המדריך ל־Python
+Name[hi]=पायथन रेफरेंस मेनुअल
+Name[hne]=पायथन रेफरेंस मेनुअल
+Name[hr]=Python referentni priručnik
+Name[hsb]=Python-přiručka
+Name[hu]=Python referencia-kézikönyv
+Name[ia]=Manual de referentia de Python
+Name[id]=Manual Referensi Python
+Name[is]=Python handbókin
+Name[it]=Manuale di riferimento di Python
+Name[ja]=Python リファレンスマニュアル
+Name[kk]=Python анықтамасы
+Name[km]=សៀវភៅ​យោង​របស់ Python
+Name[kn]=ಪೈಥಾನ್ ಪರಾಮರ್ಶನ (ರೆಫರೆಂಸ್) ಕೈಪಿಡಿ
+Name[ko]=Python 참조 설명서
+Name[ku]=Rêberê Çavkaniya Python
+Name[lt]=Python vadovas-žinynas
+Name[lv]=Python rokasgrāmata
+Name[mai]=पायथन रेफरेंस मेनुअल
+Name[mk]=Референтен прирачник за Python
+Name[ml]=പൈത്തണ്‍ സഹായക ഗ്രന്ഥം 
+Name[mr]=पायथन रेफरेंस पुस्तिका
+Name[ms]=Manual Rujukan Python
+Name[nb]=Referansehåndbok for Python
+Name[nds]=Python-Referenzhandbook
+Name[ne]=पाइथन सन्दर्भ म्यानुअल
+Name[nl]=Python Reference Manual
+Name[nn]=Python-referansehandbok
+Name[or]=Python ସନ୍ଦର୍ଭ ସହାୟକ ପୁସ୍ତକ
+Name[pa]=Python ਹਵਾਲਾ ਦਸਤਾਵੇਜ਼
+Name[pl]=Python (język programowania)- podręcznik
+Name[pt]=Manual de Referência do Python
+Name[pt_BR]=Manual de referência do Python
+Name[ro]=Manualul de referință Python
+Name[ru]=Справочник по Python
+Name[se]=Python-referánsagiehtagirji
+Name[si]=Python යොමු අත්පොත
+Name[sk]=Manuál jazyka Python
+Name[sl]=Referenčni priročnik za python
+Name[sr]=Референтни приручник питона
+Name[sr@ijekavian]=Референтни приручник питона
+Name[sr@ijekavianlatin]=Referentni priručnik Pythona
+Name[sr@latin]=Referentni priručnik Pythona
+Name[sv]=Python referensmanual
+Name[ta]=பைதான் பார்வை கையேடு
+Name[te]=Python సంప్రదింపు మాన్యువల్
+Name[tg]=Дастуруламали Python
+Name[th]=คู่มืออ้างอิงภาษาไพธอน
+Name[tr]=Python Başvuru El Kitabı
+Name[ug]=Python پايدىلىنىش قوللانمىسى
+Name[uk]=Довідник з Python
+Name[uz]=Python uchun koʻllanma
+Name[uz@cyrillic]=Python учун кўлланма
+Name[vi]=Sổ tay tham khảo Python
+Name[wa]=Manuel di referince di Python
+Name[xh]=Ubhekiso lwe Python yesandla
+Name[x-test]=xxPython Reference Manualxx
+Name[zh_CN]=Python 参考手册
+Name[zh_TW]=Python 參考手冊
+Query=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[bg]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[bs]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ca]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ca@valencia]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[cs]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[da]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[de]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[el]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[es]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[eu]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[fi]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[fr]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[gl]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[hi]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[hu]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ia]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[is]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[it]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ja]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[kk]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ko]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[lt]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[nb]=https://www.google.no/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[nl]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[nn]=https://www.google.com/search?hl=nn&sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[pa]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[pl]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[pt]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[pt_BR]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ro]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ru]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[sk]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[sl]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[sr]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[sr@ijekavian]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[sr@ijekavianlatin]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[sr@latin]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[sv]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[tr]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[ug]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[uk]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[wa]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[x-test]=xxhttps://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.orgxx
+Query[zh_CN]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+Query[zh_TW]=https://www.google.com/search?sourceid=python-search&q=\\{@}&submit=Search&q=site%3Apython.org
+X-KDE-ServiceTypes=SearchProvider
+Type=Service

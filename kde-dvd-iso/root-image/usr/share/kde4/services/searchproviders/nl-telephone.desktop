@@ -1,0 +1,137 @@
+[Desktop Entry]
+Name=Telephonebook Search Provider
+Name[af]=Telefoonbok soektog verskaffer
+Name[ar]=مزود بحث دليل الهاتف
+Name[as]=Telephonebook Search Provider
+Name[ast]=Fornidor de gueta de teléfonos
+Name[be]=Пошук тэлефонаў
+Name[be@latin]=Pošuk telefonaŭ
+Name[bg]=Търсене в телефонен указател
+Name[bn]=টেলিফোন-বুক অনুসন্ধান সরবরাহকারী
+Name[bs]=Telefonski imenik (Holandija)
+Name[ca]=Proveïdor de cerques a la guia de telèfons
+Name[ca@valencia]=Proveïdor de cerques a la guia de telèfons
+Name[cs]=Poskytovatel prohledávání tel. seznamu
+Name[csb]=Szëkôrz Telephonebook
+Name[cy]= Darparydd Chwiliadau Llyfr Ffôn
+Name[da]=Telefonbog-søgeudbyder
+Name[de]=Telefonbuchsuche
+Name[el]=Πάροχος αναζήτησης Telephonebook
+Name[en_GB]=Telephonebook Search Provider
+Name[eo]=Serĉprovizanto de telefonlibro
+Name[es]=Proveedor de búsqueda de teléfonos
+Name[et]=Hollandi telefoniraamatu otsingumootor
+Name[eu]=Telephonebook bilaketa hornitzailea
+Name[fa]=فراهم‌کننده جستجوی دفتر تلفن
+Name[fi]=Puhelinluettelohaku
+Name[fr]=Moteur de recherche « Telephonebook »
+Name[fy]=Tillefoanboek-sykmasine
+Name[ga]=Cuardach sa Leabhar Teileafóin
+Name[gl]=Fornecedor de buscas na guía telefónica
+Name[gu]=ટેલ્ફોનબુક સર્ચ પ્રોવાઇડર
+Name[he]=חיפוש בספר טלפונים
+Name[hi]=टेलिफोनबुक खोज प्रदायक
+Name[hne]=टेलिफोनबुक खोज देवइया
+Name[hr]=Davatelj usluge pretraživanja imenika
+Name[hsb]=Prowider za pytanje w telefonskich knihach
+Name[hu]=Telefonkönyv (NL)
+Name[ia]=Fornitor de cerca Telephonebook
+Name[id]=Penyedia Pencarian Buku Telepon
+Name[is]=Leitarvél fyrir símaskrár
+Name[it]=Motore di ricerca dell'elenco telefonico
+Name[ja]=Telephonebook 検索プロバイダ
+Name[ka]=Telephonebook Search Provider
+Name[kk]=Телефон кітапшасын іздеу провайдері
+Name[km]=ក្រុមហ៊ុន​ផ្ដល់​​ការ​​ស្វែងរក​សៀវភៅ​លេខ​ទូរស័ព្ទ
+Name[kn]=ದೂರವಾಣಿ ಪುಸ್ತಕ ಹುಡುಕಾಟ ಪೂರೈಕೆದಾರ
+Name[ko]=전화번호부 검색 공급자
+Name[ku]=Peydakera Lêgerîna LênûskaTelefonê
+Name[lt]=Telefono knygų paieškos teikėjas
+Name[lv]=Tālruņa katalogu meklēšanas sniedzējs
+Name[mai]=टेलिफोनबुक खोज प्रदायक
+Name[mk]=Telephonebook сервис за пребарување
+Name[ml]=ടെലിഫോണ്‍ബുക്ക് തെരച്ചില്‍ സേവനദാതാവു്
+Name[mr]=टेलिफोनबुक शोध पुरवठाकर्ता
+Name[ms]=Penyedia Carian Buku Telefon
+Name[nb]=Søkemotor for telefonkataloger
+Name[nds]=Nedderlannsch Telefoonbook
+Name[ne]=टेलिफोन पुस्तिका खोजी प्रदायक
+Name[nl]=Telefoonboek-zoekmachine
+Name[nn]=Søkjemotor for telefonkatalog
+Name[pa]=ਟੈਲੀਫੋਨ ਖੋਜ ਪਰੋਵਾਇਡਰ
+Name[pl]=Wyszukiwarka Telephonebook
+Name[pt]=Motor de Busca de Lista Telefónica
+Name[pt_BR]=Provedor de busca de guia telefônico
+Name[ro]=Căutare în cartea de telefoane
+Name[ru]=Telephonebook Search Provider
+Name[se]=Ohcanmotor telefonkatalogaid várás
+Name[si]=දුරකථන පොත් සෙවුම් සැපයුම් කරු
+Name[sk]=Hľadanie v telefónnom zozname
+Name[sl]=Ponudnik iskanja po telefonskem imeniku
+Name[sr]=Телефонски именик (Холандија)
+Name[sr@ijekavian]=Телефонски именик (Холандија)
+Name[sr@ijekavianlatin]=Telefonski imenik (Holandija)
+Name[sr@latin]=Telefonski imenik (Holandija)
+Name[sv]=Söktjänst för telefonkatalog
+Name[ta]=தொலைபேசிபுத்தக தேடுதலை அளிப்பான்
+Name[te]=టెలిఫోన్‌బుక్ శోధన కర్త
+Name[tg]=Китоби телефонии провайдерҳо
+Name[th]=ผู้ให้บริการค้นหาสมุดโทรศัพท์
+Name[tr]=Telefon Defteri Arama Sağlayıcı
+Name[ug]=تېلېفون دەپتىرىدىن ئىزدەشنى تەمىنلىگۈچى
+Name[uk]=Провайдер пошуку Telephonebook
+Name[uz]=Telefonlar daftarida qidirish
+Name[uz@cyrillic]=Телефонлар дафтарида қидириш
+Name[vi]=Nhà cung cấp dịch vụ Tìm kiếm qua Danh bạ điện thoại
+Name[wa]=Ahesseu d' cweraedje dins bultin telefonike
+Name[x-test]=xxTelephonebook Search Providerxx
+Name[zh_CN]=Telephonebook 搜索提供者
+Name[zh_TW]=電話號碼簿搜尋提供者
+Type=Service
+X-KDE-ServiceTypes=SearchProvider
+Keys=telnl,telefoon
+Query=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[bg]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[bs]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ca]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ca@valencia]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[cs]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[da]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[de]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[el]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[es]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[eu]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[fi]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[fr]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[gl]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[hi]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[hu]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ia]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[is]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[it]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ja]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[kk]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ko]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[nb]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[nl]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[nn]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[pa]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[pl]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[pt]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[pt_BR]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ro]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ru]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[sk]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[sl]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[sr]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[sr@ijekavian]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[sr@ijekavianlatin]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[sr@latin]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[sv]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[tr]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[ug]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[uk]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[wa]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[x-test]=xxhttp://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}xx
+Query[zh_CN]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}
+Query[zh_TW]=http://www.detelefoongids.nl/\\{1}/\\{2}/10-1/?oWhat=\\{1}&oWhere=\\{2}

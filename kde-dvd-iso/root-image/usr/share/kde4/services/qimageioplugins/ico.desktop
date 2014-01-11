@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=QImageIOPlugins
+X-KDE-ImageFormat=ico
+X-KDE-MimeType=image/vnd.microsoft.icon
+X-KDE-Read=true
+X-KDE-Write=false

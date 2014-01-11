@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=QImageIOPlugins
+X-KDE-ImageFormat=ras
+X-KDE-MimeType=image/x-sun-raster
+X-KDE-Read=true
+X-KDE-Write=false

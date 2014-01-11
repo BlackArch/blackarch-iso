@@ -1,0 +1,185 @@
+[Desktop Entry]
+Charset=
+Hidden=false
+Keys=wordref
+Name=WordReference.com English Dictionary
+Name[af]=WordReference.com Engelse Woordeboek
+Name[ar]=القاموس الإنجليزي من WordReference.com
+Name[as]=WordReference.com English Dictionary
+Name[ast]=WordReference.com diccionariu d'inglés
+Name[be]=WordReference.com Англійскі слоўнік
+Name[be@latin]=Anhielski słoŭnik „WordReference.com”
+Name[bg]=Английски речник WordReference.com
+Name[bn]=WordReference.com ইংরাজি অভিধান
+Name[bn_IN]=WordReference.com ইংরাজি অভিধান
+Name[br]=Geriaoueg saozneg WordReference.com
+Name[bs]=Vordreferens: engleski rječnik
+Name[ca]=WordReference.com diccionari anglès
+Name[ca@valencia]=WordReference.com diccionari anglés
+Name[cs]=Anglický slovník WordReference.com
+Name[csb]=WordReference.com: anielsczi słowôrz
+Name[cy]=Geiriadur Saesneg WorldReference.com
+Name[da]=WordReference.com engelsk ordbog
+Name[de]=WordReference.com – Englischwörterbuch
+Name[el]=WordReference.com αγγλικό λεξικό
+Name[en_GB]=WordReference.com English Dictionary
+Name[eo]=Angla vortaro de WordReference.com
+Name[es]=WordReference.com diccionario de inglés
+Name[et]=WordReference.com inglise keele sõnaraamat
+Name[eu]=WordReference.com Itzulpena: Ingeles hiztegia
+Name[fa]=واژه‌نامه انگلیسی WordReference.com
+Name[fi]=WordReference.comin englannin kielen sanasto
+Name[fr]=Dictionnaire anglais de WordReference.com
+Name[fy]=WordReference.com Ingelsk wurdboek
+Name[ga]=Foclóir Béarla WordReference.com
+Name[gl]=Dicionario de inglés de WordReference.com
+Name[gu]=WordReference.com અંગ્રેજી શબ્દકોશ
+Name[he]=‏WordReference.com - מילון אנגלי
+Name[hi]=वर्डरेफ़रेंस.कॉम  अंग्रेज़ी शब्दकोश
+Name[hne]=वर्डरेफरेंस.काम  अंगरेजी सब्दकोस
+Name[hr]=WordReference.com engleski rječnik
+Name[hsb]=WordReference.com English Dictionary
+Name[hu]=WordReference.com angol szótár
+Name[ia]=WordReference.com Dictionario Anglese
+Name[id]=Kamus Bahasa Inggris WordReference.com
+Name[is]=WordReference.com ensk orðabók
+Name[it]=Dizionario inglese WordReference.com
+Name[ja]=WordReference.com 英語辞書
+Name[kk]=WordReference.com ағылшын сөздігі
+Name[km]=វចនានុក្រម​អង់គ្លេស WordReference.com
+Name[kn]=WordReference.com ಇಂಗ್ಲೀಷ್ ಶಬ್ದಕೋಶ
+Name[ko]=WordReference.com 영어 사전
+Name[ku]=Ferhenga Îngilîzî WordReference.com
+Name[lt]=WordReference.com anglų kalbos žodynas
+Name[lv]=WordReference.com Angļu valodas vārdnīca
+Name[mai]=वर्डरेफरेंस.काम  अंग्रेजी शब्दकोश
+Name[mk]=WordReference.com Англиски речник
+Name[ml]=WordReference.com ഇംഗ്ലീഷ് നിഘണ്ടു
+Name[mr]=वर्डरेफरेंस.कॉम अंग्रेजी शब्दकोश
+Name[nb]=WordReference.com, engelsk ordbok
+Name[nds]=WordReference.com Engelsch Nakieksel
+Name[ne]=WordReference.com अङ्ग्रेजी शब्दकोश
+Name[nl]=WordReference.com Engels woordenboek
+Name[nn]=WordReference.com engelsk ordbok
+Name[or]=WordReference.com ଇରାଜୀ ଅଭିଧାନ
+Name[pa]=WordReference.com ਅੰਗਰੇਜ਼ੀ ਡਿਕਸ਼ਨਰੀ
+Name[pl]=WordReference.com: słownik angielski
+Name[pt]=Dicionário Inglês WordReference.com
+Name[pt_BR]=Dicionário de inglês WordReference.com
+Name[ro]=Dicționarul englez WordReference.com
+Name[ru]=Английский словарь WordReference.com
+Name[se]=WordReference.com eŋgelaš sátnegirji
+Name[si]=WordReference.com ඉංග්‍රීසි ශබ්දකෝශය
+Name[sk]=Anglický slovník WordReference.com
+Name[sl]=Angleški slovar WordReference.com
+Name[sr]=Вордреференс: енглески речник
+Name[sr@ijekavian]=Вордреференс: енглески рјечник
+Name[sr@ijekavianlatin]=WordReference: engleski rječnik
+Name[sr@latin]=WordReference: engleski rečnik
+Name[sv]=Wordreference.com engelsk ordbok
+Name[ta]=WordReference.com ஆங்கில அகராதி
+Name[te]=WordReference.com ఇంగ్లీష్ పదకోశం
+Name[tg]=Луғати забони англисии WordReference.com
+Name[th]=พจนานุกรมอังกฤษ WordReference.com
+Name[tr]=WordReference.com İngilizce Sözlük
+Name[ug]=WordReference.com ئىنگلىزچە لۇغەت
+Name[uk]=Англійський словник WordReference.com
+Name[uz]=WordReference.com Inglizcha lugʻat
+Name[uz@cyrillic]=WordReference.com Инглизча луғат
+Name[vi]=Từ điển tiếng Anh WordReference.com
+Name[wa]=WordReference.com diccionaire inglès
+Name[x-test]=xxWordReference.com English Dictionaryxx
+Name[zh_CN]=WordReference.com 英语字典
+Name[zh_TW]=WordReference.com 英文字典
+Query=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[af]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ar]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[as]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ast]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[be]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[be@latin]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[bg]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[bn]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[bn_IN]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[br]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[bs]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ca]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ca@valencia]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[cs]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[csb]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[da]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[de]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[el]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[en_GB]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[eo]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[es]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[et]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[eu]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[fa]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[fi]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[fr]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[fy]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ga]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[gl]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[gu]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[he]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[hi]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[hne]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[hr]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[hsb]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[hu]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ia]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[id]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[is]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[it]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ja]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ka]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[kk]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[km]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[kn]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ko]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ku]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[lt]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[lv]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[mai]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ml]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[mr]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ms]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[nb]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[nds]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ne]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[nl]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[nn]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[oc]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[or]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[pa]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[pl]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[pt]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[pt_BR]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ro]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ru]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[se]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[si]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[sk]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[sl]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[sr]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[sr@ijekavian]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[sr@ijekavianlatin]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[sr@latin]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[sv]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ta]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[te]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[tg]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[th]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[tr]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[ug]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[uk]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[uz]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[uz@cyrillic]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[vi]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[wa]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[x-test]=xxhttp://www.wordreference.com/english/definition.asp?en=\\{@}xx
+Query[zh_CN]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+Query[zh_TW]=http://www.wordreference.com/english/definition.asp?en=\\{@}
+X-KDE-ServiceTypes=SearchProvider
+Type=Service

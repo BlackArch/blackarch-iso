@@ -1,0 +1,95 @@
+[Desktop Entry]
+Type=Service
+Name=KDE Projects
+Name[bg]=Проекти на KDE
+Name[bs]=KDE projekti
+Name[ca]=Projectes del KDE
+Name[ca@valencia]=Projectes del KDE
+Name[cs]=Projekty KDE
+Name[da]=KDE projekter
+Name[de]=KDE-Projekte
+Name[el]=Έργα KDE
+Name[es]=Proyectos de KDE
+Name[eu]=KDE Proiektuak
+Name[fi]=KDE Projects
+Name[fr]=Projets de KDE
+Name[gl]=Proxectos de KDE
+Name[hi]=केडीई परियोजनाएँ
+Name[hu]=KDE projektek
+Name[ia]=Projectos de KDE
+Name[is]=KDE Verkefni
+Name[it]=Progetti KDE
+Name[ja]=KDE プロジェクト
+Name[kk]=KDE жобалары
+Name[ko]=KDE 프로젝트
+Name[nb]=KDE-prosjekter
+Name[nl]=KDE-projecten
+Name[nn]=KDE-prosjekt
+Name[pa]=ਕੇਡੀਈ ਪਰੋਜੈਕਟ
+Name[pl]=Projekty KDE
+Name[pt]=Projectos do KDE
+Name[pt_BR]=KDE Projects
+Name[ro]=Proiecte KDE
+Name[ru]=Проекты KDE
+Name[sk]=KDE projekty
+Name[sl]=Projekti KDE
+Name[sr]=Пројекти КДЕ‑а
+Name[sr@ijekavian]=Пројекти КДЕ‑а
+Name[sr@ijekavianlatin]=Projekti KDE‑a
+Name[sr@latin]=Projekti KDE‑a
+Name[sv]=KDE-projekt
+Name[tr]=KDE Projeleri
+Name[ug]=ك د ئې(KDE) قۇرۇلۇشلىرى
+Name[uk]=Проекти KDE
+Name[wa]=KDE Projects (Pordjets)
+Name[x-test]=xxKDE Projectsxx
+Name[zh_CN]=KDE 项目
+Name[zh_TW]=KDE 專案
+X-KDE-ServiceTypes=SearchProvider
+Keys=kp,kdeprojects
+Query=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[bg]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[bs]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ca]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ca@valencia]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[cs]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[da]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[de]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[el]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[es]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[eu]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[fi]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[fr]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[gl]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[hi]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[hu]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ia]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[is]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[it]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ja]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[kk]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ko]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[lt]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[nb]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[nl]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[nn]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[pa]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[pl]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[pt]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[pt_BR]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ro]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ru]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[sk]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[sl]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[sr]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[sr@ijekavian]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[sr@ijekavianlatin]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[sr@latin]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[sv]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[tr]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[ug]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[uk]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[wa]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[x-test]=xxhttps://projects.kde.org/search?projects=1&q=\\{@}xx
+Query[zh_CN]=https://projects.kde.org/search?projects=1&q=\\{@}
+Query[zh_TW]=https://projects.kde.org/search?projects=1&q=\\{@}

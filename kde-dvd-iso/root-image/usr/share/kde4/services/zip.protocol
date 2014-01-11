@@ -1,0 +1,12 @@
+[Protocol]
+exec=kio_archive
+protocol=zip
+archiveMimetype=application/zip
+input=filesystem
+output=filesystem
+listing=Name,Type,Size,Date,Access,Owner,Group,Link
+reading=true
+source=true
+#DocPath=kioslave/zip/index.html
+Icon=package-x-generic
+Class=:local

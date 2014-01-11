@@ -1,0 +1,142 @@
+[Desktop Entry]
+Type=Service
+Name=Ecosia search engine
+Name[ar]=محرك البحث Ecosia
+Name[ast]=Motor de gueta Ecosia
+Name[bg]=Търсачка Ecosia
+Name[bn]=ইকোসিয়া সার্চ ইঞ্জিন
+Name[bs]=Ekozija
+Name[ca]=Motor de cerca Ecosia
+Name[ca@valencia]=Motor de cerca Ecosia
+Name[cs]=Vyhledávací stroj Ecosia
+Name[da]=Ecosia søgemaskine
+Name[de]=Ecosia-Suchmaschine
+Name[el]=Ecosia Μηχανή αναζήτησης
+Name[en_GB]=Ecosia search engine
+Name[eo]=Serĉilo Ecosia
+Name[es]=Motor de búsqueda Ecosia
+Name[et]=Ecosia otsingumootor
+Name[eu]=Ecosia bilaketa motorea
+Name[fa]=موتور جستجوی Ecosia
+Name[fi]=Ecosia-hakukone
+Name[fr]=Moteur de recherche « Ecosia »
+Name[ga]=Inneall cuardaigh Ecosia
+Name[gl]=Motor de busca Ecosia
+Name[gu]=ઈકોસિયા શોધ એન્જિન
+Name[he]=מנוע חיפוש Ecosia
+Name[hi]=इकोसिया खोज इंजिन
+Name[hr]=Tražilica Ecosia
+Name[hu]=Ecosia keresőmotor
+Name[ia]=Motor de cerca Ecosia
+Name[id]=Mesin pencari Ecosia
+Name[is]=Ecosia leitarvélin
+Name[it]=Motore di ricerca Ecosia
+Name[ja]=Ecosia 検索エンジン
+Name[kk]=Ecosia іздеу құралы
+Name[km]=ម៉ាស៊ីន​ស្វែងរក Ecosia
+Name[kn]=ಎಕೊಸಿಯಾ(Ecosia) ಶೋಧನಾ ಯಂತ್ರ
+Name[ko]=Ecosia 검색 엔진
+Name[lt]=Ecosia paieškos tarnyba
+Name[lv]=Ecosia meklēšanas dzinējs
+Name[mai]=इकोसिया खोज इंजिन
+Name[ml]=എക്കോഷ്യ തെരച്ചില്‍ എഞ്ചിന്‍
+Name[mr]=एकोसिआ शोध इंजिन
+Name[nb]=Exosia søkemotor
+Name[nds]=Ecosia-Söökmaschien
+Name[nl]=Ecosia zoekmachine
+Name[nn]=Ecosia – søkjemotor
+Name[pa]=ਇਕੋਸੀਆ ਖੋਜ ਇੰਜਣ
+Name[pl]=Wyszukiwarka Ecosia
+Name[pt]=Motor de busca Ecosia
+Name[pt_BR]=Mecanismo de busca Ecosia
+Name[ro]=Motor de căutare Ecosia
+Name[ru]=Поиск Ecosia
+Name[si]=Ecosia සෙවුම් එන්ජිම
+Name[sk]=Vyhľadávací nástroj Ecosia
+Name[sl]=Iskalnik Ecosia
+Name[sr]=Екозија
+Name[sr@ijekavian]=Екозија
+Name[sr@ijekavianlatin]=Ecosia
+Name[sr@latin]=Ecosia
+Name[sv]=Ecosia söktjänst
+Name[tg]=Системаи ҷустуҷӯии Ecosia
+Name[th]=บริการค้นหา Ecosia
+Name[tr]=Ecosia arama motoru
+Name[ug]=Ecosia ئىزدەش ماتورى
+Name[uk]=Рушій пошуку Ecosia
+Name[vi]=Bộ máy tìm kiếm Ecosia
+Name[wa]=Ricwerrece Ecosia
+Name[x-test]=xxEcosia search enginexx
+Name[zh_CN]=Ecosia 搜索引擎
+Name[zh_TW]=Ecosia 搜索引擎
+X-KDE-ServiceTypes=SearchProvider
+Keys=ec
+Query=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ar]=http://www.ethicle.com/search.php?q=\\{@}
+Query[ast]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[bg]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[bn]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[bs]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ca]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ca@valencia]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[cs]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[da]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[de]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[el]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[en_GB]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[eo]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[es]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[et]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[eu]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[fa]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[fi]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[fr]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ga]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[gl]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[gu]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[he]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[hi]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[hr]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[hu]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ia]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[id]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[is]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[it]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ja]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[kk]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[km]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[kn]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ko]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[lt]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[lv]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[mai]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ml]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[mr]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[nb]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[nds]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[nl]=http://www.ethicle.com/search.php?q=\\{@}
+Query[nn]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[pa]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[pl]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[pt]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[pt_BR]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ro]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ru]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[si]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[sk]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[sl]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[sr]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[sr@ijekavian]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[sr@ijekavianlatin]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[sr@latin]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[sv]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[tg]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[th]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[tr]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[ug]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[uk]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[vi]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[wa]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[x-test]=xxhttp://ecosia.org/search.php?q=\\{@}&meta=normalxx
+Query[zh_CN]=http://ecosia.org/search.php?q=\\{@}&meta=normal
+Query[zh_TW]=http://ecosia.org/search.php?q=\\{@}&meta=normal

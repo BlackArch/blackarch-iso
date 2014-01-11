@@ -1,0 +1,62 @@
+[Desktop Entry]
+Exec=kcmshell4 kcm_adobe_flash_player
+Icon=flash-player-properties
+Type=Service
+
+X-KDE-ServiceTypes=KCModule
+
+X-KDE-Library=kcm_adobe_flash_player
+X-KDE-ParentApp=kcontrol
+
+X-KDE-System-Settings-Parent-Category=personal
+X-KDE-Weight=10
+
+Name=Adobe Flash Player
+Comment=Configure Adobe Flash Player
+X-KDE-Keywords=adobe flash,flash player,privacy,cookies,storage,LSO,camera,microphone,mic,site settings,playback,peer-assisted networking,p2p,browsing,drm,protected content
+
+Comment[de]=Adobe Flash Player konfigurieren
+X-KDE-Keywords[de]=adobe flash,flash player,Datenschutz,Cookies,Speicher,LSO,Kamera,Mikrofon,Mikrofon,Website-Einstellungen,Abspielen,Peer-Assisted-Networking,p2p,Browsen,DRM,Geschützter Inhalt
+
+Comment[fr]=Configurer Adobe Flash Player
+X-KDE-Keywords[fr]=adobe flash,flash player,confidentialité,cookies,stockage,LSO,caméra,microphone,mic,paramètres du site,lecture,mise en réseau coopérative,p2p,navigation,drm,contenu protégé
+
+Comment[ja]=Adobe Flash Player を設定
+X-KDE-Keywords[ja]=adobe flash,flash player,プライバシー,Cookie,記憶領域,LSO,カメラ,マイク,マイク,サイトの設定,再生,ピアアシストネットワーク,P2P,参照,DRM,保護されたコンテンツ
+
+Comment[sv]=Konfigurera Adobe Flash Player
+X-KDE-Keywords[sv]=adobe flash,flash player,sekretess,cookies,lagring,lokalt delat objekt (LSO),kamera,mikrofon,mik,platsinställningar,uppspelning,P2P-nätverk,p2p,bläddring,drm,skyddat innehåll
+
+Comment[nl]=Adobe Flash Player configureren
+X-KDE-Keywords[nl]=adobe flash,flash player,privacy,cookies,opslag,LSO,camera,microfoon,mic,site-instellingen,afspelen,peer-ondersteund netwerken,p2p,bladeren,drm,beveiligde inhoud
+
+Comment[es]=Configuración de Adobe Flash
+X-KDE-Keywords[es]=adobe flash,flash player,privacidad,cookies,almacenamiento,LSO,cámara,micrófono,mic,configuración del sitio,reproducir,redes asistidas por pares,p2p,navegación,drm,contenido protegido
+
+Comment[it]=Configura Adobe Flash Player
+X-KDE-Keywords[it]=adobe flash,flash player,privacy,cookie,memorizzazione,LSO,videocamera,microfono,mic,impostazioni sito,riproduzione,connettività peer-to-peer,p2p,navigazione,drm,contenuto protetto
+
+Comment[pt]=Configurar o Adobe Flash Player
+X-KDE-Keywords[pt]=adobe flash,flash player,privacidade,cookies,armazenamento,LSO,câmera,microfone,mic,configurações do site,reprodução,rede de pares,p2p,navegação,DRM,conteúdo protegido
+
+Comment[ko]=Adobe Flash Player 구성
+X-KDE-Keywords[ko]=adobe flash,flash player,개인 정보,쿠키,저장소,LSO,카메라,마이크로폰,마이크,사이트 설정,재생,피어 지원 네트워킹,p2p,탐색,DRM,보호된 내용
+
+Comment[zh_CN]=配置 Adobe Flash Player
+X-KDE-Keywords[zh_CN]=adobe flash,flash player,隐私,cookie,存储,LSO,相机,麦克风,麦克风,站点设置,播放,对等协助网络,p2p,浏览,DRM,受保护的内容
+
+Comment[zh_TW]=設定 Adobe Flash Player
+X-KDE-Keywords[zh_TW]=adobe flash,flash player,私用,Cookie,儲存區,LSO,攝影機,麥克風,麥克風,網站設定,播放,對等協助網路,p2p,瀏覽,DRM,保護的內容
+
+Comment[cs]=Konfigurovat aplikaci Adobe Flash Player
+X-KDE-Keywords[cs]=adobe flash,flash player,ochrana osobních údajů,soubory cookie,úložiště,LSO,kamera,mikrofon,mic,nastavení webu,přehrávání,sítě peer-assisted,p2p,procházení,DRM,chráněný obsah
+
+Comment[pl]=Konfiguruj program Adobe Flash Player
+X-KDE-Keywords[pl]=adobe flash,flash player,Prywatność,Pliki cookie,Magazyn,Lokalne obiekty udostępnione,Kamera,Mikrofon,Mikrofon,Ustawienia witryn,Odtwarzanie,Sieci ze wspomaganiem równorzędnym,Sieci równorzędne,Przeglądanie,Zarządzanie prawami cyfrowymi,Zawartość chroniona
+
+Comment[ru]=Настроить проигрыватель Adobe Flash Player
+X-KDE-Keywords[ru]=adobe flash,flash player,конфиденциальность,файлы cookies,хранилище,LSO,камера,микрофон,mic,настройки веб-сайта,воспроизведение,пиринговая сеть,p2p,просмотр,drm,защищенное содержимое
+
+Comment[tr]=Adobe Flash Player'ı Yapılandır
+X-KDE-Keywords[tr]=adobe flash,flash player,gizlilik,tanımlama bilgileri,depolama,LSO,kamera,mikrofon,mic,site ayarları,oynatma,eş destekli ağ iletişimi,p2p,gözatma,drm,korumalı içerik
+

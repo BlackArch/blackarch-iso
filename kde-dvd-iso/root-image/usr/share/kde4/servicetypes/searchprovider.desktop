@@ -1,0 +1,106 @@
+[Desktop Entry]
+Type=ServiceType
+X-KDE-ServiceType=SearchProvider
+Comment=Search Engine
+Comment[af]=Soektog Masjien
+Comment[ar]=محرك البحث
+Comment[ast]=Motor de gueta
+Comment[be]=Рухавік пошуку
+Comment[be@latin]=Systema pošuku
+Comment[bg]=Търсачка
+Comment[bn]=সার্চ ইঞ্জিন
+Comment[bn_IN]=সার্চ-ইঞ্জিন
+Comment[br]=Keflusker klask
+Comment[bs]=Motor pretrage
+Comment[ca]=Motor de cerca
+Comment[ca@valencia]=Motor de cerca
+Comment[cs]=Vyhledávací stroj
+Comment[csb]=Szëkôrz
+Comment[cy]=Peiriant Chwilio
+Comment[da]=Søgemaskine
+Comment[de]=Suchmaschine
+Comment[el]=Μηχανή αναζήτησης
+Comment[en_GB]=Search Engine
+Comment[eo]=Serĉilo
+Comment[es]=Motor de búsqueda
+Comment[et]=Otsingumootor
+Comment[eu]=Bilaketa motorea
+Comment[fa]=موتور جستجو
+Comment[fi]=Hakukone
+Comment[fr]=Moteur de recherche
+Comment[fy]=Sykmasine
+Comment[ga]=Inneall Cuardaigh
+Comment[gl]=Motor de busca
+Comment[gu]=શોધ એન્જિન
+Comment[he]=מנוע חיפוש
+Comment[hi]=खोज इंजिन
+Comment[hne]=खोज इंजिन
+Comment[hr]=Tražilica
+Comment[hsb]=Pytanska mašina
+Comment[hu]=Keresőmotor
+Comment[ia]=Motor de cerca
+Comment[id]=Mesin Pencari
+Comment[is]=Leitarvél
+Comment[it]=Motore di ricerca
+Comment[ja]=検索エンジン
+Comment[ka]=საძიებო სისტემა
+Comment[kk]=Іздеу құралы
+Comment[km]=ម៉ាស៊ីន​ស្វែងរក
+Comment[kn]=ಶೋಧನಾ ಯಂತ್ರ
+Comment[ko]=검색 엔진
+Comment[ku]=Motora Lêgerînê
+Comment[lt]=Paieškos tarnyba
+Comment[lv]=Meklēšanas dzinējs
+Comment[mai]=खोज इंजिन
+Comment[mk]=Машина за пребарување
+Comment[ml]=തെരച്ചില്‍ എഞ്ചിന്‍
+Comment[mr]=शोध इंजिन
+Comment[ms]=Enjin Carian
+Comment[nb]=Søkemotor
+Comment[nds]=Söökmaschien
+Comment[ne]=इन्जिन खोजी गर्नुहोस्
+Comment[nl]=Zoekmachine
+Comment[nn]=Søkjemotor
+Comment[or]=ସନ୍ଧାନ ଯନ୍ତ୍ର
+Comment[pa]=ਖੋਜ ਇੰਜਣ
+Comment[pl]=Wyszukiwarka
+Comment[pt]=Motor de Busca
+Comment[pt_BR]=Mecanismo de busca
+Comment[ro]=Motor de căutare
+Comment[ru]=Поисковая машина
+Comment[se]=Ohcanmotor
+Comment[si]=සෙවුම් එන්ජිම
+Comment[sk]=Vyhľadávací nástroj
+Comment[sl]=Iskalnik
+Comment[sr]=Мотор претраге
+Comment[sr@ijekavian]=Мотор претраге
+Comment[sr@ijekavianlatin]=Motor pretrage
+Comment[sr@latin]=Motor pretrage
+Comment[sv]=Söktjänst
+Comment[ta]=தேடு இயந்திரம்
+Comment[te]=శోధన యంత్రము
+Comment[tg]=Барномаи ҷустуҷӯ
+Comment[th]=เครื่องมือสำหรับค้นหา
+Comment[tr]=Arama Motoru
+Comment[ug]=ئىزدەش ماتورى
+Comment[uk]=Рушій пошуку
+Comment[uz]=Qidirish vositasi
+Comment[uz@cyrillic]=Қидириш воситаси
+Comment[vi]=Bộ máy tìm kiếm
+Comment[wa]=Ricwerrece
+Comment[xh]=Phendla Injini
+Comment[x-test]=xxSearch Enginexx
+Comment[zh_CN]=搜索引擎
+Comment[zh_TW]=搜索引擎
+
+[PropertyDef::Keys]
+Type=QStringList
+
+[PropertyDef::Query]
+Type=QString
+
+[PropertyDef::Suggest]
+Type=QString
+
+[PropertyDef::Charset]
+Type=QString
