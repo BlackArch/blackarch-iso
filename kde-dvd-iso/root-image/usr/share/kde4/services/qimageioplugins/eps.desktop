@@ -1,7 +1,0 @@
-[Desktop Entry]
-Type=Service
-X-KDE-ServiceTypes=QImageIOPlugins
-X-KDE-ImageFormat=eps,epsi,epsf
-X-KDE-MimeType=image/x-eps
-X-KDE-Read=true
-X-KDE-Write=true

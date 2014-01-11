@@ -1,5 +1,0 @@
-# KDE Cookie File v2
-#
-# Host               Domain               Path         Exp.date   Prot Name                 Sec  Value
-[.github.com]
-github.com           ".github.com"        "/"          2020552328    0 logged_in            7    no

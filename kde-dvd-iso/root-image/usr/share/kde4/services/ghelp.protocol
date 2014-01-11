@@ -1,9 +1,0 @@
-[Protocol]
-exec=kio_ghelp
-protocol=ghelp
-input=none
-output=filesystem
-reading=true
-defaultMimetype=text/html
-Icon=help
-Class=:local

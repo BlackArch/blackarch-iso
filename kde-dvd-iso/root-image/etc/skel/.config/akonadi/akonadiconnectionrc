@@ -1,6 +1,0 @@
-[Data]
-Method=UnixPath
-UnixPath=/tmp/akonadi-root.QdNd5I/akonadiserver.socket
-
-[DBUS]
-Address="unix:abstract=/tmp/dbus-Gh4xOD7yuN,guid=99cdbaa77402f54d72e11a8352d035d0"

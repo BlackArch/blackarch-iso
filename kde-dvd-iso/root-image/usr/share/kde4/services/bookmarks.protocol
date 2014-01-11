@@ -1,9 +1,0 @@
-[Protocol]
-exec=kio_bookmarks
-protocol=bookmarks
-input=none
-output=stream
-reading=true
-X-DocPath=kioslave/bookmarks/index.html
-Icon=bookmarks
-Class=:local

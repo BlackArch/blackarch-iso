@@ -1,7 +1,0 @@
-[KNewStuff3]
-ProvidersUrl=http://download.kde.org/ocs/providers.xml
-Categories=Plasma Activity Template
-StandardResource=tmp
-InstallationCommand=plasmapkg -t layout-template -i %f
-UninstallCommand=plasmapkg -t layout-template -r %f
-
