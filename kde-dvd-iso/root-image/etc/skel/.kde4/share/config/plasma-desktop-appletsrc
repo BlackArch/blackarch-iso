@@ -290,7 +290,7 @@ plugin=simplelauncher
 zvalue=0
 
 [Containments][13][Applets][26][Configuration]
-icon=/home/arthur/blackarch/own/blackarchiso/elken/blackarch/blackarch.png
+icon=kde
 
 [Containments][13][Applets][26][LayoutInformation]
 Order=0
