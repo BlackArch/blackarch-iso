@@ -2,9 +2,9 @@
 
 set -e -u
 
-iso_name=blackarchlinux
-iso_label="ARCH_$(date +%Y%m)"
-iso_version="$(date +%Y.%m.%d)-netinst"
+iso_name=blackarchlinux-netinst
+iso_label="BLACKARCH_$(date +%Y%m)"
+iso_version="$(date +%Y.%m.%d)"
 install_dir=arch
 work_dir=work
 out_dir=out
