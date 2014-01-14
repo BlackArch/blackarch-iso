@@ -3,7 +3,6 @@
 ##############
 
 # default
-abs
 arch-install-scripts
 b43-fwcutter
 btrfs-progs
@@ -25,8 +24,8 @@ linux-atm
 ntp
 openssh
 parted
-#ppp
-#pptpclient
+ppp
+pptpclient
 rfkill
 rp-pppoe
 speedtouch
