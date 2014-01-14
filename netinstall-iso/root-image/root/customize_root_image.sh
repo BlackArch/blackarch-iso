@@ -39,5 +39,7 @@ su -c 'pacman-key --lsign-key 4345771566D76038C7FEB43863EC0ADBEA87E4E3' root
 # sync database
 su -c 'pacman -Syy --noconfirm' root
 
+su -c 'rm -rf /usr/share/blackarch-install-scripts' root
+su -c 'cd /usr/share/; git clone https://github.com/BlackArch/blackarch-install-scripts' root
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
 su -c 'rm -rf /root/install.txt' root
