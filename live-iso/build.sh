@@ -2,10 +2,10 @@
 
 set -e -u
 
-iso_name=archlinux
-iso_label="ARCH_$(date +%Y%m)"
+iso_name=blackarchlinux-live
+iso_label="BLACKARCH_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
-install_dir=arch
+install_dir=blackarch
 work_dir=work
 out_dir=out
 
