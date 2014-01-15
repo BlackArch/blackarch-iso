@@ -43,6 +43,8 @@ su -c 'pacman -Syyu --noconfirm' root
 su -c 'chmod 755 /usr/local/bin/blackarch-dwm'
 
 # blackarch-install (dev version)
+su -c 'rm -rf /usr/share/blackarch-install-scripts' root
+su -c 'cd /usr/share/; git clone https://github.com/BlackArch/blackarch-install-scripts' root
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
 su -c 'rm -rf /root/install.txt' root
 
