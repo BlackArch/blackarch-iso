@@ -45,3 +45,4 @@ openssh
 #virtualbox-guest-modules
 #virtualbox-guest-utils
 blackarch-install-scripts
+blackarch-keyring
