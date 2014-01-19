@@ -32,10 +32,12 @@ fi
 su -c "cp -r /etc/skel/.* /root/" root
 
 # add signing keys
-su -c 'wget http://blackarch.org/blackarch/blackarch/os/x86_64/blackarch-keyring-20140108-1-any.pkg.tar.xz{,.sig}' root
+su -c 'pacman-key --init' root
+su -c 'wget http://blackarch.org/blackarch/blackarch/os/x86_64/blackarch-keyring-20140118-1-any.pkg.tar.xz{,.sig}' root
 su -c 'gpg --keyserver hkp://pgp.mit.edu --recv-keys "4345771566D76038C7FEB43863EC0ADBEA87E4E3"' root
-su -c 'gpg --with-fingerprint blackarch-keyring-20140108-1-any.pkg.tar.xz.sig' root
-su -c 'pacman -U blackarch-keyring-20140108-1-any.pkg.tar.xz' root
+su -c 'gpg --with-fingerprint blackarch-keyring-20140118-1-any.pkg.tar.xz.sig' root
+su -c 'pacman -U blackarch-keyring-20140118-1-any.pkg.tar.xz' root
+su -c 'rm -rf blackarch-keyring-*' root
 
 #su -c 'pacman-key --init' root
 #su -c 'pacman-key -r 4345771566D76038C7FEB43863EC0ADBEA87E4E3' root

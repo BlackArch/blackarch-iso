@@ -3,6 +3,7 @@
 ##############
 
 # default
+archlinux-keyring
 arch-install-scripts
 b43-fwcutter
 btrfs-progs
@@ -21,7 +22,7 @@ git
 gnu-netcat
 gpm
 gptfdisk
-grml-zsh-config
+#grml-zsh-config
 haveged
 hdparm
 ipw2100-fw
@@ -110,12 +111,14 @@ xorg-xbacklight
 xorg-xdm
 xorg-xinit
 zd1211-firmware
-zsh
+#zsh
 xl2tpd
 zd1211-firmware
-zsh
 
 # needed for blackarch
+blackarch-keyring
+bash
+bash-completion
 virtualbox-guest-modules
 virtualbox-guest-utils
 xorg-server

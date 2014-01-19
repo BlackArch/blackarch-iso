@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/tmp/foo'
+let g:netrw_dirhist_2='/home/noptrix/.vim/colors'
+let g:netrw_dirhist_3='/home/noptrix/haxx/own/dev/ctgen/docs'
+let g:netrw_dirhist_4='/home/noptrix/tmp/brian'

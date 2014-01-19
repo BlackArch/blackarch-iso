@@ -44,5 +44,6 @@ openssh
 # needed for blackarch
 #virtualbox-guest-modules
 #virtualbox-guest-utils
+archlinux-keyring
 blackarch-install-scripts
 blackarch-keyring
