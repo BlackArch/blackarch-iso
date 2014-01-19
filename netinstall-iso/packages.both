@@ -47,3 +47,4 @@ openssh
 archlinux-keyring
 blackarch-install-scripts
 blackarch-keyring
+ctags

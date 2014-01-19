@@ -3,6 +3,7 @@
 ##############
 
 # default
+ctags
 archlinux-keyring
 arch-install-scripts
 b43-fwcutter
