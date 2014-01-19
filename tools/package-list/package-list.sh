@@ -4,8 +4,10 @@
 #
 
 WORKDIR="`pwd`"
-_GROUPS="`pacman -Sg | grep blackarch- | sort -u | tr -s '\n' ' '`"
 ARCHS="x86_64 i686"
+_GROUPS="`pacman -Sg | grep blackarch- |
+grep -vE '\<analysis\>|\<web\>|\<forensics\>|\<intel\>' | sort -u |
+tr -s '\n' ' '`"
 
 if [ ${#} -ne 1 ]
 then
@@ -23,8 +25,9 @@ do
 
   for group in ${_GROUPS}
   do
-    tools=`grep -r "$group" | cut -d '/' -f 1 | sort -u | grep -v "packages.${arch}"`
-    echo "# $group" >> "packages.${arch}"
+    tools=`grep -r "$group" | cut -d '/' -f 1 | sort -u |
+    grep -v "packages.${arch}"`
+    echo "# ${group}" >> "packages.${arch}"
     for tool in ${tools}
     do
       grep -rE "'${arch}'|'any'" ${tool} | cut -d '/' -f 1 |
