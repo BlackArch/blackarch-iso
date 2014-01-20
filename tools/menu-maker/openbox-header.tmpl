@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="terminals-menu" label="terminals">
+	<item label="xterm (red)">
+		<action name="Execute">
+			<command>xterm -bg black -fg red</command>
+		</action>
+	</item>
+	<item label="xterm (green)">
+		<action name="Execute">
+			<command>xterm -bg black -fg green</command>
+		</action>
+	</item>
+	<item label="xterm (yellow)">
+		<action name="Execute">
+			<command>xterm -bg black -fg yellow</command>
+		</action>
+	</item>
+	<item label="xterm (white)">
+		<action name="Execute">
+			<command>xterm -bg black -fg white</command>
+		</action>
+	</item>
+</menu>
+
+<menu id="browsers-menu" label="browsers">
+	<item label="firefox">
+		<action name="Execute">
+			<command>firefox</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+				<wmclass>firefox</wmclass>
+			</startupnotify>
+		</action>
+	</item>
+	<item label="opera">
+		<action name="Execute">
+			<command>opera</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+				<wmclass>opera</wmclass>
+		    </startupnotify>
+		</action>
+	</item>
+</menu>
+
+<!-- blackarch related -->
+

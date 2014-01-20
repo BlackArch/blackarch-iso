@@ -1,0 +1,26 @@
+    [end]
+
+    [separator]
+
+    [submenu] (fluxbox menu)
+        [config] (Configure)
+            [submenu] (System Styles) {Choose a style...}
+                [stylesdir] (/usr/share/fluxbox/styles)
+            [end]
+            [submenu] (User Styles) {Choose a style...}
+                [stylesdir] (~/.fluxbox/styles)
+            [end]
+            [workspaces] (Workspace List)
+            [submenu] (Tools)
+                [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center}
+            [end]
+            [commanddialog] (Fluxbox Command)
+            [reconfig] (Reload config)
+            [restart] (Restart)
+            [exec] (About) {(fluxbox -v; fluxbox -info | sed 1d) \
+            2> /dev/null | xmessage -file - -center}
+            [separator]
+            [exit] (Exit)
+    [end]
+
+[end]
