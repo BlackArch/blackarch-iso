@@ -12,12 +12,16 @@ if [ ${#} -ne 1 ]
 then
     echo "${0} <packages_path>"
     exit 1337
+else
+    pkgpath="${1}"
 fi
+
+cd "`dirname ${pkgpath}`/`basename ${pkgpath}`"
 
 make_fluxbox()
 {
     cat fluxbox-header.tmpl > fluxbox-menu
-    echo "      [submenu] (${grp})" >> fluxbox-menu
+    echo "      [submenu] (${group})" >> fluxbox-menu
     echo "          [exec] (${tool}) {xterm -bg black -fg red -e" \
         "'${tool} ${flags} ; bash'}" >> fluxbox-menu
     echo "      [end]" >> fluxbox-menu
@@ -42,6 +46,19 @@ make_awesome()
     return 0
 }
 
-make_fluxbox
-#make_openbox
-#make_awesome
+for group in ${_GROUPS}
+do
+    pkgs="`grep -r ${group} | cut -d '/' -f 1 | sort -u `"
+    for p in ${pkgs}
+    do
+        tools="`pkgfile -lbq ${p} |
+        awk '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $2}'`"
+        for tool in ${tools}
+        do
+            flags=""
+            #make_fluxbox
+            #make_openbox
+            #make_awesome
+        done
+    done
+done

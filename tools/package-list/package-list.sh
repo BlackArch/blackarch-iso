@@ -25,7 +25,7 @@ do
 
   for group in ${_GROUPS}
   do
-    tools=`grep -r "$group" | cut -d '/' -f 1 | sort -u |
+    tools=`grep -r "${group}" | cut -d '/' -f 1 | sort -u |
     grep -v "packages.${arch}"`
     echo "# ${group}" >> "packages.${arch}"
     for tool in ${tools}

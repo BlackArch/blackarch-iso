@@ -3,8 +3,6 @@
 ##############
 
 # default
-ctags
-archlinux-keyring
 arch-install-scripts
 b43-fwcutter
 btrfs-progs
@@ -181,4 +179,7 @@ cadaver
 bsdiff
 arp-scan
 aircrack-ng
+ctags
+archlinux-keyring
+blackarch-keyring
 blackarch-install-scripts
