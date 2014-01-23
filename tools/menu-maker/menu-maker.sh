@@ -3,6 +3,7 @@
 # generates menus for fluxbox, openbox and awesome wms.
 
 
+WORKDIR="`pwd`"
 _GROUPS="`pacman -Sg | grep blackarch- |
 grep -vE '\<analysis\>|\<web\>|\<forensics\>|\<intel\>' | sort -u |
 tr -s '\n' ' '`"
@@ -16,46 +17,44 @@ else
     pkgpath="${1}"
 fi
 
-cd "`dirname ${pkgpath}`/`basename ${pkgpath}`"
-
 make_fluxbox_header()
 {
-    cat fluxbox-header.tmpl > fluxbox-menu
+    cat "${WORKDIR}/fluxbox-header.tmpl" > fluxbox-menu
 
     return 0;
 }
 
 make_fluxbox_footer()
 {
-    cat fluxbox-footer.tmpl >> fluxbox-menu
+    cat "${WORKDIR}/fluxbox-footer.tmpl" >> fluxbox-menu
 
     return 0;
 }
 
 make_openbox_header()
 {
-    cat openbox-header.tmpl > openbox-menu
+    cat "${WORKDIR}/openbox-header.tmpl" > openbox-menu
 
     return 0;
 }
 
 make_openbox_footer()
 {
-    cat openbox-footer.tmpl >> openbox-menu
+    cat "${WORKDIR}/openbox-footer.tmpl" >> openbox-menu
 
     return 0;
 }
 
 make_awesome_header()
 {
-    cat awesome-header.tmpl > awesome-menu
+    cat "${WORKDIR}/awesome-header.tmpl" > awesome-menu
 
     return 0;
 }
 
 make_awesome_footer()
 {
-    cat awesome-footer.tmpl >> awesome-menu
+    cat "${WORKDIR}/awesome-footer.tmpl" >> awesome-menu
 
     return 0;
 }
@@ -93,8 +92,8 @@ make_menus()
             do
                 flags=""
                 make_fluxbox_menu
-                make_openbox
-                make_awesome
+                make_openbox_menu
+                make_awesome_menu
             done
         done
     done
@@ -120,6 +119,15 @@ make_footers()
     return 0;
 }
 
+move_menus()
+{
+    mv fluxbox-menu openbox-menu awesome-menu ${WORKDIR}
+
+    return 0;
+}
+
+cd "`dirname ${pkgpath}`/`basename ${pkgpath}`"
 make_headers
 make_menus
 make_footers
+move_menus
