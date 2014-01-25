@@ -148,8 +148,12 @@ make_menus()
             awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}'`"
             for tool in ${tools}
             do
-                opts="`grep "\<${tool}\>" "${WORKDIR}/help-flags.txt" |
+                opts="`grep "^${tool} " "${WORKDIR}/help-flags.txt" |
                 cut -d ' ' -f 2-`"
+                if [ -z "${opts}" ]
+                then
+                    opts=";"
+                fi
                 fluxbox_entry
                 openbox_entry
                 awesome_entry
