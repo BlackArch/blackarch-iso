@@ -69,7 +69,7 @@ fluxbox_start()
 fluxbox_entry()
 {
     echo "          [exec] (${tool}) {xterm -bg black -fg red -e" \
-        "'${tool} ${flags} ; bash'}" >> fluxbox-menu
+        "'${tool} ${opts} bash'}" >> fluxbox-menu
 
     return 0
 }
@@ -95,7 +95,7 @@ openbox_entry()
     echo "  <item label=\"${tool}\">" >> openbox-menu
     echo "      <action name=\"Execute\">" >> openbox-menu
     echo "          <command>xterm -bg black -fg red -e '${tool}" \
-        "${flags} ; bash'</command>" >> openbox-menu
+        "${opts} bash'</command>" >> openbox-menu
     echo "      </action>" >> openbox-menu
     echo "  </item>" >> openbox-menu
 
@@ -120,8 +120,8 @@ awesome_start()
 
 awesome_entry()
 {
-    echo "  { \"${tool}\", \"xterm -bg black -fg red -e '${tool} ${flags}" \
-        "; bash'\" }," >> awesome-menu
+    echo "  { \"${tool}\", \"xterm -bg black -fg red -e '${tool} ${opts}" \
+        "bash'\" }," >> awesome-menu
 
     return 0
 }
@@ -148,7 +148,8 @@ make_menus()
             awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}'`"
             for tool in ${tools}
             do
-                flags=""
+                opts="`grep ${tool} "${WORKDIR}/help-flags.txt" |
+                cut -d ' ' -f 2-`"
                 fluxbox_entry
                 openbox_entry
                 awesome_entry
