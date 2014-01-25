@@ -152,7 +152,7 @@ make_menus()
                 cut -d ' ' -f 2-`"
                 if [ -z "${opts}" ]
                 then
-                    echo "[WARNING]: ${tool} not added to help-flags.txt"
+                    echo "[WARNING]: ${tool} (${p}) not added to help-flags.txt"
                     opts=";"
                 fi
                 fluxbox_entry
@@ -170,6 +170,27 @@ make_menus()
 
 make_openbox_extras()
 {
+    echo "<menu id=\"root-menu\" label=\"Openbox 3\">" >> openbox-menu
+    echo "  <separator label=\"applications\" />" >> openbox-menu
+    echo "  <menu id=\"terminals-menu\"/>" >> openbox-menu
+    echo "  <menu id=\"browsers-menu\"/>" >> openbox-menu
+    echo "  <separator label=\"blackarch\" />" >> openbox-menu
+
+    for group in ${_GROUPS}
+    do
+        echo "  <menu id=\"${group}-menu\"/>" >> openbox-menu
+    done
+
+    echo "  <separator label=\"system\" />" >> openbox-menu
+    echo "  <menu id=\"system-menu\" />" >> openbox-menu
+    echo "  <separator />" >> openbox-menu
+    echo "  <item label=\"log out\">" >> openbox-menu
+    echo "  <action name=\"exit\">" >> openbox-menu
+    echo "      <prompt>yes</prompt>" >> openbox-menu
+    echo "  </action>" >> openbox-menu
+    echo "  </item>" >> openbox-menu
+    echo "</menu>" >> openbox-menu
+
     return 0
 }
 
