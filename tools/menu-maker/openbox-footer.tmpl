@@ -1,11 +1,74 @@
-	<separator label="system" />
-	<menu id="system-menu"/>
-	<separator />
-	<item label="log out">
-	<action name="exit">
-		<prompt>yes</prompt>
-	</action>
-	</item>
+
+<menu id="system-menu" label="system">
+    <item label="openbox configuration manager">
+        <action name="Execute">
+            <command>obconf</command>
+            <startupnotify>
+                <enabled>yes</enabled>
+            </startupnotify>
+        </action>
+    </item>
+    <separator />
+    <item label="reconfigure openbox">
+        <action name="reconfigure" />
+    </item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+    <separator label="applications" />
+    <menu id="terminals-menu"/>
+    <menu id="browsers-menu"/>
+    <separator label="blackarch" />
+    <menu id="blackarch-anti-forensic-menu"/>
+    <menu id="blackarch-automation-menu"/>
+    <menu id="blackarch-backdoor-menu"/>
+    <menu id="blackarch-binary-menu"/>
+    <menu id="blackarch-bluetooth-menu"/>
+    <menu id="blackarch-code-audit-menu"/>
+    <menu id="blackarch-cracker-menu"/>
+    <menu id="blackarch-crypto-menu"/>
+    <menu id="blackarch-database-menu"/>
+    <menu id="blackarch-debugger-menu"/>
+    <menu id="blackarch-decompiler-menu"/>
+    <menu id="blackarch-defensive-menu"/>
+    <menu id="blackarch-disassembler-menu"/>
+    <menu id="blackarch-dos-menu"/>
+    <menu id="blackarch-drone-menu"/>
+    <menu id="blackarch-exploitation-menu"/>
+    <menu id="blackarch-fingerprint-menu"/>
+    <menu id="blackarch-forensic-menu"/>
+    <menu id="blackarch-fuzzer-menu"/>
+    <menu id="blackarch-hardware-menu"/>
+    <menu id="blackarch-honeypot-menu"/>
+    <menu id="blackarch-keylogger-menu"/>
+    <menu id="blackarch-malware-menu"/>
+    <menu id="blackarch-misc-menu"/>
+    <menu id="blackarch-mobile-menu"/>
+    <menu id="blackarch-networking-menu"/>
+    <menu id="blackarch-nfc-menu"/>
+    <menu id="blackarch-packer-menu"/>
+    <menu id="blackarch-proxy-menu"/>
+    <menu id="blackarch-recon-menu"/>
+    <menu id="blackarch-reversing-menu"/>
+    <menu id="blackarch-scanner-menu"/>
+    <menu id="blackarch-sniffer-menu"/>
+    <menu id="blackarch-social-menu"/>
+    <menu id="blackarch-spoof-menu"/>
+    <menu id="blackarch-threat-model-menu"/>
+    <menu id="blackarch-tunnel-menu"/>
+    <menu id="blackarch-unpacker-menu"/>
+    <menu id="blackarch-voip-menu"/>
+    <menu id="blackarch-webapp-menu"/>
+    <menu id="blackarch-windows-menu"/>
+    <menu id="blackarch-wireless-menu"/>
+    <separator label="system" />
+    <menu id="system-menu"/>
+    <separator />
+    <item label="log out">
+    <action name="exit">
+        <prompt>yes</prompt>
+    </action>
+    </item>
 </menu>
 
 </openbox_menu>
