@@ -152,6 +152,7 @@ make_menus()
                 cut -d ' ' -f 2-`"
                 if [ -z "${opts}" ]
                 then
+                    echo "[WARNING]: ${tool} not added to help-flags.txt"
                     opts=";"
                 fi
                 fluxbox_entry
