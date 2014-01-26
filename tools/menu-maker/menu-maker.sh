@@ -3,7 +3,7 @@
 # generates menus for fluxbox, openbox and awesome.
 
 
-WORKDIR="`pwd`"
+WORKDIR="`pwd`/`dirname ${0}`"
 _GROUPS="`pacman -Sg | grep blackarch- |
 grep -vE '\<analysis\>|\<web\>|\<forensics\>|\<intel\>' | sort -u |
 tr -s '\n' ' '`"
