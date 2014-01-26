@@ -1,19 +1,10 @@
-##############
-# arch linux #
-##############
-
-# default
+# arch linux default
 gummiboot
 prebootloader
 refind-efi
 
-
-###################
-# blackarch linux #
-###################
-
-
 # blackarch-anti-forensic
+ropeadope
 secure-delete
 
 # blackarch-automation
@@ -23,6 +14,7 @@ checksec
 crunch
 gooscan
 hackersh
+intersect
 mitmap
 nfspy
 nfsshell
@@ -73,7 +65,6 @@ bluesnarfer
 braces
 bss
 bt_audit
-btaudit
 btcrack
 btscanner
 carwhisperer
@@ -111,6 +102,7 @@ creddump
 crunch
 cupp
 dbpwaudit
+depant
 dpeparser
 eapmd5pass
 enabler
@@ -168,6 +160,7 @@ statsprocessor
 sucrack
 tftp-bruteforce
 thc-pptp-bruter
+truecrack
 ufo-wardriving
 vnc-bypauth
 vncrack
@@ -175,8 +168,6 @@ wifite
 wmat
 wyd
 zulu
-
-# blackarch-cross-compiling
 
 # blackarch-crypto
 bletchley
@@ -203,10 +194,11 @@ vivisect
 
 # blackarch-decompiler
 flasm
+#jd-gui
+#recstudio
 
 # blackarch-defensive
 arpalert
-arpantispoofer
 arpon
 artillery
 chkrootkit
@@ -223,9 +215,11 @@ vivisect
 
 # blackarch-dos
 42zip
+davoset
 dnsdrdos
 hwk
 iaxflood
+inviteflood
 mausezahn
 nkiller2
 slowhttptest
@@ -241,7 +235,7 @@ armitage
 arpoison
 bbqsql
 bed
-#beef
+beef
 bfbtester
 cisco-global-exploiter
 cisco-torch
@@ -301,6 +295,7 @@ cisco-torch
 cms-explorer
 complemento
 dnsmap
+fpdns
 ftpmap
 httprint
 kolkata
@@ -323,6 +318,7 @@ bios_memimage
 bulk-extractor
 canari
 casefile
+chaosmap
 chkrootkit
 dc3dd
 eindeutig
@@ -346,6 +342,7 @@ nfex
 origami
 pasco
 pdf-parser
+pdfbook-analyzer
 pdfid
 peepdf
 pev
@@ -444,9 +441,8 @@ inetsim
 kippo
 wifi-honey
 
-# blackarch-keylogger
-
 # blackarch-malware
+cuckoo
 malwaredetect
 peepdf
 python2-yara
@@ -481,7 +477,6 @@ leo
 list-urls
 mibble
 netactview
-oh-my-zsh-git
 perl-tftp
 pyinstaller
 python-utidylib
@@ -495,11 +490,50 @@ tnscmd
 tpcat
 uatester
 vfeed
-#winexe
+winexe
 wol-e
 
 # blackarch-mobile
+#android-sdk
+#android-sdk-platform-tools
 android-udev-rules
+
+# blackarch-networking
+httping
+hyenae
+ipaudit
+jnetmap
+mausezahn
+middler
+nbtool
+netmap
+netsed
+nfex
+nfsshell
+nipper
+nkiller2
+packet-o-matic
+packit
+perl-tftp
+ptunnel
+pwnat
+pyminifakedns
+responder
+rtpbreak
+sbd
+scapy
+sessionlist
+snmpcheck
+sslsplit
+sslstrip
+t50
+tcpextract
+tcptraceroute
+thc-ipv6
+udptunnel
+wol-e
+yersinia
+zarp
 
 # blackarch-nfc
 nfcutils
@@ -519,7 +553,7 @@ sslnuke
 webscarab
 
 # blackarch-recon
-#bing-ip2hosts
+bing-ip2hosts
 canari
 casefile
 cutycapt
@@ -536,7 +570,7 @@ halcyon
 httping
 intrace
 isr-form
-#lanmap2
+lanmap2
 lbd
 ldapenum
 lft
@@ -636,6 +670,7 @@ icmpquery
 ike-scan
 inguma
 ipscan
+ipv6toolkit
 jigsaw
 jsql
 ldapenum
@@ -707,6 +742,7 @@ p0f
 passivedns
 phoss
 pytacle
+sessionlist
 ssldump
 sslsniff
 tcpick
@@ -741,9 +777,8 @@ chownat
 ctunnel
 dns2tcp
 icmptx
-iodine
 matahari
-#packet-o-matic
+packet-o-matic
 ptunnel
 udptunnel
 
@@ -755,6 +790,7 @@ ace
 erase-registrations
 iaxflood
 pcapsipdump
+protos-sip
 redirectpoison
 rtp-flood
 siparmyknife
@@ -863,12 +899,12 @@ sqlping
 superscan
 sysinternals-suite
 unsecure
-#winexe
+winexe
 winfo
 x-scan
 
 # blackarch-wireless
-airflood
+#airflood
 airoscript
 airpwn
 batctl
@@ -902,3 +938,4 @@ wifitap
 wifite
 wlan2eth
 zulu
+

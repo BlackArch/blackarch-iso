@@ -61,7 +61,7 @@ make_awesome_footer()
 
 fluxbox_start()
 {
-    echo "      [submenu] (${group})" >> fluxbox-menu
+    echo "      [submenu] (`echo ${group} | cut -d '-' -f 2-`)" >> fluxbox-menu
 
     return 0
 }
@@ -152,7 +152,7 @@ make_menus()
                 cut -d ' ' -f 2-`"
                 if [ -z "${opts}" ]
                 then
-                    echo "[WARNING]: ${tool} (${p}) not added to help-flags.txt"
+                    echo "[WARNING] ${tool} (${p}) not added to help-flags.txt"
                     opts=";"
                 fi
                 fluxbox_entry

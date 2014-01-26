@@ -47,7 +47,7 @@ su -c "echo 'Server = http://www.blackarch.org/blackarch/\$repo/os/\$arch' >> /e
 su -c 'pacman -Syyu --noconfirm' root
 
 # fix wrong permissions for blackarch-dwm
-su -c 'chmod 755 /usr/local/bin/blackarch-dwm'
+su -c 'chmod 755 /usr/bin/blackarch-dwm'
 
 # blackarch-install (dev version)
 su -c 'rm -rf /usr/share/blackarch-install-scripts' root
