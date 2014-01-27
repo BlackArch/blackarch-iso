@@ -3,7 +3,7 @@
 # generates list of packages for packages.x86_64 and packages.i686
 #
 
-WORKDIR="`pwd`"
+WORKDIR="`pwd`/`dirname ${0}`"
 ARCHS="x86_64 i686"
 _GROUPS="`pacman -Sg | grep blackarch- |
 grep -vE '\<analysis\>|\<web\>|\<forensics\>|\<intel\>' | sort -u |
@@ -21,7 +21,7 @@ cd "`dirname ${pkgpath}`/`basename ${pkgpath}`"
 
 for arch in ${ARCHS}
 do
-  cat "${WORKDIR}/packages.${arch}.tmpl" > "${WORKDIR}/packages.${arch}"
+  cat "${WORKDIR}/packages.${arch}.tmpl" > "packages.${arch}"
 
   for group in ${_GROUPS}
   do

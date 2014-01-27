@@ -27,12 +27,32 @@ else
 
     if [ "${arch}" != "i686" -a "${arch}" != "x86_64" ]
     then
-        echo "unknown arch!"
+        echo "[ERROR] unknown arch!"
         exit 1337
     fi
 fi
 
-cp -r "../live-iso" "../live-iso-${arch}"
+if [ -d "../live-iso-${arch}" ]
+then
+    echo "[ERROR] live-iso-${arch} exists. please remove first."
+    exit 1337
+else
+    cp -r "../live-iso" "../live-iso-${arch}"
+fi
 
-#cd "menu-maker"
-#sh menu-maker.sh "${pkgpath}"
+sh menu-maker/menu-maker.sh "${pkgpath}"
+
+mv menu-maker/fluxbox-menu \
+    "../live-iso-${arch}/root-image/usr/share/fluxbox/menu"
+mv menu-maker/openbox-menu \
+    "../live-iso-${arch}/root-image/etc/xdg/openbox/menu.xml"
+mv menu-maker/awesome-menu \
+    "../live-iso-${arch}/root-image/etc/xdg/awesome/rc.lua"
+
+#sh package-list/package-list.sh "${pkgpath}"
+#mv package-list/packages.x86_64 package-list/packages.i686 \
+#    "../live-iso-${arch}/"
+
+cp "abuild.sh" "../live-iso-${arch}"
+
+cd "../live-iso-${arch}" && sh abuild.sh -a ${arch}
