@@ -32,10 +32,15 @@ else
     fi
 fi
 
+if [ `whoami` != "root" ]
+then
+    echo "[ERROR] you need to be r00t"
+    exit 1337
+fi
+
 if [ -d "../live-iso-${arch}" ]
 then
-    echo "[ERROR] live-iso-${arch} exists. please remove first."
-    exit 1337
+    echo "[WARNING] live-iso-${arch} exists..."
 else
     cp -r "../live-iso" "../live-iso-${arch}"
 fi
@@ -55,4 +60,4 @@ mv menu-maker/awesome-menu \
 
 cp "abuild.sh" "../live-iso-${arch}"
 
-cd "../live-iso-${arch}" && sh abuild.sh -a ${arch}
+cd "../live-iso-${arch}" && chown -R root:root * && sh abuild.sh -a ${arch}
