@@ -53,3 +53,6 @@ su -c 'rm -rf /root/install.txt' root
 
 # default shell
 su -c 'usermod -s /bin/bash root' root
+
+# disable pc speaker beep
+su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root

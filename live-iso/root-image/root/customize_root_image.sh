@@ -60,3 +60,6 @@ su -c 'cd /usr/share/metasploit/ && bundle-1.9 install' root
 
 # default shell
 su -c 'usermod -s /bin/bash root' root
+
+# disable pc speaker beep
+su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root

@@ -48,3 +48,5 @@ archlinux-keyring
 blackarch-install-scripts
 blackarch-keyring
 ctags
+lsof
+pkgfile

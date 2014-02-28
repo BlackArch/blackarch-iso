@@ -115,7 +115,7 @@ set statusline+=%1*\ %<%F\                                "File+path
 set statusline+=%2*\ %y\                                  "FileType
 set statusline+=%3*\ %{''.(&fenc!=''?&fenc:&enc).''}      "Encoding
 set statusline+=%3*\ %{(&bomb?\",BOM\":\"\")}\            "Encoding2
-set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..) 
+set statusline+=%4*\ %{&ff}\                              "FileFormat (dos/unix..)
 set statusline+=%5*\ %{&spelllang}\                       "Spellanguage
 set statusline+=%8*\ %=\ row:%l/%L\ (%03p%%)\             "Rownumber/total (%)
 set statusline+=%9*\ col:%03c\                            "Colnr
@@ -140,9 +140,6 @@ noremap <C-l> <C-w>l
 
 noremap <leader>v <C-w>v
 
-" Pinky saving strats
-nnoremap ; :
-nnoremap : ;
 " Quick editing {{{
 nnoremap <leader>ev :vsplit ~/.vimrc<cr>
 
@@ -174,7 +171,7 @@ augroup END
 let NERDTreeHighlightCursorline = 1
 let NERDTreeIgnore = ['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$', 'whoosh_index',
                                  \ 'xapian_index', '.*.pid', 'monitor.py', '.*-fixtures-.*.json',
-                                  \ '.*\.o$', 'db.db', 'tags.bak', '.*\.pdf$', '.*\.mid$', 
+                                  \ '.*\.o$', 'db.db', 'tags.bak', '.*\.pdf$', '.*\.mid$',
                                   \ '.*\.midi$']
 
 let NERDTreeMinimalUI = 1
