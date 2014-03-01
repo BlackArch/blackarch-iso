@@ -1,0 +1,9 @@
+Welcome to BlackArch Linux!
+
+Some important notes:
+
+1. The dhcpcd isn't configured by default because of security reasons. Either
+use 'systemctl start dhcpcd' to start manually or 'systemctl enable dhcpcd' to
+enable at boot.
+2. Type 'blackarch-install' to install BlackArch Linux from ISO.
+3. A ChangeLog file about this ISO can be found in /root.
