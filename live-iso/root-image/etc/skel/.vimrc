@@ -48,6 +48,7 @@ set history=10000
 set hidden
 set number
 set backspace=indent,eol,start
+set ttimeoutlen=100
 
 " Better completion
 set complete=.,w,b,u,t
@@ -192,4 +193,3 @@ nnoremap <leader>y :Unite history/yank<cr>
 nnoremap <leader>b :Unite -quick-match buffer<cr>
 " }}}
 " }}}
-
