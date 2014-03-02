@@ -193,15 +193,15 @@ minimysqlator
 # blackarch-debugger
 edb
 malwasm
-ollydbg
+#ollydbg
 radare2
 shellnoob
 vivisect
 
 # blackarch-decompiler
 flasm
-jd-gui
-recstudio
+#jd-gui
+#recstudio
 
 # blackarch-defensive
 arpalert
@@ -243,7 +243,7 @@ bbqsql
 bed
 beef
 bfbtester
-bowcaster
+#bowcaster
 cisco-global-exploiter
 cisco-torch
 darkd0rk3r
@@ -275,7 +275,7 @@ rebind
 rfcat
 ropeme
 ropgadget
-ruby-ronin
+#ruby-ronin
 ruby-ronin-support
 set
 shellcodecs
@@ -290,7 +290,7 @@ subterfuge
 tcpjunk
 thc-ipv6
 veil
-viproy-voipkit
+#viproy-voipkit
 vnc-bypauth
 websploit
 zarp
@@ -425,7 +425,7 @@ tftp-fuzz
 trinity
 uniofuzz
 uniscan
-viproy-voipkit
+#viproy-voipkit
 vulscan
 w3af
 wapiti
@@ -469,7 +469,7 @@ cisco-router-config
 cryptcat
 dbd
 dhcdrop
-dradis
+#dradis
 elettra
 elettra-gui
 ent
@@ -504,9 +504,9 @@ winexe
 wol-e
 
 # blackarch-mobile
-android-ndk
-android-sdk
-android-sdk-platform-tools
+#android-ndk
+#android-sdk
+#android-sdk-platform-tools
 android-udev-rules
 
 # blackarch-networking
@@ -593,7 +593,7 @@ metagoofil
 missidentify
 nbtool
 netdiscover
-netglub
+#netglub
 netmask
 nipper
 nsec3walker
@@ -616,12 +616,12 @@ dex2jar
 edb
 flasm
 javasnoop
-jd-gui
+#jd-gui
 js-beautify
 packerid
 pev
 radare2
-recstudio
+#recstudio
 scanmem
 swfintruder
 udis86
@@ -629,7 +629,7 @@ vivisect
 zerowine
 
 # blackarch-scanner
-0trace
+#0trace
 admsnmp
 allthevhosts
 asp-audit
@@ -731,7 +731,7 @@ uniscan
 unix-privesc-check
 upnpscan
 videosnarf
-viproy-voipkit
+##viproy-voipkit
 vulscan
 w3af
 waffit
@@ -901,13 +901,13 @@ mbenum
 missidentify
 nbtenum
 nishang
-ollydbg
+#ollydbg
 orakelcrackert
 powersploit
 pstoreview
 pwdump
 sipscan
-smbrelay
+#smbrelay
 snscan
 spade
 sqlping
@@ -919,7 +919,7 @@ winfo
 x-scan
 
 # blackarch-wireless
-airflood
+#airflood
 airoscript
 airpwn
 batctl
