@@ -237,7 +237,7 @@ bbqsql
 bed
 beef
 bfbtester
-bowcaster
+#bowcaster
 cisco-global-exploiter
 cisco-torch
 darkd0rk3r
@@ -465,7 +465,7 @@ dhcdrop
 #dradis
 elettra
 #elettra-gui
-ent
+#ent
 evilgrade
 fakemail
 flare
@@ -586,7 +586,7 @@ metagoofil
 missidentify
 nbtool
 netdiscover
-netglub
+#netglub
 netmask
 nipper
 nsec3walker
