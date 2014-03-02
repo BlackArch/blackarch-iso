@@ -1,4 +1,4 @@
-# arch linux default
+# arch linux
 gummiboot
 prebootloader
 refind-efi
@@ -52,6 +52,7 @@ weevely
 # blackarch-binary
 backdoor-factory
 binwally
+hex2bin
 ms-sys
 packerid
 
@@ -68,6 +69,7 @@ bt_audit
 btcrack
 btscanner
 carwhisperer
+crackle
 ghettotooth
 hidattack
 obexstress
@@ -94,10 +96,12 @@ brutessh
 btcrack
 bully
 cewl
+checkpwd
 cisco-auditing-tool
 cisco-ocs
 cmospwd
 cowpatty
+crackle
 creddump
 crunch
 cupp
@@ -170,6 +174,7 @@ wyd
 zulu
 
 # blackarch-crypto
+auto-xor-decryptor
 bletchley
 ciphertest
 hash-identifier
@@ -187,15 +192,16 @@ minimysqlator
 
 # blackarch-debugger
 edb
-#ollydbg
+malwasm
+ollydbg
 radare2
 shellnoob
 vivisect
 
 # blackarch-decompiler
 flasm
-#jd-gui
-#recstudio
+jd-gui
+recstudio
 
 # blackarch-defensive
 arpalert
@@ -237,6 +243,7 @@ bbqsql
 bed
 beef
 bfbtester
+bowcaster
 cisco-global-exploiter
 cisco-torch
 darkd0rk3r
@@ -268,7 +275,7 @@ rebind
 rfcat
 ropeme
 ropgadget
-#ruby-ronin
+ruby-ronin
 ruby-ronin-support
 set
 shellcodecs
@@ -283,7 +290,7 @@ subterfuge
 tcpjunk
 thc-ipv6
 veil
-#viproy-voipkit
+viproy-voipkit
 vnc-bypauth
 websploit
 zarp
@@ -306,6 +313,10 @@ sinfp
 smtpmap
 smtpscan
 xprobe2
+
+# blackarch-firmware
+binwalk
+firmware-mod-kit
 
 # blackarch-forensic
 aesfix
@@ -411,9 +422,10 @@ tcpcontrol-fuzzer
 tcpjunk
 termineter
 tftp-fuzz
+trinity
 uniofuzz
 uniscan
-#viproy-voipkit
+viproy-voipkit
 vulscan
 w3af
 wapiti
@@ -452,19 +464,17 @@ zerowine
 # blackarch-misc
 3proxy
 airgraph-ng
-binwalk
 bulk-extractor
 cisco-router-config
 cryptcat
 dbd
 dhcdrop
-#dradis
+dradis
 elettra
 elettra-gui
 ent
 evilgrade
 fakemail
-firmware-mod-kit
 flare
 genlist
 geoedge
@@ -494,8 +504,9 @@ winexe
 wol-e
 
 # blackarch-mobile
-#android-sdk
-#android-sdk-platform-tools
+android-ndk
+android-sdk
+android-sdk-platform-tools
 android-udev-rules
 
 # blackarch-networking
@@ -506,6 +517,7 @@ jnetmap
 mausezahn
 middler
 nbtool
+netcon
 netmap
 netsed
 nfex
@@ -542,6 +554,7 @@ nfcutils
 packerid
 
 # blackarch-proxy
+3proxy
 burpsuite
 dnschef
 fakedns
@@ -603,12 +616,12 @@ dex2jar
 edb
 flasm
 javasnoop
-#jd-gui
+jd-gui
 js-beautify
 packerid
 pev
 radare2
-#recstudio
+recstudio
 scanmem
 swfintruder
 udis86
@@ -616,7 +629,7 @@ vivisect
 zerowine
 
 # blackarch-scanner
-#0trace
+0trace
 admsnmp
 allthevhosts
 asp-audit
@@ -657,6 +670,7 @@ enumiax
 fierce
 firewalk
 flawfinder
+flunym0us
 ftpmap
 ghost-phisher
 grepforrfi
@@ -717,7 +731,7 @@ uniscan
 unix-privesc-check
 upnpscan
 videosnarf
-#viproy-voipkit
+viproy-voipkit
 vulscan
 w3af
 waffit
@@ -820,6 +834,7 @@ dff-scanner
 dirb
 dirbuster
 easyfuzzer
+flunym0us
 golismero
 grabber
 gwtenum
@@ -886,13 +901,13 @@ mbenum
 missidentify
 nbtenum
 nishang
-#ollydbg
+ollydbg
 orakelcrackert
 powersploit
 pstoreview
 pwdump
 sipscan
-#smbrelay
+smbrelay
 snscan
 spade
 sqlping
@@ -904,7 +919,7 @@ winfo
 x-scan
 
 # blackarch-wireless
-#airflood
+airflood
 airoscript
 airpwn
 batctl
@@ -938,4 +953,3 @@ wifitap
 wifite
 wlan2eth
 zulu
-

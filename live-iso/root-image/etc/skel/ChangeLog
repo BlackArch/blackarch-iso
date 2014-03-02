@@ -1,0 +1,10 @@
+===> 2014.03.XX
+	- package: added zathura
+	- package: added lsof
+	- package: added pkgfile
+	- disabled pc speaker beep
+	- added initial /etc/motd with notes
+	- vim: removed alias of vi="vim"
+	- vim: disabled remap of ':'
+	- vim: set ttimeoutlen=100
+	- added this ChangeLog :)

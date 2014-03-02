@@ -47,6 +47,7 @@ weevely
 # blackarch-binary
 backdoor-factory
 binwally
+hex2bin
 ms-sys
 packerid
 
@@ -63,6 +64,7 @@ bt_audit
 btcrack
 btscanner
 carwhisperer
+crackle
 ghettotooth
 hidattack
 #obexstress
@@ -94,6 +96,7 @@ cisco-auditing-tool
 cisco-ocs
 cmospwd
 cowpatty
+crackle
 creddump
 crunch
 cupp
@@ -166,6 +169,7 @@ wyd
 zulu
 
 # blackarch-crypto
+auto-xor-decryptor
 bletchley
 ciphertest
 hash-identifier
@@ -183,6 +187,7 @@ minimysqlator
 
 # blackarch-debugger
 edb
+malwasm
 ollydbg
 radare2
 shellnoob
@@ -213,11 +218,10 @@ vivisect
 42zip
 davoset
 dnsdrdos
-#hwk
 iaxflood
 inviteflood
 #mausezahn
-#nkiller2
+#nkiller22
 slowhttptest
 t50
 thc-ipv6
@@ -233,6 +237,7 @@ bbqsql
 bed
 beef
 bfbtester
+bowcaster
 cisco-global-exploiter
 cisco-torch
 darkd0rk3r
@@ -302,6 +307,10 @@ sinfp
 smtpmap
 smtpscan
 xprobe2
+
+# blackarch-firmware
+binwalk
+firmware-mod-kit
 
 # blackarch-forensic
 aesfix
@@ -375,7 +384,6 @@ fuzzdb
 fuzzdiff
 hexorbase
 http-fuzz
-#hwk
 ikeprober
 inguma
 jbrofuzz
@@ -407,6 +415,7 @@ tcpcontrol-fuzzer
 tcpjunk
 termineter
 tftp-fuzz
+trinity
 uniofuzz
 uniscan
 viproy-voipkit
@@ -448,7 +457,6 @@ yara
 # blackarch-misc
 3proxy
 airgraph-ng
-binwalk
 bulk-extractor
 cisco-router-config
 cryptcat
@@ -457,10 +465,9 @@ dhcdrop
 #dradis
 elettra
 #elettra-gui
-#ent
+ent
 evilgrade
 fakemail
-firmware-mod-kit
 flare
 genlist
 geoedge
@@ -490,6 +497,7 @@ winexe
 wol-e
 
 # blackarch-mobile
+android-ndk
 android-sdk
 android-sdk-platform-tools
 android-udev-rules
@@ -502,12 +510,13 @@ jnetmap
 #mausezahn
 #middler
 nbtool
+netcon
 netmap
 netsed
 nfex
 nfsshell
 nipper
-#nkiller2
+#nkiller22
 packet-o-matic
 packit
 perl-tftp
@@ -538,6 +547,7 @@ nfcutils
 packerid
 
 # blackarch-proxy
+3proxy
 burpsuite
 dnschef
 fakedns
@@ -653,6 +663,7 @@ enumiax
 fierce
 firewalk
 flawfinder
+flunym0us
 ftpmap
 ghost-phisher
 grepforrfi
@@ -661,7 +672,6 @@ gsd
 halberd
 hexorbase
 http-enum
-#hwk
 icmpquery
 ike-scan
 inguma
@@ -816,6 +826,7 @@ dff-scanner
 dirb
 dirbuster
 easyfuzzer
+flunym0us
 golismero
 grabber
 gwtenum
@@ -914,7 +925,6 @@ fern-wifi-cracker
 giskismet
 gqrx
 hotspotter
-#hwk
 killerbee
 kismet-earth
 mdk3
@@ -934,4 +944,3 @@ wifitap
 wifite
 wlan2eth
 zulu
-
