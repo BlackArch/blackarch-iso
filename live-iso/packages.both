@@ -186,3 +186,4 @@ blackarch-install-scripts
 lsof
 pkgfile
 zathura
+base-devel
