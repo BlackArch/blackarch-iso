@@ -5,9 +5,7 @@
 
 WORKDIR="`pwd`/`dirname ${0}`"
 ARCHS="x86_64 i686"
-_GROUPS="`pacman -Sg | grep blackarch- |
-grep -vE '\<analysis\>|\<web\>|\<forensics\>|\<intel\>' | sort -u |
-tr -s '\n' ' '`"
+_GROUPS="`pacman -Sg | grep blackarch- | sort -u | tr -s '\n' ' '`"
 
 if [ ${#} -ne 1 ]
 then
