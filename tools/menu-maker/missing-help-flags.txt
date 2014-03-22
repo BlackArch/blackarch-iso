@@ -3,16 +3,10 @@
 3proxy.pem
 BEViewer.jar
 DBPwAudit.jar
-FilePlugin.dll
 MSSQLScan.jar
 MibbleBrowser.sh
 MibblePrinter.sh
 MibbleValidator.sh
-PCREPlugin.dll
-SSLPlugin.dll
-StringsPlugin.dll
-TrafficPlugin.dll
-WindowsAuthentication.dll
 adminpath.py
 ant
 ant.bat
@@ -81,7 +75,6 @@ inviteflood
 java.policy.applet
 john-mailer
 lans.py
-lastFripper.dll
 lcp.bat
 ld
 llk
@@ -93,7 +86,6 @@ mactool.exe
 maltego.exe
 maltego.ico
 malware_launcher.sh
-malwpin.dll
 md5
 memdump_kernel
 moloch-capture
@@ -165,7 +157,6 @@ unique
 unique-messages.py
 unix-jboss-autopwn
 update.sample
-utf8tocp1251.dll
 var.py
 vi
 vol.py
