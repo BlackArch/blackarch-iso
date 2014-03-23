@@ -34,12 +34,9 @@ avr-objdump
 avr-ranlib
 avr-size
 avr-strings
-avr-strip
+av-strip
 beef
 binwalk-script
-bmaptool
-bob_server-sse2
-bulk_extractor
 checkpwd_nopw
 clearlog.py
 complete-ant-cmd.pl
@@ -74,7 +71,6 @@ intersect-create
 inviteflood
 java.policy.applet
 john-mailer
-lans.py
 lcp.bat
 ld
 llk
