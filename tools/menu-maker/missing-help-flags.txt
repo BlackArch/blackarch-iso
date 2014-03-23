@@ -95,7 +95,6 @@ nwbpcreate
 nwgrant
 objdump
 openvasad
-owabf.py
 pdfbook-analyzer
 pinbin
 pindb
@@ -126,14 +125,7 @@ setenv.sh
 sj-commit-results
 sj-iptcpopt-probe
 slist
-smbdumpusers
-smbgetserverinfo
 snefru
-sniffjoke-autotest
-spectool_curses
-spectool_gtk
-spectool_net
-spectool_raw
 ssh-privkey-crack
 stager_reverse_https.bin
 start_zerowine.sh
@@ -142,10 +134,8 @@ subscan.py
 subscan2.py
 suricata
 tcpcontrol-fuzzer.pl
-tes.py
 tes2.py
 testsuid
-thc-ipv6-setup.sh
 trojanserver
 umit
 umit_scheduler.py
@@ -155,7 +145,6 @@ unix-jboss-autopwn
 update.sample
 var.py
 vi
-vol.py
 w3af
 w3af-gui
 wavemon
