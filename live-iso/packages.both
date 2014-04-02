@@ -181,7 +181,6 @@ arp-scan
 aircrack-ng
 ctags
 archlinux-keyring
-blackarch-keyring
 blackarch-install-scripts
 lsof
 pkgfile
