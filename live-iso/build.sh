@@ -190,7 +190,7 @@ make_aitab() {
 
 # Build all filesystem images specified in aitab (.fs.sfs .sfs)
 make_prepare() {
-    cp -a -l -f ${work_dir}/${arch}/root-image ${work_dir}
+    cp -a --no-preserve=ownership -l -f ${work_dir}/${arch}/root-image ${work_dir}
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" pkglist
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" prepare
     rm -rf ${work_dir}/root-image
