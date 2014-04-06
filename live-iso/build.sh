@@ -2,6 +2,8 @@
 
 set -e -u
 
+umask 022
+
 iso_name=blackarchlinux-live
 iso_label="BLACKARCH_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
@@ -13,6 +15,7 @@ arch=$(uname -m)
 verbose=""
 pacman_conf=${work_dir}/pacman.conf
 script_path=$(readlink -f ${0%/*})
+HOME=/root
 
 _usage ()
 {
