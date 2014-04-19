@@ -1,3 +1,8 @@
+===> 2014.04.XX
+	- updated menu entries
+	- added more than 150 new tools
+	- replaced zathura pdf reader with mupdf
+
 ===> 2014.03.XX
 	- package: added zathura
 	- package: added lsof
