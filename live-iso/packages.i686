@@ -1,3 +1,7 @@
+# blackarch-analysis
+cflow
+# fuzzgrind
+
 # blackarch-anti-forensic
 ropeadope
 secure-delete
@@ -18,27 +22,31 @@ rsmangler
 sakis3g
 simple-ducky
 sipvicious
+sn00p
 sploitctl
 tiger
 tlssled
 unix-privesc-check
 username-anarchy
-#veil
+veil
 voiphopper
 wiffy
 wnmap
 
 # blackarch-backdoor
+backcookie
 backdoor-factory
 cymothoa
 enyelkm
 hotpatch
 jynx2
 ms-sys
+# msvpwn
 rrs
 rubilyn
 trixd00r
 tsh
+tsh-sctp
 u3-pwn
 webacoo
 webshells
@@ -47,8 +55,10 @@ weevely
 # blackarch-binary
 backdoor-factory
 binwally
+dissector
 hex2bin
 ms-sys
+# msvpwn
 packerid
 
 # blackarch-bluetooth
@@ -67,13 +77,15 @@ carwhisperer
 crackle
 ghettotooth
 hidattack
-#obexstress
+# obexstress
 redfang
 spooftooph
 tbear
 ubertooth
+# ubertooth-kismet
 
 # blackarch-code-audit
+cpptest
 flawfinder
 pscan
 
@@ -84,9 +96,9 @@ aeskeyfind
 against
 asleap
 beleth
-#bios_memimage
+bios_memimage
 blackhash
-#bob-the-butcher
+bob-the-butcher
 brutessh
 btcrack
 bully
@@ -94,6 +106,7 @@ cewl
 checkpwd
 cisco-auditing-tool
 cisco-ocs
+cisco-scanner
 cmospwd
 cowpatty
 crackle
@@ -109,8 +122,9 @@ evilmaid
 fang
 fern-wifi-cracker
 findmyhash
+ftp-scanner
 hashcat
-#hashcat-utils
+# hashcat-utils
 hashtag
 hydra
 iheartxor
@@ -119,6 +133,7 @@ inguma
 jbrute
 johnny
 keimpx
+khc
 lodowep
 maskprocessor
 masscan
@@ -131,26 +146,27 @@ owabf
 pack
 passcracking
 patator
-#pdfcrack
+pdfcrack
 pdgmail
 phoss
 php-mt-seed
-#phrasendrescher
+# phrasendrescher
 pipal
 pyrit
 rainbowcrack
 rarcrack
 rcracki-mt
-#rdesktop-brute
+rdesktop-brute
 reaver
+rlogin-scanner
 rootbrute
-#rsakeyfind
+rsakeyfind
 samdump2
 samydeluxe
 sidguesser
 sipcrack
 smbbf
-#sqlpat
+sqlpat
 ssh-privkey-crack
 sshatter
 sshtrix
@@ -158,8 +174,8 @@ sslnuke
 statsprocessor
 sucrack
 tftp-bruteforce
+thc-keyfinder
 thc-pptp-bruter
-#truecrack
 ufo-wardriving
 vnc-bypauth
 vncrack
@@ -169,10 +185,12 @@ wyd
 zulu
 
 # blackarch-crypto
+aespipe
 auto-xor-decryptor
 bletchley
 ciphertest
 hash-identifier
+hashid
 nomorexor
 sbd
 xorbruteforcer
@@ -200,17 +218,22 @@ recstudio
 
 # blackarch-defensive
 arpalert
-#arpon
+arpantispoofer
+arpon
 artillery
 chkrootkit
 dbpwaudit
 inetsim
 secure-delete
 sniffjoke
+snort
+suricata
 tor-autocircuit
 
 # blackarch-disassembler
+capstone
 inguma
+maltrieve
 radare2
 vivisect
 
@@ -218,14 +241,18 @@ vivisect
 42zip
 davoset
 dnsdrdos
+goldeneye
 iaxflood
 inviteflood
-#mausezahn
-#nkiller22
+mausezahn
+nkiller2
 slowhttptest
+slowloris
+sps
 t50
 thc-ipv6
 thc-ssl-dos
+torshammer
 
 # blackarch-drone
 skyjack
@@ -237,13 +264,14 @@ bbqsql
 bed
 beef
 bfbtester
-#bowcaster
+bowcaster
 cisco-global-exploiter
 cisco-torch
 darkd0rk3r
 darkmysqli
 dotdotpwn
 exploit-db
+eyepwn
 fimap
 hamster
 hcraft
@@ -257,34 +285,36 @@ leroy-jenkins
 lfi-autopwn
 loki
 metasploit
-#miranda-upnp
+miranda-upnp
 mitmap
 mitmproxy
 padbuster
 paxtest
 pblind
-#pirana
+pirana
 powersploit
 rebind
 rfcat
 ropeme
 ropgadget
-#ruby-ronin
-#ruby-ronin-support
+ruby-ronin
+ruby-ronin-support
 set
-#shellcodecs
+# shellcodecs
 shellnoob
 simple-ducky
 sipvicious
+smbexec
 sploitctl
 sqlmap
 sqlninja
 sqlsus
+# stebb
 subterfuge
 tcpjunk
 thc-ipv6
-#veil
-#viproy-voipkit
+veil
+viproy-voipkit
 vnc-bypauth
 websploit
 zarp
@@ -316,23 +346,28 @@ firmware-mod-kit
 aesfix
 aeskeyfind
 afflib
-#aimage
+aimage
 air
 autopsy
-#bios_memimage
+bios_memimage
+# bmap
+# bmap-tools
 bulk-extractor
 canari
 casefile
 chaosmap
 chkrootkit
+chromefreak
 dc3dd
 eindeutig
+# fatback
 foremost
 galleta
-#grokevt
+grokevt
 guymager
 ipba2
 libewf
+mac-robber
 magicrescue
 make-pdf
 maltego
@@ -342,6 +377,7 @@ md5deep
 mdbtools
 memdump
 memfetch
+mobiusft
 ms-sys
 nfex
 origami
@@ -354,16 +390,25 @@ pev
 recoverjpeg
 reglookup
 rifiuti2
-#rsakeyfind
+rsakeyfind
 safecopy
 scalpel
 scrounge-ntfs
+skypefreak
+snort
+trid
 vinetto
 volatility
 wyd
 
+# blackarch-forensics
+# bmap-tools
+# fatback
+pdfbook-analyzer
+trid
+
 # blackarch-fuzzer
-#browser-fuzzer
+browser-fuzzer
 bss
 bt_audit
 bunny
@@ -376,6 +421,7 @@ dotdotpwn
 easyfuzzer
 fimap
 firewalk
+frisbeelite
 ftester
 ftp-fuzz
 fusil
@@ -402,13 +448,17 @@ radamsa
 ratproxy
 sfuzz
 skipfish
+smbexec
 smtp-fuzz
+snmp-fuzzer
 spiderpig-pdffuzzer
 spike
-#sploitego
+sploitego
+sps
 sqlbrute
 sqlmap
 sqlninja
+# stebb
 sulley
 taof
 tcpcontrol-fuzzer
@@ -418,7 +468,7 @@ tftp-fuzz
 trinity
 uniofuzz
 uniscan
-#viproy-voipkit
+viproy-voipkit
 vulscan
 w3af
 wapiti
@@ -442,17 +492,26 @@ bluepot
 fakeap
 fiked
 honeyd
+honssh
 inetsim
 kippo
 wifi-honey
 
+# blackarch-intel
+missidentify
+
+# blackarch-keylogger
+logkeys
+xspy
+
 # blackarch-malware
 cuckoo
+maltrieve
 malwaredetect
 peepdf
 python2-yara
 yara
-#zerowine
+zerowine
 
 # blackarch-misc
 3proxy
@@ -462,10 +521,10 @@ cisco-router-config
 cryptcat
 dbd
 dhcdrop
-#dradis
+dradis
 elettra
-#elettra-gui
-#ent
+# elettra-gui
+ent
 evilgrade
 fakemail
 flare
@@ -503,20 +562,27 @@ android-sdk-platform-tools
 android-udev-rules
 
 # blackarch-networking
-#httping
+# fragroute
+fraud-bridge
+httping
 hyenae
 ipaudit
 jnetmap
-#mausezahn
-#middler
+junkie
+mausezahn
+middler
+mitmer
+moloch
 nbtool
+ncpfs
 netcon
 netmap
 netsed
 nfex
 nfsshell
 nipper
-#nkiller22
+nkiller2
+nsdtool
 packet-o-matic
 packit
 perl-tftp
@@ -524,21 +590,31 @@ ptunnel
 pwnat
 pyminifakedns
 responder
+rinetd
 rtpbreak
 sbd
-scapy
 sessionlist
+snmp-fuzzer
 snmpcheck
+snort
+sps
+ssl-phuck3r
 sslsplit
 sslstrip
+starttls-mitm
 t50
-#tcpextract
-#tcptraceroute
+tcpextract
+tcptraceroute
 thc-ipv6
 udptunnel
+umit
+# wmi-client
 wol-e
 yersinia
 zarp
+
+# blackarch-neworking
+chaosreader
 
 # blackarch-nfc
 nfcutils
@@ -556,6 +632,7 @@ pathod
 ratproxy
 sergio-proxy
 sslnuke
+starttls-mitm
 webscarab
 
 # blackarch-recon
@@ -568,13 +645,15 @@ dnsrecon
 dnsspider
 dnswalk
 enum4linux
+fernmelder
 goodork
 goofile
 goog-mail
 gwtenum
 halcyon
-#httping
+httping
 intrace
+ircsnapshot
 isr-form
 lanmap2
 lbd
@@ -586,7 +665,7 @@ metagoofil
 missidentify
 nbtool
 netdiscover
-#netglub
+# netglub
 netmask
 nipper
 nsec3walker
@@ -595,9 +674,11 @@ recon-ng
 rifiuti2
 ripdc
 sctpscan
+smbexec
 smtp-user-enum
 snmpcheck
 spiderfoot
+ssl-hostname-resolver
 subdomainer
 theharvester
 twofi
@@ -611,6 +692,7 @@ flasm
 javasnoop
 jd-gui
 js-beautify
+malwasm
 packerid
 pev
 radare2
@@ -619,10 +701,10 @@ scanmem
 swfintruder
 udis86
 vivisect
-#zerowine
+zerowine
 
 # blackarch-scanner
-#0trace
+0trace
 admsnmp
 allthevhosts
 asp-audit
@@ -635,8 +717,9 @@ canari
 casefile
 checksec
 cisco-auditing-tool
+cisco-scanner
 cisco-torch
-#ciscos
+ciscos
 complemento
 conscan
 cookie-cadger
@@ -660,10 +743,12 @@ driftnet
 dripper
 enum4linux
 enumiax
+fernmelder
 fierce
 firewalk
 flawfinder
 flunym0us
+ftp-scanner
 ftpmap
 ghost-phisher
 grepforrfi
@@ -684,11 +769,12 @@ lynis
 maltego
 masscan
 metasploit
-#miranda-upnp
+miranda-upnp
 mssqlscan
 nbtool
 nikto
 nmbscan
+nsdtool
 onesixtyone
 openvas-administrator
 openvas-cli
@@ -704,14 +790,18 @@ rawr
 redfang
 relay-scanner
 ripdc
+rlogin-scanner
 scanssh
 sctpscan
 skipfish
+smbexec
 smtp-user-enum
 smtp-vrfy
 snmpenum
 snmpscan
-#sploitego
+spipscan
+sploitego
+ssl-hostname-resolver
 sslcaudit
 sslscan
 subdomainer
@@ -723,7 +813,7 @@ uniscan
 unix-privesc-check
 upnpscan
 videosnarf
-#viproy-voipkit
+viproy-voipkit
 vulscan
 w3af
 waffit
@@ -734,27 +824,33 @@ webscarab
 webshag
 websploit
 wnmap
-#wpscan
+wpscan
 yersinia
 zmap
 
 # blackarch-sniffer
 cdpsnarf
+chaosreader
+creds
 driftnet
 hexinject
+httpsniff
+junkie
 mitmap
+mitmer
 netsniff-ng
 p0f
 passivedns
 phoss
 pytacle
 sessionlist
+ssl-phuck3r
 ssldump
 sslsniff
+starttls-mitm
 tcpick
 tuxcut
 wifi-monitor
-xspy
 
 # blackarch-social
 creepy
@@ -782,6 +878,7 @@ magictree
 chownat
 ctunnel
 dns2tcp
+fraud-bridge
 icmptx
 matahari
 packet-o-matic
@@ -795,24 +892,26 @@ js-beautify
 ace
 erase-registrations
 iaxflood
+ilty
 pcapsipdump
 protos-sip
 redirectpoison
-#rtp-flood
+rtp-flood
 siparmyknife
 sipcrack
 sipp
 sipsak
 teardown
-#vnak
-#voiper
+vnak
+voiper
 voiphopper
-#voipong
+voipong
 
 # blackarch-webapp
 allthevhosts
 arachni
 asp-audit
+backcookie
 bbqsql
 blindelephant
 bsqlbf
@@ -826,6 +925,7 @@ dff-scanner
 dirb
 dirbuster
 easyfuzzer
+fbht
 flunym0us
 golismero
 grabber
@@ -848,15 +948,17 @@ rawr
 rww-attack
 skipfish
 spike-proxy
+spipscan
 sqid
 sqlbrute
 sqlmap
 sqlninja
 sqlsus
+# stebb
 uatester
 uniscan
 urlcrazy
-#vega
+# vega
 w3af
 waffit
 wapiti
@@ -872,9 +974,11 @@ weevely
 wfuzz
 whatweb
 wmat
-#wpscan
+wpscan
+ws-attacker
 wsfuzzer
 xsser
+xssless
 xsss
 zaproxy
 
@@ -891,6 +995,7 @@ ikeprobe
 klogger
 mbenum
 missidentify
+# msvpwn
 nbtenum
 nishang
 ollydbg
@@ -914,19 +1019,23 @@ x-scan
 airflood
 airoscript
 airpwn
-batctl
+aphopper
 batman-adv
-batman-alfred
+# bluemaho
 bully
 cowpatty
+create-ap
 eapmd5pass
+eyepwn
 fern-wifi-cracker
-#g72x++
+g72x++
 giskismet
 gqrx
 hotspotter
 killerbee
 kismet-earth
+kismet2earth
+# kismon
 mdk3
 mfcuk
 mfoc
@@ -936,11 +1045,15 @@ rfdump
 rfidiot
 rfidtool
 spectools
+ubitack
 ufo-wardriving
+wavemon
 wepbuster
 wiffy
 wifi-honey
+wificurse
 wifitap
 wifite
 wlan2eth
 zulu
+
