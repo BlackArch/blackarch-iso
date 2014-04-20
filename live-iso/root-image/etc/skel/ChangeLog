@@ -1,4 +1,7 @@
 ===> 2014.04.21
+	- added .Xresources with entries for xterm
+	- added wicd to system start (systemctl)
+	- added wicd and wicd-gtk networkmanager
 	- removed 'xset r rate 150 100' entry for X
 	- updated menu entries
 	- added more than 150 new tools

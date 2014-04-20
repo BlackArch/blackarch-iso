@@ -1,0 +1,6 @@
+! xterm settings
+!xterm*faceName:     fixed
+xterm*font:         7x14
+xterm*foreground:   #cccccc
+!xterm*foreground:  #777777
+xterm*background:   #000000
