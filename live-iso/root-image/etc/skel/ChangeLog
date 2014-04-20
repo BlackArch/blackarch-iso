@@ -1,4 +1,5 @@
 ===> 2014.04.21
+	- added tor-browser-en
 	- added .Xresources with entries for xterm
 	- added wicd to system start (systemctl)
 	- added wicd and wicd-gtk networkmanager
