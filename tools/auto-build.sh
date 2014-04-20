@@ -11,7 +11,7 @@ fi
 
 if [ ${#} -ne 2 ]
 then
-    echo "usage: ./auto-build.sh <packages_path> <arch>"
+    echo "usage: ./auto-build.sh <packages-path> <arch>"
     echo "arch: i686 x86_64"
 
     exit 1337
