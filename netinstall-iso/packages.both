@@ -50,3 +50,4 @@ blackarch-keyring
 ctags
 lsof
 pkgfile
+bridge-utils
