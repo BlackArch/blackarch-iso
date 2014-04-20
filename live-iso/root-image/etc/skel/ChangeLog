@@ -1,4 +1,5 @@
 ===> 2014.04.21
+	- removed 'xset r rate 150 100' entry for X
 	- updated menu entries
 	- added more than 150 new tools
 	- replaced zathura pdf reader with mupdf
