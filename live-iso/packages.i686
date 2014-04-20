@@ -562,6 +562,7 @@ android-sdk-platform-tools
 android-udev-rules
 
 # blackarch-networking
+chaosreader
 # fragroute
 fraud-bridge
 httping
@@ -612,9 +613,6 @@ umit
 wol-e
 yersinia
 zarp
-
-# blackarch-neworking
-chaosreader
 
 # blackarch-nfc
 nfcutils
