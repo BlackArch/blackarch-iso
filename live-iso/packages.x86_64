@@ -3,6 +3,9 @@ gummiboot
 prebootloader
 refind-efi
 
+# blackarch
+tor-browser-en
+
 # blackarch-analysis
 cflow
 # fuzzgrind
