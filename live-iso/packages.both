@@ -163,6 +163,8 @@ mplayer
 rtorrent
 scrot
 strace
+wicd
+wicd-gtk
 
 # community security related
 afpfs-ng
