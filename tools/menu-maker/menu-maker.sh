@@ -9,7 +9,7 @@ _GROUPS="`pacman -Sg | grep blackarch- | sort -u | tr -s '\n' ' '`"
 
 if [ ${#} -ne 1 ]
 then
-    echo "${0} <packages_path>"
+    echo "${0} <packages-path>"
     exit 1337
 else
     pkgpath="${1}"
@@ -145,7 +145,8 @@ make_menus()
         for p in ${pkgs}
         do
             tools="`pkgfile -lbq ${p} |
-            awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}'`"
+            awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}' |
+            grep -vE '.keep|.exe|.applet|.txt'`"
             for tool in ${tools}
             do
                 opts="`grep "^${tool} " "${WORKDIR}/help-flags.txt" |
