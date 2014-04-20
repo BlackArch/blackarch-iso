@@ -175,6 +175,7 @@ make_openbox_extras()
     echo "  <separator label=\"applications\" />" >> openbox-menu
     echo "  <menu id=\"terminals-menu\"/>" >> openbox-menu
     echo "  <menu id=\"browsers-menu\"/>" >> openbox-menu
+    echo "  <menu id=\"network-menu\" />" >> openbox-menu
     echo "  <separator label=\"blackarch\" />" >> openbox-menu
 
     for group in ${_GROUPS}
