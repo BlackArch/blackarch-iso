@@ -1,5 +1,7 @@
 ===> 2014.04.21
-	- added tor-browser-en
+	- added new system packages: mplayer, abs, ack, bc, bridge-utils, darkhttpd,
+		flashplugin, inotify-tools, irssi, makepasswd, mercurial, mplayer, rtorrent,
+		scrot, strace, tor-browser-en
 	- added .Xresources with entries for xterm
 	- added wicd to system start (systemctl)
 	- added wicd and wicd-gtk networkmanager
@@ -8,7 +10,7 @@
 	- added more than 150 new tools
 	- replaced zathura pdf reader with mupdf
 
-===> 2014.03.XX
+===> 2014.03.02
 	- package: added zathura
 	- package: added lsof
 	- package: added pkgfile
