@@ -139,8 +139,9 @@ make_menus()
         fluxbox_start
         openbox_start
         awesome_start
-        pkgs="`grep -r ${group} | cut -d '/' -f 1 | sort -u |
-        grep -vE 'fluxbox-menu|openbox-menu|awesome-menu'`"
+        pkgs="`pacman -Sg ${group} | cut -d ' ' -f 2`"
+        #pkgs="`grep -r ${group} | cut -d '/' -f 1 | sort -u |
+        #grep -vE 'fluxbox-menu|openbox-menu|awesome-menu'`"
         for p in ${pkgs}
         do
             tools="`pkgfile -lbq ${p} |
