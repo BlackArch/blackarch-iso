@@ -238,3 +238,5 @@ wget
 whois
 wireshark-cli
 wireshark-gtk
+cryptsetup
+device-mapper
