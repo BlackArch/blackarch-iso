@@ -1,3 +1,6 @@
+===> 2014.XX.XX
+	- added missing users and groups in /etc/passwd and /etc/group
+
 ===> 2014.04.21
 	- added new system packages: mplayer, abs, ack, bc, bridge-utils, darkhttpd,
 		flashplugin, inotify-tools, irssi, makepasswd, mercurial, mplayer, rtorrent,
