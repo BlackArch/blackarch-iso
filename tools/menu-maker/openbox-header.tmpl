@@ -46,3 +46,24 @@
 	</item>
 </menu>
 
+<menu id="network-menu" label="network">
+	<item label="wicd-gtk">
+		<action name="Execute">
+			<command>wicd-gtk</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+				<wmclass>wicd-gtk</wmclass>
+		  </startupnotify>
+		</action>
+	</item>
+	<item label="wicd-curses">
+		<action name="Execute">
+			<command>wicd-curses</command>
+			<startupnotify>
+				<enabled>yes</enabled>
+				<wmclass>wicd-curses</wmclass>
+		  </startupnotify>
+		</action>
+	</item>
+</menu>
+

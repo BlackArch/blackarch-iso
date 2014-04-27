@@ -37,16 +37,6 @@ su -c "echo '[blackarch]' >> /etc/pacman.conf" root
 su -c "echo 'Server = http://www.blackarch.org/blackarch/\$repo/os/\$arch' >> /etc/pacman.conf" root
 su -c 'pacman -Syyu --noconfirm' root
 
-# old setup / signing stuff
-#su -c 'pacman-key --init' root
-#su -c 'pacman-key --populate' root
-#su -c 'chmod 700 /etc/pacman.d/gnupg' root
-#su -c 'wget http://blackarch.org/blackarch/blackarch/os/x86_64/blackarch-keyring-20140118-3-any.pkg.tar.xz{,.sig}' root
-#su -c "gpg --keyserver hkp://pgp.mit.edu --recv-keys '4345771566D76038C7FEB43863EC0ADBEA87E4E3'" root
-#su -c 'gpg --with-fingerprint --verify blackarch-keyring-20140118-3-any.pkg.tar.xz.sig' root
-#su -c 'rm -rf blackarch-keyring-20140118-3-any.pkg.tar.xz.sig' root
-#su -c 'pacman --noconfirm -U blackarch-keyring-20140118-3-any.pkg.tar.xz' root
-
 # fix wrong permissions for blackarch-dwm
 su -c 'chmod 755 /usr/bin/blackarch-dwm'
 
@@ -56,11 +46,14 @@ su -c 'cd /usr/share/; git clone https://github.com/BlackArch/blackarch-install-
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
 su -c 'rm -rf /root/install.txt' root
 
-# temporary fix for metasploit
-su -c 'cd /usr/share/metasploit/ && bundle-1.9 install' root
-
 # default shell
 su -c 'usermod -s /bin/bash root' root
 
 # disable pc speaker beep
 su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
+
+# temporary fixes for ruby based tools
+su -c 'cd /usr/share/metasploit/ && bundle-1.9 install' root
+su -c 'cd /usr/share/arachni/ && bundle install' root
+su -c 'cd /usr/share/wpscan/ && bundle-1.9 install --without test development' root
+su -c 'cd /usr/share/smbexec/ && bundle install' root

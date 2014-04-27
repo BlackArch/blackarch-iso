@@ -39,7 +39,6 @@ fi
 
 
 ### blackarch related ###
-exec xset r rate 150 100 &
 exec /usr/bin/VBoxClient --display &
 exec /usr/bin/VBoxClient --clipboard &
 feh --bg-scale /usr/share/blackarch/wallpaper.png

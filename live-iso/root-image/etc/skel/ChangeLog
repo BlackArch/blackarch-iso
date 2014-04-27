@@ -1,4 +1,19 @@
-===> 2014.03.XX
+===> 2014.XX.XX
+	- added missing users and groups in /etc/passwd and /etc/group
+
+===> 2014.04.21
+	- added new system packages: mplayer, abs, ack, bc, bridge-utils, darkhttpd,
+		flashplugin, inotify-tools, irssi, makepasswd, mercurial, mplayer, rtorrent,
+		scrot, strace, tor-browser-en
+	- added .Xresources with entries for xterm
+	- added wicd to system start (systemctl)
+	- added wicd and wicd-gtk networkmanager
+	- removed 'xset r rate 150 100' entry for X
+	- updated menu entries
+	- added more than 150 new tools
+	- replaced zathura pdf reader with mupdf
+
+===> 2014.03.02
 	- package: added zathura
 	- package: added lsof
 	- package: added pkgfile

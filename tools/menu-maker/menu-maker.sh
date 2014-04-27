@@ -9,7 +9,7 @@ _GROUPS="`pacman -Sg | grep blackarch- | sort -u | tr -s '\n' ' '`"
 
 if [ ${#} -ne 1 ]
 then
-    echo "${0} <packages_path>"
+    echo "${0} <packages-path>"
     exit 1337
 else
     pkgpath="${1}"
@@ -139,12 +139,14 @@ make_menus()
         fluxbox_start
         openbox_start
         awesome_start
-        pkgs="`grep -r ${group} | cut -d '/' -f 1 | sort -u |
-        grep -vE 'fluxbox-menu|openbox-menu|awesome-menu'`"
+        pkgs="`pacman -Sg ${group} | cut -d ' ' -f 2`"
+        #pkgs="`grep -r ${group} | cut -d '/' -f 1 | sort -u |
+        #grep -vE 'fluxbox-menu|openbox-menu|awesome-menu'`"
         for p in ${pkgs}
         do
             tools="`pkgfile -lbq ${p} |
-            awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}'`"
+            awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}' |
+            grep -vE '.keep|.exe|.applet|.txt'`"
             for tool in ${tools}
             do
                 opts="`grep "^${tool} " "${WORKDIR}/help-flags.txt" |
@@ -173,6 +175,7 @@ make_openbox_extras()
     echo "  <separator label=\"applications\" />" >> openbox-menu
     echo "  <menu id=\"terminals-menu\"/>" >> openbox-menu
     echo "  <menu id=\"browsers-menu\"/>" >> openbox-menu
+    echo "  <menu id=\"network-menu\" />" >> openbox-menu
     echo "  <separator label=\"blackarch\" />" >> openbox-menu
 
     for group in ${_GROUPS}

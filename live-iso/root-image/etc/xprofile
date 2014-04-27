@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
 feh --bg-scale /usr/share/blackarch/wallpaper.png
-xset r rate 150 100 &
 VBoxClient --display &
 VBoxClient --clipboard &
