@@ -57,3 +57,6 @@ su -c 'cd /usr/share/metasploit/ && bundle-1.9 install' root
 su -c 'cd /usr/share/arachni/ && bundle install' root
 su -c 'cd /usr/share/wpscan/ && bundle-1.9 install --without test development' root
 su -c 'cd /usr/share/smbexec/ && bundle install' root
+
+# download and install exploits
+su -c 'sploitctl -f 0 -n' root
