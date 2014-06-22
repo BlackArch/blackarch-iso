@@ -49,7 +49,7 @@ enyelkm
 hotpatch
 jynx2
 ms-sys
-###msvpwn
+#msvpwn
 openstego
 pyrasite
 rrs
@@ -74,9 +74,10 @@ haystack
 hex2bin
 hyperion
 ms-sys
-###msvpwn
+#msvpwn
 packerid
 pextractor
+trid
 
 # blackarch-bluetooth
 bluebugger
@@ -258,6 +259,7 @@ codetective
 crypthook
 cryptonark
 dislocker
+gnutls2
 gtalk-decode
 hash-identifier
 hasher
@@ -445,7 +447,7 @@ sqlninja
 sqlping
 sqlsus
 stackflow
-###stebb
+#stebb
 subterfuge
 tcpjunk
 thc-ipv6
@@ -485,7 +487,6 @@ smtpmap
 smtpscan
 wafp
 xprobe2
-
 
 # blackarch-firmware
 binwalk
@@ -564,10 +565,6 @@ vinetto
 volatility
 wyd
 
-# blackarch-forensics
-#bmap-tools
-trid
-
 # blackarch-fuzzer
 backfuzz
 bing-lfi-rfi
@@ -644,7 +641,7 @@ sps
 sqlbrute
 sqlmap
 sqlninja
-###stebb
+#stebb
 sulley
 taof
 tcpcontrol-fuzzer
@@ -701,9 +698,6 @@ inetsim
 kippo
 wifi-honey
 wordpot
-
-# blackarch-intel
-missidentify
 
 # blackarch-keylogger
 klogger
@@ -960,7 +954,7 @@ httpforge
 httping
 intrace
 ircsnapshot
-###isme
+#isme
 isr-form
 lanmap2
 lbd
@@ -1011,14 +1005,12 @@ whatweb
 wig
 winfo
 
-# blackarch-reverseing
-bokken-hg
-dissy
-
 # blackarch-reversing
 android-apktool
+bokken-hg
 capstone
 dex2jar
+dissy
 edb
 flasm
 hookanalyser
@@ -1116,7 +1108,6 @@ ftpmap
 ghost-phisher
 grepforrfi
 gsa
-gsd
 gtp-scan
 gwcheck
 halberd
@@ -1136,7 +1127,7 @@ inguma
 ipscan
 ipv6toolkit
 ircsnapshot
-###isme
+#isme
 jigsaw
 joomlascan
 jsql
@@ -1164,9 +1155,8 @@ nsdtool
 o-saft
 ocs
 onesixtyone
-openvas-administrator
 openvas-cli
-openvas-client
+#openvas-client
 openvas-manager
 openvas-scanner
 owtf
@@ -1360,7 +1350,7 @@ bluebox-ng
 erase-registrations
 iaxflood
 ilty
-###isme
+#isme
 pcapsipdump
 protos-sip
 redirectpoison
@@ -1376,7 +1366,6 @@ vnak
 voiper
 voiphopper
 voipong
-
 
 # blackarch-webapp
 adminpagefinder
@@ -1460,7 +1449,7 @@ sqlmap
 sqlninja
 sqlping
 sqlsus
-###stebb
+#stebb
 themole
 uatester
 uniscan
@@ -1523,7 +1512,7 @@ klogger
 malwareanalyser
 mbenum
 missidentify
-###msvpwn
+#msvpwn
 nbtenum
 nishang
 ntds-decode

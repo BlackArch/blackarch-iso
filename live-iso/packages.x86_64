@@ -82,6 +82,7 @@ ms-sys
 msvpwn
 packerid
 pextractor
+#trid
 
 # blackarch-bluetooth
 bluebugger
@@ -263,6 +264,7 @@ codetective
 crypthook
 cryptonark
 dislocker
+#gnutls2
 gtalk-decode
 hash-identifier
 hasher
@@ -569,10 +571,6 @@ vinetto
 volatility
 wyd
 
-# blackarch-forensics
-#bmap-tools
-#trid
-
 # blackarch-fuzzer
 backfuzz
 bing-lfi-rfi
@@ -707,9 +705,6 @@ inetsim
 kippo
 wifi-honey
 wordpot
-
-# blackarch-intel
-missidentify
 
 # blackarch-keylogger
 klogger
@@ -1017,14 +1012,12 @@ whatweb
 wig
 winfo
 
-# blackarch-reverseing
-bokken-hg
-dissy
-
 # blackarch-reversing
 #android-apktool
+bokken-hg
 capstone
 dex2jar
+dissy
 edb
 flasm
 hookanalyser
@@ -1121,8 +1114,7 @@ ftp-scanner
 ftpmap
 ghost-phisher
 grepforrfi
-gsa
-gsd
+#gsa
 gtp-scan
 gwcheck
 halberd
@@ -1171,11 +1163,10 @@ nsdtool
 o-saft
 ocs
 onesixtyone
-openvas-administrator
-openvas-cli
-openvas-client
-openvas-manager
-openvas-scanner
+#openvas-cli
+#openvas-client
+#openvas-manager
+#openvas-scanner
 owtf
 paketto
 pentbox
