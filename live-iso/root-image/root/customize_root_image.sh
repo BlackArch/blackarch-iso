@@ -37,6 +37,9 @@ su -c "echo '[blackarch]' >> /etc/pacman.conf" root
 su -c "echo 'Server = http://www.blackarch.org/blackarch/\$repo/os/\$arch' >> /etc/pacman.conf" root
 su -c 'pacman -Syyu --noconfirm' root
 
+# sync pkgfile database
+su -c 'pkgfile --update' root
+
 # fix wrong permissions for blackarch-dwm
 su -c 'chmod 755 /usr/bin/blackarch-dwm'
 
