@@ -1,4 +1,5 @@
-===> 2014.06.23
+===> 2014.06.XX
+	- removed duplicate [blackarch] entry from pacman.conf
 	- downloaded and installed exploits to /usr/share/exploits using sploitctl.
 	- added a bunch of new tools / updated tools.
 	- added new packages with help flags to each wm's menus
