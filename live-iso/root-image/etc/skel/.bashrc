@@ -22,5 +22,5 @@ alias wget="wget -U 'noleak'"
 alias curl="curl --user-agent 'noleak'"
 
 # source files
-[ -r /usr/share/bash-completion/completions] &&
+[ -r /usr/share/bash-completion/completions ] &&
   . /usr/share/bash-completion/completions/*
