@@ -85,7 +85,7 @@ bg_BG CP1251
 bho_IN UTF-8
 bn_BD UTF-8
 bn_IN UTF-8
-bo_CN UTF-8
+#bo_CN UTF-8
 bo_IN UTF-8
 br_FR.UTF-8 UTF-8
 br_FR ISO-8859-1
