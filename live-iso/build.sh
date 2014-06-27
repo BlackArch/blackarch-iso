@@ -2,12 +2,10 @@
 
 set -e -u
 
-umask 022
-
-iso_name=blackarchlinux-live
-iso_label="BLACKARCH_$(date +%Y%m)"
+iso_name=archlinux
+iso_label="ARCH_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
-install_dir=blackarch
+install_dir=arch
 work_dir=work
 out_dir=out
 
@@ -15,7 +13,6 @@ arch=$(uname -m)
 verbose=""
 pacman_conf=${work_dir}/pacman.conf
 script_path=$(readlink -f ${0%/*})
-HOME=/root
 
 _usage ()
 {
@@ -193,7 +190,7 @@ make_aitab() {
 
 # Build all filesystem images specified in aitab (.fs.sfs .sfs)
 make_prepare() {
-    cp -a --no-preserve=ownership -l -f ${work_dir}/${arch}/root-image ${work_dir}
+    cp -a -l -f ${work_dir}/${arch}/root-image ${work_dir}
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" pkglist
     setarch ${arch} mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" prepare
     rm -rf ${work_dir}/root-image
