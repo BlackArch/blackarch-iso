@@ -67,9 +67,6 @@
 	</item>
 </menu>
 
-<menu id="blackarch-analysis-menu" label="analysis">
-</menu>
-
 <menu id="blackarch-anti-forensic-menu" label="anti-forensic">
   <item label="ropeadope">
       <action name="Execute">
@@ -796,7 +793,7 @@
   </item>
   <item label="fzipinfo">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'fzipinfo --help bash'</command>
+          <command>xterm -bg black -fg red -e 'fzipinfo --help ; bash'</command>
       </action>
   </item>
   <item label="fern">
@@ -1761,7 +1758,7 @@
   </item>
   <item label="exiv2">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'exiv2 -h bash'</command>
+          <command>xterm -bg black -fg red -e 'exiv2 -h ; bash'</command>
       </action>
   </item>
   <item label="metacopy">
@@ -3635,6 +3632,11 @@
           <command>xterm -bg black -fg red -e 'usbdump -h ; bash'</command>
       </action>
   </item>
+  <item label="bmaptool">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'bmaptool -h ; bash'</command>
+      </action>
+  </item>
   <item label="BEViewer">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'BEViewer -h ; bash'</command>
@@ -3732,7 +3734,7 @@
   </item>
   <item label="exiv2">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'exiv2 -h bash'</command>
+          <command>xterm -bg black -fg red -e 'exiv2 -h ; bash'</command>
       </action>
   </item>
   <item label="metacopy">
@@ -4383,14 +4385,6 @@
   <item label="wyd">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'wyd ; bash'</command>
-      </action>
-  </item>
-</menu>
-
-<menu id="blackarch-forensics-menu" label="forensics">
-  <item label="bmaptool">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'bmaptool -h ; bash'</command>
       </action>
   </item>
 </menu>
@@ -5269,8 +5263,7 @@
   </item>
   <item label="avr-ranlib">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'avr-ranlib -h ;
--h ; bash'</command>
+          <command>xterm -bg black -fg red -e 'avr-ranlib -h ; bash'</command>
       </action>
   </item>
   <item label="avr-size">
@@ -5474,19 +5467,6 @@
   <item label="wifi-honey">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'wifi-honey -h ; bash'</command>
-      </action>
-  </item>
-</menu>
-
-<menu id="blackarch-intel-menu" label="intel">
-  <item label="wget">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'wget ; bash'</command>
-      </action>
-  </item>
-  <item label="whois">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'whois ; bash'</command>
       </action>
   </item>
 </menu>
@@ -6401,7 +6381,7 @@
   </item>
   <item label="nprint">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'nprint -h bash'</command>
+          <command>xterm -bg black -fg red -e 'nprint -h ; bash'</command>
       </action>
   </item>
   <item label="nsend">
@@ -8033,9 +8013,6 @@
   </item>
 </menu>
 
-<menu id="blackarch-reverseing-menu" label="reverseing">
-</menu>
-
 <menu id="blackarch-reversing-menu" label="reversing">
   <item label="bsdiff">
       <action name="Execute">
@@ -8620,11 +8597,6 @@
           <command>xterm -bg black -fg red -e 'gsad -h ; bash'</command>
       </action>
   </item>
-  <item label="gsd">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'gsd -h ; bash'</command>
-      </action>
-  </item>
   <item label="halberd">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'halberd -h ; bash'</command>
@@ -9045,11 +9017,6 @@
           <command>xterm -bg black -fg red -e 'onesixtyone ; bash'</command>
       </action>
   </item>
-  <item label="openvasad">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'openvasad ; bash'</command>
-      </action>
-  </item>
   <item label="check_omp">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'check_omp -h ; bash'</command>
@@ -9063,11 +9030,6 @@
   <item label="omp-dialog">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'omp-dialog --help ; bash'</command>
-      </action>
-  </item>
-  <item label="OpenVAS-Client">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'OpenVAS-Client ; bash'</command>
       </action>
   </item>
   <item label="greenbone-certdata-sync">
@@ -9906,9 +9868,6 @@
   </item>
 </menu>
 
-<menu id="blackarch-spoofer-menu" label="spoofer">
-</menu>
-
 <menu id="blackarch-threat-model-menu" label="threat-model">
   <item label="magictree">
       <action name="Execute">
@@ -10124,7 +10083,7 @@
   </item>
   <item label="arachni">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'arachni -h bash'</command>
+          <command>xterm -bg black -fg red -e 'arachni -h ; bash'</command>
       </action>
   </item>
   <item label="arachni_console">
@@ -10159,7 +10118,7 @@
   </item>
   <item label="arachni">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'arachni -h bash'</command>
+          <command>xterm -bg black -fg red -e 'arachni -h ; bash'</command>
       </action>
   </item>
   <item label="arachni_console">
@@ -11531,7 +11490,6 @@
   <menu id="browsers-menu"/>
   <menu id="network-menu" />
   <separator label="blackarch" />
-  <menu id="blackarch-analysis-menu"/>
   <menu id="blackarch-anti-forensic-menu"/>
   <menu id="blackarch-automation-menu"/>
   <menu id="blackarch-backdoor-menu"/>
@@ -11551,12 +11509,10 @@
   <menu id="blackarch-fingerprint-menu"/>
   <menu id="blackarch-firmware-menu"/>
   <menu id="blackarch-forensic-menu"/>
-  <menu id="blackarch-forensics-menu"/>
   <menu id="blackarch-fuzzer-menu"/>
   <menu id="blackarch-gpu-menu"/>
   <menu id="blackarch-hardware-menu"/>
   <menu id="blackarch-honeypot-menu"/>
-  <menu id="blackarch-intel-menu"/>
   <menu id="blackarch-keylogger-menu"/>
   <menu id="blackarch-malware-menu"/>
   <menu id="blackarch-misc-menu"/>
@@ -11566,13 +11522,11 @@
   <menu id="blackarch-packer-menu"/>
   <menu id="blackarch-proxy-menu"/>
   <menu id="blackarch-recon-menu"/>
-  <menu id="blackarch-reverseing-menu"/>
   <menu id="blackarch-reversing-menu"/>
   <menu id="blackarch-scanner-menu"/>
   <menu id="blackarch-sniffer-menu"/>
   <menu id="blackarch-social-menu"/>
   <menu id="blackarch-spoof-menu"/>
-  <menu id="blackarch-spoofer-menu"/>
   <menu id="blackarch-threat-model-menu"/>
   <menu id="blackarch-tunnel-menu"/>
   <menu id="blackarch-unpacker-menu"/>

@@ -113,9 +113,6 @@ networkmenu = {
     { "wicd-gtk", "wicd-gtk" }
 }
 
-analysismenu = {
-}
-
 antiforensicmenu = {
   { "ropeadope", "xterm -bg black -fg red -e 'ropeadope ; bash'" },
   { "sdel", "xterm -bg black -fg red -e 'sdel -h ; bash'" },
@@ -276,7 +273,7 @@ crackermenu = {
   { "enabler", "xterm -bg black -fg red -e 'enabler ; bash'" },
   { "fang", "xterm -bg black -fg red -e 'fang -h ; bash'" },
   { "fcrackzip", "xterm -bg black -fg red -e 'fcrackzip --help ; bash'" },
-  { "fzipinfo", "xterm -bg black -fg red -e 'fzipinfo --help bash'" },
+  { "fzipinfo", "xterm -bg black -fg red -e 'fzipinfo --help ; bash'" },
   { "fern", "xterm -bg black -fg red -e 'fern ; bash'" },
   { "findmyhash", "xterm -bg black -fg red -e 'findmyhash -h ; bash'" },
   { "hashcat", "xterm -bg black -fg red -e 'hashcat ; bash'" },
@@ -481,7 +478,7 @@ defensivemenu = {
   { "chkrootkit", "xterm -bg black -fg red -e 'chkrootkit -h ; bash'" },
   { "dbpwaudit", "xterm -bg black -fg red -e 'dbpwaudit ; bash'" },
   { "DBPwAudit.jar", "xterm -bg black -fg red -e 'DBPwAudit.jar ; bash'" },
-  { "exiv2", "xterm -bg black -fg red -e 'exiv2 -h bash'" },
+  { "exiv2", "xterm -bg black -fg red -e 'exiv2 -h ; bash'" },
   { "metacopy", "xterm -bg black -fg red -e 'metacopy -h ; bash'" },
   { "path-test", "xterm -bg black -fg red -e 'path-test ; bash'" },
   { "inetsim", "xterm -bg black -fg red -e 'inetsim --help ; bash'" },
@@ -873,6 +870,7 @@ forensicmenu = {
   { "autopsy", "xterm -bg black -fg red -e 'autopsy -h ; bash'" },
   { "pxedump", "xterm -bg black -fg red -e 'pxedump -h ; bash'" },
   { "usbdump", "xterm -bg black -fg red -e 'usbdump -h ; bash'" },
+  { "bmaptool", "xterm -bg black -fg red -e 'bmaptool -h ; bash'" },
   { "BEViewer", "xterm -bg black -fg red -e 'BEViewer -h ; bash'" },
   { "BEViewer.jar", "xterm -bg black -fg red -e 'BEViewer.jar ; bash'" },
   { "bulk_extractor", "xterm -bg black -fg red -e 'bulk_extractor ; bash'" },
@@ -892,7 +890,7 @@ forensicmenu = {
   { "ddrescue", "xterm -bg black -fg red -e 'ddrescue --help ; bash'" },
   { "ddrescuelog", "xterm -bg black -fg red -e 'ddrescuelog --help ; bash'" },
   { "dbxparse", "xterm -bg black -fg red -e 'dbxparse -h ; bash'" },
-  { "exiv2", "xterm -bg black -fg red -e 'exiv2 -h bash'" },
+  { "exiv2", "xterm -bg black -fg red -e 'exiv2 -h ; bash'" },
   { "metacopy", "xterm -bg black -fg red -e 'metacopy -h ; bash'" },
   { "path-test", "xterm -bg black -fg red -e 'path-test ; bash'" },
   { "extundelete", "xterm -bg black -fg red -e 'extundelete -h ; bash'" },
@@ -1023,10 +1021,6 @@ forensicmenu = {
   { "vol.py", "xterm -bg black -fg red -e 'vol.py -h ; bash'" },
   { "volatility", "xterm -bg black -fg red -e 'volatility -h ; bash'" },
   { "wyd", "xterm -bg black -fg red -e 'wyd ; bash'" },
-}
-
-forensicsmenu = {
-  { "bmaptool", "xterm -bg black -fg red -e 'bmaptool -h ; bash'" },
 }
 
 fuzzermenu = {
@@ -1209,8 +1203,7 @@ hardwaremenu = {
   { "avr-nm", "xterm -bg black -fg red -e 'avr-nm -h ; bash'" },
   { "avr-objcopy", "xterm -bg black -fg red -e 'avr-objcopy -h ; bash'" },
   { "avr-objdump", "xterm -bg black -fg red -e 'avr-objdump -h ; bash'" },
-  { "avr-ranlib", "xterm -bg black -fg red -e 'avr-ranlib -h ;
--h ; bash'" },
+  { "avr-ranlib", "xterm -bg black -fg red -e 'avr-ranlib -h ; bash'" },
   { "avr-size", "xterm -bg black -fg red -e 'avr-size -h ; bash'" },
   { "avr-strings", "xterm -bg black -fg red -e 'avr-strings -h ; bash'" },
   { "avr-strip", "xterm -bg black -fg red -e 'avr-strip -h ; bash'" },
@@ -1254,11 +1247,6 @@ honeypotmenu = {
   { "ifconfig", "xterm -bg black -fg red -e 'ifconfig ; bash'" },
   { "vi", "xterm -bg black -fg red -e 'vi ; bash'" },
   { "wifi-honey", "xterm -bg black -fg red -e 'wifi-honey -h ; bash'" },
-}
-
-intelmenu = {
-  { "wget", "xterm -bg black -fg red -e 'wget ; bash'" },
-  { "whois", "xterm -bg black -fg red -e 'whois ; bash'" },
 }
 
 keyloggermenu = {
@@ -1453,7 +1441,7 @@ networkingmenu = {
   { "ncpmap", "xterm -bg black -fg red -e 'ncpmap -h ; bash'" },
   { "ncpmount", "xterm -bg black -fg red -e 'ncpmount ; bash'" },
   { "ncpumount", "xterm -bg black -fg red -e 'ncpumount -h ; bash'" },
-  { "nprint", "xterm -bg black -fg red -e 'nprint -h bash'" },
+  { "nprint", "xterm -bg black -fg red -e 'nprint -h ; bash'" },
   { "nsend", "xterm -bg black -fg red -e 'nsend ; bash'" },
   { "nwauth", "xterm -bg black -fg red -e 'nwauth -h ; bash'" },
   { "nwbocreate", "xterm -bg black -fg red -e 'nwbocreate -h ; bash'" },
@@ -1791,9 +1779,6 @@ reconmenu = {
   { "whatweb", "xterm -bg black -fg red -e 'whatweb -h ; bash'" },
 }
 
-reverseingmenu = {
-}
-
 reversingmenu = {
   { "bsdiff", "xterm -bg black -fg red -e 'bsdiff ; bash'" },
   { "bspatch", "xterm -bg black -fg red -e 'bspatch ; bash'" },
@@ -1914,7 +1899,6 @@ scannermenu = {
   { "ghostphisher", "xterm -bg black -fg red -e 'ghostphisher ; bash'" },
   { "grepforrfi", "xterm -bg black -fg red -e 'grepforrfi ; bash'" },
   { "gsad", "xterm -bg black -fg red -e 'gsad -h ; bash'" },
-  { "gsd", "xterm -bg black -fg red -e 'gsd -h ; bash'" },
   { "halberd", "xterm -bg black -fg red -e 'halberd -h ; bash'" },
   { "hexorbase", "xterm -bg black -fg red -e 'hexorbase ; bash'" },
   { "http-enum", "xterm -bg black -fg red -e 'http-enum -h ; bash'" },
@@ -1999,11 +1983,9 @@ scannermenu = {
   { "nmbscan", "xterm -bg black -fg red -e 'nmbscan ; bash'" },
   { "nsdtool", "xterm -bg black -fg red -e 'nsdtool ; bash'" },
   { "onesixtyone", "xterm -bg black -fg red -e 'onesixtyone ; bash'" },
-  { "openvasad", "xterm -bg black -fg red -e 'openvasad ; bash'" },
   { "check_omp", "xterm -bg black -fg red -e 'check_omp -h ; bash'" },
   { "omp", "xterm -bg black -fg red -e 'omp --help ; bash'" },
   { "omp-dialog", "xterm -bg black -fg red -e 'omp-dialog --help ; bash'" },
-  { "OpenVAS-Client", "xterm -bg black -fg red -e 'OpenVAS-Client ; bash'" },
   { "greenbone-certdata-sync", "xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'" },
   { "greenbone-scapdata-sync", "xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'" },
   { "openvas-certdata-sync", "xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'" },
@@ -2180,9 +2162,6 @@ spoofmenu = {
   { "sergio-proxy", "xterm -bg black -fg red -e 'sergio-proxy -h ; bash'" },
 }
 
-spoofermenu = {
-}
-
 threatmodelmenu = {
   { "magictree", "xterm -bg black -fg red -e 'magictree ; bash'" },
 }
@@ -2236,14 +2215,14 @@ voipmenu = {
 
 webappmenu = {
   { "allthevhosts", "xterm -bg black -fg red -e 'allthevhosts ; bash'" },
-  { "arachni", "xterm -bg black -fg red -e 'arachni -h bash'" },
+  { "arachni", "xterm -bg black -fg red -e 'arachni -h ; bash'" },
   { "arachni_console", "xterm -bg black -fg red -e 'arachni_console -h ; bash'" },
   { "arachni_multi", "xterm -bg black -fg red -e 'arachni_multi -h ; bash'" },
   { "arachni_rpc", "xterm -bg black -fg red -e 'arachni_rpc -h ; bash'" },
   { "arachni_rpcd", "xterm -bg black -fg red -e 'arachni_rpcd -h ; bash'" },
   { "arachni_rpcd_monitor", "xterm -bg black -fg red -e 'arachni_rpcd_monitor -h ; bash'" },
   { "arachni_script", "xterm -bg black -fg red -e 'arachni_script -h ; bash'" },
-  { "arachni", "xterm -bg black -fg red -e 'arachni -h bash'" },
+  { "arachni", "xterm -bg black -fg red -e 'arachni -h ; bash'" },
   { "arachni_console", "xterm -bg black -fg red -e 'arachni_console -h ; bash'" },
   { "arachni_multi", "xterm -bg black -fg red -e 'arachni_multi -h ; bash'" },
   { "arachni_rpc", "xterm -bg black -fg red -e 'arachni_rpc -h ; bash'" },
@@ -2524,7 +2503,6 @@ wirelessmenu = {
 }
 
 blackarchmenu = {
-  { "analysis", analysismenu },
   { "anti-forensic", antiforensicmenu },
   { "automation", automationmenu },
   { "backdoor", backdoormenu },
@@ -2544,12 +2522,10 @@ blackarchmenu = {
   { "fingerprint", fingerprintmenu },
   { "firmware", firmwaremenu },
   { "forensic", forensicmenu },
-  { "forensics", forensicsmenu },
   { "fuzzer", fuzzermenu },
   { "gpu", gpumenu },
   { "hardware", hardwaremenu },
   { "honeypot", honeypotmenu },
-  { "intel", intelmenu },
   { "keylogger", keyloggermenu },
   { "malware", malwaremenu },
   { "misc", miscmenu },
@@ -2559,13 +2535,11 @@ blackarchmenu = {
   { "packer", packermenu },
   { "proxy", proxymenu },
   { "recon", reconmenu },
-  { "reverseing", reverseingmenu },
   { "reversing", reversingmenu },
   { "scanner", scannermenu },
   { "sniffer", sniffermenu },
   { "social", socialmenu },
   { "spoof", spoofmenu },
-  { "spoofer", spoofermenu },
   { "threat-model", threatmodelmenu },
   { "tunnel", tunnelmenu },
   { "unpacker", unpackermenu },
