@@ -1,9 +1,10 @@
 ===> 2014.07.01
+	- added new gtk theme
 	- added more locales for lxdm and system
 	- replaced wallpaper and logos
 	- added bash completions
 	- added exploits to /usr/share/exploits using sploitctl
-	- added a bunch of new tools / updated tools.
+	- added a bunch of new tools / updated tools (more than 1000)
 	- added new packages with help flags to each wm's menus
 	- added missing users and groups in /etc/passwd and /etc/group
 
