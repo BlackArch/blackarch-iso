@@ -1,7 +1,8 @@
-===> 2014.06.23
+===> 2014.07.01
+	- added more locales for lxdm and system
 	- replaced wallpaper and logos
 	- added bash completions
-	- downloaded and installed exploits to /usr/share/exploits using sploitctl.
+	- added exploits to /usr/share/exploits using sploitctl
 	- added a bunch of new tools / updated tools.
 	- added new packages with help flags to each wm's menus
 	- added missing users and groups in /etc/passwd and /etc/group
