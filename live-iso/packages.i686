@@ -1,12 +1,10 @@
-# blackarch-analysis
-cflow
-#fuzzgrind
-
 # blackarch-anti-forensic
+blackarch-menus
 ropeadope
 secure-delete
 
 # blackarch-automation
+blackarch-menus
 blueranger
 cewl
 checksec
@@ -44,6 +42,7 @@ yinjector
 # blackarch-backdoor
 backcookie
 backdoor-factory
+blackarch-menus
 cymothoa
 enyelkm
 hotpatch
@@ -68,6 +67,7 @@ androguard
 backdoor-factory
 bdfproxy
 binwally
+blackarch-menus
 bvi
 dissector
 haystack
@@ -80,6 +80,7 @@ pextractor
 trid
 
 # blackarch-bluetooth
+blackarch-menus
 bluebugger
 #bluefog
 bluelog
@@ -105,6 +106,8 @@ ubertooth
 #ubertooth-kismet
 
 # blackarch-code-audit
+blackarch-menus
+cflow
 cpptest
 dscanner
 flawfinder
@@ -122,6 +125,7 @@ beleth
 bgp-md5crack
 bios_memimage
 bkhive
+blackarch-menus
 blackhash
 bob-the-butcher
 brutessh
@@ -234,6 +238,7 @@ sucrack
 tftp-bruteforce
 thc-keyfinder
 thc-pptp-bruter
+#truecrack
 ufo-wardriving
 unsecure
 vnc-bypauth
@@ -251,6 +256,7 @@ zykeys
 aespipe
 athena-ssl-scanner
 auto-xor-decryptor
+blackarch-menus
 bletchley
 check-weak-dh-ssh
 chrome-decode
@@ -286,6 +292,7 @@ xorsearch
 xortool
 
 # blackarch-database
+blackarch-menus
 blindsql
 getsids
 metacoretex
@@ -293,6 +300,7 @@ mysql2sqlite
 pgdbf
 
 # blackarch-debugger
+blackarch-menus
 edb
 malwasm
 ollydbg
@@ -302,6 +310,7 @@ shellnoob
 vivisect
 
 # blackarch-decompiler
+blackarch-menus
 flasm
 jd-gui
 recstudio
@@ -316,6 +325,7 @@ arpon
 artillery
 bamf-framework
 beholder
+blackarch-menus
 centry
 chkrootkit
 dbpwaudit
@@ -336,6 +346,7 @@ wordpot
 # blackarch-disassembler
 androguard
 android-apktool
+blackarch-menus
 bokken-hg
 capstone
 dissy
@@ -348,6 +359,7 @@ vivisect
 
 # blackarch-dos
 42zip
+blackarch-menus
 davoset
 dnsdrdos
 fhttp
@@ -371,6 +383,7 @@ thc-ssl-dos
 torshammer
 
 # blackarch-drone
+blackarch-menus
 missionplanner
 skyjack
 
@@ -381,6 +394,7 @@ bbqsql
 bed
 beef
 bfbtester
+blackarch-menus
 bowcaster
 cisco-global-exploiter
 cisco-torch
@@ -462,6 +476,7 @@ zarp
 
 # blackarch-fingerprint
 asp-audit
+blackarch-menus
 blindelephant
 cisco-torch
 cms-explorer
@@ -490,6 +505,7 @@ xprobe2
 
 # blackarch-firmware
 binwalk
+blackarch-menus
 firmware-mod-kit
 uefi-firmware-parser
 
@@ -502,6 +518,7 @@ air
 atstaketools
 autopsy
 bios_memimage
+blackarch-menus
 #bmap
 #bmap-tools
 bulk-extractor
@@ -568,6 +585,7 @@ wyd
 # blackarch-fuzzer
 backfuzz
 bing-lfi-rfi
+blackarch-menus
 bluebox-ng
 browser-fuzzer
 bss
@@ -671,10 +689,11 @@ zaproxy
 zzuf
 
 # blackarch-gpu
-#truecrack
+blackarch-menus
 
 # blackarch-hardware
 arduino
+blackarch-menus
 dex2jar
 hdmi-sniff
 inception
@@ -685,6 +704,7 @@ smali
 
 # blackarch-honeypot
 artillery
+blackarch-menus
 bluepot
 epicwebhoneypot
 fakeap
@@ -700,6 +720,7 @@ wifi-honey
 wordpot
 
 # blackarch-keylogger
+blackarch-menus
 klogger
 logkeys
 xspy
@@ -707,6 +728,7 @@ xspy
 # blackarch-malware
 androguard
 bamf-framework
+blackarch-menus
 cuckoo
 malheur
 malmon
@@ -723,6 +745,7 @@ zerowine
 # blackarch-misc
 3proxy
 airgraph-ng
+blackarch-menus
 bokken-hg
 bulk-extractor
 bvi
@@ -785,6 +808,7 @@ android-sdk
 android-sdk-platform-tools
 android-udev-rules
 androidsniffer
+blackarch-menus
 gtp-scan
 iphoneanalyzer
 kraken
@@ -797,6 +821,7 @@ argus-clients
 arpwner
 backfuzz
 bittwist
+blackarch-menus
 buttinsky
 chaosreader
 cidr2range
@@ -893,16 +918,19 @@ zarp
 #zssh
 
 # blackarch-nfc
+blackarch-menus
 nfcutils
 php-rfi-payload-decoder
 
 # blackarch-packer
+blackarch-menus
 packerid
 
 # blackarch-proxy
 3proxy
 3proxy-win32
 bdfproxy
+blackarch-menus
 burpsuite
 dnschef
 elite-proxy-finder
@@ -926,6 +954,7 @@ ycrawler
 atstaketools
 basedomainname
 bing-ip2hosts
+blackarch-menus
 canari
 casefile
 chaosmap
@@ -1007,6 +1036,7 @@ winfo
 
 # blackarch-reversing
 android-apktool
+blackarch-menus
 bokken-hg
 capstone
 dex2jar
@@ -1044,6 +1074,7 @@ athena-ssl-scanner
 atstaketools
 basedomainname
 bing-lfi-rfi
+blackarch-menus
 bluebox-ng
 bluelog
 braa
@@ -1156,7 +1187,6 @@ o-saft
 ocs
 onesixtyone
 openvas-cli
-#openvas-client
 openvas-manager
 openvas-scanner
 owtf
@@ -1257,6 +1287,7 @@ argus
 argus-clients
 atstaketools
 bittwist
+blackarch-menus
 cdpsnarf
 chaosreader
 creds
@@ -1294,6 +1325,7 @@ xcavator
 
 # blackarch-social
 anontwi
+blackarch-menus
 creepy
 jigsaw
 sees
@@ -1303,6 +1335,7 @@ websploit
 # blackarch-spoof
 admid-pack
 arpoison
+blackarch-menus
 dns-spoof
 fakedns
 fakenetbios
@@ -1321,13 +1354,12 @@ sergio-proxy
 synner
 xcavator
 
-# blackarch-spoofer
-xcavator
-
 # blackarch-threat-model
+blackarch-menus
 magictree
 
 # blackarch-tunnel
+blackarch-menus
 chownat
 crypthook
 ctunnel
@@ -1342,10 +1374,12 @@ udptunnel
 vstt
 
 # blackarch-unpacker
+blackarch-menus
 js-beautify
 
 # blackarch-voip
 ace
+blackarch-menus
 bluebox-ng
 erase-registrations
 iaxflood
@@ -1375,6 +1409,7 @@ asp-audit
 backcookie
 bbqsql
 bing-lfi-rfi
+blackarch-menus
 blindelephant
 bsqlbf
 burpsuite
@@ -1493,6 +1528,7 @@ zaproxy
 # blackarch-windows
 3proxy-win32
 atstaketools
+blackarch-menus
 brutus
 chrome-decode
 creddump
@@ -1545,6 +1581,7 @@ aphopper
 apnbf
 batman-adv
 beholder
+blackarch-menus
 #bluemaho
 bully
 cowpatty
