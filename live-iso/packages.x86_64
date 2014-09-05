@@ -9,6 +9,7 @@ ropeadope
 secure-delete
 
 # blackarch-automation
+armitage
 blackarch-menus
 blueranger
 cewl
@@ -26,6 +27,7 @@ mutator
 nfspy
 nfsshell
 panoptic
+regeorg
 rsmangler
 sakis3g
 shellme
@@ -45,6 +47,7 @@ wnmap
 yinjector
 
 # blackarch-backdoor
+azazel
 backcookie
 backdoor-factory
 blackarch-menus
@@ -78,11 +81,14 @@ dissector
 haystack
 hex2bin
 hyperion
+melkor
 ms-sys
 msvpwn
 packerid
 pextractor
+soot
 #trid
+viper
 
 # blackarch-bluetooth
 blackarch-menus
@@ -163,10 +169,12 @@ dumpacl
 eapmd5pass
 enabler
 evilmaid
+facebrute
 fang
 fern-wifi-cracker
 findmyhash
 ftp-scanner
+ftp-spider
 gtalk-decode
 hashcat
 hashcat-utils
@@ -178,6 +186,7 @@ hdmi-sniff
 hostbox-ssh
 hydra
 iaxscan
+ibrute
 iheartxor
 ikecrack
 ikeprobe
@@ -188,6 +197,7 @@ jbrute
 johnny
 keimpx
 khc
+levye
 lodowep
 maskprocessor
 masscan
@@ -198,6 +208,7 @@ mkbrutus
 morxbrute
 morxcrack
 ntds-decode
+oclhashcat
 ocs
 onesixtyone
 orakelcrackert
@@ -220,6 +231,7 @@ rarcrack
 rcracki-mt
 rdesktop-brute
 reaver
+regeorg
 ridenum
 rlogin-scanner
 rootbrute
@@ -232,6 +244,7 @@ sidguesser
 sipcrack
 skype-dump
 smbbf
+speedpwn
 sqlpat
 ssh-privkey-crack
 sshatter
@@ -253,6 +266,7 @@ wirouter-keyrec
 wmat
 wpbf
 wyd
+xorbruteforcer
 zackattack
 zulu
 zykeys
@@ -261,6 +275,7 @@ zykeys
 aespipe
 athena-ssl-scanner
 auto-xor-decryptor
+b2sum
 blackarch-menus
 bletchley
 check-weak-dh-ssh
@@ -285,16 +300,23 @@ luksipc
 morxcrack
 nomorexor
 openstego
+pacumen
 #pip3line
 posttester
+pwd-hash
 sandy
 sbd
+snow
 sslcaudit
 sslmap
 sslscan
+sslstrip
 xorbruteforcer
 xorsearch
 xortool
+
+# blackarch-cryptography
+pacumen
 
 # blackarch-database
 blackarch-menus
@@ -338,6 +360,7 @@ epicwebhoneypot
 inetsim
 malmon
 malwareanalyser
+mat
 onionshare
 portspoof
 secure-delete
@@ -359,7 +382,9 @@ inguma
 libdisasm
 maltrieve
 marc4dasm
+pwntools
 radare2
+viper
 vivisect
 
 # blackarch-dos
@@ -392,6 +417,7 @@ torshammer
 blackarch-menus
 missionplanner
 skyjack
+snoopy-ng
 
 # blackarch-exploitation
 armitage
@@ -402,6 +428,7 @@ beef
 bfbtester
 blackarch-menus
 bowcaster
+chiron
 cisco-global-exploiter
 cisco-torch
 darkd0rk3r
@@ -436,12 +463,12 @@ metasploit
 minimysqlator
 miranda-upnp
 mitmap
+mitmf
 mitmproxy
 nimbostratus
 opensvp
 osueta
 padbuster
-paxtest
 pblind
 peda
 pirana
@@ -451,6 +478,7 @@ rebind
 rfcat
 ropeme
 ropgadget
+ropper
 ruby-ronin
 ruby-ronin-support
 set
@@ -461,6 +489,7 @@ simple-ducky
 sipvicious
 smbexec
 #smbrelay
+snoopy-ng
 sploitctl
 sqlmap
 sqlninja
@@ -545,6 +574,7 @@ guymager
 haystack
 indxparse
 interrogate
+iosforensic
 ipba2
 iphoneanalyzer
 libewf
@@ -591,6 +621,7 @@ wyd
 # blackarch-fuzzer
 backfuzz
 bing-lfi-rfi
+birp
 blackarch-menus
 bluebox-ng
 browser-fuzzer
@@ -629,12 +660,14 @@ inguma
 jbrofuzz
 lfi-autopwn
 lfi-fuzzploit
+lfi-scanner
 lfi-sploiter
 lfimap
 liffy
 littleblackbox
 maligno
 mdk3
+melkor
 metasploit
 netzob
 nikto
@@ -656,6 +689,7 @@ scout2
 sfuzz
 shortfuzzy
 skipfish
+#smartphone-pentest-framework
 smbexec
 smtp-fuzz
 snmp-fuzzer
@@ -677,7 +711,6 @@ trinity
 umap
 uniofuzz
 uniscan
-viper
 viproy-voipkit
 vulscan
 w3af
@@ -691,6 +724,7 @@ wpscan
 wsfuzzer
 xsser
 xsss
+xssscan
 xsssniper
 zaproxy
 zzuf
@@ -746,11 +780,11 @@ malwaredetect
 peepdf
 pyew
 python2-yara
+viper
 yara
 zerowine
 
 # blackarch-misc
-3proxy
 airgraph-ng
 blackarch-menus
 bokken-hg
@@ -782,9 +816,11 @@ hackersh
 http-put
 infip
 inundator
+latd
 laudanum
 leo
 list-urls
+mat
 mibble
 mutator
 netactview
@@ -797,6 +833,7 @@ pyinstaller
 python-utidylib
 sakis3g
 schnappi-dhcp
+snow
 sslcat
 sslyze
 stompy
@@ -817,11 +854,13 @@ android-udev-rules
 androidsniffer
 blackarch-menus
 gtp-scan
+iosforensic
 iphoneanalyzer
 kraken
 sandy
+#smartphone-pentest-framework
 
-# blackarch-networking
+# blackarch-network
 aiengine
 argus
 argus-clients
@@ -831,12 +870,15 @@ bittwist
 blackarch-menus
 buttinsky
 chaosreader
+chiron
 cidr2range
 crypthook
 dinouml
 dizzy
 dump1090
 fakenetbios
+filibuster
+flowinspect
 #fragroute
 fraud-bridge
 fs-nyarl
@@ -854,12 +896,15 @@ ipdecap
 jnetmap
 junkie
 lans
+latd
 lft
 maclookup
 mausezahn
+mdns-scan
 metasploit
 middler
 mitmer
+mitmf
 moloch
 monocle
 mptcp
@@ -884,6 +929,7 @@ opensvp
 ostinato
 packet-o-matic
 packit
+pacumen
 perl-tftp
 plcscan
 prometheus
@@ -909,6 +955,117 @@ sslsplit
 sslstrip
 starttls-mitm
 t50
+tcpcontrol-fuzzer
+tcpextract
+tcptraceroute
+tftp-proxy
+thc-ipv6
+topera
+udptunnel
+umit
+uw-offish
+#wmi-client
+wol-e
+yersinia
+zackattack
+zarp
+#zssh
+
+# blackarch-networking
+aiengine
+argus
+argus-clients
+arpwner
+backfuzz
+bittwist
+blackarch-menus
+buttinsky
+chaosreader
+chiron
+cidr2range
+crypthook
+dinouml
+dizzy
+dump1090
+fakenetbios
+filibuster
+flowinspect
+#fragroute
+fraud-bridge
+fs-nyarl
+gtp-scan
+gwcheck
+hharp
+hpfeeds
+http-traceroute
+httping
+hyenae
+intercepter-ng
+ip-https-tools
+ipaudit
+ipdecap
+jnetmap
+junkie
+lans
+latd
+lft
+maclookup
+mausezahn
+metasploit
+middler
+mitmer
+mitmf
+moloch
+monocle
+mptcp
+nacker
+nbtool
+ncpfs
+netcommander
+netcon
+netmap
+netreconn
+netscan
+netsed
+netzob
+nfex
+nfsshell
+nield
+nipper
+nkiller2
+nsdtool
+obfsproxy
+opensvp
+ostinato
+packet-o-matic
+packit
+pacumen
+perl-tftp
+plcscan
+prometheus
+ptunnel
+pwnat
+pyminifakedns
+responder
+rinetd
+rtpbreak
+sbd
+sessionlist
+simple-lan-scan
+#smbrelay
+sniffjoke
+snmp-fuzzer
+snmpattack
+snmpcheck
+snort
+sps
+sshuttle
+ssl-phuck3r
+sslsplit
+sslstrip
+starttls-mitm
+t50
+tcpcontrol-fuzzer
 tcpextract
 tcptraceroute
 tftp-proxy
@@ -939,15 +1096,18 @@ packerid
 bdfproxy
 blackarch-menus
 burpsuite
+chiron
 dnschef
 elite-proxy-finder
 fakedns
+mitmf
 mitmproxy
 obfsproxy
 pathod
 proxycheck
 proxyp
 ratproxy
+regeorg
 replayproxy
 sergio-proxy
 sshuttle
@@ -961,6 +1121,7 @@ ycrawler
 atstaketools
 basedomainname
 bing-ip2hosts
+birp
 blackarch-menus
 canari
 casefile
@@ -973,6 +1134,7 @@ dnsenum
 dnsrecon
 dnsspider
 dnswalk
+domain-analyzer
 dradis
 enum4linux
 eyewitness
@@ -984,6 +1146,7 @@ goog-mail
 gwtenum
 halcyon
 handle
+hasere
 htrosbif
 http-traceroute
 httpforge
@@ -1060,6 +1223,7 @@ marc4dasm
 netzob
 packerid
 pev
+pwntools
 radare2
 #recstudio
 scanmem
@@ -1081,6 +1245,7 @@ athena-ssl-scanner
 atstaketools
 basedomainname
 bing-lfi-rfi
+birp
 blackarch-menus
 bluebox-ng
 bluelog
@@ -1095,6 +1260,7 @@ cecster
 chaosmap
 check-weak-dh-ssh
 checksec
+chiron
 cisco-auditing-tool
 cisco-scanner
 cisco-torch
@@ -1114,6 +1280,7 @@ delldrac
 dhcpig
 dirb
 dirbuster
+dirs3arch
 dirscanner
 dmitry
 dnmap
@@ -1141,14 +1308,18 @@ firewalk
 flawfinder
 flunym0us
 fs-nyarl
+fsnoop
 ftp-scanner
+ftp-spider
 ftpmap
+gggooglescan
 ghost-phisher
 grepforrfi
 #gsa
 gtp-scan
 gwcheck
 halberd
+hasere
 hbad
 hexorbase
 host-extract
@@ -1172,6 +1343,7 @@ joomlascan
 jsql
 laf
 ldapenum
+lfi-scanner
 linenum
 littleblackbox
 lotophagi
@@ -1202,6 +1374,7 @@ paketto
 pentbox
 plcscan
 pnscan
+praeda
 propecia
 proxycheck
 proxyp
@@ -1211,11 +1384,13 @@ quickrecon
 ratproxy
 rawr
 redfang
+regeorg
 relay-scanner
 responder
 ripdc
 rlogin-scanner
 rpdscan
+rtlsdr-scanner
 sambascan
 sandy
 sb0x
@@ -1228,6 +1403,7 @@ shortfuzzy
 simple-lan-scan
 sipscan
 skipfish
+#smartphone-pentest-framework
 smbexec
 smtp-user-enum
 smtp-vrfy
@@ -1257,6 +1433,7 @@ unicornscan
 uniscan
 unix-privesc-check
 upnpscan
+urldigger
 uw-loveimap
 uw-udpscan
 uw-zone
@@ -1264,7 +1441,6 @@ v3n0m
 vanguard
 vbrute
 videosnarf
-viper
 viproy-voipkit
 vulscan
 w3af
@@ -1283,6 +1459,7 @@ wnmap
 wpscan
 x-scan
 xsss
+xssscan
 xssya
 ycrawler
 yersinia
@@ -1301,6 +1478,7 @@ chaosreader
 creds
 driftnet
 fl0p
+flowinspect
 fs-nyarl
 hdmi-sniff
 hexinject
@@ -1321,9 +1499,11 @@ phoss
 pytacle
 sessionlist
 sniffjoke
+snoopy-ng
 ssl-phuck3r
 ssldump
 sslsniff
+sslstrip
 starttls-mitm
 tcpick
 tuxcut
@@ -1352,6 +1532,7 @@ hharp
 inundator
 lans
 lsrtunnel
+mitmf
 multimac
 nbnspoof
 netcommander
@@ -1425,6 +1606,7 @@ cansina
 cintruder
 cms-explorer
 cms-few
+conscan
 cpfinder
 csrftester
 darkbing
@@ -1435,6 +1617,7 @@ dff-scanner
 dirb
 dirbuster
 directorytraversalscan
+dirs3arch
 dirscanner
 dpscan
 dumb0
@@ -1463,6 +1646,7 @@ laudanum
 lbmap
 lfi-exploiter
 lfi-fuzzploit
+lfi-scanner
 lfi-sploiter
 lfimap
 liffy
@@ -1497,9 +1681,9 @@ themole
 uatester
 uniscan
 urlcrazy
+urldigger
 vanguard
 vega
-viper
 w3af
 waffit
 wafp
@@ -1527,6 +1711,7 @@ wsfuzzer
 xsser
 xssless
 xsss
+xssscan
 xsssniper
 xssya
 ycrawler
@@ -1618,6 +1803,7 @@ rfdump
 rfidiot
 rfidtool
 spectools
+speedpwn
 timegen
 ubitack
 ufo-wardriving
@@ -1634,4 +1820,3 @@ wirouter-keyrec
 wlan2eth
 zulu
 zykeys
-
