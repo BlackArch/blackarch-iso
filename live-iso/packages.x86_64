@@ -501,7 +501,7 @@ subterfuge
 tcpjunk
 thc-ipv6
 veil
-viproy-voipkit
+#viproy-voipkit
 vnc-bypauth
 websploit
 witchxtool
@@ -711,7 +711,7 @@ trinity
 umap
 uniofuzz
 uniscan
-viproy-voipkit
+#viproy-voipkit
 vulscan
 w3af
 wapiti
@@ -1441,7 +1441,7 @@ v3n0m
 vanguard
 vbrute
 videosnarf
-viproy-voipkit
+#viproy-voipkit
 vulscan
 w3af
 waffit
