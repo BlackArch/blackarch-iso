@@ -151,6 +151,8 @@ cintruder
 cisco-auditing-tool
 cisco-ocs
 cisco-scanner
+cisco5crack
+cisco7crack
 cmospwd
 cowpatty
 crackhor
@@ -281,6 +283,8 @@ bletchley
 check-weak-dh-ssh
 chrome-decode
 ciphertest
+cisco5crack
+cisco7crack
 codetective
 crypthook
 cryptonark
@@ -769,6 +773,7 @@ xspy
 # blackarch-malware
 androguard
 bamf-framework
+balbuzard
 blackarch-menus
 cuckoo
 malheur
@@ -807,6 +812,7 @@ extracthosts
 eyewitness
 fakemail
 flare
+freeipmi
 fstealer
 genlist
 geoedge
@@ -815,6 +821,7 @@ ghost-py
 hackersh
 http-put
 infip
+ipmitool
 inundator
 latd
 laudanum
@@ -992,6 +999,7 @@ filibuster
 flowinspect
 #fragroute
 fraud-bridge
+freeipmi
 fs-nyarl
 gtp-scan
 gwcheck
@@ -1004,6 +1012,7 @@ intercepter-ng
 ip-https-tools
 ipaudit
 ipdecap
+ipmitool
 jnetmap
 junkie
 lans
@@ -1207,6 +1216,7 @@ winfo
 # blackarch-reversing
 #android-apktool
 blackarch-menus
+balbuzard
 bokken-hg
 capstone
 dex2jar
