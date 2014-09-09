@@ -8,7 +8,7 @@ disk:x:6:root
 lp:x:7:daemon
 mem:x:8:
 kmem:x:9:
-wheel:x:10:root,
+wheel:x:10:root
 ftp:x:11:
 mail:x:12:
 uucp:x:14:
@@ -42,7 +42,6 @@ wireshark:x:150:
 polkitd:x:102:
 cuckoo:x:1002:
 dotdotpwn:x:1003:
-rtkit:x:133:
 inetsim:x:1004:
 tor:x:43:
 kvm:x:78:
@@ -65,3 +64,9 @@ systemd-network:x:193:
 lxdm:x:121:
 systemd-bus-proxy:x:194:
 systemd-resolve:x:195:
+input:x:97:
+sslh:x:995:
+systemd-journal-remote:x:994:
+systemd-journal-upload:x:993:
+rtkit:x:133:
+rpc:x:412:rpc
