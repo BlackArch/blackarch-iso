@@ -202,6 +202,10 @@
           [exec] (against) {xterm -bg black -fg red -e 'against ; bash'}
           [exec] (asleap) {xterm -bg black -fg red -e 'asleap -h ; bash'}
           [exec] (genkeys) {xterm -bg black -fg red -e 'genkeys -h ; bash'}
+          [exec] (balbuzard) {xterm -bg black -fg red -e 'balbuzard ; bash'}
+          [exec] (bbcrack) {xterm -bg black -fg red -e 'bbcrack ; bash'}
+          [exec] (bbharvest) {xterm -bg black -fg red -e 'bbharvest ; bash'}
+          [exec] (bbtrans) {xterm -bg black -fg red -e 'bbtrans ; bash'}
           [exec] (beleth) {xterm -bg black -fg red -e 'beleth -h ; bash'}
           [exec] (bgp-md5crack) {xterm -bg black -fg red -e 'bgp-md5crack -h ; bash'}
           [exec] (pxedump) {xterm -bg black -fg red -e 'pxedump -h ; bash'}
@@ -234,6 +238,8 @@
           [exec] (cisco-auditing-tool) {xterm -bg black -fg red -e 'cisco-auditing-tool ; bash'}
           [exec] (cisco-ocs) {xterm -bg black -fg red -e 'cisco-ocs ; bash'}
           [exec] (cisco-scanner) {xterm -bg black -fg red -e 'cisco-scanner -h ; bash'}
+          [exec] (c5c) {xterm -bg black -fg red -e 'c5c --help ; bash'}
+          [exec] (cisco7crack) {xterm -bg black -fg red -e 'cisco7crack -h ; bash'}
           [exec] (cmospwd) {xterm -bg black -fg red -e 'cmospwd -h ; bash'}
           [exec] (cowpatty) {xterm -bg black -fg red -e 'cowpatty -h ; bash'}
           [exec] (genpmk) {xterm -bg black -fg red -e 'genpmk -h ; bash'}
@@ -478,6 +484,8 @@
       [end]
 
       [submenu] (cryptography)
+          [exec] (c5c) {xterm -bg black -fg red -e 'c5c --help ; bash'}
+          [exec] (cisco7crack) {xterm -bg black -fg red -e 'cisco7crack -h ; bash'}
           [exec] (pacumen_classify_pcap.py) {xterm -bg black -fg red -e 'pacumen_classify_pcap.py ; bash'}
           [exec] (pacumen_timeseries.py) {xterm -bg black -fg red -e 'pacumen_timeseries.py ; bash'}
           [exec] (pacumen_train.py) {xterm -bg black -fg red -e 'pacumen_train.py ; bash'}
@@ -894,6 +902,38 @@
           [exec] (mitmproxy) {xterm -bg black -fg red -e 'mitmproxy -h ; bash'}
           [exec] (nimbostratus) {xterm -bg black -fg red -e 'nimbostratus -h ; bash'}
           [exec] (opensvp) {xterm -bg black -fg red -e 'opensvp -h ; bash'}
+          [exec] (check_omp) {xterm -bg black -fg red -e 'check_omp -h ; bash'}
+          [exec] (omp) {xterm -bg black -fg red -e 'omp --help ; bash'}
+          [exec] (omp-dialog) {xterm -bg black -fg red -e 'omp-dialog --help ; bash'}
+          [exec] (check_omp) {xterm -bg black -fg red -e 'check_omp -h ; bash'}
+          [exec] (omp) {xterm -bg black -fg red -e 'omp --help ; bash'}
+          [exec] (omp-dialog) {xterm -bg black -fg red -e 'omp-dialog --help ; bash'}
+          [exec] (openvas-nasl) {xterm -bg black -fg red -e 'openvas-nasl ; bash'}
+          [exec] (openvas-nasl-lint) {xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'}
+          [exec] (openvas-nasl) {xterm -bg black -fg red -e 'openvas-nasl ; bash'}
+          [exec] (openvas-nasl-lint) {xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'}
+          [exec] (greenbone-certdata-sync) {xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'}
+          [exec] (greenbone-scapdata-sync) {xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'}
+          [exec] (openvas-certdata-sync) {xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'}
+          [exec] (openvas-portnames-update) {xterm -bg black -fg red -e 'openvas-portnames-update ; bash'}
+          [exec] (openvas-scapdata-sync) {xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'}
+          [exec] (openvasmd) {xterm -bg black -fg red -e 'openvasmd -h ; bash'}
+          [exec] (greenbone-certdata-sync) {xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'}
+          [exec] (greenbone-scapdata-sync) {xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'}
+          [exec] (openvas-certdata-sync) {xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'}
+          [exec] (openvas-portnames-update) {xterm -bg black -fg red -e 'openvas-portnames-update ; bash'}
+          [exec] (openvas-scapdata-sync) {xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'}
+          [exec] (openvasmd) {xterm -bg black -fg red -e 'openvasmd -h ; bash'}
+          [exec] (greenbone-nvt-sync) {xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas-mkcert) {xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'}
+          [exec] (openvas-mkcert-client) {xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'}
+          [exec] (openvas-nvt-sync) {xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'}
+          [exec] (openvassd) {xterm -bg black -fg red -e 'openvassd -h ; bash'}
+          [exec] (greenbone-nvt-sync) {xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas-mkcert) {xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'}
+          [exec] (openvas-mkcert-client) {xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'}
+          [exec] (openvas-nvt-sync) {xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'}
+          [exec] (openvassd) {xterm -bg black -fg red -e 'openvassd -h ; bash'}
           [exec] (osueta) {xterm -bg black -fg red -e 'osueta -h ; bash'}
           [exec] (padbuster) {xterm -bg black -fg red -e 'padbuster -h ; bash'}
           [exec] (pblind.py) {xterm -bg black -fg red -e 'pblind.py ; bash'}
@@ -907,6 +947,7 @@
           [exec] (ropeme-search-gadgets) {xterm -bg black -fg red -e 'ropeme-search-gadgets ; bash'}
           [exec] (ropshell) {xterm -bg black -fg red -e 'ropshell ; bash'}
           [exec] (ropgadget) {xterm -bg black -fg red -e 'ropgadget ; bash'}
+          [exec] (ropper) {xterm -bg black -fg red -e 'ropper ; bash'}
           [exec] (seautomate) {xterm -bg black -fg red -e 'seautomate ; bash'}
           [exec] (seproxy) {xterm -bg black -fg red -e 'seproxy ; bash'}
           [exec] (setoolkit) {xterm -bg black -fg red -e 'setoolkit ; bash'}
@@ -1139,14 +1180,6 @@
           [exec] (iosforensic) {xterm -bg black -fg red -e 'iosforensic -h ; bash'}
           [exec] (ipba2) {xterm -bg black -fg red -e 'ipba2 ; bash'}
           [exec] (iphoneanalyzer) {xterm -bg black -fg red -e 'iphoneanalyzer -h ; bash'}
-          [exec] (ewfacquire) {xterm -bg black -fg red -e 'ewfacquire ; bash'}
-          [exec] (ewfacquirestream) {xterm -bg black -fg red -e 'ewfacquirestream ; bash'}
-          [exec] (ewfdebug) {xterm -bg black -fg red -e 'ewfdebug ; bash'}
-          [exec] (ewfexport) {xterm -bg black -fg red -e 'ewfexport ; bash'}
-          [exec] (ewfinfo) {xterm -bg black -fg red -e 'ewfinfo ; bash'}
-          [exec] (ewfmount) {xterm -bg black -fg red -e 'ewfmount ; bash'}
-          [exec] (ewfrecover) {xterm -bg black -fg red -e 'ewfrecover ; bash'}
-          [exec] (ewfverify) {xterm -bg black -fg red -e 'ewfverify ; bash'}
           [exec] (mac-robber) {xterm -bg black -fg red -e 'mac-robber -h ; bash'}
           [exec] (dupemap) {xterm -bg black -fg red -e 'dupemap ; bash'}
           [exec] (magicrescue) {xterm -bg black -fg red -e 'magicrescue ; bash'}
@@ -1406,6 +1439,38 @@
           [exec] (nimbostratus) {xterm -bg black -fg red -e 'nimbostratus -h ; bash'}
           [exec] (notspikefile) {xterm -bg black -fg red -e 'notspikefile ; bash'}
           [exec] (ohrwurm) {xterm -bg black -fg red -e 'ohrwurm -h ; bash'}
+          [exec] (check_omp) {xterm -bg black -fg red -e 'check_omp -h ; bash'}
+          [exec] (omp) {xterm -bg black -fg red -e 'omp --help ; bash'}
+          [exec] (omp-dialog) {xterm -bg black -fg red -e 'omp-dialog --help ; bash'}
+          [exec] (check_omp) {xterm -bg black -fg red -e 'check_omp -h ; bash'}
+          [exec] (omp) {xterm -bg black -fg red -e 'omp --help ; bash'}
+          [exec] (omp-dialog) {xterm -bg black -fg red -e 'omp-dialog --help ; bash'}
+          [exec] (openvas-nasl) {xterm -bg black -fg red -e 'openvas-nasl ; bash'}
+          [exec] (openvas-nasl-lint) {xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'}
+          [exec] (openvas-nasl) {xterm -bg black -fg red -e 'openvas-nasl ; bash'}
+          [exec] (openvas-nasl-lint) {xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'}
+          [exec] (greenbone-certdata-sync) {xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'}
+          [exec] (greenbone-scapdata-sync) {xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'}
+          [exec] (openvas-certdata-sync) {xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'}
+          [exec] (openvas-portnames-update) {xterm -bg black -fg red -e 'openvas-portnames-update ; bash'}
+          [exec] (openvas-scapdata-sync) {xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'}
+          [exec] (openvasmd) {xterm -bg black -fg red -e 'openvasmd -h ; bash'}
+          [exec] (greenbone-certdata-sync) {xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'}
+          [exec] (greenbone-scapdata-sync) {xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'}
+          [exec] (openvas-certdata-sync) {xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'}
+          [exec] (openvas-portnames-update) {xterm -bg black -fg red -e 'openvas-portnames-update ; bash'}
+          [exec] (openvas-scapdata-sync) {xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'}
+          [exec] (openvasmd) {xterm -bg black -fg red -e 'openvasmd -h ; bash'}
+          [exec] (greenbone-nvt-sync) {xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas-mkcert) {xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'}
+          [exec] (openvas-mkcert-client) {xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'}
+          [exec] (openvas-nvt-sync) {xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'}
+          [exec] (openvassd) {xterm -bg black -fg red -e 'openvassd -h ; bash'}
+          [exec] (greenbone-nvt-sync) {xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas-mkcert) {xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'}
+          [exec] (openvas-mkcert-client) {xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'}
+          [exec] (openvas-nvt-sync) {xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'}
+          [exec] (openvassd) {xterm -bg black -fg red -e 'openvassd -h ; bash'}
           [exec] (oscanner) {xterm -bg black -fg red -e 'oscanner -h ; bash'}
           [exec] (reportviewer) {xterm -bg black -fg red -e 'reportviewer -h ; bash'}
           [exec] (owtf) {xterm -bg black -fg red -e 'owtf ; bash'}
@@ -1707,6 +1772,10 @@
           [exec] (androsim) {xterm -bg black -fg red -e 'androsim ; bash'}
           [exec] (androxgmml) {xterm -bg black -fg red -e 'androxgmml ; bash'}
           [exec] (apkviewer) {xterm -bg black -fg red -e 'apkviewer -h ; bash'}
+          [exec] (balbuzard) {xterm -bg black -fg red -e 'balbuzard ; bash'}
+          [exec] (bbcrack) {xterm -bg black -fg red -e 'bbcrack ; bash'}
+          [exec] (bbharvest) {xterm -bg black -fg red -e 'bbharvest ; bash'}
+          [exec] (bbtrans) {xterm -bg black -fg red -e 'bbtrans ; bash'}
           [exec] (bamfbrute) {xterm -bg black -fg red -e 'bamfbrute -h ; bash'}
           [exec] (bamfdetect) {xterm -bg black -fg red -e 'bamfdetect -h ; bash'}
           [exec] (cuckoo) {xterm -bg black -fg red -e 'cuckoo ; bash'}
@@ -1772,6 +1841,37 @@
           [exec] (eyewitness) {xterm -bg black -fg red -e 'eyewitness -h ; bash'}
           [exec] (fakemail) {xterm -bg black -fg red -e 'fakemail -h ; bash'}
           [exec] (flare) {xterm -bg black -fg red -e 'flare -h ; bash'}
+          [exec] (bmc-config) {xterm -bg black -fg red -e 'bmc-config ; bash'}
+          [exec] (bmc-device) {xterm -bg black -fg red -e 'bmc-device ; bash'}
+          [exec] (bmc-info) {xterm -bg black -fg red -e 'bmc-info ; bash'}
+          [exec] (bmc-watchdog) {xterm -bg black -fg red -e 'bmc-watchdog ; bash'}
+          [exec] (ipmi-chassis) {xterm -bg black -fg red -e 'ipmi-chassis ; bash'}
+          [exec] (ipmi-chassis-config) {xterm -bg black -fg red -e 'ipmi-chassis-config ; bash'}
+          [exec] (ipmi-config) {xterm -bg black -fg red -e 'ipmi-config ; bash'}
+          [exec] (ipmi-console) {xterm -bg black -fg red -e 'ipmi-console ; bash'}
+          [exec] (ipmi-dcmi) {xterm -bg black -fg red -e 'ipmi-dcmi ; bash'}
+          [exec] (ipmi-detect) {xterm -bg black -fg red -e 'ipmi-detect ; bash'}
+          [exec] (ipmi-fru) {xterm -bg black -fg red -e 'ipmi-fru ; bash'}
+          [exec] (ipmi-locate) {xterm -bg black -fg red -e 'ipmi-locate ; bash'}
+          [exec] (ipmi-oem) {xterm -bg black -fg red -e 'ipmi-oem ; bash'}
+          [exec] (ipmi-pef-config) {xterm -bg black -fg red -e 'ipmi-pef-config ; bash'}
+          [exec] (ipmi-pet) {xterm -bg black -fg red -e 'ipmi-pet ; bash'}
+          [exec] (ipmi-ping) {xterm -bg black -fg red -e 'ipmi-ping ; bash'}
+          [exec] (ipmi-power) {xterm -bg black -fg red -e 'ipmi-power ; bash'}
+          [exec] (ipmi-raw) {xterm -bg black -fg red -e 'ipmi-raw ; bash'}
+          [exec] (ipmi-sel) {xterm -bg black -fg red -e 'ipmi-sel ; bash'}
+          [exec] (ipmi-sensors) {xterm -bg black -fg red -e 'ipmi-sensors ; bash'}
+          [exec] (ipmi-sensors-config) {xterm -bg black -fg red -e 'ipmi-sensors-config ; bash'}
+          [exec] (ipmiconsole) {xterm -bg black -fg red -e 'ipmiconsole ; bash'}
+          [exec] (ipmidetect) {xterm -bg black -fg red -e 'ipmidetect ; bash'}
+          [exec] (ipmidetectd) {xterm -bg black -fg red -e 'ipmidetectd ; bash'}
+          [exec] (ipmimonitoring) {xterm -bg black -fg red -e 'ipmimonitoring ; bash'}
+          [exec] (ipmiping) {xterm -bg black -fg red -e 'ipmiping ; bash'}
+          [exec] (ipmipower) {xterm -bg black -fg red -e 'ipmipower ; bash'}
+          [exec] (ipmiseld) {xterm -bg black -fg red -e 'ipmiseld ; bash'}
+          [exec] (pef-config) {xterm -bg black -fg red -e 'pef-config ; bash'}
+          [exec] (rmcp-ping) {xterm -bg black -fg red -e 'rmcp-ping ; bash'}
+          [exec] (rmcpping) {xterm -bg black -fg red -e 'rmcpping ; bash'}
           [exec] (fstealer) {xterm -bg black -fg red -e 'fstealer -h ; bash'}
           [exec] (genlist) {xterm -bg black -fg red -e 'genlist ; bash'}
           [exec] (geoedge) {xterm -bg black -fg red -e 'geoedge ; bash'}
@@ -1780,6 +1880,10 @@
           [exec] (http-put) {xterm -bg black -fg red -e 'http-put -h ; bash'}
           [exec] (infip) {xterm -bg black -fg red -e 'infip -h ; bash'}
           [exec] (inundator) {xterm -bg black -fg red -e 'inundator ; bash'}
+          [exec] (ipmievd) {xterm -bg black -fg red -e 'ipmievd ; bash'}
+          [exec] (ipmitool) {xterm -bg black -fg red -e 'ipmitool -h ; bash'}
+          [exec] (ipmievd) {xterm -bg black -fg red -e 'ipmievd ; bash'}
+          [exec] (ipmitool) {xterm -bg black -fg red -e 'ipmitool -h ; bash'}
           [exec] (latcp) {xterm -bg black -fg red -e 'latcp ; bash'}
           [exec] (latd) {xterm -bg black -fg red -e 'latd -h ; bash'}
           [exec] (llogin) {xterm -bg black -fg red -e 'llogin -h ; bash'}
@@ -2090,6 +2194,37 @@
           [exec] (fping) {xterm -bg black -fg red -e 'fping -h ; bash'}
           [exec] (fping6) {xterm -bg black -fg red -e 'fping6 -h ; bash'}
           [exec] (fraud-bridge) {xterm -bg black -fg red -e 'fraud-bridge -h ; bash'}
+          [exec] (bmc-config) {xterm -bg black -fg red -e 'bmc-config ; bash'}
+          [exec] (bmc-device) {xterm -bg black -fg red -e 'bmc-device ; bash'}
+          [exec] (bmc-info) {xterm -bg black -fg red -e 'bmc-info ; bash'}
+          [exec] (bmc-watchdog) {xterm -bg black -fg red -e 'bmc-watchdog ; bash'}
+          [exec] (ipmi-chassis) {xterm -bg black -fg red -e 'ipmi-chassis ; bash'}
+          [exec] (ipmi-chassis-config) {xterm -bg black -fg red -e 'ipmi-chassis-config ; bash'}
+          [exec] (ipmi-config) {xterm -bg black -fg red -e 'ipmi-config ; bash'}
+          [exec] (ipmi-console) {xterm -bg black -fg red -e 'ipmi-console ; bash'}
+          [exec] (ipmi-dcmi) {xterm -bg black -fg red -e 'ipmi-dcmi ; bash'}
+          [exec] (ipmi-detect) {xterm -bg black -fg red -e 'ipmi-detect ; bash'}
+          [exec] (ipmi-fru) {xterm -bg black -fg red -e 'ipmi-fru ; bash'}
+          [exec] (ipmi-locate) {xterm -bg black -fg red -e 'ipmi-locate ; bash'}
+          [exec] (ipmi-oem) {xterm -bg black -fg red -e 'ipmi-oem ; bash'}
+          [exec] (ipmi-pef-config) {xterm -bg black -fg red -e 'ipmi-pef-config ; bash'}
+          [exec] (ipmi-pet) {xterm -bg black -fg red -e 'ipmi-pet ; bash'}
+          [exec] (ipmi-ping) {xterm -bg black -fg red -e 'ipmi-ping ; bash'}
+          [exec] (ipmi-power) {xterm -bg black -fg red -e 'ipmi-power ; bash'}
+          [exec] (ipmi-raw) {xterm -bg black -fg red -e 'ipmi-raw ; bash'}
+          [exec] (ipmi-sel) {xterm -bg black -fg red -e 'ipmi-sel ; bash'}
+          [exec] (ipmi-sensors) {xterm -bg black -fg red -e 'ipmi-sensors ; bash'}
+          [exec] (ipmi-sensors-config) {xterm -bg black -fg red -e 'ipmi-sensors-config ; bash'}
+          [exec] (ipmiconsole) {xterm -bg black -fg red -e 'ipmiconsole ; bash'}
+          [exec] (ipmidetect) {xterm -bg black -fg red -e 'ipmidetect ; bash'}
+          [exec] (ipmidetectd) {xterm -bg black -fg red -e 'ipmidetectd ; bash'}
+          [exec] (ipmimonitoring) {xterm -bg black -fg red -e 'ipmimonitoring ; bash'}
+          [exec] (ipmiping) {xterm -bg black -fg red -e 'ipmiping ; bash'}
+          [exec] (ipmipower) {xterm -bg black -fg red -e 'ipmipower ; bash'}
+          [exec] (ipmiseld) {xterm -bg black -fg red -e 'ipmiseld ; bash'}
+          [exec] (pef-config) {xterm -bg black -fg red -e 'pef-config ; bash'}
+          [exec] (rmcp-ping) {xterm -bg black -fg red -e 'rmcp-ping ; bash'}
+          [exec] (rmcpping) {xterm -bg black -fg red -e 'rmcpping ; bash'}
           [exec] (fs-nyarl) {xterm -bg black -fg red -e 'fs-nyarl -h ; bash'}
           [exec] (chaosreader0.94) {xterm -bg black -fg red -e 'chaosreader0.94 ; bash'}
           [exec] (geoiplookup) {xterm -bg black -fg red -e 'geoiplookup ; bash'}
@@ -2115,6 +2250,10 @@
           [exec] (ipaudit) {xterm -bg black -fg red -e 'ipaudit ; bash'}
           [exec] (ipstrings) {xterm -bg black -fg red -e 'ipstrings ; bash'}
           [exec] (ipdecap) {xterm -bg black -fg red -e 'ipdecap -h ; bash'}
+          [exec] (ipmievd) {xterm -bg black -fg red -e 'ipmievd ; bash'}
+          [exec] (ipmitool) {xterm -bg black -fg red -e 'ipmitool -h ; bash'}
+          [exec] (ipmievd) {xterm -bg black -fg red -e 'ipmievd ; bash'}
+          [exec] (ipmitool) {xterm -bg black -fg red -e 'ipmitool -h ; bash'}
           [exec] (arping) {xterm -bg black -fg red -e 'arping -h ; bash'}
           [exec] (clockdiff) {xterm -bg black -fg red -e 'clockdiff ; bash'}
           [exec] (ping) {xterm -bg black -fg red -e 'ping ; bash'}
@@ -2694,6 +2833,10 @@
 
       [submenu] (reversing)
           [exec] (apktool) {xterm -bg black -fg red -e 'apktool ; bash'}
+          [exec] (balbuzard) {xterm -bg black -fg red -e 'balbuzard ; bash'}
+          [exec] (bbcrack) {xterm -bg black -fg red -e 'bbcrack ; bash'}
+          [exec] (bbharvest) {xterm -bg black -fg red -e 'bbharvest ; bash'}
+          [exec] (bbtrans) {xterm -bg black -fg red -e 'bbtrans ; bash'}
           [exec] (bokken) {xterm -bg black -fg red -e 'bokken -h ; bash'}
           [exec] (bsdiff) {xterm -bg black -fg red -e 'bsdiff ; bash'}
           [exec] (bspatch) {xterm -bg black -fg red -e 'bspatch ; bash'}
@@ -2878,7 +3021,6 @@
           [exec] (gggooglescan) {xterm -bg black -fg red -e 'gggooglescan -h ; bash'}
           [exec] (ghostphisher) {xterm -bg black -fg red -e 'ghostphisher ; bash'}
           [exec] (grepforrfi) {xterm -bg black -fg red -e 'grepforrfi ; bash'}
-          [exec] (gsad) {xterm -bg black -fg red -e 'gsad -h ; bash'}
           [exec] (gtp-scan) {xterm -bg black -fg red -e 'gtp-scan -h ; bash'}
           [exec] (gwcheck) {xterm -bg black -fg red -e 'gwcheck -h ; bash'}
           [exec] (halberd) {xterm -bg black -fg red -e 'halberd -h ; bash'}
@@ -3012,12 +3154,30 @@
           [exec] (check_omp) {xterm -bg black -fg red -e 'check_omp -h ; bash'}
           [exec] (omp) {xterm -bg black -fg red -e 'omp --help ; bash'}
           [exec] (omp-dialog) {xterm -bg black -fg red -e 'omp-dialog --help ; bash'}
+          [exec] (check_omp) {xterm -bg black -fg red -e 'check_omp -h ; bash'}
+          [exec] (omp) {xterm -bg black -fg red -e 'omp --help ; bash'}
+          [exec] (omp-dialog) {xterm -bg black -fg red -e 'omp-dialog --help ; bash'}
+          [exec] (openvas-nasl) {xterm -bg black -fg red -e 'openvas-nasl ; bash'}
+          [exec] (openvas-nasl-lint) {xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'}
+          [exec] (openvas-nasl) {xterm -bg black -fg red -e 'openvas-nasl ; bash'}
+          [exec] (openvas-nasl-lint) {xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'}
           [exec] (greenbone-certdata-sync) {xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'}
           [exec] (greenbone-scapdata-sync) {xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'}
           [exec] (openvas-certdata-sync) {xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'}
           [exec] (openvas-portnames-update) {xterm -bg black -fg red -e 'openvas-portnames-update ; bash'}
           [exec] (openvas-scapdata-sync) {xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'}
           [exec] (openvasmd) {xterm -bg black -fg red -e 'openvasmd -h ; bash'}
+          [exec] (greenbone-certdata-sync) {xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'}
+          [exec] (greenbone-scapdata-sync) {xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'}
+          [exec] (openvas-certdata-sync) {xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'}
+          [exec] (openvas-portnames-update) {xterm -bg black -fg red -e 'openvas-portnames-update ; bash'}
+          [exec] (openvas-scapdata-sync) {xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'}
+          [exec] (openvasmd) {xterm -bg black -fg red -e 'openvasmd -h ; bash'}
+          [exec] (greenbone-nvt-sync) {xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas-mkcert) {xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'}
+          [exec] (openvas-mkcert-client) {xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'}
+          [exec] (openvas-nvt-sync) {xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'}
+          [exec] (openvassd) {xterm -bg black -fg red -e 'openvassd -h ; bash'}
           [exec] (greenbone-nvt-sync) {xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'}
           [exec] (openvas-mkcert) {xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'}
           [exec] (openvas-mkcert-client) {xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'}

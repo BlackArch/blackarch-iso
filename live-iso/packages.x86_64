@@ -132,6 +132,7 @@ aeskeyfind
 against
 asleap
 atstaketools
+balbuzard
 beleth
 bgp-md5crack
 bios_memimage
@@ -320,6 +321,8 @@ xorsearch
 xortool
 
 # blackarch-cryptography
+cisco5crack
+cisco7crack
 pacumen
 
 # blackarch-database
@@ -772,8 +775,8 @@ xspy
 
 # blackarch-malware
 androguard
-bamf-framework
 balbuzard
+bamf-framework
 blackarch-menus
 cuckoo
 malheur
@@ -821,8 +824,8 @@ ghost-py
 hackersh
 http-put
 infip
-ipmitool
 inundator
+ipmitool
 latd
 laudanum
 leo
@@ -888,6 +891,7 @@ filibuster
 flowinspect
 #fragroute
 fraud-bridge
+freeipmi
 fs-nyarl
 gtp-scan
 gwcheck
@@ -900,6 +904,7 @@ intercepter-ng
 ip-https-tools
 ipaudit
 ipdecap
+ipmitool
 jnetmap
 junkie
 lans
@@ -1215,8 +1220,8 @@ winfo
 
 # blackarch-reversing
 #android-apktool
-blackarch-menus
 balbuzard
+blackarch-menus
 bokken-hg
 capstone
 dex2jar
@@ -1325,7 +1330,7 @@ ftpmap
 gggooglescan
 ghost-phisher
 grepforrfi
-#gsa
+gsa
 gtp-scan
 gwcheck
 halberd
@@ -1376,9 +1381,9 @@ nsdtool
 o-saft
 ocs
 onesixtyone
-#openvas-cli
-#openvas-manager
-#openvas-scanner
+openvas-cli
+openvas-manager
+openvas-scanner
 owtf
 paketto
 pentbox

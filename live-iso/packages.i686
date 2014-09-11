@@ -109,6 +109,7 @@ redfang
 spooftooph
 tbear
 ubertooth
+#ubertooth-kismet
 
 # blackarch-code-audit
 blackarch-menus
@@ -126,6 +127,7 @@ aeskeyfind
 against
 asleap
 atstaketools
+balbuzard
 beleth
 bgp-md5crack
 bios_memimage
@@ -314,6 +316,8 @@ xorsearch
 xortool
 
 # blackarch-cryptography
+cisco5crack
+cisco7crack
 pacumen
 
 # blackarch-database
@@ -524,6 +528,7 @@ httprint
 httprint-win32
 jomplug
 kolkata
+lbmap
 nimbostratus
 p0f
 plecost
@@ -763,8 +768,8 @@ xspy
 
 # blackarch-malware
 androguard
-bamf-framework
 balbuzard
+bamf-framework
 blackarch-menus
 cuckoo
 malheur
@@ -879,6 +884,7 @@ filibuster
 flowinspect
 #fragroute
 fraud-bridge
+freeipmi
 fs-nyarl
 gtp-scan
 gwcheck
@@ -891,6 +897,7 @@ intercepter-ng
 ip-https-tools
 ipaudit
 ipdecap
+ipmitool
 jnetmap
 junkie
 lans
@@ -1784,10 +1791,13 @@ eyepwn
 fern-wifi-cracker
 fuzzap
 g72x++
+giskismet
 gqrx
 hotspotter
 intercepter-ng
 killerbee
+kismet-earth
+kismet2earth
 #kismon
 mdk3
 mfcuk
