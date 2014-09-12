@@ -9,18 +9,13 @@ btrfs-progs
 crda
 dhclient
 dosfstools
-#ethtool
+ethtool
 expac
 git
 grml-zsh-config
-#haveged
 ipw2100-fw
 ipw2200-fw
 linux-atm
-#moreutils
-#mtools
-#nfs-utils
-#nilfs-utils
 ntp
 openssh
 parted
@@ -34,16 +29,18 @@ usb_modeswitch
 vim
 wget
 wicd
-wicd-gtk
 wireless_tools
 wpa_actiond
 zd1211-firmware
 zsh
 openssh
+rt3562sta
+wvdial
+iw
+rfkill
+wireless_tools
 
 # needed for blackarch
-#virtualbox-guest-modules
-#virtualbox-guest-utils
 archlinux-keyring
 blackarch-install-scripts
 blackarch-keyring
