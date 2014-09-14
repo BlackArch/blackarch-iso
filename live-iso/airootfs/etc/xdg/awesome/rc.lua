@@ -126,8 +126,7 @@ antiforensicmenu = {
 }
 
 automationmenu = {
-  { "armitage", "xterm -bg black -fg red -e 'armitage -h ;
-; bash'" },
+  { "armitage", "xterm -bg black -fg red -e 'armitage -h ; bash'" },
   { "teamserver", "xterm -bg black -fg red -e 'teamserver ; bash'" },
   { "blueranger", "xterm -bg black -fg red -e 'blueranger ; bash'" },
   { "cewl", "xterm -bg black -fg red -e 'cewl -h ; bash'" },
@@ -316,16 +315,13 @@ crackermenu = {
   { "cewl", "xterm -bg black -fg red -e 'cewl -h ; bash'" },
   { "cewl-fab", "xterm -bg black -fg red -e 'cewl-fab ; bash'" },
   { "chapcrack", "xterm -bg black -fg red -e 'chapcrack -h ; bash'" },
-  { "checkpwd", "xterm -bg black -fg red -e 'checkpwd -h ;
-; bash'" },
+  { "checkpwd", "xterm -bg black -fg red -e 'checkpwd -h ; bash'" },
   { "checkpwd_nopw", "xterm -bg black -fg red -e 'checkpwd_nopw ; bash'" },
   { "sqlplus", "xterm -bg black -fg red -e 'sqlplus -h ; bash'" },
-  { "chntpw", "xterm -bg black -fg red -e 'chntpw -h ;
-; bash'" },
+  { "chntpw", "xterm -bg black -fg red -e 'chntpw -h ; bash'" },
   { "cpnt", "xterm -bg black -fg red -e 'cpnt ; bash'" },
   { "reged", "xterm -bg black -fg red -e 'reged ; bash'" },
-  { "chntpw", "xterm -bg black -fg red -e 'chntpw -h ;
-; bash'" },
+  { "chntpw", "xterm -bg black -fg red -e 'chntpw -h ; ; bash'" },
   { "cpnt", "xterm -bg black -fg red -e 'cpnt ; bash'" },
   { "reged", "xterm -bg black -fg red -e 'reged ; bash'" },
   { "cintruder", "xterm -bg black -fg red -e 'cintruder -h ; bash'" },
@@ -345,8 +341,7 @@ crackermenu = {
   { "crackserver", "xterm -bg black -fg red -e 'crackserver -h ; bash'" },
   { "crunch", "xterm -bg black -fg red -e 'crunch -h ; bash'" },
   { "cupp", "xterm -bg black -fg red -e 'cupp ; bash'" },
-  { "dbpwaudit", "xterm -bg black -fg red -e 'dbpwaudit -h ;
-; bash'" },
+  { "dbpwaudit", "xterm -bg black -fg red -e 'dbpwaudit -h ; bash'" },
   { "DBPwAudit.jar", "xterm -bg black -fg red -e 'DBPwAudit.jar ; bash'" },
   { "delldrac", "xterm -bg black -fg red -e 'delldrac -h ; bash'" },
   { "depant", "xterm -bg black -fg red -e 'depant ; bash'" },
@@ -401,10 +396,7 @@ crackermenu = {
   { "ibrute", "xterm -bg black -fg red -e 'ibrute -h ; bash'" },
   { "iheartxor", "xterm -bg black -fg red -e 'iheartxor ; bash'" },
   { "ikecrack-snarf-1.00.pl", "xterm -bg black -fg red -e 'ikecrack-snarf-1.00.pl ; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
+  { "inguma", "xterm -bg black -fg red -e 'inguma -h ; bash'" },
   { "ingumagui", "xterm -bg black -fg red -e 'ingumagui ; bash'" },
   { "interrogate", "xterm -bg black -fg red -e 'interrogate -h ; bash'" },
   { "jbrute", "xterm -bg black -fg red -e 'jbrute --help ; bash'" },
@@ -469,9 +461,7 @@ crackermenu = {
   { "OCS", "xterm -bg black -fg red -e 'OCS ; bash'" },
   { "onesixtyone", "xterm -bg black -fg red -e 'onesixtyone ; bash'" },
   { "ophcrack", "xterm -bg black -fg red -e 'ophcrack -h ; bash'" },
-  { "ophcrack", "xterm -bg black -fg red -e 'ophcrack -h ; bash'" },
-  { "owabf", "xterm -bg black -fg red -e 'owabf -h ;
-; bash'" },
+  { "owabf", "xterm -bg black -fg red -e 'owabf -h ; bash'" },
   { "maskgen", "xterm -bg black -fg red -e 'maskgen -h ; bash'" },
   { "policygen", "xterm -bg black -fg red -e 'policygen -h ; bash'" },
   { "rulegen", "xterm -bg black -fg red -e 'rulegen -h ; bash'" },
@@ -498,8 +488,7 @@ crackermenu = {
   { "regeorg", "xterm -bg black -fg red -e 'regeorg -h ; bash'" },
   { "rid-enum", "xterm -bg black -fg red -e 'rid-enum -h ; bash'" },
   { "rlogin-scanner", "xterm -bg black -fg red -e 'rlogin-scanner -h ; bash'" },
-  { "rootbrute", "xterm -bg black -fg red -e 'rootbrute -h ;
-; bash'" },
+  { "rootbrute", "xterm -bg black -fg red -e 'rootbrute -h ; bash'" },
   { "rpdscan", "xterm -bg black -fg red -e 'rpdscan -h ; bash'" },
   { "rsakeyfind", "xterm -bg black -fg red -e 'rsakeyfind ; bash'" },
   { "samdump2", "xterm -bg black -fg red -e 'samdump2 ; bash'" },
@@ -509,8 +498,7 @@ crackermenu = {
   { "sipcrack", "xterm -bg black -fg red -e 'sipcrack -h ; bash'" },
   { "sipdump", "xterm -bg black -fg red -e 'sipdump -h ; bash'" },
   { "nbdecode", "xterm -bg black -fg red -e 'nbdecode ; bash'" },
-  { "smbbf", "xterm -bg black -fg red -e 'smbbf -h ;
-; bash'" },
+  { "smbbf", "xterm -bg black -fg red -e 'smbbf -h ; bash'" },
   { "smbdumpusers", "xterm -bg black -fg red -e 'smbdumpusers ; bash'" },
   { "smbgetserverinfo", "xterm -bg black -fg red -e 'smbgetserverinfo ; bash'" },
   { "speedport-arcadyan", "xterm -bg black -fg red -e 'speedport-arcadyan ; bash'" },
@@ -684,8 +672,7 @@ defensivemenu = {
   { "beholder", "xterm -bg black -fg red -e 'beholder -h ; bash'" },
   { "centry", "xterm -bg black -fg red -e 'centry -h ; bash'" },
   { "chkrootkit", "xterm -bg black -fg red -e 'chkrootkit -h ; bash'" },
-  { "dbpwaudit", "xterm -bg black -fg red -e 'dbpwaudit -h ;
-; bash'" },
+  { "dbpwaudit", "xterm -bg black -fg red -e 'dbpwaudit -h ; bash'" },
   { "DBPwAudit.jar", "xterm -bg black -fg red -e 'DBPwAudit.jar ; bash'" },
   { "exiv2", "xterm -bg black -fg red -e 'exiv2 -h ; bash'" },
   { "metacopy", "xterm -bg black -fg red -e 'metacopy -h ; bash'" },
@@ -746,10 +733,8 @@ disassemblermenu = {
   { "apktool", "xterm -bg black -fg red -e 'apktool ; bash'" },
   { "bokken", "xterm -bg black -fg red -e 'bokken -h ; bash'" },
   { "dissy", "xterm -bg black -fg red -e 'dissy -h ; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
+  { "inguma", "xterm -bg black -fg red -e 'inguma -h ; bash'" },
+  { "inguma", "xterm -bg black -fg red -e 'inguma -h ; bash'" },
   { "ingumagui", "xterm -bg black -fg red -e 'ingumagui ; bash'" },
   { "x86dis", "xterm -bg black -fg red -e 'x86dis ; bash'" },
   { "maltrieve", "xterm -bg black -fg red -e 'maltrieve -h ; bash'" },
@@ -793,13 +778,11 @@ dosmenu = {
   { "nkiller2", "xterm -bg black -fg red -e 'nkiller2 -h ; bash'" },
   { "phpstress", "xterm -bg black -fg red -e 'phpstress -h ; bash'" },
   { "bombardment", "xterm -bg black -fg red -e 'bombardment ; bash'" },
-  { "siege", "xterm -bg black -fg red -e 'siege -h ;
-; bash'" },
+  { "siege", "xterm -bg black -fg red -e 'siege -h ; bash'" },
   { "siege.config", "xterm -bg black -fg red -e 'siege.config ; bash'" },
   { "siege2csv.pl", "xterm -bg black -fg red -e 'siege2csv.pl ; bash'" },
   { "bombardment", "xterm -bg black -fg red -e 'bombardment ; bash'" },
-  { "siege", "xterm -bg black -fg red -e 'siege -h ;
-; bash'" },
+  { "siege", "xterm -bg black -fg red -e 'siege -h ; bash'" },
   { "siege.config", "xterm -bg black -fg red -e 'siege.config ; bash'" },
   { "siege2csv.pl", "xterm -bg black -fg red -e 'siege2csv.pl ; bash'" },
   { "slowhttptest", "xterm -bg black -fg red -e 'slowhttptest -h ; bash'" },
@@ -890,8 +873,7 @@ dronemenu = {
 }
 
 exploitationmenu = {
-  { "armitage", "xterm -bg black -fg red -e 'armitage -h ;
-; bash'" },
+  { "armitage", "xterm -bg black -fg red -e 'armitage -h ; bash'" },
   { "teamserver", "xterm -bg black -fg red -e 'teamserver ; bash'" },
   { "arpoison", "xterm -bg black -fg red -e 'arpoison -h ; bash'" },
   { "bbqsql", "xterm -bg black -fg red -e 'bbqsql -h ; bash'" },
@@ -926,10 +908,7 @@ exploitationmenu = {
   { "hqlmap", "xterm -bg black -fg red -e 'hqlmap -h ; bash'" },
   { "htexploit", "xterm -bg black -fg red -e 'htexploit -h ; bash'" },
   { "incept", "xterm -bg black -fg red -e 'incept ; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
+  { "inguma", "xterm -bg black -fg red -e 'inguma -h ; bash'" },
   { "ingumagui", "xterm -bg black -fg red -e 'ingumagui ; bash'" },
   { "irpas-ass", "xterm -bg black -fg red -e 'irpas-ass ; bash'" },
   { "irpas-cdp", "xterm -bg black -fg red -e 'irpas-cdp ; bash'" },
@@ -1226,12 +1205,9 @@ forensicmenu = {
   { "maltego.ico", "xterm -bg black -fg red -e 'maltego.ico ; bash'" },
   { "chaosmap", "xterm -bg black -fg red -e 'chaosmap ; bash'" },
   { "chkrootkit", "xterm -bg black -fg red -e 'chkrootkit -h ; bash'" },
-  { "chntpw", "xterm -bg black -fg red -e 'chntpw -h ;
-; bash'" },
+  { "chntpw", "xterm -bg black -fg red -e 'chntpw -h ; bash'" },
   { "cpnt", "xterm -bg black -fg red -e 'cpnt ; bash'" },
   { "reged", "xterm -bg black -fg red -e 'reged ; bash'" },
-  { "chntpw", "xterm -bg black -fg red -e 'chntpw -h ;
-; bash'" },
   { "cpnt", "xterm -bg black -fg red -e 'cpnt ; bash'" },
   { "reged", "xterm -bg black -fg red -e 'reged ; bash'" },
   { "chromefreak", "xterm -bg black -fg red -e 'chromefreak -h ; bash'" },
@@ -1494,10 +1470,8 @@ fuzzermenu = {
   { "hawk", "xterm -bg black -fg red -e 'hawk --help ; bash'" },
   { "hwk-eagle", "xterm -bg black -fg red -e 'hwk-eagle --help ; bash'" },
   { "ikeprober", "xterm -bg black -fg red -e 'ikeprober ; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
+  { "inguma", "xterm -bg black -fg red -e 'inguma -h ; bash'" },
+  { "inguma", "xterm -bg black -fg red -e 'inguma -h ; bash'" },
   { "ingumagui", "xterm -bg black -fg red -e 'ingumagui ; bash'" },
   { "jbrofuzz", "xterm -bg black -fg red -e 'jbrofuzz ; bash'" },
   { "lfi-autopwn", "xterm -bg black -fg red -e 'lfi-autopwn ; bash'" },
@@ -1569,8 +1543,7 @@ fuzzermenu = {
   { "oscanner", "xterm -bg black -fg red -e 'oscanner -h ; bash'" },
   { "reportviewer", "xterm -bg black -fg red -e 'reportviewer -h ; bash'" },
   { "owtf", "xterm -bg black -fg red -e 'owtf ; bash'" },
-  { "peach", "xterm -bg black -fg red -e 'peach -h ;
-; bash'" },
+  { "peach", "xterm -bg black -fg red -e 'peach -h ; bash'" },
   { "xed", "xterm -bg black -fg red -e 'xed ; bash'" },
   { "xed", "xterm -bg black -fg red -e 'xed ; bash'" },
   { "pinbin", "xterm -bg black -fg red -e 'pinbin ; bash'" },
@@ -1591,8 +1564,7 @@ fuzzermenu = {
   { "shortfuzzy", "xterm -bg black -fg red -e 'shortfuzzy -h ; bash'" },
   { "sfscandiff", "xterm -bg black -fg red -e 'sfscandiff -h ; bash'" },
   { "skipfish", "xterm -bg black -fg red -e 'skipfish -h ; bash'" },
-  { "smartphone-pentest-framework", "xterm -bg black -fg red -e 'smartphone-pentest-framework -h ;
-; bash'" },
+  { "smartphone-pentest-framework", "xterm -bg black -fg red -e 'smartphone-pentest-framework -h ; bash'" },
   { "AndroidAgent-debug-unaligned.apk", "xterm -bg black -fg red -e 'AndroidAgent-debug-unaligned.apk ; bash'" },
   { "AndroidAgent-debug-unaligned.apk.d", "xterm -bg black -fg red -e 'AndroidAgent-debug-unaligned.apk.d ; bash'" },
   { "AndroidAgent-debug.apk", "xterm -bg black -fg red -e 'AndroidAgent-debug.apk ; bash'" },
@@ -1769,12 +1741,9 @@ fuzzermenu = {
   { "zzuf", "xterm -bg black -fg red -e 'zzuf -h ; bash'" },
 }
 
-gpumenu = {
-}
 
 hardwaremenu = {
-  { "arduino", "xterm -bg black -fg red -e 'arduino -h ;
-; bash'" },
+  { "arduino", "xterm -bg black -fg red -e 'arduino -h ; bash'" },
   { "avr-addr2line", "xterm -bg black -fg red -e 'avr-addr2line -h ; bash'" },
   { "avr-ar", "xterm -bg black -fg red -e 'avr-ar -h ; bash'" },
   { "avr-as", "xterm -bg black -fg red -e 'avr-as -h ; bash'" },
@@ -1884,8 +1853,7 @@ malwaremenu = {
   { "peepdf", "xterm -bg black -fg red -e 'peepdf -h ; bash'" },
   { "pyew", "xterm -bg black -fg red -e 'pyew -h ; bash'" },
   { "viper", "xterm -bg black -fg red -e 'viper -h ; bash'" },
-  { "yara", "xterm -bg black -fg red -e 'yara -h ;
-; bash'" },
+  { "yara", "xterm -bg black -fg red -e 'yara -h ; bash'" },
   { "yarac", "xterm -bg black -fg red -e 'yarac ; bash'" },
   { "dump_process.py", "xterm -bg black -fg red -e 'dump_process.py ; bash'" },
   { "malware_launcher.sh", "xterm -bg black -fg red -e 'malware_launcher.sh ; bash'" },
@@ -1905,8 +1873,7 @@ miscmenu = {
   { "afpfsd", "xterm -bg black -fg red -e 'afpfsd -h ; bash'" },
   { "afpgetstatus", "xterm -bg black -fg red -e 'afpgetstatus ; bash'" },
   { "mount_afp", "xterm -bg black -fg red -e 'mount_afp ; bash'" },
-  { "airgraph-ng", "xterm -bg black -fg red -e 'airgraph-ng -h ;
-; bash'" },
+  { "airgraph-ng", "xterm -bg black -fg red -e 'airgraph-ng -h ; bash'" },
   { "dump-join", "xterm -bg black -fg red -e 'dump-join ; bash'" },
   { "bokken", "xterm -bg black -fg red -e 'bokken -h ; bash'" },
   { "BEViewer", "xterm -bg black -fg red -e 'BEViewer -h ; bash'" },
@@ -2034,8 +2001,7 @@ mobilemenu = {
   { "iphoneanalyzer", "xterm -bg black -fg red -e 'iphoneanalyzer -h ; bash'" },
   { "kraken", "xterm -bg black -fg red -e 'kraken -h ; bash'" },
   { "sandy", "xterm -bg black -fg red -e 'sandy -h ; bash'" },
-  { "smartphone-pentest-framework", "xterm -bg black -fg red -e 'smartphone-pentest-framework -h ;
-; bash'" },
+  { "smartphone-pentest-framework", "xterm -bg black -fg red -e 'smartphone-pentest-framework -h ; bash'" },
   { "AndroidAgent-debug-unaligned.apk", "xterm -bg black -fg red -e 'AndroidAgent-debug-unaligned.apk ; bash'" },
   { "AndroidAgent-debug-unaligned.apk.d", "xterm -bg black -fg red -e 'AndroidAgent-debug-unaligned.apk.d ; bash'" },
   { "AndroidAgent-debug.apk", "xterm -bg black -fg red -e 'AndroidAgent-debug.apk ; bash'" },
@@ -3137,10 +3103,7 @@ scannermenu = {
   { "ike-scan", "xterm -bg black -fg red -e 'ike-scan -h ; bash'" },
   { "psk-crack", "xterm -bg black -fg red -e 'psk-crack -h ; bash'" },
   { "infip", "xterm -bg black -fg red -e 'infip -h ; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
-  { "inguma", "xterm -bg black -fg red -e 'inguma -h ;
-; bash'" },
+  { "inguma", "xterm -bg black -fg red -e 'inguma -h ; bash'" },
   { "ingumagui", "xterm -bg black -fg red -e 'ingumagui ; bash'" },
   { "ipscan", "xterm -bg black -fg red -e 'ipscan ; bash'" },
   { "addr6", "xterm -bg black -fg red -e 'addr6 ; bash'" },
@@ -3208,8 +3171,7 @@ scannermenu = {
   { "miranda-upnp", "xterm -bg black -fg red -e 'miranda-upnp -h ; bash'" },
   { "miranda-upnp-portmapper", "xterm -bg black -fg red -e 'miranda-upnp-portmapper -h ; bash'" },
   { "modscan", "xterm -bg black -fg red -e 'modscan -h ; bash'" },
-  { "mssqlscan", "xterm -bg black -fg red -e 'mssqlscan -h ;
-; bash'" },
+  { "mssqlscan", "xterm -bg black -fg red -e 'mssqlscan -h ; bash'" },
   { "MSSQLScan.jar", "xterm -bg black -fg red -e 'MSSQLScan.jar ; bash'" },
   { "dnscat", "xterm -bg black -fg red -e 'dnscat -h ; bash'" },
   { "dnslogger", "xterm -bg black -fg red -e 'dnslogger -h ; bash'" },
@@ -3318,8 +3280,7 @@ scannermenu = {
   { "simple-lan-scan", "xterm -bg black -fg red -e 'simple-lan-scan -h ; bash'" },
   { "sfscandiff", "xterm -bg black -fg red -e 'sfscandiff -h ; bash'" },
   { "skipfish", "xterm -bg black -fg red -e 'skipfish -h ; bash'" },
-  { "smartphone-pentest-framework", "xterm -bg black -fg red -e 'smartphone-pentest-framework -h ;
-; bash'" },
+  { "smartphone-pentest-framework", "xterm -bg black -fg red -e 'smartphone-pentest-framework -h ; bash'" },
   { "AndroidAgent-debug-unaligned.apk", "xterm -bg black -fg red -e 'AndroidAgent-debug-unaligned.apk ; bash'" },
   { "AndroidAgent-debug-unaligned.apk.d", "xterm -bg black -fg red -e 'AndroidAgent-debug-unaligned.apk.d ; bash'" },
   { "AndroidAgent-debug.apk", "xterm -bg black -fg red -e 'AndroidAgent-debug.apk ; bash'" },
@@ -3480,8 +3441,7 @@ scannermenu = {
   { "wapiti-getcookie", "xterm -bg black -fg red -e 'wapiti-getcookie -h ; bash'" },
   { "webenum", "xterm -bg black -fg red -e 'webenum -h ; bash'" },
   { "webpwn3r", "xterm -bg black -fg red -e 'webpwn3r -h ; bash'" },
-  { "webrute", "xterm -bg black -fg red -e 'webrute -h ;
--help ; bash'" },
+  { "webrute", "xterm -bg black -fg red -e 'webrute -h ; bash'" },
   { "webscarab", "xterm -bg black -fg red -e 'webscarab ; bash'" },
   { "webshag_cli", "xterm -bg black -fg red -e 'webshag_cli -h ; bash'" },
   { "webshag_gui", "xterm -bg black -fg red -e 'webshag_gui ; bash'" },
@@ -3923,8 +3883,7 @@ webappmenu = {
   { "webenum", "xterm -bg black -fg red -e 'webenum -h ; bash'" },
   { "webhandler", "xterm -bg black -fg red -e 'webhandler ; bash'" },
   { "webpwn3r", "xterm -bg black -fg red -e 'webpwn3r -h ; bash'" },
-  { "webrute", "xterm -bg black -fg red -e 'webrute -h ;
--help ; bash'" },
+  { "webrute", "xterm -bg black -fg red -e 'webrute -h ; bash'" },
   { "webscarab", "xterm -bg black -fg red -e 'webscarab ; bash'" },
   { "webshag_cli", "xterm -bg black -fg red -e 'webshag_cli -h ; bash'" },
   { "webshag_gui", "xterm -bg black -fg red -e 'webshag_gui ; bash'" },
@@ -4087,11 +4046,8 @@ wirelessmenu = {
   { "volk-config-info", "xterm -bg black -fg red -e 'volk-config-info ; bash'" },
   { "volk_modtool", "xterm -bg black -fg red -e 'volk_modtool ; bash'" },
   { "volk_profile", "xterm -bg black -fg red -e 'volk_profile ; bash'" },
-  { "gqrx", "xterm -bg black -fg red -e 'gqrx -h ;
-; bash'" },
+  { "gqrx", "xterm -bg black -fg red -e 'gqrx -h ; bash'" },
   { "gqrx-alsa", "xterm -bg black -fg red -e 'gqrx-alsa ; bash'" },
-  { "gqrx", "xterm -bg black -fg red -e 'gqrx -h ;
-; bash'" },
   { "gqrx-alsa", "xterm -bg black -fg red -e 'gqrx-alsa ; bash'" },
   { "hotspotter", "xterm -bg black -fg red -e 'hotspotter ; bash'" },
   { "hawk", "xterm -bg black -fg red -e 'hawk --help ; bash'" },
@@ -4218,7 +4174,6 @@ blackarchmenu = {
   { "firmware", firmwaremenu },
   { "forensic", forensicmenu },
   { "fuzzer", fuzzermenu },
-  { "gpu", gpumenu },
   { "hardware", hardwaremenu },
   { "honeypot", honeypotmenu },
   { "keylogger", keyloggermenu },
