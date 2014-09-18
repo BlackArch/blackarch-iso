@@ -1,9 +1,5 @@
 ### BlackArch Linux settings ###
 
-# temporary fixes
-curl -s https://www.blackarch.org/strap.sh | sh
-mv .bashrc.orig .bashrc
-
 # colors
 darkgrey="$(tput bold ; tput setaf 0)"
 white="$(tput bold ; tput setaf 7)"

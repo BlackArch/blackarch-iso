@@ -1,4 +1,5 @@
 ===> 2014.09.XX
+	- disabled dhcpcd service
 	- disabled wicd service
 	- upgraded menu entries for awesome, openbox and fluxbox
 	- upgraded tools
