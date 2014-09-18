@@ -1660,6 +1660,7 @@ thc-ipv6 -h ;
 thc-ipv6 ;
 thc-ipv6-setup.sh ;
 thc-pptp-bruter ;
+thc-smartbrute -h ;
 thc-ssl-dos -h ;
 thcping6 ;
 thcsyn6 ;
