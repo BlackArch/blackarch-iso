@@ -73,9 +73,6 @@ Defaults timestamp_timeout += -1
 ##
 root ALL=(ALL) ALL
 
-# just for testing
-lxdm ALL=(ALL) NOPASSWD:/sbin/shutdown
-
 ## Uncomment to allow members of group wheel to execute any command
 #%wheel ALL=(ALL) ALL
 
@@ -92,4 +89,4 @@ lxdm ALL=(ALL) NOPASSWD:/sbin/shutdown
 
 ## Read drop-in files from /etc/sudoers.d
 ## (the '#' here does not indicate a comment)
-includedir /etc/sudoers.d
+#includedir /etc/sudoers.d

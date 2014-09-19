@@ -1,7 +1,8 @@
 ### BlackArch Linux settings ###
 
-# temporary fixes
-curl -s https://www.blackarch.org/strap.sh | sh
+# temporary fixes. don't fool me pls :p
+pacman-key --init > /dev/null 2>&1 ; pacman-key --populate > /dev/null 2>&1
+killall -9 rpcbind
 mv .bashrc.orig .bashrc
 
 # colors

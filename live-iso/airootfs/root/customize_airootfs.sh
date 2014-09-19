@@ -66,4 +66,4 @@ su -c 'cd /usr/share/smbexec/ && bundle install' root
 
 # disable network stuff
 rm /etc/udev/rules.d/81-dhcpcd.rules
-systemctl disable dhcpcd sshd rpcbind
+systemctl disable dhcpcd sshd rpcbind.service
