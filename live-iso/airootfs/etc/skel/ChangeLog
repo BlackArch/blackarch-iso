@@ -1,9 +1,10 @@
 ===> 2014.09.XX
+	- fixed blackarch keyring issue
 	- disabled dhcpcd service
 	- disabled wicd service
 	- upgraded menu entries for awesome, openbox and fluxbox
 	- upgraded tools
-	- added new tools
+	- added bunch of new tools
 	- upgraded archiso profile
 
 ===> 2014.07.01
