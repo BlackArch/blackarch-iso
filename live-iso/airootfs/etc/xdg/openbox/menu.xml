@@ -118,8 +118,7 @@
 <menu id="blackarch-automation-menu" label="automation">
   <item label="armitage">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'armitage -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'armitage -h ; bash'</command>
       </action>
   </item>
   <item label="teamserver">
@@ -1004,8 +1003,7 @@
   </item>
   <item label="checkpwd">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'checkpwd -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'checkpwd -h ; bash'</command>
       </action>
   </item>
   <item label="checkpwd_nopw">
@@ -1020,8 +1018,7 @@
   </item>
   <item label="chntpw">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'chntpw -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'chntpw -h ; bash'</command>
       </action>
   </item>
   <item label="cpnt">
@@ -1036,8 +1033,7 @@
   </item>
   <item label="chntpw">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'chntpw -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'chntpw -h ; bash'</command>
       </action>
   </item>
   <item label="cpnt">
@@ -1137,8 +1133,7 @@
   </item>
   <item label="dbpwaudit">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'dbpwaudit -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'dbpwaudit -h ; bash'</command>
       </action>
   </item>
   <item label="DBPwAudit.jar">
@@ -1413,14 +1408,7 @@
   </item>
   <item label="inguma">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'inguma -h ;
-; bash'</command>
-      </action>
-  </item>
-  <item label="inguma">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'inguma -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
   </item>
   <item label="ingumagui">
@@ -1750,8 +1738,7 @@
   </item>
   <item label="owabf">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'owabf -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'owabf -h ; bash'</command>
       </action>
   </item>
   <item label="maskgen">
@@ -1886,8 +1873,7 @@
   </item>
   <item label="rootbrute">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'rootbrute -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'rootbrute -h ; bash'</command>
       </action>
   </item>
   <item label="rpdscan">
@@ -1937,8 +1923,7 @@
   </item>
   <item label="smbbf">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'smbbf -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'smbbf -h ; bash'</command>
       </action>
   </item>
   <item label="smbdumpusers">
@@ -3030,14 +3015,7 @@
   </item>
   <item label="inguma">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'inguma -h ;
-; bash'</command>
-      </action>
-  </item>
-  <item label="inguma">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'inguma -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
   </item>
   <item label="ingumagui">
@@ -3245,8 +3223,7 @@
   </item>
   <item label="siege">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'siege -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'siege -h ; bash'</command>
       </action>
   </item>
   <item label="siege.config">
@@ -3266,8 +3243,7 @@
   </item>
   <item label="siege">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'siege -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'siege -h ; bash'</command>
       </action>
   </item>
   <item label="siege.config">
@@ -3698,8 +3674,7 @@
 <menu id="blackarch-exploitation-menu" label="exploitation">
   <item label="armitage">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'armitage -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'armitage -h ; bash'</command>
       </action>
   </item>
   <item label="teamserver">
@@ -5330,8 +5305,7 @@
   </item>
   <item label="chntpw">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'chntpw -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'chntpw -h ; bash'</command>
       </action>
   </item>
   <item label="cpnt">
@@ -5346,8 +5320,7 @@
   </item>
   <item label="chntpw">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'chntpw -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'chntpw -h ; bash'</command>
       </action>
   </item>
   <item label="cpnt">
@@ -6650,14 +6623,7 @@
   </item>
   <item label="inguma">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'inguma -h ;
-; bash'</command>
-      </action>
-  </item>
-  <item label="inguma">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'inguma -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
   </item>
   <item label="ingumagui">
@@ -7017,8 +6983,7 @@
   </item>
   <item label="peach">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'peach -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'peach -h ; bash'</command>
       </action>
   </item>
   <item label="xed">
@@ -7123,8 +7088,7 @@
   </item>
   <item label="smartphone-pentest-framework">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'smartphone-pentest-framework -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'smartphone-pentest-framework -h ; bash'</command>
       </action>
   </item>
   <item label="AndroidAgent-debug-unaligned.apk">
@@ -8005,8 +7969,7 @@
 <menu id="blackarch-hardware-menu" label="hardware">
   <item label="arduino">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'arduino -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'arduino -h ; bash'</command>
       </action>
   </item>
   <item label="avr-addr2line">
@@ -8520,8 +8483,7 @@
   </item>
   <item label="yara">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'yara -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'yara -h ; bash'</command>
       </action>
   </item>
   <item label="yarac">
@@ -8609,8 +8571,7 @@
   </item>
   <item label="airgraph-ng">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'airgraph-ng -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'airgraph-ng -h ; bash'</command>
       </action>
   </item>
   <item label="dump-join">
@@ -9238,8 +9199,7 @@
   </item>
   <item label="smartphone-pentest-framework">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'smartphone-pentest-framework -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'smartphone-pentest-framework -h ; bash'</command>
       </action>
   </item>
   <item label="AndroidAgent-debug-unaligned.apk">
@@ -15000,8 +14960,7 @@
   </item>
   <item label="mssqlscan">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'mssqlscan -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'mssqlscan -h ; bash'</command>
       </action>
   </item>
   <item label="MSSQLScan.jar">
@@ -15546,8 +15505,7 @@
   </item>
   <item label="smartphone-pentest-framework">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'smartphone-pentest-framework -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'smartphone-pentest-framework -h ; bash'</command>
       </action>
   </item>
   <item label="AndroidAgent-debug-unaligned.apk">
@@ -16352,8 +16310,7 @@
   </item>
   <item label="webrute">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'webrute -h ;
--help ; bash'</command>
+          <command>xterm -bg black -fg red -e 'webrute -help ; bash'</command>
       </action>
   </item>
   <item label="webscarab">
@@ -18467,8 +18424,7 @@
   </item>
   <item label="webrute">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'webrute -h ;
--help ; bash'</command>
+          <command>xterm -bg black -fg red -e 'webrute -help ; bash'</command>
       </action>
   </item>
   <item label="webscarab">
@@ -19259,19 +19215,12 @@
   </item>
   <item label="gqrx">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'gqrx -h ;
-; bash'</command>
+          <command>xterm -bg black -fg red -e 'gqrx -h ; bash'</command>
       </action>
   </item>
   <item label="gqrx-alsa">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gqrx-alsa ; bash'</command>
-      </action>
-  </item>
-  <item label="gqrx">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'gqrx -h ;
-; bash'</command>
       </action>
   </item>
   <item label="gqrx-alsa">
