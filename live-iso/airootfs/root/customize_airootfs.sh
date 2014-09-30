@@ -69,3 +69,7 @@ su -c 'cd /usr/share/smbexec/ && bundle install' root
 # disable network stuff
 rm /etc/udev/rules.d/81-dhcpcd.rules
 systemctl disable dhcpcd sshd rpcbind.service
+
+# remove not needed .destop entries
+su -c 'rm -rf /usr/share/xsessions/openbox-kde.desktop' root
+su -c 'rm -rf /usr/share/xsessions/i3-with-shmlog.desktop' root
