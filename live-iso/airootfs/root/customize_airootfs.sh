@@ -40,11 +40,7 @@ su -c 'pacman -Syyu --noconfirm' root
 # fix wrong permissions for blackarch-dwm
 su -c 'chmod 755 /usr/bin/blackarch-dwm'
 
-# blackarch-install (dev version)
-#su -c 'rm -rf /usr/share/blackarch-install-scripts' root
-#su -c 'cd /usr/share/; git clone https://github.com/BlackArch/blackarch-install-scripts' root
-
-# installer text file
+# blackarch-install info file
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
 su -c 'rm -rf /root/install.txt' root
 
@@ -65,6 +61,7 @@ su -c 'cd /usr/share/metasploit/ && bundle-1.9 install' root
 su -c 'cd /usr/share/arachni/ && bundle install' root
 su -c 'cd /usr/share/wpscan/ && bundle-1.9 install --without test development' root
 su -c 'cd /usr/share/smbexec/ && bundle install' root
+su -c 'cd /usr/share/beef/ && bundle install' root
 
 # disable network stuff
 rm /etc/udev/rules.d/81-dhcpcd.rules

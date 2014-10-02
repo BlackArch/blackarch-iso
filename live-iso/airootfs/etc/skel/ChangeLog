@@ -1,4 +1,8 @@
-===> 2014.09.XX
+===> 2014.10.03
+	- fixed beef
+	- fixed pam issues
+	- added services and login.defs file
+	- removed kde/openbox and i3-debug menu items from lxdm
 	- fixed blackarch keyring issue
 	- disabled dhcpcd service
 	- disabled wicd service

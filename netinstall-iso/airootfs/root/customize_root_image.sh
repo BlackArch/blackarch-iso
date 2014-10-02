@@ -38,10 +38,10 @@ su -c "echo 'Server = http://www.blackarch.org/blackarch/\$repo/os/\$arch' >> /e
 su -c 'pacman -Syyu --noconfirm' root
 
 # blackarch-install
-su -c 'rm -rf /usr/share/blackarch-install-scripts' root
-su -c 'cd /usr/share/; git clone https://github.com/BlackArch/blackarch-install-scripts' root
-su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
-su -c 'rm -rf /root/install.txt' root
+#su -c 'rm -rf /usr/share/blackarch-install-scripts' root
+#su -c 'cd /usr/share/; git clone https://github.com/BlackArch/blackarch-install-scripts' root
+#su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
+#su -c 'rm -rf /root/install.txt' root
 
 # default shell
 su -c 'usermod -s /bin/bash root' root

@@ -2,5 +2,3 @@
 
 feh --bg-scale /usr/share/blackarch/wallpaper.png
 VBoxClient-all
-#VBoxClient --display &
-#VBoxClient --clipboard &

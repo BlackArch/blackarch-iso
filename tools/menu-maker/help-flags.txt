@@ -1,3 +1,6 @@
+googlesub --help ;
+sasm ;
+webspa -help ;
 unicorn ;
 spiped ;
 spipe ;
