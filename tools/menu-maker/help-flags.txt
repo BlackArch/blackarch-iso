@@ -1,3 +1,5 @@
+tlsenum -h ;
+pyfiscan -h ;
 tcpwatch ;
 googlesub --help ;
 sasm ;
