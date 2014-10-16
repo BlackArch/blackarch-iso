@@ -1,3 +1,4 @@
+wifiphisher -h ;
 ufonet -h ;
 tlsenum -h ;
 pyfiscan -h ;
