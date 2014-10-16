@@ -1,3 +1,4 @@
+sipshock -h ;
 wifiphisher -h ;
 ufonet -h ;
 tlsenum -h ;
