@@ -1,3 +1,4 @@
+imagejs ;
 wikigen ;
 afl-showmap ;
 afl-gcc ;
