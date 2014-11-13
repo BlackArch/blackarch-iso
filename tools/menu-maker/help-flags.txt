@@ -1,3 +1,8 @@
+wikigen ;
+afl-showmap ;
+afl-gcc ;
+afl-g++ ;
+afl-fuzz ;
 multitun ;
 mptcp-scanner ;
 mptcp-fragmenter ;
