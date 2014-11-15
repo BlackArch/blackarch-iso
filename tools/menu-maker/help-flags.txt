@@ -1,3 +1,5 @@
+xplico ;
+pshitt ;
 imagejs ;
 wikigen ;
 afl-showmap ;
