@@ -1,3 +1,5 @@
+pmcma ;
+jwscan -h ;
 facebot -h ;
 xplico ;
 pshitt ;
