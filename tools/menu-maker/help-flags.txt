@@ -1,3 +1,5 @@
+websockify -h ;
+conpot --help ;
 pmcma ;
 jwscan -h ;
 facebot -h ;
