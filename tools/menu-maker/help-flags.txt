@@ -1,3 +1,5 @@
+crowbar --help ;
+pip3line ;
 ciphr -h ;
 detect-it-easy ;
 0trace ;
