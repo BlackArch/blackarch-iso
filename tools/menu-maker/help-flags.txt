@@ -1,3 +1,5 @@
+jadx-gui ;
+jadx -h ;
 yaaf -h ;
 0trace ;
 3proxy --help ;
