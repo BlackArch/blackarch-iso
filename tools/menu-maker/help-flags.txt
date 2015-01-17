@@ -1,3 +1,4 @@
+damm -h ;
 captipper ;
 jadx-gui ;
 jadx -h ;
