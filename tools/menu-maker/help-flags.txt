@@ -1,3 +1,6 @@
+bdlogparser ;
+clamlogparser ;
+forkingportscanner ;
 damm -h ;
 captipper ;
 jadx-gui ;
