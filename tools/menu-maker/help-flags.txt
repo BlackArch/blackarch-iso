@@ -1,3 +1,4 @@
+vane -h ;
 0trace ;
 3proxy --help ;
 3proxy-win32 cd /usr/share/windows/3proxy-win32 ; ls ;
