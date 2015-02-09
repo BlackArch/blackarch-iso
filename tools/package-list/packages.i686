@@ -55,7 +55,7 @@ vlan-hopping
 voiphopper
 wikigen
 wnmap
-#xcat
+xcat
 yinjector
 
 # blackarch-backdoor
@@ -97,7 +97,7 @@ blackarch-menus
 bvi
 bytecode-viewer
 damm
-#detect-it-easy
+detect-it-easy
 dissector
 haystack
 hex2bin
@@ -114,7 +114,7 @@ origami
 packerid
 peframe
 pextractor
-#python-pin
+python-pin
 ropgadget
 soot
 trid
@@ -123,7 +123,7 @@ viper
 # blackarch-bluetooth
 blackarch-menus
 bluebugger
-#bluefog
+bluefog
 bluelog
 bluepot
 blueprint
@@ -145,7 +145,7 @@ redfang
 spooftooph
 tbear
 ubertooth
-#ubertooth-kismet
+ubertooth-kismet
 
 # blackarch-code-audit
 blackarch-menus
@@ -156,7 +156,7 @@ flawfinder
 php-vulnerability-hunter
 procyon
 pscan
-#python-pin
+python-pin
 
 # blackarch-cracker
 acccheck
@@ -196,7 +196,7 @@ crackserver
 creddump
 crowbar
 crunch
-#cudahashcat
+cudahashcat
 cupp
 dbpwaudit
 delldrac
@@ -266,7 +266,7 @@ pdgmail
 phoss
 php-mt-seed
 php-rfi-payload-decoder
-#phrasendrescher
+phrasendrescher
 pipal
 pwdump
 pyrit
@@ -303,7 +303,7 @@ tftp-bruteforce
 thc-keyfinder
 thc-pptp-bruter
 thc-smartbrute
-#truecrack
+truecrack
 ufo-wardriving
 unsecure
 vnc-bypauth
@@ -395,7 +395,7 @@ lldb
 malwasm
 ollydbg
 peda
-#python-pin
+python-pin
 radare2
 shellnoob
 vivisect
@@ -414,7 +414,7 @@ aiengine
 argus
 argus-clients
 arpalert
-#arpantispoofer
+arpantispoofer
 arpon
 artillery
 bamf-framework
@@ -452,7 +452,7 @@ libdisasm
 maltrieve
 marc4dasm
 pwntools
-#python-pin
+python-pin
 radare2
 smali
 viper
@@ -533,7 +533,7 @@ lfi-exploiter
 lfi-fuzzploit
 lfi-sploiter
 liffy
-#lisa-py
+lisa-py
 loki
 maligno
 metasploit
@@ -553,7 +553,7 @@ pirana
 pmcma
 pompem
 powersploit
-#python-pin
+python-pin
 rebind
 rfcat
 ropeme
@@ -562,7 +562,7 @@ ropper
 ruby-ronin
 ruby-ronin-support
 set
-#shellcodecs
+shellcodecs
 shellme
 shellnoob
 shocker
@@ -578,7 +578,7 @@ sqlninja
 sqlping
 sqlsus
 stackflow
-#stebb
+stebb
 subterfuge
 tcpjunk
 thc-ipv6
@@ -588,7 +588,7 @@ viproy-voipkit
 vnc-bypauth
 websploit
 witchxtool
-#xcat
+xcat
 xsser
 yinjector
 zarp
@@ -625,7 +625,7 @@ sn00p
 sparta
 wafp
 xprobe2
-#yasat
+yasat
 
 # blackarch-firmware
 binwalk
@@ -643,8 +643,8 @@ androick
 atstaketools
 bios_memimage
 blackarch-menus
-#bmap
-#bmap-tools
+bmap
+bmap-tools
 bulk-extractor
 canari
 captipper
@@ -655,7 +655,7 @@ chromefreak
 dc3dd
 dumpzilla
 eindeutig
-#fatback
+fatback
 foremost
 fs-nyarl
 galleta
@@ -796,7 +796,7 @@ sps
 sqlbrute
 sqlmap
 sqlninja
-#stebb
+stebb
 sulley
 taof
 tcpcontrol-fuzzer
@@ -888,7 +888,7 @@ origami
 peepdf
 peframe
 pyew
-#python-pin
+python-pin
 python2-yara
 viper
 yara
@@ -909,7 +909,7 @@ dradis
 dsd
 dump1090
 elettra
-#elettra-gui
+elettra-gui
 ent
 evilgrade
 extracthosts
@@ -944,7 +944,7 @@ openstego
 outguess
 pcapfix
 perl-tftp
-#princeprocessor
+princeprocessor
 pstoreview
 pyinstaller
 python-utidylib
@@ -985,7 +985,7 @@ smartphone-pentest-framework
 aiengine
 argus
 argus-clients
-#arpantispoofer
+arpantispoofer
 arpwner
 backfuzz
 bittwist
@@ -1007,7 +1007,7 @@ easy-creds
 fakenetbios
 filibuster
 flowinspect
-#fragroute
+fragroute
 fraud-bridge
 freeipmi
 fs-nyarl
@@ -1115,19 +1115,19 @@ umit
 uw-offish
 vlan-hopping
 websockify
-#wmi-client
+wmi-client
 wol-e
 xplico
 yersinia
 zackattack
 zarp
-#zssh
+zssh
 
 # blackarch-networking
 aiengine
 argus
 argus-clients
-#arpantispoofer
+arpantispoofer
 arpwner
 backfuzz
 bittwist
@@ -1149,7 +1149,7 @@ easy-creds
 fakenetbios
 filibuster
 flowinspect
-#fragroute
+fragroute
 fraud-bridge
 freeipmi
 fs-nyarl
@@ -1257,13 +1257,13 @@ umit
 uw-offish
 vlan-hopping
 websockify
-#wmi-client
+wmi-client
 wol-e
 xplico
 yersinia
 zackattack
 zarp
-#zssh
+zssh
 
 # blackarch-nfc
 blackarch-menus
@@ -1349,7 +1349,7 @@ httping
 idswakeup
 intrace
 ircsnapshot
-#isme
+isme
 isr-form
 knock
 lanmap2
@@ -1369,7 +1369,7 @@ mptcp-abuse
 nbtenum
 nbtool
 netdiscover
-#netglub
+netglub
 netmask
 netreconn
 nipper
@@ -1405,7 +1405,7 @@ vlan-hopping
 whatweb
 wig
 winfo
-#yasat
+yasat
 
 # blackarch-reversing
 android-apktool
@@ -1416,7 +1416,7 @@ bokken
 bytecode-viewer
 capstone
 damm
-#detect-it-easy
+detect-it-easy
 dex2jar
 dissy
 edb
@@ -1560,7 +1560,7 @@ inurlbr
 ipscan
 ipv6toolkit
 ircsnapshot
-#isme
+isme
 jigsaw
 joomlascan
 jsql
@@ -1606,7 +1606,7 @@ pcredz
 pentbox
 plcscan
 pnscan
-#poison
+poison
 praeda
 propecia
 proxycheck
@@ -1712,7 +1712,7 @@ xsss
 xssscan
 xssya
 yaaf
-#yasat
+yasat
 ycrawler
 yersinia
 zackattack
@@ -1835,7 +1835,7 @@ bluebox-ng
 erase-registrations
 iaxflood
 ilty
-#isme
+isme
 pcapsipdump
 protos-sip
 redirectpoison
@@ -1954,7 +1954,7 @@ sqlmap
 sqlninja
 sqlping
 sqlsus
-#stebb
+stebb
 themole
 tinfoleak
 uatester
@@ -1964,7 +1964,7 @@ urlcrazy
 urldigger
 vane
 vanguard
-#vega
+vega
 w3af
 waffit
 wafp
@@ -2061,7 +2061,7 @@ apnbf
 batman-adv
 beholder
 blackarch-menus
-#bluemaho
+bluemaho
 bully
 cowpatty
 create_ap
@@ -2077,7 +2077,7 @@ intercepter-ng
 killerbee
 kismet-earth
 kismet2earth
-#kismon
+kismon
 linset
 mdk3
 mfcuk

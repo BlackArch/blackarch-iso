@@ -111,6 +111,7 @@ imagejs
 jwscan
 #ld-shatner
 melkor
+mikrotik-npk
 ms-sys
 msvpwn
 oletools
@@ -395,6 +396,7 @@ pgdbf
 # blackarch-debugger
 blackarch-menus
 edb
+lldb
 malwasm
 #ollydbg
 peda
@@ -537,6 +539,7 @@ lfi-exploiter
 lfi-fuzzploit
 lfi-sploiter
 liffy
+#lisa-py
 loki
 maligno
 metasploit
@@ -769,6 +772,7 @@ netzob
 nikto
 nimbostratus
 notspikefile
+nsoq
 oat
 ohrwurm
 oscanner
@@ -845,6 +849,7 @@ smali
 
 # blackarch-honeypot
 artillery
+beeswarm
 blackarch-menus
 bluepot
 conpot
@@ -905,7 +910,6 @@ bvi
 centry
 checkiban
 cisco-router-config
-cryptcat
 dbd
 dhcdrop
 dradis
@@ -947,6 +951,7 @@ openstego
 outguess
 pcapfix
 perl-tftp
+#princeprocessor
 pstoreview
 pyinstaller
 python-utidylib
@@ -971,7 +976,7 @@ wol-e
 #androick
 #android-ndk
 #android-sdk
-##android-sdk-platform-tools
+#android-sdk-platform-tools
 android-udev-rules
 androidsniffer
 blackarch-menus
@@ -1020,6 +1025,7 @@ hpfeeds
 http-traceroute
 httping
 hyenae
+hyperfox
 idswakeup
 intercepter-ng
 ip-https-tools
@@ -1038,6 +1044,7 @@ mdns-scan
 metasploit
 meterssh
 middler
+mikrotik-npk
 mitmer
 mitmf
 moloch
@@ -1061,6 +1068,7 @@ nield
 nipper
 nkiller2
 nsdtool
+nsoq
 obfsproxy
 opensvp
 ostinato
@@ -1159,6 +1167,7 @@ hpfeeds
 http-traceroute
 httping
 hyenae
+hyperfox
 idswakeup
 intercepter-ng
 ip-https-tools
@@ -1173,9 +1182,11 @@ lft
 loki
 maclookup
 mausezahn
+mdns-scan
 metasploit
 meterssh
 middler
+mikrotik-npk
 mitmer
 mitmf
 moloch
@@ -1199,6 +1210,7 @@ nield
 nipper
 nkiller2
 nsdtool
+nsoq
 obfsproxy
 opensvp
 ostinato
@@ -1267,6 +1279,7 @@ php-rfi-payload-decoder
 
 # blackarch-packer
 blackarch-menus
+mikrotik-npk
 packerid
 
 # blackarch-proxy
@@ -1280,6 +1293,7 @@ dns-reverse-proxy
 dnschef
 elite-proxy-finder
 fakedns
+hyperfox
 mitmf
 mitmproxy
 obfsproxy
@@ -1390,6 +1404,7 @@ superscan
 sysdig
 theharvester
 tilt
+tinfoleak
 twofi
 upnp-pentest-toolkit
 vbrute
@@ -1422,6 +1437,7 @@ jwscan
 malwareanalyser
 malwasm
 marc4dasm
+mikrotik-npk
 netzob
 packerid
 peframe
@@ -1458,6 +1474,7 @@ bss
 btscanner
 burpsuite
 canari
+cangibrina
 cansina
 casefile
 cecster
@@ -1502,6 +1519,7 @@ dnswalk
 dpscan
 driftnet
 dripper
+dvcs-ripper
 easyda
 eazy
 enum-shares
@@ -1582,6 +1600,7 @@ nikto
 nmbscan
 nsdtool
 nsia
+nsoq
 o-saft
 ocs
 onesixtyone
@@ -1762,6 +1781,7 @@ jigsaw
 phemail
 sees
 set
+tinfoleak
 websploit
 wifiphisher
 
@@ -1814,6 +1834,7 @@ vstt
 # blackarch-unpacker
 blackarch-menus
 js-beautify
+mikrotik-npk
 
 # blackarch-voip
 ace
@@ -1852,6 +1873,7 @@ blackarch-menus
 blindelephant
 bsqlbf
 burpsuite
+cangibrina
 cansina
 cintruder
 cms-explorer
@@ -1888,6 +1910,7 @@ gwtenum
 halberd
 host-extract
 httpforge
+hyperfox
 imagejs
 inurlbr
 isr-form
@@ -1941,6 +1964,7 @@ sqlping
 sqlsus
 #stebb
 themole
+tinfoleak
 uatester
 ufonet
 uniscan
