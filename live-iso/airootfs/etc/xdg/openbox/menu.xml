@@ -291,6 +291,11 @@
           <command>xterm -bg black -fg red -e 'win-jboss-autopwn ; bash'</command>
       </action>
   </item>
+  <item label="linset">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'linset ; bash'</command>
+      </action>
+  </item>
   <item label="maskprocessor">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'maskprocessor -h ; bash'</command>
@@ -497,6 +502,11 @@
   <item label="udp_server">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'udp_server ; bash'</command>
+      </action>
+  </item>
+  <item label="hotpatcher">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hotpatcher -h ; bash'</command>
       </action>
   </item>
   <item label="meterssh-monitor">
@@ -2040,6 +2050,12 @@
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
+  </item>
+  <item label="inguma">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
+      </action>
+  </item>
   <item label="ingumagui">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'ingumagui ; bash'</command>
@@ -2278,6 +2294,11 @@
   <item label="levye">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'levye -h ; bash'</command>
+      </action>
+  </item>
+  <item label="linset">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'linset ; bash'</command>
       </action>
   </item>
   <item label="lodowep">
@@ -3112,11 +3133,6 @@
           <command>xterm -bg black -fg red -e 'malwasm ; bash'</command>
       </action>
   </item>
-  <item label="malwpin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'malwpin.dll ; bash'</command>
-      </action>
-  </item>
   <item label="ollydbg">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'ollydbg ; bash'</command>
@@ -3804,6 +3820,11 @@
   <item label="dissy">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'dissy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="inguma">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
   </item>
   <item label="inguma">
@@ -4753,6 +4774,11 @@
   <item label="incept">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'incept ; bash'</command>
+      </action>
+  </item>
+  <item label="inguma">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
   </item>
   <item label="inguma">
@@ -6349,11 +6375,6 @@
           <command>xterm -bg black -fg red -e 'grokevt-parselog ; bash'</command>
       </action>
   </item>
-  <item label="grokevt-ripdll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'grokevt-ripdll ; bash'</command>
-      </action>
-  </item>
   <item label="guymager">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'guymager ; bash'</command>
@@ -7717,6 +7738,11 @@
           <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
   </item>
+  <item label="inguma">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
+      </action>
+  </item>
   <item label="ingumagui">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'ingumagui ; bash'</command>
@@ -7895,6 +7921,11 @@
   <item label="notspikefile">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'notspikefile ; bash'</command>
+      </action>
+  </item>
+  <item label="nsoq">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nsoq ; bash'</command>
       </action>
   </item>
   <item label="ohrwurm">
@@ -9158,6 +9189,11 @@
           <command>xterm -bg black -fg red -e 'artillery ; bash'</command>
       </action>
   </item>
+  <item label="beeswarm">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'beeswarm ; bash'</command>
+      </action>
+  </item>
   <item label="bluepot">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'bluepot ; bash'</command>
@@ -9770,11 +9806,6 @@
   <item label="merge-router-config.pl">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'merge-router-config.pl ; bash'</command>
-      </action>
-  </item>
-  <item label="cryptcat">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'cryptcat -h ; bash'</command>
       </action>
   </item>
   <item label="dbd">
@@ -12728,6 +12759,11 @@
           <command>xterm -bg black -fg red -e 'nsdtool ; bash'</command>
       </action>
   </item>
+  <item label="nsoq">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nsoq ; bash'</command>
+      </action>
+  </item>
   <item label="obfsproxy">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'obfsproxy -h ; bash'</command>
@@ -14152,36 +14188,6 @@
           <command>xterm -bg black -fg red -e '3proxy.pem ; bash'</command>
       </action>
   </item>
-  <item label="FilePlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'FilePlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="PCREPlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'PCREPlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="StringsPlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'StringsPlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="TrafficPlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'TrafficPlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="WindowsAuthentication.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'WindowsAuthentication.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="lastFripper.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'lastFripper.dll ; bash'</command>
-      </action>
-  </item>
   <item label="rus-koi8-r.3ps">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'rus-koi8-r.3ps ; bash'</command>
@@ -14195,11 +14201,6 @@
   <item label="server.key">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'server.key ; bash'</command>
-      </action>
-  </item>
-  <item label="utf8tocp1251.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'utf8tocp1251.dll ; bash'</command>
       </action>
   </item>
   <item label="bdf-proxy">
@@ -15496,11 +15497,6 @@
           <command>xterm -bg black -fg red -e 'malwasm ; bash'</command>
       </action>
   </item>
-  <item label="malwpin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'malwpin.dll ; bash'</command>
-      </action>
-  </item>
   <item label="marc4dasm">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'marc4dasm -h ; bash'</command>
@@ -15859,6 +15855,11 @@
           <command>xterm -bg black -fg red -e 'pysudo -h ; bash'</command>
       </action>
   </item>
+  <item label="cangibrina">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'cangibrina -h ; bash'</command>
+      </action>
+  </item>
   <item label="cansina">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'cansina -h ; bash'</command>
@@ -16179,6 +16180,21 @@
           <command>xterm -bg black -fg red -e 'dripper -h ; bash'</command>
       </action>
   </item>
+  <item label="rip-cvs">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'rip-cvs -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rip-git">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'rip-git -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rip-svn">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'rip-svn -h ; bash'</command>
+      </action>
+  </item>
   <item label="easyda">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'easyda ; bash'</command>
@@ -16492,6 +16508,11 @@
   <item label="infip">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'infip -h ; bash'</command>
+      </action>
+  </item>
+  <item label="inguma">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'inguma -h ; bash'</command>
       </action>
   </item>
   <item label="inguma">
@@ -17052,6 +17073,11 @@
   <item label="nsia.jar">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'nsia.jar ; bash'</command>
+      </action>
+  </item>
+  <item label="nsoq">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nsoq ; bash'</command>
       </action>
   </item>
   <item label="o-saft">
@@ -20018,6 +20044,11 @@
           <command>xterm -bg black -fg red -e 'burpsuite ; bash'</command>
       </action>
   </item>
+  <item label="cangibrina">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'cangibrina -h ; bash'</command>
+      </action>
+  </item>
   <item label="cansina">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'cansina -h ; bash'</command>
@@ -20826,36 +20857,6 @@
           <command>xterm -bg black -fg red -e '3proxy.pem ; bash'</command>
       </action>
   </item>
-  <item label="FilePlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'FilePlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="PCREPlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'PCREPlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="StringsPlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'StringsPlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="TrafficPlugin.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'TrafficPlugin.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="WindowsAuthentication.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'WindowsAuthentication.dll ; bash'</command>
-      </action>
-  </item>
-  <item label="lastFripper.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'lastFripper.dll ; bash'</command>
-      </action>
-  </item>
   <item label="rus-koi8-r.3ps">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'rus-koi8-r.3ps ; bash'</command>
@@ -20869,11 +20870,6 @@
   <item label="server.key">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'server.key ; bash'</command>
-      </action>
-  </item>
-  <item label="utf8tocp1251.dll">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'utf8tocp1251.dll ; bash'</command>
       </action>
   </item>
   <item label="missidentify">
@@ -21657,6 +21653,11 @@
   <item label="k2db">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'k2db -h ; bash'</command>
+      </action>
+  </item>
+  <item label="linset">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'linset ; bash'</command>
       </action>
   </item>
   <item label="mdk3">
