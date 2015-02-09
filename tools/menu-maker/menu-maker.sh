@@ -92,8 +92,7 @@ openbox_entry()
 {
     echo "  <item label=\"${tool}\">" >> openbox-menu
     echo "      <action name=\"Execute\">" >> openbox-menu
-    echo "          <command>xterm -bg black -fg red -e '${tool}" \
-        "${opts} bash'</command>" >> openbox-menu
+    echo "          <command>xterm -bg black -fg red -e '${tool} ${opts} bash'</command>" >> openbox-menu
     echo "      </action>" >> openbox-menu
     echo "  </item>" >> openbox-menu
 
@@ -118,8 +117,7 @@ awesome_start()
 
 awesome_entry()
 {
-    echo "  { \"${tool}\", \"xterm -bg black -fg red -e '${tool} ${opts}" \
-        "bash'\" }," >> awesome-menu
+    echo "  { \"${tool}\", \"xterm -bg black -fg red -e '${tool} ${opts} bash'\" }," >> awesome-menu
 
     return 0
 }
@@ -146,7 +144,7 @@ make_menus()
         do
             tools="`pkgfile -lbq ${p} |
             awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}' |
-            grep -vE '.keep|.exe|.applet|.txt'`"
+            grep -vE '.keep|.exe|.applet|.txt|.dll'`"
             for tool in ${tools}
             do
                 opts="`grep "^${tool} " "${WORKDIR}/help-flags.txt" |
