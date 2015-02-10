@@ -4636,7 +4636,6 @@ blackarchmenu = {
   { "firmware", firmwaremenu },
   { "forensic", forensicmenu },
   { "fuzzer", fuzzermenu },
-  { "gpu", gpumenu },
   { "hardware", hardwaremenu },
   { "honeypot", honeypotmenu },
   { "keylogger", keyloggermenu },
