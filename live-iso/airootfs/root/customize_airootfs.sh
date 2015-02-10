@@ -31,11 +31,11 @@ fi
 # copy files over to home
 su -c "cp -r /etc/skel/.* /root/" root
 
-# setup repository, add pacman.conf entry and sync databse
+# setup repository, add pacman.conf entry, sync databses
 su -c 'curl -s http://blackarch.org/strap.sh | sh' root
-su -c "echo '[blackarch]' >> /etc/pacman.conf" root
-su -c "echo 'Server = http://www.blackarch.org/blackarch/\$repo/os/\$arch' >> /etc/pacman.conf" root
 su -c 'pacman -Syyu --noconfirm' root
+su -c 'pacman-db-upgrade' root
+su -c 'pkgfile --update' root
 
 # fix wrong permissions for blackarch-dwm
 su -c 'chmod 755 /usr/bin/blackarch-dwm'
@@ -43,9 +43,6 @@ su -c 'chmod 755 /usr/bin/blackarch-dwm'
 # blackarch-install info file
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
 su -c 'rm -rf /root/install.txt' root
-
-# sync pkgfile database
-su -c 'pkgfile --update' root
 
 # default shell
 su -c 'usermod -s /bin/bash root' root
