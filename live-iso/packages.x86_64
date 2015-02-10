@@ -308,7 +308,7 @@ tftp-bruteforce
 thc-keyfinder
 thc-pptp-bruter
 thc-smartbrute
-truecrack
+#truecrack
 ufo-wardriving
 unsecure
 vnc-bypauth
