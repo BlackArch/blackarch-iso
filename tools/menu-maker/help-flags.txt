@@ -1,3 +1,5 @@
+lfi-image-helper ;
+ifchk -h ;
 princeprocessor -h ;
 0trace ;
 3proxy --help ;
