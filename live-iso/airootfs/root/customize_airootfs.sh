@@ -36,7 +36,7 @@ su -c 'curl -s http://blackarch.org/strap.sh | sh' root
 
 # sys updates, cleanups, etc.
 su -c 'pacman -Syyu --noconfirm' root
-su -c "pacman -Rscn \$\(pacman -Qtdq\)"
+#su -c "pacman -Rscn \$(pacman -Qtdq)"
 su -c 'pacman-optimize'
 su -c 'updatedb'
 su -c 'sync'
@@ -57,7 +57,7 @@ su -c 'usermod -s /bin/bash root' root
 su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
 
 # download and install exploits
-su -c 'sploitctl -f 0 -n -v' root
+su -c 'sploitctl -f 0 -v' root
 
 # temporary fixes for ruby based tools
 su -c 'cd /usr/share/metasploit/ && bundle install' root
