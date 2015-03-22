@@ -23,7 +23,7 @@ crunch
 dumb0
 easy-creds
 easyda
-faraday
+#faraday
 fstealer
 gooscan
 hackersh
@@ -96,7 +96,7 @@ webspa
 weevely
 
 # blackarch-binary
-american-fuzzy-lop
+#american-fuzzy-lop
 androguard
 backdoor-factory
 bdfproxy
@@ -130,7 +130,7 @@ ropgadget
 saruman
 sherlocked
 soot
-trid
+#trid
 viper
 
 # blackarch-bluetooth
@@ -349,7 +349,7 @@ codetective
 crypthook
 cryptonark
 dislocker
-gnutls2
+#gnutls2
 gtalk-decode
 hasher
 hashfind
@@ -367,7 +367,7 @@ nomorexor
 openstego
 outguess
 pacumen
-pip3line
+#pip3line
 posttester
 pwd-hash
 sandy
@@ -401,7 +401,7 @@ binflow
 blackarch-menus
 edb
 malwasm
-ollydbg
+#ollydbg
 peda
 #python-pin
 radare2
@@ -412,10 +412,10 @@ vivisect
 blackarch-menus
 flasm
 jadx
-jd-gui
+#jd-gui
 luyten
 procyon
-recstudio
+#recstudio
 
 # blackarch-defensive
 aiengine
@@ -454,7 +454,7 @@ wordpot
 
 # blackarch-disassembler
 androguard
-android-apktool
+#android-apktool
 binwalk
 blackarch-menus
 bokken
@@ -529,7 +529,7 @@ dotdotpwn
 encodeshellcode
 exploit-db
 eyepwn
-faraday
+#faraday
 fimap
 firstexecution
 fs-nyarl
@@ -585,7 +585,7 @@ shocker
 simple-ducky
 sipvicious
 smbexec
-smbrelay
+#smbrelay
 sn00p
 snoopy-ng
 sploitctl
@@ -619,7 +619,7 @@ cisco-torch
 cms-explorer
 complemento
 dnsmap
-faraday
+#faraday
 fhttp
 fl0p
 fpdns
@@ -658,7 +658,7 @@ aeskeyfind
 afflib
 aimage
 air
-androick
+#androick
 atstaketools
 autopsy
 bios_memimage
@@ -723,7 +723,7 @@ scrounge-ntfs
 skypefreak
 snort
 tekdefense-automater
-trid
+#trid
 vinetto
 volatility
 wyd
@@ -731,7 +731,7 @@ xplico
 
 # blackarch-fuzzer
 0d1n
-american-fuzzy-lop
+#american-fuzzy-lop
 backfuzz
 bing-lfi-rfi
 birp
@@ -753,7 +753,7 @@ doona
 dotdotpwn
 dpscan
 easyfuzzer
-faraday
+#faraday
 fhttp
 fimap
 firewalk
@@ -808,7 +808,7 @@ scout2
 sfuzz
 shortfuzzy
 skipfish
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbexec
 smtp-fuzz
 smtptx
@@ -947,7 +947,7 @@ evilgrade
 extracthosts
 eyewitness
 fakemail
-faraday
+#faraday
 flare
 freeipmi
 fstealer
@@ -977,7 +977,7 @@ openstego
 outguess
 pcapfix
 perl-tftp
-princeprocessor
+#princeprocessor
 pstoreview
 pyinstaller
 python-utidylib
@@ -1000,10 +1000,10 @@ winexe
 wol-e
 
 # blackarch-mobile
-androick
-android-ndk
-android-sdk
-android-sdk-platform-tools
+#androick
+#android-ndk
+#android-sdk
+#android-sdk-platform-tools
 android-udev-rules
 androidsniffer
 blackarch-menus
@@ -1014,7 +1014,7 @@ kalibrate-rtl
 kraken
 lte-cell-scanner
 sandy
-smartphone-pentest-framework
+#smartphone-pentest-framework
 
 # blackarch-networking
 aiengine
@@ -1131,7 +1131,7 @@ sdn-toolkit
 sessionlist
 silk
 simple-lan-scan
-smbrelay
+#smbrelay
 sn00p
 sniffjoke
 snmp-brute
@@ -1319,7 +1319,7 @@ winfo
 zgrab
 
 # blackarch-reversing
-android-apktool
+#android-apktool
 balbuzard
 binwalk
 blackarch-menus
@@ -1335,7 +1335,7 @@ flasm
 hookanalyser
 jadx
 javasnoop
-jd-gui
+#jd-gui
 js-beautify
 jwscan
 malwareanalyser
@@ -1348,7 +1348,7 @@ peframe
 pev
 pwntools
 radare2
-recstudio
+#recstudio
 scanmem
 swfintruder
 udis86
@@ -1431,7 +1431,7 @@ eazy
 enum-shares
 enum4linux
 enumiax
-faraday
+#faraday
 fernmelder
 fgscanner
 fhttp
@@ -1561,7 +1561,7 @@ simple-lan-scan
 sipscan
 sipshock
 skipfish
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbexec
 smtp-user-enum
 smtp-vrfy
@@ -1950,7 +1950,7 @@ msvpwn
 nbtenum
 nishang
 ntds-decode
-ollydbg
+#ollydbg
 orakelcrackert
 pextractor
 php-vulnerability-hunter
@@ -1960,7 +1960,7 @@ pwdump
 radiography
 sipscan
 skype-dump
-smbrelay
+#smbrelay
 snscan
 spade
 sqlping
@@ -1974,7 +1974,7 @@ winfo
 x-scan
 
 # blackarch-wireless
-airflood
+#airflood
 airoscript
 airpwn
 aphopper
