@@ -33,9 +33,15 @@ su -c "cp -r /etc/skel/.* /root/" root
 
 # setup repository, add pacman.conf entry, sync databses
 su -c 'curl -s http://blackarch.org/strap.sh | sh' root
+
+# sys updates, cleanups, etc.
 su -c 'pacman -Syyu --noconfirm' root
+su -c "pacman -Rscn \$\(pacman -Qtdq\)"
+su -c 'pacman-optimize'
+su -c 'updatedb'
+su -c 'sync'
 su -c 'pacman-db-upgrade' root
-su -c 'pkgfile --update' root
+su -c 'pkgfile -u' root
 
 # fix wrong permissions for blackarch-dwm
 su -c 'chmod 755 /usr/bin/blackarch-dwm'
