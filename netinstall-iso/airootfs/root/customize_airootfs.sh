@@ -33,8 +33,6 @@ su -c "cp -r /etc/skel/.* /root/" root
 
 # setup repository, add pacman.conf entry and sync databse
 su -c 'curl -s http://blackarch.org/strap.sh | sh' root
-su -c "echo '[blackarch]' >> /etc/pacman.conf" root
-su -c "echo 'Server = http://www.blackarch.org/blackarch/\$repo/os/\$arch' >> /etc/pacman.conf" root
 su -c 'pacman -Syyu --noconfirm' root
 
 # blackarch-install info file
