@@ -1,4 +1,7 @@
 ===> 2015.XX.XX
+	- updated /etc/motd
+	- updated /etc/issue
+	- updated blackarch-install-scripts (version bump: 0.8)
 	- minor tweaks related to ISO builds
 	- updated menu entries for fluxbox, awesome and openbox
 	- updated all tools
