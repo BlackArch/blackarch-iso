@@ -73,6 +73,11 @@
           <command>xterm -bg black -fg red -e 'ropeadope ; bash'</command>
       </action>
   </item>
+  <item label="saruman">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'saruman ; bash'</command>
+      </action>
+  </item>
   <item label="sdel">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sdel -h ; bash'</command>
@@ -476,6 +481,11 @@
           <command>xterm -bg black -fg red -e 'wnmap -h ; bash'</command>
       </action>
   </item>
+  <item label="xcat">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'xcat ; bash'</command>
+      </action>
+  </item>
   <item label="yinjector">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'yinjector -h ; bash'</command>
@@ -507,6 +517,11 @@
   <item label="hotpatcher">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'hotpatcher -h ; bash'</command>
+      </action>
+  </item>
+  <item label="lfi-image-helper">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lfi-image-helper ; bash'</command>
       </action>
   </item>
   <item label="meterssh-monitor">
@@ -549,9 +564,34 @@
           <command>xterm -bg black -fg red -e 'rrs -h ; bash'</command>
       </action>
   </item>
+  <item label="saruman">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'saruman ; bash'</command>
+      </action>
+  </item>
   <item label="sb0x">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sb0x -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gen-shellcode">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gen-shellcode ; bash'</command>
+      </action>
+  </item>
+  <item label="sherlocked">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sherlocked ; bash'</command>
+      </action>
+  </item>
+  <item label="stripx">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stripx ; bash'</command>
+      </action>
+  </item>
+  <item label="stub">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stub ; bash'</command>
       </action>
   </item>
   <item label="trixd00r">
@@ -672,6 +712,11 @@
           <command>xterm -bg black -fg red -e 'androgexf ; bash'</command>
       </action>
   </item>
+  <item label="androgui">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'androgui ; bash'</command>
+      </action>
+  </item>
   <item label="androlyze">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'androlyze ; bash'</command>
@@ -715,6 +760,11 @@
   <item label="bdf-proxy">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'bdf-proxy ; bash'</command>
+      </action>
+  </item>
+  <item label="binflow">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'binflow ; bash'</command>
       </action>
   </item>
   <item label="binwalk">
@@ -787,6 +837,26 @@
           <command>xterm -bg black -fg red -e 'dissector -h ; bash'</command>
       </action>
   </item>
+  <item label="ecfs">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'ecfs ; bash'</command>
+      </action>
+  </item>
+  <item label="ecfs-handler">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'ecfs-handler ; bash'</command>
+      </action>
+  </item>
+  <item label="et-flip">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'et-flip ; bash'</command>
+      </action>
+  </item>
+  <item label="readecfs">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'readecfs ; bash'</command>
+      </action>
+  </item>
   <item label="haystack">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'haystack -h ; bash'</command>
@@ -830,6 +900,21 @@
   <item label="melkor">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'melkor -h ; bash'</command>
+      </action>
+  </item>
+  <item label="createnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'createnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="dumpnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'dumpnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="unpacknpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'unpacknpk ; bash'</command>
       </action>
   </item>
   <item label="ms-sys">
@@ -1025,6 +1110,31 @@
   <item label="ropgadget">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'ropgadget ; bash'</command>
+      </action>
+  </item>
+  <item label="saruman">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'saruman ; bash'</command>
+      </action>
+  </item>
+  <item label="gen-shellcode">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gen-shellcode ; bash'</command>
+      </action>
+  </item>
+  <item label="sherlocked">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sherlocked ; bash'</command>
+      </action>
+  </item>
+  <item label="stripx">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stripx ; bash'</command>
+      </action>
+  </item>
+  <item label="stub">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stub ; bash'</command>
       </action>
   </item>
   <item label="soot">
@@ -1621,6 +1731,11 @@
           <command>xterm -bg black -fg red -e 'sqlplus -h ; bash'</command>
       </action>
   </item>
+  <item label="cheetah">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'cheetah -h ; bash'</command>
+      </action>
+  </item>
   <item label="chntpw">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'chntpw -h ; bash'</command>
@@ -1824,16 +1939,6 @@
   <item label="fern">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'fern ; bash'</command>
-      </action>
-  </item>
-  <item label="findmyhash">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'findmyhash -h ; bash'</command>
-      </action>
-  </item>
-  <item label="findmyhash">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'findmyhash -h ; bash'</command>
       </action>
   </item>
   <item label="ftp-scanner">
@@ -2446,6 +2551,11 @@
           <command>xterm -bg black -fg red -e 'pdgmail -h ; bash'</command>
       </action>
   </item>
+  <item label="pemcrack">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pemcrack ; bash'</command>
+      </action>
+  </item>
   <item label="PHoss">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'PHoss -h ; bash'</command>
@@ -2504,6 +2614,16 @@
   <item label="rdesktop-brute">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'rdesktop-brute -h ; bash'</command>
+      </action>
+  </item>
+  <item label="reaver">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'reaver ; bash'</command>
+      </action>
+  </item>
+  <item label="wash">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'wash ; bash'</command>
       </action>
   </item>
   <item label="reaver">
@@ -2804,6 +2924,16 @@
           <command>xterm -bg black -fg red -e 'ciphr -h ; bash'</command>
       </action>
   </item>
+  <item label="c5c">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'c5c --help ; bash'</command>
+      </action>
+  </item>
+  <item label="cisco7crack">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'cisco7crack -h ; bash'</command>
+      </action>
+  </item>
   <item label="codetective">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'codetective -h ; bash'</command>
@@ -2819,9 +2949,14 @@
           <command>xterm -bg black -fg red -e 'dislocker -h ; bash'</command>
       </action>
   </item>
-  <item label="hash-identifer">
+  <item label="findmyhash">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'hash-identifer ; bash'</command>
+          <command>xterm -bg black -fg red -e 'findmyhash -h ; bash'</command>
+      </action>
+  </item>
+  <item label="findmyhash">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'findmyhash -h ; bash'</command>
       </action>
   </item>
   <item label="hasher">
@@ -2899,119 +3034,6 @@
           <command>xterm -bg black -fg red -e 'outguess ; bash'</command>
       </action>
   </item>
-  <item label="pip3line">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'pip3line ; bash'</command>
-      </action>
-  </item>
-  <item label="pip3linecmd">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'pip3linecmd ; bash'</command>
-      </action>
-  </item>
-  <item label="posttester">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'posttester -h ; bash'</command>
-      </action>
-  </item>
-  <item label="pwd-hash">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'pwd-hash -h ; bash'</command>
-      </action>
-  </item>
-  <item label="sandy">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'sandy -h ; bash'</command>
-      </action>
-  </item>
-  <item label="sbd">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'sbd -h ; bash'</command>
-      </action>
-  </item>
-  <item label="snapception">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'snapception --help ; bash'</command>
-      </action>
-  </item>
-  <item label="snow">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'snow -h ; bash'</command>
-      </action>
-  </item>
-  <item label="sslcaudit">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'sslcaudit -h ; bash'</command>
-      </action>
-  </item>
-  <item label="sslmap">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'sslmap -h ; bash'</command>
-      </action>
-  </item>
-  <item label="sslscan">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'sslscan ; bash'</command>
-      </action>
-  </item>
-  <item label="sslstrip">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'sslstrip -h ; bash'</command>
-      </action>
-  </item>
-  <item label="tlspretense">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'tlspretense ; bash'</command>
-      </action>
-  </item>
-  <item label="makeder.sh">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'makeder.sh ; bash'</command>
-      </action>
-  </item>
-  <item label="tlspretense">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'tlspretense ; bash'</command>
-      </action>
-  </item>
-  <item label="view.sh">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'view.sh ; bash'</command>
-      </action>
-  </item>
-  <item label="xorbruteforcer">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'xorbruteforcer ; bash'</command>
-      </action>
-  </item>
-  <item label="xorsearch">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'xorsearch ; bash'</command>
-      </action>
-  </item>
-  <item label="xortool">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'xortool -h ; bash'</command>
-      </action>
-  </item>
-  <item label="xortool-xor">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'xortool-xor ; bash'</command>
-      </action>
-  </item>
-</menu>
-
-<menu id="blackarch-cryptography-menu" label="cryptography">
-  <item label="c5c">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'c5c --help ; bash'</command>
-      </action>
-  </item>
-  <item label="cisco7crack">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'cisco7crack -h ; bash'</command>
-      </action>
-  </item>
   <item label="pacumen_classify_pcap.py">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'pacumen_classify_pcap.py ; bash'</command>
@@ -3042,6 +3064,66 @@
           <command>xterm -bg black -fg red -e 'xval.py ; bash'</command>
       </action>
   </item>
+  <item label="pip3line">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pip3line ; bash'</command>
+      </action>
+  </item>
+  <item label="pip3linecmd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pip3linecmd ; bash'</command>
+      </action>
+  </item>
+  <item label="posttester">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'posttester -h ; bash'</command>
+      </action>
+  </item>
+  <item label="pwd-hash">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pwd-hash -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sandy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sandy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sbd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sbd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gen-shellcode">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gen-shellcode ; bash'</command>
+      </action>
+  </item>
+  <item label="sherlocked">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sherlocked ; bash'</command>
+      </action>
+  </item>
+  <item label="stripx">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stripx ; bash'</command>
+      </action>
+  </item>
+  <item label="stub">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stub ; bash'</command>
+      </action>
+  </item>
+  <item label="snapception">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snapception --help ; bash'</command>
+      </action>
+  </item>
+  <item label="snow">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snow -h ; bash'</command>
+      </action>
+  </item>
   <item label="spipe">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'spipe ; bash'</command>
@@ -3052,9 +3134,74 @@
           <command>xterm -bg black -fg red -e 'spiped ; bash'</command>
       </action>
   </item>
+  <item label="sslcaudit">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sslcaudit -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sslmap">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sslmap -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sslscan">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sslscan ; bash'</command>
+      </action>
+  </item>
+  <item label="sslstrip">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sslstrip -h ; bash'</command>
+      </action>
+  </item>
   <item label="tlsenum">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'tlsenum -h ; bash'</command>
+      </action>
+  </item>
+  <item label="tlspretense">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'tlspretense ; bash'</command>
+      </action>
+  </item>
+  <item label="makeder.sh">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'makeder.sh ; bash'</command>
+      </action>
+  </item>
+  <item label="tlspretense">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'tlspretense ; bash'</command>
+      </action>
+  </item>
+  <item label="view.sh">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'view.sh ; bash'</command>
+      </action>
+  </item>
+  <item label="veracrypt">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'veracrypt ; bash'</command>
+      </action>
+  </item>
+  <item label="xorbruteforcer">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'xorbruteforcer ; bash'</command>
+      </action>
+  </item>
+  <item label="xorsearch">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'xorsearch ; bash'</command>
+      </action>
+  </item>
+  <item label="xortool">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'xortool -h ; bash'</command>
+      </action>
+  </item>
+  <item label="xortool-xor">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'xortool-xor ; bash'</command>
       </action>
   </item>
 </menu>
@@ -3090,9 +3237,19 @@
           <command>xterm -bg black -fg red -e 'pgdbf -h ; bash'</command>
       </action>
   </item>
+  <item label="unibrute">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'unibrute ; bash'</command>
+      </action>
+  </item>
 </menu>
 
 <menu id="blackarch-debugger-menu" label="debugger">
+  <item label="binflow">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'binflow ; bash'</command>
+      </action>
+  </item>
   <item label="edb">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'edb ; bash'</command>
@@ -3126,6 +3283,46 @@
   <item label="gdbserver">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gdbserver --help ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb-gdbserver">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb-gdbserver ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb-mi">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb-mi ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb-platform">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb-platform ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb-gdbserver">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb-gdbserver ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb-mi">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb-mi ; bash'</command>
+      </action>
+  </item>
+  <item label="lldb-platform">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lldb-platform ; bash'</command>
       </action>
   </item>
   <item label="malwasm">
@@ -3474,11 +3671,6 @@
           <command>xterm -bg black -fg red -e 'arpalert -h ; bash'</command>
       </action>
   </item>
-  <item label="tool_code.sh">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'tool_code.sh ; bash'</command>
-      </action>
-  </item>
   <item label="arpon">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'arpon -h ; bash'</command>
@@ -3504,6 +3696,16 @@
           <command>xterm -bg black -fg red -e 'beholder -h ; bash'</command>
       </action>
   </item>
+  <item label="bro">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'bro -h ; bash'</command>
+      </action>
+  </item>
+  <item label="bro-cut">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'bro-cut ; bash'</command>
+      </action>
+  </item>
   <item label="centry">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'centry -h ; bash'</command>
@@ -3524,19 +3726,9 @@
           <command>xterm -bg black -fg red -e 'DBPwAudit.jar ; bash'</command>
       </action>
   </item>
-  <item label="exiv2">
+  <item label="exabgp">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'exiv2 -h ; bash'</command>
-      </action>
-  </item>
-  <item label="metacopy">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'metacopy -h ; bash'</command>
-      </action>
-  </item>
-  <item label="path-test">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'path-test ; bash'</command>
+          <command>xterm -bg black -fg red -e 'exabgp ; bash'</command>
       </action>
   </item>
   <item label="exiv2">
@@ -3552,6 +3744,26 @@
   <item label="path-test">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'path-test ; bash'</command>
+      </action>
+  </item>
+  <item label="exiv2">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'exiv2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="metacopy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'metacopy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="path-test">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'path-test ; bash'</command>
+      </action>
+  </item>
+  <item label="ifchk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'ifchk -h ; bash'</command>
       </action>
   </item>
   <item label="inetsim">
@@ -3622,6 +3834,11 @@
   <item label="rkhunter">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'rkhunter -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sagan">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sagan -h ; bash'</command>
       </action>
   </item>
   <item label="sdel">
@@ -3714,9 +3931,9 @@
           <command>xterm -bg black -fg red -e 'truecrypt -t -h ; bash'</command>
       </action>
   </item>
-  <item label="vidalia">
+  <item label="veracrypt">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'vidalia ; bash'</command>
+          <command>xterm -bg black -fg red -e 'veracrypt ; bash'</command>
       </action>
   </item>
   <item label="vidalia">
@@ -3765,6 +3982,11 @@
   <item label="androgexf">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'androgexf ; bash'</command>
+      </action>
+  </item>
+  <item label="androgui">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'androgui ; bash'</command>
       </action>
   </item>
   <item label="androlyze">
@@ -4015,6 +4237,11 @@
           <command>xterm -bg black -fg red -e 'hwk-eagle --help ; bash'</command>
       </action>
   </item>
+  <item label="hyde">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hyde ; bash'</command>
+      </action>
+  </item>
   <item label="iaxflood">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'iaxflood ; bash'</command>
@@ -4028,6 +4255,11 @@
   <item label="mz">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'mz -h ; bash'</command>
+      </action>
+  </item>
+  <item label="network-app-stress-tester">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'network-app-stress-tester ; bash'</command>
       </action>
   </item>
   <item label="nkiller2">
@@ -4063,6 +4295,11 @@
   <item label="bombardment">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'bombardment ; bash'</command>
+      </action>
+  </item>
+  <item label="siege">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'siege -h ; bash'</command>
       </action>
   </item>
   <item label="siege.config">
@@ -4746,6 +4983,16 @@
           <command>xterm -bg black -fg red -e 'chaosreader0.94 ; bash'</command>
       </action>
   </item>
+  <item label="gsad">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gsad -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gsad">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gsad -h ; bash'</command>
+      </action>
+  </item>
   <item label="ferret">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'ferret ; bash'</command>
@@ -5126,6 +5373,166 @@
           <command>xterm -bg black -fg red -e 'opensvp -h ; bash'</command>
       </action>
   </item>
+  <item label="check_omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'check_omp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp --help ; bash'</command>
+      </action>
+  </item>
+  <item label="omp-dialog">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp-dialog --help ; bash'</command>
+      </action>
+  </item>
+  <item label="check_omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'check_omp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp --help ; bash'</command>
+      </action>
+  </item>
+  <item label="omp-dialog">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp-dialog --help ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl-lint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl-lint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-portnames-update">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-portnames-update ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvasmd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvasmd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-portnames-update">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-portnames-update ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvasmd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvasmd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert-client">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvassd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvassd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert-client">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvassd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvassd -h ; bash'</command>
+      </action>
+  </item>
   <item label="osueta">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'osueta -h ; bash'</command>
@@ -5206,6 +5613,11 @@
           <command>xterm -bg black -fg red -e 'ropper ; bash'</command>
       </action>
   </item>
+  <item label="roputils">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'roputils ; bash'</command>
+      </action>
+  </item>
   <item label="seautomate">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'seautomate ; bash'</command>
@@ -5274,6 +5686,26 @@
   <item label="sn00p">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sn00p -h ; bash'</command>
+      </action>
+  </item>
+  <item label="snarf">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snarf -h ; bash'</command>
+      </action>
+  </item>
+  <item label="snarf">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snarf -h ; bash'</command>
+      </action>
+  </item>
+  <item label="express">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'express ; bash'</command>
+      </action>
+  </item>
+  <item label="marked">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'marked ; bash'</command>
       </action>
   </item>
   <item label="snoopy">
@@ -5681,6 +6113,11 @@
           <command>xterm -bg black -fg red -e 'trace6 ; bash'</command>
       </action>
   </item>
+  <item label="unibrute">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'unibrute ; bash'</command>
+      </action>
+  </item>
   <item label="unicorn">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'unicorn ; bash'</command>
@@ -5704,6 +6141,11 @@
   <item label="witchxtool">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'witchxtool -h ; bash'</command>
+      </action>
+  </item>
+  <item label="xcat">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'xcat ; bash'</command>
       </action>
   </item>
   <item label="xsser">
@@ -5772,6 +6214,11 @@
   <item label="blindelephant">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'blindelephant -h ; bash'</command>
+      </action>
+  </item>
+  <item label="cheetah">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'cheetah -h ; bash'</command>
       </action>
   </item>
   <item label="cisco-torch">
@@ -5927,6 +6374,11 @@
   <item label="mwebfp">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'mwebfp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="neighbor-fingerprint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'neighbor-fingerprint --help ; bash'</command>
       </action>
   </item>
   <item label="nimbostratus">
@@ -6228,6 +6680,11 @@
   <item label="reged">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'reged ; bash'</command>
+      </action>
+  </item>
+  <item label="chntpw">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'chntpw -h ; bash'</command>
       </action>
   </item>
   <item label="cpnt">
@@ -6790,6 +7247,11 @@
           <command>xterm -bg black -fg red -e 'pepack ; bash'</command>
       </action>
   </item>
+  <item label="peres">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'peres ; bash'</command>
+      </action>
+  </item>
   <item label="pescan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'pescan ; bash'</command>
@@ -6857,7 +7319,8 @@
   </item>
   <item label="rifiuti">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'rifiuti --help-all ; bash'</command>
+          <command>xterm -bg black -fg red -e 'rifiuti --help-all ;
+-h ; bash'</command>
       </action>
   </item>
   <item label="rifiuti-vista">
@@ -7298,6 +7761,11 @@
 </menu>
 
 <menu id="blackarch-fuzzer-menu" label="fuzzer">
+  <item label="0d1n">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e '0d1n ; bash'</command>
+      </action>
+  </item>
   <item label="afl-clang">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'afl-clang ; bash'</command>
@@ -7693,9 +8161,24 @@
           <command>xterm -bg black -fg red -e 'fuzzdiff ; bash'</command>
       </action>
   </item>
+  <item label="gsad">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gsad -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gsad">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gsad -h ; bash'</command>
+      </action>
+  </item>
   <item label="hexorbase">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'hexorbase ; bash'</command>
+      </action>
+  </item>
+  <item label="honggfuzz">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'honggfuzz -h ; bash'</command>
       </action>
   </item>
   <item label="http-fuzz">
@@ -7803,6 +8286,11 @@
           <command>xterm -bg black -fg red -e 'maligno_srv ; bash'</command>
       </action>
   </item>
+  <item label="malybuzz">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'malybuzz -h ; bash'</command>
+      </action>
+  </item>
   <item label="mdk3">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'mdk3 --help ; bash'</command>
@@ -7903,6 +8391,11 @@
           <command>xterm -bg black -fg red -e 'nemesis -h ; bash'</command>
       </action>
   </item>
+  <item label="network-app-stress-tester">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'network-app-stress-tester ; bash'</command>
+      </action>
+  </item>
   <item label="netzob">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'netzob -h ; bash'</command>
@@ -7931,6 +8424,166 @@
   <item label="ohrwurm">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'ohrwurm -h ; bash'</command>
+      </action>
+  </item>
+  <item label="check_omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'check_omp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp --help ; bash'</command>
+      </action>
+  </item>
+  <item label="omp-dialog">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp-dialog --help ; bash'</command>
+      </action>
+  </item>
+  <item label="check_omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'check_omp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp --help ; bash'</command>
+      </action>
+  </item>
+  <item label="omp-dialog">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp-dialog --help ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl-lint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl-lint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-portnames-update">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-portnames-update ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvasmd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvasmd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-portnames-update">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-portnames-update ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvasmd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvasmd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert-client">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvassd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvassd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert-client">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvassd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvassd -h ; bash'</command>
       </action>
   </item>
   <item label="oscanner">
@@ -8950,6 +9603,9 @@
   </item>
 </menu>
 
+<menu id="blackarch-gpu-menu" label="gpu">
+</menu>
+
 <menu id="blackarch-hardware-menu" label="hardware">
   <item label="arduino">
       <action name="Execute">
@@ -9151,6 +9807,11 @@
           <command>xterm -bg black -fg red -e 'hdmi-sniff -h ; bash'</command>
       </action>
   </item>
+  <item label="honggfuzz">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'honggfuzz -h ; bash'</command>
+      </action>
+  </item>
   <item label="incept">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'incept ; bash'</command>
@@ -9169,6 +9830,11 @@
   <item label="marc4dasm">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'marc4dasm -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rtlamr">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'rtlamr -h ; bash'</command>
       </action>
   </item>
   <item label="baksmali">
@@ -9296,6 +9962,14 @@
   </item>
 </menu>
 
+<menu id="blackarch-ids-menu" label="ids">
+  <item label="sagan">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sagan -h ; bash'</command>
+      </action>
+  </item>
+</menu>
+
 <menu id="blackarch-keylogger-menu" label="keylogger">
   <item label="llk">
       <action name="Execute">
@@ -9358,6 +10032,11 @@
   <item label="androgexf">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'androgexf ; bash'</command>
+      </action>
+  </item>
+  <item label="androgui">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'androgui ; bash'</command>
       </action>
   </item>
   <item label="androlyze">
@@ -9643,6 +10322,11 @@
   <item label="viper">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'viper -h ; bash'</command>
+      </action>
+  </item>
+  <item label="virustotal">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'virustotal ; bash'</command>
       </action>
   </item>
   <item label="yara">
@@ -10293,6 +10977,11 @@
           <command>xterm -bg black -fg red -e 'netactview ; bash'</command>
       </action>
   </item>
+  <item label="netactview">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'netactview ; bash'</command>
+      </action>
+  </item>
   <item label="onionshare">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'onionshare -h ; bash'</command>
@@ -10316,6 +11005,11 @@
   <item label="pcapfix">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'pcapfix ; bash'</command>
+      </action>
+  </item>
+  <item label="princeprocessor">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'princeprocessor -h ; bash'</command>
       </action>
   </item>
   <item label="pyinstaller">
@@ -10454,6 +11148,11 @@
   <item label="kraken">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'kraken -h ; bash'</command>
+      </action>
+  </item>
+  <item label="lte-cell-scanner">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lte-cell-scanner --help ; bash'</command>
       </action>
   </item>
   <item label="sandy">
@@ -11309,6 +12008,11 @@
           <command>xterm -bg black -fg red -e 'get-oui -h ; bash'</command>
       </action>
   </item>
+  <item label="arpalert">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'arpalert -h ; bash'</command>
+      </action>
+  </item>
   <item label="arpwner">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'arpwner -h ; bash'</command>
@@ -11327,6 +12031,16 @@
   <item label="bittwiste">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'bittwiste -h ; bash'</command>
+      </action>
+  </item>
+  <item label="bro">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'bro -h ; bash'</command>
+      </action>
+  </item>
+  <item label="bro-cut">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'bro-cut ; bash'</command>
       </action>
   </item>
   <item label="buttinsky">
@@ -11674,6 +12388,11 @@
           <command>xterm -bg black -fg red -e 'etterlog -h ; bash'</command>
       </action>
   </item>
+  <item label="exabgp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'exabgp ; bash'</command>
+      </action>
+  </item>
   <item label="fakenetbiosdgm">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'fakenetbiosdgm -h ; bash'</command>
@@ -11914,6 +12633,26 @@
           <command>xterm -bg black -fg red -e 'gwcheck -h ; bash'</command>
       </action>
   </item>
+  <item label="haka">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'haka -h ; bash'</command>
+      </action>
+  </item>
+  <item label="hakabench">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hakabench -h ; bash'</command>
+      </action>
+  </item>
+  <item label="hakactl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hakactl -h ; bash'</command>
+      </action>
+  </item>
+  <item label="hakapcap">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hakapcap -h ; bash'</command>
+      </action>
+  </item>
   <item label="hharp">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'hharp -h ; bash'</command>
@@ -11964,6 +12703,11 @@
           <command>xterm -bg black -fg red -e 'httping --help ; bash'</command>
       </action>
   </item>
+  <item label="hyde">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hyde ; bash'</command>
+      </action>
+  </item>
   <item label="hyenae">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'hyenae --help ; bash'</command>
@@ -11974,9 +12718,19 @@
           <command>xterm -bg black -fg red -e 'hyenaed --help ; bash'</command>
       </action>
   </item>
+  <item label="hyperfox">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hyperfox -h ; bash'</command>
+      </action>
+  </item>
   <item label="idswakeup">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'idswakeup -h ; bash'</command>
+      </action>
+  </item>
+  <item label="ifchk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'ifchk -h ; bash'</command>
       </action>
   </item>
   <item label="ip-https-test">
@@ -12179,6 +12933,11 @@
           <command>xterm -bg black -fg red -e 'mz -h ; bash'</command>
       </action>
   </item>
+  <item label="mdns-scan">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'mdns-scan -h ; bash'</command>
+      </action>
+  </item>
   <item label="msfbinscan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'msfbinscan -h ; bash'</command>
@@ -12267,6 +13026,21 @@
   <item label="middler">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'middler -h ; bash'</command>
+      </action>
+  </item>
+  <item label="createnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'createnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="dumpnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'dumpnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="unpacknpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'unpacknpk ; bash'</command>
       </action>
   </item>
   <item label="miredo">
@@ -12649,6 +13423,11 @@
           <command>xterm -bg black -fg red -e 'slist ; bash'</command>
       </action>
   </item>
+  <item label="neighbor-fingerprint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'neighbor-fingerprint --help ; bash'</command>
+      </action>
+  </item>
   <item label="nemesis">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'nemesis -h ; bash'</command>
@@ -12714,9 +13493,39 @@
           <command>xterm -bg black -fg red -e 'netsed -h ; bash'</command>
       </action>
   </item>
+  <item label="network-app-stress-tester">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'network-app-stress-tester ; bash'</command>
+      </action>
+  </item>
   <item label="netzob">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'netzob -h ; bash'</command>
+      </action>
+  </item>
+  <item label="nfanon">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nfanon -h ; bash'</command>
+      </action>
+  </item>
+  <item label="nfcapd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nfcapd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="nfdump">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nfdump -h ; bash'</command>
+      </action>
+  </item>
+  <item label="nfexpire">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nfexpire -h ; bash'</command>
+      </action>
+  </item>
+  <item label="nfreplay">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'nfreplay -h ; bash'</command>
       </action>
   </item>
   <item label="nfex">
@@ -12769,6 +13578,11 @@
           <command>xterm -bg black -fg red -e 'obfsproxy -h ; bash'</command>
       </action>
   </item>
+  <item label="obfsproxy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'obfsproxy -h ; bash'</command>
+      </action>
+  </item>
   <item label="opensvp">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'opensvp -h ; bash'</command>
@@ -12797,6 +13611,11 @@
   <item label="packETH">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'packETH ; bash'</command>
+      </action>
+  </item>
+  <item label="packetsender">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'packetsender ; bash'</command>
       </action>
   </item>
   <item label="packit">
@@ -12842,6 +13661,21 @@
   <item label="plcscan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'plcscan -h ; bash'</command>
+      </action>
+  </item>
+  <item label="prads">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'prads -h ; bash'</command>
+      </action>
+  </item>
+  <item label="prads-asset-report">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'prads-asset-report ; bash'</command>
+      </action>
+  </item>
+  <item label="prads2snort">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'prads2snort ; bash'</command>
       </action>
   </item>
   <item label="prometheus">
@@ -12907,6 +13741,36 @@
   <item label="scapy">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'scapy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-access">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-access -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-check">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-check -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-enum">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-enum -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-flood">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-flood -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-map">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-map -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-switch">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-switch -h ; bash'</command>
       </action>
   </item>
   <item label="sessionlist">
@@ -13104,11 +13968,6 @@
           <command>xterm -bg black -fg red -e 'rwscan ; bash'</command>
       </action>
   </item>
-  <item label="rwscanquery">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'rwscanquery ; bash'</command>
-      </action>
-  </item>
   <item label="rwsender">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'rwsender ; bash'</command>
@@ -13192,6 +14051,26 @@
   <item label="sn00p">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sn00p -h ; bash'</command>
+      </action>
+  </item>
+  <item label="snarf">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snarf -h ; bash'</command>
+      </action>
+  </item>
+  <item label="snarf">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snarf -h ; bash'</command>
+      </action>
+  </item>
+  <item label="express">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'express ; bash'</command>
+      </action>
+  </item>
+  <item label="marked">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'marked ; bash'</command>
       </action>
   </item>
   <item label="sj-commit-results">
@@ -14099,6 +14978,46 @@
           <command>xterm -bg black -fg red -e 'wol-e -h ; bash'</command>
       </action>
   </item>
+  <item label="airdaemon">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'airdaemon ; bash'</command>
+      </action>
+  </item>
+  <item label="filedaemon">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'filedaemon ; bash'</command>
+      </action>
+  </item>
+  <item label="getFlowKeyHash">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'getFlowKeyHash ; bash'</command>
+      </action>
+  </item>
+  <item label="ipfixDump">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'ipfixDump ; bash'</command>
+      </action>
+  </item>
+  <item label="yaf">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'yaf --help ; bash'</command>
+      </action>
+  </item>
+  <item label="yafMeta2Pcap">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'yafMeta2Pcap --help ; bash'</command>
+      </action>
+  </item>
+  <item label="yafcollect">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'yafcollect -h ; bash'</command>
+      </action>
+  </item>
+  <item label="yafscii">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'yafscii --help ; bash'</command>
+      </action>
+  </item>
   <item label="yersinia">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'yersinia --help ; bash'</command>
@@ -14125,9 +15044,44 @@
 </menu>
 
 <menu id="blackarch-packer-menu" label="packer">
+  <item label="createnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'createnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="dumpnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'dumpnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="unpacknpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'unpacknpk ; bash'</command>
+      </action>
+  </item>
   <item label="packerid">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'packerid -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gen-shellcode">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gen-shellcode ; bash'</command>
+      </action>
+  </item>
+  <item label="sherlocked">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sherlocked ; bash'</command>
+      </action>
+  </item>
+  <item label="stripx">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stripx ; bash'</command>
+      </action>
+  </item>
+  <item label="stub">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'stub ; bash'</command>
       </action>
   </item>
 </menu>
@@ -14273,6 +15227,11 @@
           <command>xterm -bg black -fg red -e 'fakedns ; bash'</command>
       </action>
   </item>
+  <item label="hyperfox">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hyperfox -h ; bash'</command>
+      </action>
+  </item>
   <item label="mitmf">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'mitmf -h ; bash'</command>
@@ -14286,6 +15245,11 @@
   <item label="mitmproxy">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'mitmproxy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="obfsproxy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'obfsproxy -h ; bash'</command>
       </action>
   </item>
   <item label="obfsproxy">
@@ -14351,6 +15315,26 @@
   <item label="sergio-proxy">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sergio-proxy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="snarf">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snarf -h ; bash'</command>
+      </action>
+  </item>
+  <item label="snarf">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'snarf -h ; bash'</command>
+      </action>
+  </item>
+  <item label="express">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'express ; bash'</command>
+      </action>
+  </item>
+  <item label="marked">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'marked ; bash'</command>
       </action>
   </item>
   <item label="sshuttle">
@@ -14464,6 +15448,11 @@
   <item label="gpredict">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gpredict -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rtlamr">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'rtlamr -h ; bash'</command>
       </action>
   </item>
   <item label="rtlizer">
@@ -14804,6 +15793,11 @@
           <command>xterm -bg black -fg red -e 'isr-form -h ; bash'</command>
       </action>
   </item>
+  <item label="kacak">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'kacak -h ; bash'</command>
+      </action>
+  </item>
   <item label="knock">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'knock ; bash'</command>
@@ -14847,6 +15841,11 @@
   <item label="linux-exploit-suggester">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'linux-exploit-suggester -h ; bash'</command>
+      </action>
+  </item>
+  <item label="lte-cell-scanner">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lte-cell-scanner --help ; bash'</command>
       </action>
   </item>
   <item label="maltego">
@@ -15179,9 +16178,15 @@
           <command>xterm -bg black -fg red -e 'recon-rpc ; bash'</command>
       </action>
   </item>
+  <item label="revipd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'revipd ; bash'</command>
+      </action>
+  </item>
   <item label="rifiuti">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'rifiuti --help-all ; bash'</command>
+          <command>xterm -bg black -fg red -e 'rifiuti --help-all ;
+-h ; bash'</command>
       </action>
   </item>
   <item label="rifiuti-vista">
@@ -15202,6 +16207,36 @@
   <item label="sctpscan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sctpscan -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-access">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-access -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-check">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-check -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-enum">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-enum -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-flood">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-flood -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-map">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-map -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-switch">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-switch -h ; bash'</command>
       </action>
   </item>
   <item label="seat">
@@ -15249,6 +16284,11 @@
           <command>xterm -bg black -fg red -e 'sysdig -h ; bash'</command>
       </action>
   </item>
+  <item label="sysdig-probe-loader">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sysdig-probe-loader ; bash'</command>
+      </action>
+  </item>
   <item label="theharvester">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'theharvester ; bash'</command>
@@ -15257,6 +16297,11 @@
   <item label="tilt.py">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'tilt.py ; bash'</command>
+      </action>
+  </item>
+  <item label="tinfoleak">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'tinfoleak ; bash'</command>
       </action>
   </item>
   <item label="traceroute">
@@ -15292,6 +16337,11 @@
   <item label="wig">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'wig -h ; bash'</command>
+      </action>
+  </item>
+  <item label="zgrab">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'zgrab -h ; bash'</command>
       </action>
   </item>
 </menu>
@@ -15502,6 +16552,21 @@
           <command>xterm -bg black -fg red -e 'marc4dasm -h ; bash'</command>
       </action>
   </item>
+  <item label="createnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'createnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="dumpnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'dumpnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="unpacknpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'unpacknpk ; bash'</command>
+      </action>
+  </item>
   <item label="netzob">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'netzob -h ; bash'</command>
@@ -15535,6 +16600,11 @@
   <item label="pepack">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'pepack ; bash'</command>
+      </action>
+  </item>
+  <item label="peres">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'peres ; bash'</command>
       </action>
   </item>
   <item label="pescan">
@@ -15705,6 +16775,11 @@
 </menu>
 
 <menu id="blackarch-scanner-menu" label="scanner">
+  <item label="0d1n">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e '0d1n ; bash'</command>
+      </action>
+  </item>
   <item label="0trace">
       <action name="Execute">
           <command>xterm -bg black -fg red -e '0trace ; bash'</command>
@@ -15903,6 +16978,11 @@
   <item label="checksec">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'checksec --help ; bash'</command>
+      </action>
+  </item>
+  <item label="cheetah">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'cheetah -h ; bash'</command>
       </action>
   </item>
   <item label="chiron-combinations">
@@ -16395,6 +17475,16 @@
           <command>xterm -bg black -fg red -e 'gpredict -h ; bash'</command>
       </action>
   </item>
+  <item label="gsad">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gsad -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gsad">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gsad -h ; bash'</command>
+      </action>
+  </item>
   <item label="grepforrfi">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'grepforrfi ; bash'</command>
@@ -16678,6 +17768,11 @@
   <item label="lotophagi">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'lotophagi -h ; bash'</command>
+      </action>
+  </item>
+  <item label="lte-cell-scanner">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lte-cell-scanner --help ; bash'</command>
       </action>
   </item>
   <item label="lynis">
@@ -17095,6 +18190,166 @@
           <command>xterm -bg black -fg red -e 'onesixtyone ; bash'</command>
       </action>
   </item>
+  <item label="check_omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'check_omp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp --help ; bash'</command>
+      </action>
+  </item>
+  <item label="omp-dialog">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp-dialog --help ; bash'</command>
+      </action>
+  </item>
+  <item label="check_omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'check_omp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="omp">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp --help ; bash'</command>
+      </action>
+  </item>
+  <item label="omp-dialog">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'omp-dialog --help ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl-lint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nasl-lint">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nasl-lint ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-portnames-update">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-portnames-update ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvasmd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvasmd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-certdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-certdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-portnames-update">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-portnames-update ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-scapdata-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-scapdata-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvasmd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvasmd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert-client">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvassd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvassd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="greenbone-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'greenbone-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-mkcert-client">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-mkcert-client -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvas-nvt-sync">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvas-nvt-sync -h ; bash'</command>
+      </action>
+  </item>
+  <item label="openvassd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'openvassd -h ; bash'</command>
+      </action>
+  </item>
   <item label="owasp-bywaf">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'owasp-bywaf -h ; bash'</command>
@@ -17168,6 +18423,21 @@
   <item label="pnscan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'pnscan -h ; bash'</command>
+      </action>
+  </item>
+  <item label="prads">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'prads -h ; bash'</command>
+      </action>
+  </item>
+  <item label="prads-asset-report">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'prads-asset-report ; bash'</command>
+      </action>
+  </item>
+  <item label="prads2snort">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'prads2snort ; bash'</command>
       </action>
   </item>
   <item label="praeda">
@@ -17245,6 +18515,11 @@
           <command>xterm -bg black -fg red -e 'responder -h ; bash'</command>
       </action>
   </item>
+  <item label="revipd">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'revipd ; bash'</command>
+      </action>
+  </item>
   <item label="ripdc">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'ripdc -H ; bash'</command>
@@ -17308,6 +18583,36 @@
   <item label="sctpscan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sctpscan -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-access">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-access -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-check">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-check -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-enum">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-enum -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-flood">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-flood -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-map">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-map -h ; bash'</command>
+      </action>
+  </item>
+  <item label="of-switch">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'of-switch -h ; bash'</command>
       </action>
   </item>
   <item label="seat">
@@ -17518,11 +18823,6 @@
   <item label="rwscan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'rwscan ; bash'</command>
-      </action>
-  </item>
-  <item label="rwscanquery">
-      <action name="Execute">
-          <command>xterm -bg black -fg red -e 'rwscanquery ; bash'</command>
       </action>
   </item>
   <item label="rwsender">
@@ -18753,6 +20053,16 @@
           <command>xterm -bg black -fg red -e 'bittwiste -h ; bash'</command>
       </action>
   </item>
+  <item label="bro">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'bro -h ; bash'</command>
+      </action>
+  </item>
+  <item label="bro-cut">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'bro-cut ; bash'</command>
+      </action>
+  </item>
   <item label="captipper">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'captipper ; bash'</command>
@@ -18986,6 +20296,26 @@
   <item label="chaosreader0.94">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'chaosreader0.94 ; bash'</command>
+      </action>
+  </item>
+  <item label="haka">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'haka -h ; bash'</command>
+      </action>
+  </item>
+  <item label="hakabench">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hakabench -h ; bash'</command>
+      </action>
+  </item>
+  <item label="hakactl">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hakactl -h ; bash'</command>
+      </action>
+  </item>
+  <item label="hakapcap">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hakapcap -h ; bash'</command>
       </action>
   </item>
   <item label="hdmi-sniff">
@@ -19421,6 +20751,11 @@
           <command>xterm -bg black -fg red -e 'seupdate ; bash'</command>
       </action>
   </item>
+  <item label="tinfoleak">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'tinfoleak ; bash'</command>
+      </action>
+  </item>
   <item label="websploit">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'websploit ; bash'</command>
@@ -19803,6 +21138,21 @@
           <command>xterm -bg black -fg red -e 'js-beautify -h ; bash'</command>
       </action>
   </item>
+  <item label="createnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'createnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="dumpnpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'dumpnpk ; bash'</command>
+      </action>
+  </item>
+  <item label="unpacknpk">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'unpacknpk ; bash'</command>
+      </action>
+  </item>
 </menu>
 
 <menu id="blackarch-voip-menu" label="voip">
@@ -19919,6 +21269,11 @@
 </menu>
 
 <menu id="blackarch-webapp-menu" label="webapp">
+  <item label="0d1n">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e '0d1n ; bash'</command>
+      </action>
+  </item>
   <item label="adminpagefinder">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'adminpagefinder -h ; bash'</command>
@@ -20344,6 +21699,11 @@
           <command>xterm -bg black -fg red -e 'httpsend -h ; bash'</command>
       </action>
   </item>
+  <item label="hyperfox">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hyperfox -h ; bash'</command>
+      </action>
+  </item>
   <item label="imagejs">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'imagejs ; bash'</command>
@@ -20412,6 +21772,11 @@
   <item label="lfi_fuzzploit">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'lfi_fuzzploit ; bash'</command>
+      </action>
+  </item>
+  <item label="lfi-image-helper">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'lfi-image-helper ; bash'</command>
       </action>
   </item>
   <item label="lfi-scanner">
@@ -20607,6 +21972,11 @@
   <item label="themole">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'themole -h ; bash'</command>
+      </action>
+  </item>
+  <item label="tinfoleak">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'tinfoleak ; bash'</command>
       </action>
   </item>
   <item label="ua-tester">
@@ -20960,9 +22330,9 @@
           <command>xterm -bg black -fg red -e 'genpmk -h ; bash'</command>
       </action>
   </item>
-  <item label="create-ap">
+  <item label="create_ap">
       <action name="Execute">
-          <command>xterm -bg black -fg red -e 'create-ap -h ; bash'</command>
+          <command>xterm -bg black -fg red -e 'create_ap ; bash'</command>
       </action>
   </item>
   <item label="eapmd5pass">
@@ -21205,6 +22575,11 @@
           <command>xterm -bg black -fg red -e 'gnuradio-config-info -h ; bash'</command>
       </action>
   </item>
+  <item label="gr_constellation_plot">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_constellation_plot ; bash'</command>
+      </action>
+  </item>
   <item label="gr_filter_design">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gr_filter_design ; bash'</command>
@@ -21280,9 +22655,104 @@
           <command>xterm -bg black -fg red -e 'gr_plot_short ; bash'</command>
       </action>
   </item>
+  <item label="gr_psd_plot_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_c">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_c ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_f ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_i">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_i ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_s">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_s ; bash'</command>
+      </action>
+  </item>
   <item label="gr_read_file_metadata">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gr_read_file_metadata ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_c">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_c ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_f ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_i">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_i ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_s">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_s ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_c">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_c ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_f ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_i">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_i ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_s">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_s ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_raster_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_raster_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_raster_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_raster_f ; bash'</command>
+      </action>
+  </item>
+  <item label="grc_setup_freedesktop">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'grc_setup_freedesktop ; bash'</command>
       </action>
   </item>
   <item label="grcc">
@@ -21355,6 +22825,11 @@
           <command>xterm -bg black -fg red -e 'gnuradio-config-info -h ; bash'</command>
       </action>
   </item>
+  <item label="gr_constellation_plot">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_constellation_plot ; bash'</command>
+      </action>
+  </item>
   <item label="gr_filter_design">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gr_filter_design ; bash'</command>
@@ -21430,9 +22905,104 @@
           <command>xterm -bg black -fg red -e 'gr_plot_short ; bash'</command>
       </action>
   </item>
+  <item label="gr_psd_plot_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_c">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_c ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_f ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_i">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_i ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_psd_plot_s">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_psd_plot_s ; bash'</command>
+      </action>
+  </item>
   <item label="gr_read_file_metadata">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gr_read_file_metadata ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_c">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_c ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_f ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_i">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_i ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_spectrogram_plot_s">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_spectrogram_plot_s ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_c">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_c ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_f ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_i">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_i ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_plot_s">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_plot_s ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_raster_b">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_raster_b ; bash'</command>
+      </action>
+  </item>
+  <item label="gr_time_raster_f">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'gr_time_raster_f ; bash'</command>
+      </action>
+  </item>
+  <item label="grc_setup_freedesktop">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'grc_setup_freedesktop ; bash'</command>
       </action>
   </item>
   <item label="grcc">
@@ -21508,6 +23078,16 @@
   <item label="gqrx-alsa">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'gqrx-alsa ; bash'</command>
+      </action>
+  </item>
+  <item label="hostapd-wpe">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hostapd-wpe ; bash'</command>
+      </action>
+  </item>
+  <item label="hostapd-wpe-cli">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'hostapd-wpe-cli -h ; bash'</command>
       </action>
   </item>
   <item label="hotspotter">
@@ -21683,6 +23263,16 @@
   <item label="pyrit">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'pyrit -h ; bash'</command>
+      </action>
+  </item>
+  <item label="reaver">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'reaver ; bash'</command>
+      </action>
+  </item>
+  <item label="wash">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'wash ; bash'</command>
       </action>
   </item>
   <item label="reaver">
@@ -21925,6 +23515,11 @@
           <command>xterm -bg black -fg red -e 'ufo-wardriving ; bash'</command>
       </action>
   </item>
+  <item label="waidps">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'waidps ; bash'</command>
+      </action>
+  </item>
   <item label="wavemon">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'wavemon -h ; bash'</command>
@@ -22015,6 +23610,11 @@
           <command>xterm -bg black -fg red -e 'wlan2eth -h ; bash'</command>
       </action>
   </item>
+  <item label="wpa-bruteforcer">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'wpa-bruteforcer ; bash'</command>
+      </action>
+  </item>
   <item label="zulu">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'zulu ; bash'</command>
@@ -22041,7 +23641,6 @@
   <menu id="blackarch-code-audit-menu"/>
   <menu id="blackarch-cracker-menu"/>
   <menu id="blackarch-crypto-menu"/>
-  <menu id="blackarch-cryptography-menu"/>
   <menu id="blackarch-database-menu"/>
   <menu id="blackarch-debugger-menu"/>
   <menu id="blackarch-decompiler-menu"/>
@@ -22054,8 +23653,10 @@
   <menu id="blackarch-firmware-menu"/>
   <menu id="blackarch-forensic-menu"/>
   <menu id="blackarch-fuzzer-menu"/>
+  <menu id="blackarch-gpu-menu"/>
   <menu id="blackarch-hardware-menu"/>
   <menu id="blackarch-honeypot-menu"/>
+  <menu id="blackarch-ids-menu"/>
   <menu id="blackarch-keylogger-menu"/>
   <menu id="blackarch-malware-menu"/>
   <menu id="blackarch-misc-menu"/>
