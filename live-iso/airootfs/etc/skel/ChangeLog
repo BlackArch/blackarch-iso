@@ -1,4 +1,5 @@
 ===> 2015.XX.XX
+	- change splash for boot loader (syslinux / grub)
 	- updated pacman.conf settings
 	- updated /etc/motd
 	- updated /etc/issue
