@@ -1,4 +1,5 @@
 ===> 2015.XX.XX
+	- updated pacman.conf settings
 	- updated /etc/motd
 	- updated /etc/issue
 	- updated blackarch-install-scripts (version bump: 0.8)
