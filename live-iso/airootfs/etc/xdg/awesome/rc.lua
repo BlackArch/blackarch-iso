@@ -1584,8 +1584,7 @@ forensicmenu = {
   { "reglookup-recover", "xterm -bg black -fg red -e 'reglookup-recover ; bash'" },
   { "reglookup-timeline", "xterm -bg black -fg red -e 'reglookup-timeline ; bash'" },
   { "replayproxy", "xterm -bg black -fg red -e 'replayproxy -h ; bash'" },
-  { "rifiuti", "xterm -bg black -fg red -e 'rifiuti --help-all ;
--h ; bash'" },
+  { "rifiuti", "xterm -bg black -fg red -e 'rifiuti --help-all ; bash'" },
   { "rifiuti-vista", "xterm -bg black -fg red -e 'rifiuti-vista -h ; bash'" },
   { "rkhunter", "xterm -bg black -fg red -e 'rkhunter -h ; bash'" },
   { "rsakeyfind", "xterm -bg black -fg red -e 'rsakeyfind ; bash'" },
@@ -2039,9 +2038,6 @@ fuzzermenu = {
   { "zaproxy", "xterm -bg black -fg red -e 'zaproxy ; bash'" },
   { "zzuf", "xterm -bg black -fg red -e 'zzuf -h ; bash'" },
   { "zzuf-zzcat", "xterm -bg black -fg red -e 'zzuf-zzcat ; bash'" },
-}
-
-gpumenu = {
 }
 
 hardwaremenu = {
@@ -3358,8 +3354,7 @@ reconmenu = {
   { "recon-ng", "xterm -bg black -fg red -e 'recon-ng cd /usr/share/recon-ng ; ./recon-ng -h ; bash'" },
   { "recon-rpc", "xterm -bg black -fg red -e 'recon-rpc ; bash'" },
   { "revipd", "xterm -bg black -fg red -e 'revipd ; bash'" },
-  { "rifiuti", "xterm -bg black -fg red -e 'rifiuti --help-all ;
--h ; bash'" },
+  { "rifiuti", "xterm -bg black -fg red -e 'rifiuti --help-all ; bash'" },
   { "rifiuti-vista", "xterm -bg black -fg red -e 'rifiuti-vista -h ; bash'" },
   { "ripdc", "xterm -bg black -fg red -e 'ripdc -H ; bash'" },
   { "sb0x", "xterm -bg black -fg red -e 'sb0x -h ; bash'" },
@@ -4884,7 +4879,6 @@ blackarchmenu = {
   { "firmware", firmwaremenu },
   { "forensic", forensicmenu },
   { "fuzzer", fuzzermenu },
-  { "gpu", gpumenu },
   { "hardware", hardwaremenu },
   { "honeypot", honeypotmenu },
   { "ids", idsmenu },
