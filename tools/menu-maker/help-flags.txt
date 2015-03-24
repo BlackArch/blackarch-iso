@@ -1,3 +1,9 @@
+net-creds -h ;
+malcom -h ;
+alfred-gpsd -h ;
+alfred -h ;
+batctl ;
+bindead ;
 0d1n ;
 0trace ;
 3proxy --help ;
