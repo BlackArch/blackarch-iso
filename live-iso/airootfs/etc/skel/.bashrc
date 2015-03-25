@@ -1,9 +1,5 @@
 ### BlackArch Linux settings ###
 
-# temporary fixes. don't fool me pls :p
-killall -9 rpcbind
-mv .bashrc.orig .bashrc
-
 # colors
 darkgrey="$(tput bold ; tput setaf 0)"
 white="$(tput bold ; tput setaf 7)"
