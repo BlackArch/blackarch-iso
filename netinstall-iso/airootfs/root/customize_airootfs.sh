@@ -33,14 +33,19 @@ su -c "cp -r /etc/skel/.* /root/" root
 
 # setup repository, add pacman.conf entry and sync databse
 su -c 'curl -s http://blackarch.org/strap.sh | sh' root
-su -c 'pacman -Syyu --noconfirm' root
 
 # blackarch-install info file
 su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
 su -c 'rm -rf /root/install.txt' root
 
-# sync pkgfile database
-su -c 'pkgfile --update' root
+# sys updates, cleanups, etc.
+su -c 'pacman -Syyu --noconfirm' root
+#su -c "pacman -Rscn \$(pacman -Qtdq)"
+su -c 'pacman-optimize'
+su -c 'updatedb'
+su -c 'sync'
+su -c 'pacman-db-upgrade' root
+su -c 'pkgfile -u' root
 
 # default shell
 su -c 'usermod -s /bin/bash root' root
