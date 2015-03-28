@@ -1,4 +1,4 @@
-===> 2015.03.28
+===> 2015.03.29
 	- lot's of bugfixes
 	- change splash for boot loader (syslinux / grub)
 	- updated pacman.conf settings
