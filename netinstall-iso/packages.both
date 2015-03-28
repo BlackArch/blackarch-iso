@@ -49,3 +49,4 @@ lsof
 pkgfile
 bridge-utils
 haveged
+mlocate
