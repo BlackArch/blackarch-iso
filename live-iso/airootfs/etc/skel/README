@@ -1,0 +1,7 @@
+[ INSTALL ]
+
+  * to install BlackArch Linux simply run 'blackarch-install'.
+
+[ EXPLOITS ]
+
+  * to update the exploit archies in /usr/share/exploits use 'sploitctl'

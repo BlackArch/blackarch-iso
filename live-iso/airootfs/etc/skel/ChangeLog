@@ -1,4 +1,5 @@
 ===> 2015.04.08
+	- added README
 	- fix pacman.conf settings: replace HoldPkg settings with IgnorePkg
 	- updated blackarch-install-scripts (add missing packages, check SHA1 sum of
 		strap.sh and more)
