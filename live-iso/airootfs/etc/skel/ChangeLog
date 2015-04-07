@@ -1,3 +1,10 @@
+===> 2015.04.08
+	- fix pacman.conf settings: replace HoldPkg settings with IgnorePkg
+	- updated blackarch-install-scripts (add missing packages, check SHA1 sum of
+		strap.sh and more)
+	- updated system packages including linux kernel (3.19.3) and more
+	- updated tools
+
 ===> 2015.03.29
 	- lot's of bugfixes
 	- change splash for boot loader (syslinux / grub)
