@@ -62,7 +62,7 @@ su -c 'sploitctl -f 0 -v' root
 # temporary fixes for ruby based tools
 su -c 'cd /usr/share/metasploit/ && bundle config build.nokogiri --use-system-libraries && bundle install --deployment' root
 su -c 'cd /usr/share/arachni/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle' root
-su -c 'cd /usr/share/wpscan/ && bundle install --without test development' root
+su -c 'cd /usr/share/wpscan/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle --without test development' root
 su -c 'cd /usr/share/smbexec/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle' root
 su -c 'cd /usr/share/beef/ && bundle-1.9 config build.nokogiri --use-system-libraries && bundle-1.9 install --path vendor/bundle' root
 
