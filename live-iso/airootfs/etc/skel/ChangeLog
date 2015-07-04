@@ -1,3 +1,12 @@
+===> 2015.07.06
+	- added more than 30 new tools
+	- updated system packages including linux kernel 4.0.7
+	- updated all tools
+	- added strap.sh sha sum check prior download+exec
+	- deleted blackarch-install.txt
+	- added/updated /root/README
+	- fixed typos in ISO config files
+
 ===> 2015.04.08
 	- added README
 	- fix pacman.conf settings: replace HoldPkg settings with IgnorePkg

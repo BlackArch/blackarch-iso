@@ -1,7 +1,18 @@
+[ NETWORK ]
+
+  - the dhcpcd is not configured by default because of security reasons.
+    either use 'systemctl start dhcpcd' to start manually or
+    'systemctl enable dhcpcd' to enable and start during boot up.
+
 [ INSTALL ]
 
-  * to install BlackArch Linux simply run 'blackarch-install'.
+  - to install BlackArch Linux simply run 'blackarch-install' and follow the
+    instructions
 
 [ EXPLOITS ]
 
-  * to update the exploit archies in /usr/share/exploits use 'sploitctl'
+  - to update the exploit archives in /usr/share/exploits use 'sploitctl'
+
+[ MISC ]
+
+  - a ChangeLog file of the ISO can be found in /root.

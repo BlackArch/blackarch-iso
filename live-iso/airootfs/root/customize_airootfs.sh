@@ -47,8 +47,8 @@ su -c 'pkgfile -u' root
 su -c 'chmod 755 /usr/bin/blackarch-dwm'
 
 # blackarch-install info file
-su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
-su -c 'rm -rf /root/install.txt' root
+#su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
+#su -c 'rm -rf /root/install.txt' root
 
 # default shell
 su -c 'usermod -s /bin/bash root' root
