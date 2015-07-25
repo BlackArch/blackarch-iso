@@ -1,0 +1,40 @@
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/bin/false
+daemon:x:2:2:daemon:/sbin:/bin/false
+mail:x:8:12:mail:/var/spool/mail:/bin/false
+ftp:x:14:11:ftp:/srv/ftp:/bin/false
+http:x:33:33:http:/srv/http:/bin/false
+uuidd:x:68:68:uuidd:/:/sbin/nologin
+dbus:x:81:81:dbus:/:/sbin/nologin
+nobody:x:99:99:nobody:/:/bin/false
+git:x:999:999:git daemon user:/:/bin/bash
+avahi:x:84:84:avahi:/:/bin/false
+polkitd:x:102:102:Policy Kit Daemon:/:/bin/false
+tor:x:43:43::/var/lib/tor:/bin/false
+ntp:x:87:87:Network Time Protocol:/var/lib/ntp:/bin/false
+ldap:x:439:439::/var/lib/openldap:/bin/false
+darkstat:x:997:99::/var/darkstat:/bin/false
+radiusd:x:996:997::/var/lib/radiusd:/bin/false
+stunnel:x:16:16::/var/run/stunnel:/bin/false
+tinyproxy:x:186:186:HTTP proxy daemon:/:/bin/nologin
+colord:x:124:124::/var/lib/colord:/bin/false
+cvechecker:x:1001:1005::/var/cvechecker:/bin/bash
+systemd-journal-gateway:x:191:191::/:/usr/bin/nologin
+systemd-timesync:x:192:192::/:/usr/bin/nologin
+systemd-network:x:193:193::/:/usr/bin/nologin
+lxdm:x:121:121:Lightweight X11 Display Manager:/var/lib/lxdm:/sbin/nologin
+systemd-bus-proxy:x:194:194::/:/usr/bin/nologin
+systemd-resolve:x:195:195::/:/usr/bin/nologin
+sslh:x:995:995::/var/empty:/bin/bash
+systemd-journal-remote:x:994:994:systemd Journal Remote:/:/sbin/nologin
+systemd-journal-upload:x:993:993:systemd Journal Upload:/:/sbin/nologin
+socksy:x:991:991::/home/socksy:/bin/false
+ccdplugin:x:990:990::/home/ccdplugin:/bin/false
+couchdb:x:988:2:CouchDB daemon:/var/lib/couchdb:/bin/false
+postgres:x:88:88:PostgreSQL user:/var/lib/postgres:/bin/bash
+mysql:x:89:89::/var/lib/mysql:/bin/false
+dnsmasq:x:987:987:dnsmasq daemon:/:/sbin/nologin
+elasticsearch:x:114:114:Elasticsearch user:/:/sbin/nologin
+mongodb:x:986:2::/var/lib/mongodb:/bin/bash
+postfix:x:73:73::/var/spool/postfix:/bin/false
+snort:x:29:29:Snort user:/var/log/snort:/bin/false
