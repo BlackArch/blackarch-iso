@@ -166,6 +166,9 @@ scrot
 strace
 wicd
 wicd-gtk
+wine
+winetricks
+wine-mono
 
 # community security related
 afpfs-ng

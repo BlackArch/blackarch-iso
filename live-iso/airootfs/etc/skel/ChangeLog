@@ -1,8 +1,10 @@
-===> 2015.07.06
+===> 2015.07.13
 	- added more than 30 new tools
-	- updated system packages including linux kernel 4.0.7
+	- updated system packages including linux kernel 4.1.3
 	- updated all tools
 	- added strap.sh sha sum check prior download+exec
+	- added new color config for vim
+	- replace splash.png
 	- deleted blackarch-install.txt
 	- added/updated /root/README
 	- fixed typos in ISO config files

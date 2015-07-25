@@ -32,7 +32,7 @@ fi
 su -c "cp -r /etc/skel/.* /root/" root
 
 # setup repository, add pacman.conf entry, sync databses
-su -c 'curl -s http://blackarch.org/strap.sh | sh' root
+su -c 'curl -k -s https://blackarch.org/strap.sh | sh' root
 
 # sys updates, cleanups, etc.
 su -c 'pacman -Syyu --noconfirm' root
@@ -45,10 +45,6 @@ su -c 'pkgfile -u' root
 
 # fix wrong permissions for blackarch-dwm
 su -c 'chmod 755 /usr/bin/blackarch-dwm'
-
-# blackarch-install info file
-#su -c 'cp /usr/share/doc/blackarch-install-scripts/blackarch-install.txt /root/' root
-#su -c 'rm -rf /root/install.txt' root
 
 # default shell
 su -c 'usermod -s /bin/bash root' root
@@ -70,6 +66,6 @@ su -c 'cd /usr/share/beef/ && bundle-1.9 config build.nokogiri --use-system-libr
 rm /etc/udev/rules.d/81-dhcpcd.rules
 systemctl disable dhcpcd sshd rpcbind.service
 
-# remove not needed .destop entries
+# remove not needed .desktop entries
 su -c 'rm -rf /usr/share/xsessions/openbox-kde.desktop' root
 su -c 'rm -rf /usr/share/xsessions/i3-with-shmlog.desktop' root

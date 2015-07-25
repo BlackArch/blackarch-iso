@@ -143,9 +143,9 @@ make_efi() {
         ${script_path}/efiboot/loader/entries/archiso-x86_64-usb.conf > ${work_dir}/iso/loader/entries/archiso-x86_64.conf
 
     # EFI Shell 2.0 for UEFI 2.3+ ( http://sourceforge.net/apps/mediawiki/tianocore/index.php?title=UEFI_Shell )
-    curl -o ${work_dir}/iso/EFI/shellx64_v2.efi https://svn.code.sf.net/p/edk2/code/trunk/edk2/ShellBinPkg/UefiShell/X64/Shell.efi
+    curl -o ${work_dir}/iso/EFI/shellx64_v2.efi https://github.com/tianocore/edk2/raw/master/EdkShellBinPkg/MinimumShell/X64/Shell.efi
     # EFI Shell 1.0 for non UEFI 2.3+ ( http://sourceforge.net/apps/mediawiki/tianocore/index.php?title=Efi-shell )
-    curl -o ${work_dir}/iso/EFI/shellx64_v1.efi https://svn.code.sf.net/p/edk2/code/trunk/edk2/EdkShellBinPkg/FullShell/X64/Shell_Full.efi
+    curl -o ${work_dir}/iso/EFI/shellx64_v1.efi https://github.com/tianocore/edk2/raw/master/EdkShellBinPkg/FullShell/X64/Shell_Full.efi
 }
 
 # Prepare efiboot.img::/EFI for "El Torito" EFI boot mode
@@ -193,7 +193,7 @@ make_prepare() {
 
 # Build ISO
 make_iso() {
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-dual.iso"
+    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-i686.iso"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
@@ -228,14 +228,14 @@ mkdir -p ${work_dir}
 run_once make_pacman_conf
 
 # Do all stuff for each airootfs
-for arch in i686 x86_64; do
+for arch in i686; do
     run_once make_basefs
     run_once make_packages
     run_once make_setup_mkinitcpio
     run_once make_customize_airootfs
 done
 
-for arch in i686 x86_64; do
+for arch in i686; do
     run_once make_boot
 done
 
@@ -243,10 +243,10 @@ done
 run_once make_boot_extra
 run_once make_syslinux
 run_once make_isolinux
-run_once make_efi
-run_once make_efiboot
+#run_once make_efi
+##run_once make_efiboot
 
-for arch in i686 x86_64; do
+for arch in i686; do
     run_once make_prepare
 done
 
