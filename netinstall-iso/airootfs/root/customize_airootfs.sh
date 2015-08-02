@@ -48,3 +48,9 @@ su -c 'usermod -s /bin/bash root' root
 
 # disable pc speaker beep
 su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
+
+# remove special (not needed) scripts
+su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
+su -c 'rm /root/{.automated_script.sh,.zlogin}' root
+su -c 'rm /etc/mkinitcpio-archiso.conf' root
+su -c 'rm -r /etc/initcpio' root

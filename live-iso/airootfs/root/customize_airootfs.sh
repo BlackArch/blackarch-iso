@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e -u
+#set -e -u
 
 sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
@@ -69,3 +69,9 @@ systemctl disable dhcpcd sshd rpcbind.service
 # remove not needed .desktop entries
 su -c 'rm -rf /usr/share/xsessions/openbox-kde.desktop' root
 su -c 'rm -rf /usr/share/xsessions/i3-with-shmlog.desktop' root
+
+# remove special (not needed) scripts
+su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
+su -c 'rm /root/{.automated_script.sh,.zlogin}' root
+su -c 'rm /etc/mkinitcpio-archiso.conf' root
+su -c 'rm -r /etc/initcpio' root

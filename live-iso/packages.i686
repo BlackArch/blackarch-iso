@@ -214,7 +214,7 @@ crackserver
 creddump
 crowbar
 crunch
-cudahashcat
+#cudahashcat
 cupp
 dbpwaudit
 delldrac
