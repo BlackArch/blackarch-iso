@@ -1,5 +1,4 @@
 # arch linux
-gummiboot
 prebootloader
 refind-efi
 
@@ -378,7 +377,7 @@ nomorexor
 openstego
 outguess
 pacumen
-pip3line
+#pip3line
 posttester
 pwd-hash
 sandy
