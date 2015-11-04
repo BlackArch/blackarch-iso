@@ -73,3 +73,5 @@ nsia:x:986:
 postdrop:x:75:
 postfix:x:73:
 snort:x:29:
+redis:x:985:
+rpc:x:32:
