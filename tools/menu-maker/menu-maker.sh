@@ -132,6 +132,10 @@ awesome_end()
 
 make_menus()
 {
+    exclude=".keep|.exe|.applet|.txt|.dll|.conf|.apk|.key|.pem|.bat|.js|.cmd"
+    exclude="${exclude}|.dex|.cache|.bfd|.mcld|.gold|xml.ap_|.ap_.d|.3ps|.prop"
+    exclude="${exclude}|.gitignore|a.out|.xml|.xml.d|.ap_"
+
     for group in ${_GROUPS}
     do
         fluxbox_start
@@ -144,7 +148,7 @@ make_menus()
         do
             tools="`pkgfile -lbq ${p} |
             awk -F'/' '/\/usr\/bin|\/usr\/sbin|\/usr\/share/ {print $(NF)}' |
-            grep -vE '.keep|.exe|.applet|.txt|.dll'`"
+            grep -vE ${exclude}`"
             for tool in ${tools}
             do
                 opts="`grep "^${tool} " "${WORKDIR}/help-flags.txt" |
