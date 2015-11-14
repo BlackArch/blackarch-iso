@@ -75,3 +75,6 @@ su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
 su -c 'rm /root/{.automated_script.sh,.zlogin}' root
 su -c 'rm /etc/mkinitcpio-archiso.conf' root
 su -c 'rm -r /etc/initcpio' root
+
+# add install.txt file
+su -c 'echo "type blackarch-install and follow instructions" > /root/install.txt'
