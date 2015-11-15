@@ -1,0 +1,8 @@
+NAME="BlackArch Linux"
+ID=blackarch
+PRETTY_NAME="BlackArch Linux"
+ANSI_COLOR="0;36"
+HOME_URL="https://www.blackarch.org/"
+SUPPORT_URL="https://www.blackarch.org/"
+BUG_REPORT_URL="https://www.blackarch.org/"
+
