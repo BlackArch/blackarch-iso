@@ -715,7 +715,7 @@ aeskeyfind
 afflib
 aimage
 air
-androick
+#androick
 atstaketools
 autopsy
 bios_memimage
@@ -867,7 +867,7 @@ scout2
 sfuzz
 shortfuzzy
 skipfish
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbexec
 smtp-fuzz
 smtptx
@@ -1069,11 +1069,11 @@ wol-e
 xpl-search
 
 # blackarch-mobile
-androick
-android-ndk
+#androick
+#android-ndk
 androidpincrack
-android-sdk
-android-sdk-platform-tools
+#android-sdk
+##android-sdk-platform-tools
 androidsniffer
 android-udev-rules
 blackarch-menus
@@ -1086,7 +1086,7 @@ kraken
 lte-cell-scanner
 qark
 sandy
-smartphone-pentest-framework
+#smartphone-pentest-framework
 
 # blackarch-networking
 aiengine
@@ -1696,7 +1696,7 @@ simple-lan-scan
 sipscan
 sipshock
 skipfish
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbexec
 smbmap
 smbspider
