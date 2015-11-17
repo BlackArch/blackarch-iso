@@ -1,4 +1,4 @@
-409
+416
 10x20-ISO8859-1.pcf.gz -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-1
 10x20-ISO8859-10.pcf.gz -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-10
 10x20-ISO8859-11.pcf.gz -misc-fixed-medium-r-normal--20-200-75-75-c-100-iso8859-11
@@ -335,6 +335,13 @@
 9x18B-ISO8859-8.pcf.gz -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso8859-8
 9x18B-ISO8859-9.pcf.gz -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso8859-9
 9x18B.pcf.gz -misc-fixed-bold-r-normal--18-120-100-100-c-90-iso10646-1
+ProFont_r400-10.pcf -nil-profont-medium-r-normal--10-100-72-72-c-50-iso8859-1
+ProFont_r400-11.pcf -nil-profont-medium-r-normal--11-110-72-72-c-60-iso8859-1
+ProFont_r400-12.pcf -nil-profont-medium-r-normal--12-120-72-72-c-60-iso8859-1
+ProFont_r400-15.pcf -nil-profont-medium-r-normal--15-150-72-72-c-70-iso8859-1
+ProFont_r400-17.pcf -nil-profont-medium-r-normal--17-170-72-72-c-140-iso8859-1
+ProFont_r400-22.pcf -nil-profont-medium-r-normal--22-220-72-72-c-120-iso8859-1
+ProFont_r400-29.pcf -nil-profont-medium-r-normal--29-290-72-72-c-160-iso8859-1
 arabic24.pcf.gz -arabic-newspaper-medium-r-normal--32-246-100-100-p-137-iso10646-1
 clB6x10.pcf.gz -schumacher-clean-bold-r-normal--10-100-75-75-c-60-iso646.1991-irv
 clB6x12.pcf.gz -schumacher-clean-bold-r-normal--12-120-75-75-c-60-iso646.1991-irv
