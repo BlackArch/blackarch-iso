@@ -56,4 +56,4 @@ su -c 'rm /etc/mkinitcpio-archiso.conf' root
 su -c 'rm -r /etc/initcpio' root
 
 # add install.txt file
-su -c 'echo "type blackarch-install and follow instructions" > /root/install.txt'
+su -c 'echo "type blackarch-install and follow the instructions" > /root/install.txt'

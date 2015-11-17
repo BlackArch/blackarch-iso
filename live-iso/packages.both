@@ -169,6 +169,8 @@ wicd-gtk
 wine
 winetricks
 wine-mono
+ipython
+ttf-indic-otf
 
 # community security related
 afpfs-ng
