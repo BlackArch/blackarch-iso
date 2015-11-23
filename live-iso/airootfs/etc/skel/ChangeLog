@@ -1,6 +1,7 @@
 ===> 2015.12.01
 	- added more than 100 new tools
-	- updated system packages including linux kernel 4.2.5
+	- updated system packages
+	- include linux kernel 4.2.5
 	- updated all tools
 	- updated menu entries for window managers
 	- added more fonts
