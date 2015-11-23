@@ -2,7 +2,7 @@
 
 set -e -u
 
-iso_name=blackarchlinux
+iso_name=blackarchlinux-live
 iso_label="BLACKARCH_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
 install_dir=blackarch
