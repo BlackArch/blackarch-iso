@@ -4,6 +4,7 @@
 	- include linux kernel 4.2.5
 	- updated all tools
 	- updated menu entries for window managers
+	- added (correct) multilib support
 	- added more fonts
 	- added missing group 'vboxsf'
 
