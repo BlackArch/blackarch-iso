@@ -3,7 +3,7 @@
 ##############
 
 # default
-gummiboot
+#gummiboot
 prebootloader
 refind-efi
 
