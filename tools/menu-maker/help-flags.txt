@@ -841,6 +841,7 @@ ghettotooth ;
 ghost-phisher ;
 ghostphisher ;
 giskismet ;
+githack ;
 gitrob -h ;
 gmdb2 ;
 gnuradio-companion -h ;
