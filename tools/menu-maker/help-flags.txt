@@ -1039,6 +1039,7 @@ httrack -h ;
 httsquash ;
 hubbit-sniffer -h ;
 hulk -h ;
+hungry-interceptor ;
 hwk-eagle --help ;
 hyde ;
 hydra -h ;
