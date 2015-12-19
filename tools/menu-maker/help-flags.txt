@@ -1166,6 +1166,7 @@ irpas-tctrace ;
 irpas-timestamp ;
 isc-config.sh ;
 isc-hmac-fixup ;
+isip ;
 isme ;
 isr-form -h ;
 istat ;
