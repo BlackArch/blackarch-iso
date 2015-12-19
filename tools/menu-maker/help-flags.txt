@@ -366,6 +366,7 @@ chntpw ;
 chntpw -h ;
 chownat -h ;
 chromefreak -h ;
+chw00t cd /usr/share/chw00t ; ls ;
 cidr2range -h ;
 cintruder -h ;
 cipherscan ;
