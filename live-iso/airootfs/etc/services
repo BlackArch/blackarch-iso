@@ -1,4 +1,4 @@
-# See the full IANA XML file at: /usr/share/iana-etc/port-numbers.iana
+# Full data: /usr/share/iana-etc/port-numbers.iana
 
 tcpmux              1/tcp
 tcpmux              1/udp
@@ -1334,6 +1334,8 @@ dhcp-failover2    847/tcp
 dhcp-failover2    847/udp
 gdoi              848/tcp
 gdoi              848/udp
+domain-s          853/tcp
+domain-s          853/udp
 iscsi             860/tcp
 iscsi             860/udp
 owamp-control     861/tcp
@@ -2152,8 +2154,7 @@ ibm-res          1405/tcp
 ibm-res          1405/udp
 netlabs-lm       1406/tcp
 netlabs-lm       1406/udp
-dbsa-lm          1407/tcp
-dbsa-lm          1407/udp
+tibet-server     1407/tcp
 sophia-lm        1408/tcp
 sophia-lm        1408/udp
 here-lm          1409/tcp
@@ -3774,8 +3775,8 @@ netiq-ncap       2219/tcp
 netiq-ncap       2219/udp
 netiq            2220/tcp
 netiq            2220/udp
-rockwell-csp1    2221/tcp
-rockwell-csp1    2221/udp
+ethernet-ip-s    2221/tcp
+ethernet-ip-s    2221/udp
 EtherNet-IP-1    2222/tcp
 EtherNet-IP-1    2222/udp
 rockwell-csp2    2223/tcp
@@ -5899,6 +5900,7 @@ deskview         3298/tcp
 deskview         3298/udp
 pdrncs           3299/tcp
 pdrncs           3299/udp
+ceph             3300/tcp
 mcs-fastmail     3302/tcp
 mcs-fastmail     3302/udp
 opsession-clnt   3303/tcp
@@ -7666,8 +7668,6 @@ trim-event       4322/tcp
 trim-event       4322/udp
 trim-ice         4323/tcp
 trim-ice         4323/udp
-balour           4324/tcp
-balour           4324/udp
 geognosisman     4325/tcp
 geognosisman     4325/udp
 geognosis        4326/tcp
@@ -7779,6 +7779,10 @@ slscc            4408/tcp
 netcabinet-com   4409/tcp
 itwo-server      4410/tcp
 found            4411/tcp
+smallchat        4412/udp
+avi-nms          4413/tcp
+avi-nms-disc     4413/udp
+updog            4414/tcp
 netrockey6       4425/tcp
 netrockey6       4425/udp
 beacon-port-2    4426/tcp
@@ -8215,6 +8219,8 @@ surfpass         5030/tcp
 surfpass         5030/udp
 dmp              5031/udp
 signacert-agent  5032/tcp
+jtnetd-server    5033/tcp
+jtnetd-status    5034/tcp
 asnaacceler8db   5042/tcp
 asnaacceler8db   5042/udp
 swxadmin         5043/tcp
@@ -8635,6 +8641,7 @@ checkoutdb       5505/tcp
 checkoutdb       5505/udp
 amc              5506/tcp
 amc              5506/udp
+psl-management   5507/tcp
 sgi-eventmond    5553/tcp
 sgi-eventmond    5553/udp
 sgi-esphttp      5554/tcp
@@ -9231,7 +9238,7 @@ ibprotocol       6714/tcp
 ibprotocol       6714/udp
 fibotrader-com   6715/tcp
 fibotrader-com   6715/udp
-printercare-cc   6716/tcp
+princity-agent   6716/tcp
 bmc-perf-agent   6767/tcp
 bmc-perf-agent   6767/udp
 bmc-perf-mgrd    6768/tcp
@@ -9574,6 +9581,9 @@ freezexservice   7726/tcp
 freezexservice   7726/udp
 trident-data     7727/tcp
 trident-data     7727/udp
+osvr             7728/tcp
+osvr             7728/udp
+osvr             7728/sctp
 smip             7734/tcp
 smip             7734/udp
 aiagent          7738/tcp
@@ -9821,6 +9831,8 @@ tnp-discover     8320/tcp
 tnp-discover     8320/udp
 tnp              8321/tcp
 tnp              8321/udp
+garmin-marine    8322/tcp
+garmin-marine    8322/udp
 server-find      8351/tcp
 server-find      8351/udp
 cruise-enum      8376/tcp
@@ -9835,6 +9847,7 @@ cruise-update    8380/tcp
 cruise-update    8380/udp
 m2mservices      8383/tcp
 m2mservices      8383/udp
+marathontp       8384/udp
 cvd              8400/tcp
 cvd              8400/udp
 sabarsd          8401/tcp
@@ -9875,6 +9888,7 @@ fmtp             8500/udp
 cmtp-mgt         8501/tcp
 cmtp-av          8501/udp
 ftnmtp           8502/tcp
+lsp-self-ping    8503/udp
 rtsp-alt         8554/tcp
 rtsp-alt         8554/udp
 d-fence          8555/tcp
@@ -10374,6 +10388,7 @@ rsms            10201/tcp
 rscs            10201/udp
 apollo-relay    10252/tcp
 apollo-relay    10252/udp
+eapol-relay     10253/udp
 axis-wimp-port  10260/tcp
 axis-wimp-port  10260/udp
 blocks          10288/tcp
@@ -10391,6 +10406,7 @@ MOS-soap        10543/tcp
 MOS-soap        10543/udp
 MOS-soap-opt    10544/tcp
 MOS-soap-opt    10544/udp
+serverdocs      10548/tcp
 printopia       10631/tcp
 gap             10800/tcp
 gap             10800/udp
@@ -10641,6 +10657,7 @@ rdgs            16385/tcp
 xoms            16619/tcp
 axon-tunnel     16665/tcp
 vtp             16666/udp
+cadsisvr        16789/tcp
 newbay-snc-mc   16900/tcp
 newbay-snc-mc   16900/udp
 sgcip           16950/tcp
@@ -10667,6 +10684,10 @@ avtp            17220/udp
 avdecc          17221/tcp
 avdecc          17221/udp
 cpsp            17222/udp
+isa100-gci      17223/tcp
+trdp-pd         17224/udp
+trdp-md         17225/tcp
+trdp-md         17225/udp
 integrius-stp   17234/tcp
 integrius-stp   17234/udp
 ssh-mgmt        17235/tcp
@@ -10950,6 +10971,7 @@ scscp           26133/tcp
 scscp           26133/udp
 wnn6-ds         26208/tcp
 wnn6-ds         26208/udp
+cockroach       26257/tcp
 ezproxy         26260/tcp
 ezproxy         26260/udp
 ezmeeting       26261/tcp
@@ -10997,6 +11019,8 @@ pago-services2  30002/udp
 amicon-fpsu-ra  30003/tcp
 amicon-fpsu-ra  30003/udp
 amicon-fpsu-s   30004/udp
+rwp             30100/tcp
+rwp             30100/sctp
 kingdomsonline  30260/tcp
 kingdomsonline  30260/udp
 samsung-disc    30832/udp
@@ -11055,6 +11079,7 @@ mlsn            32801/udp
 retp            32811/tcp
 idmgratm        32896/tcp
 idmgratm        32896/udp
+mysqlx          33060/tcp
 aurora-balaena  33123/tcp
 aurora-balaena  33123/udp
 diamondport     33331/tcp
@@ -11100,6 +11125,8 @@ allpeers        36001/udp
 wlcp            36411/udp
 s1-control      36412/sctp
 x2-control      36422/sctp
+slmap           36423/sctp
+nq-ap           36424/sctp
 m2ap            36443/sctp
 m3ap            36444/sctp
 febooti-aw      36524/tcp
@@ -11140,6 +11167,8 @@ ortec-disc      40853/udp
 fs-qos          41111/tcp
 fs-qos          41111/udp
 tentacle        41121/tcp
+z-wave-s        41230/tcp
+z-wave-s        41230/udp
 crestron-cip    41794/tcp
 crestron-cip    41794/udp
 crestron-ctp    41795/tcp
@@ -11169,7 +11198,7 @@ ew-mgmt         43440/tcp
 ew-disc-cmd     43440/udp
 ciscocsdb       43441/tcp
 ciscocsdb       43441/udp
-z-wave-s        44123/tcp
+z-wave-tunnel   44123/tcp
 pmcd            44321/tcp
 pmcd            44321/udp
 pmcdproxy       44322/tcp
