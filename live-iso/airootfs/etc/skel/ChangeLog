@@ -1,4 +1,5 @@
 ===> 201x.xx.xx
+	- update userland /etc
 	- added bluetooth packages: bluez, bluez-firmware, bluez-hid2hci, bluez-utils
 	- replaced 2nd browser opera with chrome (chromium)
 	- replaced mplayer with mpv
