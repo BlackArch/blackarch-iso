@@ -3,7 +3,7 @@
 	- added bluetooth packages: bluez, bluez-firmware, bluez-hid2hci, bluez-utils
 	- replaced 2nd browser opera with chrome (chromium)
 	- replaced mplayer with mpv
-	- use ruby 2 in beef
+	- package-fix: beef: use ruby 2 in beef
 	- added few missing security tools from community
 	- added package: htop
 
