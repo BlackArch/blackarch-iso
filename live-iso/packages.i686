@@ -7,7 +7,9 @@ secure-delete
 # blackarch-automation
 armitage
 armscgen
+atscan
 autopwn
+backdoorme
 binex
 blackarch-menus
 blueranger
@@ -52,7 +54,7 @@ shodan
 simple-ducky
 sipvicious
 sn00p
-#sn1per
+sn1per
 sploitctl
 ssl-phuck3r
 statsprocessor
@@ -74,6 +76,7 @@ aesshell
 azazel
 backcookie
 backdoor-factory
+backdoorme
 blackarch-menus
 cymothoa
 dragon-backdoor
@@ -91,7 +94,7 @@ pyrasite
 rrs
 rubilyn
 #saruman
-#sb0x
+sb0x
 #sherlocked
 stegolego
 syringe
@@ -122,6 +125,7 @@ damm
 #detect-it-easy
 dissector
 ecfs
+elfparser
 expimp-lookup
 haystack
 hex2bin
@@ -177,17 +181,22 @@ tbear
 ubertooth
 #ubertooth-kismet
 
+# blackarch-bruteforce
+domi-owned
+
 # blackarch-code-audit
 blackarch-menus
 cflow
 cpptest
 dscanner
 flawfinder
+mosca
 pfff
 php-vulnerability-hunter
 procyon
 pscan
 #python-pin
+spaf
 
 # blackarch-cracker
 acccheck
@@ -257,6 +266,7 @@ hashtag
 hdcp-genkey
 hdmi-sniff
 hostbox-ssh
+htpwdscan
 hydra
 iaxscan
 ibrute
@@ -269,6 +279,7 @@ intercepter-ng
 interrogate
 jbrute
 johnny
+jooforce
 katana
 keimpx
 khc
@@ -291,6 +302,7 @@ oclhashcat
 ocs
 onesixtyone
 orakelcrackert
+outlook-webapp-brute
 owabf
 pack
 passcracking
@@ -319,15 +331,15 @@ rpdscan
 rsakeyfind
 samdump2
 samydeluxe
-#sb0x
+sb0x
 sidguesser
 sipcrack
 skype-dump
 smbbf
-#sn1per
+sn1per
 snmp-brute
 sparta
-#speedpwn
+speedpwn
 sqlpat
 sshatter
 ssh-privkey-crack
@@ -404,6 +416,7 @@ snapception
 snow
 spiped
 sslcaudit
+ssllabs-scan
 sslmap
 sslscan
 sslstrip
@@ -463,6 +476,7 @@ bro
 camscan
 centry
 chkrootkit
+credmap
 dbpwaudit
 epicwebhoneypot
 exabgp
@@ -518,11 +532,13 @@ hulk
 hyde
 iaxflood
 inviteflood
+isip
 katana
 mausezahn
 network-app-stress-tester
 nkiller2
 phpstress
+pyersinia
 slowhttptest
 slowloris
 sps
@@ -542,9 +558,11 @@ skyjack
 snoopy-ng
 
 # blackarch-exploitation
+albatar
 armitage
 armscgen
 arpoison
+atscan
 bbqsql
 bed
 beef
@@ -554,6 +572,7 @@ binex
 blackarch-menus
 bowcaster
 chiron
+chw00t
 cisco-global-exploiter
 cisco-snmp-enumeration
 cisco-snmp-slap
@@ -613,6 +632,7 @@ pmcma
 pompem
 powersploit
 ptf
+pyersinia
 #python-pin
 qark
 rebind
@@ -647,7 +667,7 @@ sqlsus
 stackflow
 #stebb
 subterfuge
-#tcpjunk
+tcpjunk
 thc-ipv6
 unibrute
 unicorn
@@ -657,6 +677,7 @@ vnc-bypauth
 websploit
 webxploiter
 wildpwn
+windows-privesc-check
 witchxtool
 wsuspect-proxy
 xcat
@@ -676,6 +697,7 @@ cms-explorer
 complemento
 dhcpf
 dnsmap
+domi-owned
 faraday
 fhttp
 fl0p
@@ -785,12 +807,14 @@ trid
 vinetto
 volatility
 wyd
-#xplico
+xplico
 
 # blackarch-fuzzer
 0d1n
 american-fuzzy-lop
+atscan
 backfuzz
+bbscan
 bing-lfi-rfi
 birp
 blackarch-menus
@@ -830,7 +854,9 @@ httpforge
 http-fuzz
 ikeprober
 inguma
+isip
 jbrofuzz
+joomlavs
 lfi-autopwn
 lfi-fuzzploit
 lfimap
@@ -856,13 +882,15 @@ owtf
 peach
 pentbox
 pmcma
+portmanteau
 powerfuzzer
+pyersinia
 pytbull
 qark
 radamsa
 ratproxy
 responder
-#sb0x
+sb0x
 scout2
 sfuzz
 shortfuzzy
@@ -873,6 +901,7 @@ smtp-fuzz
 smtptx
 sn00p
 snmp-fuzzer
+spaf
 spiderpig-pdffuzzer
 spike
 sploitego
@@ -884,7 +913,7 @@ sqlninja
 sulley
 taof
 tcpcontrol-fuzzer
-#tcpjunk
+tcpjunk
 termineter
 tftp-fuzz
 trinity
@@ -999,6 +1028,7 @@ bvi
 centry
 checkiban
 cisco-router-config
+credmap
 dartspylru
 dbd
 dhcdrop
@@ -1054,13 +1084,14 @@ sakis3g
 sasm
 schnappi-dhcp
 snow
-#sslcat
+sslcat
 sslyze
 stompy
 tcpxtract
 tnscmd
 tpcat
 uatester
+urlview
 usernamer
 vfeed
 wikigen
@@ -1143,6 +1174,7 @@ ipaudit
 ipdecap
 ip-https-tools
 ipmitool
+isip
 ivre
 jnetmap
 junkie
@@ -1203,6 +1235,7 @@ prads
 prometheus
 ptunnel
 pwnat
+pyersinia
 pyexfil
 pyminifakedns
 responder
@@ -1248,7 +1281,7 @@ vlan-hopping
 websockify
 #wmi-client
 wol-e
-#xplico
+xplico
 yaf
 yersinia
 zackattack
@@ -1293,6 +1326,7 @@ replayproxy
 sergio-proxy
 snarf-mitm
 sslnuke
+ssrf-proxy
 starttls-mitm
 tftp-proxy
 tunna
@@ -1303,6 +1337,7 @@ zaproxy
 
 # blackarch-radio
 gpredict
+multimon-ng
 rtlamr
 rtlizer
 
@@ -1317,6 +1352,7 @@ bluto
 canari
 casefile
 chaosmap
+crawlic
 creepy
 cutycapt
 dns2geoip
@@ -1339,6 +1375,7 @@ fernmelder
 flashlight
 fport
 geoedge
+githack
 goodork
 goofile
 goog-mail
@@ -1386,6 +1423,7 @@ netmask
 netreconn
 nipper
 nsec3walker
+ntp-ip-enum
 o-saft
 osinterator
 parsero
@@ -1398,7 +1436,7 @@ recon-ng
 revipd
 rifiuti2
 ripdc
-#sb0x
+sb0x
 sctpscan
 sdn-toolkit
 seat
@@ -1407,7 +1445,7 @@ smbexec
 smbmap
 smtp-user-enum
 sn00p
-#sn1per
+sn1per
 snmpcheck
 snoopbrute
 spade
@@ -1420,11 +1458,12 @@ sysdig
 theharvester
 tilt
 tinfoleak
-#treasure
+treasure
 twofi
 upnp-pentest-toolkit
 vbrute
 vlan-hopping
+waldo
 websearch
 whatweb
 wig
@@ -1483,8 +1522,10 @@ api-dnsdumpster
 apnbf
 asp-audit
 athena-ssl-scanner
+atscan
 atstaketools
 basedomainname
+bbscan
 bing-lfi-rfi
 birp
 blackarch-menus
@@ -1587,6 +1628,7 @@ hexorbase
 hoppy
 hostbox-ssh
 host-extract
+hsecscan
 htcap
 http-enum
 httpforge
@@ -1594,6 +1636,7 @@ httpsscanner
 iaxscan
 icmpquery
 idswakeup
+iis-shortname-scanner
 ikeprobe
 ike-scan
 infip
@@ -1603,8 +1646,9 @@ ipscan
 ipv6toolkit
 ircsnapshot
 isme
-#jigsaw
+jigsaw
 joomlascan
+joomlavs
 jsql
 kadimus
 kalibrate-rtl
@@ -1660,6 +1704,7 @@ proxycheck
 proxyp
 proxyscan
 ptf
+pyersinia
 pyfiscan
 pytbull
 qark
@@ -1679,7 +1724,7 @@ rtlizer
 rtlsdr-scanner
 sambascan
 sandy
-#sb0x
+sb0x
 scanssh
 scout2
 scrape-dns
@@ -1705,7 +1750,7 @@ smtptx
 smtp-user-enum
 smtp-vrfy
 sn00p
-#sn1per
+sn1per
 snmpattack
 snmpenum
 snmpscan
@@ -1721,6 +1766,7 @@ sshscan
 ssh-user-enum
 sslcaudit
 ssl-hostname-resolver
+ssllabs-scan
 sslmap
 sslscan
 storm-ring
@@ -1737,7 +1783,7 @@ tlspretense
 tlssled
 topera
 umap
-#unicornscan
+unicornscan
 uniscan
 unix-privesc-check
 upnp-pentest-toolkit
@@ -1753,8 +1799,10 @@ vbrute
 vbscan
 videosnarf
 viproy-voipkit
+vsvbp
 w3af
 waffit
+waldo
 wapiti
 webenum
 webpwn3r
@@ -1808,6 +1856,7 @@ hoover
 httpry
 httpsniff
 hubbit-sniffer
+hungry-interceptor
 intercepter-ng
 junkie
 katsnoop
@@ -1823,17 +1872,18 @@ pcapteller
 phoss
 proxenet
 pytacle
+rpcsniffer
 sessionlist
 snapception
 sniffjoke
 snoopy-ng
 ssldump
 ssl-phuck3r
-#sslsniff
+sslsniff
 sslstrip
 starttls-mitm
 stenographer
-#tcpick
+tcpick
 tuxcut
 wifi-monitor
 wireless-ids
@@ -1844,7 +1894,8 @@ anontwi
 blackarch-menus
 creepy
 fbid
-#jigsaw
+hemingway
+jigsaw
 phemail
 sees
 set
@@ -1901,6 +1952,7 @@ multitun
 packet-o-matic
 pr0cks
 ptunnel
+ssrf-proxy
 tunna
 udptunnel
 vstt
@@ -1917,15 +1969,17 @@ bluebox-ng
 erase-registrations
 iaxflood
 ilty
+isip
 isme
 pcapsipdump
 protos-sip
+pyersinia
 redirectpoison
 rtp-flood
 siparmyknife
 sipcrack
 sipp
-#sipsak
+sipsak
 sipscan
 sipshock
 storm-ring
@@ -1933,16 +1987,19 @@ teardown
 vnak
 voiper
 voiphopper
-#voipong
+voipong
 
 # blackarch-webapp
 0d1n
 adminpagefinder
+albatar
 allthevhosts
 arachni
 asp-audit
+atscan
 backcookie
 bbqsql
+bbscan
 bing-lfi-rfi
 blackarch-menus
 blindelephant
@@ -1959,6 +2016,7 @@ cmsmap
 commix
 conscan
 cpfinder
+crawlic
 csrftester
 darkbing
 darkd0rk3r
@@ -1971,6 +2029,7 @@ dirbuster-ng
 directorytraversalscan
 dirs3arch
 dirscanner
+domi-owned
 dpscan
 droopescan
 dumb0
@@ -1997,7 +2056,9 @@ inurlbr
 isr-form
 jaidam
 jomplug
+jooforce
 joomlascan
+joomlavs
 joomscan
 kadimus
 kolkata
@@ -2027,6 +2088,7 @@ paranoic
 paros
 pblind
 peepingtom
+phpsploit
 php-vulnerability-hunter
 plecost
 plown
@@ -2039,6 +2101,7 @@ scrapy
 secscan
 shortfuzzy
 skipfish
+spaf
 sparty
 spiga
 spike-proxy
@@ -2061,6 +2124,7 @@ vane
 vanguard
 vbscan
 #vega
+vsvbp
 w3af
 waffit
 wafp
@@ -2139,6 +2203,7 @@ powersploit
 pstoreview
 pwdump
 radiography
+rpcsniffer
 sipscan
 skype-dump
 smbrelay
@@ -2151,6 +2216,7 @@ sysinternals-suite
 tunna
 unsecure
 upnp-pentest-toolkit
+windows-privesc-check
 winexe
 winfo
 x-scan
@@ -2197,8 +2263,8 @@ pyrit
 rfdump
 rfidiot
 rfidtool
-#spectools
-#speedpwn
+spectools
+speedpwn
 timegen
 ubitack
 ufo-wardriving
