@@ -2488,6 +2488,16 @@
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'interrogate -h ; bash'</command>
       </action>
+    </item>
+  <item label="iptv-cli">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'iptv-cli ; bash'</command>
+      </action>
+  </item>
+  <item label="iptv-gui">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'iptv-gui ; bash'</command>
+      </action>
   </item>
   <item label="jbrute">
       <action name="Execute">
@@ -8358,6 +8368,11 @@
           <command>xterm -bg black -fg red -e 'owtf ; bash'</command>
       </action>
   </item>
+  <item label="pappy-proxy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pappy -h ; bash'</command>
+      </action>
+  </item>
   <item label="peach">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'peach -h ; bash'</command>
@@ -14041,6 +14056,11 @@
           <command>xterm -bg black -fg red -e 'obfsproxy -h ; bash'</command>
       </action>
   </item>
+  <item label="pappy-proxy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pappy -h ; bash'</command>
+      </action>
+  </item>
   <item label="pr0cks">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'pr0cks -h ; bash'</command>
@@ -15152,6 +15172,11 @@
           <command>xterm -bg black -fg red -e 'osinterator -h ; bash'</command>
       </action>
   </item>
+  <item label="pappy-proxy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pappy -h ; bash'</command>
+      </action>
+  </item>
   <item label="parsero">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'parsero -h ; bash'</command>
@@ -15217,6 +15242,11 @@
           <command>xterm -bg black -fg red -e 'ripdc -H ; bash'</command>
       </action>
   </item>
+  <item label="sawef">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sawef -h ; bash'</command>
+      </action>
+  </item>
   <item label="sb0x">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'sb0x -h ; bash'</command>
@@ -15266,6 +15296,11 @@
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'of-switch -h ; bash'</command>
       </action>
+    </item>
+  <item label="sawef">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'sawef -h ; bash'</command>
+      </action>
   </item>
   <item label="seat">
       <action name="Execute">
@@ -15275,6 +15310,11 @@
   <item label="simple-lan-scan">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'simple-lan-scan -h ; bash'</command>
+      </action>
+  </item>
+  <item label="simplyemail">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'simplyemail -h ; bash'</command>
       </action>
   </item>
   <item label="smbmap">
@@ -16848,6 +16888,16 @@
           <command>xterm -bg black -fg red -e 'ipscan ; bash'</command>
       </action>
   </item>
+  <item label="iptv-cli">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'iptv-cli ; bash'</command>
+      </action>
+  </item>
+  <item label="iptv-gui">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'iptv-gui ; bash'</command>
+      </action>
+  </item>
   <item label="addr6">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'addr6 ; bash'</command>
@@ -17631,6 +17681,11 @@
   <item label="panhunt">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'panhunt -h ; bash'</command>
+      </action>
+  </item>
+  <item label="pappy-proxy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pappy -h ; bash'</command>
       </action>
   </item>
   <item label="paranoic">
@@ -21070,6 +21125,11 @@
   <item label="owtf">
       <action name="Execute">
           <command>xterm -bg black -fg red -e 'owtf ; bash'</command>
+      </action>
+  </item>
+  <item label="pappy-proxy">
+      <action name="Execute">
+          <command>xterm -bg black -fg red -e 'pappy -h ; bash'</command>
       </action>
   </item>
   <item label="paranoic">

@@ -520,6 +520,8 @@
           [exec] (inguma) {xterm -bg black -fg red -e 'inguma -h ; bash'}
           [exec] (ingumagui) {xterm -bg black -fg red -e 'ingumagui ; bash'}
           [exec] (interrogate) {xterm -bg black -fg red -e 'interrogate -h ; bash'}
+          [exec] (iptv-cli) {xterm -bg black -fg red -e 'iptv-cli ; bash'}
+          [exec] (iptv-gui) {xterm -bg black -fg red -e 'iptv-gui ; bash'}
           [exec] (jbrute) {xterm -bg black -fg red -e 'jbrute --help ; bash'}
           [exec] (calc_stat) {xterm -bg black -fg red -e 'calc_stat ; bash'}
           [exec] (genmkvpwd) {xterm -bg black -fg red -e 'genmkvpwd ; bash'}
@@ -1727,6 +1729,7 @@
           [exec] (peach) {xterm -bg black -fg red -e 'peach -h ; bash'}
           [exec] (xed) {xterm -bg black -fg red -e 'xed ; bash'}
           [exec] (xed) {xterm -bg black -fg red -e 'xed ; bash'}
+          [exec] (pappy-proxy) {xterm -bg black -fg red -e 'pappy -h ; bash'}
           [exec] (pinbin) {xterm -bg black -fg red -e 'pinbin ; bash'}
           [exec] (pindb) {xterm -bg black -fg red -e 'pindb ; bash'}
           [exec] (pinbin) {xterm -bg black -fg red -e 'pinbin ; bash'}
@@ -2887,6 +2890,7 @@
           [exec] (net-creds) {xterm -bg black -fg red -e 'net-creds -h ; bash'}
           [exec] (obfsproxy) {xterm -bg black -fg red -e 'obfsproxy -h ; bash'}
           [exec] (obfsproxy) {xterm -bg black -fg red -e 'obfsproxy -h ; bash'}
+          [exec] (pappy-proxy) {xterm -bg black -fg red -e 'pappy -h ; bash'}
           [exec] (pr0cks) {xterm -bg black -fg red -e 'pr0cks -h ; bash'}
           [exec] (proxenet) {xterm -bg black -fg red -e 'proxenet -h ; bash'}
           [exec] (proxenet-control-client) {xterm -bg black -fg red -e 'proxenet-control-client ; bash'}
@@ -3114,6 +3118,7 @@
           [exec] (nsec3walker-unhash) {xterm -bg black -fg red -e 'nsec3walker-unhash ; bash'}
           [exec] (o-saft) {xterm -bg black -fg red -e 'o-saft -h ; bash'}
           [exec] (osinterator) {xterm -bg black -fg red -e 'osinterator -h ; bash'}
+          [exec] (pappy-proxy) {xterm -bg black -fg red -e 'pappy -h ; bash'}
           [exec] (parsero) {xterm -bg black -fg red -e 'parsero -h ; bash'}
           [exec] (pastenum) {xterm -bg black -fg red -e 'pastenum -h ; bash'}
           [exec] (pasv-agrsv) {xterm -bg black -fg red -e 'pasv-agrsv -h ; bash'}
@@ -3137,8 +3142,10 @@
           [exec] (of-flood) {xterm -bg black -fg red -e 'of-flood -h ; bash'}
           [exec] (of-map) {xterm -bg black -fg red -e 'of-map -h ; bash'}
           [exec] (of-switch) {xterm -bg black -fg red -e 'of-switch -h ; bash'}
+          [exec] (sawef) {xterm -bg black -fg red -e 'sawef -h ; bash'}
           [exec] (seat) {xterm -bg black -fg red -e 'seat -h ; bash'}
           [exec] (simple-lan-scan) {xterm -bg black -fg red -e 'simple-lan-scan -h ; bash'}
+          [exec] (simplyemail) {xterm -bg black -fg red -e 'simplyemail -h ; bash'}
           [exec] (smbmap) {xterm -bg black -fg red -e 'smbmap -h ; bash'}
           [exec] (smtp-user-enum) {xterm -bg black -fg red -e 'smtp-user-enum -h ; bash'}
           [exec] (sn00p) {xterm -bg black -fg red -e 'sn00p -h ; bash'}
@@ -3458,6 +3465,8 @@
           [exec] (ingumagui) {xterm -bg black -fg red -e 'ingumagui ; bash'}
           [exec] (inurlbr) {xterm -bg black -fg red -e 'inurlbr -h ; bash'}
           [exec] (ipscan) {xterm -bg black -fg red -e 'ipscan ; bash'}
+          [exec] (iptv-cli) {xterm -bg black -fg red -e 'iptv-cli ; bash'}
+          [exec] (iptv-gui) {xterm -bg black -fg red -e 'iptv-gui ; bash'}
           [exec] (addr6) {xterm -bg black -fg red -e 'addr6 ; bash'}
           [exec] (blackhole6) {xterm -bg black -fg red -e 'blackhole6 ; bash'}
           [exec] (flow6) {xterm -bg black -fg red -e 'flow6 ; bash'}
@@ -3611,6 +3620,7 @@
           [exec] (owtf) {xterm -bg black -fg red -e 'owtf ; bash'}
           [exec] (minewt) {xterm -bg black -fg red -e 'minewt -h; bash'}
           [exec] (paketto-lc) {xterm -bg black -fg red -e 'paketto-lc -h ; bash'}
+          [exec] (pappy-proxy) {xterm -bg black -fg red -e 'pappy -h ; bash'}
           [exec] (paratrace) {xterm -bg black -fg red -e 'paratrace -h ; bash'}
           [exec] (phentropy) {xterm -bg black -fg red -e 'phentropy -h ; bash'}
           [exec] (scanrand) {xterm -bg black -fg red -e 'scanrand -h ; bash'}
@@ -4322,6 +4332,7 @@
           [exec] (otori) {xterm -bg black -fg red -e 'otori -h ; bash'}
           [exec] (owasp-bywaf) {xterm -bg black -fg red -e 'owasp-bywaf -h ; bash'}
           [exec] (owtf) {xterm -bg black -fg red -e 'owtf ; bash'}
+          [exec] (pappy-proxy) {xterm -bg black -fg red -e 'pappy -h ; bash'}
           [exec] (paranoic) {xterm -bg black -fg red -e 'paranoic -h ; bash'}
           [exec] (paros) {xterm -bg black -fg red -e 'paros ; bash'}
           [exec] (pblind.py) {xterm -bg black -fg red -e 'pblind.py ; bash'}
@@ -4335,7 +4346,7 @@
           [exec] (ratproxy) {xterm -bg black -fg red -e 'ratproxy -h ; bash'}
           [exec] (rawr) {xterm -bg black -fg red -e 'rawr -h ; bash'}
           [exec] (rww-attack) {xterm -bg black -fg red -e 'rww-attack ; bash'}
-          [exec] (scrapy) {xterm -bg black -fg red -e 'scrapy -h ; bash'}
+          [exec] (sawef) {xterm -bg black -fg red -e 'sawef -h ; bash'}
           [exec] (scrapy) {xterm -bg black -fg red -e 'scrapy -h ; bash'}
           [exec] (secscan) {xterm -bg black -fg red -e 'secscan -h ; bash'}
           [exec] (shortfuzzy) {xterm -bg black -fg red -e 'shortfuzzy -h ; bash'}
