@@ -1,7 +1,8 @@
-===> 201x.xx.xx
+===> 2016.01.07
 	- update userland files (etc/)
 	- added bluetooth packages: bluez, bluez-firmware, bluez-hid2hci, bluez-utils
 	- replaced 2nd browser opera with chrome (chromium)
+	- include linux kernel 4.3.3
 	- replaced mplayer with mpv
 	- package-fix: beef: use ruby 2 in beef
 	- added few missing security tools from community

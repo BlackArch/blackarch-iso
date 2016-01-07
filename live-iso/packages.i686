@@ -94,7 +94,7 @@ pyrasite
 rrs
 rubilyn
 #saruman
-sb0x
+#sb0x
 #sherlocked
 stegolego
 syringe
@@ -331,7 +331,7 @@ rpdscan
 rsakeyfind
 samdump2
 samydeluxe
-sb0x
+#sb0x
 sidguesser
 sipcrack
 skype-dump
@@ -339,7 +339,7 @@ smbbf
 sn1per
 snmp-brute
 sparta
-speedpwn
+#speedpwn
 sqlpat
 sshatter
 ssh-privkey-crack
@@ -667,7 +667,7 @@ sqlsus
 stackflow
 #stebb
 subterfuge
-tcpjunk
+#tcpjunk
 thc-ipv6
 unibrute
 unicorn
@@ -890,7 +890,7 @@ qark
 radamsa
 ratproxy
 responder
-sb0x
+#sb0x
 scout2
 sfuzz
 shortfuzzy
@@ -913,7 +913,7 @@ sqlninja
 sulley
 taof
 tcpcontrol-fuzzer
-tcpjunk
+#tcpjunk
 termineter
 tftp-fuzz
 trinity
@@ -1084,7 +1084,7 @@ sakis3g
 sasm
 schnappi-dhcp
 snow
-sslcat
+#sslcat
 sslyze
 stompy
 tcpxtract
@@ -1436,7 +1436,7 @@ recon-ng
 revipd
 rifiuti2
 ripdc
-sb0x
+#sb0x
 sctpscan
 sdn-toolkit
 seat
@@ -1458,7 +1458,7 @@ sysdig
 theharvester
 tilt
 tinfoleak
-treasure
+#treasure
 twofi
 upnp-pentest-toolkit
 vbrute
@@ -1646,7 +1646,7 @@ ipscan
 ipv6toolkit
 ircsnapshot
 isme
-jigsaw
+#jigsaw
 joomlascan
 joomlavs
 jsql
@@ -1724,7 +1724,7 @@ rtlizer
 rtlsdr-scanner
 sambascan
 sandy
-sb0x
+#sb0x
 scanssh
 scout2
 scrape-dns
@@ -1783,7 +1783,7 @@ tlspretense
 tlssled
 topera
 umap
-unicornscan
+#unicornscan
 uniscan
 unix-privesc-check
 upnp-pentest-toolkit
@@ -1792,7 +1792,7 @@ urldigger
 uw-loveimap
 uw-udpscan
 uw-zone
-v3n0m
+#v3n0m
 vane
 vanguard
 vbrute
@@ -1879,11 +1879,11 @@ sniffjoke
 snoopy-ng
 ssldump
 ssl-phuck3r
-sslsniff
+#sslsniff
 sslstrip
 starttls-mitm
 stenographer
-tcpick
+#tcpick
 tuxcut
 wifi-monitor
 wireless-ids
@@ -1895,7 +1895,7 @@ blackarch-menus
 creepy
 fbid
 hemingway
-jigsaw
+#jigsaw
 phemail
 sees
 set
@@ -1979,7 +1979,7 @@ rtp-flood
 siparmyknife
 sipcrack
 sipp
-sipsak
+#sipsak
 sipscan
 sipshock
 storm-ring
@@ -1987,7 +1987,7 @@ teardown
 vnak
 voiper
 voiphopper
-voipong
+#voipong
 
 # blackarch-webapp
 0d1n
@@ -2263,8 +2263,8 @@ pyrit
 rfdump
 rfidiot
 rfidtool
-spectools
-speedpwn
+#spectools
+#speedpwn
 timegen
 ubitack
 ufo-wardriving
