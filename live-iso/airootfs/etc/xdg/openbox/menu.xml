@@ -35,12 +35,12 @@
 			</startupnotify>
 		</action>
 	</item>
-	<item label="opera">
+	<item label="midori">
 		<action name="Execute">
-			<command>opera</command>
+			<command>midori</command>
 			<startupnotify>
 				<enabled>yes</enabled>
-				<wmclass>opera</wmclass>
+				<wmclass>midori</wmclass>
 		    </startupnotify>
 		</action>
 	</item>
