@@ -30,7 +30,6 @@ cadaver
 capstone
 checksec
 chntpw
-chromium
 cmake
 corkscrew
 cppcheck
@@ -109,6 +108,7 @@ mdk3
 medusa
 mercurial
 mesa
+midori
 miredo
 mitmproxy
 mlocate

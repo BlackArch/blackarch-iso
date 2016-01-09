@@ -302,7 +302,7 @@ morxbtcrack
 morxcoinpwn
 morxcrack
 ntds-decode
-oclhashcat
+#oclhashcat
 ocs
 onesixtyone
 orakelcrackert
@@ -356,7 +356,7 @@ tftp-bruteforce
 thc-keyfinder
 thc-pptp-bruter
 thc-smartbrute
-truecrack
+#truecrack
 ufo-wardriving
 unsecure
 vnc-bypauth
