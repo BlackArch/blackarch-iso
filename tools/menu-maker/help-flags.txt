@@ -2734,6 +2734,7 @@ wifijammer -h ;
 wifi-monitor -h ;
 wifiphisher -h ;
 wifiping ;
+wifi-pumpkin ;
 wifitap ;
 wifite ;
 wig -h ;
