@@ -2829,6 +2829,7 @@ zerowine cd /usr/share/zerowine ; ls ;
 zerowine -h ;
 zgrab -h ;
 zip2john ;
+zizzania ;
 zmap -h ;
 zulu ;
 zykeys ;
