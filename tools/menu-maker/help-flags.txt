@@ -252,6 +252,7 @@ binwalk ;
 binwalk-script ;
 binwally -h ;
 birp -h ;
+bitdump -h ;
 bittwiste -h ;
 bittwist -h ;
 bj ;
