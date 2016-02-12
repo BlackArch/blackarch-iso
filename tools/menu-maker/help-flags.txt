@@ -2215,6 +2215,7 @@ shellcodecs ; ls ;
 shellcraft -h ;
 shellme -h ;
 shellnoob -h ;
+shellsploit ;
 sherlocked ;
 shjs ;
 shocker -h ;
