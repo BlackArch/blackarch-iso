@@ -2088,6 +2088,7 @@ ropgadget ;
 ropper ;
 ropshell ;
 roputils ;
+routerhunter -h ;
 rpcsniffer cd /usr/share/windows/rpcsniffer ; ls ;
 rpdscan -h ;
 rp-lin-x64 -h ;
