@@ -700,6 +700,7 @@ exiv2 -h ;
 expimp-lookup ;
 exploit6 ;
 exploit-db -h ;
+exploitpack ;
 express ;
 expressInstall.swf ;
 extract_hosts6.sh ;
