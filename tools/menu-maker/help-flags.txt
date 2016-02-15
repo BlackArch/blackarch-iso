@@ -2862,6 +2862,7 @@ zip2john ;
 zizzania ;
 zmap -h ;
 zulu ;
+zxing -h ;
 zykeys ;
 zzat ;
 zzuf -h ;
