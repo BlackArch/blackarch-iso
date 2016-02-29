@@ -1955,6 +1955,7 @@ rahosts ;
 ralabel ;
 randicmp6 ;
 randpkt ;
+ranger ;
 ranlib ;
 ranonymize ;
 rapath ;
