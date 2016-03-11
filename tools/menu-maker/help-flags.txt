@@ -1,3 +1,7 @@
+frida -h ;
+gitminer -h ;
+ipmipwn ;
+pipeline ;
 chromensics cd /usr/share/windows/chromensics ; ls ;
 0d1n ;
 0trace ;
