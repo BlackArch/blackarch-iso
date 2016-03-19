@@ -693,6 +693,8 @@ etterfilter -h ;
 etterlog -h ;
 evilgrade ;
 evilgrade.sh ;
+evilize -h ;
+evilize-md5coll -h ;
 evilmaid ;
 ewfacquire ;
 ewfacquirestream ;
