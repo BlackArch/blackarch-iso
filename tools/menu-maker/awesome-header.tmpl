@@ -105,7 +105,7 @@ xtermmenu = {
 
 browsermenu = {
     { "firefox", "firefox" },
-    { "opera", "opera" }
+    { "midori", "midori" }
 }
 
 networkmenu = {
