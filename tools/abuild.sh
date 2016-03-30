@@ -17,7 +17,7 @@
 #                                                                              #
 ################################################################################
 
-VERSION="v0.1"
+VERSION="v0.1.1"
 
 # true / false
 FALSE="0"
@@ -66,7 +66,7 @@ err()
 cri()
 {
     printf "%s[-] CRITICAL: %s%s\n" "${RED}" "${*}" "${NC}"
-    
+
     exit "${FAILURE}"
 }
 
@@ -131,13 +131,13 @@ build_arch()
             sed -i 's/for arch in i686 x86_64\; do/for arch in i686\; do/' build.sh
             sed -i 's/run_once make_efi/#run_once make_efi/' build.sh
             sed -i 's/run_once make_efiboot/#run_once make_efiboot/' build.sh
-            sed -i '/INCLUDE boot\/syslinux\/archiso_sys64.cfg/d' syslinux/archiso_sys_both_inc.cfg
+            sed -i 's|archiso_sys64.cfg|archiso_sys32.cfg|' syslinux/archiso_sys_both_inc.cfg
             ;;
         "x86_64")
             wprintf "[+] Setting x86_64 configuration..."
             sed -i 's/dual/x86_64/' build.sh
             sed -i 's/for arch in i686 x86_64\; do/for arch in x86_64\; do/' build.sh
-            sed -i '/INCLUDE boot\/syslinux\/archiso_sys32.cfg/d' syslinux/archiso_sys_both_inc.cfg
+            sed -i 's|archiso_sys32.cfg|archiso_sys64.cfg' syslinux/archiso_sys_both_inc.cfg
             ;;
     esac
 
@@ -186,7 +186,7 @@ main()
     check_args ${*}
     check_env
 
-    # commented arg opt 
+    # commented arg opt
     if [ "${opt}" == "arch" ]; then
         build_arch "${optarg}"
     fi
