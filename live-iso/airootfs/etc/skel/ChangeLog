@@ -1,8 +1,11 @@
 ===> 2016.04.11
+	- added persistence mode
+	- fixed an EFI boot issue
+	- fixed the well-known i686 boot issue
 	- added more than 80 new tools
-	- updated all tools
+	- updated all blackarch tools
 	- updated all system packages
-	- updated menu entries for window managers
+	- updated menu entries for window managers (awesome, fluxbox, openbox)
 
 ===> 2016.01.10
 	- added more than 30 new tools
