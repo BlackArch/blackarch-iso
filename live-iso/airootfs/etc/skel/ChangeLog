@@ -1,5 +1,6 @@
-===> 2016.04.11
-	- added persistence mode
+===> 2016.04.21
+	- include linux kernel 4.5.1
+	- added new blackarch linux installer
 	- fixed an EFI boot issue
 	- fixed the well-known i686 boot issue
 	- added more than 80 new tools
