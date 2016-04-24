@@ -1,4 +1,5 @@
-===> 2016.04.21
+===> 2016.04.27
+	- added new BlackArch Linux installer
 	- include linux kernel 4.5.1
 	- added new blackarch linux installer
 	- fixed an EFI boot issue
