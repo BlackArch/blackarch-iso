@@ -17,7 +17,7 @@ bash-completion
 bc
 bind-tools
 blackarch-dwm
-blackarch-install-scripts
+blackarch-installer
 blackarch-keyring
 bluez
 bluez-firmware

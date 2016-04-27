@@ -42,7 +42,7 @@ wireless_tools
 
 # needed for blackarch
 archlinux-keyring
-blackarch-install-scripts
+blackarch-installer
 blackarch-keyring
 ctags
 lsof
