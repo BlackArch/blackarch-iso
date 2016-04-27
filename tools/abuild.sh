@@ -137,7 +137,7 @@ build_arch()
             wprintf "[+] Setting x86_64 configuration..."
             sed -i 's/dual/x86_64/' build.sh
             sed -i 's/for arch in i686 x86_64\; do/for arch in x86_64\; do/' build.sh
-            sed -i 's|archiso_sys32.cfg|archiso_sys64.cfg' syslinux/archiso_sys_both_inc.cfg
+            sed -i 's|archiso_sys32.cfg|archiso_sys64.cfg|' syslinux/archiso_sys_both_inc.cfg
             ;;
     esac
 
