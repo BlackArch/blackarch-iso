@@ -259,7 +259,7 @@ delldrac
 depant
 device-pharmer
 dislocker
-domi-owned
+#domi-owned
 doozer
 dpeparser
 dumpacl
@@ -528,7 +528,7 @@ wordpot
 
 # blackarch-disassembler
 androguard
-android-apktool
+#android-apktool
 angr
 binnavi
 binwalk
@@ -746,7 +746,7 @@ cms-explorer
 complemento
 dhcpf
 dnsmap
-domi-owned
+#domi-owned
 faraday
 fhttp
 fl0p
@@ -787,7 +787,7 @@ aeskeyfind
 afflib
 aimage
 air
-androick
+#androick
 atstaketools
 autopsy
 bios_memimage
@@ -913,7 +913,7 @@ inguma
 isip
 jbrofuzz
 joomlavs
-kitty
+#kitty
 lfi-autopwn
 lfi-fuzzploit
 lfimap
@@ -954,7 +954,7 @@ sfuzz
 shortfuzzy
 skipfish
 sloth-fuzzer
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbexec
 smod
 smtp-fuzz
@@ -1165,11 +1165,11 @@ wol-e
 xpl-search
 
 # blackarch-mobile
-androick
-android-ndk
+#androick
+#android-ndk
 androidpincrack
-android-sdk
-android-sdk-platform-tools
+#android-sdk
+#android-sdk-platform-tools
 androidsniffer
 android-udev-rules
 blackarch-menus
@@ -1185,7 +1185,7 @@ lte-cell-scanner
 mobsf
 qark
 sandy
-smartphone-pentest-framework
+#smartphone-pentest-framework
 
 # blackarch-networking
 aiengine
@@ -1711,7 +1711,7 @@ replayproxy
 sergio-proxy
 snarf-mitm
 sslnuke
-ssrf-proxy
+#ssrf-proxy
 starttls-mitm
 striptls
 tftp-proxy
@@ -1874,7 +1874,7 @@ yasat
 zgrab
 
 # blackarch-reversing
-android-apktool
+#android-apktool
 angr
 balbuzard
 bindead
@@ -2028,7 +2028,7 @@ ftp-scanner
 ftp-spider
 gggooglescan
 ghost-phisher
-gitrob
+#gitrob
 googlesub
 gpredict
 grepforrfi
@@ -2162,7 +2162,7 @@ simple-lan-scan
 sipscan
 sipshock
 skipfish
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbexec
 smbmap
 smbspider
@@ -2281,7 +2281,7 @@ hoover
 httpry
 httpsniff
 hubbit-sniffer
-hungry-interceptor
+#hungry-interceptor
 intercepter-ng
 junkie
 katsnoop
@@ -2382,7 +2382,7 @@ multitun
 packet-o-matic
 pr0cks
 ptunnel
-ssrf-proxy
+#ssrf-proxy
 tunna
 udptunnel
 vstt
@@ -2463,7 +2463,7 @@ dirbuster-ng
 directorytraversalscan
 dirs3arch
 dirscanner
-domi-owned
+#domi-owned
 doork
 dpscan
 droopescan

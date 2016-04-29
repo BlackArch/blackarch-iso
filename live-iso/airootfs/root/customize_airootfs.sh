@@ -42,7 +42,7 @@ su -c 'updatedb' root
 su -c 'pacman-db-upgrade' root
 su -c 'pkgfile -u' root
 su -c 'pacman -Syy' root
-su -c 'pacman -Scc' root
+su -c 'pacman -Scc --noconfirm' root
 su -c 'sync' root
 
 # fix wrong permissions for blackarch-dwm
