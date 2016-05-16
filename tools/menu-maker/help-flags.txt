@@ -273,6 +273,7 @@ bletchley-encode ;
 bletchley-http2py ;
 bletchley-nextrand ;
 blindelephant -h ;
+blind-sql-bitshifting ;
 blkcalc ;
 blkcat ;
 blkls ;
