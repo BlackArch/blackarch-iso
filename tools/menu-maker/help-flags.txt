@@ -2563,6 +2563,7 @@ sysdig -h ;
 sysdig-probe-loader ;
 sysinternals-suite cd /usr/share/windows/sysinternals-suite ; ls ;
 t50 --help ;
+tabi -h ;
 tailer --help ;
 tanya ;
 taof ;
