@@ -1098,6 +1098,7 @@ http_fuzz ;
 http-fuzz ;
 httping --help ;
 http-put -h ;
+httppwnly ;
 httprint -h ;
 httprint-win32 cd /usr/share/windows/httprint-win32 ; ls ;
 httpry -h ;
