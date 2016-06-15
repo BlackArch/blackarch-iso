@@ -1851,6 +1851,7 @@ pdfsh ;
 pdfwalker ;
 pdgmail -h ;
 peach ;
+peach-fuzz -h ;
 peach -h ;
 peda -h ;
 pedis ;
