@@ -843,6 +843,7 @@ ftp_login ;
 ftpmap -h ;
 ftppr --help ;
 ftp-scanner -h ;
+ftpscout ;
 ftp-spider -h ;
 fuddly ;
 fuse-mft.py ;
