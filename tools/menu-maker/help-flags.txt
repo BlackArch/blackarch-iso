@@ -494,6 +494,7 @@ cvechecker -h ;
 cvegenversdat ;
 cvereport ;
 cverules ;
+cybercrowl -h ;
 cyclic -h ;
 cymothoa -h ;
 d2j-apk-sign ;
