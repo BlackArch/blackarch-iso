@@ -2538,6 +2538,7 @@ statsgen -h ;
 statsprocessor --help ;
 steghide --help ;
 stegolego ;
+stegosip ;
 stenographer -h ;
 stompy ;
 storm-ring -h ;
