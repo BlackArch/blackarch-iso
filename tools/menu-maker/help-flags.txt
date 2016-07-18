@@ -3,6 +3,8 @@
 3proxy --help ;
 3proxy-win32 cd /usr/share/windows/3proxy-win32 ; ls ;
 6to4test.sh ;
+abcdump -h ;
+abcgraph -h ;
 acccheck -h ;
 ace -h ;
 addr6 ;
