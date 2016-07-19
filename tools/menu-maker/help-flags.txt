@@ -2284,6 +2284,7 @@ scalpel ;
 scan6 ;
 scanmem -h ;
 scanrand -h ;
+scansploit -h ;
 scanssh -h ;
 scapy -h ;
 scheck ;
