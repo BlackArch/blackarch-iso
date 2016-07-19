@@ -567,6 +567,7 @@ dhcdrop -h ;
 dhcpclient -h ;
 dhcpf ;
 dhcpig -h ;
+dhcpoptinj -h ;
 dhcp-responder -h ;
 dig -h ;
 dighosts ;
