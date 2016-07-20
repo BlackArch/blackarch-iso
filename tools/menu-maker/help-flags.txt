@@ -404,6 +404,7 @@ chiron-scanner ;
 chkrootkit -h ;
 chntpw ;
 chntpw -h ;
+choronzon -h ;
 chownat -h ;
 chromefreak -h ;
 chromensics cd /usr/share/windows/chromensics ; ls ;
