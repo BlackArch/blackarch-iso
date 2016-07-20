@@ -1434,6 +1434,7 @@ makeivs-ng -h ;
 makelist -h ;
 makepasswd -h ;
 make-pdf-javascript ;
+maketh -h ;
 malcom -h ;
 malheur -h ;
 maligno-clientgen ;
