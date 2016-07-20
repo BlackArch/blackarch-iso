@@ -2112,6 +2112,7 @@ redfang --help ;
 redir6 ;
 redirectpoison ;
 redirsniff6 ;
+redsocks -h ;
 reged ;
 regeorg -h ;
 reglookup ;
