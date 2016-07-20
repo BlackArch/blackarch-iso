@@ -3009,6 +3009,7 @@ zerowine cd /usr/share/zerowine ; ls ;
 zerowine -h ;
 zgrab -h ;
 zip2john ;
+zipdump ;
 zizzania ;
 zmap -h ;
 zulu ;
