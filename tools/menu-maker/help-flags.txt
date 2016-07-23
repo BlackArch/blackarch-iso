@@ -309,6 +309,7 @@ bof-detector -h ;
 bokken -h ;
 bokken-hg -h ;
 bombardment ;
+bonesi ;
 bootload.py ;
 bowcaster -h ;
 bpfc ;
