@@ -120,6 +120,7 @@ apnbf -h ;
 apply ;
 applypatch-msg.sample ;
 aprof ;
+apt2 -h ;
 ar ;
 arachni_console -h ;
 arachni -h ;
