@@ -220,6 +220,7 @@ backcookie -h ;
 backdoor-factory -h ;
 backdoorme ;
 backfuzz -h ;
+backhack ;
 baksmali -h ;
 balbuzard ;
 bamfbrute -h ;
