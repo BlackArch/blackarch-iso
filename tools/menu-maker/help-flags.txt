@@ -1945,6 +1945,7 @@ portspoof -h ;
 posttester -h ;
 powerfuzzer ;
 powersploit cd /usr/share/windows/powersploit ; ls ;
+ppscan -h ;
 pqlist ;
 pqrm ;
 pqstat ;
