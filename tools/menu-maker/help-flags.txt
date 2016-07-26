@@ -1854,6 +1854,7 @@ patator --help ;
 path6 -h ;
 pathoc -h ;
 pathod -h ;
+pathzuzu ;
 paxtest -h ;
 pblind ;
 pblind.py ;
