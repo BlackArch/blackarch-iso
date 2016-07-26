@@ -2358,6 +2358,7 @@ shard --help ;
 shareenum ;
 shellcodecs ; ls ;
 shellcraft -h ;
+shelling ;
 shellme -h ;
 shellnoob -h ;
 shellsploit ;
