@@ -896,6 +896,7 @@ gcc ;
 gcore ;
 gdb -h ;
 gdbserver --help ;
+gef cd /usr/share/gef ; ls ;
 genkeys -h ;
 genlist ;
 genmkvpwd ;
