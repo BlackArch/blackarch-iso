@@ -952,6 +952,7 @@ googlesub --help ;
 goog-mail ;
 gooscan -h ;
 gophish ;
+gplist cd /usr/share/windows/gplist ; ls ;
 gpredict -h ;
 gqrx ;
 gqrx-alsa ;
