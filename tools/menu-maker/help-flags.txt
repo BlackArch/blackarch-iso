@@ -727,6 +727,8 @@ enyelkm -h ;
 erase_registrations ;
 et-flip ;
 etherape ;
+etherchange cd /usr/share/windows/etherchange ; ls ;
+etherflood cd /usr/share/windows/etherflood ; ls ;
 ettercap -h ;
 etterfilter -h ;
 etterlog -h ;
