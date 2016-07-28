@@ -1344,6 +1344,7 @@ katsnoop -h ;
 kautilya ;
 keepass2john ;
 keimpx -h ;
+kerbcrack cd /usr/share/windows/kerbcrack ; ls ;
 keyfinder ;
 keystore_pass ;
 khc ;
