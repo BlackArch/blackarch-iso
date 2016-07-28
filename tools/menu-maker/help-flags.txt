@@ -2533,6 +2533,7 @@ sqlbrute -h ;
 sqlbrute.py ;
 sqlcheck -h ;
 sqldata -h ;
+sqldict cd /usr/share/windows/sqldict ; ls ;
 sqlfuzzer ;
 sqlfuzzer-proxy ;
 sqlivulscan ;
