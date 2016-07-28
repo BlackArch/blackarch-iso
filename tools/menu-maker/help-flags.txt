@@ -952,6 +952,7 @@ gpredict -h ;
 gqrx ;
 gqrx-alsa ;
 gqrx -h ;
+grabbb ;
 grabber-scanner -h ;
 grcc ;
 gr_constellation_plot ;
