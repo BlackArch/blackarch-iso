@@ -3002,6 +3002,7 @@ wsdl2request ;
 wsfuzzer ;
 wsuspect-proxy ;
 wups cd /usr/share/windows/wups ; ls ;
+wxhexeditor ;
 wyd ;
 x86dis ;
 xcat ;
