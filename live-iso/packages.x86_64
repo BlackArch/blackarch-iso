@@ -1246,10 +1246,10 @@ xpl-search
 
 # blackarch-mobile
 #androick
-android-ndk
+#android-ndk
 androidpincrack
-android-sdk
-android-sdk-platform-tools
+#android-sdk
+#android-sdk-platform-tools
 androidsniffer
 android-udev-rules
 backhack
