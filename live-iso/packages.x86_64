@@ -1,6 +1,7 @@
 # arch linux
 #gummiboot
 #prebootloader
+efitools
 refind-efi
 # blackarch-anti-forensic
 blackarch-config-openbox
