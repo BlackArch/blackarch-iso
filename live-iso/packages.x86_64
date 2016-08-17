@@ -65,7 +65,7 @@ shodan
 simple-ducky
 sipvicious
 sn00p
-sn1per
+#sn1per
 sploitctl
 ssl-phuck3r
 statsprocessor
@@ -144,7 +144,7 @@ binwally
 blackarch-config-openbox
 blackarch-menus
 bvi
-bytecode-viewer
+#bytecode-viewer
 damm
 detect-it-easy
 dissector
@@ -277,7 +277,7 @@ creddump
 crowbar
 crunch
 cryptohazemultiforcer
-cudahashcat
+#cudahashcat
 cupp
 dbpwaudit
 delldrac
@@ -309,7 +309,7 @@ htpwdscan
 iaxscan
 ibrute
 iheartxor
-iisbruteforcer
+#iisbruteforcer
 ikecrack
 ikeprobe
 inguma
@@ -338,7 +338,7 @@ morxbtcrack
 morxcoinpwn
 morxcrack
 ntds-decode
-oclhashcat
+#oclhashcat
 ocs
 onesixtyone
 orakelcrackert
@@ -382,7 +382,7 @@ sipcrack
 skul
 skype-dump
 smbbf
-sn1per
+#sn1per
 snitch
 snmp-brute
 sparta
@@ -934,7 +934,7 @@ bing-lfi-rfi
 birp
 blackarch-config-openbox
 blackarch-menus
-bluebox-ng
+#bluebox-ng
 browser-fuzzer
 bss
 bt_audit
@@ -1024,7 +1024,7 @@ sfuzz
 shortfuzzy
 skipfish
 sloth-fuzzer
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbexec
 smod
 smtp-fuzz
@@ -1265,10 +1265,10 @@ kalibrate-rtl
 kraken
 lte-cell-scanner
 #mara-framework
-mobsf
+#mobsf
 #qark
 sandy
-smartphone-pentest-framework
+#smartphone-pentest-framework
 
 # blackarch-networking
 aiengine
@@ -1989,7 +1989,7 @@ smbmap
 smod
 smtp-user-enum
 sn00p
-sn1per
+#sn1per
 snmpcheck
 snoopbrute
 social-vuln-scanner
@@ -2031,7 +2031,7 @@ binwalk
 blackarch-config-openbox
 blackarch-menus
 bokken
-bytecode-viewer
+#bytecode-viewer
 damm
 detect-it-easy
 dex2jar
@@ -2083,7 +2083,7 @@ bing-lfi-rfi
 birp
 blackarch-config-openbox
 blackarch-menus
-bluebox-ng
+#bluebox-ng
 bluelog
 bluescan
 bluto
@@ -2318,7 +2318,7 @@ simple-lan-scan
 sipscan
 sipshock
 skipfish
-smartphone-pentest-framework
+#smartphone-pentest-framework
 smbcrunch
 smbexec
 smbmap
@@ -2329,7 +2329,7 @@ smtptx
 smtp-user-enum
 smtp-vrfy
 sn00p
-sn1per
+#sn1per
 snmpattack
 snmpenum
 snmpscan
@@ -2571,7 +2571,7 @@ mikrotik-npk
 ace
 blackarch-config-openbox
 blackarch-menus
-bluebox-ng
+#bluebox-ng
 erase-registrations
 iaxflood
 ilty
@@ -2990,7 +2990,7 @@ binwally
 blackarch-config-openbox
 blackarch-menus
 bvi
-bytecode-viewer
+#bytecode-viewer
 damm
 detect-it-easy
 dissector
