@@ -1,0 +1,23 @@
+# tools to disable during ISO creation (TODO: need to fix)
+
+androguard
+androick
+android-apktool
+antiransom
+arduino
+casefile
+checkpwd
+drozer
+firmware-mod-kit
+gitrob
+hungry-interceptor
+kitty
+maltego
+mara-framework
+peach
+qark
+spiga
+ssrf-proxy
+sysinternals-suite
+truecrack
+vmcloak
