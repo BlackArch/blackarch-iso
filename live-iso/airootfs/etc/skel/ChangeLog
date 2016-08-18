@@ -1,3 +1,11 @@
+===> 2016.08.XX
+	- include linux kernel 4.7.1
+	- updated BlackArch Linux installer
+	- added more than 100 new tools
+	- updated all blackarch tools
+	- updated all system packages
+	- updated menu entries for window managers (awesome, fluxbox, openbox)
+
 ===> 2016.04.28
 	- added new (improved) BlackArch Linux installer
 	- include linux kernel 4.5.1
