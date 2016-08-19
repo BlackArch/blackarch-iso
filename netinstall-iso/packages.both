@@ -34,7 +34,6 @@ wpa_actiond
 zd1211-firmware
 zsh
 openssh
-rt3562sta
 wvdial
 iw
 rfkill
