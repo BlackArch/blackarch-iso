@@ -410,6 +410,7 @@ chiron-scanner ;
 chkrootkit -h ;
 chntpw ;
 chntpw -h ;
+chopshop -h ;
 choronzon -h ;
 chownat -h ;
 chromefreak -h ;
