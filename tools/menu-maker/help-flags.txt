@@ -1730,6 +1730,7 @@ nslookup ;
 nsoq ;
 nstrobe ;
 nsupdate ;
+ntpdos ;
 ntp-fingerprint ;
 ntp-ip-enum ;
 ntrace ;
