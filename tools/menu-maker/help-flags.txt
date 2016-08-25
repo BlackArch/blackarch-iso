@@ -1867,6 +1867,7 @@ passivedns -h ;
 pastenum -h ;
 pasv-agrsv -h ;
 patator --help ;
+patchkit -h ;
 path6 -h ;
 pathoc -h ;
 pathod -h ;
