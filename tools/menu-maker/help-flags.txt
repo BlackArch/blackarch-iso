@@ -120,6 +120,7 @@ apkviewer -h ;
 apnbf -h ;
 apply ;
 applypatch-msg.sample ;
+appmon ;
 aprof ;
 apt2 -h ;
 ar ;
