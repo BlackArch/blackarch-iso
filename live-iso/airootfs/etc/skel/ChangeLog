@@ -1,3 +1,9 @@
+===> 2016.08.30
+	- bugfix: strap.sh
+	- include linux kernel 4.7.2
+	- updated system packages
+	- updated blackarch tools
+
 ===> 2016.08.19
 	- include linux kernel 4.7.1
 	- updated BlackArch Linux installer
