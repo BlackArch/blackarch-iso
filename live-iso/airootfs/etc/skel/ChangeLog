@@ -1,5 +1,5 @@
 ===> 2016.08.31
-	- bugfix: strap.sh
+	- bugfix: blackarch-installer
 	- shrink ISO size (DVD-R support)
 	- updated system packages
 	- updated blackarch tools
