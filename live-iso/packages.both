@@ -270,7 +270,7 @@ xorg-xdm
 xorg-xinit
 xterm
 yara
-zaproxy
+#zaproxy
 zd1211-firmware
 zip
 zmap

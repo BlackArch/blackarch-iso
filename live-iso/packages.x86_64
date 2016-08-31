@@ -566,7 +566,7 @@ snort
 suricata
 tabi
 tor-autocircuit
-tor-browser-en
+#tor-browser-en
 wireless-ids
 wordpot
 
@@ -714,7 +714,7 @@ minimysqlator
 miranda-upnp
 mitmap
 mitmf
-mosquito
+#mosquito
 nimbostratus
 nosqlmap
 opensvp
@@ -877,7 +877,7 @@ indxparse
 interrogate
 iosforensic
 ipba2
-iphoneanalyzer
+#iphoneanalyzer
 libewf
 mac-robber
 magicrescue
@@ -947,7 +947,7 @@ cirt-fuzzer
 cisco-auditing-tool
 cmsfuzz
 conscan
-cookie-cadger
+#cookie-cadger
 darkbing
 dhcpig
 dizzy
@@ -1030,7 +1030,7 @@ smod
 smtp-fuzz
 smtptx
 sn00p
-snmp-fuzzer
+#snmp-fuzzer
 soapui
 spaf
 spiderpig-pdffuzzer
@@ -1056,7 +1056,7 @@ vbscan
 viproy-voipkit
 w3af
 wapiti
-webscarab
+#webscarab
 webshag
 websploit
 webxploiter
@@ -1260,7 +1260,7 @@ cnamulator
 gtp-scan
 ibrute
 iosforensic
-iphoneanalyzer
+#iphoneanalyzer
 kalibrate-rtl
 kraken
 lte-cell-scanner
@@ -1419,7 +1419,7 @@ sniffjoke
 snmpattack
 snmp-brute
 snmpcheck
-snmp-fuzzer
+#snmp-fuzzer
 snort
 sockstat
 sparta
@@ -1608,7 +1608,7 @@ sniffjoke
 snmpattack
 snmp-brute
 snmpcheck
-snmp-fuzzer
+#snmp-fuzzer
 snort
 sockstat
 sparta
@@ -1721,7 +1721,7 @@ minimysqlator
 miranda-upnp
 mitmap
 mitmf
-mosquito
+#mosquito
 nimbostratus
 nosqlmap
 opensvp
@@ -1845,7 +1845,7 @@ striptls
 tftp-proxy
 tunna
 webfixy
-webscarab
+#webscarab
 wsuspect-proxy
 ycrawler
 
@@ -1979,7 +1979,7 @@ scamper
 sctpscan
 sdn-toolkit
 seat
-shard
+#shard
 simple-lan-scan
 simplyemail
 sipi
@@ -2039,9 +2039,9 @@ dissy
 edb
 eresi
 flasm
-hookanalyser
+#hook-analyser
 jadx
-javasnoop
+#javasnoop
 jd-gui
 js-beautify
 jwscan
@@ -2117,7 +2117,7 @@ cmsmap
 complemento
 configpush
 conscan
-cookie-cadger
+#cookie-cadger
 cpfinder
 crackmapexec
 creepy
@@ -2390,7 +2390,7 @@ wapiti
 webenum
 webpwn3r
 webrute
-webscarab
+#webscarab
 webshag
 websploit
 webxploiter
@@ -2700,7 +2700,7 @@ liffy
 list-urls
 metoscan
 morxtraversal
-mosquito
+#mosquito
 multiinjector
 mwebfp
 nosqlmap
@@ -2769,7 +2769,7 @@ webexploitationtool
 webhandler
 webpwn3r
 webrute
-webscarab
+#webscarab
 webshag
 webshells
 webslayer
@@ -2786,7 +2786,7 @@ wordbrutepress
 wpbf
 wpbrute-rpc
 wpscan
-ws-attacker
+#ws-attacker
 wsfuzzer
 xsser
 xssless
@@ -2831,7 +2831,7 @@ grabitall
 gsd
 gtalk-decode
 handle
-hookanalyser
+#hook-analyser
 httpbog
 httprint-win32
 hyperion
@@ -2917,7 +2917,7 @@ grabitall
 gsd
 gtalk-decode
 handle
-hookanalyser
+#hook-analyser
 httpbog
 httprint-win32
 hyperion
