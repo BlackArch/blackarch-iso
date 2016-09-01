@@ -2347,6 +2347,7 @@ sc-make ;
 scout2 -h ;
 scrape-dns ;
 scrapy -h ;
+scratchabit -h ;
 script6 ;
 scrounge-ntfs -h ;
 sc_speedtrap -h ;
