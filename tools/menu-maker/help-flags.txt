@@ -2861,6 +2861,7 @@ vanguard -h ;
 var.py ;
 vbrute -h ;
 vbscan ;
+vcsmap ;
 vdbbin -h ;
 vega ;
 veil ;
