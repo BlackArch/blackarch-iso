@@ -2489,6 +2489,7 @@ snoopy-auth ;
 snoopy-ng -h ;
 snort -h ;
 snow -h ;
+snowman cd /usr/share/windows/snowman ; ls ;
 snscan cd /usr/share/windows/snscan ; ls ;
 socat -h ;
 social-vuln-scanner -h ;
