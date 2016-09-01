@@ -757,6 +757,7 @@ exploit-db -h ;
 exploitpack ;
 express ;
 expressInstall.swf ;
+exrex -h ;
 extract_hosts6.sh ;
 extracthosts -h ;
 extract_mft_record_slack.py ;
