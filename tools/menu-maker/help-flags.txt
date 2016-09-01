@@ -2341,6 +2341,7 @@ sc_filterpolicy -h ;
 scheck ;
 schnappi-dhcp --help ;
 sc_ipiddump -h ;
+sc-make ;
 scout2 -h ;
 scrape-dns ;
 scrapy -h ;
