@@ -690,6 +690,7 @@ dump_router6 ;
 dumpusers cd /usr/share/windows/dumpusers ; ls ;
 dumpzilla -h ;
 dupemap ;
+dutas -h ;
 eapeak -h ;
 eapmd5pass ;
 eapscan -h ;
