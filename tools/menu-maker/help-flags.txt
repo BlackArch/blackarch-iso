@@ -944,6 +944,7 @@ ghost-phisher ;
 ghostphisher ;
 gif2swf ;
 giskismet ;
+gitem -h ;
 githack ;
 gitminer -h ;
 gitrob -h ;
