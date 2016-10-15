@@ -2781,6 +2781,7 @@ tunna-proxy ;
 tunna-webserver ;
 tuxcut ;
 twofi --help ;
+typo-enumerator ;
 u2boat ;
 u2spewfoo ;
 u3-pwn ;
