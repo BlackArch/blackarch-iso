@@ -1983,6 +1983,7 @@ pmcma ;
 pmdump cd /usr/share/windows/pmdump ; ls ;
 png2swf ;
 pnscan -h ;
+pocsuite -h ;
 poison ;
 policygen -h ;
 pompem ;
