@@ -1503,6 +1503,7 @@ masscan --help ;
 matahari ;
 mat-gui ;
 mat -h ;
+matroschka -h ;
 mausezahn ;
 mbenum cd /usr/share/windows/mbenum-1.5.0 ; ls ;
 mboxgrep ;
