@@ -1388,6 +1388,7 @@ ktfconsole -h ;
 ktflab -h ;
 ktflinker -h ;
 ktfrun -h ;
+l0l ;
 l2cap-packet ;
 laf -h ;
 land ;
