@@ -278,6 +278,7 @@ bittwiste -h ;
 bittwist -h ;
 bj ;
 bkhive -h ;
+blackbox-scanner -h ;
 blackhash ;
 blackhole ;
 blackhole6 ;
