@@ -2635,6 +2635,7 @@ steghide --help ;
 stegolego ;
 stegosip ;
 stenographer -h ;
+stepic -h ;
 stompy ;
 storm-ring -h ;
 strip ;
