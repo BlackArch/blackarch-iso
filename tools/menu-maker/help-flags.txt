@@ -1855,6 +1855,7 @@ outlook-webapp-brute -h ;
 owabf ;
 owabf -h ;
 owasp-bywaf -h ;
+owasp-zsc ;
 owtf ;
 p0f-client -h ;
 p0f -h ;
