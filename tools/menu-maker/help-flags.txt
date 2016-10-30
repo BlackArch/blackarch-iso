@@ -3034,6 +3034,7 @@ wpbf -h ;
 wpbrute-rpc ;
 wpscan -h ;
 wpsweep cd /usr/share/windows/wpsweep ; ls ;
+wpxf ;
 wr_iwlist.sh ;
 ws-attacker ;
 wsdl2request ;
