@@ -966,6 +966,7 @@ goldeneye -h ;
 golismero -h ;
 goodork ;
 goofile ;
+google-explorer -h ;
 googlesub --help ;
 goog-mail ;
 gooscan -h ;
