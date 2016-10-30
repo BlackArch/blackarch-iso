@@ -2747,6 +2747,7 @@ tinyproxy -h ;
 tkiptun-ng --help ;
 tlsenum -h ;
 tlspretense ;
+tls-prober -h ;
 tlssled -h ;
 tnscmd ;
 tomcatwardeployer -h ;
