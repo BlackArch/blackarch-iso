@@ -1941,6 +1941,7 @@ peframe ;
 pehash ;
 pemcrack ;
 pemcracker ;
+penbox ;
 pentbox ;
 pepack ;
 peres ;
