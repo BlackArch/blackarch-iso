@@ -2288,6 +2288,7 @@ rtsort ;
 rubilyn cd /usr/share/rubilyn ; ls ;
 rubydns-check -h ;
 rulegen -h ;
+ruler -h ;
 runant.pl ;
 runant.py ;
 rva2ofs ;
