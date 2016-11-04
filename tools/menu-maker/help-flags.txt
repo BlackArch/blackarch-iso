@@ -116,6 +116,7 @@ antRun.pl ;
 apache-users ;
 aphopper ;
 api-dnsdumpster ;
+apkid -h ;
 apktool ;
 apkviewer -h ;
 apnbf -h ;
