@@ -1469,6 +1469,7 @@ maclookup -h ;
 macof -h ;
 mac-robber -h ;
 mactime ;
+magescan ;
 magicrescue ;
 magicsort ;
 magictree ;
