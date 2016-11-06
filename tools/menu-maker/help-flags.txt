@@ -823,6 +823,7 @@ filibuster -h ;
 fimap -h ;
 find-dns -h ;
 findmyhash -h ;
+findmyiphone ;
 finger_lookup ;
 firecat ;
 firewalk -h ;
