@@ -3006,6 +3006,7 @@ wget -h ;
 whatportis --help ;
 whatweb -h ;
 whirlpooldeep -h ;
+whitewidow -h ;
 whob ;
 whois -h ;
 wi-feye -h ;
