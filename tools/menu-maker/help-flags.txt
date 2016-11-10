@@ -1746,6 +1746,7 @@ node_query6 ;
 nomorexor ;
 nosqlmap ;
 notspikefile ;
+novahot -h ;
 nping -h ;
 nprint -h ;
 ns6 ;
