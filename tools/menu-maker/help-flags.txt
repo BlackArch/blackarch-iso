@@ -2470,6 +2470,8 @@ slist ;
 sloth ;
 slowhttptest -h ;
 slowloris ;
+smali-cfgs-flow -h ;
+smali-cfgs-xref -h ;
 smali -h ;
 smartphone-pentest-framework ;
 smartphone-pentest-framework -h ;
