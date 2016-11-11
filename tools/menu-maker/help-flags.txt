@@ -2969,6 +2969,7 @@ vulnerabilities-spider ;
 vulscan cd /usr/share/nmap/scripts/vulscan ; ls ;
 w3af-gui ;
 w3af -h ;
+wafninja -h ;
 wafp -h ;
 wafw00f -h ;
 waidps ;
