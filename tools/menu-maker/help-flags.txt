@@ -2473,6 +2473,7 @@ slowloris ;
 smali-cfgs-flow -h ;
 smali-cfgs-xref -h ;
 smali -h ;
+smalisca --help ;
 smartphone-pentest-framework ;
 smartphone-pentest-framework -h ;
 smbbf ;
