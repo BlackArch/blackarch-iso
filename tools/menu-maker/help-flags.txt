@@ -1123,6 +1123,7 @@ honeyd -h ;
 honeydstats -h ;
 honggfuzz -h ;
 hoover -h ;
+hoper ;
 hopper ;
 hoppy -h ;
 host ;
