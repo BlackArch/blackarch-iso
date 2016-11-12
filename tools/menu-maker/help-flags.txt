@@ -672,6 +672,7 @@ dotdotpwn -h ;
 dpeparser -h ;
 dpl4hydra.sh -h ;
 dpscan ;
+dracnmap ;
 dradis-configure ;
 dradis -h ;
 dradis-start ;
