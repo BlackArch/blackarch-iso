@@ -1750,6 +1750,7 @@ nmbscan ;
 nm -h ;
 node_query6 ;
 nomorexor ;
+nosqlattack ;
 nosqlmap ;
 notspikefile ;
 novahot -h ;
