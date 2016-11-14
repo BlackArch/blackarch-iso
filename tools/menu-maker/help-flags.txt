@@ -1359,6 +1359,7 @@ jpeg_extract ;
 js-beautify -h ;
 jshint ;
 jsql ;
+jsql-injection ;
 jumbo6 ;
 juncli ;
 junkie -h ;
