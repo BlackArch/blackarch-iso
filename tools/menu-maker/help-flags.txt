@@ -2849,6 +2849,7 @@ ubertooth-specan -h ;
 ubertooth-specan-ui ;
 ubertooth-uap -h ;
 ubertooth-util -h ;
+ubiquiti-probing ;
 ubitack -h ;
 udcli -h ;
 udo rpas-dfkaa ;
