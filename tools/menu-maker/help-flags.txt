@@ -272,6 +272,7 @@ binflow ;
 bing-ip2hosts ;
 bing-lfi-rfi -h ;
 binnavi ;
+binproxy --help ;
 binwalk ;
 binwalk-script ;
 binwally -h ;
