@@ -880,6 +880,7 @@ freeradius -h ;
 freport ;
 frida -h ;
 frisbeelite -h ;
+f-scrack ;
 fs-exploit ;
 fsnoop -h ;
 fs-nyarl -h ;
