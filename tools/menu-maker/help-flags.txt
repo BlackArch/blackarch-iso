@@ -686,6 +686,7 @@ dripper -h ;
 drone ;
 droopescan -h ;
 drozer ;
+drupal-module-enum ;
 drupalscan ;
 dscanner -h ;
 dsd -h ;
