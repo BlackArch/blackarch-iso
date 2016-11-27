@@ -3013,6 +3013,7 @@ waybackpack -h ;
 wbxml2request ;
 wcc -h ;
 wcch -h ;
+wce cd /usr/share/windows/wce ; ls ;
 webacoo -h ;
 webenum -h ;
 webexploitationtool ;
