@@ -139,6 +139,7 @@ aranea -h ;
 arduino ;
 arduino -h ;
 argdumper ;
+argon2 -h ;
 argusbug ;
 argusclientbug ;
 argus-clients -h ;
