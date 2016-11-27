@@ -585,6 +585,7 @@ det -h ;
 device-pharmer -h ;
 devilzc0de ;
 devilzc0de.py ;
+dexpatcher -h ;
 dff-scanner cd /usr/share/dff-scanner ;
 dftest ;
 dhcdrop -h ;
