@@ -2080,6 +2080,7 @@ ptunnel -h ;
 pullcves ;
 pulsar -h ;
 pwd-hash -h ;
+pwdlogy ;
 pwdump cd /usr/share/windows/pwdump ; ls ;
 pw-inspector -h ;
 pwnat -h ;
