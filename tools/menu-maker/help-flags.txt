@@ -2009,6 +2009,7 @@ pkcrack-extract ;
 pkcrack-findkey ;
 pkcrack-makekey ;
 pkcrack-zipdecrypt ;
+pkt2flow -h ;
 plcscan -h ;
 plecost -h ;
 plown -h ;
