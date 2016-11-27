@@ -1450,6 +1450,7 @@ lft ;
 libdisasm -h ;
 libpst -h ;
 liffy -h ;
+lightbulb -h ;
 linenum -h ;
 linset ;
 linux-exploit-suggester -h ;
