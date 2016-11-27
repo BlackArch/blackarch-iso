@@ -2081,6 +2081,7 @@ pwd-hash -h ;
 pwdump cd /usr/share/windows/pwdump ; ls ;
 pw-inspector -h ;
 pwnat -h ;
+pwndbg cd /usr/share/pwndbg ; ls ;
 pwntools-asm ;
 pwntools-disasm ;
 pwntools -h ;
