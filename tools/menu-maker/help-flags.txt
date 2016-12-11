@@ -3099,6 +3099,7 @@ wpaclean ;
 wpbf -h ;
 wpbrute-rpc ;
 wpscan -h ;
+wpsik -h ;
 wpsweep cd /usr/share/windows/wpsweep ; ls ;
 wpxf ;
 wr_iwlist.sh ;
