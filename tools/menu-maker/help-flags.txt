@@ -2313,6 +2313,7 @@ rr -h ;
 rrs -h ;
 rs6 ;
 rsakeyfind ;
+rsatool -h ;
 rsmangler -h ;
 rsmurf6 ;
 rspet-client ;
