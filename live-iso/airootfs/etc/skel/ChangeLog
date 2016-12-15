@@ -1,3 +1,10 @@
+===> 2016.12.XX
+	- include linux kernel 4.8.X
+	- added more than 100 new tools
+	- updated all blackarch tools
+	- updated all system packages
+	- updated menu entries for window managers (awesome, fluxbox, openbox)
+
 ===> 2016.08.31
 	- bugfix: blackarch-installer
 	- shrink ISO size (DVD-R support)

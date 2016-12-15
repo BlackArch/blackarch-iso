@@ -32,7 +32,7 @@ fi
 su -c "cp -r /etc/skel/.* /root/" root
 
 # setup repository, add pacman.conf entry, sync databases
-su -c 'curl -k -s https://blackarch.org/strap.sh | sh' root
+su -c 'curl -s https://blackarch.org/strap.sh | sh' root
 
 # sys updates, cleanups, etc.
 su -c 'pacman -Syyu --noconfirm' root
