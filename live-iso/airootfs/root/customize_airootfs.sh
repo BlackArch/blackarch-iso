@@ -25,11 +25,11 @@ systemctl enable pacman-init.service choose-mirror.service
 # create the user directory for live session
 if [ ! -d /root ]
 then
-	mkdir /root && chown root /root
+	mkdir /root && chmod 700 /root && chown -R root:root /root
 fi
 
 # copy files over to home
-su -c "cp -r /etc/skel/.* /root/" root
+su -c "cp -r /etc/skel/. /root/." root
 
 # setup repository, add pacman.conf entry, sync databases
 su -c 'curl -s https://blackarch.org/strap.sh | sh' root

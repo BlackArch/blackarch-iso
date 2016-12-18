@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-feh --bg-scale /usr/share/blackarch/wallpaper.png
-VBoxClient-all
+VBoxClient-all &
+exec feh --bg-scale /usr/share/blackarch/wallpaper.png
