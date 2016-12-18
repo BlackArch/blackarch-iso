@@ -149,6 +149,7 @@ openvas-cli
 openvas-libraries
 openvas-manager
 openvas-scanner
+open-vm-tools
 openvpn
 ophcrack
 p0f
@@ -247,6 +248,7 @@ wpa_supplicant
 wpscan
 wvdial
 xf86-input-synaptics
+xf86-input-vmmouse
 xf86-video-apm
 xf86-video-ark
 #xf86-video-ast
