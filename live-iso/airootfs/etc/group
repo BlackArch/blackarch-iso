@@ -31,7 +31,7 @@ floppy:x:94:
 storage:x:95:
 scanner:x:96:
 input:x:97:
-power:x:98:
+power:x:98:root,lxdm
 nobody:x:99:
 users:x:100:
 systemd-journal:x:190:
@@ -74,5 +74,5 @@ snort:x:29:
 sslh:x:987:
 ceph:x:986:
 unbound:x:985:
-lxdm:x:984:
+lxdm:x:984:root
 vboxusers:x:108:
