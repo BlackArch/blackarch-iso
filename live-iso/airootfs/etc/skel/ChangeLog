@@ -1,5 +1,6 @@
 ===> 2016.12.XX
 	- include linux kernel 4.8.X
+	- fix lxdm shutdown/reboot issue
 	- added more than 100 new tools
 	- updated all blackarch tools
 	- updated all system packages

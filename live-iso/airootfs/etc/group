@@ -31,7 +31,7 @@ floppy:x:94:
 storage:x:95:
 scanner:x:96:
 input:x:97:
-power:x:98:root,lxdm
+power:x:98:
 nobody:x:99:
 users:x:100:
 systemd-journal:x:190:
@@ -43,6 +43,7 @@ systemd-resolve:x:195:
 systemd-journal-upload:x:999:
 systemd-coredump:x:998:
 systemd-journal-remote:x:997:
+blackarch:x:1000:
 git:x:996:
 avahi:x:84:
 air:x:1001:
@@ -74,5 +75,5 @@ snort:x:29:
 sslh:x:987:
 ceph:x:986:
 unbound:x:985:
-lxdm:x:984:root
+lxdm:x:984:
 vboxusers:x:108:

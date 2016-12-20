@@ -12,6 +12,10 @@ cp -aT /etc/skel/ /root/
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
+sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
+sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
+sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
+
 systemctl enable pacman-init.service choose-mirror.service lxdm.service dbus
 systemctl set-default graphical.target
 
@@ -73,3 +77,6 @@ su -c 'rm -r /etc/initcpio' root
 
 # add install.txt file
 su -c 'echo "type blackarch-install and follow the instructions" > /root/install.txt'
+
+# GDK Pixbuf
+gdk-pixbuf-query-loaders --update-cache
