@@ -1,3 +1,7 @@
+===> 2016.12.29
+	- add new installer 0.3.1 (support: wlan, vmware, btrfs)
+	- updated all blackarch tools
+
 ===> 2016.12.20
 	- include linux kernel 4.8.13
 	- fix lxdm shutdown/reboot issue
