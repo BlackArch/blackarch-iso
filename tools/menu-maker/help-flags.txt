@@ -2238,6 +2238,8 @@ responder -h ;
 reverse -h ;
 reverseraider ;
 revipd ;
+revsh -h ;
+revsh-in_the_key_of_c -h ;
 rext ;
 rfcat -h ;
 rfcat_server ;
