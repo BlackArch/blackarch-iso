@@ -2052,6 +2052,7 @@ prepare4sqlfuzzer ;
 prettypacket -h ;
 princeprocessor -h ;
 procan -h ;
+proctal -h ;
 procyon ;
 profuzz -h ;
 prometheus -h ;
