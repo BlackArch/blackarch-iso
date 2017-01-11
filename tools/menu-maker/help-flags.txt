@@ -740,6 +740,7 @@ elfpatch ;
 elftoc --help ;
 elite-proxy-finder -h ;
 emldump -h ;
+empire -h ;
 em-proxy -h ;
 enabler ;
 encodeshellcode -h ;
