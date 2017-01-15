@@ -590,6 +590,8 @@ device-pharmer -h ;
 devilzc0de ;
 devilzc0de.py ;
 dexpatcher -h ;
+dff-cli -h ;
+dff-gui ;
 dff-scanner cd /usr/share/dff-scanner ;
 dftest ;
 dhcdrop -h ;
