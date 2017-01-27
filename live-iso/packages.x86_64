@@ -262,7 +262,6 @@ cryptonark
 csrftester
 ctunnel
 cuckoo
-cudahashcat
 cupp
 cutycapt
 cvechecker
@@ -1313,7 +1312,6 @@ trid
 trinity
 triton
 trixd00r
-truecrack
 trufflehog
 tsh
 tsh-sctp
@@ -1370,7 +1368,6 @@ viproy-voipkit
 virustotal
 vivisect
 vlan-hopping
-vmcloak
 vnak
 vnc-bypauth
 vncrack
