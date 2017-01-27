@@ -21,12 +21,12 @@ aiengine
 aimage
 air
 airflood
+airgeddon
 airgraph-ng
 airoscript
 airpwn
 albatar
 allthevhosts
-amoco
 analyzepesig
 androguard
 androick
@@ -74,7 +74,6 @@ autopwn
 autosint
 auto-xor-decryptor
 azazel
-b2sum
 backcookie
 backdoor-factory
 backdoorme
@@ -109,6 +108,7 @@ binex
 binflow
 bing-ip2hosts
 bing-lfi-rfi
+bingoo
 binnavi
 binproxy
 binwalk
@@ -130,9 +130,7 @@ blind-sql-bitshifting
 bluebox-ng
 bluebugger
 bluediving
-#bluefog
 bluelog
-#bluemaho
 bluepot
 blueprint
 blueranger
@@ -140,8 +138,6 @@ bluescan
 bluesnarfer
 bluphish
 bluto
-#bmap
-#bmap-tools
 bob-the-butcher
 bof-detector
 bokken
@@ -196,6 +192,7 @@ check-weak-dh-ssh
 cheetah-suite
 chiasm-shell
 chiron
+chisel
 chkrootkit
 chopshop
 choronzon
@@ -228,6 +225,7 @@ cloakify
 cloudflare-enum
 cloudget
 clusterd
+cminer
 cmospwd
 cms-explorer
 cms-few
@@ -264,7 +262,7 @@ cryptonark
 csrftester
 ctunnel
 cuckoo
-#cudahashcat
+cudahashcat
 cupp
 cutycapt
 cvechecker
@@ -278,6 +276,7 @@ dark-dork-searcher
 darkjumper
 darkmysqli
 dartspylru
+datasploit
 davoset
 davscan
 davtest
@@ -294,6 +293,7 @@ detect-it-easy
 device-pharmer
 dex2jar
 dexpatcher
+dff
 dff-scanner
 dhcdrop
 dhcpf
@@ -309,7 +309,6 @@ dirscanner
 disitool
 dislocker
 dissector
-dissy
 dizzy
 dmitry
 dnmap
@@ -371,7 +370,6 @@ easyfuzzer
 eazy
 ecfs
 edb
-efitools
 eigrp-tools
 eindeutig
 elettra
@@ -379,6 +377,7 @@ elettra-gui
 elfparser
 elite-proxy-finder
 emldump
+empire
 enabler
 encodeshellcode
 ent
@@ -398,6 +397,7 @@ evilmaid
 evtkit
 exabgp
 exescan
+exitmap
 expimp-lookup
 exploit-db
 exploitpack
@@ -413,7 +413,6 @@ fakemail
 fakenetbios
 fang
 faraday
-#fatback
 fbht
 fbid
 featherduster
@@ -425,6 +424,7 @@ fierce
 fiked
 filebuster
 filefuzz
+ file owasp-zsc
 filibuster
 fimap
 find-dns
@@ -450,7 +450,6 @@ formatstringexploiter
 fpdns
 fport
 fprotlogparser
-#fragroute
 fraud-bridge
 freeipmi
 frida
@@ -503,7 +502,6 @@ goog-mail
 gooscan
 gophish
 gplist
-gpredict
 grabbb
 grabber
 grabitall
@@ -513,7 +511,6 @@ grr
 gsd
 gtalk-decode
 gtp-scan
-#gummiboot
 guymager
 gwcheck
 gwtenum
@@ -528,6 +525,7 @@ hasere
 hashcat-utils
 hashdeep
 hasher
+hash-extender
 hashfind
 hashid
 hashpump
@@ -539,6 +537,7 @@ hdcp-genkey
 hdmi-sniff
 heartbleed-honeypot
 hemingway
+hercules-payload
 hex2bin
 hexinject
 hexorbase
@@ -631,7 +630,6 @@ isip
 isme
 isr-form
 ivre
-jadx
 jaidam
 javasnoop
 jbrofuzz
@@ -745,7 +743,6 @@ matroschka
 mausezahn
 mbenum
 mboxgrep
-mdbtools
 mdcrack
 mdk3
 mdns-recon
@@ -779,6 +776,7 @@ mobsf
 modscan
 moloch
 monocle
+morpheus
 morxbook
 morxbrute
 morxbtcrack
@@ -791,7 +789,6 @@ mosca
 mosquito
 mots
 motsa-dns-spoofing
-#mousejack-transmit
 mp3nema
 mptcp
 mptcp-abuse
@@ -862,7 +859,6 @@ ntp-fingerprint
 ntp-ip-enum
 oat
 obexstress
-obfsproxy
 oclhashcat
 ocs
 ohrwurm
@@ -935,6 +931,7 @@ pemcrack
 pemcracker
 penbox
 pentbox
+pentmenu
 periscope
 pev
 pextractor
@@ -967,6 +964,7 @@ pnscan
 pocsuite
 poison
 pompem
+poracle
 portmanteau
 portspoof
 posttester
@@ -976,8 +974,8 @@ ppscan
 pr0cks
 prads
 praeda
-#prebootloader
 princeprocessor
+proctal
 procyon
 profuzz
 prometheus
@@ -1006,6 +1004,7 @@ pyew
 pyexfil
 pyfiscan
 pyinstaller
+pyjfuzz
 pyminifakedns
 pyrasite
 pyrit
@@ -1013,10 +1012,10 @@ pyssltest
 pytacle
 pytbull
 pythem
-#python-pin
 python-utidylib
 qark
 quickrecon
+quicksand-lite
 radamsa
 radiography
 rainbowcrack
@@ -1042,6 +1041,7 @@ relay-scanner
 replayproxy
 responder
 revipd
+revsh
 rex
 rext
 rfcat
@@ -1243,7 +1243,6 @@ ssrf-proxy
 stackflow
 starttls-mitm
 statsprocessor
-#stebb
 stegolego
 stegosip
 stenographer
@@ -1309,13 +1308,13 @@ tor-browser-en
 torshammer
 tpcat
 tplmap
-#tracedump
 treasure
 trid
 trinity
 triton
 trixd00r
-#truecrack
+truecrack
+trufflehog
 tsh
 tsh-sctp
 tunna
@@ -1325,7 +1324,6 @@ typo-enumerator
 u3-pwn
 uatester
 ubertooth
-#ubertooth-kismet
 ubiquiti-probing
 ubitack
 udis86
@@ -1363,6 +1361,7 @@ vbscan
 vcsmap
 vega
 veil
+veles
 vfeed
 videosnarf
 vinetto
@@ -1371,7 +1370,7 @@ viproy-voipkit
 virustotal
 vivisect
 vlan-hopping
-#vmcloak
+vmcloak
 vnak
 vnc-bypauth
 vncrack
@@ -1392,7 +1391,6 @@ wafp
 waidps
 waldo
 wapiti
-wavemon
 waybackpack
 wcc
 wce
@@ -1444,7 +1442,6 @@ wirouter-keyrec
 witchxtool
 wlan2eth
 wmat
-#wmi-client
 wnmap
 wol-e
 wolpertinger
@@ -1500,7 +1497,6 @@ zerowine
 zgrab
 zipdump
 zizzania
-#zssh
 zulu
 zykeys
 zzuf

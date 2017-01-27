@@ -1,6 +1,6 @@
 ===> 2017.01.27
 	- add 20 new tools
-	- update installer (bugfixes)
+	- update blackarch installer to 0.3.2 (bugfixes)
 	- fix shadow permissions (thx to ldionmarcil)
 	- fix f*cking ruby tools (wpscan, metasploit, etc.)
 	- include linux kernel 4.9.6
