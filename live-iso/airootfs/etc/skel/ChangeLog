@@ -1,3 +1,14 @@
+===> 2017.01.27
+	- add 20 new tools
+	- update installer (bugfixes)
+	- fix shadow permissions (thx to ldionmarcil)
+	- fix f*cking ruby tools (wpscan, metasploit, etc.)
+	- include linux kernel 4.9.6
+	- add vmware support (installer)
+	- updated all system packages
+	- updated all blackarch tools
+	- updated menu entries for windows managers (awesome, fluxbox, openbox)
+
 ===> 2016.12.29
 	- add new installer 0.3.1 (support: wlan, vmware, btrfs)
 	- updated all blackarch tools
