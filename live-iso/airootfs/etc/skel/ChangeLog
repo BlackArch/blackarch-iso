@@ -5,6 +5,7 @@
 	- fix f*cking ruby tools (wpscan, metasploit, etc.)
 	- include linux kernel 4.9.6
 	- add vmware support (installer)
+	- update locale.gen list
 	- updated all system packages
 	- updated all blackarch tools
 	- updated menu entries for windows managers (awesome, fluxbox, openbox)
