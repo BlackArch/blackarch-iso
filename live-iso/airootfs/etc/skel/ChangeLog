@@ -1,6 +1,3 @@
-===> 2017.01.31
-	- fix LXDM start-up problems
-
 ===> 2017.01.28
 	- add 20 new tools
 	- update blackarch installer to 0.3.2 (bugfixes)
