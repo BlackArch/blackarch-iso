@@ -757,6 +757,7 @@ enum4linux ;
 enumiax ;
 enum-shares -h ;
 enyelkm -h ;
+eraser cd /usr/share/windows/eraser ; ls ;
 erase_registrations ;
 et-flip ;
 etherape ;
