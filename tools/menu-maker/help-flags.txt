@@ -2494,6 +2494,7 @@ sha1deep -h ;
 sha256deep -h ;
 shard --help ;
 shareenum ;
+shellcheck ;
 shellcodecs ; ls ;
 shellcraft -h ;
 shelling ;
