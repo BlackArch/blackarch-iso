@@ -2047,6 +2047,7 @@ plcscan -h ;
 plecost -h ;
 plown -h ;
 plugin_test ;
+plutil ;
 pmap cd /usr/share/pmap ; ls ;
 pmcma ;
 pmdump cd /usr/share/windows/pmdump ; ls ;
