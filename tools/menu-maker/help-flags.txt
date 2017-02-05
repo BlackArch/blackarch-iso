@@ -1745,6 +1745,7 @@ neighbor-fingerprint --help ;
 nemesis -h ;
 netactview ;
 netbios-share-scanner -h ;
+netbus cd /usr/share/windows/netbus ; ls ;
 netcmd -h ;
 netcon -H ;
 net-creds -h ;
