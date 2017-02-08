@@ -2508,6 +2508,8 @@ shitflood ;
 shjs ;
 shocker -h ;
 shodan ;
+shootback-master -h ;
+shootback-slaver -h ;
 shortfuzzy -h ;
 sidguess ;
 siege ;
