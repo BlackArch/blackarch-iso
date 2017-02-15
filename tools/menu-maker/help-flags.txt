@@ -517,6 +517,7 @@ credmap -h ;
 creds-py -h ;
 creepy ;
 crowbar --help ;
+crozono -h ;
 crunch -h ;
 cryptcat -h ;
 cryptonark -h ;
