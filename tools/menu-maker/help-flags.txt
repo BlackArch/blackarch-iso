@@ -1,3 +1,15 @@
+wxHexEditor ;
+suture ;
+testdisk ;
+tor-browser-en ;
+vuls ;
+cupp3 -h ;
+soapui ;
+interpatch -h ;
+js-beautify2 -h ;
+plasma -h ;
+ld-shatner ;
+dirsearch -h ;
 0d1n ;
 0trace ;
 3proxy --help ;
