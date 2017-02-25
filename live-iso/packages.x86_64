@@ -3,6 +3,7 @@
 3proxy
 3proxy-win32
 42zip
+a2sv
 abcd
 acccheck
 ace
@@ -15,6 +16,7 @@ aeskeyfind
 aespipe
 aesshell
 afflib
+agafi
 against
 aggroargs
 aiengine
@@ -27,6 +29,7 @@ airoscript
 airpwn
 albatar
 allthevhosts
+#amoco
 analyzepesig
 androguard
 androick
@@ -47,6 +50,7 @@ apache-users
 aphopper
 api-dnsdumpster
 apkid
+apkstudio
 apnbf
 appmon
 apt2
@@ -59,16 +63,22 @@ argus-clients
 armitage
 armscgen
 arpalert
+#arpantispoofer
 arpoison
 arpon
+arpstraw
 arpwner
 artillery
+artlas
 arybo
 asleap
 asp-audit
+atear
 athena-ssl-scanner
 atscan
 atstaketools
+automato
+autonessus
 autopsy
 autopwn
 autosint
@@ -77,8 +87,10 @@ azazel
 backcookie
 backdoor-factory
 backdoorme
+backdoorppt
 backfuzz
 backhack
+backorifice
 balbuzard
 bamf-framework
 bandicoot
@@ -86,6 +98,7 @@ barf
 base64dump
 basedomainname
 batctl
+#ba-testpkg
 batman-adv
 batman-alfred
 bbqsql
@@ -118,7 +131,6 @@ birp
 bitdump
 bittwist
 bkhive
-blackarch-config-openbox
 blackarch-menus
 blackbox-scanner
 blackhash
@@ -130,7 +142,9 @@ blind-sql-bitshifting
 bluebox-ng
 bluebugger
 bluediving
+#bluefog
 bluelog
+#bluemaho
 bluepot
 blueprint
 blueranger
@@ -138,6 +152,8 @@ bluescan
 bluesnarfer
 bluphish
 bluto
+#bmap
+#bmap-tools
 bob-the-butcher
 bof-detector
 bokken
@@ -152,6 +168,7 @@ brute12
 bruteforce-wallet
 brutessh
 brutex
+brutexss
 brutus
 bsqlbf
 bsqlinjector
@@ -167,6 +184,7 @@ burpsuite
 buttinsky
 bvi
 bytecode-viewer
+cachedump
 camscan
 canari
 cangibrina
@@ -255,6 +273,7 @@ creds
 creepy
 crosstool-ng
 crowbar
+crozono
 crunch
 crypthook
 cryptohazemultiforcer
@@ -262,6 +281,7 @@ cryptonark
 csrftester
 ctunnel
 cuckoo
+#cudahashcat
 cupp
 cutycapt
 cvechecker
@@ -303,11 +323,12 @@ dirb
 dirbuster
 dirbuster-ng
 directorytraversalscan
-dirs3arch
 dirscanner
+dirsearch
 disitool
 dislocker
 dissector
+#dissy
 dizzy
 dmitry
 dnmap
@@ -331,6 +352,7 @@ dnsteal
 dnstwist
 dnswalk
 domain-analyzer
+domain-stats
 domi-owned
 doona
 doork
@@ -340,6 +362,7 @@ dpeparser
 dpscan
 dracnmap
 dradis
+dradis-ce
 dragon-backdoor
 driftnet
 dripcap
@@ -354,6 +377,7 @@ dsfs
 dsjs
 dsss
 dsxs
+dudley
 dumb0
 dump1090
 dumpacl
@@ -386,6 +410,7 @@ enumiax
 enum-shares
 enyelkm
 epicwebhoneypot
+eraser
 erase-registrations
 eresi
 etherchange
@@ -405,13 +430,16 @@ extracthosts
 eyepwn
 eyewitness
 facebot
+facebrok
 facebrute
 fakeap
 fakedns
 fakemail
 fakenetbios
+#fakenet-ng
 fang
 faraday
+#fatback
 fbht
 fbid
 featherduster
@@ -423,11 +451,12 @@ fierce
 fiked
 filebuster
 filefuzz
- file owasp-zsc
+fileintel
 filibuster
 fimap
 find-dns
 findmyiphone
+findsploit
 firecat
 firewalk
 firmwalker
@@ -436,6 +465,7 @@ firstexecution
 fl0p
 flamerobin
 flare
+flare-floss
 flashlight
 flashscanner
 flasm
@@ -449,14 +479,16 @@ formatstringexploiter
 fpdns
 fport
 fprotlogparser
+#fragroute
 fraud-bridge
 freeipmi
-frida
+#frida
 frisbeelite
 f-scrack
 fs-exploit
 fsnoop
 fs-nyarl
+fssb
 fstealer
 ftester
 ftp-fuzz
@@ -473,6 +505,7 @@ fuzzdiff
 fuzztalk
 g72x++
 galleta
+gatecrasher
 gef
 genlist
 geoedge
@@ -489,6 +522,7 @@ githack
 gitminer
 gitrob
 gittools
+glue
 gnutls2
 gobd
 goldeneye
@@ -501,6 +535,7 @@ goog-mail
 gooscan
 gophish
 gplist
+#gpredict
 grabbb
 grabber
 grabitall
@@ -510,6 +545,7 @@ grr
 gsd
 gtalk-decode
 gtp-scan
+#gummiboot
 guymager
 gwcheck
 gwtenum
@@ -605,6 +641,7 @@ indxparse
 inetsim
 infip
 inguma
+insanity
 intercepter-ng
 interrogate
 intersect
@@ -621,6 +658,7 @@ iphoneanalyzer
 ip-https-tools
 ipmipwn
 ipscan
+iptodomain
 iptv
 ipv6toolkit
 ircsnapshot
@@ -628,7 +666,9 @@ irpas
 isip
 isme
 isr-form
+issniff
 ivre
+jaadas
 jaidam
 javasnoop
 jbrofuzz
@@ -658,6 +698,7 @@ kautilya
 keimpx
 kerbcrack
 khc
+kickthemout
 killerbee
 kippo
 kismet2earth
@@ -694,13 +735,14 @@ lfi-scanner
 lfi-sploiter
 lfle
 lft
+lhf
 libdisasm
-libewf
 liffy
 lightbulb
 linenum
 linset
 linux-exploit-suggester
+linux-exploit-suggester.sh
 lisa.py
 list-urls
 littleblackbox
@@ -720,11 +762,13 @@ magicrescue
 magictree
 make-pdf
 maketh
+malboxes
 malcom
 malheur
 maligno
 malmon
 maltego
+maltrail
 maltrieve
 malwareanalyser
 malware-check-tool
@@ -742,6 +786,7 @@ matroschka
 mausezahn
 mbenum
 mboxgrep
+#mdbtools
 mdcrack
 mdk3
 mdns-recon
@@ -761,12 +806,14 @@ mibble
 middler
 mikrotik-npk
 mimikatz
+mingsweeper
 minimodem
 minimysqlator
 miranda-upnp
 missidentify
 missionplanner
 mitmap
+mitmap-old
 mitmer
 mitmf
 mkbrutus
@@ -774,6 +821,7 @@ mobiusft
 mobsf
 modscan
 moloch
+mongoaudit
 monocle
 morpheus
 morxbook
@@ -788,6 +836,7 @@ mosca
 mosquito
 mots
 motsa-dns-spoofing
+#mousejack-transmit
 mp3nema
 mptcp
 mptcp-abuse
@@ -808,6 +857,7 @@ mysql2sqlite
 nacker
 naft
 nasnum
+nbname
 nbnspoof
 nbtenum
 nbtool
@@ -818,6 +868,7 @@ neglected
 neighbor-cache-fingerprinter
 netactview
 netbios-share-scanner
+netbus
 netcommander
 netcon
 netdiscover
@@ -828,6 +879,7 @@ netscan
 netscan2
 netsed
 netsniff-ng
+netstumbler
 network-app-stress-tester
 networkmap
 netzob
@@ -838,6 +890,7 @@ nfspy
 nfsshell
 nield
 nimbostratus
+nipe
 nipper
 nishang
 nkiller2
@@ -856,9 +909,10 @@ ntds-decode
 ntpdos
 ntp-fingerprint
 ntp-ip-enum
+nullinux
 oat
 obexstress
-oclhashcat
+#oclhashcat
 ocs
 ohrwurm
 oledump
@@ -872,11 +926,13 @@ onionshare
 opendoor
 openstego
 opensvp
+operative
 orakelcrackert
 origami
 o-saft
 oscanner
 osinterator
+osrframework
 ostinato
 osueta
 otori
@@ -893,6 +949,7 @@ packetsender
 packit
 pacumen
 padbuster
+pafish
 paketto
 panhunt
 panoptic
@@ -909,6 +966,7 @@ pasv-agrsv
 patator
 patchkit
 pathzuzu
+payloadmask
 pblind
 pcapfex
 pcapfix
@@ -930,6 +988,7 @@ pemcrack
 pemcracker
 penbox
 pentbox
+pentestly
 pentmenu
 periscope
 pev
@@ -937,6 +996,7 @@ pextractor
 pgdbf
 phemail
 phoss
+php-findsock-shell
 php-mt-seed
 php-rfi-payload-decoder
 phpsploit
@@ -955,6 +1015,7 @@ plasma
 plcscan
 plecost
 plown
+plutil
 pmap
 pmcma
 pmdump
@@ -968,11 +1029,15 @@ portmanteau
 portspoof
 posttester
 powerfuzzer
+powerops
 powersploit
+ppee
 ppscan
 pr0cks
 prads
 praeda
+#prebootloader
+pret
 princeprocessor
 proctal
 procyon
@@ -990,6 +1055,7 @@ pscan
 pshitt
 pstoreview
 ptf
+pth-toolkit
 ptunnel
 pulsar
 pwd-hash
@@ -998,6 +1064,7 @@ pwdump
 pwnat
 pwndbg
 pwntools
+pydictor
 pyersinia
 pyew
 pyexfil
@@ -1011,6 +1078,7 @@ pyssltest
 pytacle
 pytbull
 pythem
+#python-pin
 python-utidylib
 qark
 quickrecon
@@ -1020,12 +1088,14 @@ radiography
 rainbowcrack
 ranger-scanner
 rarcrack
+rasenum
 ratproxy
 rawr
 rcracki-mt
 rdesktop-brute
 rebind
 recon-ng
+reconscan
 recoverjpeg
 recstudio
 recuperabit
@@ -1039,6 +1109,7 @@ reglookup
 relay-scanner
 replayproxy
 responder
+reverseip
 revipd
 revsh
 rex
@@ -1063,6 +1134,7 @@ routersploit
 rp
 rpak
 rpcsniffer
+rpctools
 rpdscan
 rr
 rrs
@@ -1116,6 +1188,7 @@ sfuzz
 shard
 shareenum
 shellcodecs
+shellinabox
 shelling
 shellme
 shellnoob
@@ -1124,6 +1197,7 @@ sherlocked
 shitflood
 shocker
 shodan
+shootback
 shortfuzzy
 sidguesser
 sigspotter
@@ -1131,6 +1205,7 @@ silk
 simple-ducky
 simpleemailspoofer
 simple-lan-scan
+simplify
 simplyemail
 sinfp
 siparmyknife
@@ -1189,13 +1264,16 @@ snort
 snow
 snowman
 snscan
+snuck
 soapui
 social-vuln-scanner
+socketfuzz
 sockstat
 soot
 spade
 spaf
 sparta
+spartan
 sparty
 spectools
 speedpwn
@@ -1220,6 +1298,7 @@ sqlivulscan
 sqlninja
 sqlpat
 sqlping
+sqlpowerinjector
 sqlsus
 ssdp-scanner
 sshatter
@@ -1242,6 +1321,7 @@ ssrf-proxy
 stackflow
 starttls-mitm
 statsprocessor
+#stebb
 stegolego
 stegosip
 stenographer
@@ -1250,6 +1330,7 @@ stompy
 storm-ring
 striptls
 strutscan
+sub7
 subdomainer
 subterfuge
 sucrack
@@ -1270,6 +1351,7 @@ tabi
 taof
 tbear
 tcgetkey
+tchunt-ng
 tckfc
 tcpcontrol-fuzzer
 tcpextract
@@ -1285,6 +1367,7 @@ testssl
 tftp-bruteforce
 tftp-fuzz
 tftp-proxy
+tgcd
 thc-keyfinder
 thc-pptp-bruter
 thc-smartbrute
@@ -1295,7 +1378,9 @@ tiger
 tilt
 timegen
 tinfoleak
+tinfoleak2
 tlsenum
+tls-fingerprinting
 tlspretense
 tls-prober
 tlssled
@@ -1307,11 +1392,13 @@ tor-browser-en
 torshammer
 tpcat
 tplmap
+#tracedump
 treasure
 trid
 trinity
 triton
 trixd00r
+#truecrack
 trufflehog
 tsh
 tsh-sctp
@@ -1322,6 +1409,7 @@ typo-enumerator
 u3-pwn
 uatester
 ubertooth
+#ubertooth-kismet
 ubiquiti-probing
 ubitack
 udis86
@@ -1342,6 +1430,7 @@ unsecure
 untwister
 upnp-pentest-toolkit
 upnpscan
+uppwn
 urlcrazy
 urldigger
 urlview
@@ -1368,12 +1457,14 @@ viproy-voipkit
 virustotal
 vivisect
 vlan-hopping
+#vmcloak
 vnak
 vnc-bypauth
 vncrack
 voiper
 voiphopper
 voipong
+volafox
 voltron
 vsaudit
 vscan
@@ -1385,6 +1476,7 @@ w3af
 waffit
 wafninja
 wafp
+wafpass
 waidps
 waldo
 wapiti
@@ -1413,6 +1505,7 @@ weevely
 wepbuster
 wfuzz
 whatportis
+whatsmyname
 whatweb
 whitewidow
 wi-feye
@@ -1439,6 +1532,7 @@ wirouter-keyrec
 witchxtool
 wlan2eth
 wmat
+#wmi-client
 wnmap
 wol-e
 wolpertinger
@@ -1455,11 +1549,13 @@ ws-attacker
 wsfuzzer
 wsuspect-proxy
 wups
+wuzz
 wxhexeditor
 wyd
 xcat
 xcavator
 xcname
+xerosploit
 xorbruteforcer
 xorsearch
 xortool
@@ -1469,6 +1565,7 @@ xpl-search
 xprobe2
 x-scan
 xspy
+xsscrapy
 xsser
 xssless
 xsspy
@@ -1477,6 +1574,7 @@ xssscan
 xsssniper
 xsstracer
 xssya
+xwaf
 xxeinjector
 yaaf
 yaf
@@ -1493,7 +1591,9 @@ zarp
 zerowine
 zgrab
 zipdump
+zirikatu
 zizzania
+#zssh
 zulu
 zykeys
 zzuf
