@@ -1,3 +1,12 @@
+===> 2017.03.01
+	- add more than 50 new tools
+	- update blackarch installer to 0.3.3 (bugfixes)
+	- fix several tools (dependencies, installs)
+	- include kernel 4.9.11
+	- updated all system packages
+	- updated all blackarch tools
+	- updated menu entries for windows managers (awesome, fluxbox, openbox)
+
 ===> 2017.01.28
 	- add 20 new tools
 	- update blackarch installer to 0.3.2 (bugfixes)
