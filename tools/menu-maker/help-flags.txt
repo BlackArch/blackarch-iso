@@ -595,6 +595,7 @@ ddrescuelog --help ;
 deblaze ;
 decloakify ;
 decode-g72x -h ;
+deen ;
 delAllHost.py ;
 delAllServiceClosed.py ;
 delldrac -h ;
