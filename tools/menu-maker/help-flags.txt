@@ -1285,6 +1285,7 @@ INDXParse.py ;
 inetsim --help ;
 infect ;
 infip -h ;
+infoga -h ;
 ingumagui ;
 inguma -h ;
 inject_alive6 ;
