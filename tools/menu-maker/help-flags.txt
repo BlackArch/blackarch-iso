@@ -410,6 +410,7 @@ centry -h ;
 cewl-fab ;
 cewl -h ;
 cflow -h ;
+cfr --help ;
 cg_annotate ;
 cg_diff ;
 cg_merge ;
