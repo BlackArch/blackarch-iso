@@ -486,6 +486,7 @@ cmsfuzz ;
 cmsmap -h ;
 cnamulator -h ;
 cnark ;
+cntlm -h ;
 codequery ;
 codeslicer ;
 codetective -h ;
