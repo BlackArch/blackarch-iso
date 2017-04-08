@@ -2425,6 +2425,8 @@ rpak cd /usr/share/windows/rpak ; ls ;
 rpcsniffer cd /usr/share/windows/rpcsniffer ; ls ;
 rpctools cd /usr/share/windows/rpctools ; ls ;
 rpdscan -h ;
+rpivot-client -h ;
+rpivot-server -h ;
 rp-lin-x64 -h ;
 rp-lin-x86 -h ;
 rr -h ;
