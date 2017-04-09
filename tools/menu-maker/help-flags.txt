@@ -1233,6 +1233,7 @@ httprecon cd /usr/share/windows/httprecon ; ls ;
 httprint -h ;
 httprint-win32 cd /usr/share/windows/httprint-win32 ; ls ;
 httpry -h ;
+httpscreenshot ;
 httpsend -h ;
 httpserver ;
 httpsniff ;
