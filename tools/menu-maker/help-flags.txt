@@ -1541,6 +1541,7 @@ lldb-server ;
 llk ;
 llkk ;
 llogin -h ;
+locasploit -h ;
 lodowep -h ;
 logkeys -h ;
 logkeys-kill.sh ;
