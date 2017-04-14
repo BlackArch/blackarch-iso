@@ -1194,6 +1194,7 @@ hodor -h ;
 honeydctl -h ;
 honeyd -h ;
 honeydstats -h ;
+honeypy -h ;
 honggfuzz -h ;
 hoover -h ;
 hoper ;
