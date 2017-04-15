@@ -2211,6 +2211,7 @@ pullcves ;
 pulsar -h ;
 pwd-hash -h ;
 pwdlogy ;
+pwdlyser -h ;
 pwdump cd /usr/share/windows/pwdump ; ls ;
 pw-inspector -h ;
 pwnat -h ;
