@@ -16,7 +16,8 @@ sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
-systemctl enable pacman-init.service choose-mirror.service lxdm.service dbus
+systemctl enable pacman-init.service choose-mirror.service lxdm.service dbus \
+  vmware-vmblock-fuse.service vmtoolsd.service
 systemctl set-default graphical.target
 
 # create the user directory for live session
