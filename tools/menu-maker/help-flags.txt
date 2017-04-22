@@ -984,6 +984,7 @@ g++ ;
 galleta ;
 gameconqueror ;
 gatecrasher -h ;
+gcat --help ;
 gcc ;
 gcore ;
 gdb -h ;
