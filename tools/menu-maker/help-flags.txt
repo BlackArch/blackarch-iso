@@ -778,6 +778,7 @@ elfls ;
 elfparser-cli --help ;
 elfpatch ;
 elftoc --help ;
+elidecode --help ;
 elite-proxy-finder -h ;
 emldump -h ;
 empire -h ;
