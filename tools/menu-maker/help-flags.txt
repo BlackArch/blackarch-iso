@@ -2573,6 +2573,7 @@ sc_wartsdump -h ;
 sc_wartsfix -h ;
 sdel -h ;
 SDS_get_index.py ;
+sea -h ;
 search1337 ;
 seat -h ;
 seautomate ;
