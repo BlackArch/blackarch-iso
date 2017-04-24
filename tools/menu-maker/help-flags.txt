@@ -2959,6 +2959,7 @@ thcsyn6 ;
 the_cleaner.sh -h ;
 theharvester ;
 themole -h ;
+thezoo -h ;
 thin ;
 thor ;
 tigercron -h ;
