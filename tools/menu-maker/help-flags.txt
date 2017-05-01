@@ -2230,6 +2230,7 @@ pwntools-disasm ;
 pwntools -h ;
 pwsafe2john ;
 pxedump -h ;
+pybozocrack -h ;
 pydictor -h ;
 pyersinia -h ;
 pyew -h ;
