@@ -1769,6 +1769,7 @@ MultiInjector ;
 multiinjector -h ;
 multimac -h ;
 multimon-ng ;
+multiscanner -h ;
 multitun ;
 mustache ;
 mutator -h ;
