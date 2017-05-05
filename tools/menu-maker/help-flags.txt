@@ -620,6 +620,7 @@ depdep -h ;
 detect-it-easy ;
 detect-new-ip6 ;
 detect_sniffer6 ;
+detect-sniffer -h ;
 det -h ;
 device-pharmer -h ;
 devilzc0de ;
