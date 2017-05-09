@@ -2130,6 +2130,8 @@ pip3linecmd ;
 pipal ;
 pipeline ;
 pirana -h ;
+pivotc -h ;
+pivots -h ;
 pixiewps ;
 pkcrack ;
 pkcrack-extract ;
