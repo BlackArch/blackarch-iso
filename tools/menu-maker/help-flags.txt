@@ -2562,6 +2562,7 @@ scalpel ;
 scamper -h ;
 scan6 ;
 sc_analysis_dump -h ;
+scanless -h ;
 scanmem -h ;
 scanrand -h ;
 scansploit -h ;
