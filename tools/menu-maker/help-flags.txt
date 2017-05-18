@@ -869,6 +869,7 @@ fcat ;
 fcrackzip --help ;
 featherduster -h ;
 fern ;
+fernflower -h ;
 fernmelder -h ;
 ferret ;
 ffind ;
