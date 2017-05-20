@@ -578,6 +578,7 @@ d2j-jasmin2jar ;
 d2j-smali ;
 d2j-std-apk ;
 daemoninfo.pl ;
+dagon -h ;
 daily_cleanup.py ;
 damm -h ;
 daredevil -h ;
