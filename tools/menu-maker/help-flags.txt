@@ -730,6 +730,7 @@ dradis-configure ;
 dradis -h ;
 dradis-start ;
 driftnet -h ;
+drinkme -h ;
 dripper -h ;
 drone ;
 droopescan -h ;
