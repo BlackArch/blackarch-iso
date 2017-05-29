@@ -1312,6 +1312,7 @@ imagejs ;
 imap_login ;
 img_cat ;
 img_stat -h ;
+imount -h ;
 implementation6 ;
 implementation6d ;
 incept ;
