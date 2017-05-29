@@ -2854,6 +2854,7 @@ ssdp-scanner ;
 ssh2john ;
 sshatter ;
 ssh-audit -h ;
+ssh-honeypot -h ;
 ssh_login ;
 sshmitm -h ;
 sshow -h ;
