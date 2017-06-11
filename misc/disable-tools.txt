@@ -1,5 +1,3 @@
-# tools to disable during ISO creation (TODO: need to fix)
-
 androguard
 androick
 android-apktool
@@ -7,6 +5,7 @@ antiransom
 arduino
 casefile
 checkpwd
+cudahashcat
 drozer
 firmware-mod-kit
 gitrob
@@ -19,5 +18,6 @@ qark
 spiga
 ssrf-proxy
 sysinternals-suite
+thezoo
 truecrack
 vmcloak
