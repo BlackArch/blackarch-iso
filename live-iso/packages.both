@@ -1,4 +1,3 @@
-abs
 ack
 acpi
 afl
@@ -257,7 +256,6 @@ xf86-video-vmware
 xf86-video-voodoo
 xl2tpd
 xorg-server
-xorg-server-utils
 xorg-xbacklight
 xorg-xdm
 xorg-xinit
