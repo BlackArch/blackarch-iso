@@ -33,10 +33,7 @@ albatar
 allthevhosts
 analyzepesig
 androbugs
-android-ndk
 androidpincrack
-android-sdk
-android-sdk-platform-tools
 androidsniffer
 android-udev-rules
 androwarn
@@ -176,7 +173,6 @@ bunny
 burpsuite
 buttinsky
 bvi
-bytecode-viewer
 cachedump
 camscan
 canari
@@ -925,7 +921,6 @@ ntp-ip-enum
 nullinux
 oat
 obexstress
-oclhashcat
 ocs
 ohrwurm
 oledump
@@ -1245,7 +1240,6 @@ slowloris
 slowloris-py
 smali-cfgs
 smalisca
-smartphone-pentest-framework
 smbbf
 smbcrunch
 smbexec
