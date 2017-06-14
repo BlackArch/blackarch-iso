@@ -1,5 +1,6 @@
 ===> 2017.06.14
 	- bugfix release: perl libraries rebuilt due to perl upgrade
+	- include kernel 4.11.4
 
 ===> 2017.06.13
 	- added more than 100 new tools
