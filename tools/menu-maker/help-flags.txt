@@ -2241,6 +2241,7 @@ proxyp -h ;
 proxyscan -h ;
 proxytrack ;
 proxytunnel -h ;
+ps1encode -h ;
 pscan -h ;
 pserver -h ;
 pshitt ;
