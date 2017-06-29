@@ -354,6 +354,7 @@ boopsniff-gui ;
 boopsniff -h ;
 bootload.py ;
 bowcaster -h ;
+box-js -h ;
 bpfc ;
 braa -h ;
 braces -h ;
