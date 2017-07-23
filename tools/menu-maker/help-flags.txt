@@ -1080,6 +1080,8 @@ gooscan -h ;
 gophish ;
 gplist cd /usr/share/windows/gplist ; ls ;
 gpredict -h ;
+gps-sdr-sim -h ;
+gps-sdr-sim-uhd -h ;
 gqrx ;
 gqrx-alsa ;
 gqrx -h ;
