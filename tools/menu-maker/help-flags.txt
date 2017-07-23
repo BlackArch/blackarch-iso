@@ -2987,6 +2987,7 @@ swfextract ;
 swfintruder cd /usr/share/swfintruder ; ls ;
 swfrender ;
 swfstrings ;
+sylkie -h ;
 syms2elf cd /usr/share/syms2elf ; ls ;
 synflood -h ;
 synner -h ;
