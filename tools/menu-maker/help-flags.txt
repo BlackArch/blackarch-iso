@@ -1308,6 +1308,7 @@ icat ;
 icmp6 ;
 icmpquery ;
 icmptx ;
+idb ;
 idl2wrs ;
 idswakeup -h ;
 ifchk -h ;
