@@ -551,6 +551,7 @@ creds-py -h ;
 creepy ;
 cribdrag -h ;
 cribdrag-xorstrings -h ;
+crlf-injector ;
 crowbar --help ;
 crozono -h ;
 crunch -h ;
