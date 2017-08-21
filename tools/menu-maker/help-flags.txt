@@ -1675,6 +1675,7 @@ marc4dasm -h ;
 marked ;
 maskgen -h ;
 maskprocessor -h ;
+massbleed ;
 masscan-automation -h ;
 masscan --help ;
 massexpconsole ;
