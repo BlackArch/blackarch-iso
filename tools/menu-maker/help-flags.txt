@@ -2732,6 +2732,7 @@ sidguess ;
 siege ;
 siege2csv.pl ;
 siege -h ;
+sifter -h ;
 sigfind ;
 sigspotter cd /usr/share/windows/sigspottter ; ls ;
 silk_config ;
