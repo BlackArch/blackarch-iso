@@ -1086,6 +1086,7 @@ goofile ;
 google-explorer -h ;
 googlesub --help ;
 goog-mail ;
+goohak ;
 gooscan -h ;
 gophish ;
 gplist cd /usr/share/windows/gplist ; ls ;
