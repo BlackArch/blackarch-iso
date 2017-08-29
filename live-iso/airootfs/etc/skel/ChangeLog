@@ -1,3 +1,11 @@
+===> 2017.08.30
+	- bugfix: strap.sh (removed 'http:' for pgp keyserver)
+	- updated blackarch installer to version 0.5.2 (update: sha1 sum of strap.sh)
+	- included kernel 4.12.8
+	- updated a lot of blackarch tools
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
+
 ===> 2017.06.14
 	- bugfix release: perl libraries rebuilt due to perl upgrade
 	- include kernel 4.11.4
