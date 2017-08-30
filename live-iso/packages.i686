@@ -35,11 +35,8 @@ altdns
 analyzepesig
 androbugs
 androguard
-androick
 android-apktool
-android-ndk
 androidpincrack
-android-sdk
 androidsniffer
 android-udev-rules
 androwarn
@@ -293,7 +290,6 @@ cryptonark
 csrftester
 ctunnel
 cuckoo
-cudahashcat
 cupp
 cutycapt
 cvechecker
@@ -969,7 +965,6 @@ nullinux
 oat
 obexstress
 objdump2shellcode
-oclhashcat
 ocs
 ohrwurm
 oledump
@@ -1306,7 +1301,6 @@ slowloris-py
 smali-cfgs
 smalisca
 smap
-smartphone-pentest-framework
 smbbf
 smbcrunch
 smbexec
@@ -1544,7 +1538,6 @@ visql
 vivisect
 vlan-hopping
 vmap
-vmcloak
 vnak
 vnc-bypauth
 vncrack
