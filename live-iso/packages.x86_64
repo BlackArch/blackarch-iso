@@ -35,11 +35,8 @@ altdns
 analyzepesig
 androbugs
 androguard
-androick
 android-apktool
-android-ndk
 androidpincrack
-android-sdk
 androidsniffer
 android-udev-rules
 androwarn
@@ -296,7 +293,6 @@ cryptonark
 csrftester
 ctunnel
 cuckoo
-cudahashcat
 cupp
 cutycapt
 cvechecker
@@ -981,7 +977,6 @@ nullinux
 oat
 obexstress
 objdump2shellcode
-oclhashcat
 ocs
 ohrwurm
 oledump
@@ -1328,7 +1323,6 @@ slowloris-py
 smali-cfgs
 smalisca
 smap
-smartphone-pentest-framework
 smbbf
 smbcrunch
 smbexec
@@ -1486,7 +1480,6 @@ thc-ssl-dos
 thefuzz
 theharvester
 themole
-thezoo
 tiger
 tilt
 timegen
@@ -1511,7 +1504,6 @@ trid
 trinity
 triton
 trixd00r
-truecrack
 truehunter
 trufflehog
 tsh
@@ -1576,7 +1568,6 @@ visql
 vivisect
 vlan-hopping
 vmap
-vmcloak
 vnak
 vnc-bypauth
 vncrack
