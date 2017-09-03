@@ -275,6 +275,7 @@ bed -h ;
 beef -h ;
 beeswarm ;
 beholder -h ;
+belati -h ;
 beleth -h ;
 besside-ng --help ;
 bettercap -h ;
