@@ -2743,6 +2743,7 @@ siege -h ;
 sifter -h ;
 sigfind ;
 sigspotter cd /usr/share/windows/sigspottter ; ls ;
+sileneteye ;
 silk_config ;
 simple-ducky ;
 simpleemailspoofer -h ;
