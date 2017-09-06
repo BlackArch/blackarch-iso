@@ -1260,6 +1260,7 @@ hostbox-ssh -h ;
 host-extract -h ;
 hotpatcher -h ;
 hotspotter ;
+howmanypeoplearearound --help ;
 hpfeeds-client -h ;
 hpfeeds -h ;
 hping2 --help ;
