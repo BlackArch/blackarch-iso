@@ -3146,6 +3146,7 @@ trojanserver -h ;
 truecrypt -t -h ;
 truehunter -h ;
 trufflehog -h ;
+trusttrees -h ;
 tshark -h ;
 tsh cd /usr/share/tsh ; ls ;
 tsk_comparedir ;
