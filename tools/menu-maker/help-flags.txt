@@ -1706,6 +1706,7 @@ map_unit ;
 mara-framework ;
 marc4dasm -h ;
 marked ;
+maryam ;
 maskgen -h ;
 maskprocessor -h ;
 massbleed ;
