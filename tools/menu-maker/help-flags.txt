@@ -2694,6 +2694,7 @@ scan6 ;
 sc_analysis_dump -h ;
 scanless -h ;
 scanmem -h ;
+scannerl ;
 scanrand -h ;
 scansploit -h ;
 scanssh -h ;
