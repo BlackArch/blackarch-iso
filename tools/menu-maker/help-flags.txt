@@ -2129,6 +2129,7 @@ paketto-lc -h ;
 panhunt -h ;
 panoptic -h ;
 pappy -h ;
+parameth -h ;
 paranoic -h ;
 parasite6 ;
 paratrace -h ;
