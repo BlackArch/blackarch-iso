@@ -1105,6 +1105,7 @@ gqrx-alsa ;
 gqrx -h ;
 grabbb ;
 grabber-scanner -h ;
+grabing ;
 grabitall cd /usr/share/windows/grabitall ; ls ;
 grcc ;
 gr_constellation_plot ;
