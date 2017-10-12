@@ -1237,6 +1237,7 @@ hashcat-splitlen ;
 hashcat-strip-bsn ;
 hashcat-strip-bsr ;
 hashcat-utils -h ;
+hashdb -h ;
 hashdeep -h ;
 hasher -h ;
 hashes ;
