@@ -2783,6 +2783,7 @@ shodanhat -h ;
 shootback-master -h ;
 shootback-slaver -h ;
 shortfuzzy -h ;
+sickle -h ;
 sidguess ;
 siege ;
 siege2csv.pl ;
