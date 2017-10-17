@@ -321,6 +321,7 @@ bletchley-nextrand ;
 blindelephant -h ;
 blind-sql-bitshifting ;
 blindy -h ;
+blisqy -h ;
 blkcalc ;
 blkcat ;
 blkls ;
