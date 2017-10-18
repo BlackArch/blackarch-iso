@@ -1962,6 +1962,7 @@ ni6 ;
 nick2ldif ;
 nield -h ;
 nikto -H ;
+nili ;
 nimbostratus -h ;
 nipe help ;
 nipper --help ;
