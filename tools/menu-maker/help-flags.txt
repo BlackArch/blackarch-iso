@@ -2107,6 +2107,7 @@ origami cd /usr/share/origami ; ls ;
 o-saft -h ;
 oscanner -h ;
 osinterator -h ;
+osint-spy ;
 osr-alias_generator -h ;
 osr-domainfy -h ;
 osr-entify -h ;
