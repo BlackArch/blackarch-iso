@@ -20,6 +20,7 @@ ipw2200-fw
 iw
 linux-atm
 lsof
+mkinitcpio
 mlocate
 ntp
 openssh
