@@ -2,7 +2,7 @@
 
 set -e -u
 
-iso_name=blackarchlinux-live
+iso_name=blackarchlinux
 iso_label="BLACKARCH_$(date +%Y%m)"
 iso_version=$(date +%Y.%m.%d)
 install_dir=blackarch
@@ -48,7 +48,7 @@ run_once() {
 make_pacman_conf() {
     local _cache_dirs
     _cache_dirs=($(pacman -v 2>&1 | grep '^Cache Dirs:' | sed 's/Cache Dirs:\s*//g'))
-    sed -r "s|^#?\\s*CacheDir.+|CacheDir = $(echo -n ${_cache_dirs[@]})|g" ${script_path}/pacman.conf.${arch} > ${work_dir}/pacman.conf
+    sed -r "s|^#?\\s*CacheDir.+|CacheDir = $(echo -n ${_cache_dirs[@]})|g" ${script_path}/pacman.conf > ${work_dir}/pacman.conf
 }
 
 # Base installation, plus needed packages (airootfs)
@@ -213,7 +213,7 @@ make_prepare() {
 
 # Build ISO
 make_iso() {
-    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-dual.iso"
+    mkarchiso ${verbose} -w "${work_dir}" -D "${install_dir}" -L "${iso_label}" -o "${out_dir}" iso "${iso_name}-${iso_version}-x86_64.iso"
 }
 
 if [[ ${EUID} -ne 0 ]]; then
@@ -249,19 +249,19 @@ mkdir -p ${work_dir}
 run_once make_pacman_conf
 
 # Do all stuff for each airootfs
-for arch in i686 x86_64; do
+for arch in x86_64; do
     run_once make_basefs
     run_once make_packages
 done
 
 run_once make_packages_efi
 
-for arch in i686 x86_64; do
+for arch in x86_64; do
     run_once make_setup_mkinitcpio
     run_once make_customize_airootfs
 done
 
-for arch in i686 x86_64; do
+for arch in x86_64; do
     run_once make_boot
 done
 
@@ -272,7 +272,7 @@ run_once make_isolinux
 run_once make_efi
 run_once make_efiboot
 
-for arch in i686 x86_64; do
+for arch in x86_64; do
     run_once make_prepare
 done
 
