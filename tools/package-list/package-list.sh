@@ -4,7 +4,7 @@
 #
 
 WORKDIR="`pwd`/`dirname ${0}`"
-ARCHS="x86_64 i686"
+ARCHS="x86_64"
 _GROUPS="`pacman -Sg | grep blackarch- | sort -u | tr -s '\n' ' '`"
 
 if [ ${#} -ne 1 ]
