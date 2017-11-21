@@ -240,7 +240,6 @@ winetricks
 wireless_tools
 wireshark-cli
 wireshark-gtk
-wmii
 wpa_actiond
 wpa_supplicant
 wpscan
