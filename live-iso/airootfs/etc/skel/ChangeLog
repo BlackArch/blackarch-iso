@@ -1,3 +1,10 @@
+===> 2017.11.2X
+	- updated blackarch installer to version 0.6
+	- included kernel 4.1X.X
+	- updated a lot of blackarch tools
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
+
 ===> 2017.08.30
 	- bugfix: strap.sh (removed 'http:' for pgp keyserver)
 	- updated blackarch installer to version 0.5.2 (update: sha1 sum of strap.sh)
