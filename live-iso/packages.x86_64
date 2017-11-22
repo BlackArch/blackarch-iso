@@ -210,7 +210,6 @@ chaosmap
 chaosreader
 chapcrack
 checkiban
-checkpwd
 checksec
 check-weak-dh-ssh
 cheetah-suite
@@ -837,12 +836,10 @@ magictree
 mail-crawl
 make-pdf
 maketh
-malboxes
 malcom
 malheur
 maligno
 malmon
-maltego
 maltrail
 maltrieve
 malwareanalyser
@@ -852,7 +849,6 @@ malwasm
 malybuzz
 mana
 mando.me
-mara-framework
 marc4dasm
 maryam
 maskprocessor
@@ -1483,7 +1479,6 @@ synflood
 synner
 synscan
 syringe
-sysinternals-suite
 t50
 tabi
 taof
