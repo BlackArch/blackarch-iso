@@ -128,8 +128,7 @@ antiforensicmenu = {
 automationmenu = {
   { "airgeddon", "xterm -bg black -fg red -e 'airgeddon ; bash'" },
   { "apt2", "xterm -bg black -fg red -e 'apt2 -h ; bash'" },
-  { "armitage", "xterm -bg black -fg red -e 'armitage ;
--h ; bash'" },
+  { "armitage", "xterm -bg black -fg red -e 'armitage -h ; bash'" },
   { "teamserver", "xterm -bg black -fg red -e 'teamserver ; bash'" },
   { "armscgen", "xterm -bg black -fg red -e 'armscgen -h ; bash'" },
   { "atscan", "xterm -bg black -fg red -e 'atscan ; bash'" },
