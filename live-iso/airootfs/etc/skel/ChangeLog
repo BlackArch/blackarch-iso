@@ -1,3 +1,10 @@
+===> 2017.12.11
+	- update blackarch-installer to version 0.6.2 (most important change)
+	- include kernel 4.14.4
+	- updated lot's of blackarch tools and packages
+	- updated all system packages
+	- bugfix release! (see blackarch-installer)
+
 ===> 2017.11.24
 	- various clean-ups and tweaks
 	- updated blackarch installer to version 0.6
