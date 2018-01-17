@@ -1105,6 +1105,7 @@ gnuradio-companion -h ;
 gnuradio-config-info -h ;
 gnuradio -h ;
 gobd -h ;
+gobuster -h ;
 goldeneye -h ;
 golismero -h ;
 goodork ;
