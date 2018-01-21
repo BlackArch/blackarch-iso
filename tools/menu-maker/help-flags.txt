@@ -3411,7 +3411,6 @@ wafp -h ;
 wafw00f -h ;
 waidps ;
 waldo -h ;
-wapiti-cookie -h ;
 wapiti-getcookie -h ;
 wapiti -h ;
 wash ;
