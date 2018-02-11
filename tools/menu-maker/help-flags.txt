@@ -1120,6 +1120,7 @@ goog-mail ;
 goohak ;
 gooscan -h ;
 gophish ;
+gosint -h ;
 gplist cd /usr/share/windows/gplist ; ls ;
 gpredict -h ;
 gps-sdr-sim -h ;
