@@ -746,6 +746,7 @@ dnstwist -h ;
 dnsutils -h ;
 dnswalk --help ;
 dnsxss -h ;
+dockerscan -h ;
 domain-analyzer-crawler -h ;
 domain-analyzer -h ;
 domain-analyzer-pytext2pdf ;
