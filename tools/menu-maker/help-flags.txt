@@ -2812,6 +2812,7 @@ shellcheck ;
 shellcodecs ; ls ;
 shellcode-factory cd /usr/share/shellcode-factory ; ls ;
 shellcraft -h ;
+shellen ;
 shellinaboxd -h ;
 shelling ;
 shellme -h ;
