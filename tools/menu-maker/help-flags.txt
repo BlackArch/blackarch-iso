@@ -1623,6 +1623,7 @@ lans -h ;
 latcp ;
 latd -h ;
 laudanum cd /usr/share/laudanum ; ls ;
+lazagne -h ;
 lbb.db ;
 lbd ;
 lbmap -h ;
