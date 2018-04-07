@@ -642,6 +642,7 @@ debinject ;
 deblaze ;
 decloakify ;
 decode-g72x -h ;
+decodify -h ;
 deen ;
 delAllHost.py ;
 delAllServiceClosed.py ;
