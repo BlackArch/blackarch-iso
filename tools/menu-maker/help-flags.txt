@@ -937,6 +937,7 @@ ffind ;
 fgscan --help ;
 fgscanner -h ;
 fhttp -h ;
+fi6s -h ;
 fierce.pl -h ;
 fiked ;
 filan -h ;
