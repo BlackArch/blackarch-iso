@@ -3105,6 +3105,7 @@ stunnel3 ;
 sub7 cd /usr/share/windows/sub7 ; ls ;
 subbrute -h ;
 subdomainer.py -h ;
+subfinder -h ;
 sublist3r -h ;
 subscan2.py ;
 subscan.py ;
