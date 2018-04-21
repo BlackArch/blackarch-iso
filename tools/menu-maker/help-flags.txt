@@ -1724,6 +1724,7 @@ maligno_srv ;
 maligno-srv ;
 malmon -h ;
 malmon-scan ;
+malscan ;
 maltego -h ;
 maltego.ico ;
 maltrail-sensor -h ;
