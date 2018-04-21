@@ -1561,6 +1561,7 @@ joomlascan -h ;
 joomlavs ;
 joomscan -h ;
 jpeg2swf ;
+jpegdump -h ;
 jpeg_extract ;
 jpexs-decompiler ;
 js-beautify2 -h ;
