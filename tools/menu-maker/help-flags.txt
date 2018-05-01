@@ -253,6 +253,7 @@ backdoorppt ;
 backfuzz -h ;
 backhack ;
 backorifice cd /usr/share/windows/backorifice ; ls ;
+bad-pdf ;
 baksmali -h ;
 balbuzard ;
 bamfbrute -h ;
