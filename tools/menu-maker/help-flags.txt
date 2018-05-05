@@ -2935,6 +2935,7 @@ sniffjoke-autotest -h ;
 sniffjokectl -h ;
 sniffjoke -h ;
 sniffles --help ;
+sniff-probe-req -h ;
 snitch cd /usr/share/windows/snitch ; ls ;
 snmpattack -h ;
 snmp-brute ;
