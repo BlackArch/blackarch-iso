@@ -96,6 +96,8 @@ alive6 ;
 allthevhosts ;
 altdns -h ;
 amass -h ;
+amber ;
+amber-handler ;
 analyzepesig cd /usr/share/windows/analyzepesig ; ls ;
 androaxml ;
 androbugs -h ;
