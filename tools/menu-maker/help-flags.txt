@@ -786,6 +786,7 @@ droopescan -h ;
 drozer ;
 drupal-module-enum ;
 drupalscan ;
+drupwn -h ;
 dscanner -h ;
 dscomputers -h ;
 dsdeletedobjects -h ;
