@@ -1,4 +1,10 @@
-===> 2018.XX.XX
+===> 2018.06.01
+	- various clean-ups and tweaks
+	- update blackarch installer to version 0.X
+	- included kernel 4.16.X
+	- updated all blackarch tools and packages
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
 	- re-add multilib
 
 ===> 2017.12.11
