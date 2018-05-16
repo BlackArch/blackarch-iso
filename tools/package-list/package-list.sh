@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# generates list of packages for packages.x86_64 and packages.i686
+# generates list of packages for packages.${ARCHS}
 #
 
 WORKDIR="`pwd`/`dirname ${0}`"
