@@ -134,7 +134,7 @@ make_menus()
 {
     exclude=".keep|.exe|.applet|.txt|.dll|.conf|.apk|.key|.pem|.bat|.js|.cmd"
     exclude="${exclude}|.dex|.cache|.bfd|.mcld|.gold|xml.ap_|.ap_.d|.3ps|.prop"
-    exclude="${exclude}|.gitignore|a.out|.xml|.xml.d|.ap_"
+    exclude="${exclude}|.gitignore|a.out|.xml|.xml.d|.ap_|.jar|.bin"
 
     for group in ${_GROUPS}
     do

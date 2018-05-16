@@ -9,7 +9,7 @@
 
     [submenu] (browsers)
         [exec] (firefox) {firefox}
-        [exec] (midori) {midori}
+        [exec] (chromium) {chromium}
     [end]
 
     [submenu] (network)

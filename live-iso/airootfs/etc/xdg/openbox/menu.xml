@@ -35,12 +35,12 @@
 			</startupnotify>
 		</action>
 	</item>
-	<item label="midori">
+	<item label="chromium">
 		<action name="Execute">
-			<command>midori</command>
+			<command>chromium</command>
 			<startupnotify>
 				<enabled>yes</enabled>
-				<wmclass>midori</wmclass>
+				<wmclass>chromium</wmclass>
 		  </startupnotify>
 		</action>
 	</item>

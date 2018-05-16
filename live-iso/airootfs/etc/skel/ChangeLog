@@ -1,4 +1,5 @@
 ===> 2018.06.01
+	- replaced midori with chromium
 	- various clean-ups and tweaks
 	- update blackarch installer to version 0.X
 	- included kernel 4.16.X
