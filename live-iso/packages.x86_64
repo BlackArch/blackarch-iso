@@ -40,22 +40,16 @@ alsa-utils
 altdns
 amass
 amber
-amoco
 analyzepesig
 androbugs
 androguard
-androick
 android-apktool
-android-ndk
 androidpincrack
-android-sdk
 androidsniffer
-android-udev-rules
 androwarn
 angr
 angrop
 anontwi
-antiransom
 anti-xss
 apache-users
 apacket
@@ -79,7 +73,6 @@ argus-clients
 armitage
 armscgen
 arpalert
-arpantispoofer
 arpoison
 arpon
 arp-scan
@@ -129,7 +122,6 @@ basedomainname
 bash
 bash-completion
 batctl
-ba-testpkg
 batman-adv
 batman-alfred
 bbqsql
@@ -184,9 +176,7 @@ bloodhound
 bluebox-ng
 bluebugger
 bluediving
-bluefog
 bluelog
-bluemaho
 bluepot
 blueprint
 blueranger
@@ -198,8 +188,6 @@ bluez-hid2hci
 bluez-utils
 bluphish
 bluto
-bmap
-bmap-tools
 bob-the-butcher
 bof-detector
 bokken
@@ -250,7 +238,6 @@ cantoolz
 capstone
 captipper
 carwhisperer
-casefile
 catnthecanary
 catphish
 cdpsnarf
@@ -266,7 +253,6 @@ chaosmap
 chaosreader
 chapcrack
 checkiban
-checkpwd
 checksec
 check-weak-dh-ssh
 cheetah-suite
@@ -351,14 +337,11 @@ crowbar
 crozono
 crunch
 crypthook
-cryptohazemultiforcer
 cryptonark
 cryptsetup
 csrftester
 ctags
 ctunnel
-cuckoo
-cudahashcat
 cupp
 cutycapt
 cvechecker
@@ -404,8 +387,6 @@ device-mapper
 device-pharmer
 dex2jar
 dexpatcher
-dff
-dff-scanner
 dga-detection
 dhcdrop
 dhclient
@@ -422,7 +403,6 @@ dirscanner
 dirsearch
 disitool
 dissector
-dissy
 dizzy
 dmitry
 dmraid
@@ -473,7 +453,6 @@ dragon-backdoor
 dr-checker
 driftnet
 drinkme
-dripcap
 dripper
 droopescan
 drozer
@@ -526,7 +505,6 @@ enumiax
 enum-shares
 enyelkm
 epicwebhoneypot
-eraser
 erase-registrations
 eresi
 eternal-scanner
@@ -564,7 +542,6 @@ fakenetbios
 fakenet-ng
 fang
 faraday
-fatback
 fbht
 fbid
 fcrackzip
@@ -593,7 +570,6 @@ firefox
 firefox-security-toolkit
 firewalk
 firmwalker
-firmware-mod-kit
 firstexecution
 fl0p
 flamerobin
@@ -617,12 +593,10 @@ fpdns
 fping
 fport
 fprotlogparser
-fragroute
 fraud-bridge
 freeipmi
 freeradius
 frida
-frida-disasm
 fridump
 frisbeelite
 f-scrack
@@ -710,7 +684,6 @@ grub
 gsd
 gtalk-decode
 gtp-scan
-gummiboot
 guymager
 gwcheck
 gwtenum
@@ -983,7 +956,6 @@ logkeys
 loic
 lolbas
 lorcon
-lorg
 lotophagi
 lsof
 lsrtunnel
@@ -1001,7 +973,6 @@ magescan
 magicrescue
 magictree
 mail-crawl
-makepasswd
 make-pdf
 maketh
 malboxes
@@ -1010,7 +981,6 @@ malheur
 maligno
 malmon
 malscan
-maltego
 maltrail
 malwareanalyser
 malware-check-tool
@@ -1019,7 +989,6 @@ malwasm
 malybuzz
 mana
 mando.me
-mara-framework
 marc4dasm
 maryam
 maskprocessor
@@ -1033,7 +1002,6 @@ matroschka
 mausezahn
 mbenum
 mboxgrep
-mdbtools
 mdcrack
 mdk3
 mdns-recon
@@ -1063,7 +1031,6 @@ mingsweeper
 minimodem
 minimysqlator
 miranda-upnp
-miredo
 missidentify
 missionplanner
 mitmap
@@ -1095,7 +1062,6 @@ mosca
 mosquito
 mots
 motsa-dns-spoofing
-mousejack-transmit
 mp3nema
 mptcp
 mptcp-abuse
@@ -1172,7 +1138,6 @@ nishang
 nkiller2
 nmap
 nmbscan
-nohidy
 nomorexor
 noriben
 nosqlattack
@@ -1199,7 +1164,6 @@ obexstress
 obfsproxy
 oblogout
 obmenu
-oclhashcat
 ocs
 ofp-sniffer
 ohrwurm
@@ -1307,7 +1271,6 @@ periscope
 perl-image-exiftool
 pev
 pextractor
-pfff
 pftriage
 pgdbf
 phemail
@@ -1364,7 +1327,6 @@ pptpclient
 pr0cks
 prads
 praeda
-prebootloader
 pret
 princeprocessor
 proctal
@@ -1423,7 +1385,6 @@ python2-yara
 python3-shodan
 python-capstone
 python-jsbeautifier
-python-pin
 python-python-cymruwhois
 python-utidylib
 qark
@@ -1433,7 +1394,6 @@ radamsa
 radare2
 radare2-cutter
 radare2-keystone
-radare2-unicorn
 radiography
 rainbowcrack
 ranger-scanner
@@ -1540,7 +1500,6 @@ scapy
 schnappi-dhcp
 sc-make
 scout2
-scpay3k
 scrape-dns
 scrapy
 scratchabit
@@ -1551,7 +1510,6 @@ sdnpwn
 sdn-toolkit
 sea
 search1337
-searchsploit
 seat
 secscan
 secure-delete
@@ -1735,7 +1693,6 @@ stackflow
 staekka
 starttls-mitm
 statsprocessor
-stebb
 stegdetect
 steghide
 stegolego
@@ -1813,7 +1770,6 @@ thc-ssl-dos
 thefuzz
 theharvester
 themole
-thezoo
 tiger
 tilt
 timegen
@@ -1837,7 +1793,6 @@ torshammer
 torsocks
 tpcat
 tplmap
-tracedump
 traceroute
 treasure
 trid
@@ -1845,7 +1800,6 @@ trinity
 triton
 trixd00r
 trizen
-truecrack
 truecrypt
 truehunter
 trufflehog
@@ -1863,7 +1817,6 @@ u3-pwn
 uacme
 uatester
 ubertooth
-ubertooth-kismet
 ubiquiti-probing
 ubitack
 udis86
@@ -1919,7 +1872,6 @@ veles
 veracrypt
 vfeed
 vhostscan
-vidalia
 videosnarf
 vim
 vinetto
@@ -1931,7 +1883,6 @@ visql
 vivisect
 vlan-hopping
 vmap
-vmcloak
 vnak
 vnc-bypauth
 vncrack
@@ -2026,7 +1977,6 @@ wirouter-keyrec
 witchxtool
 wlan2eth
 wmat
-wmi-client
 wnmap
 wol-e
 wolpertinger
