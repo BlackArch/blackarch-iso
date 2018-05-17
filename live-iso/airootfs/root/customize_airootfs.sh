@@ -59,7 +59,7 @@ pacman-key --init
 pacman-key --populate blackarch archlinux
 
 # font configuration
-ln -sfv /etc/fonts/conf.avail/* /etc/fonts/conf.d/*
+ln -sfv /etc/fonts/conf.avail/* /etc/fonts/conf.d
 
 # fix wrong permissions for blackarch-dwm
 chmod 755 /usr/bin/blackarch-dwm
