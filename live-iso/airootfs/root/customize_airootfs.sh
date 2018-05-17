@@ -80,7 +80,7 @@ rm -rf /usr/share/xsessions/openbox-kde.desktop
 rm -rf /usr/share/xsessions/i3-with-shmlog.desktop
 
 # add install.txt file
-echo "Type blackarch-install and follow the instructions." > /root/install.txt
+echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache
