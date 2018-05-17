@@ -524,7 +524,6 @@ exitmap
 exiv2
 expac
 expimp-lookup
-exploit-db
 exploitpack
 exrex
 extracthosts
@@ -995,7 +994,6 @@ maskprocessor
 massbleed
 masscan
 masscan-automation
-massexpconsole
 mat
 matahari
 matroschka
@@ -1078,7 +1076,6 @@ multimac
 multimon-ng
 multiscanner
 multitun
-mupdf
 mutator
 mwebfp
 mybff
@@ -1268,7 +1265,6 @@ pentbox
 pentestly
 pentmenu
 periscope
-perl-image-exiftool
 pev
 pextractor
 pftriage
@@ -1756,6 +1752,7 @@ tcpxtract
 teardown
 tekdefense-automater
 termineter
+terminus-font
 testdisk
 testssl
 tftp-bruteforce

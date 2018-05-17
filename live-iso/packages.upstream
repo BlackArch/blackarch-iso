@@ -134,7 +134,6 @@ moreutils
 mpv
 mtools
 mtr
-mupdf
 nbtscan
 ncrack
 nemesis
@@ -170,7 +169,6 @@ partimage
 pathod
 pdfcrack
 peda
-perl-image-exiftool
 pfff
 pixiewps
 pkgfile
@@ -223,6 +221,7 @@ sysdig
 tcpdump
 tcpflow
 tcpreplay
+terminus-font
 testdisk
 thc-ipv6
 tinc
