@@ -13,7 +13,6 @@ efitools
 ethtool
 expac
 git
-grml-zsh-config
 grub
 haveged
 ipw2100-fw
@@ -42,4 +41,4 @@ wireless_tools
 wpa_actiond
 wvdial
 zd1211-firmware
-zsh
+terminus-font
