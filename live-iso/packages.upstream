@@ -121,14 +121,12 @@ lsof
 lxdm
 lynis
 macchanger
-makepasswd
 masscan
 mdk3
 medusa
 mercurial
 mesa
 metasploit
-miredo
 mitmproxy
 mkinitcpio
 mlocate
@@ -198,7 +196,6 @@ rsync
 rtorrent
 scanmem
 scapy
-scpay3k
 scrapy
 scrot
 shellcheck
@@ -245,7 +242,6 @@ usb_modeswitch
 valabind
 valgrind
 veracrypt
-vidalia
 vim
 virtualbox-guest-utils
 volatility

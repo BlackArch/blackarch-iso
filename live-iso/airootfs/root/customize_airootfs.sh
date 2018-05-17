@@ -55,9 +55,6 @@ pacman -Syy --noconfirm
 pacman-optimize
 pacman-db-upgrade
 pacman-key --init
-# install BlackArch repository with default mirror (that's why the sed)
-curl -s https://blackarch.org/strap.sh | \
-    sed "s|get_mirror$|#get_mirror|1" | sh
 pacman-key --populate blackarch archlinux
 
 # font configuration
