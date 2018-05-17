@@ -1,7 +1,7 @@
 ===> 2018.06.01
-	- switch to terminus font
+	- switch to terminus font (console, LXDM, WMs, x-terminals)
 	- replaced midori with chromium
-	- various clean-ups and tweaks
+	- really a lot of clean-ups and tweaks!
 	- update blackarch installer to version 0.X
 	- included kernel 4.16.X
 	- updated all blackarch tools and packages
