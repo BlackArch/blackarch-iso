@@ -51,6 +51,7 @@ echo "root:blackarch" | chpasswd
 cp -r /etc/skel/. /root/.
 
 # setup repository, add pacman.conf entry, sync databases
+curl -s https://blackarch.org/strap.sh | sh
 pacman -Syy --noconfirm
 pacman-optimize
 pacman-db-upgrade
@@ -58,9 +59,7 @@ pacman-key --init
 pacman-key --populate blackarch archlinux
 
 # font configuration
-ln -sfv /etc/fonts/conf.avail/70-no-bitmaps.conf /etc/fonts/conf.d
-ln -sfv /etc/fonts/conf.avail/10-sub-pixel-rgb.conf /etc/fonts/conf.d
-ln -sfv /etc/fonts/conf.avail/11-lcdfilter-default.conf /etc/fonts/conf.d
+ln -sfv /etc/fonts/conf.avail/* /etc/fonts/conf.d/*
 
 # fix wrong permissions for blackarch-dwm
 chmod 755 /usr/bin/blackarch-dwm
@@ -72,7 +71,7 @@ chsh -s /bin/bash
 sploitctl -f 0 -v
 
 # temporary fixes for ruby based tools
-cd /usr/share/arachni/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle
+cd /usr/share/arachni/ && bundle-2.3 config build.nokogiri --use-system-libraries && bundle-2.3 install --path vendor/bundle
 cd /usr/share/smbexec/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle
 cd /usr/share/beef/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle
 
