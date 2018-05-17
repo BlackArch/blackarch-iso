@@ -10,7 +10,7 @@ locale-gen
 # set timezone
 ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 
-# enabling all mirros
+# enabling all mirrors
 sed -i "s|#Server|Server|g" /etc/pacman.d/mirrorlist
 
 # storing the system journal in RAM

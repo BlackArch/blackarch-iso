@@ -1,59 +1,61 @@
 #!/bin/bash
 
-set -e -u
+# exit on error and undefined variables
+set -eu
 
+# set locale
 sed -i 's/#\(en_US\.UTF-8\)/\1/' /etc/locale.gen
 locale-gen
 
+# set timezone
 ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 
-usermod -s /usr/bin/zsh root
-cp -aT /etc/skel/ /root/
-
-#useradd -m -p "" -g users -G "adm,audio,floppy,log,network,rfkill,scanner,storage,optical,power,wheel" -s /usr/bin/zsh arch
-
-chmod 750 /etc/sudoers.d
-chmod 440 /etc/sudoers.d/g_wheel
-
+# enabling all mirrors
 sed -i "s/#Server/Server/g" /etc/pacman.d/mirrorlist
+
+# storing the system journal in RAM
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
 
+# default releng configuration
+sed -i 's/#\(HandleSuspendKey=\)suspend/\1ignore/' /etc/systemd/logind.conf
+sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
+sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
+
+# enable useful services and display manager
 systemctl enable pacman-init.service choose-mirror.service
 
-### blackarch related ###
-
 # create the user directory for live session
-if [ ! -d /root ]
-then
-	mkdir /root && chown root /root
+if [ ! -d /root ]; then
+	mkdir /root
+	chmod 700 root && chown -R root:root /root
 fi
 
 # copy files over to home
-su -c "cp -r /etc/skel/.* /root/" root
+cp -r /etc/skel/.* /root/
 
 # setup repository, add pacman.conf entry and sync databse
-su -c 'curl -k -s https://blackarch.org/strap.sh | sh' root
+curl -k -s https://blackarch.org/strap.sh | sh
 
 # sys updates, cleanups, etc.
-su -c 'pacman -Syyu --noconfirm' root
-#su -c "pacman -Rscn \$(pacman -Qtdq)"
-su -c 'pacman-optimize'
-su -c 'updatedb'
-su -c 'sync'
-su -c 'pacman-db-upgrade' root
-su -c 'pkgfile -u' root
+pacman -Syyu --noconfirm
+#pacman -Rscn \$(pacman -Qtdq)
+pacman-optimize
+updatedb
+sync
+pacman-db-upgrade
+pkgfile -u
 
 # default shell
-su -c 'usermod -s /bin/bash root' root
+chsh -s /bin/bash
 
 # disable pc speaker beep
-su -c 'echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf' root
+echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 # remove special (not needed) scripts
-su -c 'rm /etc/systemd/system/getty@tty1.service.d/autologin.conf' root
-su -c 'rm /root/{.automated_script.sh,.zlogin}' root
-su -c 'rm /etc/mkinitcpio-archiso.conf' root
-su -c 'rm -r /etc/initcpio' root
+rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
+rm /root/{.automated_script.sh,.zlogin}
+rm /etc/mkinitcpio-archiso.conf
+rm -r /etc/initcpio
 
 # add install.txt file
-su -c 'echo "type blackarch-install and follow the instructions" > /root/install.txt'
+echo "type blackarch-install and follow the instructions" > /root/install.txt
