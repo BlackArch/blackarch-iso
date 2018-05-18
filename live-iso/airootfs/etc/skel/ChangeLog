@@ -1,7 +1,9 @@
 ===> 2018.06.01
-	- switch to terminus font (console, LXDM, WMs, x-terminals)
-	- replaced midori with chromium
-	- really a lot of clean-ups and tweaks!
+	- network stack tunings
+	- add system/pacman clean-up script (consistency++)
+	- switch to terminus font (console, LXDM, WMs, x-terminals, ...)
+	- replaced second browser midori with chromium
+	- really, a lot of clean-ups and tweaks!
 	- update blackarch installer to version 0.X
 	- included kernel 4.16.X
 	- updated all blackarch tools and packages
