@@ -1,0 +1,11 @@
+! generic settings
+*foreground:              #cccccc
+*background:              #000000
+
+! xterm settings
+xterm*VT100*geometry:     80x24
+xterm*faceName:           xos4 Terminus:size=12:antialias=true
+xterm*faceSize:           12
+xterm*utf8:               1
+xterm*locale:             true
+xterm*transparent:        true

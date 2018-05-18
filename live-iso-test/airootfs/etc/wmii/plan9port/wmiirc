@@ -1,0 +1,284 @@
+#!/bin/sh -f
+p="$PATH"
+which rc >/dev/null || PATH="$PLAN9:$p"
+which rc >/dev/null || PATH="/usr/local/plan9/bin:$p"
+which rc >/dev/null || PATH="/usr/local/9/bin:$p"
+which rc >/dev/null || PATH="/opt/plan9/bin:$p"
+which rc >/dev/null || PATH="/opt/9/bin:$p"
+which rc >/dev/null || PATH="/usr/plan9/bin:$p"
+which rc >/dev/null || PATH="/usr/9/bin:$p"
+test $#* '=' 0 || exec rc $0
+
+cd
+scriptname=$0
+oldpath=$path; path=($PLAN9/bin $path)
+. wmii.rc wmiirc # Include utility functions
+
+# WMII Configuration
+
+# Keys
+MODKEY=Mod4
+UP=k
+DOWN=j
+LEFT=h
+RIGHT=l
+
+# Bars
+noticetimeout=5
+noticebar=/rbar/!notice
+
+# Theme
+wmiifont='drift,-*-fixed-*-*-*-*-9-*-*-*-*-*-*-*'
+wmiifont='-*-fixed-medium-r-*-*-13-*-*-*-*-*-*-*'
+wmiinormcol=`{echo '#000000 #c1c48b #81654f'}
+wmiifocuscol=`{echo '#000000 #81654f #000000'}
+wmiibackground='#333333'
+wmiifloatbackground='#222222'
+fn setbackground { xsetroot -solid $* }
+
+# Programs
+WMII_TERM=(xterm)
+
+# Column Rules
+wmiir write /colrules <<!
+/gimp/ -> 17+83+41
+/.*/ -> 62+38 # Golden Ratio
+!
+
+# Tagging Rules
+wmiir write /tagrules <<!
+/MPlayer|VLC/ -> ~
+!
+
+# Status Bar Info
+fn status {
+	echo -n `{uptime | sed 's/.*://; s/,//g'} \
+		'|' `{date}
+}
+
+# End Configuration
+
+# For the time being, this file follows the lisp bracing
+# convention. i.e.:
+#  if(frob this) {
+#    frob that
+#    if(frob theother) {
+#      unfrob this
+#      unfrob that}}
+# Comments welcome.
+
+confpath=`{echo $WMII_CONFPATH | sed 'y/:/ /'}
+
+# Events
+fn sigexit {
+	rm -f $progs_file
+	wi_cleankeys
+}
+
+fn Event-CreateTag {
+	echo $wmiinormcol $* | wmiir create /lbar/$"*}
+fn Event-DestroyTag {
+	wmiir remove /lbar/$"*}
+fn Event-FocusTag {
+	wmiir xwrite /lbar/$"* $wmiifocuscol $*}
+fn Event-UnfocusTag {
+	wmiir xwrite /lbar/$"* $wmiinormcol $*}
+fn Event-UrgentTag {
+	shift
+	wmiir xwrite /lbar/$"* '*'$"*}
+fn Event-NotUrgentTag {
+	shift
+	wmiir xwrite /lbar/$"* $"*}
+fn Event-AreaFocus {
+	if(~ $1 '~')
+		setbackground $wmiifloatbackground
+	if not
+		setbackground $wmiibackground }
+
+fn Event-Unresponsive {
+	client = $1; shift
+	@{
+		msg = 'The following client is not responding. What would you like to do?'
+		resp = `{wihack -transient $client \
+				xmessage -nearmouse -buttons Kill,Wait -print \
+				$msg $wi_newline '' `{wmiir read /client/$client/label}}
+		if(~ $resp Kill)
+			wmiir xwrite /client/$client/ctl slay
+	}&}
+fn Event-Notice {
+	wmiir xwrite $noticebar $wi_arg
+
+	/bin/kill $xpid >[2]/dev/null # Let's hope this isn't reused...
+	{ sleep $noticetimeout; wmiir xwrite $noticebar ' ' }& # Bug...
+	xpid = $apid}
+
+fn Event-LeftBar^(Click DND) {
+	shift; wmiir xwrite /ctl view $*}
+
+fn ClientMenu-3-Delete {
+	wmiir xwrite /client/$1/ctl kill}
+fn ClientMenu-3-Kill {
+	wmiir xwrite /client/$1/ctl slay}
+fn ClientMenu-3-Fullscreen {
+	wmiir xwrite /client/$1/ctl Fullscreen on}
+fn Event-ClientMouseDown {
+	wi_fnmenu Client $2 $1 &}
+
+fn LBarMenu-3-Delete {
+	tag=$1; clients=`{wmiir read /tag/$tag/index | awk '/[^#]/{print $2}'}
+	for(c in $clients) {
+		if(~ $tag `{wmiir read /client/$c/tags})
+			wmiir xwrite /client/$c/ctl kill
+		if not
+			wmiir xwrite /client/$c/tags -$tag}
+	if(~ $tag `{wi_seltag}) {
+		newtag = `{wi_tags | awk -v't='$tag '
+			$1 == t { if(!l) getline l
+				  print l
+				  exit }
+			{ l = $0 }'}
+		wmiir xwrite /ctl view $newtag}}
+fn Event-LeftBarMouseDown {
+	wi_fnmenu LBar $* &}
+
+# Actions
+fn Action-rehash {
+	comm -23 <{ls `{namespace}^/proglist.* >[2]/dev/null | awk -F'.' '{print $NF}'} \
+		 <{ps | awk '{print $2}'} |
+	while(id=`{read})
+		rm `{namespace}^/proglist.$id
+	wi_proglist $PATH >$progs_file}
+fn Action-quit {
+	wmiir xwrite /ctl quit}
+fn Action-exec {
+	wmiir xwrite /ctl exec $*}
+fn Action-status {
+	flag x -; flag r -
+	if(wmiir remove /rbar/status >[2]/dev/null)
+		sleep 2
+	echo $wmiinormcol | wmiir create /rbar/status
+	while(status | wmiir write /rbar/status)
+		sleep 1
+}
+
+# Source Variables, &c
+if(~ $0 ('' */)wmiirc_local.rc)
+	wi_notice This file should not be named wmiirc_local.rc
+if not
+	. `{wi_script -f wmiirc_local.rc}
+echo $wmiinormcol | wmiir create $noticebar
+
+# Key Bindings
+_keys = `{wi_getfuns Key}
+fn key {
+	key=()
+	for(k) if(! ~ $k $_keys) key = ($key Key-$k)
+	~ $#key 0}
+
+# This is... ugly.
+
+key $MODKEY-Control-t || fn $key {
+	switch(`{wmiir read /keys | wc -l}) {
+	case 0 1
+		wmiir xwrite /keys $keys
+		wmiir xwrite /ctl grabmod $MODKEY
+	case *
+		ifs=() { keys=`{wmiir read /keys} }
+		wmiir xwrite /keys $MODKEY-Control-t
+		wmiir xwrite /ctl grabmod Mod3
+	}}
+
+key $MODKEY-$LEFT || fn $key {
+	wmiir xwrite /tag/sel/ctl select left}
+key $MODKEY-$RIGHT || fn $key {
+	wmiir xwrite /tag/sel/ctl select right}
+key $MODKEY-$DOWN || fn $key {
+	wmiir xwrite /tag/sel/ctl select down}
+key $MODKEY-$UP || fn $key {
+	wmiir xwrite /tag/sel/ctl select up}
+key $MODKEY-Control-$DOWN || fn $key {
+	wmiir xwrite /tag/sel/ctl select down stack}
+key $MODKEY-Control-$UP || fn $key {
+	wmiir xwrite /tag/sel/ctl select up stack}
+
+key $MODKEY-Shift-$LEFT || fn $key {
+	wmiir xwrite /tag/sel/ctl send sel left}
+key $MODKEY-Shift-$RIGHT || fn $key {
+	wmiir xwrite /tag/sel/ctl send sel right}
+key $MODKEY-Shift-$DOWN || fn $key {
+	wmiir xwrite /tag/sel/ctl send sel down}
+key $MODKEY-Shift-$UP || fn $key {
+	wmiir xwrite /tag/sel/ctl send sel up}
+
+key $MODKEY-f || fn $key {
+	wmiir xwrite /client/sel/ctl Fullscreen toggle}
+
+key $MODKEY-space || fn $key {
+	wmiir xwrite /tag/sel/ctl select toggle}
+key $MODKEY-Shift-space || fn $key {
+	wmiir xwrite /tag/sel/ctl send sel toggle}
+key $MODKEY-d || fn $key {
+	wmiir xwrite /tag/sel/ctl colmode sel default-max}
+key $MODKEY-s || fn $key {
+	wmiir xwrite /tag/sel/ctl colmode sel stack-max}
+key $MODKEY-m || fn $key {
+	wmiir xwrite /tag/sel/ctl colmode sel stack+max}
+
+key $MODKEY-Shift-c || fn $key {
+	wmiir xwrite /client/sel/ctl kill}
+
+key $MODKEY-a || fn $key {
+	Action `{wi_actions | wimenu -h $hist.action -n $histlen} &}
+key $MODKEY-p || fn $key {
+	ifs=() { cmd = `{wimenu -h $hist.prog -n $histlen <$progs_file} }
+	wi_runcmd $cmd & }
+
+key $MODKEY-Return || fn $key {
+	wi_runcmd $WMII_TERM &}
+
+key $MODKEY-t || fn $key {
+	tag=`{wi_tags | wimenu -h $hist.tag -n 50} && wmiir xwrite /ctl view $tag &}
+key $MODKEY-Shift-t || fn $key {
+	sel=`{wi_selclient} {
+	tag=`{wi_tags | wimenu -h $hist.tag -n 50} && wmiir xwrite /client/$sel/tags $tag } &}
+
+key $MODKEY-^`{seq 0 9} || fn $key {
+	wmiir xwrite /ctl view `{echo $1 | sed 's/.*-//'}}
+key Shift-$MODKEY-^`{seq 0 9} || fn $key {
+	wmiir xwrite /client/sel/tags `{echo $1 | sed 's/.*-//'}}
+
+#` WM Configuration
+wmiir write /ctl <<!
+	grabmod $MODKEY
+	border 2
+	font $wmiifont
+	focuscolors $wmiifocuscol
+	normcolors $wmiinormcol
+!
+setbackground $wmiibackground
+
+# Source Overrides
+Action overridekeys
+
+# Misc Setup
+progs_file=`{namespace}^/proglist.$pid
+hist=`{echo $WMII_CONFPATH | sed 's,:.*,/,'}^/history
+histlen=5000
+Action status &
+Action rehash &
+
+# Tag Bar Setup
+ifs=$wi_newline {
+	rc -c 'wmiir rm /lbar/^$*' >[2]/dev/null \
+		`{comm -23 <{wmiir ls /lbar} \
+			   <{wi_tags}}
+	seltag=`{wi_seltag}
+	for(tag in `{wi_tags}) {{
+		if(~ $tag $seltag)
+			echo $wmiifocuscol $tag
+		if not
+			echo $wmiinormcol $tag
+		} | wmiir create /lbar/$tag}}
+
+wi_eventloop
+

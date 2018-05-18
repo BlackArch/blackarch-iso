@@ -1,0 +1,1 @@
+../scripts/sysclean.sh

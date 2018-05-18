@@ -1,0 +1,22 @@
+#lxdm {
+	background-image: url("blackarch.jpg")
+}
+
+#bottom_pane {
+	background-color: rgba(0,0,0,0.24);
+}
+
+#time {
+	font: xos4 terminus 12;
+	color: #484848;
+}
+
+#user_list, #login_entry {
+	background-image: none;
+	background-color: #000000;
+	color: #c40000;
+}
+
+#prompt, #bottom_pane GtkLabel {
+	color: #c40000;
+}

@@ -1,0 +1,41 @@
+style "back"
+{
+	engine "pixmap"
+	{
+		image
+		{
+			function = FLAT_BOX
+			shadow=NONE
+			state = NORMAL
+			file="blackarch.jpg"
+			stretch=TRUE
+			detail = "base"
+		}
+	}
+}
+
+style "time"
+{
+	fg[NORMAL]="#484848"
+	font_name="xos4 terminus 12"
+}
+
+style "prompt"
+{
+	fg[NORMAL]="#c40000"
+	font_name="xos4 terminus 12"
+}
+
+# Normally this won't paint an invisible event box, but we did some hacks in greeter.c.
+style "bottom"
+{
+	font_name="xos4 terminus 12"
+	fg[NORMAL] = "#c40000"
+    bg[NORMAL] = "#000000"
+}
+
+widget "lxdm" style "back"
+widget "*.time" style "time"
+widget "*.prompt" style "prompt"
+widget "*.bottom_pane" style "bottom"
+widget_class "GtkWindow.*.GtkEventBox.*.<GtkLabel>" style "bottom"
