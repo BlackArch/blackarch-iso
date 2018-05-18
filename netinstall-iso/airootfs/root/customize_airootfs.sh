@@ -30,6 +30,9 @@ if [ ! -d /root ]; then
 	chmod 700 root && chown -R root:root /root
 fi
 
+# setting root password
+echo "root:blackarch" | chpasswd
+
 # copy files over to home
 cp -r /etc/skel/.* /root/
 
