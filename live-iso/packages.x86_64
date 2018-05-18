@@ -68,8 +68,6 @@ arch-install-scripts
 archlinux-keyring
 arduino
 argon2
-argus
-argus-clients
 armitage
 armscgen
 arpalert
@@ -226,7 +224,6 @@ bunny
 burpsuite
 buttinsky
 bvi
-bytecode-viewer
 c5scan
 cachedump
 cadaver
@@ -246,7 +243,6 @@ centry
 cewl
 cflow
 cfr
-chameleonmini
 changeme
 chankro
 chaosmap
@@ -655,7 +651,6 @@ gobd
 gobuster
 goddi
 goldeneye
-golismero
 goodork
 goofile
 google-explorer
@@ -734,7 +729,6 @@ honeyd
 honeypy
 honggfuzz
 honssh
-hookanalyser
 hoover
 hoper
 hoppy
@@ -849,7 +843,6 @@ isr-form
 issniff
 ivre
 iw
-jaadas
 jad
 jadx
 jaidam
@@ -915,7 +908,6 @@ lbmap
 ldap-brute
 ldapenum
 ld-shatner
-leo
 leroy-jenkins
 letmefuckit-scanner
 leviathan
@@ -1130,7 +1122,6 @@ nili
 nimbostratus
 nipe
 nipper
-nirsoft
 nishang
 nkiller2
 nmap
@@ -1541,7 +1532,6 @@ shortfuzzy
 sickle
 sidguesser
 siege
-sigploit
 sigspotter
 silenteye
 silk
