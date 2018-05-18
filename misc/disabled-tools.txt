@@ -1,16 +1,12 @@
-appmon
 argus
 argus-clients
 bytecode-viewer
 casefile
 chameleonmini
 checkpwd
-cookie-cadger
 cryptohazemultiforcer
 cuckoo
-cyberscan
 dawnscanner
-dinouml
 dripcap
 eraser
 golismero
@@ -27,7 +23,6 @@ pfff
 searchsploit
 sigploit
 snmp-fuzzer
-sysinternals-suite
 thezoo
 truecrack
 veil
