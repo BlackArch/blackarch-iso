@@ -1608,7 +1608,6 @@ snmpattack
 snmp-brute
 snmpcheck
 snmpenum
-snmp-fuzzer
 snmpscan
 snoopbrute
 snoopy-ng
@@ -1995,7 +1994,6 @@ wpsweep
 wreckuests
 ws-attacker
 wsfuzzer
-wssip
 wsuspect-proxy
 wups
 wuzz
