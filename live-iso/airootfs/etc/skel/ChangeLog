@@ -8,7 +8,7 @@
 	- fixed awesome-wm quit/exit issue
 	- fixed system group and user failures
 	- fixed kernel module load failures
-	- update blackarch installer to version 0.X (bugfix + improvements)
+	- update blackarch installer to version 0.7 (bugfix + improvements)
 	- included kernel 4.16.10
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
