@@ -24,4 +24,4 @@ alias curl="curl --user-agent 'noleak'"
   . /usr/share/bash-completion/completions/*
 
 # tuning
-tuning.sh 2>&1
+tuning.sh > /dev/null 2>&1
