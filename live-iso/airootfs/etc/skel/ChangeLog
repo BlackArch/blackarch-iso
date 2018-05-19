@@ -1,13 +1,14 @@
 ===> 2018.06.01
-	- network stack tunings
+	- network stack tunings (sysctl + tuning.sh)
 	- add system/pacman clean-up script (consistency++)
 	- switch to terminus font (console, LXDM, WMs, x-terminals, ...)
 	- replaced second browser midori with chromium
 	- really, a lot of clean-ups and tweaks!
 	- rename ISO filename
+	- fixed awesome-wm quit/exit issue
 	- fixed system group and user failures
 	- fixed kernel module load failures
-	- update blackarch installer to version 0.X
+	- update blackarch installer to version 0.X (bugfix + improvements)
 	- included kernel 4.16.10
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
