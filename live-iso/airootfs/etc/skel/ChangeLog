@@ -8,7 +8,7 @@
 	- fixed system group and user failures
 	- fixed kernel module load failures
 	- update blackarch installer to version 0.X
-	- included kernel 4.16.X
+	- included kernel 4.16.10
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
 	- updated all window manager menus (awesome, fluxbox, openbox)
