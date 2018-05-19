@@ -4,9 +4,12 @@
 	- switch to terminus font (console, LXDM, WMs, x-terminals, ...)
 	- replaced second browser midori with chromium
 	- really, a lot of clean-ups and tweaks!
+	- rename ISO filename
+	- fixed system group and user failures
+	- fixed kernel module load failures
 	- update blackarch installer to version 0.X
 	- included kernel 4.16.X
-	- updated all blackarch tools and packages
+	- updated all blackarch tools and packages including config files
 	- updated all system packages
 	- updated all window manager menus (awesome, fluxbox, openbox)
 	- re-add multilib
