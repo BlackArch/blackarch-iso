@@ -9,7 +9,7 @@
 
     [submenu] (browsers)
         [exec] (firefox) {firefox}
-        [exec] (chromium) {chromium}
+        [exec] (chromium) {chromium --no-sandbox}
     [end]
 
     [submenu] (network)

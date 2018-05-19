@@ -37,7 +37,7 @@
 	</item>
 	<item label="chromium">
 		<action name="Execute">
-			<command>chromium</command>
+			<command>chromium --no-sandbox</command>
 			<startupnotify>
 				<enabled>yes</enabled>
 				<wmclass>chromium</wmclass>

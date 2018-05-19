@@ -105,7 +105,7 @@ xtermmenu = {
 
 browsermenu = {
     { "firefox", "firefox" },
-    { "chromium", "chromium" }
+    { "chromium", "chromium --no-sandbox" }
 }
 
 networkmenu = {
