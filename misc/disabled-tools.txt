@@ -1,5 +1,8 @@
+appmon
+arduino
 argus
 argus-clients
+bloodhound
 bytecode-viewer
 casefile
 chameleonmini
