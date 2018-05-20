@@ -34,7 +34,7 @@ fi
 echo "root:blackarch" | chpasswd
 
 # copy files over to home
-cp -r /etc/skel/.* /root/
+cp -r /etc/skel/. /root/
 
 # setup repository, add pacman.conf entry and sync databse
 curl -k -s https://blackarch.org/strap.sh | sh
