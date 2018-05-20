@@ -1,4 +1,5 @@
 ===> 2018.06.01
+	- added more than 60 new tools
 	- added config files for i3-wm (BlackArch compatible)
 	- network stack tunings (sysctl + tuning.sh)
 	- add system/pacman clean-up script (consistency++)
