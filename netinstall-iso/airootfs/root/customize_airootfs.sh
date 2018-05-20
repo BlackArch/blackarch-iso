@@ -37,7 +37,7 @@ echo "root:blackarch" | chpasswd
 cp -r /etc/skel/. /root/
 
 # setup repository, add pacman.conf entry and sync databse
-curl -k -s https://blackarch.org/strap.sh | sh
+curl -s https://blackarch.org/strap.sh | sed "s|get_mirror$|#get_mirror|1" | sh
 
 # sys updates, cleanups, etc.
 pacman -Syyu --noconfirm
