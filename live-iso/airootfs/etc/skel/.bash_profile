@@ -22,6 +22,3 @@ alias curl="curl --user-agent 'noleak'"
 # source files
 [ -r /usr/share/bash-completion/completions ] &&
   . /usr/share/bash-completion/completions/*
-
-# tuning
-tuning.sh > /dev/null 2>&1
