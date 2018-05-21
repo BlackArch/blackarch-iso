@@ -7,7 +7,7 @@ nc="$(tput sgr0)"
 # exports
 export PATH="${HOME}/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:"
 export PATH="${PATH}/usr/local/sbin:/opt/bin:/usr/bin/core_perl:/usr/games/bin:"
-export PS1="\[$darkgrey\][ \[$red\]blackarch \[$white\]\W\[$red\] \[$darkgrey\]]\\[$red\]# \[$nc\]"
+export PS1="\[$darkgrey\][ \[$red\]\H \[$white\]\W\[$red\] \[$darkgrey\]]\\[$red\]# \[$nc\]"
 export LD_PRELOAD=""
 export EDITOR="vim"
 
