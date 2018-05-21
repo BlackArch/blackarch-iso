@@ -244,7 +244,7 @@ wmiir write /ctl <<!
 	grabmod $MODKEY
 	border 1
 !
-feh --bg-scale /usr/share/blackarch/wallpaper.png &
+feh --bg-scale /usr/share/blackarch/wallpaper.jpg &
 
 # Misc
 progsfile="$(wmiir namespace)/.proglist"

@@ -40,4 +40,4 @@ fi
 
 ### blackarch related ###
 /usr/bin/VBoxClient-all &
-exec feh --bg-scale '/usr/share/blackarch/wallpaper.png'
+exec feh --bg-scale '/usr/share/blackarch/wallpaper.jpg'
