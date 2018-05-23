@@ -5,12 +5,12 @@
 	- add system/pacman clean-up script (consistency++)
 	- switch to terminus font (console, LXDM, WMs, x-terminals, ...)
 	- replaced second browser midori with chromium
-	- really, a lot of clean-ups and tweaks!
+	- really, a lot of clean-ups and many tweaks!
 	- rename ISO filename
 	- fixed awesome-wm quit/exit issue
 	- fixed system group and user failures
 	- fixed kernel module load failures
-	- update blackarch installer to version 0.7 (bugfix + improvements)
+	- update blackarch installer to version 0.7 (bugfix + many improvements)
 	- included linux kernel 4.16.11
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
