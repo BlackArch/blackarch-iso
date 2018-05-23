@@ -1992,6 +1992,7 @@ networkmap -h ;
 networkminer ;
 netzob -h ;
 netzobparse ;
+nextnet -h ;
 nfacctd -h ;
 nfanon -h ;
 nfcapd -h ;
