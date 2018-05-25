@@ -1,25 +1,6 @@
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
 *.iso
-
-
-
-# OS generated files #
-######################
 work/
 out/
-pkg/
-src/
-trunk/
-
-/real-repo/
-/repo/
-/build/
-/chroot/
-/alt/
-/logs
 
 /.gnupg/
 /.subversion/
@@ -31,45 +12,3 @@ tags
 
 .MTREE
 .PKGINFO
-
-*.part
-*.7z
-*.asc
-*.bz2
-*.bzip
-*.db
-*.db.*
-*.deb
-*.dmg
-*.egg
-*.gem
-*.gz
-*.iso
-*.jar
-*.lzma
-*.pdf
-*.rar
-*.rpm
-*.sig
-*.tar
-*.tgz
-*.xpi
-*.xz
-*.zip
-*.key
-*.h
-*.c
-*.java
-*.jpg
-*.png
-*.exe
-/scripts/arm-qemu/armv6/
-/scripts/arm-qemu/armv7/
-!/scripts/arm-qemu/armv6/init.sh
-!/scripts/arm-qemu/armv6/kill.sh
-!/scripts/arm-qemu/armv6/run.sh
-!/scripts/arm-qemu/armv7/init.sh
-!/scripts/arm-qemu/armv7/run.sh
-/tmp/
-scripts/images/docker/output
-!/packages/python2-fullcontact.py
