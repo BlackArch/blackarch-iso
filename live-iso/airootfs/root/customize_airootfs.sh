@@ -53,10 +53,12 @@ cp -r /etc/skel/. /root/.
 # setup repository, add pacman.conf entry, sync databases
 curl -s https://blackarch.org/strap.sh | sed "s|get_mirror$|#get_mirror|1" | sh
 pacman -Syy --noconfirm
-pacman-optimize
 pacman-db-upgrade
 pacman-key --init
 pacman-key --populate blackarch archlinux
+pkgfile -u
+updatedb
+sync
 
 # font configuration
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d

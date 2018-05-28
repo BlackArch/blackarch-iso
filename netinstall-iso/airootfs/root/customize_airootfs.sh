@@ -41,12 +41,10 @@ curl -s https://blackarch.org/strap.sh | sed "s|get_mirror$|#get_mirror|1" | sh
 
 # sys updates, cleanups, etc.
 pacman -Syyu --noconfirm
-#pacman -Rscn \$(pacman -Qtdq)
-pacman-optimize
-updatedb
-sync
 pacman-db-upgrade
+updatedb
 pkgfile -u
+sync
 
 # default shell
 chsh -s /bin/bash
