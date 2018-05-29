@@ -11,7 +11,7 @@
 	- fixed system group and user failures
 	- fixed kernel module load failures
 	- update blackarch installer to version 0.7 (bugfix + many improvements)
-	- included linux kernel 4.16.11
+	- included linux kernel 4.16.12
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
 	- updated all window manager menus (awesome, fluxbox, openbox)
