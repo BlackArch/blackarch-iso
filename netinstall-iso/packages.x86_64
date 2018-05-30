@@ -3,6 +3,7 @@ archlinux-keyring
 b43-fwcutter
 blackarch-installer
 blackarch-keyring
+bind-tools
 bridge-utils
 btrfs-progs
 crda
