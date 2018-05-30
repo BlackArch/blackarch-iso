@@ -62,6 +62,3 @@ rm -r /etc/initcpio
 # add install.txt file
 echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 rm -rf /root/install.txt
-
-# blah
-mkdir -p /etc/pacman.d/ && touch /etc/pacman.d/blackarch-mirrorlist
