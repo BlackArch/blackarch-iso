@@ -2570,6 +2570,7 @@ redir6 ;
 redirectpoison ;
 redirsniff6 ;
 redsocks -h ;
+reelphish -h ;
 reged ;
 regeorg -h ;
 reglookup ;
