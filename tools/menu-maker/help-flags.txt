@@ -2199,6 +2199,7 @@ paranoic -h ;
 parasite6 ;
 paratrace -h ;
 paros ;
+parse-evtx ;
 parselog ;
 parsero -h ;
 pasco ;
