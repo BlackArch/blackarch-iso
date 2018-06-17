@@ -2362,6 +2362,7 @@ pret -h ;
 prettypacket -h ;
 princeprocessor -h ;
 procan -h ;
+procdump ;
 proctal -h ;
 procyon ;
 profuzz -h ;
