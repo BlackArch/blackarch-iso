@@ -6264,7 +6264,6 @@ blackarchmenu = {
   { "firmware", firmwaremenu },
   { "forensic", forensicmenu },
   { "fuzzer", fuzzermenu },
-  { "gpu", gpumenu },
   { "hardware", hardwaremenu },
   { "honeypot", honeypotmenu },
   { "ids", idsmenu },
