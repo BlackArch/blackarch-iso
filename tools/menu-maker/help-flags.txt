@@ -2049,6 +2049,7 @@ nping -h ;
 nprint -h ;
 ns6 ;
 nsdtool ;
+nsearch ;
 nsec3hash ;
 nsec3walker-collect ;
 nsec3walker-dicthashes ;
