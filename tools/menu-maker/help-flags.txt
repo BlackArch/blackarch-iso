@@ -1778,6 +1778,7 @@ maskprocessor -h ;
 massbleed ;
 masscan-automation -h ;
 masscan --help ;
+massdns ;
 massexpconsole ;
 matahari ;
 mat-gui ;
