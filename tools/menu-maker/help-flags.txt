@@ -1995,6 +1995,7 @@ netdork -h ;
 netmap -h ;
 netmask --help ;
 netreconn -h ;
+netripper cd /usr/share/windows/netripper ; ls ;
 netscan2-ascan -h ;
 netscan2-capture -h ;
 netscan2-gethostname -h ;
