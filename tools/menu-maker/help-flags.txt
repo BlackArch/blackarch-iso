@@ -1611,6 +1611,7 @@ keepass2john ;
 keimpx -h ;
 kekeo cd /usr/share/windows/kekeo ; ls ;
 kerbcrack cd /usr/share/windows/kerbcrack ; ls ;
+kernelpop -h ;
 keyfinder ;
 keystore_pass ;
 khc ;
