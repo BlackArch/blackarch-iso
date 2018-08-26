@@ -1074,6 +1074,7 @@ gatecrasher -h ;
 gcat --help ;
 gcc ;
 gcore ;
+gcrypt --help ;
 gdbgui -h ;
 gdb -h ;
 gdbserver --help ;
