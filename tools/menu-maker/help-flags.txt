@@ -979,6 +979,7 @@ firewall6 ;
 firmwalker ;
 firmware-mod-kit ;
 firmware-mod-kit -h ;
+firstorder -h ;
 fiwalk ;
 fl0p -h ;
 flare -h ;
