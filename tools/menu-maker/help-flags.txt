@@ -876,6 +876,7 @@ etherflood cd /usr/share/windows/etherflood ; ls ;
 ettercap -h ;
 etterfilter -h ;
 etterlog -h ;
+evilginx2 -h ;
 evilginx -h ;
 evilgrade ;
 evilgrade.sh ;
