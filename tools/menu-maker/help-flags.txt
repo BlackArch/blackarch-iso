@@ -3076,6 +3076,7 @@ sploitctl -H ;
 sploitego -h ;
 spoofcheck ;
 spooftooph -h ;
+sppokflare ;
 sps -h ;
 sqid -h ;
 sqlbf ;
