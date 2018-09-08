@@ -3586,7 +3586,7 @@ windows-privesc-check cd /usr/share/windows/windows-privesc-check ; ls ;
 windowsspyblocker cd /usr/share/windowsspyblocker/ ; ls ;
 winexe ;
 winfo cd /usr/share/windows/winfo ; ls ;
-winhex cd /usr/share/windows/winhex ; ls ;
+winhex cd /opt/windows/winhex ; ls ;
 win-jboss-autopwn ;
 winrelay cd /usr/share/windows/winrelay ; ls ;
 wireless-ids -h ;
