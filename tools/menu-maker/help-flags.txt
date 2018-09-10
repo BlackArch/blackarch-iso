@@ -3174,6 +3174,7 @@ subbrute -h ;
 subdomainer.py -h ;
 subfinder -h ;
 sublist3r -h ;
+subover ;
 subscan2.py ;
 subscan.py ;
 subterfuge ;
