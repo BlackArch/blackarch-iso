@@ -773,6 +773,7 @@ doozer ;
 doozer-monitor ;
 doozestop ;
 dorkbot -h ;
+dorkme -h ;
 dorknet -h ;
 dos_mld6.sh ;
 dos-new-ip6 ;
