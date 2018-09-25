@@ -3671,6 +3671,7 @@ xplico ;
 xpl-search --help ;
 xprobe2 -h ;
 xray ;
+xrop ;
 x-scan cd /usr/share/windows/x-scan ; ls ;
 xspy -h ;
 xsscrapy -h ;
