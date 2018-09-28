@@ -3287,6 +3287,7 @@ thc-smartbrute -h ;
 thc-ssl-dos -h ;
 thcsyn6 ;
 the_cleaner.sh -h ;
+thefatrat cd /usr/share/thefatrat ; ls ;
 thefuzz -h ;
 theharvester ;
 themole -h ;
