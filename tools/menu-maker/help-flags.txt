@@ -1787,6 +1787,7 @@ mana-nat-simple ;
 mana-noupstream ;
 mana-noupstream-eap ;
 mando.me -h ;
+manticore -h ;
 mapsid ;
 map_unit ;
 mara-framework ;
