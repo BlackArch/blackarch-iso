@@ -1605,6 +1605,7 @@ jpeg_extract ;
 jpexs-decompiler ;
 js-beautify2 -h ;
 js-beautify -h ;
+jshell ;
 jshint ;
 jsql ;
 jsql-injection ;
