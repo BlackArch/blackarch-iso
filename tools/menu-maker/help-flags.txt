@@ -2271,6 +2271,7 @@ paxtest -h ;
 payloadmask ;
 pblind ;
 pblind.py ;
+pbscan -h ;
 pcapfex -h ;
 pcapfix ;
 pcapsipdump ;
