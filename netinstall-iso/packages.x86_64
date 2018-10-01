@@ -32,7 +32,6 @@ pptpclient
 refind-efi
 rfkill
 rp-pppoe
-speedtouch
 tzdata
 usb_modeswitch
 vim
@@ -41,5 +40,4 @@ wicd
 wireless_tools
 wpa_actiond
 wvdial
-zd1211-firmware
 terminus-font
