@@ -203,7 +203,6 @@ smali
 smartmontools
 socat
 spectrwm
-speedtouch
 splint
 sqlmap
 ssdeep
@@ -281,6 +280,5 @@ xorg-xinit
 xterm
 yara
 zaproxy
-zd1211-firmware
 zip
 zmap
