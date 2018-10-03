@@ -3200,6 +3200,7 @@ sublist3r -h ;
 subover ;
 subscan2.py ;
 subscan.py ;
+subscraper -h ;
 subterfuge ;
 sucrack ;
 superscan cd /usr/share/windows/superscan-4 ; ls ;
