@@ -2504,6 +2504,7 @@ pyfiscan -h ;
 pyinstaller ;
 pyjfuzz -h ;
 pykek ;
+pymeta -h ;
 pyminifakedns ;
 pyrasite -h ;
 pyrasite-memory-viewer ;
