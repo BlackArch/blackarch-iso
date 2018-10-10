@@ -933,6 +933,7 @@ linux-atm
 linux-exploit-suggester
 linux-exploit-suggester.sh
 linux-firmware
+linux-headers
 lisa.py
 list-urls
 littleblackbox
@@ -1141,6 +1142,8 @@ ntpdos
 ntp-fingerprint
 ntp-ip-enum
 nullinux
+nvidia-dkms
+nvidia-utils
 oat
 obconf
 obevilion
@@ -1148,6 +1151,7 @@ obexstress
 obfsproxy
 oblogout
 obmenu
+ocl-icd
 ocs
 ofp-sniffer
 ohrwurm
@@ -1162,6 +1166,7 @@ onionscan
 onionshare
 openbox
 openbox-themes
+opencl-nvidia
 openconnect
 opendoor
 openssh
