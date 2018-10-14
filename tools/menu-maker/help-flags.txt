@@ -229,6 +229,7 @@ autosint -h ;
 autosploit ;
 autovpn ;
 auto_xor_decrypter -h ;
+avet ;
 avr-addr2line -h ;
 avr-ar -h ;
 avr-as -h ;
