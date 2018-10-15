@@ -921,6 +921,7 @@ ezhexviewer ;
 facebot -h ;
 facebrok cd /usr/share/facebrok ; ls ;
 facebrute -h ;
+factordb -h ;
 fake_advertise6 ;
 fakeap ;
 fake_dhcps6 ;
