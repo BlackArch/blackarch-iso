@@ -1901,6 +1901,7 @@ mitmer -h ;
 mitmf -h ;
 mitm_listener ;
 mitmproxy -h ;
+mitm-relay -h ;
 mitmweb ;
 mkbrutus -h ;
 mkvcalcproba ;
