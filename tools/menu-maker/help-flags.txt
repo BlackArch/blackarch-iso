@@ -845,6 +845,7 @@ ecfs ;
 ecfs-handler ;
 edb ;
 editcap ;
+eggshell ;
 eh -h ;
 eigrp -h ;
 elettra ;
