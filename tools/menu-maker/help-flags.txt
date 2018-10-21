@@ -2394,6 +2394,8 @@ pkt2flow -h ;
 plasma -h ;
 plcscan -h ;
 plecost -h ;
+plotcuckoojson -h ;
+plotprocmoncsv -h ;
 plown -h ;
 plugin_test ;
 plumber ;
