@@ -1851,6 +1851,7 @@ mdcrack ;
 mdk3 --help ;
 mdns-recon ;
 mdns-scan -h ;
+meanalyzer ;
 medusa -h ;
 melkor -h ;
 memdump -h ;
