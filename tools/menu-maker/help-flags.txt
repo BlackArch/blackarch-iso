@@ -947,6 +947,7 @@ fang -h ;
 fantaip ;
 faraday ;
 fasm ;
+fastnetmon --help ;
 fbht ;
 fbid ;
 fcat ;
