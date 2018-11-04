@@ -1167,6 +1167,7 @@ grabbb ;
 grabber-scanner -h ;
 grabing ;
 grabitall cd /usr/share/windows/grabitall ; ls ;
+graudit -h ;
 grcc ;
 gr_constellation_plot ;
 grc_setup_freedesktop ;
