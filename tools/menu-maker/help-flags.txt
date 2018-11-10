@@ -1831,6 +1831,7 @@ masscan-automation -h ;
 masscan --help ;
 massdns ;
 massexpconsole ;
+mat2 -h ;
 matahari ;
 mat-gui ;
 mat -h ;
