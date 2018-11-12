@@ -428,6 +428,7 @@ cadaver -h ;
 calc_stat ;
 callgrind_annotate ;
 callgrind_control ;
+cameradar -h ;
 camscan -h ;
 canari -h ;
 cangibrina -h ;
