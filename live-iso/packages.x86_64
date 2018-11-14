@@ -375,7 +375,6 @@ ctags
 ct-exposer
 ctunnel
 cuckoo
-cudahashcat
 cupp
 cutycapt
 cvechecker
@@ -1263,7 +1262,6 @@ obfs4proxy
 obfsproxy
 oblogout
 obmenu
-oclhashcat
 ocs
 ofp-sniffer
 ohrwurm
@@ -2027,7 +2025,6 @@ vivisect
 vlan-hopping
 vlany
 vmap
-vmcloak
 vnak
 vnc-bypauth
 vncrack
