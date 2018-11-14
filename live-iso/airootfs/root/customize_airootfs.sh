@@ -52,10 +52,11 @@ cp -r /etc/skel/. /root/.
 # setup repository, add pacman.conf entry, sync databases
 curl -s https://blackarch.org/strap.sh | sh
 pacman -Syy --noconfirm
-pacman-db-upgrade
 pacman-key --init
 pacman-key --populate blackarch archlinux
 pkgfile -u
+pacman -Fyy
+pacman-db-upgrade
 updatedb
 sync
 
