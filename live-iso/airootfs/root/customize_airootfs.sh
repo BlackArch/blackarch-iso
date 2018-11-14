@@ -22,8 +22,7 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus'
-                  'vmware-vmblock-fuse.service' 'vmtoolsd.service')
+enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
@@ -64,7 +63,7 @@ sync
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
 
 # fix wrong permissions for blackarch-dwm
-chmod 755 /usr/bin/blackarch-dwm
+#chmod 755 /usr/bin/blackarch-dwm
 
 # default shell
 chsh -s /bin/bash
