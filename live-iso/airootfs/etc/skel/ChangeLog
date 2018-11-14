@@ -1,6 +1,10 @@
 ===> 2018.12.01
 
+	- included every tool of BlackArch except: cuda-/oclhashcat and vmcloak
 	- included linux kernel 4.19.X
+	- updated all blackarch tools and packages including config files
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
 
 ===> 2018.06.01
 	- added more than 60 new tools
