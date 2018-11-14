@@ -64,7 +64,7 @@ sync
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
 
 # fix wrong permissions for blackarch-dwm
-#chmod 755 /usr/bin/blackarch-dwm
+chmod 755 /usr/bin/blackarch-dwm
 
 # default shell
 chsh -s /bin/bash
