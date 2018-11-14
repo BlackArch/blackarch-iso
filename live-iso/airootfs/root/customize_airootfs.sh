@@ -80,6 +80,7 @@ cd /usr/share/beef/ && bundle config build.nokogiri --use-system-libraries && bu
 # remove not needed .desktop entries
 rm -rf /usr/share/xsessions/openbox-kde.desktop
 rm -rf /usr/share/xsessions/i3-with-shmlog.desktop
+rm -rf /usr/share/xsessions/xfce.desktop
 rm -rf /root/install.txt
 
 # add install.txt file
