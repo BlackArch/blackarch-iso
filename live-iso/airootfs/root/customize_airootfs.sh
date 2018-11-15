@@ -22,14 +22,14 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus')
+enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus' 'wicd')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
 # create the user directory for live session
 if [ ! -d /root ]; then
-    mkdir /root
-    chmod 700 /root && chown -R root:root /root
+  mkdir /root
+  chmod 700 /root && chown -R root:root /root
 fi
 
 # disable pc speaker beep
@@ -62,9 +62,6 @@ sync
 
 # font configuration
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
-
-# fix wrong permissions for blackarch-dwm
-chmod 755 /usr/bin/blackarch-dwm
 
 # default shell
 chsh -s /bin/bash
