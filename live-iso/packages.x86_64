@@ -283,7 +283,6 @@ checkiban
 checkpwd
 checksec
 check-weak-dh-ssh
-cheetah-suite
 chiasm-shell
 chipsec
 chiron
@@ -505,7 +504,6 @@ dsss
 dsxs
 d-tect
 dtp-spoof
-dudley
 dumb0
 dump1090
 dumpacl
@@ -595,7 +593,6 @@ feh
 fernflower
 fernmelder
 fern-wifi-cracker
-ffdec
 fgscanner
 fhttp
 fi6s
@@ -1486,7 +1483,6 @@ pythem
 python2-capstone
 python2-jsbeautifier
 python2-yara
-python3-shodan
 python-capstone
 python-jsbeautifier
 python-python-cymruwhois
@@ -1611,7 +1607,6 @@ scannerl
 scansploit
 scanssh
 scapy
-scapy3k
 schnappi-dhcp
 sc-make
 scout2
@@ -2202,7 +2197,6 @@ ysoserial
 zackattack
 zaproxy
 zarp
-zd1211-firmware
 zeratool
 zerowine
 zeus
