@@ -180,7 +180,6 @@ blackarch-config-openbox
 blackarch-config-spectrwm
 blackarch-config-vim
 blackarch-config-x11
-blackarch-dwm
 blackarch-installer
 blackarch-keyring
 blackarch-menus
