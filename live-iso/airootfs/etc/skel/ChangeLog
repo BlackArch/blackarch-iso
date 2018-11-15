@@ -1,7 +1,9 @@
 ===> 2018.12.01
+
+	- added more than 150 new tools
+	- removed dwm window manager
 	- removed wmii window manager
-	- added a systemd unit file (blackarch.service) to manage environments via
-		/usr/bin/bactl
+	- added bactl package (script to config and setup BlackArch environment)
 	- included every tool of BlackArch except: cuda-/oclhashcat and vmcloak
 	- included linux kernel 4.19.X
 	- updated all blackarch tools and packages including config files
@@ -9,6 +11,7 @@
 	- updated all window manager menus (awesome, fluxbox, openbox)
 
 ===> 2018.06.01
+
 	- added more than 60 new tools
 	- added config files for i3-wm (BlackArch compatible)
 	- network stack tunings (sysctl + tuning.sh)
@@ -28,6 +31,7 @@
 	- re-add multilib
 
 ===> 2017.12.11
+
 	- update blackarch-installer to version 0.6.2 (most important change)
 	- include kernel 4.14.4
 	- updated lot's of blackarch tools and packages
@@ -35,6 +39,7 @@
 	- bugfix release! (see blackarch-installer)
 
 ===> 2017.11.24
+
 	- various clean-ups and tweaks
 	- updated blackarch installer to version 0.6
 	- included kernel 4.13.12
@@ -43,6 +48,7 @@
 	- updated all window manager menus (awesome, fluxbox, openbox)
 
 ===> 2017.08.30
+
 	- bugfix: strap.sh (removed 'http:' for pgp keyserver)
 	- updated blackarch installer to version 0.5.2 (update: sha1 sum of strap.sh)
 	- included kernel 4.12.8
@@ -51,10 +57,12 @@
 	- updated all window manager menus (awesome, fluxbox, openbox)
 
 ===> 2017.06.14
+
 	- bugfix release: perl libraries rebuilt due to perl upgrade
 	- include kernel 4.11.4
 
 ===> 2017.06.13
+
 	- added more than 100 new tools
 	- update blackarch installer to version 0.5 (bugfixes + features)
 	- fix several tools (dependencies, installs)
@@ -74,6 +82,7 @@
 	- updated menu entries for windows managers (awesome, fluxbox, openbox)
 
 ===> 2017.01.28
+
 	- add 20 new tools
 	- update blackarch installer to 0.3.2 (bugfixes)
 	- fix shadow permissions (thx to ldionmarcil)
@@ -86,10 +95,12 @@
 	- updated menu entries for windows managers (awesome, fluxbox, openbox)
 
 ===> 2016.12.29
+
 	- add new installer 0.3.1 (support: wlan, vmware, btrfs)
 	- updated all blackarch tools
 
 ===> 2016.12.20
+
 	- include linux kernel 4.8.13
 	- fix lxdm shutdown/reboot issue
 	- userland clean-ups
@@ -99,18 +110,21 @@
 	- updated menu entries for window managers (awesome, fluxbox, openbox)
 
 ===> 2016.08.31
+
 	- bugfix: blackarch-installer
 	- shrink ISO size (DVD-R support)
 	- updated system packages
 	- updated blackarch tools
 
 ===> 2016.08.30
+
 	- bugfix: strap.sh
 	- include linux kernel 4.7.2
 	- updated system packages
 	- updated blackarch tools
 
 ===> 2016.08.19
+
 	- include linux kernel 4.7.1
 	- updated BlackArch Linux installer
 	- added more than 100 new tools
@@ -119,6 +133,7 @@
 	- updated menu entries for window managers (awesome, fluxbox, openbox)
 
 ===> 2016.04.28
+
 	- added new (improved) BlackArch Linux installer
 	- include linux kernel 4.5.1
 	- added new blackarch linux installer
@@ -130,6 +145,7 @@
 	- updated menu entries for window managers (awesome, fluxbox, openbox)
 
 ===> 2016.01.10
+
 	- added more than 30 new tools
 	- update userland files (etc/)
 	- added bluetooth packages: bluez, bluez-firmware, bluez-hid2hci, bluez-utils
@@ -141,6 +157,7 @@
 	- added package: htop
 
 ===> 2015.12.01
+
 	- added more than 100 new tools
 	- updated system packages
 	- include linux kernel 4.2.5
@@ -151,6 +168,7 @@
 	- added missing group 'vboxsf'
 
 ===> 2015.07.31
+
 	- added more than 30 new tools
 	- updated system packages including linux kernel 4.1.3
 	- updated all tools
@@ -162,6 +180,7 @@
 	- fixed typos in ISO config files
 
 ===> 2015.04.08
+
 	- added README
 	- fix pacman.conf settings: replace HoldPkg settings with IgnorePkg
 	- updated blackarch-install-scripts (add missing packages, check SHA1 sum of
@@ -170,6 +189,7 @@
 	- updated tools
 
 ===> 2015.03.29
+
 	- lot's of bugfixes
 	- change splash for boot loader (syslinux / grub)
 	- updated pacman.conf settings
@@ -182,6 +202,7 @@
 	- added more than 150 new tools
 
 ===> 2014.10.03
+
 	- fixed beef
 	- fixed pam issues
 	- added services and login.defs file
@@ -195,6 +216,7 @@
 	- upgraded archiso profile
 
 ===> 2014.07.01
+
 	- added new gtk theme
 	- added more locales for lxdm and system
 	- replaced wallpaper and logos
@@ -205,6 +227,7 @@
 	- added missing users and groups in /etc/passwd and /etc/group
 
 ===> 2014.04.21
+
 	- added new system packages: mplayer, abs, ack, bc, bridge-utils, darkhttpd,
 		flashplugin, inotify-tools, irssi, makepasswd, mercurial, mplayer, rtorrent,
 		scrot, strace, tor-browser-en
@@ -217,6 +240,7 @@
 	- replaced zathura pdf reader with mupdf
 
 ===> 2014.03.02
+
 	- package: added zathura
 	- package: added lsof
 	- package: added pkgfile
