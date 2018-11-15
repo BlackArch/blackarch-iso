@@ -941,7 +941,6 @@ joomscan
 jpegdump
 jpexs-decompiler
 jshell
-jsql
 jsql-injection
 jstillery
 juicy-potato
@@ -1051,7 +1050,6 @@ magescan
 magicrescue
 magictree
 mail-crawl
-makepasswd
 make-pdf
 maketh
 malboxes
@@ -1118,14 +1116,12 @@ mingsweeper
 minimodem
 minimysqlator
 miranda-upnp
-miredo
 missidentify
 missionplanner
 mitmap
 mitmap-old
 mitmer
 mitmf
-mitmproxy
 mitm-relay
 mkbrutus
 mkinitcpio
@@ -1147,7 +1143,6 @@ morxcrack
 morxkeyfmt
 morxtraversal
 morxtunel
-morxtunnel
 mosca
 mosquito
 mots
@@ -1312,7 +1307,6 @@ p7zip
 pack
 packer
 packerid
-packer-io
 packeth
 packet-o-matic
 packetq
@@ -1617,10 +1611,10 @@ scannerl
 scansploit
 scanssh
 scapy
+scapy3k
 schnappi-dhcp
 sc-make
 scout2
-scpay3k
 scrape-dns
 scrapy
 scratchabit
@@ -1756,14 +1750,12 @@ sockstat
 soot
 spade
 spaf
-spaghetti
 sparta
 spartan
 sparty
 spectools
 spectrwm
 speedpwn
-speedtouch
 spf
 spfmap
 spiderfoot
@@ -1891,7 +1883,6 @@ tekdefense-automater
 termineter
 terminus-font
 testdisk
-testssl
 testssl.sh
 tftp-bruteforce
 tftp-fuzz
@@ -1937,7 +1928,6 @@ trid
 trinity
 triton
 trixd00r
-trizen
 truecrypt
 truehunter
 trufflehog
@@ -1946,7 +1936,6 @@ tsh
 tsh-sctp
 ttf-indic-otf
 tunna
-tuxcut
 tweets-analyzer
 twofi
 typo-enumerator
@@ -2011,7 +2000,6 @@ veles
 veracrypt
 vfeed
 vhostscan
-vidalia
 videosnarf
 vim
 vinetto
@@ -2045,7 +2033,6 @@ vulnerabilities-spider
 vuls
 vulscan
 w3af
-waffit
 wafninja
 wafp
 wafpass
