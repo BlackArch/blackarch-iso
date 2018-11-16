@@ -2949,6 +2949,7 @@ shelling ;
 shellme -h ;
 shellnoob -h ;
 shellsploit ;
+shellter ;
 sherlocked ;
 shitflood ;
 shjs ;
