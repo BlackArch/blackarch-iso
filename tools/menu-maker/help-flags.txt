@@ -188,6 +188,7 @@ arm-linux-androideabi-run ;
 arm-linux-androideabi-size ;
 arm-linux-androideabi-strings ;
 arm-linux-androideabi-strip ;
+armor ;
 armscgen -h ;
 arpalert -h ;
 arpaname ;
