@@ -3251,6 +3251,7 @@ sucrack ;
 superscan cd /usr/share/windows/superscan-4 ; ls ;
 suricata ;
 suricatasc ;
+suricata-verify ;
 suture ;
 svcrack -h ;
 svcrash -h ;
