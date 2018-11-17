@@ -1,4 +1,4 @@
 ! The following line will prevent styles from setting the background.
 
 background: fullscreen
-background.pixmap: /usr/share/blackarch/wallpaper.jpg
+background.pixmap: /usr/share/blackarch/wallpaper.png
