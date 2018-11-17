@@ -1048,6 +1048,7 @@ magescan
 magicrescue
 magictree
 mail-crawl
+makepasswd
 make-pdf
 maketh
 malcom
@@ -1113,12 +1114,14 @@ mingsweeper
 minimodem
 minimysqlator
 miranda-upnp
+miredo
 missidentify
 missionplanner
 mitmap
 mitmap-old
 mitmer
 mitmf
+mitmproxy
 mitm-relay
 mkbrutus
 mkinitcpio
@@ -1610,6 +1613,7 @@ scapy
 schnappi-dhcp
 sc-make
 scout2
+scpay3k
 scrape-dns
 scrapy
 scratchabit
@@ -1997,6 +2001,7 @@ veles
 veracrypt
 vfeed
 vhostscan
+vidalia
 videosnarf
 vim
 vinetto
