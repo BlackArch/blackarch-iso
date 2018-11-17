@@ -1075,6 +1075,7 @@ rda               630/tcp
 rda               630/udp
 ipp               631/tcp
 ipp               631/udp
+ipps              631/tcp
 bmpp              632/tcp
 bmpp              632/udp
 servstat          633/tcp
@@ -7797,8 +7798,8 @@ pjj-player-disc  4416/udp
 workflowdir      4417/tcp
 axysbridge       4418/udp
 cbp              4419/tcp
-nvm-express      4420/tcp
-nvm-express      4420/udp
+nvme             4420/tcp
+nvme             4420/udp
 scaleft          4421/tcp
 tsepisp          4422/tcp
 thingkit         4423/tcp
@@ -8142,6 +8143,8 @@ hivestor         4884/tcp
 hivestor         4884/udp
 abbs             4885/tcp
 abbs             4885/udp
+xcap-portal      4888/tcp
+xcap-control     4889/tcp
 lyskom           4894/tcp
 lyskom           4894/udp
 radmin-port      4899/tcp
@@ -8374,7 +8377,6 @@ esri-sde         5151/tcp
 esri-sde         5151/udp
 sde-discovery    5152/tcp
 sde-discovery    5152/udp
-toruxserver      5153/tcp
 bzflag           5154/tcp
 bzflag           5154/udp
 asctrl-agent     5155/tcp
@@ -9754,6 +9756,7 @@ warppipe         8007/tcp
 warppipe         8007/udp
 http-alt         8008/tcp
 http-alt         8008/udp
+nvme-disc        8009/tcp
 qbdb             8019/tcp
 qbdb             8019/udp
 intu-ec-svcdisc  8020/tcp
@@ -9762,6 +9765,8 @@ intu-ec-client   8021/tcp
 intu-ec-client   8021/udp
 oa-system        8022/tcp
 oa-system        8022/udp
+arca-api         8023/tcp
+arca-api         8023/udp
 ca-audit-da      8025/tcp
 ca-audit-da      8025/udp
 ca-audit-ds      8026/tcp
@@ -10028,6 +10033,7 @@ sunwebadmin      8800/udp
 truecm           8804/tcp
 truecm           8804/udp
 pfcp             8805/udp
+hes-clip         8807/udp
 ssports-bcast    8808/udp
 dxspider         8873/tcp
 dxspider         8873/udp
@@ -10093,6 +10099,7 @@ ogs-server       9008/tcp
 pichat           9009/tcp
 pichat           9009/udp
 sdr              9010/tcp
+d-star           9011/udp
 tambora          9020/tcp
 tambora          9020/udp
 panagolin-ident  9021/tcp
@@ -10153,6 +10160,8 @@ xadmin           9105/udp
 astergate        9106/tcp
 astergate-disc   9106/udp
 astergatefax     9107/tcp
+hexxorecore      9111/tcp
+hexxorecore      9111/udp
 mxit             9119/tcp
 mxit             9119/udp
 grcmp            9122/tcp
@@ -11013,6 +11022,7 @@ vista-4gl       24249/udp
 ild             24321/tcp
 ild             24321/udp
 hid             24322/udp
+vrmg-ip         24323/tcp
 intel-rci       24386/tcp
 intel-rci       24386/udp
 tonidods        24465/tcp
@@ -11090,6 +11100,7 @@ exoconfig       26487/tcp
 exoconfig       26487/udp
 exonet          26489/tcp
 exonet          26489/udp
+flex-lmadmin    27010/tcp
 imagepump       27345/tcp
 imagepump       27345/udp
 jesmsjc         27442/tcp
@@ -11310,6 +11321,7 @@ ip-provision    43190/udp
 noit-transport  43191/tcp
 shaperai        43210/tcp
 shaperai-disc   43210/udp
+hmip-routing    43438/udp
 eq3-update      43439/tcp
 eq3-config      43439/udp
 ew-mgmt         43440/tcp
