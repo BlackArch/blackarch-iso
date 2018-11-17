@@ -78,6 +78,7 @@ argon2
 argus
 argus-clients
 armitage
+armor
 armscgen
 arpalert
 arpoison
@@ -1645,6 +1646,7 @@ shelling
 shellme
 shellnoob
 shellsploit-framework
+shellter
 sherlocked
 shitflood
 shocker
@@ -1836,6 +1838,7 @@ sudo
 sulley
 superscan
 suricata
+suricata-verify
 svn-extractor
 swaks
 swap-digger
