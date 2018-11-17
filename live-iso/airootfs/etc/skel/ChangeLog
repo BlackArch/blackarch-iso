@@ -4,7 +4,7 @@
 	- removed dwm window manager
 	- removed wmii window manager
 	- added bactl package (script to config and setup BlackArch environment)
-	- included every tool of BlackArch except: cuda-/oclhashcat and vmcloak
+	- included every tool of BlackArch except: cuda-/oclhashcat, vmcloak, theZoo
 	- included linux kernel 4.19.X
 	- updated default ISO files (synced with archiso's template)
 	- updated all blackarch tools and packages including config files
