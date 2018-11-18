@@ -110,6 +110,7 @@ auto-xor-decryptor
 avet
 awesome
 awsbucketdump
+aws-cli
 aws-inventory
 azazel
 b43-fwcutter
@@ -528,6 +529,7 @@ elettra
 elettra-gui
 elfkickers
 elfparser
+elfutils
 elidecode
 elinks
 elite-proxy-finder
@@ -891,6 +893,7 @@ ip-https-tools
 ipmipwn
 ipmitool
 ipobfuscator
+iproute2
 ipscan
 iptodomain
 ip-tracer
@@ -901,6 +904,7 @@ ipv6toolkit
 ipw2100-fw
 ipw2200-fw
 ipython
+ipython2
 ircsnapshot
 irpas
 irssi
@@ -1035,6 +1039,7 @@ lotophagi
 lsof
 lsrtunnel
 lte-cell-scanner
+ltrace
 luksipc
 lunar
 luyten
@@ -1129,6 +1134,7 @@ mobsf
 modscan
 moloch
 mongoaudit
+mongodb
 monocle
 mooscan
 moreutils
@@ -1170,6 +1176,7 @@ mylg
 mysql2sqlite
 nacker
 naft
+nasm
 nasnum
 nbname
 nbnspoof
@@ -1200,6 +1207,7 @@ netscan
 netscan2
 netsed
 netsniff-ng
+net-snmp
 netstumbler
 network-app-stress-tester
 networkmap
@@ -1273,6 +1281,7 @@ openbox
 openbox-themes
 openconnect
 opendoor
+openldap
 openssh
 openstego
 opensvp
@@ -1529,6 +1538,7 @@ reglookup
 regreport
 regview
 relay-scanner
+remmina
 replayproxy
 resourcehacker
 responder
@@ -1584,6 +1594,7 @@ rtp-flood
 rubilyn
 ruler
 rww-attack
+s3cmd
 s3-fuzzer
 s3scanner
 safecopy
@@ -1922,6 +1933,7 @@ tpcat
 tplmap
 traceroute
 treasure
+tree
 trid
 trinity
 triton
