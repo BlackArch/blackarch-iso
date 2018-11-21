@@ -1,6 +1,7 @@
 ===> 2018.12.01
 
 	- added more than 150 new tools
+	- enabled wicd service by default
 	- removed dwm window manager
 	- removed wmii window manager
 	- added bactl package (script to config and setup BlackArch environment)
