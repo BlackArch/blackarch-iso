@@ -3689,6 +3689,7 @@ wolperdrone -h ;
 wolper-mcp -h ;
 wolpertinger -h ;
 wordbrutepress ;
+wordlistctl -h ;
 wordpot -h ;
 wordpresscan -h ;
 wpa2-halfhandshake-crack -h ;
