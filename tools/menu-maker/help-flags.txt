@@ -1860,6 +1860,7 @@ mdb-tables ;
 mdb-ver ;
 mdcrack ;
 mdk3 --help ;
+mdk4 -h ;
 mdns-recon ;
 mdns-scan -h ;
 meanalyzer ;
