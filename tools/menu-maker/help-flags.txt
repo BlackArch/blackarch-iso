@@ -1969,6 +1969,7 @@ mrsip -h ;
 msfbinscan -h ;
 msfcli -h ;
 msfconsole -h ;
+msfdb ;
 msfd -h ;
 msfelfscan -h ;
 msfencode -h ;
