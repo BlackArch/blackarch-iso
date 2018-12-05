@@ -1344,6 +1344,7 @@ hexorbase ;
 hfind ;
 hharp -h ;
 hidattack -h ;
+hidden-eye ;
 hlextend cd /usr/share/hlextend ; ls ;
 hodor -h ;
 honeydctl -h ;
