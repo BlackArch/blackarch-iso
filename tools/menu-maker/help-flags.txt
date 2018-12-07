@@ -435,6 +435,7 @@ canari -h ;
 cangibrina -h ;
 cansina -h ;
 cantoolz -h ;
+capfuzz -h ;
 capinfos -h ;
 captipper ;
 captype ;
