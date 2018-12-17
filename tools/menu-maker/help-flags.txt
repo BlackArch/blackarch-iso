@@ -3403,6 +3403,7 @@ toobig6 ;
 topera -h ;
 tor-autocircuit ;
 tor-browser-en ;
+torctl ;
 tor-gencert ;
 tor -h ;
 torify -h ;
