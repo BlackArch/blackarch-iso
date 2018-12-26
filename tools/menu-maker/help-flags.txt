@@ -1611,6 +1611,7 @@ jnetmap ;
 john ;
 john-mailer ;
 johnny ;
+jok3r -h ;
 jomplug -h ;
 jooforce ;
 joomlascan -h ;
