@@ -2322,6 +2322,7 @@ pcapfix ;
 pcapsipdump ;
 pcapteller ;
 pcapxray ;
+pcileech ;
 pcredz -h ;
 pdf2graph ;
 pdf2john ;
