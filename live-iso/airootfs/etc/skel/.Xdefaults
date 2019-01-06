@@ -1,11 +1,36 @@
-! generic settings
-*foreground:              #cccccc
-*background:              #000000
+! generic
+*foreground:                  #cccccc
+*background:                  #000000
 
-! xterm settings
-xterm*VT100*geometry:     80x24
-xterm*faceName:           xos4 Terminus:size=12:antialias=true
-xterm*faceSize:           12
-xterm*utf8:               1
-xterm*locale:             true
-xterm*transparent:        true
+! urxvt
+URxvt.font:                   xft:xos4 Terminus:size=12:antialias=true:hinting=true
+URxvt.url-launcher:           /usr/bin/xdg-open
+URxvt.matcher.button:         1
+URxvt.scrollBar:              false
+URxvt.termName:               xterm-256color
+URxvt.saveLines:              10000
+URxvt*inheritPixmap:          true
+URxvt*shading:                10
+URxvt.clipboard.autocopy:     true
+URxvt.keysym.M-Escape:        perl:keyboard-select:activate
+URxvt.keysym.Control-Shift-V: perl:pasta:paste
+URxvt.perl-ext-common:        default,selection-to-clipboard,pasta,matcher,keyboard-select
+URxvt.keysym.M-u:             perl:url-select:select_next
+
+! xterm
+xterm*VT100*geometry:         80x24
+xterm*faceName:               xft:xos4 Terminus:size=12:antialias=true
+xterm*faceSize:               12
+xterm*renderFont:             true
+xterm*utf8:                   always
+xterm*utf8Title:              true
+xterm*locale:                 true
+xterm*cursorColor:            #5f5faf
+xterm*cursorBlink:            false
+xterm*selectToClipboard:      true
+xterm*SaveLines:              10000
+xterm*transparent:            true
+
+! cursor
+Xcursor.theme:                Adwaita
+Xcursor.size:                 14
