@@ -16,6 +16,23 @@ URxvt.keysym.M-Escape:        perl:keyboard-select:activate
 URxvt.keysym.Control-Shift-V: perl:pasta:paste
 URxvt.perl-ext-common:        default,selection-to-clipboard,pasta,matcher,keyboard-select
 URxvt.keysym.M-u:             perl:url-select:select_next
+urxvt.transparent:            true
+urxvt.buffered:               true
+urxvt.jumpScroll:             false
+urxvt.scrollTtyKeypress:      true
+urxvt.scrollTtyOutput:        false
+urxvt.scrollWithBuffer:       false
+urxvt.scrollstyle:            plain
+urxvt.secondaryScroll:        false
+urxvt.xftAntialias:           true
+urxvt.color12:                RoyalBlue
+urxvt.matcher.rend.0:         Uline Bold fg3
+urxvt.cursorBlink:            false
+urxvt.cursorColor:            #d40000
+urxvt.mapAlert:               true
+urxvt.pointerBlank:           true
+urxvt.resource:               value
+
 
 ! xterm
 xterm*VT100*geometry:         80x24
@@ -25,7 +42,7 @@ xterm*renderFont:             true
 xterm*utf8:                   always
 xterm*utf8Title:              true
 xterm*locale:                 true
-xterm*cursorColor:            #5f5faf
+xterm*cursorColor:            #d40000
 xterm*cursorBlink:            false
 xterm*selectToClipboard:      true
 xterm*SaveLines:              10000
