@@ -26,7 +26,7 @@ urxvt.scrollstyle:            plain
 urxvt.secondaryScroll:        false
 urxvt.xftAntialias:           true
 urxvt.color12:                RoyalBlue
-urxvt.matcher.rend.0:         Uline Bold fg3
+urxvt.matcher.rend.0:         Bold fg3
 urxvt.cursorBlink:            false
 urxvt.cursorColor:            #d40000
 urxvt.mapAlert:               true
