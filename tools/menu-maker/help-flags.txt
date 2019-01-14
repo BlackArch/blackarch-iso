@@ -1342,6 +1342,7 @@ hex2bin ;
 hex2raw -h ;
 hexinject -h ;
 hexorbase ;
+hexyl -h ;
 hfind ;
 hharp -h ;
 hidattack -h ;
