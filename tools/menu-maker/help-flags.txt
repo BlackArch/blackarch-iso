@@ -2219,6 +2219,7 @@ onionscan ;
 onionshare-gui ;
 onionshare -h ;
 opendoor -h ;
+openpuff ;
 openstego -h ;
 opensvp -h ;
 openvas-adduser -h ;
