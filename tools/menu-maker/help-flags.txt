@@ -1478,6 +1478,7 @@ injector.py -h ;
 inquisitor -h ;
 insanity -h ;
 instashell ;
+interlace -h ;
 interpatch -h ;
 interrogate -h ;
 intersect-create ;
