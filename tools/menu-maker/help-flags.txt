@@ -3495,6 +3495,7 @@ umap -h ;
 umit -h ;
 umit_scheduler.py ;
 unafs ;
+uncaptcha2 ;
 undrop ;
 unhex ;
 unhide -h ;
