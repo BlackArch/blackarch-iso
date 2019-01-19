@@ -2514,6 +2514,7 @@ ptunnel -h ;
 pullcves ;
 pulsar -h ;
 punter -h ;
+pupysh -h ;
 pwd-hash -h ;
 pwdlogy ;
 pwdlyser -h ;
