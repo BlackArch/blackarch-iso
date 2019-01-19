@@ -272,6 +272,7 @@ BARFgadgets -h ;
 barmie ;
 base64dump -h ;
 basedomainname -h ;
+bashfuscator -h ;
 batadv-vis ;
 batctl ;
 batman-adv ;
