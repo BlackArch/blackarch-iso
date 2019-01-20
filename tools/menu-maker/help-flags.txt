@@ -659,6 +659,7 @@ dcfldd --help ;
 dcrawl -h ;
 ddrescue --help ;
 ddrescuelog --help ;
+deathstar -h ;
 debinject ;
 deblaze ;
 decloakify ;
