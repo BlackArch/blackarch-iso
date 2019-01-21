@@ -511,6 +511,7 @@ cisco-snmp-enumeration ;
 cisco-snmp-slap -h ;
 cisco-torch -h ;
 cjexploiter cd /usr/share/cjexploiter ; ls ;
+clair -h ;
 clamlogparser ;
 clamscanlogparser ;
 classes.jar ;
