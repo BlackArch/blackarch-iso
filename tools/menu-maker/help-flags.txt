@@ -2117,6 +2117,7 @@ nkiller2 -h ;
 nlist ;
 nmapfe ;
 nmap -h ;
+nmap-parse-output ;
 nmbscan ;
 nm -h ;
 node_query6 ;
