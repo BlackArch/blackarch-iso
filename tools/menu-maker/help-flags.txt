@@ -3438,6 +3438,7 @@ tracepath -h ;
 traceroute --help ;
 trafgen ;
 train_all.py ;
+trape -h ;
 treasure ;
 tree_mft.py ;
 trid -h ;
