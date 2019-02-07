@@ -2594,6 +2594,7 @@ r2pm ;
 ra6 ;
 rabin2 -h ;
 rabins -h ;
+raccoon --help ;
 racf2john ;
 rackup ;
 racluster -h ;
