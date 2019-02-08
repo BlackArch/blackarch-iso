@@ -3286,6 +3286,7 @@ stegsolve ;
 stenographer -h ;
 stepic -h ;
 sticky-keys-hunter ;
+stig-viewer ;
 stompy ;
 storm-ring -h ;
 streamfinder cd /usr/share/windows/streamfinder ; ls ;
