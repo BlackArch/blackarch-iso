@@ -250,6 +250,7 @@ avr-size -h ;
 avr-strings -h ;
 avr-strip -h ;
 awsbucketdump -h ;
+aws-extender-cli -h ;
 aws-inventory -h ;
 aztarna -h ;
 b2sum -h ;
