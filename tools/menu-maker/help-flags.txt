@@ -743,6 +743,8 @@ dnsfilexfer-recv -h ;
 dnsfilexfer-send -h ;
 dns_forward ;
 dnsgoblin ;
+dnsgrep -h ;
+dnsgrep-server -h ;
 dnslogger -h ;
 dnsmap ;
 dnsmap-bulk ;
