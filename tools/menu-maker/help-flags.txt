@@ -2502,6 +2502,7 @@ powerfuzzer ;
 powerops cd /usr/share/windows/powerops ; ls ;
 powersploit cd /opt/windows/archive/powersploit ; ls ;
 powerstager -h ;
+pown ;
 ppee cd /usr/share/windows/ppee ; ls ;
 ppscan -h ;
 pqlist ;
