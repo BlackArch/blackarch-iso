@@ -857,6 +857,7 @@ dumpusers cd /usr/share/windows/dumpusers ; ls ;
 dumpzilla -h ;
 dupemap ;
 dutas -h ;
+dwarf --help ;
 eapeak -h ;
 eaphammer -h ;
 eapmd5pass ;
