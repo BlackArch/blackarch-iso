@@ -152,6 +152,7 @@ arachni_rpcd_monitor -h ;
 arachni_rpc -h ;
 arachni_script -h ;
 aranea -h ;
+archivebox -h ;
 arduino ;
 argdumper ;
 argon2 -h ;
