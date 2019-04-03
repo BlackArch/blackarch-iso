@@ -2745,6 +2745,8 @@ reglookup-timeline ;
 regreport cd /usr/share/windows/regreport ; ls ;
 regview cd /usr/share/windows/regview ; ls ;
 rehash -h ;
+rekal -h ;
+rekall -h ;
 relayscanner -h ;
 relay-scanner -help ;
 relbench ;
