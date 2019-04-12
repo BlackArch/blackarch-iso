@@ -3714,6 +3714,7 @@ wbxml2request ;
 wcc -h ;
 wcch -h ;
 wce cd /usr/share/windows/wce ; ls ;
+web2ldap ;
 webacoo -h ;
 webborer ;
 webenum -h ;
