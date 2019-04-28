@@ -3719,6 +3719,7 @@ wcch -h ;
 wce cd /usr/share/windows/wce ; ls ;
 web2ldap ;
 webacoo -h ;
+webanalyze ;
 webborer ;
 webenum -h ;
 webexploitationtool ;
