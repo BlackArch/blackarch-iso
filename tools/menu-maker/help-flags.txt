@@ -725,6 +725,7 @@ dirbuster-ng ;
 dirhunt --help ;
 dirs3arch -h ;
 dirscanner -h ;
+dirscraper -h ;
 dirsearch -h ;
 disasm-pwntools -h ;
 disitool -h ;
