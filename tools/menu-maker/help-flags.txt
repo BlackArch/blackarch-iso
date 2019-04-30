@@ -2959,6 +2959,7 @@ sambascan -h ;
 samdump2 ;
 samplicate -h ;
 samydeluxe -h ;
+sandmap --help ;
 sandy -h ;
 sapacket ;
 saruman ;
