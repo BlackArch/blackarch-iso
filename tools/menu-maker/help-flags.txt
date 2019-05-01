@@ -720,6 +720,7 @@ dighosts ;
 dinouml -h ;
 dirb ;
 dirb-gendict ;
+dirble -h ;
 dirbuster ;
 dirbuster-ng ;
 dirhunt --help ;
