@@ -992,6 +992,7 @@ fernmelder -h ;
 ferret ;
 ffdec ;
 ffind ;
+ffuf ;
 fgscan --help ;
 fgscanner -h ;
 fhttp -h ;
