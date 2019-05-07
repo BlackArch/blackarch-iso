@@ -1802,6 +1802,7 @@ lightbulb -h ;
 limeaide ;
 linenum -h ;
 linikatz ;
+linkfinder -h ;
 linset ;
 linux-exploit-suggester -h ;
 linux-exploit-suggester.sh -h ;
