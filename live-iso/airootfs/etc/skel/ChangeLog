@@ -1,6 +1,12 @@
 ===> 2019.06.01
 
+	- added more than 150 new tools
+	- included linux kernel 5.1.*
 	- updated Xresources/Xdefaults + added support for rxvt-unicode
+	- package QAs (runtime checks) were performed prior the ISO build
+	- updated all blackarch tools and packages including config files
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
 
 ===> 2018.12.01
 
