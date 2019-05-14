@@ -40,6 +40,7 @@ alsa-utils
 altdns
 amass
 amber
+amd-ucode
 amoco
 analyzepesig
 androbugs
@@ -906,6 +907,7 @@ inotify-tools
 inquisitor
 insanity
 instashell
+intel-ucode
 intercepter-ng
 interlace
 interrogate

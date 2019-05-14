@@ -1,3 +1,4 @@
+amd-ucode
 arch-install-scripts
 archlinux-keyring
 b43-fwcutter
@@ -17,6 +18,7 @@ expac
 git
 grub
 haveged
+intel-ucode
 ipw2100-fw
 ipw2200-fw
 iw
