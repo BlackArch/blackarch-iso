@@ -1,8 +1,9 @@
 #!/bin/sh
 
-pacman -Rscn $(pacman -Qtdq)
-pkgfile -u
+pacman -Rscn $(yay -Qtdq)
 updatedb
+pkgfile -u
+pacman -Fyy
 pacman-db-upgrade
 yes | pacman -Scc
 sync
