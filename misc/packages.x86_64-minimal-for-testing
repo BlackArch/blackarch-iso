@@ -14,7 +14,6 @@ blackarch-dwm
 blackarch-installer
 blackarch-keyring
 bluez
-bluez-firmware
 bluez-hid2hci
 bluez-utils
 bridge-utils
@@ -81,7 +80,6 @@ obfsproxy
 oblogout
 obmenu
 openbox
-openbox-themes
 openconnect
 openssh
 open-vm-tools
@@ -112,7 +110,6 @@ wicd
 wicd-gtk
 wifite
 wireless_tools
-wpa_actiond
 wpa_supplicant
 xf86-input-synaptics
 xf86-input-vmmouse
