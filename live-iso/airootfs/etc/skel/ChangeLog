@@ -2,7 +2,7 @@
 
 	- added more than 150 new tools
 	- included linux kernel 5.1.*
-	- updated blackarch-installer to v1.1.0
+	- updated blackarch-installer to v1.1.1
 	- updated Xresources/Xdefaults + added support for rxvt-unicode
 	- package QAs (runtime checks) were performed prior the ISO build
 	- updated all blackarch tools and packages including config files
