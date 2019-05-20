@@ -22,7 +22,7 @@
 # Server = http://mirror.espoch.edu.ec/blackarch/$repo/os/$arch
 
 # France
-Server = https://www.blackarch.org/blackarch/$repo/os/$arch
+# Server = https://www.blackarch.org/blackarch/$repo/os/$arch
 # Server = rsync://blackarch.org/blackarch/$repo/os/$arch
 # Server = http://blackarch.tamcore.eu/blackarch/$repo/os/$arch
 # Server = https://blackarch.tamcore.eu/blackarch/$repo/os/$arch
@@ -34,7 +34,7 @@ Server = https://www.blackarch.org/blackarch/$repo/os/$arch
 # Server = https://mirror.cyberbits.eu/blackarch/$repo/os/$arch
 
 # Germany
-#Server = http://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
+Server = http://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = ftp://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = rsync://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
