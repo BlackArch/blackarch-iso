@@ -70,9 +70,38 @@ chsh -s /bin/bash
 sploitctl -f 0 -v
 
 # temporary fixes for ruby based tools
-cd /usr/share/arachni/ && bundle-2.3 config build.nokogiri --use-system-libraries && bundle-2.3 install --path vendor/bundle
-cd /usr/share/smbexec/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle
-cd /usr/share/beef/ && bundle config build.nokogiri --use-system-libraries && bundle install --path vendor/bundle
+cd /usr/share/arachni/ &&
+  bundle-2.3 config build.nokogiri --use-system-libraries &&
+  bundle-2.3 install --path vendor/bundle
+cd /usr/share/smbexec/ && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/beef/ && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/catphish && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/wpbrute-rpc &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --without test development --path vendor/bundle
+cd /usr/share/staekka && bundle config build.nokogiri --use-system-libraries &&
+  build install --no-cache --deployment --path vendor/bundle
+cd /usr/share/vane && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --without test development --path vendor/bundle
+cd /usr/share/vcsmap && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --without test development --path vendor/bundle
+cd /usr/share/vsaudit && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/whitewidow &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/sitediff && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/wordpress-exploit-framework &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/kautilya && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
+cd /usr/share/whatweb && bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle
 
 # remove not needed .desktop entries
 rm -rf /usr/share/xsessions/openbox-kde.desktop
