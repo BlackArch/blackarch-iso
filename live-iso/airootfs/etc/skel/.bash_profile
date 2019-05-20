@@ -15,7 +15,6 @@ export EDITOR="vim"
 alias ls="ls --color"
 alias vi="vim"
 alias shred="shred -zf"
-alias python="python2"
 alias wget="wget -U 'noleak'"
 alias curl="curl --user-agent 'noleak'"
 
