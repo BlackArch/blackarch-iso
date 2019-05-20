@@ -1,7 +1,8 @@
 ===> 2019.06.01
 
 	- added more than 150 new tools
-	- included linux kernel 5.1.*
+	- included linux kernel 5.1.4
+	- ISO file clean-ups and tweaks
 	- updated blackarch-installer to v1.1.1
 	- updated Xresources/Xdefaults + added support for rxvt-unicode
 	- package QAs (runtime checks) were performed prior the ISO build
