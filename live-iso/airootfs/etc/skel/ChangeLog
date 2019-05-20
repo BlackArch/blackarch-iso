@@ -1,6 +1,8 @@
 ===> 2019.06.01
 
 	- added more than 150 new tools
+	- added 'jedi-vim' plugin
+	- updated vim plugins
 	- included linux kernel 5.1.4
 	- ISO file clean-ups and tweaks
 	- updated blackarch-installer to v1.1.1

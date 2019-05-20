@@ -1,8 +1,6 @@
 " ============================================================================
 " File:        NERD_tree.vim
-" Description: vim global plugin that provides a nice tree explorer
 " Maintainer:  Martin Grenfell <martin.grenfell at gmail dot com>
-" Last Change: 28 December, 2011
 " License:     This program is free software. It comes without any warranty,
 "              to the extent permitted by applicable law. You can redistribute
 "              it and/or modify it under the terms of the Do What The Fuck You
@@ -16,8 +14,8 @@
 if exists("loaded_nerd_tree")
     finish
 endif
-if v:version < 700
-    echoerr "NERDTree: this plugin requires vim >= 7. DOWNLOAD IT! You'll thank me later!"
+if v:version < 703
+    echoerr "NERDTree: this plugin requires vim >= 7.3. DOWNLOAD IT! You'll thank me later!"
     finish
 endif
 let loaded_nerd_tree = 1
@@ -45,44 +43,65 @@ function! s:initVariable(var, value)
 endfunction
 
 "SECTION: Init variable calls and other random constants {{{2
-call s:initVariable("g:NERDChristmasTree", 1)
 call s:initVariable("g:NERDTreeAutoCenter", 1)
 call s:initVariable("g:NERDTreeAutoCenterThreshold", 3)
 call s:initVariable("g:NERDTreeCaseSensitiveSort", 0)
+call s:initVariable("g:NERDTreeNaturalSort", 0)
+call s:initVariable("g:NERDTreeSortHiddenFirst", 1)
 call s:initVariable("g:NERDTreeChDirMode", 0)
+call s:initVariable("g:NERDTreeCreatePrefix", "silent")
 call s:initVariable("g:NERDTreeMinimalUI", 0)
+call s:initVariable("g:NERDTreeMinimalMenu", 0)
 if !exists("g:NERDTreeIgnore")
     let g:NERDTreeIgnore = ['\~$']
 endif
 call s:initVariable("g:NERDTreeBookmarksFile", expand('$HOME') . '/.NERDTreeBookmarks')
+call s:initVariable("g:NERDTreeBookmarksSort", 1)
 call s:initVariable("g:NERDTreeHighlightCursorline", 1)
 call s:initVariable("g:NERDTreeHijackNetrw", 1)
+call s:initVariable('g:NERDTreeMarkBookmarks', 1)
 call s:initVariable("g:NERDTreeMouseMode", 1)
 call s:initVariable("g:NERDTreeNotificationThreshold", 100)
 call s:initVariable("g:NERDTreeQuitOnOpen", 0)
+call s:initVariable("g:NERDTreeRespectWildIgnore", 0)
 call s:initVariable("g:NERDTreeShowBookmarks", 0)
 call s:initVariable("g:NERDTreeShowFiles", 1)
 call s:initVariable("g:NERDTreeShowHidden", 0)
 call s:initVariable("g:NERDTreeShowLineNumbers", 0)
 call s:initVariable("g:NERDTreeSortDirs", 1)
-call s:initVariable("g:NERDTreeDirArrows", !nerdtree#runningWindows())
-call s:initVariable("g:NERDTreeCasadeOpenSingleChildDir", 1)
+
+if !nerdtree#runningWindows() && !nerdtree#runningCygwin()
+    call s:initVariable("g:NERDTreeDirArrowExpandable", "▸")
+    call s:initVariable("g:NERDTreeDirArrowCollapsible", "▾")
+else
+    call s:initVariable("g:NERDTreeDirArrowExpandable", "+")
+    call s:initVariable("g:NERDTreeDirArrowCollapsible", "~")
+endif
+
+call s:initVariable("g:NERDTreeCascadeOpenSingleChildDir", 1)
+call s:initVariable("g:NERDTreeCascadeSingleChildDir", 1)
 
 if !exists("g:NERDTreeSortOrder")
     let g:NERDTreeSortOrder = ['\/$', '*', '\.swp$',  '\.bak$', '\~$']
+endif
+let g:NERDTreeOldSortOrder = []
+
+call s:initVariable("g:NERDTreeGlyphReadOnly", "RO")
+
+if has("conceal")
+    call s:initVariable("g:NERDTreeNodeDelimiter", "\x07")
+elseif (g:NERDTreeDirArrowExpandable == "\u00a0" || g:NERDTreeDirArrowCollapsible == "\u00a0")
+    call s:initVariable("g:NERDTreeNodeDelimiter", "\u00b7")
 else
-    "if there isnt a * in the sort sequence then add one
-    if count(g:NERDTreeSortOrder, '*') < 1
-        call add(g:NERDTreeSortOrder, '*')
-    endif
+    call s:initVariable("g:NERDTreeNodeDelimiter", "\u00a0")
 endif
 
 if !exists('g:NERDTreeStatusline')
 
     "the exists() crap here is a hack to stop vim spazzing out when
     "loading a session that was created with an open nerd tree. It spazzes
-    "because it doesnt store b:NERDTreeRoot (its a b: var, and its a hash)
-    let g:NERDTreeStatusline = "%{exists('b:NERDTreeRoot')?b:NERDTreeRoot.path.str():''}"
+    "because it doesnt store b:NERDTree(its a b: var, and its a hash)
+    let g:NERDTreeStatusline = "%{exists('b:NERDTree')?b:NERDTree.root.path.str():''}"
 
 endif
 call s:initVariable("g:NERDTreeWinPos", "left")
@@ -93,6 +112,8 @@ call s:initVariable("g:NERDTreeWinSize", 31)
 "Note: the space after the command is important
 if nerdtree#runningWindows()
     call s:initVariable("g:NERDTreeRemoveDirCmd", 'rmdir /s /q ')
+    call s:initVariable("g:NERDTreeCopyDirCmd", 'xcopy /s /e /i /y /q ')
+    call s:initVariable("g:NERDTreeCopyFileCmd", 'copy /y ')
 else
     call s:initVariable("g:NERDTreeRemoveDirCmd", 'rm -rf ')
     call s:initVariable("g:NERDTreeCopyCmd", 'cp -r ')
@@ -134,26 +155,21 @@ call s:initVariable("g:NERDTreeMapToggleZoom", "A")
 call s:initVariable("g:NERDTreeMapUpdir", "u")
 call s:initVariable("g:NERDTreeMapUpdirKeepOpen", "U")
 call s:initVariable("g:NERDTreeMapCWD", "CD")
+call s:initVariable("g:NERDTreeMenuDown", "j")
+call s:initVariable("g:NERDTreeMenuUp", "k")
 
 "SECTION: Load class files{{{2
 call nerdtree#loadClassFiles()
 
 " SECTION: Commands {{{1
 "============================================================
-"init the command that users start the nerd tree with
-command! -n=? -complete=dir -bar NERDTree :call g:NERDTreeCreator.CreatePrimary('<args>')
-command! -n=? -complete=dir -bar NERDTreeToggle :call g:NERDTreeCreator.TogglePrimary('<args>')
-command! -n=0 -bar NERDTreeClose :call nerdtree#closeTreeIfOpen()
-command! -n=1 -complete=customlist,nerdtree#completeBookmarks -bar NERDTreeFromBookmark call g:NERDTreeCreator.CreatePrimary('<args>')
-command! -n=0 -bar NERDTreeMirror call g:NERDTreeCreator.CreateMirror()
-command! -n=0 -bar NERDTreeFind call nerdtree#findAndRevealPath()
-command! -n=0 -bar NERDTreeFocus call NERDTreeFocus()
-command! -n=0 -bar NERDTreeCWD call NERDTreeCWD()
+call nerdtree#ui_glue#setupCommands()
+
 " SECTION: Auto commands {{{1
 "============================================================
 augroup NERDTree
     "Save the cursor position whenever we close the nerd tree
-    exec "autocmd BufWinLeave ". g:NERDTreeCreator.BufNamePrefix() ."* call nerdtree#saveScreenState()"
+    exec "autocmd BufLeave ". g:NERDTreeCreator.BufNamePrefix() ."* if g:NERDTree.IsOpen() | call b:NERDTree.ui.saveScreenState() | endif"
 
     "disallow insert mode in the NERDTree
     exec "autocmd BufEnter ". g:NERDTreeCreator.BufNamePrefix() ."* stopinsert"
@@ -190,17 +206,42 @@ function! NERDTreeRender()
 endfunction
 
 function! NERDTreeFocus()
-    if nerdtree#isTreeOpen()
-        call nerdtree#putCursorInTreeWin()
+    if g:NERDTree.IsOpen()
+        call g:NERDTree.CursorToTreeWin()
     else
-        call g:NERDTreeCreator.TogglePrimary("")
+        call g:NERDTreeCreator.ToggleTabTree("")
     endif
 endfunction
 
 function! NERDTreeCWD()
+
+    if empty(getcwd())
+        call nerdtree#echoWarning('current directory does not exist')
+        return
+    endif
+
+    try
+        let l:cwdPath = g:NERDTreePath.New(getcwd())
+    catch /^NERDTree.InvalidArgumentsError/
+        call nerdtree#echoWarning('current directory does not exist')
+        return
+    endtry
+
     call NERDTreeFocus()
-    call nerdtree#chRootCwd()
+
+    if b:NERDTree.root.path.equals(l:cwdPath)
+        return
+    endif
+
+    let l:newRoot = g:NERDTreeFileNode.New(l:cwdPath, b:NERDTree)
+    call b:NERDTree.changeRoot(l:newRoot)
+    normal! ^
 endfunction
+
+function! NERDTreeAddPathFilter(callback)
+    call g:NERDTree.AddPathFilter(a:callback)
+endfunction
+
 " SECTION: Post Source Actions {{{1
 call nerdtree#postSourceActions()
 
