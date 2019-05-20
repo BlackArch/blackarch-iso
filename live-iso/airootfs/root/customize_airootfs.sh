@@ -67,46 +67,64 @@ ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
 chsh -s /bin/bash
 
 # download and install exploits
-sploitctl -f 0 -v
+sploitctl -f 1 -v
+sploitctl -f 3 -v
+sploitctl -f 4 -v
 
 # temporary fixes for ruby based tools
-cd /usr/share/arachni/ &&
+cd /usr/share/arachni/ && rm -f Gemfile.lock &&
   bundle-2.3 config build.nokogiri --use-system-libraries &&
-  bundle-2.3 install --path vendor/bundle
-cd /usr/share/smbexec/ && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/beef/ && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/catphish && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/wpbrute-rpc &&
+  bundle-2.3 install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/smbexec/ && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
-  bundle install --without test development --path vendor/bundle
-cd /usr/share/staekka && bundle config build.nokogiri --use-system-libraries &&
-  build install --no-cache --deployment --path vendor/bundle
-cd /usr/share/vane && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --without test development --path vendor/bundle
-cd /usr/share/vcsmap && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --without test development --path vendor/bundle
-cd /usr/share/vsaudit && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/whitewidow &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/beef/ && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/sitediff && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/wordpress-exploit-framework &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/catphish && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/kautilya && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
-cd /usr/share/whatweb && bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/wpbrute-rpc && rm -f Gemfile.lock
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --without test development --path vendor/bundle &&
+  rm -f Gemfile.lock
+cd /usr/share/staekka && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  build install --no-cache --deployment --path vendor/bundle &&
+  rm -f Gemfile.lock
+cd /usr/share/vane && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --without test development --path vendor/bundle &&
+  rm -f Gemfile.lock
+cd /usr/share/vcsmap && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --without test development --path vendor/bundle &&
+  rm -f Gemfile.lock
+cd /usr/share/vsaudit && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/whitewidow && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/sitediff && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/wordpress-exploit-framework && rm -f Gemfile.lock
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
+cd /usr/share/kautilya && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lockk
+cd /usr/share/whatweb && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
 
 # remove not needed .desktop entries
 rm -rf /usr/share/xsessions/openbox-kde.desktop
 rm -rf /usr/share/xsessions/i3-with-shmlog.desktop
 rm -rf /usr/share/xsessions/xfce.desktop
+rm -rf /usr/share/xsessions/*gnome*.desktop
+rm -rf /usr/share/xsessions/*kde*.desktop
 rm -rf /root/install.txt
 
 # add install.txt file
@@ -117,3 +135,4 @@ gdk-pixbuf-query-loaders --update-cache
 
 # tmp fix for awesome exit()
 sed -i 's|local visible, action = cmd(item, self)|local visible, action = cmd(0, 0)|' /usr/share/awesome/lib/awful/menu.lua
+
