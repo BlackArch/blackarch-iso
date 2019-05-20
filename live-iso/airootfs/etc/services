@@ -1339,9 +1339,9 @@ dlep              854/udp
 iscsi             860/tcp
 iscsi             860/udp
 owamp-control     861/tcp
-owamp-control     861/udp
+owamp-test        861/udp
 twamp-control     862/tcp
-twamp-control     862/udp
+twamp-test        862/udp
 rsync             873/tcp
 rsync             873/udp
 iclcnet-locate    886/tcp
@@ -4074,7 +4074,7 @@ opentable        2368/tcp
 opentable        2368/udp
 l3-hbmon         2370/tcp
 l3-hbmon         2370/udp
-hp-rda           2371/tcp
+rda              2371/tcp
 lanmessenger     2372/tcp
 lanmessenger     2372/udp
 remographlm      2373/tcp
@@ -7685,6 +7685,7 @@ jaxer-manager    4328/udp
 publiqare-sync   4329/tcp
 dey-sapi         4330/tcp
 ktickets-rest    4331/tcp
+getty-focus      4332/tcp
 ahsp             4333/tcp
 ahsp             4333/udp
 ahsp             4333/sctp
@@ -7693,9 +7694,7 @@ netconf-ch-tls   4335/tcp
 restconf-ch-tls  4336/tcp
 gaia             4340/tcp
 gaia             4340/udp
-lisp-data        4341/tcp
 lisp-data        4341/udp
-lisp-cons        4342/tcp
 lisp-control     4342/udp
 unicall          4343/tcp
 unicall          4343/udp
@@ -9757,6 +9756,8 @@ warppipe         8007/udp
 http-alt         8008/tcp
 http-alt         8008/udp
 nvme-disc        8009/tcp
+cfg-cloud        8015/tcp
+ads-s            8016/tcp
 qbdb             8019/tcp
 qbdb             8019/udp
 intu-ec-svcdisc  8020/tcp
@@ -9892,12 +9893,14 @@ lm-sserver       8207/tcp
 lm-sserver       8207/udp
 lm-webwatcher    8208/tcp
 lm-webwatcher    8208/udp
+aruba-papi       8211/udp
 rexecj           8230/tcp
 rexecj           8230/udp
 hncp-udp-port    8231/udp
 hncp-dtls-port   8232/udp
 synapse-nhttps   8243/tcp
 synapse-nhttps   8243/udp
+espeasy-p2p      8266/udp
 robot-remote     8270/tcp
 pando-sec        8276/tcp
 pando-sec        8276/udp
@@ -10035,6 +10038,7 @@ truecm           8804/udp
 pfcp             8805/udp
 hes-clip         8807/udp
 ssports-bcast    8808/udp
+3gpp-monp        8809/udp
 dxspider         8873/tcp
 dxspider         8873/udp
 cddbp-alt        8880/tcp
@@ -11101,6 +11105,7 @@ exoconfig       26487/udp
 exonet          26489/tcp
 exonet          26489/udp
 flex-lmadmin    27010/tcp
+mongodb         27017/tcp
 imagepump       27345/tcp
 imagepump       27345/udp
 jesmsjc         27442/tcp
@@ -11277,6 +11282,7 @@ agpolicy        38203/tcp
 agpolicy        38203/udp
 ng-control      38412/sctp
 xn-control      38422/sctp
+e1-interface    38462/sctp
 f1-control      38472/sctp
 sruth           38800/tcp
 secrmmsafecopya 38865/tcp
@@ -11386,7 +11392,7 @@ nimgtw          48003/tcp
 nimgtw          48003/udp
 nimbusdb        48004/tcp
 nimbusdbctrl    48005/tcp
-juliar          48048/tcp
+juka            48048/tcp
 3gpp-cbsp       48049/tcp
 weandsf         48050/tcp
 isnetserv       48128/tcp
