@@ -3,7 +3,7 @@
 	- added more than 150 new tools
 	- added 'jedi-vim' plugin
 	- updated vim plugins
-	- included linux kernel 5.1.4
+	- included linux kernel 5.1.3
 	- ISO file clean-ups and tweaks
 	- updated blackarch-installer to v1.1.1
 	- updated Xresources/Xdefaults + added support for rxvt-unicode
