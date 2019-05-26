@@ -605,6 +605,8 @@ creepy ;
 cribdrag -h ;
 cribdrag-xorstrings -h ;
 crlf-injector ;
+crosslinked -h ;
+crosslinked-user-gen -h ;
 crowbar --help ;
 crozono -h ;
 crunch -h ;
