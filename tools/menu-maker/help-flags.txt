@@ -804,6 +804,7 @@ domain-analyzer -h ;
 domain-analyzer-pytext2pdf ;
 domain-stats -h ;
 domi-owned -h ;
+domlink ;
 doona -h ;
 doork -h ;
 doozer ;
