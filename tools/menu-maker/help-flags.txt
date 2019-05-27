@@ -3187,6 +3187,7 @@ snallygaster -h ;
 snapception --help ;
 snarf -h ;
 snarf-mitm ;
+sniffglue -h ;
 sniffjoke-autotest -h ;
 sniffjokectl -h ;
 sniffjoke -h ;
