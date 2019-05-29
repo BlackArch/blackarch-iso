@@ -163,6 +163,7 @@ argus -h ;
 argus-lsof ;
 argus-snmp ;
 argus-vmstat ;
+arjun -h ;
 armitage ;
 armitage -h ;
 arm-linux-androideabi-addr2line ;
