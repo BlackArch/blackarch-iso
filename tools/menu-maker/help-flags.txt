@@ -395,6 +395,8 @@ bros --help ;
 browselist cd /usr/share/windows/browselist ; ls ;
 brut3k1t -h ;
 brute12 cd /usr/share/windows/brute12 ; ls ;
+bruteforce-luks -h ;
+bruteforce-salted-openssl -h ;
 bruteforce-wallet ;
 brutemap -h ;
 brutespray -h ;
