@@ -15,8 +15,8 @@ sysctl -w net.ipv4.tcp_ecn=0
 sysctl -w net.ipv4.tcp_window_scaling=1
 
 # increase linux autotuning tcp buffer limits
-sysctl -w net.ipv4.tcp_rmem=8192 87380 16777216
-sysctl -w net.ipv4.tcp_wmem=8192 65536 16777216
+sysctl -w net.ipv4.tcp_rmem='8192 87380 16777216'
+sysctl -w net.ipv4.tcp_wmem='8192 65536 16777216'
 
 # increase TCP max buffer size
 sysctl -w net.core.rmem_max=16777216
@@ -84,3 +84,4 @@ sysctl -w net.ipv4.tcp_fastopen=3
 # This will enusre that immediatly subsequent connections use the new values
 sysctl -w net.ipv4.route.flush=1
 sysctl -w net.ipv6.route.flush=1
+
