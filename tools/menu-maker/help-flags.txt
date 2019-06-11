@@ -2242,6 +2242,7 @@ nsend ;
 nsia -h ;
 nsia.jar ;
 nslookup ;
+nsntrace -h ;
 nsoq ;
 nstrobe ;
 nsupdate ;
