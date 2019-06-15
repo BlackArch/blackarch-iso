@@ -1306,6 +1306,7 @@ gr_time_raster_f ;
 gsad -h ;
 gsd cd /usr/share/windows/gsd ; ls ;
 gsd -h ;
+gspoof -h ;
 gtalk-decode cd /usr/share/windows/gtalk-decode ; ls ;
 gtp-scan -h ;
 guymager ;
