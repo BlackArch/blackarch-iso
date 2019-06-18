@@ -1822,6 +1822,7 @@ ldapsetpasswd -h ;
 ldapsetprimarygroup -h ;
 ldd2bloodhound2 -h ;
 ldd2bloodhound -h ;
+ldeep -h ;
 ld-shatner ;
 leaklooker -h ;
 leoc -h ;
