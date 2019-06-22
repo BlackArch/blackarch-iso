@@ -3544,6 +3544,7 @@ themole -h ;
 thezoo -h ;
 thin ;
 thor ;
+thumbcacheviewer ;
 tigercron -h ;
 tigerdeep -h ;
 tiger -h ;
