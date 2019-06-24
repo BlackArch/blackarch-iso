@@ -1780,6 +1780,7 @@ ktflab -h ;
 ktflinker -h ;
 ktfrun -h ;
 kube-hunter -h ;
+kwetza --help ;
 l0l ;
 l2cap-packet ;
 laf -h ;
