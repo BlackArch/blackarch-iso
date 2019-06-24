@@ -2304,6 +2304,7 @@ obfsproxy -h ;
 objcopy ;
 objdump ;
 objdump2shellcode -h ;
+objection --help ;
 objres --help ;
 oclhashcat -h ;
 OCS ;
