@@ -1109,6 +1109,8 @@ freport ;
 frida-discover -h ;
 frida-extract -h ;
 frida -h ;
+frida-ios-dump -h ;
+frida-ipa-dump -h ;
 frida-kill -h ;
 frida-ls-devices -h ;
 frida-ps -h ;
