@@ -1045,6 +1045,7 @@ fileintel -h ;
 filesnarf -h ;
 filibuster -h ;
 fimap -h ;
+finalrecon -h ;
 find-dns -h ;
 findmyhash -h ;
 findmyiphone ;
