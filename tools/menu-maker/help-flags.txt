@@ -1359,6 +1359,7 @@ hakapcap -h ;
 hakku ;
 halberd -h ;
 halcyon -h ;
+halcyon-ide ;
 hamster-http -h ;
 handle cd /usr/share/windows/handle ; ls ;
 harness ;
