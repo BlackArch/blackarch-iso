@@ -3099,6 +3099,7 @@ search1337 ;
 seat -h ;
 seautomate ;
 secscan -h ;
+seeker -h ;
 sees -h ;
 seitan -h ;
 sendpees6 ;
