@@ -3295,6 +3295,7 @@ socketfuzz -h ;
 socks --help ;
 sockstat -h ;
 soot -h ;
+sooty ;
 sorter ;
 sort-pictures ;
 spade cd /usr/share/windows/spade ; ls ;
