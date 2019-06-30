@@ -3357,6 +3357,7 @@ spoofcheck ;
 spooftooph -h ;
 sppokflare ;
 sps -h ;
+spyse -h ;
 sqid -h ;
 sqlbf ;
 sqlbrute -h ;
