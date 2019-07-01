@@ -2539,6 +2539,7 @@ pipeline ;
 pirana -h ;
 pivotc -h ;
 pivots -h ;
+pivotsuite -h ;
 pixd -h ;
 pixiewps ;
 pkcrack ;
