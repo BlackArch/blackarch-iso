@@ -2964,6 +2964,7 @@ rs6 ;
 rsactftool -h ;
 rsakeyfind ;
 rsatool -h ;
+rshack ;
 rsmangler -h ;
 rsmurf6 ;
 rspet-client ;
