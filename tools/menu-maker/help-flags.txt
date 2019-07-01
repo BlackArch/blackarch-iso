@@ -3145,6 +3145,7 @@ shellnoob -h ;
 shellsploit ;
 shellter ;
 sherlocked ;
+sherlock -h ;
 shitflood ;
 shjs ;
 shocker -h ;
