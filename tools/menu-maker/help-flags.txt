@@ -2344,6 +2344,14 @@ omen-alphabetcreator -h ;
 omen-createng -h ;
 omen-enumng -h ;
 omen-evalpw -h ;
+omiagent -h ;
+omicheck -h l
+omicli -h ;
+omiengine -h ;
+omigen -h ;
+omireg -h ;
+omiserver -h ;
+omiuninstall -h ;
 omnihash --help ;
 omp-dialog --help ;
 omp --help ;
