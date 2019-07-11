@@ -2529,6 +2529,7 @@ phemail -h ;
 phentropy -h ;
 phishery -h ;
 phishingkithunter -h ;
+phonesploit ;
 phoss -h ;
 PHoss -h ;
 photon -h ;
