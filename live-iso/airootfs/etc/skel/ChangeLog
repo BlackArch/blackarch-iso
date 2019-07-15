@@ -1,3 +1,11 @@
+===> 2019.12.01
+
+	- fix i3-wm issues
+	- package QAs (runtime checks) were performed prior the ISO build
+	- updated all blackarch tools and packages including config files
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
+
 ===> 2019.06.01
 
 	- added more than 150 new tools

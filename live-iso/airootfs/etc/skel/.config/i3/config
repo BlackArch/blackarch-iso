@@ -13,7 +13,7 @@ set $modkey Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:xos4 Terminus bold 9
+font pango:xos4 Terminus bold 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -43,8 +43,8 @@ bindsym $modkey+Return exec --no-startup-id i3-sensible-terminal
 bindsym $modkey+Shift+q kill
 
 # start dmenu (a program launcher)
-# bindsym $modkey+d exec --no-startup-id rofi -show run
-bindsym $modkey+d exec --no-startup-id dmenu_run
+bindsym $modkey+d exec --no-startup-id rofi -show run
+# bindsym $modkey+d exec --no-startup-id dmenu_run
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -108,26 +108,47 @@ bindsym $modkey+Shift+minus move scratchpad
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $modkey+minus scratchpad show
 
-# Get colors from Xresources
-set_from_resource $xforeground foreground
-set_from_resource $xbackground background
-set_from_resource $xcursor cursorColor
-set_from_resource $xcolor0 color0
-set_from_resource $xcolor8 color8
-set_from_resource $xcolor1 color1
-set_from_resource $xcolor9 color9
-set_from_resource $xcolor2 color2
-set_from_resource $xcolor10 color10
-set_from_resource $xcolor3 color3
-set_from_resource $xcolor11 color11
-set_from_resource $xcolor4 color4
-set_from_resource $xcolor12 color12
-set_from_resource $xcolor5 color5
-set_from_resource $xcolor13 color13
-set_from_resource $xcolor6 color6
-set_from_resource $xcolor14 color14
-set_from_resource $xcolor7 color7
-set_from_resource $xcolor15 color15
+# Enable the setion below to fetch all the colors from Xresources
+#set_from_resource $xforeground foreground
+#set_from_resource $xbackground background
+#set_from_resource $xcursor cursorColor
+#set_from_resource $xcolor0 color0
+#set_from_resource $xcolor8 color8
+#set_from_resource $xcolor1 color1
+#set_from_resource $xcolor9 color9
+#set_from_resource $xcolor2 color2
+#set_from_resource $xcolor10 color10
+#set_from_resource $xcolor3 color3
+#set_from_resource $xcolor11 color11
+#set_from_resource $xcolor4 color4
+#set_from_resource $xcolor12 color12
+#set_from_resource $xcolor5 color5
+#set_from_resource $xcolor13 color13
+#set_from_resource $xcolor6 color6
+#set_from_resource $xcolor14 color14
+#set_from_resource $xcolor7 color7
+#set_from_resource $xcolor15 color15
+
+# Manual color settings.
+set $xforeground #c5c8c6
+set $xbackground #1d1f21
+set $xcursor #c5c8c6
+set $xcolor0 #282a2e
+set $xcolor8 #373b41
+set $xcolor1 #a54242
+set $xcolor9 #cc6666
+set $xcolor2 #8c9440
+set $xcolor10 #b5bd68
+set $xcolor3 #de935f
+set $xcolor11 #f0c674
+set $xcolor4 #5f819d
+set $xcolor12 #81a2be
+set $xcolor5 #85678f
+set $xcolor13 #b294bb
+set $xcolor6 #5e8d87
+set $xcolor14 #8abeb7
+set $xcolor7 #707880
+set $xcolor15 #c5c8c6
 
 # Colors
 # Class                 border          backgr      text            indic
@@ -191,21 +212,30 @@ mode "resize" {
     # Pressing right will grow the window’s width.
     # Pressing up will shrink the window’s height.
     # Pressing down will grow the window’s height.
-    bindsym $left       resize shrink width 10 px or 10 ppt
-    bindsym $down       resize grow height 10 px or 10 ppt
-    bindsym $up         resize shrink height 10 px or 10 ppt
-    bindsym $right      resize grow width 10 px or 10 ppt
+    bindsym $left       resize shrink width 12 px or 12 ppt
+    bindsym $down       resize grow height 12 px or 12 ppt
+    bindsym $up         resize shrink height 12 px or 12 ppt
+    bindsym $right      resize grow width 12 px or 12 ppt
 
     # same bindings, but for the arrow keys
-    bindsym Left        resize shrink width 10 px or 10 ppt
-    bindsym Down        resize grow height 10 px or 10 ppt
-    bindsym Up          resize shrink height 10 px or 10 ppt
-    bindsym Right       resize grow width 10 px or 10 ppt
+    bindsym Left        resize shrink width 12 px or 12 ppt
+    bindsym Down        resize grow height 12 px or 12 ppt
+    bindsym Up          resize shrink height 12 px or 12 ppt
+    bindsym Right       resize grow width 12 px or 12 ppt
 
-    # back to normal: Enter or Escape or $modkey+r
+    bindsym $modkey+$left       resize shrink width 01 px or 01 ppt
+    bindsym $modkey+$down       resize grow height 01 px or 01 ppt
+    bindsym $modkey+$up         resize shrink height 01 px or 01 ppt
+    bindsym $modkey+$right      resize grow width 01 px or 01 ppt
+
+    bindsym $modkey+Left        resize shrink width 01 px or 01 ppt
+    bindsym $modkey+Down        resize grow height 01 px or 01 ppt
+    bindsym $modkey+Up          resize shrink height 01 px or 01 ppt
+    bindsym $modkey+Right       resize grow width 01 px or 01 ppt
+
+    # back to normal: Enter or Escape
     bindsym Return mode "default"
     bindsym Escape mode "default"
-    bindsym $modkey+r mode "default"
 }
 
 bindsym $modkey+r mode "resize"
@@ -217,7 +247,7 @@ bar {
     mode dock
     position top
     strip_workspace_numbers yes
-    font pango:xos4 Terminus medium 9
+    font pango:xos4 Terminus medium 10
     separator_symbol ")("
 
     colors {
@@ -268,13 +298,55 @@ new_window pixel 4
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="task_dialog"] floating enable
 
-#######################################################################
+# i3-gaps configuration
+gaps inner 10
+gaps outer 0
+smart_gaps on
+
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $modkey+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+    bindsym o      mode "$mode_gaps_outer"
+    bindsym i      mode "$mode_gaps_inner"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+mode "$mode_gaps_inner" {
+    bindsym plus  gaps inner current plus 5
+    bindsym minus gaps inner current minus 5
+    bindsym 0     gaps inner current set 0
+
+    bindsym Shift+plus  gaps inner all plus 5
+    bindsym Shift+minus gaps inner all minus 5
+    bindsym Shift+0     gaps inner all set 0
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+    bindsym plus  gaps outer current plus 5
+    bindsym minus gaps outer current minus 5
+    bindsym 0     gaps outer current set 0
+
+    bindsym Shift+plus  gaps outer all plus 5
+    bindsym Shift+minus gaps outer all minus 5
+    bindsym Shift+0     gaps outer all set 0
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+######################################################################
 # automatically start i3-config-wizard to offer the user to create a
 # keysym-based config which used their favorite modifier (alt or windows)
 #
 # i3-config-wizard will not launch if there already is a config file
 # in ~/.i3/config.
 #
-# Please remove the following exec
+# Please remove the following exec line:
 #######################################################################
 exec --no-startup-id i3-config-wizard
