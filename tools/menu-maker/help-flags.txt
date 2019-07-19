@@ -551,6 +551,7 @@ cloud-buster -h ;
 cloudfail -h ;
 cloudflare-enum ;
 cloudget -h ;
+cloudmare -h ;
 cloudsploit ;
 clusterd -h ;
 cminer ;
