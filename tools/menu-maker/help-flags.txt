@@ -1531,6 +1531,7 @@ icmpsh-m-py ;
 icmptx ;
 idb ;
 id-entify ;
+identywaf -h ;
 idl2wrs ;
 idswakeup -h ;
 ifchk -h ;
