@@ -9,6 +9,7 @@
 
 # China
 # Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+# Server = https://mirrors.tuna.tsinghua.edu.cn/blackarch/$repo/os/$arch
 
 # Denmark
 # Server = http://mirrors.dotsrc.org/blackarch/$repo/os/$arch
