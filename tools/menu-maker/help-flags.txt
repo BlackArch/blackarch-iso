@@ -3108,6 +3108,7 @@ scanrand -h ;
 scansploit -h ;
 scanssh -h ;
 scap-as-rpm -h ;
+scap-workbench ;
 scapy -h ;
 sc_attach -h ;
 sc_filterpolicy -h ;
