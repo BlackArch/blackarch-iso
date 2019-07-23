@@ -336,6 +336,7 @@ clair
 clamscanlogparser
 climber
 cloakify
+clonezilla
 cloudfail
 cloudflare-enum
 cloudget
@@ -371,6 +372,7 @@ crackmapexec
 crackq
 crackserver
 crawlic
+crda
 creak
 create_ap
 creddump
@@ -587,6 +589,7 @@ evtkit
 exabgp
 exe2image
 exescan
+exfat-utils
 exitmap
 exiv2
 expac
@@ -674,6 +677,7 @@ frida
 frida-extract
 fridump
 frisbeelite
+fsarchiver
 f-scrack
 fs-exploit
 fsnoop
@@ -761,6 +765,7 @@ graudit
 greenbone-security-assistant
 grepforrfi
 gr-gsm
+grml-zsh-config
 grokevt
 gr-paint
 grr
@@ -949,6 +954,7 @@ isr-form
 issniff
 ivre
 iw
+iwd
 jaadas
 jad
 jadx
@@ -1080,6 +1086,7 @@ lorg
 lotophagi
 lsof
 lsrtunnel
+lsscsi
 lte-cell-scanner
 ltrace
 luksipc
@@ -1130,6 +1137,7 @@ matroschka
 mausezahn
 mbenum
 mboxgrep
+mc
 mdcrack
 mdk3
 mdk4
@@ -1704,6 +1712,7 @@ scrounge-ntfs
 sctpscan
 sdnpwn
 sdn-toolkit
+sdparm
 sea
 search1337
 searchsploit
@@ -1719,6 +1728,7 @@ sessionlist
 set
 setowner
 sfuzz
+sg3_utils
 sh00t
 sha1collisiondetection
 shard
@@ -2208,6 +2218,7 @@ winhex
 winregfs
 winrelay
 wireless-ids
+wireless-regdb
 wireless_tools
 wireshark-cli
 wireshark-qt
