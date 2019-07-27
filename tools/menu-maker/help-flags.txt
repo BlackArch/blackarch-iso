@@ -885,6 +885,8 @@ dsd -h ;
 dsfileinformation -h ;
 dsfs -h ;
 dsgroups -h ;
+dshell ;
+dshell-decode -h ;
 dsjs -h ;
 dskeytab -h ;
 dsniff -h ;
