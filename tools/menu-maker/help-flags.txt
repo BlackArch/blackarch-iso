@@ -1426,6 +1426,7 @@ hash-extender-test ;
 hashfind -h ;
 hashid ;
 hash-identifer ;
+hash-identifier ;
 hashpump -h ;
 hashtag -h ;
 hatcloud -h ;
