@@ -3762,6 +3762,7 @@ urldigger -h ;
 url_handler.sh ;
 urlsnarf -h ;
 urlview ;
+usb-canary ;
 usb-canary -h ;
 usbdump -h ;
 usbrip -h ;
