@@ -2770,6 +2770,8 @@ r2agent -h ;
 r2 -h ;
 r2pm ;
 ra6 ;
+rabid-console -h ;
+rabid -h ;
 rabin2 -h ;
 rabins -h ;
 raccoon --help ;
