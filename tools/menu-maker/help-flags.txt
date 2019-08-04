@@ -436,6 +436,7 @@ bunny-gcc ;
 bunny-main ;
 bunny-trace ;
 burpsuite ;
+buster -h ;
 buttinsky -h ;
 bvedit -h ;
 bview -h ;
