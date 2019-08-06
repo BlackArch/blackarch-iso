@@ -500,6 +500,7 @@ chaosmap ;
 chaosreader0.94 ;
 chaosreader -h ;
 chapcrack -h ;
+cheat-sh ;
 checkiban -h ;
 check_omp -h ;
 checkpwd ;
