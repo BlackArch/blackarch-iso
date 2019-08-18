@@ -41,7 +41,7 @@ end
 beautiful.init("/usr/share/awesome/themes/blackarch/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "nano"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -96,11 +96,12 @@ myawesomemenu = {
     { "quit", awesome.quit }
 }
 
-xtermmenu = {
-    { "xterm (red)", "xterm -bg black -fg red" },
-    { "xterm (green)", "xterm -bg black -fg green" },
-    { "xterm (yellow)", "xterm -bg black -fg yellow" },
-    { "xterm (white)", "xterm -bg black -fg white" }
+termmenu = {
+    { "urxvt (grey)", "urxvt -bg black -fg grey" },
+    { "urxvt (red)", "urxvt -bg black -fg red" },
+    { "urxvt (green)", "urxvt -bg black -fg green" },
+    { "urxvt (yellow)", "urxvt -bg black -fg yellow" },
+    { "urxvt (white)", "urxvt -bg black -fg white" }
 }
 
 browsermenu = {
@@ -7510,7 +7511,7 @@ blackarchmenu = {
 mymainmenu = awful.menu({
 items = {
 		{ "awesome", myawesomemenu, beautiful.awesome_icon },
-		{ "terminals", xtermmenu },
+		{ "terminals", termmenu },
 		{ "browsers", browsermenu },
     { "network", networkmenu },
     { "blackarch", blackarchmenu }
