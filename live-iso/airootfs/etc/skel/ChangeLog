@@ -3,7 +3,8 @@
 	- added more than 100 new tools
 	- included linux kernel 5.2.X
 	- updated blackarch-installer to v1.1.7
-	- updated graphics using new BlackArch design (WMs, grub, syslinux, etc.)
+	- replaced xterm with rxvt-unicode
+	- updated themes with new BlackArch design (WMs, grub, syslinux, etc.)
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
 	- updated all window manager menus (awesome, fluxbox, openbox)
