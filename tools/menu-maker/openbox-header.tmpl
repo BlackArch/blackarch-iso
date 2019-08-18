@@ -3,24 +3,29 @@
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
 <menu id="terminals-menu" label="terminals">
-	<item label="xterm (red)">
+	<item label="term (grey)">
+    <action name="Execute">
+      <command>urxvt -bg black -fg grey</command>
+    </action>
+  </item>
+  <item label="term (red)">
 		<action name="Execute">
-			<command>xterm -bg black -fg red</command>
+			<command>urxvt -bg black -fg red</command>
 		</action>
 	</item>
-	<item label="xterm (green)">
+	<item label="term (green)">
 		<action name="Execute">
-			<command>xterm -bg black -fg green</command>
+			<command>urxvt -bg black -fg green</command>
 		</action>
 	</item>
-	<item label="xterm (yellow)">
+	<item label="term (yellow)">
 		<action name="Execute">
-			<command>xterm -bg black -fg yellow</command>
+			<command>urxvt -bg black -fg yellow</command>
 		</action>
 	</item>
-	<item label="xterm (white)">
+	<item label="term (white)">
 		<action name="Execute">
-			<command>xterm -bg black -fg white</command>
+			<command>urxvt -bg black -fg white</command>
 		</action>
 	</item>
 </menu>
