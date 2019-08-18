@@ -2,28 +2,38 @@
 "============================================================
 let s:KeyMap = {}
 let g:NERDTreeKeyMap = s:KeyMap
+let s:keyMaps = {}
 
 "FUNCTION: KeyMap.All() {{{1
 function! s:KeyMap.All()
-    if !exists("s:keyMaps")
-        let s:keyMaps = []
+    let sortedKeyMaps = values(s:keyMaps)
+    call sort(sortedKeyMaps, s:KeyMap.Compare, s:KeyMap)
+
+    return sortedKeyMaps
+endfunction
+
+"FUNCTION: KeyMap.Compare(keyMap1, keyMap2) {{{1
+function! s:KeyMap.Compare(keyMap1, keyMap2)
+
+    if a:keyMap1.key >? a:keyMap2.key
+        return 1
     endif
-    return s:keyMaps
+
+    if a:keyMap1.key <? a:keyMap2.key
+        return -1
+    endif
+
+    return 0
 endfunction
 
 "FUNCTION: KeyMap.FindFor(key, scope) {{{1
 function! s:KeyMap.FindFor(key, scope)
-    for i in s:KeyMap.All()
-         if i.key ==# a:key && i.scope ==# a:scope
-            return i
-        endif
-    endfor
-    return {}
+    return get(s:keyMaps, a:key . a:scope, {})
 endfunction
 
 "FUNCTION: KeyMap.BindAll() {{{1
 function! s:KeyMap.BindAll()
-    for i in s:KeyMap.All()
+    for i in values(s:keyMaps)
         call i.bind()
     endfor
 endfunction
@@ -41,20 +51,16 @@ function! s:KeyMap.bind()
     else
         let keymapInvokeString = self.key
     endif
+    let keymapInvokeString = escape(keymapInvokeString, '\')
 
     let premap = self.key == "<LeftRelease>" ? " <LeftRelease>" : " "
 
-    exec 'nnoremap <buffer> <silent> '. self.key . premap . ':call nerdtree#invokeKeyMap("'. keymapInvokeString .'")<cr>'
+    exec 'nnoremap <buffer> <silent> '. self.key . premap . ':call nerdtree#ui_glue#invokeKeyMap("'. keymapInvokeString .'")<cr>'
 endfunction
 
 "FUNCTION: KeyMap.Remove(key, scope) {{{1
 function! s:KeyMap.Remove(key, scope)
-    let maps = s:KeyMap.All()
-    for i in range(len(maps))
-         if maps[i].key ==# a:key && maps[i].scope ==# a:scope
-            return remove(maps, i)
-        endif
-    endfor
+    return remove(s:keyMaps, a:key . a:scope)
 endfunction
 
 "FUNCTION: KeyMap.invoke() {{{1
@@ -79,6 +85,16 @@ endfunction
 "If a keymap has the scope of "all" then it will be called if no other keymap
 "is found for a:key and the scope.
 function! s:KeyMap.Invoke(key)
+
+    "required because clicking the command window below another window still
+    "invokes the <LeftRelease> mapping - but changes the window cursor
+    "is in first
+    "
+    "TODO: remove this check when the vim bug is fixed
+    if !g:NERDTree.ExistsForBuf()
+        return {}
+    endif
+
     let node = g:NERDTreeFileNode.GetSelected()
     if !empty(node)
 
@@ -124,8 +140,14 @@ endfunction
 
 "FUNCTION: KeyMap.Create(options) {{{1
 function! s:KeyMap.Create(options)
-    let newKeyMap = copy(self)
     let opts = extend({'scope': 'all', 'quickhelpText': ''}, copy(a:options))
+
+    "dont override other mappings unless the 'override' option is given
+    if get(opts, 'override', 0) == 0 && !empty(s:KeyMap.FindFor(opts['key'], opts['scope']))
+        return
+    end
+
+    let newKeyMap = copy(self)
     let newKeyMap.key = opts['key']
     let newKeyMap.quickhelpText = opts['quickhelpText']
     let newKeyMap.callback = opts['callback']
@@ -136,8 +158,7 @@ endfunction
 
 "FUNCTION: KeyMap.Add(keymap) {{{1
 function! s:KeyMap.Add(keymap)
-    call s:KeyMap.Remove(a:keymap.key, a:keymap.scope)
-    call add(s:KeyMap.All(), a:keymap)
+    let s:keyMaps[a:keymap.key . a:keymap.scope] = a:keymap
 endfunction
 
 " vim: set sw=4 sts=4 et fdm=marker:
