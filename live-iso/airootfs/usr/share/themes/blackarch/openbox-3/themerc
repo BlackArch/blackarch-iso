@@ -1,6 +1,6 @@
 menu.title.bg:			raised gradient diagonal
 menu.title.bg.color:		rgb:00/00/00
-menu.title.bg.colorTo:		rgb:c4/00/00
+menu.title.bg.colorTo:		rgb:62/98/e0
 menu.title.text.color:		white
 menu.title.text.justify:		center
 
@@ -13,13 +13,13 @@ menu.items.justify:		center
 menu.items.active.bg:			raised gradient diagonal
 menu.items.active.bg.color:		rgb:00/00/00
 menu.items.active.bg.colorTo:		rgb:00/00/00
-menu.items.active.text.color:		rgb:c4/00/00
-menu.bullet.image.color: rgb:c4/00/00
+menu.items.active.text.color:		rgb:62/98/e0
+menu.bullet.image.color: rgb:62/98/e0
 menu.bullet.selected.image.color: #ffffff
 
 window.active.title.bg:		raised gradient vertical
 window.active.title.bg.color:	rgb:00/00/00
-window.active.title.bg.colorTo:	rgb:c4/00/00
+window.active.title.bg.colorTo:	rgb:62/98/e0
 window.inactive.title.bg:		raised vertical gradient
 window.inactive.title.bg.color:	rgb:00/00/00
 window.inactive.title.bg.colorTo:	black
@@ -36,7 +36,7 @@ window.label.text.justify:			center
 
 window.active.button.unpressed.bg:		raised gradient diagonal
 window.active.button.unpressed.bg.color:	rgb:00/00/00
-window.active.button.unpressed.bg.colorTo:	rgb:c4/00/00
+window.active.button.unpressed.bg.colorTo:	rgb:62/98/e0
 window.active.button.unpressed.image.color:	white
 
 window.inactive.button.unpressed.bg:		raised gradient diagonal
@@ -46,14 +46,14 @@ window.inactive.button.unpressed.image.color:	rgb:48/48/48
 
 window.active.button.pressed.bg:		sunken gradient diagonal
 window.active.button.pressed.bg.color:	rgb:00/00/00
-window.active.button.pressed.bg.colorTo:	rgb:c4/00/00
+window.active.button.pressed.bg.colorTo:	rgb:62/98/e0
 
 window.inactive.button.pressed.bg:		sunken gradient diagonal
 window.inactive.button.pressed.bg.color:	rgb:00/00/00
 window.inactive.button.pressed.bg.colorTo:	black
 window.inactive.button.pressed.image.color:	rgb:48/48/48
 
-window.active.client.color:	rgb:c4/00/00
+window.active.client.color:	rgb:62/98/e0
 window.inactive.client.color:	rgb:48/48/48
 
 window.active.handle.bg:		raised gradient diagonal
@@ -74,7 +74,7 @@ window.inactive.grip.bg.colorTo:	rgb:00/00/00
 
 window.active.button.toggled.bg:		raised gradient diagonal
 window.active.button.toggled.bg.color:	rgb:00/00/00
-window.active.button.toggled.bg.colorTo:	rgb:c4/00/00
+window.active.button.toggled.bg.colorTo:	rgb:62/98/e0
 window.active.button.toggled.image.color:	white
 
 window.inactive.button.toggled.bg:		raised gradient diagonal
@@ -92,11 +92,11 @@ window.inactive.button.disabled.bg.color:	rgb:50/54/58
 window.inactive.button.disabled.bg.colorTo:	black
 window.inactive.button.disabled.image.color:	rgb:70/74/78
 
-border.color:			rgb:c4/00/00
+border.color:			rgb:62/98/e0
 padding.width:				1
 borderWidth:			1
 window.handle.width:			4
 
 window.active.label.text.font:
 menu.title.text.font:
-menu.items.font:
+menu.items.font: 
