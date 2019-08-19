@@ -4,22 +4,22 @@
 
 theme = {}
 
-theme.font          = "xos4 terminus 12"
+theme.font          = Terminus
 
-theme.bg_normal     = "#484848"
+theme.bg_normal     = "#181818"
 theme.bg_focus      = "#000000"
 theme.bg_urgent     = "#000000"
 theme.bg_minimize   = "#444444"
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#c40000"
-theme.fg_urgent     = "#cc0000"
+theme.fg_focus      = "#6298e0"
+theme.fg_urgent     = "#6298e0"
 theme.fg_minimize   = "#000000"
 
 theme.border_width  = 1
-theme.border_normal = "#c40000"
-theme.border_focus  = "#535d6c"
+theme.border_normal = "#6298e0"
+theme.border_focus  = "#316ab7"
 theme.border_marked = "#91231c"
 
 -- There are other variable sets
