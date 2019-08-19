@@ -61,8 +61,8 @@
   <keepBorder>yes</keepBorder>
   <animateIconify>yes</animateIconify>
   <font place="ActiveWindow">
-    <name>Terminus</name>
-    <size>8</size>
+    <name>Terminus (TTF)</name>
+    <size>10</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -70,8 +70,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveWindow">
-    <name>Terminus</name>
-    <size>8</size>
+    <name>Terminus (TTF)</name>
+    <size>10</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -79,8 +79,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuHeader">
-    <name>Terminus</name>
-    <size>8</size>
+    <name>Terminus (TTF)</name>
+    <size>10</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -88,8 +88,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="MenuItem">
-    <name>Terminus</name>
-    <size>8</size>
+    <name>Terminus (TTF)</name>
+    <size>10</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -97,8 +97,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="ActiveOnScreenDisplay">
-    <name>Terminus</name>
-    <size>8</size>
+    <name>Terminus (TTF)</name>
+    <size>10</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
@@ -106,8 +106,8 @@
     <!-- 'italic' or 'normal' -->
   </font>
   <font place="InactiveOnScreenDisplay">
-    <name>Terminus</name>
-    <size>8</size>
+    <name>Terminus (TTF)</name>
+    <size>10</size>
     <!-- font size in points -->
     <weight>normal</weight>
     <!-- 'bold' or 'normal' -->
