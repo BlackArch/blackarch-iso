@@ -105,8 +105,7 @@ httping
 httptunnel
 httrack
 hydra
-i3status
-i3-wm
+i3
 inotify-tools
 iodine
 ipmitool
