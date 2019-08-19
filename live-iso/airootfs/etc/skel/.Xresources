@@ -26,9 +26,9 @@ urxvt.scrollstyle:            plain
 urxvt.secondaryScroll:        false
 urxvt.xftAntialias:           true
 urxvt.color12:                RoyalBlue
-urxvt.matcher.rend.0:         Bold fg3
+urxvt.matcher.rend.0:         Bold fg6
 urxvt.cursorBlink:            false
-urxvt.cursorColor:            #d40000
+urxvt.cursorColor:            #6298e0
 urxvt.mapAlert:               true
 urxvt.pointerBlank:           true
 urxvt.resource:               value
@@ -42,7 +42,7 @@ xterm*renderFont:             true
 xterm*utf8:                   always
 xterm*utf8Title:              true
 xterm*locale:                 true
-xterm*cursorColor:            #d40000
+xterm*cursorColor:            #6298e0
 xterm*cursorBlink:            false
 xterm*selectToClipboard:      true
 xterm*SaveLines:              10000
