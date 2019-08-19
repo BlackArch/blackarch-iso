@@ -16,22 +16,22 @@ style "back"
 
 style "time"
 {
-	fg[NORMAL]="#484848"
-	font_name="xos4 terminus 12"
+	fg[NORMAL]="#0d3264"
+	font_name="Terminus"
 }
 
 style "prompt"
 {
-	fg[NORMAL]="#c40000"
-	font_name="xos4 terminus 12"
+	fg[NORMAL]="#6298e0"
+	font_name="Terminus"
 }
 
 # Normally this won't paint an invisible event box, but we did some hacks in greeter.c.
 style "bottom"
 {
-	font_name="xos4 terminus 12"
-	fg[NORMAL] = "#c40000"
-    bg[NORMAL] = "#000000"
+	font_name="Terminus"
+	fg[NORMAL] = "#6298e0"
+  bg[NORMAL] = "#000000"
 }
 
 widget "lxdm" style "back"
