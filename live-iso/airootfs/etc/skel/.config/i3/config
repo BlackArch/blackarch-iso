@@ -1,4 +1,4 @@
-# i3 config file (v4)
+#i3 config file (v4)
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 #
@@ -13,7 +13,7 @@ set $modkey Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:xos4 Terminus bold 10
+font pango:Terminus bold 10
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -130,12 +130,33 @@ bindsym $modkey+minus scratchpad show
 #set_from_resource $xcolor15 color15
 
 # Manual color settings.
+# red theme
+#set $xforeground #c5c8c6
+#set $xbackground #1d1f21
+#set $xcursor #c5c8c6
+#set $xcolor0 #282a2e
+#set $xcolor8 #373b41
+#set $xcolor1 #a54242
+#set $xcolor9 #cc6666
+#set $xcolor2 #8c9440
+#set $xcolor10 #b5bd68
+#set $xcolor3 #de935f
+#set $xcolor11 #f0c674
+#set $xcolor4 #5f819d
+#set $xcolor12 #81a2be
+#set $xcolor5 #85678f
+#set $xcolor13 #b294bb
+#set $xcolor6 #5e8d87
+#set $xcolor14 #8abeb7
+#set $xcolor7 #707880
+#set $xcolor15 #c5c8c6
+# blue theme
 set $xforeground #c5c8c6
 set $xbackground #1d1f21
 set $xcursor #c5c8c6
-set $xcolor0 #282a2e
+set $xcolor0 #0d3264
 set $xcolor8 #373b41
-set $xcolor1 #a54242
+set $xcolor1 #467ecb
 set $xcolor9 #cc6666
 set $xcolor2 #8c9440
 set $xcolor10 #b5bd68
@@ -145,7 +166,7 @@ set $xcolor4 #5f819d
 set $xcolor12 #81a2be
 set $xcolor5 #85678f
 set $xcolor13 #b294bb
-set $xcolor6 #5e8d87
+set $xcolor6 #6298e0
 set $xcolor14 #8abeb7
 set $xcolor7 #707880
 set $xcolor15 #c5c8c6
@@ -247,7 +268,7 @@ bar {
     mode dock
     position top
     strip_workspace_numbers yes
-    font pango:xos4 Terminus medium 10
+    font pango:Terminus medium 10
     separator_symbol ")("
 
     colors {
@@ -257,7 +278,8 @@ bar {
 
         #Where              #Border         #Background     #Text
         focused_workspace   $xbackground    $xcolor1        $xbackground
-        urgent_workspace    $xbackground    $xcolor9        $xbackground
+        #urgent_workspace    $xbackground    $xcolor9        $xbackground
+        urgent_workspace    $xbackground    $xcolor1        $xbackground
         inactive_workspace  $xbackground    $xcolor0        $xforeground
     }
 }
