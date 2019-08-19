@@ -7,16 +7,16 @@
 }
 
 #time {
-	font: Sans 12;
-	color: #484848;
+	font: "Terminus";
+	color: #0d3264;
 }
 
 #user_list, #login_entry {
 	background-image: none;
 	background-color: #000000;
-	color: #c40000;
+	color: #6298e0;
 }
 
 #prompt, #bottom_pane GtkLabel {
-	color: #c40000;
+	color: #6298e0;
 }
