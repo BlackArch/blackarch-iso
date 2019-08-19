@@ -120,6 +120,7 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
 
 # remove not needed .desktop entries
+rm -rf /usr/share/xsessions/blackarch-dwm.desktop
 rm -rf /usr/share/xsessions/openbox-kde.desktop
 rm -rf /usr/share/xsessions/i3-with-shmlog.desktop
 rm -rf /usr/share/xsessions/xfce.desktop
