@@ -87,6 +87,7 @@ partimage
 pkgfile
 ppp
 rsync
+rxvt-unicode
 scrot
 smali
 smartmontools
@@ -95,14 +96,15 @@ sudo
 swaks
 tcpdump
 terminus-font
+terminus-font-ttf
 ttf-indic-otf
 tzdata
 unrar
 unzip
 usb_modeswitch
 vim
-virtualbox-guest-utils
 virtualbox-guest-modules-arch
+virtualbox-guest-utils
 wavemon
 wicd
 wicd-gtk

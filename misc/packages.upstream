@@ -212,6 +212,7 @@ routersploit
 rp-pppoe
 rsync
 rtorrent
+rxvt-unicode
 scanmem
 scapy
 scrapy
@@ -245,6 +246,7 @@ tcpflow
 tcpreplay
 tcptrace
 terminus-font
+terminus-font-ttf
 testdisk
 testssl.sh
 thc-ipv6
