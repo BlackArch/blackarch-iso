@@ -20,7 +20,6 @@ bc
 bettercap
 bind-tools
 binwalk
-blackarch-dwm
 blackarch-installer
 blackarch-keyring
 bluez
@@ -161,7 +160,6 @@ ntp
 obconf
 obfsproxy
 oblogout
-obmenu
 openbox
 openbox-themes
 openconnect

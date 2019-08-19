@@ -10,7 +10,6 @@ base-devel
 bash
 bash-completion
 bind-tools
-blackarch-dwm
 blackarch-installer
 blackarch-keyring
 bluez
@@ -78,7 +77,6 @@ ntp
 obconf
 obfsproxy
 oblogout
-obmenu
 openbox
 openconnect
 openssh
