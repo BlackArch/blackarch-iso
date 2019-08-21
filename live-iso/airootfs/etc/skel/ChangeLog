@@ -2,7 +2,7 @@
 
 	- added more than 100 new tools
 	- included linux kernel 5.2.9
-	- updated blackarch-installer to v1.1.8
+	- updated blackarch-installer to v1.1.13
 	- various improvements and bugfixes
 	- replaced the default terminal xterm with rxvt-unicode
 	- updated look&feel: new BlackArch theme for WMs, grub, syslinux, etc.
