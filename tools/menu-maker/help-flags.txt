@@ -2038,6 +2038,7 @@ memdump-kernel -h ;
 memdump_kernel -h ;
 memfetch ;
 memimager cd /usr/share/windows/memimager ; ls ;
+mentalist ;
 mergecap -h ;
 merge-router-config.pl ;
 merlin-server -h ;
