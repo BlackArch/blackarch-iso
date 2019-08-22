@@ -67,9 +67,7 @@ ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
 chsh -s /bin/bash
 
 # download and install exploits
-sploitctl -f 1 -v
-sploitctl -f 3 -v
-sploitctl -f 4 -v
+sploitctl -f 0 -t 10 -XR
 
 # temporary fixes for ruby based tools
 cd /usr/share/arachni/ && rm -f Gemfile.lock &&
