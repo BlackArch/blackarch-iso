@@ -981,6 +981,7 @@ evilgrade ;
 evilgrade.sh ;
 evilize -h ;
 evilize-md5coll -h ;
+evillimiter -h ;
 evilmaid ;
 evil-ssdp -h ;
 evtkit -h ;
