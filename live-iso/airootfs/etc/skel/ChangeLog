@@ -1,8 +1,9 @@
 ===> 2019.09.01
 
 	- added more than 150 new tools
-	- added terminus font for all WMs
+	- added terminus font for all WMs (thanks to psf for i3-wm bugfixes)
 	- included linux kernel 5.2.9
+	- new vimrc and ~/.vimrc (thanks to noptrix offering his config files)
 	- updated blackarch-installer to v1.1.19
 	- various improvements and bugfixes
 	- removed dwm window manager
