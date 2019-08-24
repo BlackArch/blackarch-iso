@@ -1,6 +1,7 @@
 ===> 2019.09.01
 
-	- added more than 100 new tools
+	- added more than 150 new tools
+	- added terminus font for all WMs
 	- included linux kernel 5.2.9
 	- updated blackarch-installer to v1.1.19
 	- various improvements and bugfixes
