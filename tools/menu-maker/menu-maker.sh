@@ -66,8 +66,7 @@ fluxbox_start()
 
 fluxbox_entry()
 {
-    echo "          [exec] (${tool}) {urxvt -e" \
-        "'${tool} ${opts} bash'}" >> fluxbox-menu
+    echo "          [exec] (${tool}) {urxvt -e '${tool} ${opts} bash'}" >> fluxbox-menu
 
     return 0
 }
