@@ -85,19 +85,15 @@ cd /usr/share/catphish && rm -f Gemfile.lock &&
 cd /usr/share/wpbrute-rpc && rm -f Gemfile.lock
   bundle config build.nokogiri --use-system-libraries &&
   bundle install --without test development --path vendor/bundle &&
-  rm -f Gemfile.lock
 cd /usr/share/staekka && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
   build install --no-cache --deployment --path vendor/bundle &&
-  rm -f Gemfile.lock
 cd /usr/share/vane && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
   bundle install --without test development --path vendor/bundle &&
-  rm -f Gemfile.lock
 cd /usr/share/vcsmap && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
   bundle install --without test development --path vendor/bundle &&
-  rm -f Gemfile.lock
 cd /usr/share/vsaudit && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
