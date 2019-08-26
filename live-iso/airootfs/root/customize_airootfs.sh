@@ -68,9 +68,7 @@ chsh -s /bin/bash
 
 # download and install exploits
 mkdir -p /usr/share/exploits/exploit-db
-sploitctl -f 1 -t 10 -XR
-sploitctl -f 2 -t 10 -XR
-sploitctl -f 3 -t 10 -XR
+sploitctl -f 0 -t 10 -XR
 
 # temporary fixes for ruby based tools
 cd /usr/share/arachni/ && rm -f Gemfile.lock &&
