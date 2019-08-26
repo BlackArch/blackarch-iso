@@ -67,6 +67,7 @@ ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
 chsh -s /bin/bash
 
 # download and install exploits
+mkdir -p /usr/share/exploits/exploit-db
 sploitctl -f 0 -t 10 -XR
 
 # temporary fixes for ruby based tools
