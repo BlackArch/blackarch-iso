@@ -858,6 +858,7 @@ domain-analyzer-pytext2pdf ;
 domain-stats -h ;
 domi-owned -h ;
 domlink ;
+donut -h ;
 doona -h ;
 doork -h ;
 doozer ;
