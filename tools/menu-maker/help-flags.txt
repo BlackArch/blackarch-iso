@@ -3243,6 +3243,8 @@ sigploit ;
 sigspotter cd /usr/share/windows/sigspottter ; ls ;
 sigthief -h ;
 sileneteye ;
+silenttrinity -h ;
+silenttrinity-teamserver -h ;
 silk_config ;
 simple-ducky ;
 simpleemailspoofer -h ;
