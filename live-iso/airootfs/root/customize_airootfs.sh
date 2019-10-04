@@ -22,7 +22,7 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus' 'wicd')
+enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus' 'wicd' 'iptables')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
