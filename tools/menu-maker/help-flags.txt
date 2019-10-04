@@ -2320,6 +2320,7 @@ nsntrace -h ;
 nsoq ;
 nstrobe ;
 nsupdate ;
+ntfs-log-tracker -h ;
 ntpdos ;
 ntp-fingerprint ;
 ntp-ip-enum ;
