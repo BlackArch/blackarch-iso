@@ -3,22 +3,5 @@
 :FORWARD ACCEPT [0:0]
 :OUTPUT ACCEPT [0:0]
 -A INPUT -i lo -j ACCEPT
--A INPUT -m conntrack --ctstate INVALID -j DROP
--A INPUT -p tcp -m tcp ! --tcp-flags FIN,SYN,RST,ACK SYN -m conntrack --ctstate NEW -j DROP
--A INPUT -p tcp -m conntrack --ctstate NEW -m tcpmss ! --mss 536:65535 -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN FIN,SYN -j DROP
--A INPUT -p tcp -m tcp --tcp-flags SYN,RST SYN,RST -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN FIN,SYN -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,RST FIN,RST -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,ACK FIN -j DROP
--A INPUT -p tcp -m tcp --tcp-flags ACK,URG URG -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,ACK FIN -j DROP
--A INPUT -p tcp -m tcp --tcp-flags PSH,ACK PSH -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,PSH,ACK,URG -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG NONE -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,PSH,URG -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,PSH,URG -j DROP
--A INPUT -p tcp -m tcp --tcp-flags FIN,SYN,RST,PSH,ACK,URG FIN,SYN,RST,ACK,URG -j DROP
 -A INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 COMMIT
