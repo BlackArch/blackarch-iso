@@ -1391,6 +1391,7 @@ habu.traceroute ;
 habu.xor ;
 hackersh -h ;
 hackredis -h ;
+haiti -h ;
 hakabench -h ;
 hakactl -h ;
 haka -h ;
