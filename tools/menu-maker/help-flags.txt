@@ -3308,6 +3308,7 @@ slcanpty ;
 sleuthkit -h ;
 sleuthql -h ;
 slist ;
+slither -h ;
 sloth ;
 slowhttptest -h ;
 slowloris ;
