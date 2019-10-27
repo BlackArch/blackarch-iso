@@ -783,6 +783,7 @@ dirs3arch -h ;
 dirscanner -h ;
 dirscraper -h ;
 dirsearch -h ;
+dirstalk -h ;
 disasm-pwntools -h ;
 disitool -h ;
 dislocker -h ;
