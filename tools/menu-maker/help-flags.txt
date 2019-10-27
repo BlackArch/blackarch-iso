@@ -3019,6 +3019,7 @@ rip-cvs -h ;
 ripdc -H ;
 rip-git -h ;
 rip-svn -h ;
+rita -h ;
 riwifshell ;
 rkhunter -h ;
 rlm_ippool_tool ;
