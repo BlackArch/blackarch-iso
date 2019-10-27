@@ -3559,6 +3559,7 @@ subscan.py ;
 subscraper -h ;
 subterfuge ;
 sucrack ;
+suid3num -h ;
 superscan cd /usr/share/windows/superscan-4 ; ls ;
 suricata ;
 suricatasc ;
