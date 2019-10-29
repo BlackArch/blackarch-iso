@@ -1138,6 +1138,7 @@ fprotlogparser ;
 frag6 ;
 fragmentation6 ;
 fraud-bridge -h ;
+fred ;
 freeradius -h ;
 freewifi -h ;
 freport ;
