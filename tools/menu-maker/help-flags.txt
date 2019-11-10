@@ -1249,6 +1249,7 @@ gitem -h ;
 githack ;
 git-hound -h ;
 githubcloner -h ;
+github-dorks -h ;
 gitleaks -h ;
 gitmails -h ;
 gitminer -h ;
