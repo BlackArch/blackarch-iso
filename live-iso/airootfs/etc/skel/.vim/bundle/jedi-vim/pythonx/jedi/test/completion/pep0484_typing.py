@@ -40,6 +40,8 @@ def we_can_has_sequence(p, q, r, s, t, u):
     t[1]
     #? ["append"]
     u.a
+    #? float() list()
+    u[1.0]
     #? float()
     u[1]
 
@@ -114,13 +116,9 @@ def tuple(p, q, r):
     i, s, f = q
     #? int()
     i
-    ##? str()  --- TODO fix support for tuple assignment
-    # https://github.com/davidhalter/jedi/pull/663#issuecomment-172317854
-    #?
+    #? str()
     s
-    ##? float()  --- TODO fix support for tuple assignment
-    # https://github.com/davidhalter/jedi/pull/663#issuecomment-172317854
-    #?
+    #? float()
     f
 
 class Key:
@@ -173,6 +171,21 @@ def mapping(p, q, d, dd, r, s, t):
         key
         #? Value()
         value
+    for key, value in q.items():
+        #? Key()
+        key
+        #? Value()
+        value
+    for key, value in d.items():
+        #? Key()
+        key
+        #? Value()
+        value
+    for key, value in dd.items():
+        #? Key()
+        key
+        #? Value()
+        value
     for key in r:
         #? Key()
         key
@@ -211,7 +224,7 @@ def optional(p):
     as being of that type. Jedi doesn't do anything with the extra into that
     it can be None as well
     """
-    #? int()
+    #? int() None
     p
 
 class ForwardReference:
@@ -243,6 +256,31 @@ for key in x.keys():
 for value in x.values():
     #? int()
     value
+
+WrappingType = typing.NewType('WrappingType', str) # Chosen arbitrarily
+y = WrappingType(0) # Per https://github.com/davidhalter/jedi/issues/1015#issuecomment-355795929
+#? str()
+y
+
+def testnewtype(y):
+    """
+    :type y: WrappingType
+    """
+    #? str()
+    y
+    #? ["upper"]
+    y.u
+
+WrappingType2 = typing.NewType()
+
+def testnewtype2(y):
+    """
+    :type y: WrappingType2
+    """
+    #?
+    y
+    #? []
+    y.
 # python >= 3.4
 
 class TestDefaultDict(typing.DefaultDict[str, int]):
@@ -282,7 +320,6 @@ import typing as t
 def union2(x: t.Union[int, str]):
     #? int() str()
     x
-
 from typing import Union
 def union3(x: Union[int, str]):
     #? int() str()
@@ -292,3 +329,96 @@ from typing import Union as U
 def union4(x: U[int, str]):
     #? int() str()
     x
+
+# -------------------------
+# Type Vars
+# -------------------------
+
+TYPE_VARX = typing.TypeVar('TYPE_VARX')
+TYPE_VAR_CONSTRAINTSX = typing.TypeVar('TYPE_VAR_CONSTRAINTSX', str, int)
+# TODO there should at least be some results.
+#? []
+TYPE_VARX.
+#! ["TYPE_VARX = typing.TypeVar('TYPE_VARX')"]
+TYPE_VARX
+
+
+class WithTypeVar(typing.Generic[TYPE_VARX]):
+    def lala(self) -> TYPE_VARX:
+        ...
+
+
+def maaan(p: WithTypeVar[int]):
+    #? int()
+    p.lala()
+
+def in_out1(x: TYPE_VARX) -> TYPE_VARX: ...
+
+#? int()
+in_out1(1)
+#? str()
+in_out1("")
+#? str()
+in_out1(str())
+#?
+in_out1()
+
+def in_out2(x: TYPE_VAR_CONSTRAINTSX) -> TYPE_VAR_CONSTRAINTSX: ...
+
+#? int()
+in_out2(1)
+#? str()
+in_out2("")
+#? str()
+in_out2(str())
+#? str() int()
+in_out2()
+# TODO this should actually be str() int(), because of the constraints.
+#? float()
+in_out2(1.0)
+
+# -------------------------
+# TYPE_CHECKING
+# -------------------------
+
+if typing.TYPE_CHECKING:
+    with_type_checking = 1
+else:
+    without_type_checking = 1.0
+#? int()
+with_type_checking
+#?
+without_type_checking
+
+def foo(a: typing.List, b: typing.Dict, c: typing.MutableMapping) -> typing.Type[int]:
+    #? ['append']
+    a.appen
+    #? list()
+    a
+    #?
+    a[0]
+    #? ['setdefault']
+    b.setd
+    #? ['setdefault']
+    c.setd
+    #? typing.MutableMapping()
+    c
+    #?
+    c['asdf']
+#? int
+foo()
+
+# -------------------------
+# cast
+# -------------------------
+
+def cast_tests():
+    x = 3.0
+    y = typing.cast(int, x)
+    #? int()
+    y
+    return typing.cast(str, x)
+
+
+#? str()
+cast_tests()

@@ -6,6 +6,7 @@ from textwrap import dedent
 import jedi
 import pytest
 from ..helpers import unittest
+import sys
 
 try:
     import numpydoc  # NOQA
@@ -21,6 +22,11 @@ except ImportError:
 else:
     numpy_unavailable = False
 
+if sys.version_info.major == 2:
+    # In Python 2 there's an issue with tox/docutils that makes the tests fail,
+    # Python 2 is soon end-of-life, so just don't support numpydoc for it anymore.
+    numpydoc_unavailable = True
+
 
 def test_function_doc(Script):
     defs = Script("""
@@ -35,7 +41,20 @@ def test_class_doc(Script):
     class TestClass():
         '''Docstring of `TestClass`.'''
     TestClass""").goto_definitions()
-    assert defs[0].docstring() == 'Docstring of `TestClass`.'
+
+    expected = 'Docstring of `TestClass`.'
+    assert defs[0].docstring(raw=True) == expected
+    assert defs[0].docstring() == 'TestClass()\n\n' + expected
+
+
+def test_class_doc_with_init(Script):
+    d, = Script("""
+    class TestClass():
+        '''Docstring'''
+        def __init__(self, foo, bar=3): pass
+    TestClass""").goto_definitions()
+
+    assert d.docstring() == 'TestClass(foo, bar=3)\n\nDocstring'
 
 
 def test_instance_doc(Script):
@@ -140,6 +159,16 @@ def test_docstring_instance(Script):
 def test_docstring_keyword(Script):
     completions = Script('assert').completions()
     assert 'assert' in completions[0].docstring()
+
+
+def test_docstring_params_formatting(Script):
+    defs = Script("""
+    def func(param1,
+             param2,
+             param3):
+        pass
+    func""").goto_definitions()
+    assert defs[0].docstring() == 'func(param1, param2, param3)'
 
 
 # ---- Numpy Style Tests ---
@@ -349,7 +378,6 @@ def test_numpy_returns():
         x.d'''
     )
     names = [c.name for c in jedi.Script(s).completions()]
-    print(names)
     assert 'diagonal' in names
 
 
@@ -362,5 +390,27 @@ def test_numpy_comp_returns():
         x.d'''
     )
     names = [c.name for c in jedi.Script(s).completions()]
-    print(names)
     assert 'diagonal' in names
+
+
+def test_decorator(Script):
+    code = dedent('''
+        def decorator(name=None):
+            def _decorate(func):
+                @wraps(func)
+                def wrapper(*args, **kwargs):
+                    """wrapper docstring"""
+                    return func(*args, **kwargs)
+                return wrapper
+            return _decorate
+
+
+        @decorator('testing')
+        def check_user(f):
+            """Nice docstring"""
+            pass
+
+        check_user''')
+
+    d, = Script(code).goto_definitions()
+    assert d.docstring(raw=True) == 'Nice docstring'

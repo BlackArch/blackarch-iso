@@ -1,8 +1,11 @@
+import re
 import textwrap
 from inspect import cleandoc
+from weakref import WeakKeyDictionary
 
 from parso.python import tree
 from parso.cache import parser_cache
+from parso import split_lines
 
 from jedi._compatibility import literal_eval, force_unicode
 
@@ -53,11 +56,13 @@ def get_executable_nodes(node, last_added=False):
     return result
 
 
-def get_comp_fors(comp_for):
+def get_sync_comp_fors(comp_for):
     yield comp_for
     last = comp_for.children[-1]
     while True:
         if last.type == 'comp_for':
+            yield last.children[1]  # Ignore the async.
+        elif last.type == 'sync_comp_for':
             yield last
         elif not last.type == 'comp_if':
             break
@@ -137,7 +142,8 @@ def safe_literal_eval(value):
         return ''
 
 
-def get_call_signature(funcdef, width=72, call_string=None):
+def get_call_signature(funcdef, width=72, call_string=None,
+                       omit_first_param=False, omit_return_annotation=False):
     """
     Generate call signature of this function.
 
@@ -154,36 +160,19 @@ def get_call_signature(funcdef, width=72, call_string=None):
             call_string = '<lambda>'
         else:
             call_string = funcdef.name.value
-    if funcdef.type == 'lambdef':
-        p = '(' + ''.join(param.get_code() for param in funcdef.get_params()).strip() + ')'
-    else:
-        p = funcdef.children[2].get_code()
-    if funcdef.annotation:
+    params = funcdef.get_params()
+    if omit_first_param:
+        params = params[1:]
+    p = '(' + ''.join(param.get_code() for param in params).strip() + ')'
+    # TODO this is pretty bad, we should probably just normalize.
+    p = re.sub(r'\s+', ' ', p)
+    if funcdef.annotation and not omit_return_annotation:
         rtype = " ->" + funcdef.annotation.get_code()
     else:
         rtype = ""
     code = call_string + p + rtype
 
     return '\n'.join(textwrap.wrap(code, width))
-
-
-def get_doc_with_call_signature(scope_node):
-    """
-    Return a document string including call signature.
-    """
-    call_signature = None
-    if scope_node.type == 'classdef':
-        for funcdef in scope_node.iter_funcdefs():
-            if funcdef.name.value == '__init__':
-                call_signature = \
-                    get_call_signature(funcdef, call_string=scope_node.name.value)
-    elif scope_node.type in ('funcdef', 'lambdef'):
-        call_signature = get_call_signature(scope_node)
-
-    doc = clean_scope_docstring(scope_node)
-    if call_signature is None:
-        return doc
-    return '%s\n\n%s' % (call_signature, doc)
 
 
 def move(node, line_offset):
@@ -231,7 +220,29 @@ def get_following_comment_same_line(node):
 
 
 def is_scope(node):
-    return node.type in ('file_input', 'classdef', 'funcdef', 'lambdef', 'comp_for')
+    t = node.type
+    if t == 'comp_for':
+        # Starting with Python 3.8, async is outside of the statement.
+        return node.children[1].type != 'sync_comp_for'
+
+    return t in ('file_input', 'classdef', 'funcdef', 'lambdef', 'sync_comp_for')
+
+
+def _get_parent_scope_cache(func):
+    cache = WeakKeyDictionary()
+
+    def wrapper(used_names, node, include_flows=False):
+        try:
+            for_module = cache[used_names]
+        except KeyError:
+            for_module = cache[used_names] = {}
+
+        try:
+            return for_module[node]
+        except KeyError:
+            result = for_module[node] = func(node, include_flows)
+            return result
+    return wrapper
 
 
 def get_parent_scope(node, include_flows=False):
@@ -239,13 +250,27 @@ def get_parent_scope(node, include_flows=False):
     Returns the underlying scope.
     """
     scope = node.parent
-    while scope is not None:
-        if include_flows and isinstance(scope, tree.Flow):
+    if scope is None:
+        return None  # It's a module already.
+
+    while True:
+        if is_scope(scope) or include_flows and isinstance(scope, tree.Flow):
+            if scope.type in ('classdef', 'funcdef', 'lambdef'):
+                index = scope.children.index(':')
+                if scope.children[index].start_pos >= node.start_pos:
+                    if node.parent.type == 'param' and node.parent.name == node:
+                        pass
+                    elif node.parent.type == 'tfpdef' and node.parent.children[0] == node:
+                        pass
+                    else:
+                        scope = scope.parent
+                        continue
             return scope
-        if is_scope(scope):
-            break
         scope = scope.parent
     return scope
+
+
+get_cached_parent_scope = _get_parent_scope_cache(get_parent_scope)
 
 
 def get_cached_code_lines(grammar, path):
@@ -254,3 +279,19 @@ def get_cached_code_lines(grammar, path):
     to do this, but we avoid splitting all the lines again.
     """
     return parser_cache[grammar._hashed][path].lines
+
+
+def cut_value_at_position(leaf, position):
+    """
+    Cuts of the value of the leaf at position
+    """
+    lines = split_lines(leaf.value, keepends=True)[:position[0] - leaf.line + 1]
+    column = position[1]
+    if leaf.line == position[0]:
+        column -= leaf.column
+    lines[-1] = lines[-1][:column]
+    return ''.join(lines)
+
+
+def get_string_quote(leaf):
+    return re.match('\w*("""|\'{3}|"|\')', leaf.value).group(1)

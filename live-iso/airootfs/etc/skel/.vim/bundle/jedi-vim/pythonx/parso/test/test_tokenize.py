@@ -1,5 +1,6 @@
 # -*- coding: utf-8    # This file contains Unicode characters.
 
+import sys
 from textwrap import dedent
 
 import pytest
@@ -16,6 +17,7 @@ from parso.python.tokenize import PythonToken
 NAME = PythonTokenTypes.NAME
 NEWLINE = PythonTokenTypes.NEWLINE
 STRING = PythonTokenTypes.STRING
+NUMBER = PythonTokenTypes.NUMBER
 INDENT = PythonTokenTypes.INDENT
 DEDENT = PythonTokenTypes.DEDENT
 ERRORTOKEN = PythonTokenTypes.ERRORTOKEN
@@ -140,7 +142,7 @@ def test_identifier_contains_unicode():
     else:
         # Unicode tokens in Python 2 seem to be identified as operators.
         # They will be ignored in the parser, that's ok.
-        assert unicode_token[0] == OP
+        assert unicode_token[0] == ERRORTOKEN
 
 
 def test_quoted_strings():
@@ -228,16 +230,29 @@ def test_endmarker_end_pos():
     check('a\\')
 
 
+xfail_py2 = dict(marks=[pytest.mark.xfail(sys.version_info[0] == 2, reason='Python 2')])
+
+
 @pytest.mark.parametrize(
     ('code', 'types'), [
+        # Indentation
         (' foo', [INDENT, NAME, DEDENT]),
         ('  foo\n bar', [INDENT, NAME, NEWLINE, ERROR_DEDENT, NAME, DEDENT]),
         ('  foo\n bar \n baz', [INDENT, NAME, NEWLINE, ERROR_DEDENT, NAME,
                                 NEWLINE, ERROR_DEDENT, NAME, DEDENT]),
         (' foo\nbar', [INDENT, NAME, NEWLINE, DEDENT, NAME]),
+
+        # Name stuff
+        ('1foo1', [NUMBER, NAME]),
+        pytest.param(
+            u'மெல்லினம்', [NAME],
+            **xfail_py2),
+        pytest.param(u'²', [ERRORTOKEN], **xfail_py2),
+        pytest.param(u'ä²ö', [NAME, ERRORTOKEN, NAME], **xfail_py2),
+        pytest.param(u'ää²¹öö', [NAME, ERRORTOKEN, NAME], **xfail_py2),
     ]
 )
-def test_indentation(code, types):
+def test_token_types(code, types):
     actual_types = [t.type for t in _get_token_list(code)]
     assert actual_types == types + [ENDMARKER]
 
@@ -330,13 +345,46 @@ def test_backslash():
         ('f" "{}', [FSTRING_START, FSTRING_STRING, FSTRING_END, OP, OP]),
         (r'f"\""', [FSTRING_START, FSTRING_STRING, FSTRING_END]),
         (r'f"\""', [FSTRING_START, FSTRING_STRING, FSTRING_END]),
+
+        # format spec
         (r'f"Some {x:.2f}{y}"', [FSTRING_START, FSTRING_STRING, OP, NAME, OP,
                                  FSTRING_STRING, OP, OP, NAME, OP, FSTRING_END]),
+
+        # multiline f-string
+        ('f"""abc\ndef"""', [FSTRING_START, FSTRING_STRING, FSTRING_END]),
+        ('f"""abc{\n123}def"""', [
+            FSTRING_START, FSTRING_STRING, OP, NUMBER, OP, FSTRING_STRING,
+            FSTRING_END
+        ]),
+
+        # a line continuation inside of an fstring_string
+        ('f"abc\\\ndef"', [
+            FSTRING_START, FSTRING_STRING, FSTRING_END
+        ]),
+        ('f"\\\n{123}\\\n"', [
+            FSTRING_START, FSTRING_STRING, OP, NUMBER, OP, FSTRING_STRING,
+            FSTRING_END
+        ]),
+
+        # a line continuation inside of an fstring_expr
+        ('f"{\\\n123}"', [FSTRING_START, OP, NUMBER, OP, FSTRING_END]),
+
+        # a line continuation inside of an format spec
+        ('f"{123:.2\\\nf}"', [
+            FSTRING_START, OP, NUMBER, OP, FSTRING_STRING, OP, FSTRING_END
+        ]),
+
+        # a newline without a line continuation inside a single-line string is
+        # wrong, and will generate an ERRORTOKEN
+        ('f"abc\ndef"', [
+            FSTRING_START, FSTRING_STRING, NEWLINE, NAME, ERRORTOKEN
+        ]),
+
+        # a more complex example
         (r'print(f"Some {x:.2f}a{y}")', [
             NAME, OP, FSTRING_START, FSTRING_STRING, OP, NAME, OP,
             FSTRING_STRING, OP, FSTRING_STRING, OP, NAME, OP, FSTRING_END, OP
         ]),
-
     ]
 )
 def test_fstring(code, types, version_ge_py36):

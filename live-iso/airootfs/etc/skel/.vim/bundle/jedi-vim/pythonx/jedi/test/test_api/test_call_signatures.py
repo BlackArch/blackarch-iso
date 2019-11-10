@@ -1,12 +1,13 @@
+import sys
 from textwrap import dedent
 import inspect
-import warnings
 
 import pytest
 
 from ..helpers import TestCase
 from jedi import cache
-from jedi._compatibility import is_py3
+from jedi.parser_utils import get_call_signature
+from jedi import Interpreter
 
 
 def assert_signature(Script, source, expected_name, expected_index=0, line=None, column=None):
@@ -24,7 +25,7 @@ def assert_signature(Script, source, expected_name, expected_index=0, line=None,
 
 
 def test_valid_call(Script):
-    assert_signature(Script, 'str()', 'str', column=4)
+    assert_signature(Script, 'bool()', 'bool', column=5)
 
 
 class TestCallSignatures(TestCase):
@@ -39,12 +40,12 @@ class TestCallSignatures(TestCase):
         run = self._run_simple
 
         # simple
-        s1 = "sorted(a, str("
+        s1 = "sorted(a, bool("
         run(s1, 'sorted', 0, 7)
         run(s1, 'sorted', 1, 9)
         run(s1, 'sorted', 1, 10)
-        run(s1, 'sorted', 1, 11)
-        run(s1, 'str', 0, 14)
+        run(s1, 'sorted', None, 11)
+        run(s1, 'bool', 0, 15)
 
         s2 = "abs(), "
         run(s2, 'abs', 0, 4)
@@ -58,26 +59,26 @@ class TestCallSignatures(TestCase):
     def test_more_complicated(self):
         run = self._run_simple
 
-        s4 = 'abs(zip(), , set,'
+        s4 = 'abs(bool(), , set,'
         run(s4, None, column=3)
         run(s4, 'abs', 0, 4)
-        run(s4, 'zip', 0, 8)
-        run(s4, 'abs', 0, 9)
-        run(s4, 'abs', None, 10)
+        run(s4, 'bool', 0, 9)
+        run(s4, 'abs', 0, 10)
+        run(s4, 'abs', None, 11)
 
         s5 = "sorted(1,\nif 2:\n def a():"
         run(s5, 'sorted', 0, 7)
         run(s5, 'sorted', 1, 9)
 
-        s6 = "str().center("
-        run(s6, 'center', 0)
-        run(s6, 'str', 0, 4)
+        s6 = "bool().__eq__("
+        run(s6, '__eq__', 0)
+        run(s6, 'bool', 0, 5)
 
         s7 = "str().upper().center("
-        s8 = "str(int[zip("
+        s8 = "bool(int[abs("
         run(s7, 'center', 0)
-        run(s8, 'zip', 0)
-        run(s8, 'str', 0, 8)
+        run(s8, 'abs', 0)
+        run(s8, 'bool', 0, 10)
 
         run("import time; abc = time; abc.sleep(", 'sleep', 0)
 
@@ -87,13 +88,17 @@ class TestCallSignatures(TestCase):
             "func(alpha='101',"
         self._run_simple(s, 'func', 0, column=13, line=2)
 
-    def test_flows(self):
-        # jedi-vim #9
-        self._run_simple("with open(", 'open', 0)
-
+    def test_for(self):
         # jedi-vim #11
         self._run_simple("for sorted(", 'sorted', 0)
         self._run_simple("for s in sorted(", 'sorted', 0)
+
+
+def test_with(Script):
+    # jedi-vim #9
+    sigs = Script("with open(").call_signatures()
+    assert sigs
+    assert all(sig.name == 'open' for sig in sigs)
 
 
 def test_call_signatures_empty_parentheses_pre_space(Script):
@@ -150,22 +155,22 @@ def test_decorator_in_class(Script):
 
 
 def test_additional_brackets(Script):
-    assert_signature(Script, 'str((', 'str', 0)
+    assert_signature(Script, 'abs((', 'abs', 0)
 
 
 def test_unterminated_strings(Script):
-    assert_signature(Script, 'str(";', 'str', 0)
+    assert_signature(Script, 'abs(";', 'abs', 0)
 
 
 def test_whitespace_before_bracket(Script):
-    assert_signature(Script, 'str (', 'str', 0)
-    assert_signature(Script, 'str (";', 'str', 0)
-    assert_signature(Script, 'str\n(', None)
+    assert_signature(Script, 'abs (', 'abs', 0)
+    assert_signature(Script, 'abs (";', 'abs', 0)
+    assert_signature(Script, 'abs\n(', None)
 
 
 def test_brackets_in_string_literals(Script):
-    assert_signature(Script, 'str (" (', 'str', 0)
-    assert_signature(Script, 'str (" )', 'str', 0)
+    assert_signature(Script, 'abs (" (', 'abs', 0)
+    assert_signature(Script, 'abs (" )', 'abs', 0)
 
 
 def test_function_definitions_should_break(Script):
@@ -173,8 +178,8 @@ def test_function_definitions_should_break(Script):
     Function definitions (and other tokens that cannot exist within call
     signatures) should break and not be able to return a call signature.
     """
-    assert_signature(Script, 'str(\ndef x', 'str', 0)
-    assert not Script('str(\ndef x(): pass').call_signatures()
+    assert_signature(Script, 'abs(\ndef x', 'abs', 0)
+    assert not Script('abs(\ndef x(): pass').call_signatures()
 
 
 def test_flow_call(Script):
@@ -211,7 +216,7 @@ def test_call_signature_on_module(Script):
     assert Script(s).call_signatures() == []
 
 
-def test_complex(Script):
+def test_complex(Script, environment):
     s = """
             def abc(a,b):
                 pass
@@ -229,7 +234,19 @@ def test_complex(Script):
                 re.compile(
                 return it * 2
         """
-    assert_signature(Script, s, 'compile', 0, line=4, column=27)
+    sig1, sig2 = sorted(Script(s, line=4, column=27).call_signatures(), key=lambda s: s.line)
+    assert sig1.name == sig2.name == 'compile'
+    assert sig1.index == sig2.index == 0
+    func1, = sig1._name.infer()
+    func2, = sig2._name.infer()
+
+    if environment.version_info.major == 3:
+        # Do these checks just for Python 3, I'm too lazy to deal with this
+        # legacy stuff. ~ dave.
+        assert get_call_signature(func1.tree_node) \
+            == 'compile(pattern: AnyStr, flags: _FlagsType = ...) -> Pattern[AnyStr]'
+        assert get_call_signature(func2.tree_node) \
+            == 'compile(pattern: Pattern[AnyStr], flags: _FlagsType = ...) ->\nPattern[AnyStr]'
 
     # jedi-vim #70
     s = """def foo("""
@@ -246,19 +263,31 @@ def _params(Script, source, line=None, column=None):
     return signatures[0].params
 
 
-def test_param_name(Script):
-    if not is_py3:
-        p = _params(Script, '''int(''')
-        # int is defined as: `int(x[, base])`
-        assert p[0].name == 'x'
-        # `int` docstring has been redefined:
-        # http://bugs.python.org/issue14783
-        # TODO have multiple call signatures for int (like in the docstr)
-        #assert p[1].name == 'base'
+def test_int_params(Script):
+    sig1, sig2 = Script('int(').call_signatures()
+    # int is defined as: `int(x[, base])`
+    assert len(sig1.params) == 2
+    assert sig1.params[0].name == 'x'
+    assert sig1.params[1].name == 'base'
+    assert len(sig2.params) == 1
+    assert sig2.params[0].name == 'x'
 
-    p = _params(Script, '''open(something,''')
-    assert p[0].name in ['file', 'name']
-    assert p[1].name == 'mode'
+
+def test_pow_params(Script):
+    # See Github #1357.
+    for sig in Script('pow(').call_signatures():
+        param_names = [p.name for p in sig.params]
+        assert param_names in (['x', 'y'], ['x', 'y', 'z'])
+
+
+def test_param_name(Script):
+    sigs = Script('open(something,').call_signatures()
+    for sig in sigs:
+        # All of the signatures (in Python the function is overloaded),
+        # contain the same param names.
+        assert sig.params[0].name in ['file', 'name']
+        assert sig.params[1].name == 'mode'
+        assert sig.params[2].name == 'buffering'
 
 
 def test_builtins(Script):
@@ -286,18 +315,17 @@ def test_signature_is_definition(Script):
 
     # Now compare all the attributes that a CallSignature must also have.
     for attr_name in dir(definition):
-        dont_scan = ['defined_names', 'parent', 'goto_assignments', 'params']
+        dont_scan = ['defined_names', 'parent', 'goto_assignments', 'infer',
+                     'params', 'get_signatures', 'execute']
         if attr_name.startswith('_') or attr_name in dont_scan:
             continue
 
-        # Might trigger some deprecation warnings.
-        with warnings.catch_warnings(record=True):
-            attribute = getattr(definition, attr_name)
-            signature_attribute = getattr(signature, attr_name)
-            if inspect.ismethod(attribute):
-                assert attribute() == signature_attribute()
-            else:
-                assert attribute == signature_attribute
+        attribute = getattr(definition, attr_name)
+        signature_attribute = getattr(signature, attr_name)
+        if inspect.ismethod(attribute):
+            assert attribute() == signature_attribute()
+        else:
+            assert attribute == signature_attribute
 
 
 def test_no_signature(Script):
@@ -375,13 +403,155 @@ def test_keyword_argument_index(Script, environment):
     assert get(both + 'foo(a, b, c').index == 0
 
 
+code1 = 'def f(u, /, v=3, *, abc, abd, xyz): pass'
+code2 = 'def g(u, /, v=3, *, abc, abd, xyz, **kwargs): pass'
+code3 = 'def h(u, /, v, *args, x=1, y): pass'
+code4 = 'def i(u, /, v, *args, x=1, y, **kwargs): pass'
+
+
+_calls = [
+    # No *args, **kwargs
+    (code1, 'f(', 0),
+    (code1, 'f(a', 0),
+    (code1, 'f(a,', 1),
+    (code1, 'f(a,b', 1),
+    (code1, 'f(a,b,', 2),
+    (code1, 'f(a,b,c', None),
+    (code1, 'f(a,b,a', 2),
+    (code1, 'f(a,b,a=', None),
+    (code1, 'f(a,b,abc', 2),
+    (code1, 'f(a,b,abc=(', 2),
+    (code1, 'f(a,b,abc=(f,1,2,3', 2),
+    (code1, 'f(a,b,abd', 3),
+    (code1, 'f(a,b,x', 4),
+    (code1, 'f(a,b,xy', 4),
+    (code1, 'f(a,b,xyz=', 4),
+    (code1, 'f(a,b,xy=', None),
+    (code1, 'f(u=', (0, None)),
+    (code1, 'f(v=', 1),
+
+    # **kwargs
+    (code2, 'g(a,b,a', 2),
+    (code2, 'g(a,b,abc', 2),
+    (code2, 'g(a,b,abd', 3),
+    (code2, 'g(a,b,arr', 5),
+    (code2, 'g(a,b,xy', 4),
+    (code2, 'g(a,b,xyz=', 4),
+    (code2, 'g(a,b,xy=', 5),
+    (code2, 'g(a,b,abc=1,abd=4,', 4),
+    (code2, 'g(a,b,abc=1,xyz=3,abd=4,', 5),
+    (code2, 'g(a,b,abc=1,abd=4,lala', 5),
+    (code2, 'g(a,b,abc=1,abd=4,lala=', 5),
+    (code2, 'g(a,b,abc=1,abd=4,abd=', 5),
+    (code2, 'g(a,b,kw', 5),
+    (code2, 'g(a,b,kwargs=', 5),
+    (code2, 'g(u=', (0, 5)),
+    (code2, 'g(v=', 1),
+
+    # *args
+    (code3, 'h(a,b,c', 2),
+    (code3, 'h(a,b,c,', 2),
+    (code3, 'h(a,b,c,d', 2),
+    (code3, 'h(a,b,c,d[', 2),
+    (code3, 'h(a,b,c,(3,', 2),
+    (code3, 'h(a,b,c,(3,)', 2),
+    (code3, 'h(a,b,args=', None),
+    (code3, 'h(u,v=', 1),
+    (code3, 'h(u=', (0, None)),
+    (code3, 'h(u,*xxx', 1),
+    (code3, 'h(u,*xxx,*yyy', 1),
+    (code3, 'h(u,*[]', 1),
+    (code3, 'h(u,*', 1),
+    (code3, 'h(u,*, *', 1),
+    (code3, 'h(u,1,**', 3),
+    (code3, 'h(u,**y', 1),
+    (code3, 'h(u,x=2,**', 1),
+    (code3, 'h(u,x=2,**y', 1),
+    (code3, 'h(u,v=2,**y', 3),
+    (code3, 'h(u,x=2,**vv', 1),
+
+    # *args, **kwargs
+    (code4, 'i(a,b,c,d', 2),
+    (code4, 'i(a,b,c,d,e', 2),
+    (code4, 'i(a,b,c,d,e=', 5),
+    (code4, 'i(a,b,c,d,e=3', 5),
+    (code4, 'i(a,b,c,d=,x=', 3),
+    (code4, 'i(a,b,c,d=5,x=4', 3),
+    (code4, 'i(a,b,c,d=5,x=4,y', 4),
+    (code4, 'i(a,b,c,d=5,x=4,y=3,', 5),
+    (code4, 'i(a,b,c,d=5,y=4,x=3,', 5),
+    (code4, 'i(a,b,c,d=4,', 3),
+    (code4, 'i(a,b,c,x=1,d=,', 4),
+
+    # Error nodes
+    (code4, 'i(1, [a,b', 1),
+    (code4, 'i(1, [a,b=,', 2),
+    (code4, 'i(1, [a?b,', 2),
+    (code4, 'i(1, [a?b,*', 2),
+    (code4, 'i(?b,*r,c', 1),
+    (code4, 'i(?*', 0),
+    (code4, 'i(?**', (0, 1)),
+]
+
+
+@pytest.mark.parametrize('ending', ['', ')'])
+@pytest.mark.parametrize('code, call, expected_index', _calls)
+def test_signature_index(skip_python2, Script, environment, code, call, expected_index, ending):
+    if isinstance(expected_index, tuple):
+        expected_index = expected_index[environment.version_info > (3, 8)]
+    if environment.version_info < (3, 8):
+        code = code.replace('/,', '')
+
+    sig, = Script(code + '\n' + call + ending, column=len(call)).call_signatures()
+    index = sig.index
+    assert expected_index == index
+
+
+@pytest.mark.skipif(sys.version_info[0] == 2, reason="Python 2 doesn't support __signature__")
+@pytest.mark.parametrize('code', ['foo', 'instance.foo'])
+def test_arg_defaults(Script, environment, code):
+    def foo(arg="bla", arg1=1):
+        pass
+
+    class Klass:
+        def foo(self, arg="bla", arg1=1):
+            pass
+
+    instance = Klass()
+
+    src = dedent("""
+        def foo2(arg="bla", arg1=1):
+            pass
+
+        class Klass2:
+            def foo2(self, arg="bla", arg1=1):
+                pass
+
+        instance = Klass2()
+        """)
+
+    executed_locals = dict()
+    exec(src, None, executed_locals)
+    locals_ = locals()
+
+    def iter_scripts():
+        yield Interpreter(code + '(', namespaces=[locals_])
+        yield Script(src + code + "2(")
+        yield Interpreter(code + '2(', namespaces=[executed_locals])
+
+    for script in iter_scripts():
+        signatures = script.call_signatures()
+        assert signatures[0].params[0].description in ('param arg="bla"', "param arg='bla'")
+        assert signatures[0].params[1].description == 'param arg1=1'
+
+
 def test_bracket_start(Script):
     def bracket_start(src):
         signatures = Script(src).call_signatures()
         assert len(signatures) == 1
         return signatures[0].bracket_start
 
-    assert bracket_start('str(') == (1, 3)
+    assert bracket_start('abs(') == (1, 3)
 
 
 def test_different_caller(Script):
@@ -390,11 +560,11 @@ def test_different_caller(Script):
     index and then get the call signature of it.
     """
 
-    assert_signature(Script, '[str][0](', 'str', 0)
-    assert_signature(Script, '[str][0]()', 'str', 0, column=len('[str][0]('))
+    assert_signature(Script, '[abs][0](', 'abs', 0)
+    assert_signature(Script, '[abs][0]()', 'abs', 0, column=len('[abs][0]('))
 
-    assert_signature(Script, '(str)(', 'str', 0)
-    assert_signature(Script, '(str)()', 'str', 0, column=len('(str)('))
+    assert_signature(Script, '(abs)(', 'abs', 0)
+    assert_signature(Script, '(abs)()', 'abs', 0, column=len('(abs)('))
 
 
 def test_in_function(Script):
@@ -415,20 +585,28 @@ def test_lambda_params(Script):
     assert [p.name for p in sig.params] == ['x']
 
 
+CLASS_CODE = dedent('''\
+class X():
+    def __init__(self, foo, bar):
+        self.foo = foo
+''')
+
+
 def test_class_creation(Script):
-    code = dedent('''\
-    class X():
-        def __init__(self, foo, bar):
-            self.foo = foo
-    ''')
-    sig, = Script(code + 'X(').call_signatures()
+
+    sig, = Script(CLASS_CODE + 'X(').call_signatures()
     assert sig.index == 0
     assert sig.name == 'X'
     assert [p.name for p in sig.params] == ['foo', 'bar']
 
-    sig, = Script(code + 'X.__init__(').call_signatures()
+
+def test_call_init_on_class(Script):
+    sig, = Script(CLASS_CODE + 'X.__init__(').call_signatures()
     assert [p.name for p in sig.params] == ['self', 'foo', 'bar']
-    sig, = Script(code + 'X().__init__(').call_signatures()
+
+
+def test_call_init_on_instance(Script):
+    sig, = Script(CLASS_CODE + 'X().__init__(').call_signatures()
     assert [p.name for p in sig.params] == ['foo', 'bar']
 
 

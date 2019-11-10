@@ -19,14 +19,6 @@ def build_nested(code, depth, base='def f():\n'):
 FAILING_EXAMPLES = [
     '1 +',
     '?',
-    # Python/compile.c
-    dedent('''\
-        for a in [1]:
-            try:
-                pass
-            finally:
-                continue
-        '''), # 'continue' not supported inside 'finally' clause"
     'continue',
     'break',
     'return',
@@ -154,7 +146,7 @@ FAILING_EXAMPLES = [
     # Now nested parsing
     "f'{continue}'",
     "f'{1;1}'",
-    "f'{a=3}'",
+    "f'{a;}'",
     "f'{b\"\" \"\"}'",
 ]
 
@@ -259,10 +251,6 @@ GLOBAL_NONLOCAL_ERROR = [
 
 if sys.version_info >= (3, 6):
     FAILING_EXAMPLES += GLOBAL_NONLOCAL_ERROR
-    FAILING_EXAMPLES += [
-        # Raises multiple errors in previous versions.
-        'async def foo():\n def nofoo():[x async for x in []]',
-    ]
 if sys.version_info >= (3, 5):
     FAILING_EXAMPLES += [
         # Raises different errors so just ignore them for now.
@@ -285,6 +273,14 @@ if sys.version_info >= (3,):
         'b"ä"',
         # combining strings and unicode is allowed in Python 2.
         '"s" b""',
+        '"s" b"" ""',
+        'b"" "" b"" ""',
+    ]
+if sys.version_info >= (3, 6):
+    FAILING_EXAMPLES += [
+        # Same as above, but for f-strings.
+        'f"s" b""',
+        'b"s" f""',
     ]
 if sys.version_info >= (2, 7):
     # This is something that raises a different error in 2.6 than in the other
@@ -310,4 +306,16 @@ if sys.version_info[:2] <= (3, 4):
     FAILING_EXAMPLES += [
         'a = *[1], 2',
         '(*[1], 2)',
+    ]
+
+if sys.version_info[:2] < (3, 8):
+    FAILING_EXAMPLES += [
+        # Python/compile.c
+        dedent('''\
+            for a in [1]:
+                try:
+                    pass
+                finally:
+                    continue
+            '''),  # 'continue' not supported inside 'finally' clause"
     ]

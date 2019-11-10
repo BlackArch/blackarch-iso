@@ -18,10 +18,12 @@ int(str)
 str..
 #? []
 a(0):.
-#? 2 ['and', 'or', 'if', 'is', 'in', 'not']
+#? 2 []
 0x0
-#? ['and', 'or', 'if', 'is', 'in', 'not']
+#? []
 1j
+#? ['and', 'or', 'if', 'is', 'in', 'not']
+1j 
 x = None()
 #?
 x
@@ -75,6 +77,11 @@ for a1 in 1,"":
     a1
 
 for a3, b3 in (1,""), (1,""), (1,""):
+    #? int()
+    a3
+    #? str()
+    b3
+for (a3, b3) in (1,""), (1,""), (1,""):
     #? int()
     a3
     #? str()
@@ -148,6 +155,7 @@ ret()[0]
 # -----------------
 
 def global_define():
+    #? int()
     global global_var_in_func
     global_var_in_func = 3
 
@@ -163,6 +171,7 @@ def funct1():
     global global_dict_var
     global_dict_var = dict()
 def funct2():
+    #! ['global_dict_var', 'global_dict_var']
     global global_dict_var
     #? dict()
     global_dict_var
@@ -295,6 +304,11 @@ __file__
 #? ['__file__']
 __file__
 
+#? str()
+math.__file__
+# Should not lead to errors
+#?
+math()
 
 # -----------------
 # with statements
@@ -304,7 +318,7 @@ with open('') as f:
     #? ['closed']
     f.closed
     for line in f:
-        #? str()
+        #? str() bytes()
         line
 
 with open('') as f1, open('') as f2:

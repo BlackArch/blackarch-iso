@@ -17,7 +17,7 @@ import parso
 
 _VersionInfo = namedtuple('VersionInfo', 'major minor micro')
 
-_SUPPORTED_PYTHONS = ['3.7', '3.6', '3.5', '3.4', '3.3', '2.7']
+_SUPPORTED_PYTHONS = ['3.8', '3.7', '3.6', '3.5', '3.4', '2.7']
 _SAFE_PATHS = ['/usr/bin', '/usr/local/bin']
 _CURRENT_VERSION = '%s.%s' % (sys.version_info.major, sys.version_info.minor)
 
@@ -128,17 +128,18 @@ class Environment(_BaseEnvironment):
         return self._get_subprocess().get_sys_path()
 
 
-class SameEnvironment(Environment):
+class _SameEnvironmentMixin(object):
     def __init__(self):
         self._start_executable = self.executable = sys.executable
         self.path = sys.prefix
         self.version_info = _VersionInfo(*sys.version_info[:3])
 
 
-class InterpreterEnvironment(_BaseEnvironment):
-    def __init__(self):
-        self.version_info = _VersionInfo(*sys.version_info[:3])
+class SameEnvironment(_SameEnvironmentMixin, Environment):
+    pass
 
+
+class InterpreterEnvironment(_SameEnvironmentMixin, _BaseEnvironment):
     def get_evaluator_subprocess(self, evaluator):
         return EvaluatorSameProcess(evaluator)
 
@@ -153,9 +154,13 @@ def _get_virtual_env_from_var():
     variable is considered to be safe / controlled by the user solely.
     """
     var = os.environ.get('VIRTUAL_ENV')
-    if var is not None:
-        if var == sys.prefix:
-            return SameEnvironment()
+    if var:
+        # Under macOS in some cases - notably when using Pipenv - the
+        # sys.prefix of the virtualenv is /path/to/env/bin/.. instead of
+        # /path/to/env so we need to fully resolve the paths in order to
+        # compare them.
+        if os.path.realpath(var) == os.path.realpath(sys.prefix):
+            return _try_get_same_env()
 
         try:
             return create_environment(var, safe=False)
@@ -184,14 +189,58 @@ def get_default_environment():
     if virtual_env is not None:
         return virtual_env
 
-    # If no VirtualEnv is found, use the environment we're already
+    return _try_get_same_env()
+
+
+def _try_get_same_env():
+    env = SameEnvironment()
+    if not os.path.basename(env.executable).lower().startswith('python'):
+        # This tries to counter issues with embedding. In some cases (e.g.
+        # VIM's Python Mac/Windows, sys.executable is /foo/bar/vim. This
+        # happens, because for Mac a function called `_NSGetExecutablePath` is
+        # used and for Windows `GetModuleFileNameW`. These are both platform
+        # specific functions. For all other systems sys.executable should be
+        # alright. However here we try to generalize:
+        #
+        # 1. Check if the executable looks like python (heuristic)
+        # 2. In case it's not try to find the executable
+        # 3. In case we don't find it use an interpreter environment.
+        #
+        # The last option will always work, but leads to potential crashes of
+        # Jedi - which is ok, because it happens very rarely and even less,
+        # because the code below should work for most cases.
+        if os.name == 'nt':
+            # The first case would be a virtualenv and the second a normal
+            # Python installation.
+            checks = (r'Scripts\python.exe', 'python.exe')
+        else:
+            # For unix it looks like Python is always in a bin folder.
+            checks = (
+                'bin/python%s.%s' % (sys.version_info[0], sys.version[1]),
+                'bin/python%s' % (sys.version_info[0]),
+                'bin/python',
+            )
+        for check in checks:
+            guess = os.path.join(sys.exec_prefix, check)
+            if os.path.isfile(guess):
+                # Bingo - We think we have our Python.
+                return Environment(guess)
+        # It looks like there is no reasonable Python to be found.
+        return InterpreterEnvironment()
+    # If no virtualenv is found, use the environment we're already
     # using.
-    return SameEnvironment()
+    return env
 
 
 def get_cached_default_environment():
+    var = os.environ.get('VIRTUAL_ENV')
     environment = _get_cached_default_environment()
-    if environment.path != os.environ.get('VIRTUAL_ENV'):
+
+    # Under macOS in some cases - notably when using Pipenv - the
+    # sys.prefix of the virtualenv is /path/to/env/bin/.. instead of
+    # /path/to/env so we need to fully resolve the paths in order to
+    # compare them.
+    if var and os.path.realpath(var) != os.path.realpath(environment.path):
         _get_cached_default_environment.clear_cache()
         return _get_cached_default_environment()
     return environment
@@ -285,7 +334,10 @@ def get_system_environment(version):
 
     if os.name == 'nt':
         for exe in _get_executables_from_windows_registry(version):
-            return Environment(exe)
+            try:
+                return Environment(exe)
+            except InvalidPythonEnvironment:
+                pass
     raise InvalidPythonEnvironment("Cannot find executable python%s." % version)
 
 

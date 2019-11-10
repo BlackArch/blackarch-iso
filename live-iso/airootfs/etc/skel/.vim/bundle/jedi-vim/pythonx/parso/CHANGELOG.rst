@@ -3,7 +3,39 @@
 Changelog
 ---------
 
-0.3.2 (2018-01-24)
+0.5.1 (2019-07-13)
+++++++++++++++++++
+
+- Fix: Some unicode identifiers were not correctly tokenized
+- Fix: Line continuations in f-strings are now working
+
+0.5.0 (2019-06-20)
+++++++++++++++++++
+
+- **Breaking Change** comp_for is now called sync_comp_for for all Python
+  versions to be compatible with the Python 3.8 Grammar
+- Added .pyi stubs for a lot of the parso API
+- Small FileIO changes
+
+0.4.0 (2019-04-05)
+++++++++++++++++++
+
+- Python 3.8 support
+- FileIO support, it's now possible to use abstract file IO, support is alpha
+
+0.3.4 (2019-02-13)
++++++++++++++++++++
+
+- Fix an f-string tokenizer error
+
+0.3.3 (2019-02-06)
++++++++++++++++++++
+
+- Fix async errors in the diff parser
+- A fix in iter_errors
+- This is a very small bugfix release
+
+0.3.2 (2019-01-24)
 +++++++++++++++++++
 
 - 20+ bugfixes in the diff parser and 3 in the tokenizer

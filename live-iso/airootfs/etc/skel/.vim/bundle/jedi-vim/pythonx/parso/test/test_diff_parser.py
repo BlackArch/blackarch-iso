@@ -974,10 +974,12 @@ def test_random_unicode_characters(differ):
     Those issues were all found with the fuzzer.
     """
     differ.initialize('')
-    differ.parse(u'\x1dĔBϞɛˁşʑ˳˻ȣſéÎ\x90̕ȟòwʘ\x1dĔBϞɛˁşʑ˳˻ȣſéÎ', parsers=1, expect_error_leaves=True)
+    differ.parse(u'\x1dĔBϞɛˁşʑ˳˻ȣſéÎ\x90̕ȟòwʘ\x1dĔBϞɛˁşʑ˳˻ȣſéÎ', parsers=1,
+                 expect_error_leaves=True)
     differ.parse(u'\r\r', parsers=1)
     differ.parse(u"˟Ę\x05À\r   rúƣ@\x8a\x15r()\n", parsers=1, expect_error_leaves=True)
-    differ.parse(u'a\ntaǁ\rGĒōns__\n\nb', parsers=1)
+    differ.parse(u'a\ntaǁ\rGĒōns__\n\nb', parsers=1,
+                 expect_error_leaves=sys.version_info[0] == 2)
     s = '        if not (self, "_fi\x02\x0e\x08\n\nle"):'
     differ.parse(s, parsers=1, expect_error_leaves=True)
     differ.parse('')
@@ -1243,7 +1245,7 @@ def test_open_bracket_case2(differ):
     differ.parse(code1, copies=2, parsers=0, expect_error_leaves=True)
 
 
-def test_x(differ):
+def test_some_weird_removals(differ):
     code1 = dedent('''\
         class C:
             1
@@ -1264,6 +1266,23 @@ def test_x(differ):
             omega
         ''')
     differ.initialize(code1)
-    differ.parse(code2, copies=ANY, parsers=ANY, expect_error_leaves=True)
-    differ.parse(code3, copies=ANY, parsers=ANY, expect_error_leaves=True)
+    differ.parse(code2, copies=1, parsers=1, expect_error_leaves=True)
+    differ.parse(code3, copies=1, parsers=2, expect_error_leaves=True)
     differ.parse(code1, copies=1)
+
+
+@pytest.mark.skipif(sys.version_info < (3, 5), reason="Async starts working in 3.5")
+def test_async_copy(differ):
+    code1 = dedent('''\
+        async def main():
+            x = 3
+            print(
+        ''')
+    code2 = dedent('''\
+        async def main():
+            x = 3
+            print()
+        ''')
+    differ.initialize(code1)
+    differ.parse(code2, copies=1, parsers=1)
+    differ.parse(code1, copies=1, parsers=1, expect_error_leaves=True)

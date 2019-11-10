@@ -5,17 +5,25 @@ Test all things related to the ``jedi.api`` module.
 import os
 from textwrap import dedent
 
-from jedi import preload_module
-from jedi._compatibility import is_py3
 from pytest import raises
 from parso import cache
+
+from jedi import preload_module
+from jedi.evaluate.gradual import typeshed
 
 
 def test_preload_modules():
     def check_loaded(*modules):
+        for grammar_cache in cache.parser_cache.values():
+            if None in grammar_cache:
+                break
+        # Filter the typeshed parser cache.
+        typeshed_cache_count = sum(
+            1 for path in grammar_cache
+            if path is not None and path.startswith(typeshed.TYPESHED_PATH)
+        )
         # +1 for None module (currently used)
-        grammar_cache = next(iter(cache.parser_cache.values()))
-        assert len(grammar_cache) == len(modules) + 1
+        assert len(grammar_cache) - typeshed_cache_count == len(modules) + 1
         for i in modules:
             assert [i in k for k in grammar_cache.keys() if k is not None]
 
@@ -65,7 +73,7 @@ def _check_number(Script, source, result='float'):
 
 def test_completion_on_number_literals(Script):
     # No completions on an int literal (is a float).
-    assert [c.name for c in Script('1.').completions()] \
+    assert [c.name for c in Script('1. ').completions()] \
         == ['and', 'if', 'in', 'is', 'not', 'or']
 
     # Multiple points after an int literal basically mean that there's a float
@@ -101,9 +109,12 @@ def test_completion_on_complex_literals(Script):
     _check_number(Script, '1j.', 'complex')
     _check_number(Script, '44.j.', 'complex')
     _check_number(Script, '4.0j.', 'complex')
-    # No dot no completion - I thought, but 4j is actually a literall after
+    # No dot no completion - I thought, but 4j is actually a literal after
     # which a keyword like or is allowed. Good times, haha!
-    assert ({c.name for c in Script('4j').completions()} ==
+    # However this has been disabled again, because it apparently annoyed
+    # users. So no completion after j without a space :)
+    assert not Script('4j').completions()
+    assert ({c.name for c in Script('4j ').completions()} ==
             {'if', 'and', 'in', 'is', 'not', 'or'})
 
 
@@ -111,11 +122,7 @@ def test_goto_assignments_on_non_name(Script, environment):
     assert Script('for').goto_assignments() == []
 
     assert Script('assert').goto_assignments() == []
-    if environment.version_info.major == 2:
-        # In Python 2.7 True is still a name.
-        assert Script('True').goto_assignments()[0].description == 'instance True'
-    else:
-        assert Script('True').goto_assignments() == []
+    assert Script('True').goto_assignments() == []
 
 
 def test_goto_definitions_on_non_name(Script):
@@ -124,7 +131,7 @@ def test_goto_definitions_on_non_name(Script):
 
 def test_goto_definitions_on_generator(Script):
     def_, = Script('def x(): yield 1\ny=x()\ny').goto_definitions()
-    assert def_.name == 'generator'
+    assert def_.name == 'Generator'
 
 
 def test_goto_definition_not_multiple(Script):
@@ -199,9 +206,9 @@ def test_goto_assignments_follow_imports(Script):
     assert definition.name == 'p'
     result, = definition.goto_assignments()
     assert result.name == 'p'
-    result, = definition._goto_definitions()
+    result, = definition.infer()
     assert result.name == 'int'
-    result, = result._goto_definitions()
+    result, = result.infer()
     assert result.name == 'int'
 
     definition, = script.goto_assignments()
@@ -292,4 +299,4 @@ def test_goto_follow_builtin_imports(Script):
     d, = s.goto_assignments(follow_imports=True)
     assert d.in_builtin_module() is True
     d, = s.goto_assignments(follow_imports=True, follow_builtin_imports=True)
-    assert d.in_builtin_module() is False
+    assert d.in_builtin_module() is True

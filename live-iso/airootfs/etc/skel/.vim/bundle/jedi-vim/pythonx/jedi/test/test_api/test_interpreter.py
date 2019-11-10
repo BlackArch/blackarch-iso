@@ -1,12 +1,14 @@
 """
 Tests of ``jedi.api.Interpreter``.
 """
+import sys
+
 import pytest
 
 import jedi
-from jedi._compatibility import is_py3, py_version, is_py35
-from jedi.evaluate.compiled import mixed
-
+from jedi._compatibility import is_py3, py_version
+from jedi.evaluate.compiled import mixed, context
+from importlib import import_module
 
 if py_version > 30:
     def exec_(source, global_map):
@@ -167,6 +169,13 @@ def test_list():
                                  ['upper'])
 
 
+def test_getattr():
+    class Foo1:
+        bar = []
+    baz = 'bar'
+    _assert_interpreter_complete('getattr(Foo1, baz).app', locals(), ['append'])
+
+
 def test_slice():
     class Foo1:
         bar = []
@@ -188,7 +197,13 @@ def test_getitem_side_effects():
     _assert_interpreter_complete('foo["asdf"].upper', locals(), ['upper'])
 
 
-def test_property_error_oldstyle():
+@pytest.fixture(params=[False, True])
+def allow_descriptor_access_or_not(request, monkeypatch):
+    monkeypatch.setattr(jedi.Interpreter, '_allow_descriptor_getattr_default', request.param)
+    return request.param
+
+
+def test_property_error_oldstyle(allow_descriptor_access_or_not):
     lst = []
     class Foo3:
         @property
@@ -200,11 +215,14 @@ def test_property_error_oldstyle():
     _assert_interpreter_complete('foo.bar', locals(), ['bar'])
     _assert_interpreter_complete('foo.bar.baz', locals(), [])
 
-    # There should not be side effects
-    assert lst == []
+    if allow_descriptor_access_or_not:
+        assert lst == [1, 1]
+    else:
+        # There should not be side effects
+        assert lst == []
 
 
-def test_property_error_newstyle():
+def test_property_error_newstyle(allow_descriptor_access_or_not):
     lst = []
     class Foo3(object):
         @property
@@ -216,10 +234,25 @@ def test_property_error_newstyle():
     _assert_interpreter_complete('foo.bar', locals(), ['bar'])
     _assert_interpreter_complete('foo.bar.baz', locals(), [])
 
-    # There should not be side effects
-    assert lst == []
+    if allow_descriptor_access_or_not:
+        assert lst == [1, 1]
+    else:
+        # There should not be side effects
+        assert lst == []
 
 
+def test_property_content():
+    class Foo3(object):
+        @property
+        def bar(self):
+            return 1
+
+    foo = Foo3()
+    def_, = jedi.Interpreter('foo.bar', [locals()]).goto_definitions()
+    assert def_.name == 'int'
+
+
+@pytest.mark.skipif(sys.version_info[0] == 2, reason="Ignore Python 2, because EOL")
 def test_param_completion():
     def foo(bar):
         pass
@@ -244,8 +277,8 @@ def test_completion_params():
     script = jedi.Interpreter('foo', [locals()])
     c, = script.completions()
     assert [p.name for p in c.params] == ['a', 'b']
-    assert c.params[0]._goto_definitions() == []
-    t, = c.params[1]._goto_definitions()
+    assert c.params[0].infer() == []
+    t, = c.params[1].infer()
     assert t.name == 'int'
 
 
@@ -253,16 +286,20 @@ def test_completion_params():
 def test_completion_param_annotations():
     # Need to define this function not directly in Python. Otherwise Jedi is to
     # clever and uses the Python code instead of the signature object.
-    code = 'def foo(a: 1, b: str, c: int = 1.0): pass'
+    code = 'def foo(a: 1, b: str, c: int = 1.0) -> bytes: pass'
     exec_(code, locals())
     script = jedi.Interpreter('foo', [locals()])
     c, = script.completions()
     a, b, c = c.params
-    assert a._goto_definitions() == []
-    assert [d.name for d in b._goto_definitions()] == ['str']
-    assert {d.name for d in c._goto_definitions()} == {'int', 'float'}
+    assert a.infer() == []
+    assert [d.name for d in b.infer()] == ['str']
+    assert {d.name for d in c.infer()} == {'int', 'float'}
+
+    d, = jedi.Interpreter('foo()', [locals()]).goto_definitions()
+    assert d.name == 'bytes'
 
 
+@pytest.mark.skipif(sys.version_info[0] == 2, reason="Ignore Python 2, because EOL")
 def test_keyword_argument():
     def f(some_keyword_argument):
         pass
@@ -340,7 +377,7 @@ def test_dir_magic_method():
     assert 'bar' in names
 
     foo = [c for c in completions if c.name == 'foo'][0]
-    assert foo._goto_definitions() == []
+    assert foo.infer() == []
 
 
 def test_name_not_findable():
@@ -356,3 +393,115 @@ def test_name_not_findable():
     setattr(X, 'NOT_FINDABLE', X.hidden)
 
     assert jedi.Interpreter("X.NOT_FINDA", [locals()]).completions()
+
+
+def test_stubs_working():
+    from multiprocessing import cpu_count
+    defs = jedi.Interpreter("cpu_count()", [locals()]).goto_definitions()
+    assert [d.name for d in defs] == ['int']
+
+
+def test_sys_path_docstring():  # Was an issue in #1298
+    import jedi
+    s = jedi.Interpreter("from sys import path\npath", line=2, column=4, namespaces=[locals()])
+    s.completions()[0].docstring()
+
+
+@pytest.mark.skipif(sys.version_info[0] == 2, reason="Ignore Python 2, because EOL")
+@pytest.mark.parametrize(
+    'code, completions', [
+        ('x[0].uppe', ['upper']),
+        ('x[1337].uppe', ['upper']),
+        ('x[""].uppe', ['upper']),
+        ('x.appen', ['append']),
+
+        ('y.add', ['add']),
+        ('y[0].', []),
+        ('list(y)[0].', []),  # TODO use stubs properly to improve this.
+
+        ('z[0].uppe', ['upper']),
+        ('z[0].append', ['append']),
+        ('z[1].uppe', ['upper']),
+        ('z[1].append', []),
+
+        ('collections.deque().app', ['append', 'appendleft']),
+        ('deq.app', ['append', 'appendleft']),
+        ('deq.pop', ['pop', 'popleft']),
+        ('deq.pop().', []),
+
+        ('collections.Counter("asdf").setdef', ['setdefault']),
+        ('collections.Counter("asdf").pop().imag', ['imag']),
+        ('list(collections.Counter("asdf").keys())[0].uppe', ['upper']),
+        ('counter.setdefa', ['setdefault']),
+        ('counter.pop().imag', []),  # TODO stubs could make this better
+        ('counter.keys())[0].uppe', []),
+
+        ('string.upper().uppe', ['upper']),
+        ('"".upper().uppe', ['upper']),
+    ]
+)
+def test_simple_completions(code, completions):
+    x = [str]
+    y = {1}
+    z = {1: str, 2: list}
+    import collections
+    deq = collections.deque([1])
+    counter = collections.Counter(['asdf'])
+    string = ''
+
+    defs = jedi.Interpreter(code, [locals()]).completions()
+    assert [d.name for d in defs] == completions
+
+
+@pytest.mark.skipif(sys.version_info[0] == 2, reason="Python 2 doesn't have lru_cache")
+def test__wrapped__():
+    from functools import lru_cache
+
+    @lru_cache(maxsize=128)
+    def syslogs_to_df():
+            pass
+
+    c, = jedi.Interpreter('syslogs_to_df', [locals()]).completions()
+    # Apparently the function starts on the line where the decorator starts.
+    assert c.line == syslogs_to_df.__wrapped__.__code__.co_firstlineno + 1
+
+
+@pytest.mark.parametrize('module_name', ['sys', 'time'])
+def test_core_module_completes(module_name):
+    module = import_module(module_name)
+    assert jedi.Interpreter(module_name + '.\n', [locals()]).completions()
+
+
+@pytest.mark.skipif(sys.version_info[0] == 2, reason="Ignore Python 2, because EOL")
+@pytest.mark.parametrize(
+    'code, expected, index', [
+        ('a(', ['a', 'b', 'c'], 0),
+        ('b(', ['b', 'c'], 0),
+        # Might or might not be correct, because c is given as a keyword
+        # argument as well, but that is just what inspect.signature returns.
+        ('c(', ['b', 'c'], 0),
+    ]
+)
+def test_partial_signatures(code, expected, index):
+    import functools
+
+    def func(a, b, c):
+        pass
+
+    a = functools.partial(func)
+    b = functools.partial(func, 1)
+    c = functools.partial(func, 1, c=2)
+
+    sig, = jedi.Interpreter(code, [locals()]).call_signatures()
+    assert sig.name == 'partial'
+    assert [p.name for p in sig.params] == expected
+    assert index == sig.index
+
+
+@pytest.mark.skipif(sys.version_info[0] == 2, reason="Ignore Python 2, because EOL")
+def test_type_var():
+    """This was an issue before, see Github #1369"""
+    import typing
+    x = typing.TypeVar('myvar')
+    def_, = jedi.Interpreter('x', [locals()]).goto_definitions()
+    assert def_.name == 'TypeVar'

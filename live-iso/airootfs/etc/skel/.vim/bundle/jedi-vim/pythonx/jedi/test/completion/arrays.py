@@ -30,7 +30,7 @@ b = [6,7]
 #? int()
 b[8-7]
 # Something unreasonable:
-#?
+#? int()
 b['']
 
 # -----------------
@@ -45,8 +45,16 @@ b[int():]
 #? list()
 b[:]
 
-#?
+#? int()
 b[:, 1]
+#? int()
+b[:1, 1]
+#? int()
+b[1:1, 1]
+#? int()
+b[1:1:, ...]
+#? int()
+b[1:1:5, ...]
 
 class _StrangeSlice():
     def __getitem__(self, sliced):
@@ -161,7 +169,7 @@ def a(): return ''
 #? str()
 (a)()
 #? str()
-(a)().replace()
+(a)().title()
 #? int()
 (tuple).index()
 #? int()
@@ -209,8 +217,7 @@ g
 dic2 = {'asdf': 3, 'b': 'str'}
 #? int()
 dic2['asdf']
-# TODO for now get doesn't work properly when used with a literal.
-#? None
+#? None int() str()
 dic2.get('asdf')
 
 # string literal
@@ -268,11 +275,12 @@ for x in {1: 3.0, '': 1j}:
 dict().values().__iter__
 
 d = dict(a=3, b='')
+x, = d.values()
 #? int() str()
-d.values()[0]
-#? int()
+x
+#? int() str()
 d['a']
-#? int() None
+#? int() str() None
 d.get('a')
 
 # -----------------
@@ -445,7 +453,7 @@ tuple({1})[0]
 a, *b, c = [1, 'b', list, dict]
 #? int()
 a
-#? str()
+#?
 b
 #? list
 c
@@ -454,12 +462,14 @@ c
 a, *b, *c = [1, 'd', list]
 #? int()
 a
-#? str()
+#?
 b
-#? list
+#?
 c
 
 lc = [x for a, *x in [(1, '', 1.0)]]
 
 #?
 lc[0][0]
+#?
+lc[0][1]
