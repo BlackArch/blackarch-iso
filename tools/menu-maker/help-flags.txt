@@ -566,6 +566,7 @@ cloudflare-enum ;
 cloudget -h ;
 cloudmare -h ;
 cloudsploit ;
+cloudunflare ;
 clusterd -h ;
 cminer ;
 cmospwd -h ;
