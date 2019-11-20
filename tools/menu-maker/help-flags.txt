@@ -227,6 +227,7 @@ atscan ;
 atshell ;
 atstaketools cd /usr/share/windows/atstaketools ; ls ;
 attest ;
+auto-eap -h ;
 automater -h ;
 automato ;
 autonessus -h ;
