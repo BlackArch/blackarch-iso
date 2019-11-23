@@ -1552,6 +1552,7 @@ hubbit-sniffer -h ;
 hulk -h ;
 hungry-interceptor ;
 hwk-eagle --help ;
+hxd -h ;
 hyde ;
 hydra -h ;
 hydra-wizard.sh ;
