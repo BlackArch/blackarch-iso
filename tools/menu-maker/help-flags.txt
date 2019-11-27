@@ -601,6 +601,7 @@ copysploit ;
 corkscrew ;
 corscanner -h ;
 corstest -h ;
+corsy -h ;
 cottontail -h ;
 countersutil ;
 covert_send6 ;
