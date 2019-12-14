@@ -3082,6 +3082,7 @@ rlm_ippool_tool ;
 rlogin-scanner -h ;
 rmcp-ping ;
 rmcpping ;
+roguehostapd -h ;
 rootbrute ;
 rootbrute -h ;
 ropeadope ;
