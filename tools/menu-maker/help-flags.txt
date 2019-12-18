@@ -1979,6 +1979,7 @@ lunar -h ;
 luyten ;
 lynis -h ;
 lyricpass -h ;
+m3-gen -h ;
 macchanger --help ;
 machinae -h ;
 maclookup -h ;
