@@ -67,6 +67,7 @@ against ;
 aggroargs -h ;
 aiengine -h ;
 aimage -h ;
+aiodnsbrute --help ;
 air ;
 airbase-ng --help ;
 air-counter ;
