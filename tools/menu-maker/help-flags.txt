@@ -2534,6 +2534,8 @@ parampampam -h ;
 paranoic -h ;
 parasite6 ;
 paratrace -h ;
+paris-ping -h ;
+paris-traceroute -h ;
 paros ;
 parse-evtx ;
 parselog ;
