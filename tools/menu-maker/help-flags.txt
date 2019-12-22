@@ -1817,6 +1817,8 @@ katana-ktfupdate ;
 katsnoop -h ;
 kautilya ;
 kbbootloader -h ;
+kcptun-client -h ;
+kcptun-server -h ;
 keepass2john ;
 keimpx -h ;
 kekeo cd /usr/share/windows/kekeo ; ls ;
