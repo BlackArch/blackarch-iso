@@ -1,7 +1,11 @@
-===> 2019.12.01
+===> 2020.01.01
 
+	- added 120 new tools
+	- updated blackarch-installer to v1.1.2x
+	- included linux kernel 5.4.x
 	- updated urxvt config: add support for changing size on the fly
-	- vim: replace pathogen with Vundle. add git files for bundle packages.
+	- vim: replace pathogen with Vundle. add git files for bundle packages. added
+		new vim plugin: clang_complete
 	- QA'ed and fixed all packages (runtime exec).
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
