@@ -1,6 +1,6 @@
 ===> 2020.01.01
 
-	- added 120 new tools
+	- added 125 new tools
 	- updated blackarch-installer to v1.1.2x
 	- included linux kernel 5.4.x
 	- updated urxvt config: add support for changing size on the fly
