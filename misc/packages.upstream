@@ -79,6 +79,7 @@ foremost
 fping
 freeradius
 gdb
+gdb-common
 geoip
 git
 gnu-netcat
@@ -106,6 +107,7 @@ httptunnel
 httrack
 hydra
 i3
+impacket
 inotify-tools
 iodine
 ipmitool
@@ -119,6 +121,7 @@ jad
 jadx
 jhead
 john
+kcptun
 kismet
 lftp
 libpst
@@ -162,6 +165,7 @@ oblogout
 openbox
 openbox-themes
 openconnect
+open-iscsi
 openssh
 openvas
 openvas-cli
