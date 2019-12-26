@@ -62,6 +62,8 @@ sync
 
 # font configuration
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
+rm /etc/fonts/conf.d/05-reset-dirs-sample.conf
+rm /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
 
 # default shell
 chsh -s /bin/bash
