@@ -23,7 +23,6 @@ binwalk
 blackarch-installer
 blackarch-keyring
 bluez
-bluez-firmware
 bluez-hid2hci
 bluez-utils
 bridge-utils
@@ -168,17 +167,12 @@ openconnect
 open-iscsi
 openssh
 openvas
-openvas-cli
-openvas-libraries
-openvas-manager
-openvas-scanner
 open-vm-tools
 openvpn
 ophcrack
 p0f
 p7zip
 packer
-packer-io
 packeth
 partclone
 parted
@@ -289,7 +283,6 @@ wireless_tools
 wireshark-cli
 wireshark-gtk
 wireshark-qt
-wpa_actiond
 wpa_supplicant
 wpscan
 wvdial
