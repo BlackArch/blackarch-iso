@@ -3,7 +3,7 @@
 *background:                  #000000
 
 ! urxvt
-urxvt.font:                   xft:xos4 Terminus:size=14:antialias=true:hinting=true
+urxvt.font:                   xft:xos4 Terminus:size=12:antialias=true:hinting=true
 urxvt.url-launcher:           /usr/bin/xdg-open
 urxvt.matcher.button:         1
 urxvt.matcher.pattern.0:      \\b([a-zA-Z]+:\/\/\\w[\\w-.@:]*|www\\.\\w[\\w-]*\\.\\w[\\w-.]*)(\/[^"' ()]*)?
@@ -37,7 +37,7 @@ urxvt.iso14755_52:            false
 
 ! xterm
 xterm*VT100*geometry:         80x24
-xterm*faceName:               xft:xos4 Terminus:size=14:antialias=true
+xterm*faceName:               xft:xos4 Terminus:size=12:antialias=true
 xterm*faceSize:               12
 xterm*renderFont:             true
 xterm*utf8:                   always
