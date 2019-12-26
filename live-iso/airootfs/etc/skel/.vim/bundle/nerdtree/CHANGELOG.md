@@ -7,8 +7,13 @@
     in an unordered list.  The format is:
         - **.PATCH**: Pull Request Title (PR Author) [PR Number](Link to PR)
 -->
-
+#### 6.4
+- **.1**: Ensure backward compatibility. v:t_func is not available before Vim 8.0 (Phil Runninger)
+- **.0**: Allow use of function references as callbacks (HiPhish) [#1067](https://github.com/scrooloose/nerdtree/pull/1067)
+#### 6.3
+- **.0**: Add new command that behaves like NERDTreeToggle but defaults to the root of a VCS repository. (willfindlay) [#1060](https://github.com/scrooloose/nerdtree/pull/1060)
 #### 6.2
+- **.1**: Menu option, 'copy path to clipboard' is aware of VIM clipboard option (jhzn) [#1056](https://github.com/scrooloose/nerdtree/pull/1056)
 - **.0**: Support tab-specific CWDs (PhilRunninger) [#1032](https://github.com/scrooloose/nerdtree/pull/1032)
 #### 6.1
 - **.4**: Add VIM built-in package management to read me file. (pesarkhobeee) [#1049](https://github.com/scrooloose/nerdtree/pull/1049)

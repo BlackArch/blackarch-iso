@@ -9,6 +9,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree.git'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'xavierd/clang_complete'
 
 call vundle#end()            " required
 " Vundle -----------------------------------------------------------------------
@@ -84,6 +85,8 @@ set wildmode=list:longest,full
 set nowrap
 set statusline=%{getcwd()}\/\%f%=%-14.(%l,%c%V%)\ %P
 set autoread
+set conceallevel=2
+set concealcursor=vin
 
 " backup
 set undodir=~/.vim/tmp/undo//
@@ -114,3 +117,14 @@ endif
 au WinLeave * set nocursorline
 au WinEnter * set cursorline
 set cursorline
+
+" clang stuff
+let g:clang_library_path='/usr/lib/'
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 1
+let g:clang_compelte_macros=1
+let g:clang_complete_copen = 1
+let g:clang_debug = 1
+let g:clang_snippets=1
+let g:clang_conceal_snippets=1
+let g:clang_snippets_engine='clang_complete'
