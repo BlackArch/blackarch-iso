@@ -49,11 +49,8 @@ analyzemft
 analyzepesig
 androbugs
 androguard
-androick
 android-apktool
-android-ndk
 androidpincrack
-android-sdk
 androidsniffer
 android-udev-rules
 androwarn
@@ -2155,7 +2152,6 @@ thc-keyfinder
 thc-pptp-bruter
 thc-smartbrute
 thc-ssl-dos
-thefatrat
 thefuzz
 theharvester
 themole
