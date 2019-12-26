@@ -654,7 +654,7 @@ cuckoo ;
 cudahashcat ;
 cupp ;
 cupp3 -h ;
-cutter ;
+Cutter ;
 CutyCapt ;
 cvechecker -h ;
 cvegenversdat ;
