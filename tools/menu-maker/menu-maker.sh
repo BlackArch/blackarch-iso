@@ -66,7 +66,7 @@ fluxbox_start()
 
 fluxbox_entry()
 {
-    echo "          [exec] (${tool}) {urxvt -e sh '${tool} ${opts} bash'}" >> fluxbox-menu
+    echo "          [exec] (${tool}) {urxvt -e sh -c '${tool} ${opts} bash'}" >> fluxbox-menu
 
     return 0
 }
@@ -91,7 +91,7 @@ openbox_entry()
 {
     echo "  <item label=\"${tool}\">" >> openbox-menu
     echo "      <action name=\"Execute\">" >> openbox-menu
-    echo "          <command>urxvt -e sh '${tool} ${opts} bash'</command>" >> openbox-menu
+    echo "          <command>urxvt -e sh -c '${tool} ${opts} bash'</command>" >> openbox-menu
     echo "      </action>" >> openbox-menu
     echo "  </item>" >> openbox-menu
 
@@ -116,7 +116,7 @@ awesome_start()
 
 awesome_entry()
 {
-    echo "  { \"${tool}\", \"urxvt -e sh '${tool} ${opts} bash'\" }," >> awesome-menu
+    echo "  { \"${tool}\", \"urxvt -e sh -c '${tool} ${opts} bash'\" }," >> awesome-menu
 
     return 0
 }
