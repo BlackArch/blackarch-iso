@@ -49,7 +49,6 @@ analyzemft
 analyzepesig
 androbugs
 androguard
-android-apktool
 androidpincrack
 androidsniffer
 android-udev-rules
