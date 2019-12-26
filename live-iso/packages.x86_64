@@ -314,7 +314,6 @@ chaosreader
 chapcrack
 cheat-sh
 checkiban
-checkpwd
 checksec
 check-weak-dh-ssh
 chiasm-shell
@@ -411,7 +410,6 @@ crowbar
 crozono
 crunch
 crypthook
-cryptohazemultiforcer
 cryptonark
 cryptsetup
 csrftester
@@ -576,7 +574,6 @@ dumpzilla
 dutas
 dvcs-ripper
 dwarf
-dynamorio
 eapeak
 eaphammer
 eapmd5pass
@@ -609,7 +606,6 @@ enumiax
 enum-shares
 enyelkm
 epicwebhoneypot
-eraser
 erase-registrations
 eresi
 eternal-scanner
@@ -632,9 +628,7 @@ exitmap
 exiv2
 expac
 expimp-lookup
-exploitdb
 exploitpack
-expose
 exrex
 extracthosts
 extractusnjrnl
@@ -1212,7 +1206,6 @@ malybuzz
 mana
 mando.me
 manticore
-mara-framework
 marc4dasm
 maryam
 maskprocessor
