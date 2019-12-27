@@ -24,6 +24,8 @@ sysctl -w net.core.wmem_max=16777216
 
 # Increase number of incoming connections backlog
 sysctl -w net.core.netdev_max_backlog=16384
+sysctl -w net.core.netdev_budget=50000
+sysctl -w net.core.netdev_budget_usecs=5000
 sysctl -w net.core.dev_weight=64
 
 # Increase number of incoming connections
