@@ -1,6 +1,6 @@
 # Australia
-# Server = http://blackarch.mirror.digitalpacific.com.au/blackarch/$repo/os/$arch
-# Server = rsync://mirror.digitalpacific.com.au/blackarch/$repo/os/$arch
+# Server = http://blackarch.mirror.digitalpacific.com.au/$repo/os/$arch
+# Server = rsync://mirror.digitalpacific.com.au/$repo/os/$arch
 
 # Austria
 # Server = http://mirror.easyname.at/blackarch/$repo/os/$arch
@@ -39,6 +39,9 @@
 Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = ftp://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = rsync://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
+# Server = http://blackarch.unixpeople.org/$repo/os/$arch
+# Server = https://blackarch.unixpeople.org/$repo/os/$arch
+# Server = rsync://blackarch.unixpeople.org/$repo/os/$arch
 
 # Greece
 # Server = http://ftp.cc.uoc.gr/mirrors/linux/blackarch/$repo/os/$arch
