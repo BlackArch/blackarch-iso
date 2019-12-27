@@ -4,9 +4,9 @@
 vbox=$(dmesg |grep -io virtualbox)
 if [ ! -z "$vbox" ]
 then
-  /usr/bin/VBoxClient-all &
+  /usr/bin/VBoxClient-all
 fi
 
 # wallpaper
-exec feh --bg-scale '/usr/share/blackarch/wallpaper.jpg'
+exec feh --bg-scale /usr/share/blackarch/wallpaper.jpg &
 
