@@ -68,9 +68,10 @@ rm /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
 # default shell
 chsh -s /bin/bash
 
-# download and install exploits
+# download and install exploits, but remove bin-sploits from exploit-db
 mkdir -p /usr/share/exploits/exploit-db
 sploitctl -f 0 -t 10 -XR
+rm -rf /usr/share/explots/exploit-db/exploitdb-bin-sploits
 
 # temporary fixes for ruby based tools
 cd /usr/share/arachni/ && rm -f Gemfile.lock &&
