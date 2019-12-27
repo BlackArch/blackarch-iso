@@ -3,7 +3,7 @@
 	- added 125 new tools
 	- add terminus font support to lxdm
 	- fixed the annoying 'cannot open tools via menu blah blah *crying*' bug
-	- updated blackarch-installer to v1.1.31
+	- updated blackarch-installer to v1.1.33
 	- included linux kernel 5.4.6
 	- updated urxvt config: add support for changing size on the fly
 	- vim: replace pathogen with Vundle. add git files for bundle packages. added
