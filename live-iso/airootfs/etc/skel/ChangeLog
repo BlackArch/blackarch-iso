@@ -1,14 +1,14 @@
 ===> 2020.01.01
 
-	- added 125 new tools
+	- added 120 new tools
 	- add terminus font support to lxdm
 	- fixed the annoying 'cannot open tools via menu blah blah *crying*' bug
-	- updated blackarch-installer to v1.1.33
+	- updated blackarch-installer to v1.1.34
 	- included linux kernel 5.4.6
 	- updated urxvt config: add support for changing size on the fly
-	- vim: replace pathogen with Vundle. add git files for bundle packages. added
-		new vim plugin: clang_complete
-	- QA'ed and fixed all packages (runtime exec).
+	- vim: replace pathogen with Vundle.vim. added new vim plugin: clang_complete
+	- minor bugfixes and improvements
+	- QA'ed and fixed all packages (runtime exec)
 	- updated all blackarch tools and packages including config files
 	- updated all system packages
 	- updated all window manager menus (awesome, fluxbox, openbox)
