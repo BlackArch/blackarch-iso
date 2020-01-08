@@ -3660,6 +3660,7 @@ svn-extractor -h ;
 svreport -h ;
 svwar -h ;
 swaks --help ;
+swamp -h ;
 swap-digger -h ;
 swarm -h ;
 swfbbox ;
