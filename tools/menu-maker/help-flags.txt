@@ -4075,6 +4075,7 @@ whoismac -h ;
 wi-feye -h ;
 wiffy ;
 wifiarp -h ;
+wifi-autopwner -h ;
 wifibroot -h ;
 wificurse -h ;
 wifidns ;
