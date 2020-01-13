@@ -1428,6 +1428,7 @@ haka -h ;
 hakapcap -h ;
 hakku ;
 hakrawler -h ;
+hakrevdns -h ;
 halberd -h ;
 halcyon -h ;
 halcyon-ide ;
