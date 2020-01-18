@@ -3624,6 +3624,7 @@ statsgen -h ;
 statsprocessor --help ;
 stegbreak --help ;
 stegcompare --help ;
+stegcracker -h ;
 stegdeimage --help ;
 stegdetect --help ;
 steghide-brute -h ;
