@@ -2956,6 +2956,7 @@ rcrdcarver -h ;
 rd6 ;
 rdesktop-brute -h ;
 rdisc ;
+rdp-sec-check -h ;
 readecfs ;
 readpe ;
 readpst ;
