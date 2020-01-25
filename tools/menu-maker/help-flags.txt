@@ -2155,6 +2155,7 @@ mitm-relay -h ;
 mitmweb ;
 mkbrutus -h ;
 mkvcalcproba ;
+mmbot -h ;
 mmcat -h ;
 mmls ;
 mmstat ;
