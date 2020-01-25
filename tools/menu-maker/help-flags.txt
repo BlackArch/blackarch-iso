@@ -2864,6 +2864,7 @@ qrljacker -h ;
 qtmsfconsole ;
 quantumdetect -h ;
 quantuminject -h ;
+quark --help ;
 quickrecon -h ;
 quicksand ;
 r2agent -h ;
