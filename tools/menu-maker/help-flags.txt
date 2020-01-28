@@ -2002,6 +2002,7 @@ lspst ;
 lsrtunnel ;
 lte-cell-scanner --help ;
 luksipc -h ;
+lulzbuster -H ;
 lunar -h ;
 luyten ;
 lynis -h ;
