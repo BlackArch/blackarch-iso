@@ -351,6 +351,7 @@ blackhole ;
 blackhole6 ;
 blacknurse ;
 bleah -h ;
+bless ;
 bletchley-analyze ;
 bletchley-decode ;
 bletchley-encode ;
