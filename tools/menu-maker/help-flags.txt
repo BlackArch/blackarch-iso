@@ -3060,6 +3060,7 @@ retdec-unpacker -h ;
 retdec-unpacker.py -h ;
 retdec-utils -h ;
 retdec-utils.py -h ;
+retire -h ;
 reverse -h ;
 reverseip ;
 reverseraider ;
