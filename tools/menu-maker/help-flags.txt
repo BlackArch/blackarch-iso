@@ -1646,6 +1646,7 @@ inguma -h ;
 inject_alive6 ;
 injector ;
 injector.py -h ;
+injectus ;
 inquisitor -h ;
 insanity -h ;
 instashell ;
