@@ -1142,6 +1142,7 @@ flowtop -h ;
 fls -h ;
 flunym0us ;
 fluxion ;
+fockcache -h ;
 font2swf ;
 forager -h ;
 foremost -h ;
