@@ -3903,6 +3903,7 @@ unibrute ;
 unicfgtst ;
 unicorn ;
 unicornscan -h ;
+unifuzzer ;
 uniofuzz -h ;
 unique ;
 unique-messages.py ;
