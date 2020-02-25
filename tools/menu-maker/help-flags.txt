@@ -2950,6 +2950,7 @@ ratemplate ;
 ratimerange ;
 ratop ;
 ratproxy -h ;
+rats -h ;
 rauserdata ;
 raven -h ;
 raw2dyna ;
