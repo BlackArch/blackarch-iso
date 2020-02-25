@@ -964,6 +964,7 @@ editcap ;
 eggshell ;
 eh -h ;
 eigrp -h ;
+electric-fence ;
 elettra ;
 elettra-gui ;
 elettra_gui ;
