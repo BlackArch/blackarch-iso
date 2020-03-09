@@ -2395,6 +2395,7 @@ ntfs-file-extractor -h ;
 ntfs-log-tracker -h ;
 ntlm-challenger -h ;
 ntlmrecon -h ;
+ntlm-scanner -h ;
 ntpdos ;
 ntp-fingerprint ;
 ntp-ip-enum ;
