@@ -3896,6 +3896,7 @@ uhd_rx_cfile ;
 uhd_rx_nogui ;
 uhd_siggen ;
 uhd_siggen_gui ;
+uhoh365 -h ;
 umap -h ;
 umit -h ;
 umit_scheduler.py ;
