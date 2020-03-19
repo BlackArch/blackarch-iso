@@ -3367,6 +3367,7 @@ sha1dcsum ;
 sha1dcsum_partialcoll ;
 sha1deep -h ;
 sha256deep -h ;
+shadowexplorer -h ;
 shard --help ;
 shareenum ;
 sharesniffer -h ;
