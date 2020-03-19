@@ -3607,6 +3607,7 @@ sploitego -h ;
 spoofcheck ;
 spooftooph -h ;
 sppokflare ;
+spraykatz -h ;
 sps -h ;
 spyse -h ;
 sqid -h ;
