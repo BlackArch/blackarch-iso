@@ -1998,6 +1998,7 @@ linenum -h ;
 linikatz ;
 linkedin2username -h ;
 linkfinder -h ;
+linpeas ;
 linset ;
 linux-exploit-suggester -h ;
 linux-exploit-suggester.sh -h ;
