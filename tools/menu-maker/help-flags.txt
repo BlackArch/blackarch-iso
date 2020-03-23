@@ -3151,6 +3151,7 @@ rfidiot-writemifare1k -h ;
 rfidtool ;
 rgsm_capture -h ;
 rhodiola -h ;
+richsploit ;
 rid-enum -h ;
 ridenum -h ;
 rifiuti -h ;
