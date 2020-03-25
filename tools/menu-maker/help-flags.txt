@@ -2431,6 +2431,7 @@ ntp-ip-enum ;
 ntrace ;
 ntraf -h ;
 nullinux ;
+nullscan -H ;
 num2dot ;
 nwauth -h ;
 nwbocreate -h ;
