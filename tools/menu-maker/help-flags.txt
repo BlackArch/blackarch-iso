@@ -3511,7 +3511,6 @@ smtp-user-enum.pl ;
 smtp-vrfy ;
 smtp_vrfy ;
 smurf6 ;
-sn00p -h ;
 sn1per ;
 snallygaster -h ;
 snapception --help ;
