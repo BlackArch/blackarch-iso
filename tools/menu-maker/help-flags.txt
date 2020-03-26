@@ -4209,6 +4209,7 @@ wlanscan -h ;
 wldd -h ;
 wld -h ;
 wmat ;
+wmd ;
 wnmap -h ;
 wol-e -h ;
 wolperdrone -h ;
