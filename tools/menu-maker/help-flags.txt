@@ -2706,6 +2706,7 @@ photon -h ;
 php-findsock-shell ;
 php_mt_seed ;
 phpsploit ;
+phpstan -h ;
 phpstress -h ;
 phrasendrescher -h ;
 pidense -h ;
