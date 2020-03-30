@@ -4177,6 +4177,7 @@ wifite ;
 wig -h ;
 wikigen ;
 wildpwn -h ;
+windapsearch -h ;
 windivert cd /usr/share/windows/windivert ; ls ;
 windows-exploit-suggester ;
 windows-privesc-check cd /usr/share/windows/windows-privesc-check ; ls ;
