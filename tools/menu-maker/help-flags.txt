@@ -366,6 +366,7 @@ blkcat ;
 blkls ;
 blkstat ;
 bloodhound -h ;
+bloodhound-python -h ;
 bluebox ;
 bluebox-ng -h ;
 bluebugger -h ;
