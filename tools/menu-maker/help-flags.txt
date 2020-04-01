@@ -1675,6 +1675,7 @@ injector.py -h ;
 injectus ;
 inquisitor -h ;
 insanity -h ;
+instagramosint -h ;
 instashell ;
 intensio-obfuscator -h ;
 interlace -h ;
