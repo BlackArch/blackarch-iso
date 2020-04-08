@@ -1031,6 +1031,7 @@ evilize-md5coll -h ;
 evillimiter -h ;
 evilmaid ;
 evil-ssdp -h ;
+evil-winrm -h ;
 evtkit -h ;
 ewfacquire ;
 ewfacquirestream ;
