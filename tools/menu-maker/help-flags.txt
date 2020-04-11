@@ -2412,6 +2412,7 @@ nomorexor ;
 noriben -h ;
 noriben-sandbox -h ;
 nosqlattack ;
+nosqli-user-pass-enum -h ;
 nosqlmap ;
 notspikefile ;
 novahot -h ;
