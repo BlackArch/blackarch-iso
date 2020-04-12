@@ -2656,6 +2656,7 @@ pcapteller ;
 pcapxray ;
 pcileech ;
 pcode2code -h ;
+pcodedmp -h ;
 pcredz -h ;
 pdblaster -h ;
 pdf2graph ;
