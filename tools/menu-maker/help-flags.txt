@@ -1704,6 +1704,7 @@ ipaudit ;
 ipaudit-ipstrings ;
 ipaudit-total ;
 ipba2 ;
+ipcountry -H ;
 ipdecap -h ;
 ipfixDump ;
 iphoneanalyzer -h ;
