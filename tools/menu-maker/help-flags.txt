@@ -4306,6 +4306,7 @@ xpl-search --help ;
 xprobe2 -h ;
 xray ;
 xrop ;
+x-rsa -h ;
 x-scan cd /usr/share/windows/x-scan ; ls ;
 xspear -h ;
 xspy -h ;
