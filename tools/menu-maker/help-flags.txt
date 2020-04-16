@@ -3246,6 +3246,7 @@ rulegen -h ;
 ruler -h ;
 runant.pl ;
 runant.py ;
+rupture -h ;
 rustbuster --help ;
 rva2ofs ;
 rwaddrcount ;
