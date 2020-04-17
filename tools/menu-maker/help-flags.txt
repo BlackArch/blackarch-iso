@@ -846,6 +846,7 @@ dnsmap-bulk ;
 dns-parallel-prober -h ;
 dnsping ;
 dnspredict --help ;
+dnsprobe -h ;
 dnspy cd /usr/share/windows/dnspy ; ls ;
 dnsrecon -h ;
 dnsrevenum6 ;
