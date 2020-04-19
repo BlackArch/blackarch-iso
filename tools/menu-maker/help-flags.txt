@@ -1336,6 +1336,7 @@ goop ;
 gooscan -h ;
 gophish ;
 gosint -h ;
+gospider -h ;
 gplist cd /usr/share/windows/gplist ; ls ;
 gpocrack -h ;
 gpredict -h ;
