@@ -2025,6 +2025,7 @@ linux-exploit-suggester -h ;
 linux-exploit-suggester.sh -h ;
 linux-inject-32 -h ;
 linux-inject -h ;
+linux-smart-enumeration -h ;
 listing ;
 list_mft.py ;
 list-urls ;
