@@ -816,6 +816,7 @@ dizzy -h ;
 django-2to3.py ;
 django-admin.py -h ;
 dkmc ;
+dmde ;
 dmesg ;
 dmg2img ;
 dmitry ;
