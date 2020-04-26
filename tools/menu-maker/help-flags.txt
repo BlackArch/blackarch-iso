@@ -1534,6 +1534,7 @@ hdcp-genkey ;
 hdmi-sniff -h ;
 heartbleed-honeypot -h ;
 heartleech -h ;
+hellraiser -h ;
 hemingway ;
 hercules-payload ;
 hex ;
