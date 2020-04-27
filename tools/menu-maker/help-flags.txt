@@ -831,6 +831,7 @@ dnsbf ;
 dnsbrute -h ;
 dnscat -h ;
 dnschef -h ;
+dnscobra -h ;
 dnsdict6 ;
 dnsdrdos -H ;
 dnsenum ;
