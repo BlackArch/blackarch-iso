@@ -4075,6 +4075,7 @@ vane -h ;
 vanguard -h ;
 var.py ;
 vault ;
+vba2graph -h ;
 vbrute -h ;
 vbscan ;
 vcsmap ;
