@@ -1260,6 +1260,7 @@ galleta ;
 gameconqueror ;
 gasmask -h ;
 gatecrasher -h ;
+gau -h ;
 gcat --help ;
 gcc ;
 gcore ;
