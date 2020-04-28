@@ -2470,6 +2470,7 @@ ntp-fingerprint ;
 ntp-ip-enum ;
 ntrace ;
 ntraf -h ;
+nuclei -h ;
 nullinux ;
 nullscan -H ;
 num2dot ;
