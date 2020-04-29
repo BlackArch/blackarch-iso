@@ -1628,7 +1628,7 @@ hyenaed --help ;
 hyenae --help ;
 hyperfox -h ;
 hyperion cd /usr/share/windows/hyperion ; ls ;
-i2pd -h ;
+i2pd --help ;
 iaxflood ;
 iaxscan -h ;
 iax-scan-hosts -h ;
