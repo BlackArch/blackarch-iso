@@ -2879,6 +2879,7 @@ pserver -h ;
 pshitt ;
 psk-crack -h ;
 psm_scan -h ;
+pspy -h ;
 pst2ldif ;
 pstoreview cd /usr/share/windows/pstoreview ; ls ;
 ptf ;
