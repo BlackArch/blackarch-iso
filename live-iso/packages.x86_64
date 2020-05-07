@@ -49,11 +49,7 @@ analyzemft
 analyzepesig
 androbugs
 androguard
-androick
-android-apktool
-android-ndk
 androidpincrack
-android-sdk
 androidsniffer
 android-udev-rules
 androwarn
