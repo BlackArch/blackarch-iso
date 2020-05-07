@@ -9,6 +9,7 @@ chameleonmini
 checkpwd
 cryptohazemultiforcer
 cuckoo
+cudahashcat
 dawnscanner
 dripcap
 eraser
