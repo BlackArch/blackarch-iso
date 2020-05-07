@@ -1,3 +1,12 @@
+===> 2020.06.01
+
+	- added more than 150 new tools
+	- included linux kernel 5.6.X
+	- QA'ed and fixed all packages (runtime exec)
+	- updated all blackarch tools and packages including config files
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
+
 ===> 2020.01.01
 
 	- added 120 new tools
