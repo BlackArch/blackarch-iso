@@ -12,6 +12,7 @@
 # Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
 
 # Denmark
+# Server = https://mirrors.dotsrc.org/blackarch/$repo/os/$arch
 # Server = http://mirrors.dotsrc.org/blackarch/$repo/os/$arch
 # Server = ftp://mirrors.dotsrc.org/blackarch/$repo/os/$arch
 
@@ -36,12 +37,15 @@
 
 # Germany
 # Server = http://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
-Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
+# Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = ftp://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = rsync://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = http://blackarch.unixpeople.org/$repo/os/$arch
 # Server = https://blackarch.unixpeople.org/$repo/os/$arch
 # Server = rsync://blackarch.unixpeople.org/$repo/os/$arch
+# Server = http://mirror.undisclose.de/blackarch/$repo/os/$arch
+# Server = https://mirror.undisclose.de/blackarch/$repo/os/$arch
+# Server = rsync://mirror.undisclose.de/blackarch/$repo/os/$arch
 
 # Greece
 # Server = http://ftp.cc.uoc.gr/mirrors/linux/blackarch/$repo/os/$arch
@@ -49,6 +53,7 @@ Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Server = rsync://blackarch@cc.uoc.gr/blackarch/$repo/os/$arch
 
 # Great Britain
+Server = https://www.mirrorservice.org/sites/blackarch.org/blackarch/$repo/os/$arch
 # Server = http://www.mirrorservice.org/sites/blackarch.org/blackarch/$repo/os/$arch
 # Server = rsync://rsync.mirrorservice.org/blackarch.org/blackarch/$repo/os/$arch
 
