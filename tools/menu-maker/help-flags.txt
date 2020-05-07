@@ -1154,6 +1154,8 @@ flare -h ;
 flashlight -h ;
 flashscanner -h ;
 flashsploit ;
+flask-session-cookie-manager2 -h ;
+flask-session-cookie-manager3 -h ;
 flasm -h ;
 flawfinder -h ;
 flood_advertise6 ;
