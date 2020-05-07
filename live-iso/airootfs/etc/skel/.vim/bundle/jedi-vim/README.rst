@@ -58,9 +58,10 @@ generators, there is broad support.
 Apart from that, jedi-vim supports the following commands
 
 - Completion ``<C-Space>``
-- Goto assignments ``<leader>g`` (typical goto function)
-- Goto definitions ``<leader>d`` (follow identifier as far as possible,
+- Goto assignment ``<leader>g`` (typical goto function)
+- Goto definition ``<leader>d`` (follow identifier as far as possible,
   includes imports and statements)
+- Goto (typing) stub ``<leader>s``
 - Show Documentation/Pydoc ``K`` (shows a popup with assignments)
 - Renaming ``<leader>r``
 - Usages ``<leader>n`` (shows all the usages of a name)
@@ -181,8 +182,10 @@ and usually saves one keypress.
 
 Jedi displays function call signatures in insert mode in real-time, highlighting
 the current argument. The call signatures can be displayed as a pop-up in the
-buffer (set to 1, the default), which has the advantage of being easier to refer
-to, or in Vim's command line aligned with the function call (set to 2), which
+buffer (set to 1 by default (with the conceal feature), 2 otherwise),
+which has the advantage of being easier to refer to (but is a hack with
+many drawbacks since it changes the buffer's contents),
+or in Vim's command line aligned with the function call (set to 2), which
 can improve the integrity of Vim's undo history.
 
 .. code-block:: vim
@@ -198,6 +201,7 @@ get more information. If you set them to ``""``, they are not assigned.
 
     let g:jedi#goto_command = "<leader>d"
     let g:jedi#goto_assignments_command = "<leader>g"
+    let g:jedi#goto_stubs_command = "<leader>s"
     let g:jedi#goto_definitions_command = ""
     let g:jedi#documentation_command = "K"
     let g:jedi#usages_command = "<leader>n"

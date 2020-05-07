@@ -1,3 +1,8 @@
+" use python3
+if exists('py2') && has('python')
+elseif has('python3')
+endif
+
 " Vundle -----------------------------------------------------------------------
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -121,10 +126,18 @@ set cursorline
 " clang stuff
 let g:clang_library_path='/usr/lib/'
 let g:clang_user_options='|| exit 0'
-let g:clang_complete_auto = 1
+let g:clang_complete_auto = 0
 let g:clang_compelte_macros=1
-let g:clang_complete_copen = 1
+let g:clang_complete_copen = 0
 let g:clang_debug = 1
 let g:clang_snippets=1
 let g:clang_conceal_snippets=1
 let g:clang_snippets_engine='clang_complete'
+let g:clang_auto_select = 1
+let g:clang_use_library = 1
+let g:clang_complete_optional_args_in_snippets = 1
+
+" jedi
+let g:jedi#completions_enabled = 1
+let g:jedi#force_py_version = 3
+

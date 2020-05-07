@@ -27,7 +27,7 @@ let s:default_settings = {
     \ 'completions_enabled': 1,
     \ 'popup_on_dot': 'g:jedi#completions_enabled',
     \ 'documentation_command': "'K'",
-    \ 'show_call_signatures': 1,
+    \ 'show_call_signatures': has('conceal') ? 1 : 2,
     \ 'show_call_signatures_delay': 500,
     \ 'call_signature_escape': "'?!?'",
     \ 'auto_close_doc': 1,
@@ -160,14 +160,19 @@ function! jedi#setup_python_imports(py_version) abort
     let g:_jedi_init_error = 0
     let init_lines = [
           \ 'import vim',
+          \ 'def _jedi_handle_exc(exc_info):',
+          \ '    try:',
+          \ '        from jedi_vim_debug import format_exc_info',
+          \ '        vim.vars["_jedi_init_error"] = format_exc_info(exc_info)',
+          \ '    except Exception:',
+          \ '        import traceback',
+          \ '        vim.vars["_jedi_init_error"] = "\\n".join(traceback.format_exception(*exc_info))',
           \ 'try:',
           \ '    import jedi_vim',
           \ '    if hasattr(jedi_vim, "jedi_import_error"):',
-          \ '        from jedi_vim_debug import format_exc_info',
-          \ '        vim.vars["_jedi_init_error"] = format_exc_info(jedi_vim.jedi_import_error)',
+          \ '        _jedi_handle_exc(jedi_vim.jedi_import_error)',
           \ 'except Exception as exc:',
-          \ '    from jedi_vim_debug import format_exc_info',
-          \ '    vim.vars["_jedi_init_error"] = format_exc_info()',
+          \ '    _jedi_handle_exc(sys.exc_info())',
           \ ]
     exe 'PythonJedi exec('''.escape(join(init_lines, '\n'), "'").''')'
     if g:_jedi_init_error isnot 0
@@ -479,31 +484,23 @@ endfunction
 function! jedi#add_goto_window(for_usages, len) abort
     let height = min([a:len, g:jedi#quickfix_window_height])
 
-    " Using :cwindow allows to stay in the current window in case it is opened
-    " already.
-    let win_count = winnr('$')
-    execute 'belowright cwindow '.height
-    let qfwin_was_opened = winnr('$') > win_count
+    " Use :copen to go to the window always - the user should select an entry.
+    execute 'belowright copen '.height
 
-    if qfwin_was_opened
-        if &filetype !=# 'qf'
-            echoerr 'jedi-vim: unexpected ft with current window, please report!'
-        endif
-        if g:jedi#use_tabs_not_buffers == 1
-            noremap <buffer> <CR> :call jedi#goto_window_on_enter()<CR>
-        endif
-
-        augroup jedi_goto_window
-            if a:for_usages
-                autocmd BufWinLeave <buffer> call jedi#clear_usages()
-            else
-                autocmd WinLeave <buffer> q  " automatically leave, if an option is chosen
-            endif
-        augroup END
-    elseif a:for_usages && !s:supports_buffer_usages
-        " Init current window.
-        call jedi#_show_usages_in_win()
+    if &filetype !=# 'qf'
+        echoerr printf('jedi-vim: unexpected ft with current window (%s), please report!', &filetype)
     endif
+    if g:jedi#use_tabs_not_buffers == 1
+        noremap <buffer> <CR> :call jedi#goto_window_on_enter()<CR>
+    endif
+
+    augroup jedi_goto_window
+        if a:for_usages
+            autocmd BufWinLeave <buffer> call jedi#clear_usages()
+        else
+            autocmd WinLeave <buffer> q  " automatically leave, if an option is chosen
+        endif
+    augroup END
 
     if a:for_usages && !has('nvim')
         if s:supports_buffer_usages

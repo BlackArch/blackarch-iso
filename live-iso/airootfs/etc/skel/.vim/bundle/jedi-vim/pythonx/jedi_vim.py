@@ -67,7 +67,9 @@ class VimError(Exception):
         self.executing = executing
 
     def __str__(self):
-        return self.message + '; created by: ' + repr(self.executing)
+        return "{}; created by {!r} (in {})".format(
+            self.message, self.executing, self.throwpoint
+        )
 
 
 def _catch_exception(string, is_eval):
@@ -450,7 +452,7 @@ def show_goto_multi_results(definitions, mode):
             # Select current/nearest entry via :cc later.
             if d.line == row and d.column <= col:
                 if (current_idx is None
-                        or (abs(lst[current_idx].column - col)
+                        or (abs(lst[current_idx]["col"] - col)
                             > abs(d.column - col))):
                     current_idx = len(lst)
                     current_def = d
@@ -458,7 +460,10 @@ def show_goto_multi_results(definitions, mode):
     # Build qflist title.
     qf_title = mode
     if current_def is not None:
-        qf_title += ": " + current_def.full_name
+        if current_def.full_name:
+            qf_title += ": " + current_def.full_name
+        else:
+            qf_title += ": " + str(current_def)
         select_entry = current_idx
     else:
         select_entry = 0
@@ -468,12 +473,12 @@ def show_goto_multi_results(definitions, mode):
             and VimCompat.can_update_current_qflist_for_context(qf_context)):
         # Same list, only adjust title/selected entry.
         VimCompat.setqflist_title(qf_title)
+        vim_command('%dcc' % select_entry)
     else:
         VimCompat.setqflist(lst, title=qf_title, context=qf_context)
         for_usages = mode == "usages"
         vim_eval('jedi#add_goto_window(%d, %d)' % (for_usages, len(lst)))
-
-    vim_command('%dcc' % select_entry)
+        vim_command('%d' % select_entry)
 
 
 def _same_definitions(a, b):
@@ -724,9 +729,17 @@ def show_documentation():
     if not definitions:
         echo_highlight('No documentation found for that.')
         vim.command('return')
-    else:
-        docs = ['Docstring for %s\n%s\n%s' % (d.desc_with_module, '=' * 40, d.docstring())
-                if d.docstring() else '|No Docstring for %s|' % d for d in definitions]
+        return
+
+    docs = []
+    for d in definitions:
+        doc = d.docstring()
+        if doc:
+            title = 'Docstring for %s' % d.desc_with_module
+            underline = '=' * len(title)
+            docs.append('%s\n%s\n%s' % (title, underline, doc))
+        else:
+            docs.append('|No Docstring for %s|' % d)
         text = ('\n' + '-' * 79 + '\n').join(docs)
         vim.command('let l:doc = %s' % repr(PythonToVimStr(text)))
         vim.command('let l:doc_lines = %s' % len(text.split('\n')))
