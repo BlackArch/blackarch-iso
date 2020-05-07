@@ -1,14 +1,15 @@
+from __future__ import print_function
 import inspect
 import types
 import sys
-from textwrap import dedent
 import operator as op
 from collections import namedtuple
 
 from jedi._compatibility import unicode, is_py3, builtins, \
-    py_version, force_unicode, print_to_stderr
+    py_version, force_unicode
 from jedi.evaluate.compiled.getattr_static import getattr_static
 
+ALLOWED_GETITEM_TYPES = (str, list, tuple, unicode, bytes, bytearray, dict)
 
 MethodDescriptorType = type(str.replace)
 # These are not considered classes and access is granted even though they have
@@ -42,12 +43,6 @@ WrapperDescriptorType = type(set.__iter__)
 # `object.__subclasshook__` is an already executed descriptor.
 object_class_dict = type.__dict__["__dict__"].__get__(object)
 ClassMethodDescriptorType = type(object_class_dict['__subclasshook__'])
-
-def _a_generator(foo):
-    """Used to have an object to return for generators."""
-    yield 42
-    yield foo
-
 
 _sentinel = object()
 
@@ -89,16 +84,21 @@ def safe_getattr(obj, name, default=_sentinel):
             raise
         return default
     else:
-        if type(attr) in ALLOWED_DESCRIPTOR_ACCESS:
+        if isinstance(attr, ALLOWED_DESCRIPTOR_ACCESS):
             # In case of descriptors that have get methods we cannot return
             # it's value, because that would mean code execution.
+            # Since it's an isinstance call, code execution is still possible,
+            # but this is not really a security feature, but much more of a
+            # safety feature. Code execution is basically always possible when
+            # a module is imported. This is here so people don't shoot
+            # themselves in the foot.
             return getattr(obj, name)
     return attr
 
 
 SignatureParam = namedtuple(
     'SignatureParam',
-    'name has_default default has_annotation annotation kind_name'
+    'name has_default default default_string has_annotation annotation annotation_string kind_name'
 )
 
 
@@ -140,13 +140,13 @@ def load_module(evaluator, dotted_name, sys_path):
         __import__(dotted_name)
     except ImportError:
         # If a module is "corrupt" or not really a Python module or whatever.
-        print_to_stderr('Module %s not importable in path %s.' % (dotted_name, sys_path))
+        print('Module %s not importable in path %s.' % (dotted_name, sys_path), file=sys.stderr)
         return None
     except Exception:
         # Since __import__ pretty much makes code execution possible, just
         # catch any error here and print it.
         import traceback
-        print_to_stderr("Cannot import:\n%s" % traceback.format_exc())
+        print("Cannot import:\n%s" % traceback.format_exc(), file=sys.stderr)
         return None
     finally:
         sys.path = temp
@@ -180,6 +180,18 @@ def _force_unicode_decorator(func):
     return lambda *args, **kwargs: force_unicode(func(*args, **kwargs))
 
 
+def get_api_type(obj):
+    if inspect.isclass(obj):
+        return u'class'
+    elif inspect.ismodule(obj):
+        return u'module'
+    elif inspect.isbuiltin(obj) or inspect.ismethod(obj) \
+            or inspect.ismethoddescriptor(obj) or inspect.isfunction(obj):
+        return u'function'
+    # Everything else...
+    return u'instance'
+
+
 class DirectObjectAccess(object):
     def __init__(self, evaluator, obj):
         self._evaluator = evaluator
@@ -203,7 +215,7 @@ class DirectObjectAccess(object):
         except AttributeError:
             return None
 
-    def py__doc__(self, include_call_signature=False):
+    def py__doc__(self):
         return force_unicode(inspect.getdoc(self._obj)) or u''
 
     def py__name__(self):
@@ -226,15 +238,23 @@ class DirectObjectAccess(object):
     def py__mro__accesses(self):
         return tuple(self._create_access_path(cls) for cls in self._obj.__mro__[1:])
 
-    def py__getitem__(self, index):
-        if type(self._obj) not in (str, list, tuple, unicode, bytes, bytearray, dict):
+    def py__getitem__all_values(self):
+        if isinstance(self._obj, dict):
+            return [self._create_access_path(v) for v in self._obj.values()]
+        return self.py__iter__list()
+
+    def py__simple_getitem__(self, index):
+        if type(self._obj) not in ALLOWED_GETITEM_TYPES:
             # Get rid of side effects, we won't call custom `__getitem__`s.
             return None
 
         return self._create_access_path(self._obj[index])
 
     def py__iter__list(self):
-        if type(self._obj) not in (str, list, tuple, unicode, bytes, bytearray, dict):
+        if not hasattr(self._obj, '__getitem__'):
+            return None
+
+        if type(self._obj) not in ALLOWED_GETITEM_TYPES:
             # Get rid of side effects, we won't call custom `__getitem__`s.
             return []
 
@@ -277,8 +297,27 @@ class DirectObjectAccess(object):
     def is_class(self):
         return inspect.isclass(self._obj)
 
+    def is_module(self):
+        return inspect.ismodule(self._obj)
+
+    def is_instance(self):
+        return _is_class_instance(self._obj)
+
     def ismethoddescriptor(self):
         return inspect.ismethoddescriptor(self._obj)
+
+    def get_qualified_names(self):
+        def try_to_get_name(obj):
+            return getattr(obj, '__qualname__', getattr(obj, '__name__', None))
+
+        if self.is_module():
+            return ()
+        name = try_to_get_name(self._obj)
+        if name is None:
+            name = try_to_get_name(type(self._obj))
+            if name is None:
+                return ()
+        return tuple(name.split('.'))
 
     def dir(self):
         return list(map(force_unicode, dir(self._obj)))
@@ -303,16 +342,30 @@ class DirectObjectAccess(object):
                 return True, True
         return True, False
 
-    def getattr(self, name, default=_sentinel):
+    def getattr_paths(self, name, default=_sentinel):
         try:
-            return self._create_access(getattr(self._obj, name))
-        except AttributeError:
-            # Happens e.g. in properties of
-            # PyQt4.QtGui.QStyleOptionComboBox.currentText
-            # -> just set it to None
+            return_obj = getattr(self._obj, name)
+        except Exception as e:
             if default is _sentinel:
-                raise
-            return self._create_access(default)
+                if isinstance(e, AttributeError):
+                    # Happens e.g. in properties of
+                    # PyQt4.QtGui.QStyleOptionComboBox.currentText
+                    # -> just set it to None
+                    raise
+                # Just in case anything happens, return an AttributeError. It
+                # should not crash.
+                raise AttributeError
+            return_obj = default
+        access = self._create_access(return_obj)
+        if inspect.ismodule(return_obj):
+            return [access]
+
+        module = inspect.getmodule(return_obj)
+        if module is None:
+            module = inspect.getmodule(type(return_obj))
+            if module is None:
+                module = builtins
+        return [self._create_access(module), access]
 
     def get_safe_value(self):
         if type(self._obj) in (bool, bytes, float, int, str, unicode, slice):
@@ -320,16 +373,7 @@ class DirectObjectAccess(object):
         raise ValueError("Object is type %s and not simple" % type(self._obj))
 
     def get_api_type(self):
-        obj = self._obj
-        if self.is_class():
-            return u'class'
-        elif inspect.ismodule(obj):
-            return u'module'
-        elif inspect.isbuiltin(obj) or inspect.ismethod(obj) \
-                or inspect.ismethoddescriptor(obj) or inspect.isfunction(obj):
-            return u'function'
-        # Everything else...
-        return u'instance'
+        return get_api_type(self._obj)
 
     def get_access_path_tuples(self):
         accesses = [create_access(self._evaluator, o) for o in self._get_objects_path()]
@@ -359,7 +403,6 @@ class DirectObjectAccess(object):
                     yield builtins
                 else:
                     try:
-                        # TODO use sys.modules, __module__ can be faked.
                         yield sys.modules[imp_plz]
                     except KeyError:
                         # __module__ can be something arbitrary that doesn't exist.
@@ -376,6 +419,20 @@ class DirectObjectAccess(object):
         return inspect.isclass(self._obj) and self._obj != type
 
     def get_signature_params(self):
+        return [
+            SignatureParam(
+                name=p.name,
+                has_default=p.default is not p.empty,
+                default=self._create_access_path(p.default),
+                default_string=repr(p.default),
+                has_annotation=p.annotation is not p.empty,
+                annotation=self._create_access_path(p.annotation),
+                annotation_string=str(p.default),
+                kind_name=str(p.kind)
+            ) for p in self._get_signature().parameters.values()
+        ]
+
+    def _get_signature(self):
         obj = self._obj
         if py_version < 33:
             raise ValueError("inspect.signature was introduced in 3.3")
@@ -396,31 +453,26 @@ class DirectObjectAccess(object):
                 raise ValueError
 
         try:
-            signature = inspect.signature(obj)
+            return inspect.signature(obj)
         except (RuntimeError, TypeError):
             # Reading the code of the function in Python 3.6 implies there are
             # at least these errors that might occur if something is wrong with
             # the signature. In that case we just want a simple escape for now.
             raise ValueError
-        return [
-            SignatureParam(
-                name=p.name,
-                has_default=p.default is not p.empty,
-                default=self._create_access_path(p.default),
-                has_annotation=p.annotation is not p.empty,
-                annotation=self._create_access_path(p.annotation),
-                kind_name=str(p.kind)
-            ) for p in signature.parameters.values()
-        ]
+
+    def get_return_annotation(self):
+        try:
+            o = self._obj.__annotations__.get('return')
+        except AttributeError:
+            return None
+
+        if o is None:
+            return None
+
+        return self._create_access_path(o)
 
     def negate(self):
         return self._create_access_path(-self._obj)
-
-    def dict_values(self):
-        return [self._create_access_path(v) for v in self._obj.values()]
-
-    def is_super_class(self, exception):
-        return issubclass(exception, self._obj)
 
     def get_dir_infos(self):
         """
@@ -443,41 +495,3 @@ def _is_class_instance(obj):
         return False
     else:
         return cls != type and not issubclass(cls, NOT_CLASS_TYPES)
-
-
-if py_version >= 35:
-    exec(compile(dedent("""
-        async def _coroutine(): pass
-        _coroutine = _coroutine()
-        CoroutineType = type(_coroutine)
-        _coroutine.close()  # Prevent ResourceWarning
-    """), 'blub', 'exec'))
-    _coroutine_wrapper = _coroutine.__await__()
-else:
-    _coroutine = None
-    _coroutine_wrapper = None
-
-if py_version >= 36:
-    exec(compile(dedent("""
-        async def _async_generator():
-            yield
-        _async_generator = _async_generator()
-        AsyncGeneratorType = type(_async_generator)
-    """), 'blub', 'exec'))
-else:
-    _async_generator = None
-
-class _SPECIAL_OBJECTS(object):
-    FUNCTION_CLASS = types.FunctionType
-    BOUND_METHOD_CLASS = type(DirectObjectAccess(None, None).py__bool__)
-    MODULE_CLASS = types.ModuleType
-    GENERATOR_OBJECT = _a_generator(1.0)
-    BUILTINS = builtins
-    COROUTINE = _coroutine
-    COROUTINE_WRAPPER = _coroutine_wrapper
-    ASYNC_GENERATOR = _async_generator
-
-
-def get_special_object(evaluator, identifier):
-    obj = getattr(_SPECIAL_OBJECTS, identifier)
-    return create_access_path(evaluator, obj)

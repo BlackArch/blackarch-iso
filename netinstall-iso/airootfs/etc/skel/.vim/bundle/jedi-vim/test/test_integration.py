@@ -9,7 +9,7 @@ import zipfile
 
 import pytest
 
-vspec_version = '1.8.1'
+vspec_version = '1.9.0'
 
 VSPEC_URL = 'https://github.com/kana/vim-vspec/archive/%s.zip' % vspec_version
 root = os.path.dirname(os.path.dirname(__file__))
@@ -20,7 +20,7 @@ TEST_DIR = os.path.join(root, 'test', 'vspec')
 
 
 @pytest.fixture(scope='session')
-def install_vspec(request):
+def install_vspec():
     if not os.path.isdir(CACHE_FOLDER):
         os.mkdir(CACHE_FOLDER)
 

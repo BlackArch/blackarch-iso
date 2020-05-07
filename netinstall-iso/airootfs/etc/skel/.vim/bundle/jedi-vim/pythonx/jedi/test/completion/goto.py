@@ -109,6 +109,23 @@ class X():
 #! 3 []
 X(foo=x)
 
+
+# Multiple inheritance
+class Foo:
+    def foo(self):
+        print("foo")
+class Bar:
+    def bar(self):
+        print("bar")
+class Baz(Foo, Bar):
+    def baz(self):
+        #! ['def foo']
+        super().foo
+        #! ['def bar']
+        super().bar
+        #! ['instance Foo']
+        super()
+
 # -----------------
 # imports
 # -----------------
@@ -120,6 +137,8 @@ import_tree.a
 
 #! ['module mod1']
 import import_tree.mod1
+#! ['module mod1']
+from import_tree.mod1
 #! ['a = 1']
 import_tree.mod1.a
 
@@ -201,9 +220,10 @@ for key, value in [(1,2)]:
     #! ['for key, value in [(1,2)]: key']
     key
 
-for i in []:
-    #! ['for i in []: i']
-    i
+#! 4 ['for y in [1]: y']
+for y in [1]:
+    #! ['for y in [1]: y']
+    y
 
 # -----------------
 # decorator

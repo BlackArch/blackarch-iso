@@ -1,7 +1,23 @@
-" brought by noptrix@nullsecurity.net
+" use python3
+if exists('py2') && has('python')
+elseif has('python3')
+endif
 
-" yeah baby
-execute pathogen#infect()
+" Vundle -----------------------------------------------------------------------
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'scrooloose/nerdtree.git'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'xavierd/clang_complete'
+
+call vundle#end()            " required
+" Vundle -----------------------------------------------------------------------
 
 " file type and syntax highliting on
 filetype plugin indent on
@@ -27,6 +43,7 @@ au FocusGained,BufEnter * :silent! !
 au FocusLost,WinLeave * :silent! w
 
 " specific settings
+set fo+=t
 set t_Co=256
 set nocursorline
 set title
@@ -73,6 +90,8 @@ set wildmode=list:longest,full
 set nowrap
 set statusline=%{getcwd()}\/\%f%=%-14.(%l,%c%V%)\ %P
 set autoread
+set conceallevel=2
+set concealcursor=vin
 
 " backup
 set undodir=~/.vim/tmp/undo//
@@ -103,3 +122,22 @@ endif
 au WinLeave * set nocursorline
 au WinEnter * set cursorline
 set cursorline
+
+" clang stuff
+let g:clang_library_path='/usr/lib/'
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 0
+let g:clang_compelte_macros=1
+let g:clang_complete_copen = 0
+let g:clang_debug = 1
+let g:clang_snippets=1
+let g:clang_conceal_snippets=1
+let g:clang_snippets_engine='clang_complete'
+let g:clang_auto_select = 1
+let g:clang_use_library = 1
+let g:clang_complete_optional_args_in_snippets = 1
+
+" jedi
+let g:jedi#completions_enabled = 1
+let g:jedi#force_py_version = 3
+

@@ -12,6 +12,7 @@ from parso.parser import BaseParser
 from parso.python.parser import Parser as PythonParser
 from parso.python.errors import ErrorFinderConfig
 from parso.python import pep8
+from parso.file_io import FileIO, KnownContentFileIO
 
 _loaded_grammars = {}
 
@@ -56,7 +57,8 @@ class Grammar(object):
         :param str path: The path to the file you want to open. Only needed for caching.
         :param bool cache: Keeps a copy of the parser tree in RAM and on disk
             if a path is given. Returns the cached trees if the corresponding
-            files on disk have not changed.
+            files on disk have not changed. Note that this stores pickle files
+            on your file system (e.g. for Linux in ``~/.cache/parso/``).
         :param bool diff_cache: Diffs the cached python module against the new
             code and tries to parse only the parts that have changed. Returns
             the same (changed) module that is found in cache. Using this option
@@ -77,14 +79,14 @@ class Grammar(object):
 
     def _parse(self, code=None, error_recovery=True, path=None,
                start_symbol=None, cache=False, diff_cache=False,
-               cache_path=None, start_pos=(1, 0)):
+               cache_path=None, file_io=None, start_pos=(1, 0)):
         """
         Wanted python3.5 * operator and keyword only arguments. Therefore just
         wrap it all.
         start_pos here is just a parameter internally used. Might be public
         sometime in the future.
         """
-        if code is None and path is None:
+        if code is None and path is None and file_io is None:
             raise TypeError("Please provide either code or a path.")
 
         if start_symbol is None:
@@ -93,15 +95,19 @@ class Grammar(object):
         if error_recovery and start_symbol != 'file_input':
             raise NotImplementedError("This is currently not implemented.")
 
-        if cache and path is not None:
-            module_node = load_module(self._hashed, path, cache_path=cache_path)
+        if file_io is None:
+            if code is None:
+                file_io = FileIO(path)
+            else:
+                file_io = KnownContentFileIO(path, code)
+
+        if cache and file_io.path is not None:
+            module_node = load_module(self._hashed, file_io, cache_path=cache_path)
             if module_node is not None:
                 return module_node
 
         if code is None:
-            with open(path, 'rb') as f:
-                code = f.read()
-
+            code = file_io.read()
         code = python_bytes_to_unicode(code)
 
         lines = split_lines(code, keepends=True)
@@ -110,7 +116,7 @@ class Grammar(object):
                 raise TypeError("You have to define a diff parser to be able "
                                 "to use this option.")
             try:
-                module_cache_item = parser_cache[self._hashed][path]
+                module_cache_item = parser_cache[self._hashed][file_io.path]
             except KeyError:
                 pass
             else:
@@ -125,7 +131,7 @@ class Grammar(object):
                     old_lines=old_lines,
                     new_lines=lines
                 )
-                save_module(self._hashed, path, new_node, lines,
+                save_module(self._hashed, file_io, new_node, lines,
                             # Never pickle in pypy, it's slow as hell.
                             pickling=cache and not is_pypy,
                             cache_path=cache_path)
@@ -141,7 +147,7 @@ class Grammar(object):
         root_node = p.parse(tokens=tokens)
 
         if cache or diff_cache:
-            save_module(self._hashed, path, root_node, lines,
+            save_module(self._hashed, file_io, root_node, lines,
                         # Never pickle in pypy, it's slow as hell.
                         pickling=cache and not is_pypy,
                         cache_path=cache_path)

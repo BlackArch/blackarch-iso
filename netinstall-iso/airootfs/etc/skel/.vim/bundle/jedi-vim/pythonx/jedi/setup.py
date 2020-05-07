@@ -2,6 +2,7 @@
 
 from setuptools import setup, find_packages
 
+import os
 import ast
 
 __AUTHOR__ = 'David Halter'
@@ -10,11 +11,14 @@ __AUTHOR_EMAIL__ = 'davidhalter88@gmail.com'
 # Get the version from within jedi. It's defined in exactly one place now.
 with open('jedi/__init__.py') as f:
     tree = ast.parse(f.read())
-version = tree.body[1].value.s
+version = tree.body[int(not hasattr(tree, 'docstring'))].value.s
 
 readme = open('README.rst').read() + '\n\n' + open('CHANGELOG.rst').read()
 with open('requirements.txt') as f:
     install_requires = f.read().splitlines()
+
+assert os.path.isfile("jedi/third_party/typeshed/LICENSE"), \
+    "Please download the typeshed submodule first (Hint: git submodule update --init)"
 
 setup(name='jedi',
       version=version,
@@ -33,14 +37,16 @@ setup(name='jedi',
       install_requires=install_requires,
       extras_require={
           'testing': [
-              'pytest>=2.3.5',
+              # Pytest 5 doesn't support Python 2 and Python 3.4 anymore.
+              'pytest>=3.1.0,<5.0.0',
               # docopt for sith doctests
               'docopt',
               # coloroma for colored debug output
               'colorama',
           ],
       },
-      package_data={'jedi': ['evaluate/compiled/fake/*.pym']},
+      package_data={'jedi': ['*.pyi', 'third_party/typeshed/LICENSE',
+                             'third_party/typeshed/README']},
       platforms=['any'],
       classifiers=[
           'Development Status :: 4 - Beta',
@@ -55,6 +61,7 @@ setup(name='jedi',
           'Programming Language :: Python :: 3.5',
           'Programming Language :: Python :: 3.6',
           'Programming Language :: Python :: 3.7',
+          'Programming Language :: Python :: 3.8',
           'Topic :: Software Development :: Libraries :: Python Modules',
           'Topic :: Text Editors :: Integrated Development Environments (IDE)',
           'Topic :: Utilities',

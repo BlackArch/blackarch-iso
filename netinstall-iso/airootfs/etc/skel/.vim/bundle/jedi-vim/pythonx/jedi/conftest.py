@@ -22,7 +22,7 @@ collect_ignore = [
 # to modify `jedi.settings.cache_directory` because `clean_jedi_cache`
 # has no effect during doctests.  Without these hooks, doctests uses
 # user's cache (e.g., ~/.cache/jedi/).  We should remove this
-# workaround once the problem is fixed in py.test.
+# workaround once the problem is fixed in pytest.
 #
 # See:
 # - https://github.com/davidhalter/jedi/pull/168
@@ -106,6 +106,11 @@ def Script(environment):
 
 
 @pytest.fixture(scope='session')
+def names(environment):
+    return partial(jedi.names, environment=environment)
+
+
+@pytest.fixture(scope='session')
 def has_typing(environment):
     if environment.version_info >= (3, 5, 0):
         # This if is just needed to avoid that tests ever skip way more than
@@ -119,3 +124,35 @@ def has_typing(environment):
 @pytest.fixture(scope='session')
 def jedi_path():
     return os.path.dirname(__file__)
+
+
+@pytest.fixture()
+def skip_python2(environment):
+    if environment.version_info.major == 2:
+        # This if is just needed to avoid that tests ever skip way more than
+        # they should for all Python versions.
+        pytest.skip()
+
+
+@pytest.fixture()
+def skip_pre_python38(environment):
+    if environment.version_info < (3, 8):
+        # This if is just needed to avoid that tests ever skip way more than
+        # they should for all Python versions.
+        pytest.skip()
+
+
+@pytest.fixture()
+def skip_pre_python37(environment):
+    if environment.version_info < (3, 7):
+        # This if is just needed to avoid that tests ever skip way more than
+        # they should for all Python versions.
+        pytest.skip()
+
+
+@pytest.fixture()
+def skip_pre_python35(environment):
+    if environment.version_info < (3, 5):
+        # This if is just needed to avoid that tests ever skip way more than
+        # they should for all Python versions.
+        pytest.skip()

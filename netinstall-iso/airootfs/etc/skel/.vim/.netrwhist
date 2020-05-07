@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/hacker/.vim/bundle/nerdtree'
+let g:netrw_dirhist_2='/home/hacker/.vim'
+let g:netrw_dirhist_1='/home/hacker/haxx/own/dev/nullscan/src'

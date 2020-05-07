@@ -25,7 +25,7 @@ next(reversed(yielder()))
 #?
 next(reversed())
 
-#? str()
+#? str() bytes()
 next(open(''))
 
 #? int()
@@ -34,6 +34,8 @@ next(open(''))
 # Compiled classes should have the meta class attributes.
 #? ['__itemsize__']
 tuple.__itemsize__
+#? []
+tuple().__itemsize__
 
 # -----------------
 # type() calls with one parameter
@@ -65,14 +67,31 @@ class X(): pass
 #? type
 type(X)
 
+# -----------------
+# type() calls with multiple parameters
+# -----------------
+
+X = type('X', (object,), dict(a=1))
+
+# Doesn't work yet.
+#?
+X.a
+#?
+X
+
 if os.path.isfile():
     #? ['abspath']
     fails = os.path.abspath
 
+# The type vars and other underscored things from typeshed should not be
+# findable.
+#?
+os._T
+
 
 with open('foo') as f:
     for line in f.readlines():
-        #? str()
+        #? str() bytes()
         line
 # -----------------
 # enumerate
@@ -101,9 +120,6 @@ for a in re.finditer('a', 'a'):
     #? int()
     a.start()
 
-#? str()
-re.sub('a', 'a')
-
 # -----------------
 # ref
 # -----------------
@@ -114,7 +130,7 @@ weakref.proxy(1)
 
 #? weakref.ref()
 weakref.ref(1)
-#? int()
+#? int() None
 weakref.ref(1)()
 
 # -----------------
@@ -165,10 +181,6 @@ import sqlite3
 con = sqlite3.connect()
 #? sqlite3.Cursor()
 c = con.cursor()
-#? sqlite3.Row()
-row = c.fetchall()[0]
-#? str()
-row.keys()[0]
 
 def huhu(db):
     """
@@ -242,6 +254,31 @@ with contextlib.closing('asd') as string:
     string
 
 # -----------------
+# operator
+# -----------------
+
+import operator
+
+f = operator.itemgetter(1)
+#? float()
+f([1.0])
+#? str()
+f([1, ''])
+
+g = operator.itemgetter(1, 2)
+x1, x2 = g([1, 1.0, ''])
+#? float()
+x1
+#? str()
+x2
+
+x1, x2 = g([1, ''])
+#? str()
+x1
+#? int() str()
+x2
+
+# -----------------
 # shlex
 # -----------------
 
@@ -249,5 +286,47 @@ with contextlib.closing('asd') as string:
 import shlex
 qsplit = shlex.split("foo, ferwerwerw werw werw e")
 for part in qsplit:
-    #? str() None
+    #? str()
     part
+
+# -----------------
+# Unknown metaclass
+# -----------------
+
+# Github issue 1321
+class Meta(object):
+    pass
+
+class Test(metaclass=Meta):
+    def test_function(self):
+        result = super(Test, self).test_function()
+        #? []
+        result.
+
+# -----------------
+# Enum
+# -----------------
+
+# python >= 3.4
+import enum
+
+class X(enum.Enum):
+    attr_x = 3
+    attr_y = 2.0
+
+#? ['mro']
+X.mro
+#? ['attr_x', 'attr_y']
+X.attr_
+#? str()
+X.attr_x.name
+#? int()
+X.attr_x.value
+#? str()
+X.attr_y.name
+#? float()
+X.attr_y.value
+#? str()
+X().name
+#? float()
+X().attr_x.attr_y.value

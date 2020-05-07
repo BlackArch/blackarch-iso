@@ -67,7 +67,9 @@ class VimError(Exception):
         self.executing = executing
 
     def __str__(self):
-        return self.message + '; created by: ' + repr(self.executing)
+        return "{}; created by {!r} (in {})".format(
+            self.message, self.executing, self.throwpoint
+        )
 
 
 def _catch_exception(string, is_eval):
@@ -132,6 +134,58 @@ else:
 finally:
     sys.path.remove(jedi_path)
     sys.path.remove(parso_path)
+
+
+class VimCompat:
+    _eval_cache = {}
+    _func_cache = {}
+
+    @classmethod
+    def has(cls, what):
+        try:
+            return cls._eval_cache[what]
+        except KeyError:
+            ret = cls._eval_cache[what] = cls.call('has', what)
+            return ret
+
+    @classmethod
+    def call(cls, func, *args):
+        try:
+            f = cls._func_cache[func]
+        except KeyError:
+            if IS_NVIM:
+                f = cls._func_cache[func] = getattr(vim.funcs, func)
+            else:
+                f = cls._func_cache[func] = vim.Function(func)
+        return f(*args)
+
+    @classmethod
+    def setqflist(cls, items, title, context):
+        if cls.has('patch-7.4.2200'):  # can set qf title.
+            what = {'title': title}
+            if cls.has('patch-8.0.0590'):  # can set qf context
+                what['context'] = {'jedi_usages': context}
+            if cls.has('patch-8.0.0657'):  # can set items via "what".
+                what['items'] = items
+                cls.call('setqflist', [], ' ', what)
+            else:
+                # Can set title (and maybe context), but needs two calls.
+                cls.call('setqflist', items)
+                cls.call('setqflist', items, 'a', what)
+        else:
+            cls.call('setqflist', items)
+
+    @classmethod
+    def setqflist_title(cls, title):
+        if cls.has('patch-7.4.2200'):
+            cls.call('setqflist', [], 'a', {'title': title})
+
+    @classmethod
+    def can_update_current_qflist_for_context(cls, context):
+        if cls.has('patch-8.0.0590'):  # can set qf context
+            return cls.call('getqflist', {'context': 1})['context'] == {
+                'jedi_usages': context,
+            }
 
 
 def catch_and_print_exceptions(func):
@@ -253,16 +307,22 @@ def completions():
             completions = script.completions()
             signatures = script.call_signatures()
 
+            add_info = "preview" in vim.eval("&completeopt").split(",")
             out = []
             for c in completions:
                 d = dict(word=PythonToVimStr(c.name[:len(base)] + c.complete),
                          abbr=PythonToVimStr(c.name_with_symbols),
                          # stuff directly behind the completion
                          menu=PythonToVimStr(c.description),
-                         info=PythonToVimStr(c.docstring()),  # docstr
                          icase=1,  # case insensitive
                          dup=1  # allow duplicates (maybe later remove this)
                          )
+                if add_info:
+                    try:
+                        d["info"] = PythonToVimStr(c.docstring())
+                    except Exception:
+                        print("jedi-vim: error with docstring for %r: %s" % (
+                            c, traceback.format_exc()))
                 out.append(d)
 
             strout = str(out)
@@ -345,7 +405,7 @@ def goto(mode="goto"):
                                     repr(PythonToVimStr(old_wildignore)))
             vim.current.window.cursor = d.line, d.column
     else:
-        show_goto_multi_results(definitions)
+        show_goto_multi_results(definitions, mode)
     return definitions
 
 
@@ -370,9 +430,14 @@ def annotate_description(d):
     return '[%s] %s' % (typ, code)
 
 
-def show_goto_multi_results(definitions):
-    """Create a quickfix list for multiple definitions."""
+def show_goto_multi_results(definitions, mode):
+    """Create (or reuse) a quickfix list for multiple definitions."""
+    global _current_definitions
+
     lst = []
+    (row, col) = vim.current.window.cursor
+    current_idx = None
+    current_def = None
     for d in definitions:
         if d.column is None:
             # Typically a namespace, in the future maybe other things as
@@ -383,8 +448,50 @@ def show_goto_multi_results(definitions):
             lst.append(dict(filename=PythonToVimStr(relpath(d.module_path)),
                             lnum=d.line, col=d.column + 1,
                             text=PythonToVimStr(text)))
-    vim_eval('setqflist(%s)' % repr(lst))
-    vim_eval('jedi#add_goto_window(' + str(len(lst)) + ')')
+
+            # Select current/nearest entry via :cc later.
+            if d.line == row and d.column <= col:
+                if (current_idx is None
+                        or (abs(lst[current_idx]["col"] - col)
+                            > abs(d.column - col))):
+                    current_idx = len(lst)
+                    current_def = d
+
+    # Build qflist title.
+    qf_title = mode
+    if current_def is not None:
+        if current_def.full_name:
+            qf_title += ": " + current_def.full_name
+        else:
+            qf_title += ": " + str(current_def)
+        select_entry = current_idx
+    else:
+        select_entry = 0
+
+    qf_context = id(definitions)
+    if (_current_definitions
+            and VimCompat.can_update_current_qflist_for_context(qf_context)):
+        # Same list, only adjust title/selected entry.
+        VimCompat.setqflist_title(qf_title)
+        vim_command('%dcc' % select_entry)
+    else:
+        VimCompat.setqflist(lst, title=qf_title, context=qf_context)
+        for_usages = mode == "usages"
+        vim_eval('jedi#add_goto_window(%d, %d)' % (for_usages, len(lst)))
+        vim_command('%d' % select_entry)
+
+
+def _same_definitions(a, b):
+    """Compare without _inference_state.
+
+    Ref: https://github.com/davidhalter/jedi-vim/issues/952)
+    """
+    return all(
+        x._name.start_pos == y._name.start_pos
+        and x.module_path == y.module_path
+        and x.name == y.name
+        for x, y in zip(a, b)
+    )
 
 
 @catch_and_print_exceptions
@@ -396,22 +503,215 @@ def usages(visuals=True):
         return definitions
 
     if visuals:
-        highlight_usages(definitions)
-        show_goto_multi_results(definitions)
+        global _current_definitions
+
+        if _current_definitions:
+            if _same_definitions(_current_definitions, definitions):
+                definitions = _current_definitions
+            else:
+                clear_usages()
+                assert not _current_definitions
+
+        show_goto_multi_results(definitions, "usages")
+        if not _current_definitions:
+            _current_definitions = definitions
+            highlight_usages()
+        else:
+            assert definitions is _current_definitions  # updated above
     return definitions
 
 
-def highlight_usages(definitions, length=None):
-    for definition in definitions:
-        # Only color the current module/buffer.
-        if (definition.module_path or '') == vim.current.buffer.name:
-            # mathaddpos needs a list of positions where a position is a list
-            # of (line, column, length).
-            # The column starts with 1 and not 0.
-            positions = [
-                [definition.line, definition.column + 1, length or len(definition.name)]
-            ]
-            vim_eval("matchaddpos('jediUsage', %s)" % repr(positions))
+_current_definitions = None
+"""Current definitions to use for highlighting."""
+_pending_definitions = {}
+"""Pending definitions for unloaded buffers."""
+_placed_definitions_in_buffers = set()
+"""Set of buffers for faster cleanup."""
+
+
+IS_NVIM = hasattr(vim, 'from_nvim')
+if IS_NVIM:
+    vim_prop_add = None
+else:
+    vim_prop_type_added = False
+    try:
+        vim_prop_add = vim.Function("prop_add")
+    except ValueError:
+        vim_prop_add = None
+    else:
+        vim_prop_remove = vim.Function("prop_remove")
+
+
+def clear_usages():
+    """Clear existing highlights."""
+    global _current_definitions
+    if _current_definitions is None:
+        return
+    _current_definitions = None
+
+    if IS_NVIM:
+        for buf in _placed_definitions_in_buffers:
+            src_ids = buf.vars.get('_jedi_usages_src_ids')
+            if src_ids is not None:
+                for src_id in src_ids:
+                    buf.clear_highlight(src_id)
+    elif vim_prop_add:
+        for buf in _placed_definitions_in_buffers:
+            vim_prop_remove({
+                'type': 'jediUsage',
+                'all': 1,
+                'bufnr': buf.number,
+            })
+    else:
+        # Unset current window only.
+        assert _current_definitions is None
+        highlight_usages_for_vim_win()
+
+    _placed_definitions_in_buffers.clear()
+
+
+def highlight_usages():
+    """Set definitions to be highlighted.
+
+    With Neovim it will use the nvim_buf_add_highlight API to highlight all
+    buffers already.
+
+    With Vim without support for text-properties only the current window is
+    highlighted via matchaddpos, and autocommands are setup to highlight other
+    windows on demand.  Otherwise Vim's text-properties are used.
+    """
+    global _current_definitions, _pending_definitions
+
+    definitions = _current_definitions
+    _pending_definitions = {}
+
+    if IS_NVIM or vim_prop_add:
+        bufs = {x.name: x for x in vim.buffers}
+        defs_per_buf = {}
+        for definition in definitions:
+            try:
+                buf = bufs[definition.module_path]
+            except KeyError:
+                continue
+            defs_per_buf.setdefault(buf, []).append(definition)
+
+        if IS_NVIM:
+            # We need to remember highlight ids with Neovim's API.
+            buf_src_ids = {}
+            for buf, definitions in defs_per_buf.items():
+                buf_src_ids[buf] = []
+                for definition in definitions:
+                    src_id = _add_highlight_definition(buf, definition)
+                    buf_src_ids[buf].append(src_id)
+            for buf, src_ids in buf_src_ids.items():
+                buf.vars['_jedi_usages_src_ids'] = src_ids
+        else:
+            for buf, definitions in defs_per_buf.items():
+                try:
+                    for definition in definitions:
+                        _add_highlight_definition(buf, definition)
+                except vim.error as exc:
+                    if exc.args[0].startswith('Vim:E275:'):
+                        # "Cannot add text property to unloaded buffer"
+                        _pending_definitions.setdefault(buf.name, []).extend(
+                            definitions)
+    else:
+        highlight_usages_for_vim_win()
+
+
+def _handle_pending_usages_for_buf():
+    """Add (pending) highlights for the current buffer (Vim with textprops)."""
+    buf = vim.current.buffer
+    bufname = buf.name
+    try:
+        buf_defs = _pending_definitions[bufname]
+    except KeyError:
+        return
+    for definition in buf_defs:
+        _add_highlight_definition(buf, definition)
+    del _pending_definitions[bufname]
+
+
+def _add_highlight_definition(buf, definition):
+    lnum = definition.line
+    start_col = definition.column
+
+    # Skip highlighting of module definitions that point to the start
+    # of the file.
+    if definition.type == 'module' and lnum == 1 and start_col == 0:
+        return
+
+    _placed_definitions_in_buffers.add(buf)
+
+    # TODO: validate that definition.name is at this position?
+    # Would skip the module definitions from above already.
+
+    length = len(definition.name)
+    if vim_prop_add:
+        # XXX: needs jediUsage highlight (via after/syntax/python.vim).
+        global vim_prop_type_added
+        if not vim_prop_type_added:
+            vim.eval("prop_type_add('jediUsage', {'highlight': 'jediUsage'})")
+            vim_prop_type_added = True
+        vim_prop_add(lnum, start_col+1, {
+            'type': 'jediUsage',
+            'bufnr': buf.number,
+            'length': length,
+        })
+        return
+
+    assert IS_NVIM
+    end_col = definition.column + length
+    src_id = buf.add_highlight('jediUsage', lnum-1, start_col, end_col,
+                               src_id=0)
+    return src_id
+
+
+def highlight_usages_for_vim_win():
+    """Highlight usages in the current window.
+
+    It stores the matchids in a window-local variable.
+
+    (matchaddpos() only works for the current window.)
+    """
+    global _current_definitions
+    definitions = _current_definitions
+
+    win = vim.current.window
+
+    cur_matchids = win.vars.get('_jedi_usages_vim_matchids')
+    if cur_matchids:
+        if cur_matchids[0] == vim.current.buffer.number:
+            return
+
+        # Need to clear non-matching highlights.
+        for matchid in cur_matchids[1:]:
+            expr = 'matchdelete(%d)' % int(matchid)
+            vim.eval(expr)
+
+    matchids = []
+    if definitions:
+        buffer_path = vim.current.buffer.name
+        for definition in definitions:
+            if (definition.module_path or '') == buffer_path:
+                positions = [
+                    [definition.line,
+                     definition.column + 1,
+                     len(definition.name)]
+                ]
+                expr = "matchaddpos('jediUsage', %s)" % repr(positions)
+                matchids.append(int(vim_eval(expr)))
+
+    if matchids:
+        vim.current.window.vars['_jedi_usages_vim_matchids'] = [
+            vim.current.buffer.number] + matchids
+    elif cur_matchids is not None:
+        # Always set it (uses an empty list for "unset", which is not possible
+        # using del).
+        vim.current.window.vars['_jedi_usages_vim_matchids'] = []
+
+    # Remember if clearing is needed for later buffer autocommands.
+    vim.current.buffer.vars['_jedi_usages_needs_clear'] = bool(matchids)
 
 
 @_check_jedi_availability(show_error=True)
@@ -429,9 +729,17 @@ def show_documentation():
     if not definitions:
         echo_highlight('No documentation found for that.')
         vim.command('return')
-    else:
-        docs = ['Docstring for %s\n%s\n%s' % (d.desc_with_module, '=' * 40, d.docstring())
-                if d.docstring() else '|No Docstring for %s|' % d for d in definitions]
+        return
+
+    docs = []
+    for d in definitions:
+        doc = d.docstring()
+        if doc:
+            title = 'Docstring for %s' % d.desc_with_module
+            underline = '=' * len(title)
+            docs.append('%s\n%s\n%s' % (title, underline, doc))
+        else:
+            docs.append('|No Docstring for %s|' % d)
         text = ('\n' + '-' * 79 + '\n').join(docs)
         vim.command('let l:doc = %s' % repr(PythonToVimStr(text)))
         vim.command('let l:doc_lines = %s' % len(text.split('\n')))
@@ -470,9 +778,12 @@ def show_call_signatures(signatures=()):
     if int(vim_eval("has('conceal') && g:jedi#show_call_signatures")) == 0:
         return
 
+    # We need to clear the signatures before we calculate them again. The
+    # reason for this is that call signatures are unfortunately written to the
+    # buffer.
+    clear_call_signatures()
     if signatures == ():
         signatures = get_script().call_signatures()
-    clear_call_signatures()
 
     if not signatures:
         return

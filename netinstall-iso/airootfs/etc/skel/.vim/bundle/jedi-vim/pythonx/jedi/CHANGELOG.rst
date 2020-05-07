@@ -3,6 +3,58 @@
 Changelog
 ---------
 
+0.15.1 (2019-08-13)
++++++++++++++++++++
+
+- Small bugfix and removal of a print statement
+
+0.15.0 (2019-08-11)
++++++++++++++++++++
+
+- Added file path completions, there's a **new ``Completion.type``** ``path``,
+  now. Example: ``'/ho`` -> ``'/home/``
+- ``*args``/``**kwargs`` resolving. If possible Jedi replaces the parameters
+  with the actual alternatives.
+- Better support for enums/dataclasses
+- When using Interpreter, properties are now executed, since a lot of people
+  have complained about this. Discussion in #1299, #1347.
+
+New APIs:
+
+- ``Definition.get_signatures() -> List[Signature]``. Signatures are similar to
+  ``CallSignature``. ``Definition.params`` is therefore deprecated.
+- ``Signature.to_string()`` to format call signatures.
+- ``Signature.params -> List[ParamDefinition]``, ParamDefinition has the
+  following additional attributes ``infer_default()``, ``infer_annotation()``,
+  ``to_string()``, and ``kind``.
+- ``Definition.execute() -> List[Definition]``, makes it possible to infer
+    return values of functions.
+
+
+0.14.1 (2019-07-13)
++++++++++++++++++++
+
+- CallSignature.index should now be working a lot better
+- A couple of smaller bugfixes
+
+0.14.0 (2019-06-20)
++++++++++++++++++++
+
+- Added ``goto_*(prefer_stubs=True)`` as well as ``goto_*(prefer_stubs=True)``
+- Stubs are used now for type inference
+- Typeshed is used for better type inference
+- Reworked Definition.full_name, should have more correct return values
+
+0.13.3 (2019-02-24)
++++++++++++++++++++
+
+- Fixed an issue with embedded Python, see https://github.com/davidhalter/jedi-vim/issues/870
+
+0.13.2 (2018-12-15)
++++++++++++++++++++
+
+- Fixed a bug that led to Jedi spawning a lot of subprocesses.
+
 0.13.1 (2018-10-02)
 +++++++++++++++++++
 

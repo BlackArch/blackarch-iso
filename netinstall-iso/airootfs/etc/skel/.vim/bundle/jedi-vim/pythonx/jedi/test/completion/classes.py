@@ -36,6 +36,7 @@ class TestClass(object):
         self2.var_inst = first_param
         self2.second = second_param
         self2.first = first_param
+        self2.first.var_on_argument = 5
         a = 3
 
     def var_func(self):
@@ -56,6 +57,8 @@ class TestClass(object):
     def ret(self, a1):
         # should not know any class functions!
         #? []
+        values
+        #?
         values
         #? ['return']
         ret
@@ -276,7 +279,7 @@ V(1).c()
 V(1).d()
 # Only keywords should be possible to complete.
 #? ['is', 'in', 'not', 'and', 'or', 'if']
-V(1).d()
+V(1).d() 
 
 
 # -----------------
@@ -576,3 +579,26 @@ class Foo(object):
 
 #? int()
 Foo().b
+
+# -----------------
+# default arguments
+# -----------------
+
+default = ''
+class DefaultArg():
+    default = 3
+    def x(self, arg=default):
+        #? str()
+        default
+        return arg
+    def y(self):
+        return default
+
+#? int()
+DefaultArg().x()
+#? str()
+DefaultArg().y()
+#? int()
+DefaultArg.x()
+#? str()
+DefaultArg.y()
