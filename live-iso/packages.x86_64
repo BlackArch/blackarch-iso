@@ -1412,6 +1412,7 @@ netbus
 netcommander
 netcon
 net-creds
+netctl
 netdiscover
 netkit-bsd-finger
 netkit-rwho
@@ -2481,6 +2482,7 @@ wifijammer
 wifi-monitor
 wifiphisher
 wifi-pumpkin
+wifi-radar
 wifiscanmap
 wifitap
 wifite

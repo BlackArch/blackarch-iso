@@ -150,6 +150,7 @@ multimon-ng
 nbtscan
 ncrack
 nemesis
+netctl
 netsniff-ng
 nfs-utils
 ngrep
