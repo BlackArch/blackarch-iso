@@ -1,6 +1,7 @@
 ===> 2020.06.01
 
 	- added more than 150 new tools
+	- remove unneeded virtualbox services (drag'n'drop, vmsvga-x11)
 	- replace wicd with wifi-radar (gui) and wifi-menu (curses -> netctl)
 	- updated blackarch-installer to v1.1.4X
 	- included linux kernel 5.6.X
