@@ -2,6 +2,7 @@
 
 	- added more than 150 new tools
 	- replace wicd with wifi-radar (gui) and wifi-menu (curses -> netctl)
+	- updated blackarch-installer to v1.1.4X
 	- included linux kernel 5.6.X
 	- QA'ed and fixed all packages (runtime exec)
 	- updated all vim plugins and improved vim config options
