@@ -47,6 +47,7 @@ dcfldd
 ddrescue
 device-mapper
 dhclient
+dhcpcd
 dialog
 distorm
 dmg2img

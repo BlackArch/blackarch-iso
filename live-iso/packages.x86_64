@@ -483,6 +483,7 @@ dga-detection
 dharma
 dhcdrop
 dhclient
+dhcpcd
 dhcpf
 dhcpig
 dhcpoptinj
