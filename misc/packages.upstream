@@ -269,7 +269,7 @@ valabind
 valgrind
 veracrypt
 vim
-virtualbox-guest-modules-arch
+virtualbox-guest-dkms
 virtualbox-guest-utils
 volatility
 vpnc
