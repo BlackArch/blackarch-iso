@@ -10,6 +10,7 @@ abuse-ssl-bypass-waf -h ;
 acccheck -h ;
 ace -h ;
 aclpwn -h ;
+active-directory-enum -h ;
 adape-script cd /usr/share/windows/adape-script ; ls ;
 addr6 ;
 address6 ;
