@@ -1,10 +1,11 @@
 ===> 2020.06.01
 
 	- added more than 150 new tools
+	- disabled iptables/ip6tables service
 	- remove unneeded virtualbox services (drag'n'drop, vmsvga-x11)
 	- replace wicd with wifi-radar (gui) and wifi-menu (curses -> netctl)
-	- updated blackarch-installer to v1.1.43
-	- included linux kernel 5.6.X
+	- updated blackarch-installer to v1.1.45
+	- included linux kernel 5.6.14
 	- QA'ed and fixed all packages (runtime exec)
 	- updated all vim plugins and improved vim config options
 	- updated all blackarch tools and packages including config files
