@@ -721,6 +721,7 @@ d2j-std-apk ;
 daemoninfo.pl ;
 dagon -h ;
 daily_cleanup.py ;
+dalfox -h ;
 damm -h ;
 daredevil -h ;
 darkbing -h ;
