@@ -12,6 +12,7 @@ crda
 ctags
 dhclient
 dhcpcd
+dialog
 dosfstools
 efitools
 ethtool
@@ -27,6 +28,7 @@ linux-atm
 lsof
 mkinitcpio
 mlocate
+netctl
 ntp
 openssh
 parted
@@ -41,6 +43,6 @@ tzdata
 usb_modeswitch
 vim
 wget
-wifi-radar
 wireless_tools
+wpa_supplicant
 wvdial
