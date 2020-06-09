@@ -4085,6 +4085,7 @@ vault ;
 vba2graph -h ;
 vbrute -h ;
 vbscan ;
+vbsmin -h ;
 vcsmap ;
 vdbbin -h ;
 vDesigner ;
