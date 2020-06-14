@@ -1040,6 +1040,7 @@ evilize -h ;
 evilize-md5coll -h ;
 evillimiter -h ;
 evilmaid ;
+evilpdf -h ;
 evil-ssdp -h ;
 evil-winrm -h ;
 evtkit -h ;
