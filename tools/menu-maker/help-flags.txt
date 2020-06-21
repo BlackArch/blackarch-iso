@@ -3290,6 +3290,7 @@ runant.py ;
 rupture -h ;
 rustbuster --help ;
 rva2ofs ;
+rvi-capture -h ;
 rwaddrcount ;
 rwallformats ;
 rwappend ;
