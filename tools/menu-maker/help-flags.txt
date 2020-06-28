@@ -1252,6 +1252,7 @@ fusil-zzuf ;
 fuxploider -h ;
 fuzzap -h ;
 fuzzball2 -h ;
+fuzzbunch -h ;
 fuzzdb cd /usr/share/fuzzdb ; ls ;
 fuzz_dhcps6 ;
 fuzzdiff ;
