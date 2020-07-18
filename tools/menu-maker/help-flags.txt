@@ -879,6 +879,7 @@ dnstracer ;
 dnstraceroute ;
 dnstwist -h ;
 dnsutils -h ;
+dnsvalidator -h ;
 dnswalk --help ;
 dnsxss -h ;
 docem -h ;
