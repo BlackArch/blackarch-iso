@@ -3800,6 +3800,7 @@ sub7 cd /usr/share/windows/sub7 ; ls ;
 subbrute -h ;
 subdomainer.py -h ;
 subfinder -h ;
+subjack -h ;
 sublert -h ;
 sublist3r -h ;
 subover ;
