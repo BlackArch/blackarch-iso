@@ -2239,6 +2239,7 @@ miredo -h ;
 miredo-server -h ;
 missidentify -h ;
 missionplanner -h ;
+mitm6 -h ;
 mitmap -h ;
 mitmap-old -h ;
 mitmdump -h ;
