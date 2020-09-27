@@ -151,6 +151,7 @@ basedomainname
 bash
 bash-completion
 bashfuscator
+bat
 batctl
 batman-adv
 batman-alfred
