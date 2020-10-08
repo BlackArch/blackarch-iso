@@ -3986,6 +3986,7 @@ tsk_comparedir ;
 tsk_gettimes ;
 tsk_loaddb ;
 tsk_recover ;
+ttpassgen -h ;
 tunna-proxy ;
 tunna-webserver ;
 tuxcut ;
