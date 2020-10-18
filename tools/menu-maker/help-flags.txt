@@ -2109,6 +2109,7 @@ magescan ;
 magicrescue ;
 magicsort ;
 magictree ;
+maigret -h ;
 mail-crawl -h ;
 mailsnarf -h ;
 makeder.sh ;
