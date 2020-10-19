@@ -4408,6 +4408,7 @@ xval.py ;
 xwaf -h ;
 xxeinjector -h ;
 xxeserv -h ;
+xxexploiter -h ;
 yaaf -h ;
 yafcollect -h ;
 yaf --help ;
