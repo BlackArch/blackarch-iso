@@ -68,7 +68,7 @@ _tr_add2 after_install_etltip    "Montrez ce qu'il faut faire pour que votre sys
 _tr_add2 after_install_cdm       "Gestionnaire Sessions"
 _tr_add2 after_install_cdmtip    "Utiliser un gestionnaire de session graphique différent"
 
-_tr_add2 after_install_ew        "Fond d'écran EOS"
+_tr_add2 after_install_ew        "Fond d'écran barch"
 _tr_add2 after_install_ewtip     "Remplacer le fond d'écran du bureau par celui d'blackarch"
 
 

@@ -71,7 +71,7 @@ _tr_add2 after_install_etltip     "Mostrar qué hacer para que tu sistema llegue
 _tr_add2 after_install_cdm        "Cambiar Gestor Pantalla"
 _tr_add2 after_install_cdmtip     "Usar un gestor de pantalla diferente"
 
-_tr_add2 after_install_ew         "Fondo de pantalla EOS"
+_tr_add2 after_install_ew         "Fondo de pantalla barch"
 _tr_add2 after_install_ewtip      "Cambiar el fondo de pantalla al que trae blackarch por defecto"
 
 

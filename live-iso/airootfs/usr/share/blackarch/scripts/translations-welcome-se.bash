@@ -67,7 +67,7 @@ _tr_add2 after_install_cdm     "Byt bildsk&#228;rmshanterare"
 _tr_add2 after_install_cdmtip  "Anv&#228;nd en annan bildsk&#228;rmshanterare"
 
 _tr_add2 after_install_ew      "blackarch skrivbordsbakgrund"
-_tr_add2 after_install_ewtip   "&#196;ndra skrivbordsbakgrund till EOS standardbakgrund"
+_tr_add2 after_install_ewtip   "&#196;ndra skrivbordsbakgrund till barch standardbakgrund"
 
 
 _tr_add2 after_install_pm      "Pakethantering"

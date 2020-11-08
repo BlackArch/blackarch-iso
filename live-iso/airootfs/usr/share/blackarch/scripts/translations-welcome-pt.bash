@@ -69,7 +69,7 @@ _tr_add2 after_install_cdm     "Mudar o Gestor de Visualização"
 _tr_add2 after_install_cdmtip  "Usar um gestor de visualização diferente"
 
 _tr_add2 after_install_ew      "Fundo de ecrã blackarch"
-_tr_add2 after_install_ewtip   "Mudar o fundo de ecrã para o predefinido do EOS"
+_tr_add2 after_install_ewtip   "Mudar o fundo de ecrã para o predefinido do barch"
 
 
 _tr_add2 after_install_pm      "Gestão de pacotes"

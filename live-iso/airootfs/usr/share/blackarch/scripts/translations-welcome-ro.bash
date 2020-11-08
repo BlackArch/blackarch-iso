@@ -68,7 +68,7 @@ _tr_add2 after_install_etltip    "Arată ce să faci să-ți pui sistemul blacka
 _tr_add2 after_install_cdm       "Schimbă Display Manager"
 _tr_add2 after_install_cdmtip    "Folosește un display manager diferit"
 
-_tr_add2 after_install_ew        "Imagine de fundal EOS"
+_tr_add2 after_install_ew        "Imagine de fundal barch"
 _tr_add2 after_install_ewtip     "Schimbă imaginea de fundal la cea predefinită de blackarch"
 
 

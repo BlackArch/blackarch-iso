@@ -69,7 +69,7 @@ _tr_add2 after_install_cdm     "更换显示管理器（DM）"
 _tr_add2 after_install_cdmtip  "更换一个不同的显示管理器（Display Manager）"
 
 _tr_add2 after_install_ew      "blackarch 壁纸"
-_tr_add2 after_install_ewtip   "更换壁纸为 EOS 的默认壁纸"
+_tr_add2 after_install_ewtip   "更换壁纸为 barch 的默认壁纸"
 
 
 _tr_add2 after_install_pm      "软件包管理"

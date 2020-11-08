@@ -11,7 +11,7 @@
 export PROGNAME=ba-welcome
 export PRETTY_PROGNAME="Welcome"
 
-BA_SCRIPTS_DIR=/usr/share/endeavouros/scripts
+BA_SCRIPTS_DIR=/usr/share/blackarch-lightweight/scripts
 translations_dir=$BA_SCRIPTS_DIR                 # used also by the translations-welcome.bash !!
 
 source $translations_dir/translations-welcome.bash
@@ -278,7 +278,7 @@ yad_calamares() {
                 if [ -r $file ] ; then
                     sudo sed \
                          -i $file \
-                         -e "s|^\([ ]*groupsUrl:\).*/endeavouros-team/.*/netinstall\.yaml$|\1 $netinstall_url|"
+                         -e "s|^\([ ]*groupsUrl:\).*/blackarch-lightweight-team/.*/netinstall\.yaml$|\1 $netinstall_url|"
                 fi
             elif [ -n "$(device-info --vga | grep NVIDIA)" ] ; then
                 if [ -n "$(lspci -k | grep -PA3 'VGA|3D' | grep "Kernel driver in use" | grep nvidia)" ] ; then
@@ -286,7 +286,7 @@ yad_calamares() {
                     if [ -r $file ] ; then
                         sudo sed \
                              -i $file \
-                             -e 's|^\([ ]*groupsUrl:.*/endeavouros-team/.*\)/netinstall\.yaml$|\1/netinstall_nvidia.yaml|'
+                             -e 's|^\([ ]*groupsUrl:.*/blackarch-lightweight-team/.*\)/netinstall\.yaml$|\1/netinstall_nvidia.yaml|'
                     fi
                 fi
             fi
@@ -573,7 +573,7 @@ yad_PkgIssues() {
 
     ## Other commands to execute.
 
-    # systemd-time-wait-sync is not needed. See https://forum.endeavouros.com/t/welcome-enos-launcher/1654/82.
+    # systemd-time-wait-sync is not needed. See https://forum.blackarch-lightweight.com/t/welcome-enos-launcher/1654/82.
     xx=systemd-time-wait-sync
     systemctl status $xx >/dev/null && {
         commands+=" ; systemctl disable $xx"
@@ -794,7 +794,7 @@ yad_vanilla_xfce4_theme() {
 }
 export -f yad_vanilla_xfce4_theme
 
-yad_endeavouros_xfce4_theme() {
+yad_blackarch-lightweight_xfce4_theme() {
     local log="$HOME/.config/BA-xfce-theme.log"
     local DE="$(ba_yad_GetDesktopName)"
     local new_theme_name="blackarch default"
@@ -815,12 +815,12 @@ yad_endeavouros_xfce4_theme() {
                     # Fetch the blackarch default Xfce theme from github.
                     local tmpdir=$(mktemp -d)
                     pushd $tmpdir >/dev/null
-                    git clone https://github.com/endeavouros-team/blackarch-archiso.git 2>/dev/null
+                    git clone https://github.com/blackarch-lightweight-team/blackarch-archiso.git 2>/dev/null
                     mv blackarch-archiso/airootfs/etc/skel/.config/xfce4   "$(dirname "$conf")"
                     mv blackarch-archiso/airootfs/etc/skel/.config/gtk-3.0 "$(dirname "$conf")"
                     popd >/dev/null
                     rm -rf $tmpdir
-                    /usr/share/endeavouros/scripts/wallpaper-once -rr   # allows default wallpaper question after reboot
+                    /usr/share/blackarch-lightweight/scripts/wallpaper-once -rr   # allows default wallpaper question after reboot
                     reboot
                     ;;
             esac
@@ -829,7 +829,7 @@ yad_endeavouros_xfce4_theme() {
             ;;
     esac
 }
-export -f yad_endeavouros_xfce4_theme
+export -f yad_blackarch-lightweight_xfce4_theme
 
 WelcomeDevelConf() {
     # Supported config file variables, defaults, and supported values:
@@ -905,9 +905,9 @@ INSTALL() {
   tabcontents+=(
 #      --field="_align($(ltr ins_keys))!$system_software_update!$(ltr ins_keystip)":fbtn                   'bash -c yad_InitializePacmanMirroring'
       --field="_align($(ltr ins_pm))!$gparted!$(ltr ins_pmtip)":fbtn                          'gparted'
-      --field="_align($(ltr ins_rel))!$user_info!$(ltr ins_reltip)":fbtn                      "$_BROWSER https://endeavouros.com/latest-release"
-      --field="_align($(ltr ins_tips))!$user_info!$(ltr ins_tipstip)":fbtn                    "$_BROWSER https://endeavouros.com/docs/installation"
-      --field="_align($(ltr ins_trouble))!$user_info!$(ltr ins_troubletip)":fbtn              "$_BROWSER https://endeavouros.com/docs/system-rescue"
+      --field="_align($(ltr ins_rel))!$user_info!$(ltr ins_reltip)":fbtn                      "$_BROWSER https://blackarch-lightweight.com/latest-release"
+      --field="_align($(ltr ins_tips))!$user_info!$(ltr ins_tipstip)":fbtn                    "$_BROWSER https://blackarch-lightweight.com/docs/installation"
+      --field="_align($(ltr ins_trouble))!$user_info!$(ltr ins_troubletip)":fbtn              "$_BROWSER https://blackarch-lightweight.com/docs/system-rescue"
   )
 
   _align_buttons_on_tab tabcontents
@@ -928,12 +928,12 @@ GeneralInfo() {
       --plug="$handle" --tabnum="$tabnum" --form --columns=2
       --image=dialog-question
       --text="<b>$(ltr general_info_text)</b>" --text-align=left
-      --field="_align($(ltr general_info_ws))!$user_info!https://endeavouros.com":fbtn          "$_BROWSER https://endeavouros.com"
-      --field="_align($(ltr general_info_wi))!$user_info!$(ltr general_info_witip)":fbtn        "$_BROWSER https://endeavouros.com/wiki"
-      --field="_align($(ltr general_info_ne))!$user_info!$(ltr general_info_netip)":fbtn        "$_BROWSER https://endeavouros.com/news"
-      --field="_align($(ltr general_info_fo))!$user_info!$(ltr general_info_fotip)":fbtn        "$_BROWSER https://forum.endeavouros.com"
-      --field="_align($(ltr general_info_do))!$user_info!$(ltr general_info_dotip)":fbtn        "$_BROWSER https://endeavouros.com/donate"
-      --field="_align($(ltr general_info_ab))!$user_info!$(ltr general_info_abtip)":fbtn        "$_BROWSER https://endeavouros.com/docs/applications/welcome"
+      --field="_align($(ltr general_info_ws))!$user_info!https://blackarch-lightweight.com":fbtn          "$_BROWSER https://blackarch-lightweight.com"
+      --field="_align($(ltr general_info_wi))!$user_info!$(ltr general_info_witip)":fbtn        "$_BROWSER https://blackarch-lightweight.com/wiki"
+      --field="_align($(ltr general_info_ne))!$user_info!$(ltr general_info_netip)":fbtn        "$_BROWSER https://blackarch-lightweight.com/news"
+      --field="_align($(ltr general_info_fo))!$user_info!$(ltr general_info_fotip)":fbtn        "$_BROWSER https://forum.blackarch-lightweight.com"
+      --field="_align($(ltr general_info_do))!$user_info!$(ltr general_info_dotip)":fbtn        "$_BROWSER https://blackarch-lightweight.com/donate"
+      --field="_align($(ltr general_info_ab))!$user_info!$(ltr general_info_abtip)":fbtn        "$_BROWSER https://blackarch-lightweight.com/docs/applications/welcome"
   )
 
   _align_buttons_on_tab tabcontents
@@ -1001,7 +1001,7 @@ AfterInstall() {
     XFCE)
         tabcontents+=(
             --field="_align($(ltr after_install_themevan))!preferences-desktop-theme!$(ltr after_install_themevantip)":fbtn  'bash -c yad_vanilla_xfce4_theme'
-            --field="_align($(ltr after_install_themedef))!preferences-desktop-theme!$(ltr after_install_themedeftip)":fbtn  'bash -c yad_endeavouros_xfce4_theme'
+            --field="_align($(ltr after_install_themedef))!preferences-desktop-theme!$(ltr after_install_themedeftip)":fbtn  'bash -c yad_blackarch-lightweight_xfce4_theme'
         )
         ;;
   esac
@@ -1021,16 +1021,16 @@ UsefulTips() {
       --plug="$handle" --tabnum="$tabnum" --form --columns=2
       --image=$user_info
       --text="<b>$(ltr useful_tips_text)</b>"
-      --field="_align($(ltr after_install_pm))!$user_info!$(ltr after_install_pmtip)":fbtn     "$_BROWSER https://endeavouros.com/docs/pacman/package-management-in-endeavouros"
-      --field="_align($(ltr after_install_ay))!$user_info!$(ltr after_install_aytip)":fbtn     "$_BROWSER https://endeavouros.com/docs/aur/yay"
-      --field="_align($(ltr after_install_hn))!$user_info!$(ltr after_install_hntip)":fbtn     "$_BROWSER https://endeavouros.com/docs/hardware-and-network"
-      --field="_align($(ltr after_install_bt))!$user_info!$(ltr after_install_bttip)":fbtn     "$_BROWSER https://endeavouros.com/docs/hardware-and-network/bluetooth"
+      --field="_align($(ltr after_install_pm))!$user_info!$(ltr after_install_pmtip)":fbtn     "$_BROWSER https://blackarch-lightweight.com/docs/pacman/package-management-in-blackarch-lightweight"
+      --field="_align($(ltr after_install_ay))!$user_info!$(ltr after_install_aytip)":fbtn     "$_BROWSER https://blackarch-lightweight.com/docs/aur/yay"
+      --field="_align($(ltr after_install_hn))!$user_info!$(ltr after_install_hntip)":fbtn     "$_BROWSER https://blackarch-lightweight.com/docs/hardware-and-network"
+      --field="_align($(ltr after_install_bt))!$user_info!$(ltr after_install_bttip)":fbtn     "$_BROWSER https://blackarch-lightweight.com/docs/hardware-and-network/bluetooth"
   )
   test "$(ba_GetArch)" != "armv7h" && \
-      tabcontents+=(--field="_align($(ltr after_install_nv))!$user_info!$(ltr after_install_nvtip)":fbtn "$_BROWSER https://endeavouros.com/docs/hardware-and-network/nvidia-installer")
+      tabcontents+=(--field="_align($(ltr after_install_nv))!$user_info!$(ltr after_install_nvtip)":fbtn "$_BROWSER https://blackarch-lightweight.com/docs/hardware-and-network/nvidia-installer")
   tabcontents+=(
-      --field="_align($(ltr after_install_ft))!$user_info!$(ltr after_install_fttip)":fbtn     "$_BROWSER https://endeavouros.com/docs/forum/how-to-include-systemlogs-in-your-post"
-      --field="_align($(ltr butt_owncmds_help))!$user_info!$(ltr nb_tab_owncmdstip)":fbtn     "$_BROWSER https://github.com/endeavouros-team/PKGBUILDS/blob/master/welcome/Adding-own-commands.md"
+      --field="_align($(ltr after_install_ft))!$user_info!$(ltr after_install_fttip)":fbtn     "$_BROWSER https://blackarch-lightweight.com/docs/forum/how-to-include-systemlogs-in-your-post"
+      --field="_align($(ltr butt_owncmds_help))!$user_info!$(ltr nb_tab_owncmdstip)":fbtn     "$_BROWSER https://github.com/blackarch-lightweight-team/PKGBUILDS/blob/master/welcome/Adding-own-commands.md"
       --field="_align($(ltr butt_owncmds_dnd))!$BA_WICON!$(ltr butt_owncmds_dnd_help)":fbtn  "welcome-dnd"
   )
 
@@ -1148,7 +1148,7 @@ OwnCommands() {
   if [ "$show_buttons" = "yes" ] ; then
       tabcontents+=(
           --field="_align($(ltr butt_owncmds_help))!$user_info!$(ltr nb_tab_owncmdstip)":fbtn
-                  "$_BROWSER https://github.com/endeavouros-team/PKGBUILDS/blob/master/welcome/Adding-own-commands.md"
+                  "$_BROWSER https://github.com/blackarch-lightweight-team/PKGBUILDS/blob/master/welcome/Adding-own-commands.md"
           --field="_align($(ltr butt_owncmds_dnd))!$BA_WICON!$(ltr butt_owncmds_dnd_help)":fbtn  "welcome-dnd"
       )
   fi
@@ -1219,7 +1219,7 @@ export -f WelcomeHelp
 
 WelcomeChangelog() {
     SetBrowser
-    $_BROWSER https://github.com/endeavouros-team/PKGBUILDS/commits/master/welcome 2> /dev/null
+    $_BROWSER https://github.com/blackarch-lightweight-team/PKGBUILDS/commits/master/welcome 2> /dev/null
 }
 export -f WelcomeChangelog
 
@@ -1390,7 +1390,7 @@ UpdateInstallScripts() {
         # the files below are needed only for installing
     fi
 
-    local URL=https://github.com/endeavouros-team/install-scripts/raw/master
+    local URL=https://github.com/blackarch-lightweight-team/install-scripts/raw/master
     local scripts=(                        # may need to adjust files ...
         calamares_switcher
         chrooted_cleaner_script.sh
@@ -1559,7 +1559,7 @@ StartHere() {
         fi
     else
         :
-        #if [ -z "$(grep '=/usr/share/endeavouros/scripts/welcome' /home/$BA_LIVEUSER/.config/xfce4/panel/launcher-*/*.desktop)" ] ; then
+        #if [ -z "$(grep '=/usr/share/blackarch-lightweight/scripts/welcome' /home/$BA_LIVEUSER/.config/xfce4/panel/launcher-*/*.desktop)" ] ; then
         #    xfce4-panel --add=launcher $BA_SCRIPTS_DIR/welcome-panel.desktop
         #fi
     fi

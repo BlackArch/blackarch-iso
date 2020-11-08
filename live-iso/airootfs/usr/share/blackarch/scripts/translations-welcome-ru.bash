@@ -34,7 +34,7 @@ _question='&#63;'      # '?'
 ###################### ТЕПЕРЬ ФАКТИЧЕСКИЕ СТРОКИ, КОТОРЫЕ ДОЛЖНЫ БЫТЬ ПЕРЕВЕДЕНЫ ######################
 # func   <placeholder>             "string"
 
-_tr_add2 welcome_disabled          "$PRETTY_PROGNAME отключено. Для повторного запуска используйте команду eos-welcome --enable"
+_tr_add2 welcome_disabled          "$PRETTY_PROGNAME отключено. Для повторного запуска используйте команду barch-welcome --enable"
 
 _tr_add2 butt_later                "Закрыть это окно"
 _tr_add2 butt_latertip             "Запускать $PRETTY_PROGNAME при старте системы"
@@ -62,14 +62,14 @@ _tr_add2 after_install_ustip       "Обновление системных мо
 _tr_add2 after_install_dsi         "Поиск ошибок"
 _tr_add2 after_install_dsitip      "Обнаружение любых потенциальных проблем в системе и программах"
 
-_tr_add2 after_install_etl         "Обновить EndeavourOS$_question"
-_tr_add2 after_install_etltip      "Переход на следующий уровень EndeavourOS"
+_tr_add2 after_install_etl         "Обновить blackarch-lightweight$_question"
+_tr_add2 after_install_etltip      "Переход на следующий уровень blackarch-lightweight"
 
 _tr_add2 after_install_cdm         "Изменить Display Manager"
 _tr_add2 after_install_cdmtip      "Установка другого Display Manager"
 
-_tr_add2 after_install_ew          "Обои EndeavourOS"
-_tr_add2 after_install_ewtip       "Установить обои EndeavourOS по умолчанию"
+_tr_add2 after_install_ew          "Обои blackarch-lightweight"
+_tr_add2 after_install_ewtip       "Установить обои blackarch-lightweight по умолчанию"
 
 
 _tr_add2 after_install_pm          "Управление пакетами"
@@ -91,7 +91,7 @@ _tr_add2 after_install_ft          "Советы по форуму"
 _tr_add2 after_install_fttip       "Обратитесь к нам за помощью$_exclamation"
 
 
-_tr_add2 general_info_text         "Найди себя в EndeavourOS"
+_tr_add2 general_info_text         "Найди себя в blackarch-lightweight"
 
 _tr_add2 general_info_ws           "Сайт"
 
@@ -105,7 +105,7 @@ _tr_add2 general_info_fo           "Форум"
 _tr_add2 general_info_fotip        "Спрашивайте, комментируйте и общайтесь на нашем дружественном форуме$_exclamation"
 
 _tr_add2 general_info_do           "Пожертвования"
-_tr_add2 general_info_dotip        "Окажите помощь в развитии и поддержке EndeavourOS"
+_tr_add2 general_info_dotip        "Окажите помощь в развитии и поддержке blackarch-lightweight"
 
 _tr_add2 general_info_ab           "О Welcome"
 _tr_add2 general_info_abtip        "Информация о приложении Welcome"
@@ -161,7 +161,7 @@ _tr_add2 issues_no                 "Системных ошибок не обн�
 _tr_add2 cal_noavail               "Не доступно: "			# программа установки
 _tr_add2 cal_warn                  "Внимание"
 _tr_add2 cal_info1                 "Это релиз по развитию сообщества.\n\n"                                   				# необходимые специальности!
-_tr_add2 cal_info2                 "<b>Оффлайн</b> вариант предоставляет рабочий стол Xfce с темой EndeavourOS.\nПодключение к интернет не требуется.\n\n"
+_tr_add2 cal_info2                 "<b>Оффлайн</b> вариант предоставляет рабочий стол Xfce с темой blackarch-lightweight.\nПодключение к интернет не требуется.\n\n"
 _tr_add2 cal_info3                 "<b>Онлайн</b> вариант позволяет выбрать DE с оформлением по умолчанию.\nТребуется подключение к интернет.\n\n"
 _tr_add2 cal_info4                 "Внимание: Этот релиз находится в процессе разработки. Пожалуйста, сообщите нам в случае ошибки.\n"
 _tr_add2 cal_choose                "Выбор способа установки"
@@ -175,9 +175,9 @@ _tr_add2 tail_butt                 "Закрыть это окно"
 _tr_add2 tail_buttip               "Закрыть только это окно"
 
 
-_tr_add2 ins_text                  "Установка EndeavourOS на компьютер"
+_tr_add2 ins_text                  "Установка blackarch-lightweight на компьютер"
 _tr_add2 ins_start                 "Запуск установки"
-_tr_add2 ins_starttip              "Запуcк установки EndeavourOS вместе с отладочным терминалом"
+_tr_add2 ins_starttip              "Запуcк установки blackarch-lightweight вместе с отладочным терминалом"
 _tr_add2 ins_up                    "Обновить Welcome $_exclamation"
 _tr_add2 ins_uptip                 "Обновить Welcome и перезапустить его"
 _tr_add2 ins_keys                  "Pacman - gpg keys"
@@ -209,8 +209,8 @@ _tr_add2 butt_changelogtip     "История изменений Welcome"
 _tr_add2 after_install_themevan      "Xfce оригинальная тема"
 _tr_add2 after_install_themevantip   "Использовать тему Xfce"
 
-_tr_add2 after_install_themedef     "Xfce тема в стиле EndeavourOS"
-_tr_add2 after_install_themedeftip  "использовать стиль EndeavourOS в теме Xfce"
+_tr_add2 after_install_themedef     "Xfce тема в стиле blackarch-lightweight"
+_tr_add2 after_install_themedeftip  "использовать стиль blackarch-lightweight в теме Xfce"
 
 # 2020-Jun-28:
 _tr_add2 after_install_pclean       "Настройка очистки пакетов"
@@ -246,8 +246,8 @@ _tr_add2 add_more_apps_done2_tip1    "Для установки, использ�
 _tr_add2 add_more_apps_done2_tip2    "Для установки, используйте 'yay'"
 
 # 2020-Sep-11:
-_tr_add2 after_install_ew2        "Выбор обоев"   # was: "EndeavourOS wallpaper (choose)"
-_tr_add2 after_install_ewtip2     "Выбор обоев EndeavourOS"                          # was: "Choose from EndeavourOS default wallpapers"
+_tr_add2 after_install_ew2        "Выбор обоев"   # was: "blackarch-lightweight wallpaper (choose)"
+_tr_add2 after_install_ewtip2     "Выбор обоев blackarch-lightweight"                          # was: "Choose from blackarch-lightweight default wallpapers"
 
 # 2020-Sep-15:
 #    IMPORTANT NOTE:

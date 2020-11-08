@@ -69,7 +69,7 @@ _tr_add2 after_install_cdm        "Cambia Display Manager"
 _tr_add2 after_install_cdmtip     "Utilizzare un display manager diverso"
 
 _tr_add2 after_install_ew         "blackarch sfondi"
-_tr_add2 after_install_ewtip      "Cambia lo sfondo del desktop con l'impostazione predefinita EOS"
+_tr_add2 after_install_ewtip      "Cambia lo sfondo del desktop con l'impostazione predefinita barch"
 
 
 _tr_add2 after_install_pm         "Gestione Pacchetti"

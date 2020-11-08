@@ -69,7 +69,7 @@ _tr_add2 after_install_cdm     "Mudar o gestor de visualização"
 _tr_add2 after_install_cdmtip  "Usar um gestor de visualização diferente"
 
 _tr_add2 after_install_ew      "Papel de Parede blackarch"
-_tr_add2 after_install_ewtip   "Mudar o Papel de Parede para o predefinido do EOS"
+_tr_add2 after_install_ewtip   "Mudar o Papel de Parede para o predefinido do barch"
 
 
 _tr_add2 after_install_pm      "Gestão de pacotes"

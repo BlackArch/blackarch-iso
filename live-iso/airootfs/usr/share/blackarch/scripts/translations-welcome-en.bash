@@ -69,7 +69,7 @@ _tr_add2 after_install_cdm     "Change Display Manager"
 _tr_add2 after_install_cdmtip  "Use a different display manager"
 
 _tr_add2 after_install_ew      "blackarch default wallpaper"      # was: "blackarch wallpaper"
-_tr_add2 after_install_ewtip   "Reset to the default wallpaper"     # was: "Change desktop wallpaper to EOS default"
+_tr_add2 after_install_ewtip   "Reset to the default wallpaper"     # was: "Change desktop wallpaper to barch default"
 
 
 _tr_add2 after_install_pm      "Package management"
