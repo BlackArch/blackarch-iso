@@ -26,4 +26,3 @@ alias curl="curl --user-agent 'noleak'"
 
 # tuning
 tuning.sh > /dev/null 2>&1
-

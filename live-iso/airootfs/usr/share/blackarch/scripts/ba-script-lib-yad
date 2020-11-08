@@ -1,0 +1,360 @@
+#!/bin/bash
+#
+# blackarch bash scripts "library". Functions using 'yad'.
+#
+# - ALL FUNCTIONS HERE START WITH "ba_yad_" AND ARE EXPORTED.
+# - NO GLOBAL VARIABLES ARE USED NOR PROVIDED.
+#
+# User MUST declare the following exports in the *using* bash code:
+#
+# export -f ba_yad
+# export -f ba_yad_terminal
+# export -f ba_yad_check_internet_connection
+# export -f ba_yad_GetArgVal
+# export -f ba_yad_RunCmdTermBash
+# export -f ba_yad_problem
+# export -f ba_yad_DIE
+# export -f ba_yad_WARN
+#
+# export -f ba_yad__detectDE
+# export -f ba_yad_GetDesktopName
+# export -f ba_GetArch
+#
+# The two last functions above do not use yad.
+
+source /etc/ba-script-lib-yad.conf      # for ba_ROOTER and other configs
+
+export ba_WICON=/usr/share/blackarch/blackarch-icon.png
+
+ba_yad() {
+    GDK_BACKEND=x11 /usr/bin/yad --window-icon=$ba_WICON "$@"
+}
+#export -f ba_yad
+
+
+ba_GetArch() {
+    local arch="$(/usr/bin/uname -m)"
+    case "$arch" in
+        armv7* | aarch64) arch=armv7h ;;
+    esac
+    printf "%s" "$arch"
+}
+
+
+ba_yad_terminal() {
+    local conf=/etc/ba-script-lib-yad.conf
+    if [ -r $conf ] ; then
+        source $conf
+        if [ -n "$ba_YAD_TERMINAL" ] ; then
+            if [ -x /usr/bin/"$ba_YAD_TERMINAL" ] || [ -x "$ba_YAD_TERMINAL" ] ; then
+                echo "$ba_YAD_TERMINAL"
+                return
+            fi
+            echo "Sorry, terminal program '$ba_YAD_TERMINAL' is not available. Please check your configuration file $conf." | \
+                ba_yad --text-info --title=Warning --height=100 --width=500 --wrap --button=yad-ok:0
+        fi
+    fi
+
+    # Show a terminal that is capable of supporting option -e properly. Empty if not found.
+    # Requires: yad
+    #
+    # These terminal programs are known not to work with this program:
+    #     -
+    # The following terminals are known to work:
+    local suitable_terminals=(
+        xfce4-terminal
+        konsole
+        gnome-terminal
+        mate-terminal
+        lxterminal
+        deepin-terminal
+        terminator
+        qterminal
+        tilix
+        termite
+        xterm
+        kitty
+    )
+    local ba_terminal_prog=""
+    local xx
+
+    for xx in "${suitable_terminals[@]}" ; do
+        if [ -x "/usr/bin/$xx" ] ; then
+            ba_terminal_prog="/usr/bin/$xx"
+            echo "$ba_terminal_prog"
+            return 0
+        fi
+    done
+
+    printf "%s\n    %s\n%s" \
+           "Sorry, none of the terminal programs:" \
+           "${suitable_terminals[*]}" \
+           "is installed. Some features may not work as expected." \
+        | ba_yad --text-info \
+                  --title="Warning" --height=200 --width=700 --wrap --button=yad-ok:0
+    return 1
+}
+
+ba_yad_check_internet_connection() {
+    local verbose="$1"          # yes|verbose = show dialog, otherwise don't show dialog
+    local waitrounds="$2"       # try max $waitrounds times for a connection, test once per $onewait
+    local onewait="$3"          # time to wait in one waiting round
+    local caller="$4"           # who is calling this function (often empty)
+    local ix
+    local title="Warning"
+    local checker="ping -c 1 8.8.8.8"
+
+    case "$ba_CONNECTION_CHECKER" in
+        curl)
+            # checker="curl --silent --connect-timeout 8 https://8.8.8.8"
+            checker=/usr/bin/ba-connection-checker
+            ;;
+    esac
+
+    test -z "$verbose"    && verbose=no
+    test -z "$waitrounds" && waitrounds=5
+    test -z "$onewait"    && onewait=1s
+
+    if [ -n "$caller" ] ; then
+        title+=" at $caller"
+    fi
+
+    for ((ix=0; ix<waitrounds; ix++)) ; do
+        $checker >/dev/null && return 0   # is connected
+        sleep $onewait
+    done
+
+    $checker >/dev/null || {
+        case "$verbose" in
+            [yY]*|1|true|TRUE|True|on|enable*|verbose)
+                echo "No internet connection!" | \
+                    ba_yad --text-info --title="$title" \
+                            --height=100 --width=300 --justify=center --wrap \
+                            --button=yad-quit:1 \
+                            --button=" Continue anyway!go-next!Don't stop me now":0
+                ;;
+            *)
+                return 1
+                ;;
+        esac
+    }
+}
+
+ba_yad_GetArgVal() {
+    echo "${1#*=}"
+    #e cho "$1" | cut -d '=' -f 2
+}
+
+ba_yad_RunCmdTermBash() {
+    local cmd="$1"
+    local prompt="$2"
+    local termopts="$3"
+
+    local term="$(ba_yad_terminal)"
+    test -n "$term" || return 1
+
+    local tmpfile=$(mktemp)
+
+    echo "#!/bin/bash"                                   >> $tmpfile
+    test -n "$prompt" && echo "echo $prompt"             >> $tmpfile
+    echo "$cmd"                                          >> $tmpfile
+    case "$term" in
+        */deepin-terminal) ;;
+        *)
+            echo "read -p 'Press ENTER to close this window: '"  >> $tmpfile
+            ;;
+    esac
+    echo "rm -f $tmpfile"                                >> $tmpfile
+
+    chmod +x $tmpfile
+    case "$term" in
+        /usr/bin/gnome-terminal | gnome-terminal)
+            $term $termopts --wait -- $tmpfile ;;
+        *)
+            $term $termopts -e $tmpfile ;;
+    esac
+
+    # The following DOES NOT WORK with plain gnome-terminal:
+    #echo "Deleting '$tmpfile'."
+    #rm -f $tmpfile
+}
+
+ba_yad_problem() {
+    local title="$1"
+    shift
+    ba_yad --text-info --title="$title" --tail --wrap --image=error \
+            --width=700 --height=500 --button=yad-quit:0 "$@"
+}
+
+ba_yad_DIE() {
+    # This function is only for small messages.
+    # The local Usage can be used only if it is
+    #  - defined before sourcing this file
+    #  - exported
+
+    local msg="$1"
+    local title="Error"
+    shift
+    while true ; do
+        echo "$msg"
+        # run Usage function if available (usually is not ...)
+        test -n "$(declare -F | grep -w '^declare -f Usage$')" && Usage
+        break
+    done | ba_yad_problem "$title" "$@"
+    exit 1
+}
+
+ba_yad_WARN() {
+    local msg="$1"
+    local title="Warning"
+    shift
+    echo "$msg" | ba_yad_problem "$title" --image=dialog-warning "$@"
+}
+
+# Function detectDE is copied from: https://cgit.freedesktop.org/xdg/xdg-utils/tree/scripts/xdg-utils-common.in
+
+#--------------------------------------
+# Checks for known desktop environments
+# set variable DE to the desktop environments name, lowercase
+
+ba_yad__detectDE()
+{
+    # see https://bugs.freedesktop.org/show_bug.cgi?id=34164
+    unset GREP_OPTIONS
+
+    if [ -n "${XDG_CURRENT_DESKTOP}" ]; then
+      case "${XDG_CURRENT_DESKTOP}" in
+         # only recently added to menu-spec, pre-spec X- still in use
+         Budgie*)
+           DE=budgie
+           ;;
+         Cinnamon|X-Cinnamon)
+           DE=cinnamon;
+           ;;
+         DEEPIN|[Dd]eepin)
+           DE=deepin;
+           ;;
+         ENLIGHTENMENT|Enlightenment)
+           DE=enlightenment;
+           ;;
+         # GNOME, GNOME-Classic:GNOME, or GNOME-Flashback:GNOME
+         GNOME*|gnome)
+           DE=gnome;
+           ;;
+         KDE)
+           DE=kde;
+           ;;
+         LXDE)
+           DE=lxde;
+           ;;
+         LXQt)
+           DE=lxqt;
+           ;;
+         MATE)
+           DE=mate;
+           ;;
+         XFCE)
+           DE=xfce
+           ;;
+         X-Generic)
+           DE=generic
+           ;;
+         i3)
+           DE=i3
+           ;;
+      esac
+    fi
+
+    if [ x"$DE" = x"" ]; then
+      # classic fallbacks
+      if [ x"$KDE_FULL_SESSION" != x"" ]; then DE=kde;
+      elif [ x"$GNOME_DESKTOP_SESSION_ID" != x"" ]; then DE=gnome;
+      elif [ x"$MATE_DESKTOP_SESSION_ID" != x"" ]; then DE=mate;
+      elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.gnome.SessionManager > /dev/null 2>&1` ; then DE=gnome;
+      elif xprop -root _DT_SAVE_MODE 2> /dev/null | grep ' = \"xfce4\"$' >/dev/null 2>&1; then DE=xfce;
+      elif xprop -root 2> /dev/null | grep -i '^xfce_desktop_window' >/dev/null 2>&1; then DE=xfce
+      elif echo $DESKTOP | grep -q '^Enlightenment'; then DE=enlightenment;
+      elif [ x"$LXQT_SESSION_CONFIG" != x"" ]; then DE=lxqt;
+      fi
+    fi
+
+    if [ x"$DE" = x"" ]; then
+      # fallback to checking $DESKTOP_SESSION
+      case "$DESKTOP_SESSION" in
+         gnome)
+           DE=gnome;
+           ;;
+         LXDE|Lubuntu)
+           DE=lxde; 
+           ;;
+         MATE)
+           DE=mate;
+           ;;
+         xfce|xfce4|'Xfce Session')
+           DE=xfce;
+           ;;
+         openbox)
+             DE=openbox
+             ;;
+      esac
+    fi
+
+    if [ x"$DE" = x"" ]; then
+      # fallback to uname output for other platforms
+      case "$(uname 2>/dev/null)" in 
+        CYGWIN*)
+          DE=cygwin;
+          ;;
+        Darwin)
+          DE=darwin;
+          ;;
+      esac
+    fi
+
+    if [ x"$DE" = x"gnome" ]; then
+      # gnome-default-applications-properties is only available in GNOME 2.x
+      # but not in GNOME 3.x
+      which gnome-default-applications-properties > /dev/null 2>&1  || DE="gnome3"
+    fi
+
+    if [ -f "$XDG_RUNTIME_DIR/flatpak-info" ]; then
+      DE="flatpak"
+    fi
+
+    if [ -z "$DE" ] ; then
+        # neofetch fails: Enlightenment, openbox
+        # neofetch differs: KDE -> plasma (with DESKTOP_SESSION=openbox-kde and DESKTOP_SESSION=plasma)
+        [ -x /usr/bin/neofetch ] && DE="$(neofetch --enable de --de_version off | awk '{print $NF}' | tr [:upper:] [:lower:])"
+    fi
+}
+
+ba_yad_GetDesktopName() {      # return DE name in uppercase letters
+    local de=$(ba_yad__detectDE && echo "$DE" | tr '[:lower:]' '[:upper:]')
+    echo "$de"
+}
+
+# DIE()  { ba_yad_DIE  "$@" ; }    # deprecated
+# WARN() { ba_yad_WARN "$@" ; }    # deprecated
+
+#SetBrowser() {
+#    local xx
+#    for xx in xdg-open exo-open firefox chromium ; do  # use one of these browser commands
+#        if [ -x /usr/bin/$xx ] ; then
+#            _BROWSER=/usr/bin/$xx        # for showing external links
+#            return
+#        fi
+#    done
+#    DIE "$FUNCNAME: cannot find a browser"
+#}
+
+
+# check the config:
+case "$ba_ROOTER" in
+    su           | "su -c"          | "/usr/bin/su -c" | "")     export ba_ROOTER="/usr/bin/su -c" ;;          # default!
+    sudo         | "sudo bash -c"   | "/usr/bin/sudo bash -c")   export ba_ROOTER="/usr/bin/sudo bash -c" ;;
+    pkexec       | "pkexec bash -c" | "/usr/bin/pkexec bash -c") export ba_ROOTER="/usr/bin/pkexec bash -c" ;;
+    su-c_wrapper)                                                export ba_ROOTER="/usr/bin/su-c_wrapper bash -c" ;;
+    *)
+        ba_yad_DIE "Error: configuration '$ba_ROOTER' for ba_ROOTER in file /etc/ba-script-lib-yad.conf is not supported!"
+        ;;
+esac

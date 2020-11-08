@@ -1,0 +1,53 @@
+#!/bin/bash
+#
+# blackarch initial wallpaper installer for a user.
+#
+
+
+#################################################################################
+ba_SCRIPTS_YAD=/usr/share/blackarch/scripts/ba-script-lib-yad
+source $ba_SCRIPTS_YAD || {
+    echo "ERROR: cannot find $ba_SCRIPTS_YAD" >&2
+    exit 1
+}
+unset ba_SCRIPTS_YAD
+
+export -f ba_yad
+export -f ba_yad_terminal
+export -f ba_yad_check_internet_connection
+export -f ba_yad_GetArgVal
+export -f ba_yad_RunCmdTermBash
+export -f ba_yad_problem
+export -f ba_yad_DIE
+export -f ba_yad_WARN
+export -f ba_yad__detectDE
+export -f ba_yad_GetDesktopName
+#################################################################################
+
+
+Main() {
+    test -x /usr/bin/calamares && return   # don't change wallpaper while installing system
+
+    local DE="$(ba_yad_GetDesktopName)"
+    local confs=(
+        "$HOME/.config/ba-initial-wallpaper.$DE"
+#        "$HOME/.config/ba-initial-wallpaper.general"
+    )
+    local conf
+
+    case "$1" in
+        -r)  rm -f "${confs[@]}" ;;            # -r re-installs the default wallpaper now
+        -rr) rm -f "${confs[@]}" ; return ;;   # same as -r, but not now
+    esac
+
+    # Set default wallpaper only if no DE specific or general config file is found.
+    for conf in "${confs[@]}" ; do
+        [ -r "$conf" ] && return
+    done
+
+    sleep 3
+    ba-wallpaper-set DEFAULT
+    touch "${confs[0]}"
+}
+
+Main "$@"

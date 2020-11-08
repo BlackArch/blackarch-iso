@@ -1,0 +1,1621 @@
+#!/bin/bash
+#
+# Welcome: the blackarch greeter.
+#
+# Shows useful basic info about the blackarch and its usage.
+# Targeted for people new to blackarch (but not new to Linux).
+#
+# TODO:
+# - add icons to buttons once proper supported exists in yad
+
+export PROGNAME=ba-welcome
+export PRETTY_PROGNAME="Welcome"
+
+BA_SCRIPTS_DIR=/usr/share/endeavouros/scripts
+translations_dir=$BA_SCRIPTS_DIR                 # used also by the translations-welcome.bash !!
+
+source $translations_dir/translations-welcome.bash
+
+
+#################################################################################
+BA_SCRIPTS_YAD=$BA_SCRIPTS_DIR/ba-script-lib-yad
+test -r  $BA_SCRIPTS_YAD || {
+    echo "ERROR: cannot find $BA_SCRIPTS_YAD" >&2
+    exit 1
+}
+source $BA_SCRIPTS_YAD
+
+unset BA_SCRIPTS_YAD
+
+#export -f ba_yad
+export -f ba_yad_terminal
+export -f ba_yad_check_internet_connection
+export -f ba_yad_GetArgVal
+export -f ba_yad_RunCmdTermBash
+export -f ba_yad_problem
+export -f ba_yad_DIE
+export -f ba_yad_WARN
+export -f ba_yad__detectDE
+export -f ba_yad_GetDesktopName
+export -f ba_GetArch
+#################################################################################
+
+export PROG_PACKAGENAME="welcome"
+export INSTALLER_PROGRAM=/usr/bin/calamares
+export BA_LIVEUSER=liveuser
+export BA_KEEP_PKGS
+
+export BA_YAD_STARTER_CMD="/usr/bin/yad --window-icon=$BA_WICON"
+
+ba_yad() {
+    GDK_BACKEND=x11 $BA_YAD_STARTER_CMD "$@"
+}
+export -f ba_yad
+
+
+AfterTranslations() {
+    # Here we have definitions that require special treatment because of
+    # yad running in other processes...
+
+    export WH_BUTT_TITLE="$(ltr help_butt_title)"
+    export WH_BUTT_TEXT="$(ltr help_butt_text)"
+
+    export CAL_NOAVAIL="$(ltr cal_noavail)"
+    export CAL_WARN="$(ltr cal_warn)"
+    export CAL_INFO1="$(ltr cal_info1)"
+    export CAL_INFO2="$(ltr cal_info2)"
+    export CAL_INFO3="$(ltr cal_info3)"
+    export CAL_INFO4="$(ltr cal_info4)"
+    export CAL_CHOOSE="$(ltr cal_choose)"
+    export CAL_METHOD="$(ltr cal_method)"
+    export CAL_NOSUPPORT="$(ltr cal_nosupport)"
+    export CAL_NOFILE="$(ltr cal_nofile)"
+    export CAL_ISTARTED="$(ltr cal_istarted)"
+    export CAL_ISTOPPED="$(ltr cal_istopped)"
+    export ISSUES_TITLE="$(ltr issues_title)"
+    export ISSUES_FRUB="$(ltr issues_grub)"
+    export ISSUES_RUN="$(ltr issues_run)"
+    export ISSUES_NO="$(ltr issues_no)"
+    export SYSUP_NO="$(ltr sysup_no)"
+    export SYSUP_CHECK="$(ltr sysup_check)"
+    export INSTALL_INSTALLER="$(ltr install_installer)"
+    export INSTALL_ALREADY="$(ltr install_already)"
+    export INSTALL_ING="$(ltr install_ing)"
+    export INSTALL_DONE="$(ltr install_done)"
+    export DM_TITLE="$(ltr dm_title)"
+    export DM_COL_NAME1="$(ltr dm_col_name1)"
+    export DM_COL_NAME2="$(ltr dm_col_name2)"
+    export DM_REBOOT_REQUIRED="$(ltr dm_reboot_required)"
+    export DM_CHANGED="$(ltr dm_changed)"
+    export DM_FAILED="$(ltr dm_failed)"
+    export DM_WARNING_TITLE="$(ltr dm_warning_title)"
+    export AFTER_INSTALL_US="$(ltr after_install_us)"
+    export AFTER_INSTALL_US_FROM="$(ltr after_install_us_from)"
+    export AFTER_INSTALL_US_EL="$(ltr after_install_us_el)"
+    export AFTER_INSTALL_US_DONE="$(ltr after_install_us_done)"
+    export AFTER_INSTALL_US_FAIL="$(ltr after_install_us_fail)"
+}
+
+export -f ltr
+export tr_strings
+export SELECTED_LANGUAGE_WELCOME
+
+IsInstalled() { pacman -Q "$1" >& /dev/null ; }
+export -f IsInstalled
+
+IsInstalling() {
+    test "$show_installer" = "yes" && return 0
+    test -x $INSTALLER_PROGRAM && test "$LOGNAME" = "$BA_LIVEUSER"
+}
+export -f IsInstalling
+
+yad_tailer() {
+    local file="$1"
+
+    tail -f "$file" | \
+        ba_yad --text-info --title="$(basename "$file")" \
+                --button=" $(ltr tail_butt)!dialog-close!$(ltr tail_buttip)":0 \
+                --width=$width --height=$height --tail --wrap --posx=$posx --posy=$posy \
+                >& /dev/null &
+}
+export -f yad_tailer
+
+ba_yad_WARN_debug() {
+    test "$debugging" = "yes" && ba_yad_WARN "$1"
+}
+export -f ba_yad_WARN_debug
+
+
+_align_buttons_on_tab() {
+    local -n arr="$1"
+    local ix count="${#arr[@]}" xx name newname len=0 le pad tmpname
+
+    for xx in "${arr[@]}" ; do
+        case "$xx" in
+            --field=*)
+                name="${xx/*_align(/}"                # remove from left of name
+                if [ "$name" != "$xx" ] ; then
+                    name="${name/)!*/}"               # remove from right of name
+                    le=${#name}
+                    test $le -gt $len && len=$le
+                fi
+                ;;
+        esac
+    done
+
+    # now we know $len
+
+    ix=0
+    for xx in "${arr[@]}" ; do
+        case "$xx" in
+            --field=*)
+                name="${xx/*_align(/}"                # remove from left of name
+                if [ "$name" != "$xx" ] ; then
+                    name="${name/)!*/}"               # remove from right of name
+                    pad=$((len - ${#name}))
+
+                    # The $pad must be bigger if special chars (like "&#33;" = "!") are present!
+                    # Some translations use special characters.
+                    tmpname="$name"
+                    while [ "${tmpname/&#??;/}" != "$tmpname" ] && [ $pad -lt $len ] ; do
+                        ((pad+=4))                                         # each "&#??;" turns to one char!
+                        tmpname="${tmpname/&#??;/}"
+                    done
+                    while [ "${tmpname/&#???;/}" != "$tmpname" ] && [ $pad -lt $len ] ; do
+                        ((pad+=5))                                         # each "&#???;" turns to one char!
+                        tmpname="${tmpname/&#???;/}"
+                    done
+
+                    newname="<tt> $name$(printf '%*s' $pad)</tt>"
+                    xx="${xx/_align($name)!/$newname!}"
+                    arr[$ix]="$xx"
+                fi
+                ;;
+        esac
+        ((ix++))
+    done
+}
+
+yad_calamares() {
+    local mode="$1"                             # offline, online, choose
+    local debug="$2"
+    local prog=$INSTALLER_PROGRAM
+    local debugging=no
+
+    if [ "$debug" = "stop" ] || [ "$show_installer" != "no" ] ; then
+        debugging=yes
+    fi
+
+    if [ ! -x $prog ] ; then
+        ba_yad --text="$CAL_NOAVAIL $(basename $prog)" --title="$CAL_WARN" --height=100 --width=200 --button=yad-quit:1
+        if [ "$show_installer" = "no" ] ; then
+            ba_yad_WARN_debug "Stopping $FUNCNAME (1)."
+            return 1
+        fi
+    fi
+
+    if [ "$mode" = "choose" ] ; then
+        local t1="$CAL_INFO1"
+        local t2="$CAL_INFO2"
+        local t3="$CAL_INFO3"
+        local t4="$CAL_INFO4"
+        local answer field=1
+        local impl=3   # was 2
+        local heightopt="--height=316"
+
+        case "$impl" in
+            0)
+                answer=$( ba_yad --form --title="$CAL_CHOOSE" --image=dialog-question \
+                                  --text="$t1$t2$t3$t4" \
+                                  --field="$CAL_METHOD":CB 'Offline!Online' )
+                ;;
+            1)
+                answer=$( ba_yad --list --radiolist --title="$CAL_CHOOSE" --image=dialog-question \
+                                  --text="$t1$t2$t3$t4" $heightopt \
+                                  --column="Selected" --column="Method" true Offline false Online )
+                field=2
+                ;;
+            2)
+                answer=$( ba_yad --list  --title="$CAL_CHOOSE" --image=dialog-question \
+                                  --text="$t1$t2$t3$t4" $heightopt --column="Method" Offline  Online )
+                ;;
+            3)
+                ba_yad --form --title="$CAL_CHOOSE" --image=dialog-question \
+                        --text="$t1$t2$t3$t4" --buttons-layout=spread \
+                        --button='Offline!!BA Xfce theming, internet not required':1 \
+                        --button='Online!!Vanilla DE theming, internet required':0
+                case "$?" in
+                    1) answer="offline" ;;
+                    0) answer="online" ;;
+                    *) ba_yad_WARN_debug "Stopping $FUNCNAME (2)." ; return 1 ;;
+                esac
+                ;;
+        esac
+
+        test -n "$answer" || return 1
+        mode=$(echo "$answer" | cut -d '|' -f $field | tr [:upper:] [:lower:])
+    fi
+
+    case "$mode" in
+        offline) ;;
+        online)
+            ba_yad_check_internet_connection verbose || return 1
+            ;;
+        *)  ba_yad_WARN "$CAL_NOSUPPORT '$mode'"     # "$PROGNAME: $FUNCNAME: unsupported mode '$mode'."
+            return 1
+            ;;
+    esac
+
+    local file=/usr/share/calamares/settings.conf_$mode
+    if [ ! -r $file ] ; then
+        ba_yad_WARN "$CAL_NOFILE '$file'"      #  "$PROGNAME: $FUNCNAME: required file '$file' does not exist!"
+        if [ "$show_installer" = "no" ] ; then
+            ba_yad_WARN_debug "Stopping $FUNCNAME (3)."
+            return 1
+        fi
+    fi
+
+    # Stop here if only debugging.
+    if [ "$debugging" = "yes" ] ; then
+        ba_yad_WARN_debug "Stopping $FUNCNAME (4)."
+        return
+    fi
+    if [ "$show_installer" != "no" ] ; then
+        # this 'if' could be removed
+        ba_yad_WARN_debug "Stopping $FUNCNAME (5)."
+        return
+    fi
+
+    case "$mode" in
+        online)
+            file=/usr/share/calamares/modules/netinstall.conf
+            if [ ! -r $file ] ; then
+                echo "Warning: $file not found!" >&2
+            fi
+            if [ -r "/home/$BA_LIVEUSER/netinstall-yaml.url" ] ; then
+                # allow an own netinstall.yaml from a URL config file!
+                local netinstall_url=$(cat "/home/$BA_LIVEUSER/netinstall-yaml.url")
+                if [ -r $file ] ; then
+                    sudo sed \
+                         -i $file \
+                         -e "s|^\([ ]*groupsUrl:\).*/endeavouros-team/.*/netinstall\.yaml$|\1 $netinstall_url|"
+                fi
+            elif [ -n "$(device-info --vga | grep NVIDIA)" ] ; then
+                if [ -n "$(lspci -k | grep -PA3 'VGA|3D' | grep "Kernel driver in use" | grep nvidia)" ] ; then
+                    # allow nvidia install
+                    if [ -r $file ] ; then
+                        sudo sed \
+                             -i $file \
+                             -e 's|^\([ ]*groupsUrl:.*/endeavouros-team/.*\)/netinstall\.yaml$|\1/netinstall_nvidia.yaml|'
+                    fi
+                fi
+            fi
+            ;;
+    esac
+
+    sudo cp -praf /usr/share/calamares/settings.conf_$mode         /usr/share/calamares/settings.conf
+    sudo cp -praf /usr/share/calamares/modules/packages.conf_$mode /usr/share/calamares/modules/packages.conf
+    sudo cp -praf /usr/share/calamares/modules/welcome.conf_$mode  /usr/share/calamares/modules/welcome.conf
+
+    local INSTALL_LOG_FILE=/home/$BA_LIVEUSER/endeavour-install.log
+
+    cat <<EOF > $INSTALL_LOG_FILE
+############## $INSTALL_LOG_FILE
+############## $CAL_ISTARTED (UTC): $(date -u "+%Y-%m-%d %H:%M")
+
+EOF
+    local only_one_output_window=yes   # yes=one, no=more than one
+
+    if [ "$debug" = "yes" ] ; then
+        touch $INSTALL_LOG_FILE        # just making sure the file exists now
+        local how_to_show_terminal=a   # one of: a b c
+
+        case "$how_to_show_terminal" in
+            a)
+                local conf=/home/$BA_LIVEUSER/.config/xfce4/terminal/terminalrc
+                if [ -r $conf ] ; then
+                    echo "ScrollingLines=20000"    >> $conf
+                    echo "ScrollingUnlimited=TRUE" >> $conf
+                fi
+                ba_yad_RunCmdTermBash "tail -f $INSTALL_LOG_FILE" "" "--geometry=120x20+20+20" &
+                ;;
+            b)
+                local posx=50
+                local posy=50
+                local width=600
+                local height=200
+                local inc=$(( height + 50 ))
+                yad_tailer $INSTALL_LOG_FILE
+                posy=$(( posy + inc ))
+                #yad_tailer $PACMAN_LOG
+                ;;
+            c)
+                local conf=/home/$BA_LIVEUSER/.config/xfce4/terminal/terminalrc
+                if [ -r $conf ] ; then
+                    echo "ScrollingLines=20000"    >> $conf
+                    echo "ScrollingUnlimited=TRUE" >> $conf
+                fi
+                ba_yad_RunCmdTermBash "watch -tn1 tail $INSTALL_LOG_FILE" "" "--geometry=120x40+20+20" &
+                ;;
+        esac
+    fi
+
+    if [ "$only_one_output_window" = "yes" ] ; then
+        bash -c "pkexec $prog -d >> $INSTALL_LOG_FILE"  # calamares is running here till the end!
+        printf "\n%s\n" "############## $CAL_ISTOPPED (UTC): $(date -u '+%Y-%m-%d %H:%M')" >> $INSTALL_LOG_FILE
+    else
+        bash -c "pkexec $prog -d >> $INSTALL_LOG_FILE" &   # calamares runs in the background
+        
+        local PACMAN_LOG=""
+        while true
+        do
+            sleep 5
+            PACMAN_LOG="$(/usr/bin/ls -1 /tmp/calamares-root-*/var/log/pacman.log 2>/dev/null | tail -n 1)"
+            if [ -n "$PACMAN_LOG" ] ; then
+                # Houston, we have a pacman log!
+                break
+            fi
+        done
+        yad_tailer $PACMAN_LOG
+    fi
+
+    # Copy install log to /var/log of the installed system.
+    # Note: if $only_one_output_window != yes, this fails.
+
+    local varlog="$(/usr/bin/ls -d /tmp/calamares-root-*/var/log)"
+    if [ -d "$varlog" ] ; then
+        echo "Copying install log to /var/log/$(/usr/bin/basename $INSTALL_LOG_FILE) of the new install." >&2
+        cp $INSTALL_LOG_FILE $varlog
+    fi
+
+    # test $netlog -eq 1 && cat $INSTALL_LOG_FILE | curl -F 'f:1=<-' ix.io
+}
+export -f yad_calamares
+
+yad_calamares_debug() {
+    yad_calamares "$1" yes
+}
+export -f yad_calamares_debug
+
+yad_UpdateMe() {
+    local tmpfile=$(mktemp)
+    cat <<EOF > $tmpfile
+#!/bin/bash
+pkexec pacman -Sy $PROG_PACKAGENAME --needed --noconfirm >& /dev/null && {
+  pkill -f "$PROGNAME"
+  pkill -f "$BA_YAD_STARTER_CMD"
+  $PROGNAME &
+}
+EOF
+    bash $tmpfile
+    sleep 2
+    rm -f $tmpfile
+}
+export -f yad_UpdateMe
+
+yad_UpdateBAtoLatest() {    # Show what to update in order to set any BA install at the "latest level".
+    local removes=(kalu)
+    local installs=(ba-update-notifier reflector-simple)
+    local rem=() ins=()
+    local xx
+    for xx in "${removes[@]}" ; do
+        pacman -Q "$xx" >& /dev/null && rem+=("$xx")
+    done
+    for xx in "${installs[@]}" ; do
+        pacman -Q "$xx" >& /dev/null || ins+=("$xx")
+    done
+    
+    local t1="To have your blackarch install on par with the latest and greatest, the following actions are needed:\n"
+    local t2="- uninstall packages: ${rem[*]}\n"
+    local t3="- install packages: ${ins[*]}\n"
+    local t="$t1"
+    test -n "$rem" && t+="$t2"
+    test -n "$ins" && t+="$t3"
+    test "$t" = "$t1" && t+="Your system is already at the latest level!"
+    ba_yad --text="$t" --title="Upgrading blackarch level" --image=info --button=yad-ok:0
+}
+export -f yad_UpdateBAtoLatest
+
+yad_PkgsToLetGo() {
+    local xx yy
+    local pkgs2letgo
+
+    for xx in "$@" ; do
+        for yy in $BA_KEEP_PKGS ; do
+            test "$xx" = "$yy" && break
+        done
+        if [ "$xx" != "$yy" ] ; then
+            if [ -z "$pkgs2letgo" ] ; then
+                pkgs2letgo="$xx"
+            else
+                pkgs2letgo+=" $xx"
+            fi
+        fi
+    done
+    echo "$pkgs2letgo"
+}
+export -f yad_PkgsToLetGo
+
+yad_PkgIssues() {
+    local cpu
+    local removes=()
+    local commands=":"                            # These commands will be run as root.
+    local title="$ISSUES_TITLE"
+    local intel=0 nvidia=0 amd=0 recreate_grub_cfg=0
+    local graphics
+    local xx pkg pkgs
+    local amd_ucode=0
+    local intel_ucode=0
+    local ok_checks=()
+    local graphics_issues=0
+    local broadcom_wireless_issues=0
+
+    ## Check some "conflicting" packages.
+
+    # Having both amd and intel microcode packages are not needed and may cause issues with grub.
+
+    pacman -Q amd-ucode   >& /dev/null && amd_ucode=1
+    pacman -Q intel-ucode >& /dev/null && intel_ucode=1
+    if [ $amd_ucode -eq 1 ] && [ $intel_ucode -eq 1 ] ; then
+        cpu=$(grep -w "^vendor_id" /proc/cpuinfo | head -n 1 | awk '{print $3}')
+        case "$cpu" in
+            GenuineIntel)
+                pkg="$(yad_PkgsToLetGo amd-ucode)"
+                if [ -n "$pkg" ] ; then
+                    removes+=($pkg)
+                    recreate_grub_cfg=1
+                fi
+                ;;
+            *)
+                pkg="$(yad_PkgsToLetGo intel-ucode)"
+                if [ -n "$pkg" ] ; then
+                    removes+=($pkg)
+                    recreate_grub_cfg=1
+                fi
+                ;;
+        esac
+    else
+        ok_checks+=("Microcode package conflicts: no issue")
+    fi
+
+    # Detecting unnecessary video drivers.
+
+    graphics="$(device-info --vga ; device-info --display)"
+    test -n "$(echo "$graphics" | grep "Intel Corporation")" && intel=1
+    if [ -n "$(echo "$graphics" | grep "NVIDIA Corporation")" ] ; then
+        nvidia=1
+    elif [ -n "$(echo "$graphics" | grep "GeForce")" ] ; then
+        nvidia=1
+    fi
+    if [ -n "$(echo "$graphics" | grep "Advanced Micro Devices")" ] ; then
+        amd=1
+    elif [ -n "$(echo "$graphics" | grep "AMD/ATI")" ] ; then
+        amd=1
+    elif [ -n "$(echo "$graphics" | grep "Radeon")" ] ; then
+        amd=1
+    fi
+
+    if [ $intel -eq 0 ] ; then
+        pkgs="$(yad_PkgsToLetGo xf86-video-intel)"
+        for xx in $pkgs ; do
+            pacman -Q $xx >& /dev/null && {
+                removes+=($xx)
+                ((graphics_issues++))
+            }
+        done
+    fi
+    if [ $nvidia -eq 0 ] ; then
+        pkgs="$(yad_PkgsToLetGo xf86-video-nouveau nvidia nvidia-dkms nvidia-390xx nvidia-390xx-dkms nvidia-lts nvidia-installer-dkms nvidia-settings)"
+        for xx in $pkgs ; do
+            pacman -Q $xx >& /dev/null && {
+                removes+=($xx)
+                ((graphics_issues++))
+            }
+        done
+    fi
+    if [ $amd -eq 0 ] ; then
+        pkgs="$(yad_PkgsToLetGo xf86-video-amdgpu xf86-video-ati)"
+        for xx in $pkgs ; do
+            pacman -Q $xx >& /dev/null && {
+                removes+=($xx)
+                ((graphics_issues++))
+            }
+        done
+    fi
+    if [ $graphics_issues -eq 0 ] ; then
+        ok_checks+=("Graphics package issues: no issue")
+    fi
+
+    # Remove Broadcom wifi driver if using another wifi card.
+
+    case "$BA_WIFIDEV_CHECK" in
+        yes | no) ;;
+        *) BA_WIFIDEV_CHECK=yes ;;
+    esac
+
+    if [ "$BA_WIFIDEV_CHECK" = "yes" ] ; then
+        while true ; do
+            xx=broadcom-wl-dkms
+            pacman -Q $xx >& /dev/null && {
+                local wifi_pci="$(lspci -k | grep -A4 " Network controller: ")"
+                if [ -n "$(lsusb | grep " Broadcom ")" ] || [ -n "$(echo "$wifi_pci" | grep " Broadcom ")" ] ; then
+                    break
+                fi
+                local wifi_driver="$(echo "$wifi_pci" | grep "Kernel driver in use")"
+                if [ -n "$(echo "$wifi_driver" | grep "in use: wl$")" ] ; then
+                    break
+                fi
+                pkg="$(yad_PkgsToLetGo $xx)"
+                test -n "$pkg" && {
+                    removes+=($xx)
+                    ((broadcom_wireless_issues++))
+                }
+            }
+            break
+        done
+    fi
+    if [ $broadcom_wireless_issues -eq 0 ] ; then
+        ok_checks+=("Broadcom wireless driver: no issue")
+    fi
+
+    # Make package removals as a sequence of commands.
+
+    if [ -n "$removes" ] ; then
+        commands+=" ; pacman -Rsn ${removes[*]}"
+        if [ "$recreate_grub_cfg" = "1" ] ; then
+            if [ -x /usr/bin/grub-mkconfig ] ; then
+                commands+=" ; grub-mkconfig -o /boot/grub/grub.cfg"
+            else
+                ba_yad --text="$ISSUES_GRUB" --title="$title" --image=info --button=yad-ok:0
+            fi
+        fi
+    fi
+
+    ## Other commands to execute.
+
+    # systemd-time-wait-sync is not needed. See https://forum.endeavouros.com/t/welcome-enos-launcher/1654/82.
+    xx=systemd-time-wait-sync
+    systemctl status $xx >/dev/null && {
+        commands+=" ; systemctl disable $xx"
+    }
+
+    ## Now run all gathered commands.
+
+    local cmds_as_list="$(echo "${commands[*]}" | sed -e 's|^: ; ||' -e 's| ; |\n|g')"
+
+    if [ "$commands" != ":" ] ; then
+        ba_yad_RunCmdTermBash "printf '$ISSUES_RUN\n%s\n%s\n' '$cmds_as_list' 'Elevated privileges required.' ; $BA_ROOTER '$commands'"
+    else
+        local t="$ISSUES_NO"
+        t+="\n"
+        for xx in "${ok_checks[@]}" ; do
+            t+="\n$xx"
+        done
+        ba_yad --text="$t" --title="$title" --image=info --button=yad-ok:0
+    fi
+}
+export -f yad_PkgIssues
+
+yad_SystemUpdate_old() {
+    local tmpfile=$(mktemp)
+    cat <<EOF > $tmpfile
+#!/bin/bash
+_xx_main() {
+  local updates="\$(checkupdates)"
+  test -n "\$updates" && {
+      echo "\$updates"
+      yay -Syu # --noconfirm
+  } || {
+      echo "$SYSUP_NO"
+  }
+}
+_xx_main
+EOF
+    chmod +x $tmpfile
+    ba_yad_RunCmdTermBash "echo $SYSUP_CHECK ; $tmpfile ; rm -f $tmpfile"
+}
+yad_SystemUpdate() {
+    local cmd
+    local updates
+    local hasupdates=0
+    local source
+    local action
+
+    for source in upstream AUR ; do
+        case "$source" in
+            upstream)
+                updates="$(checkupdates)"
+                action="$BA_ROOTER 'pacman -Syu'"
+                ;;
+            AUR)
+                updates="$(yay -Qua)"
+                action="yay -Syua"
+                ;;
+        esac
+        if [ -n "$updates" ] ; then
+            hasupdates=1
+            cmd="echo '$AFTER_INSTALL_US_FROM $source:'"
+            cmd+=" ; echo '$updates'"
+            test "$source" = "upstream" && cmd+=" ; echo -n '$AFTER_INSTALL_US_EL '"
+            cmd+=" ; $action && printf '\n$source $AFTER_INSTALL_US_DONE\n' || printf '\n$source $AFTER_INSTALL_US_FAIL\n'"
+            ba_yad_RunCmdTermBash "$cmd"
+        fi
+    done
+    if [ $hasupdates -eq 0 ] ; then
+        ba_yad --form --text="$SYSUP_NO" --title="$AFTER_INSTALL_US" --no-focus \
+                --height=100 --width=300 --timeout=10 --timeout-indicator=left \
+                --button=yad-quit:0 --image="$(ba-FindAppIcon system-software-update)"
+    fi
+}
+yad_SystemUpdate_fails() {
+    ba-update-notifier --pkgsonly  # code re-use!
+}
+export -f yad_SystemUpdate
+
+yad_InitializePacmanMirroring() {
+    local tmpfile=$(mktemp)
+    cat <<EOF > $tmpfile
+#!/bin/bash
+haveged -w 1024
+pacman-key --init
+pacman-key --populate
+pacman-key --refresh-keys
+pkill haveged
+EOF
+    chmod +x $tmpfile
+    ba_yad_RunCmdTermBash "echo 'Initializing mirroring for pacman...' ; pkexec $tmpfile ; rm -f $tmpfile"
+}
+export -f yad_InitializePacmanMirroring
+
+yad_Install() {
+    # Install one or more given packages. Does not reinstall any packages.
+
+    local yadcmd="ba_yad --text-info --title="$INSTALL_INSTALLER" --wrap --tail --width=600 --height=500 --button=yad-quit:0"
+
+    local pkg pkgs=()
+    for pkg in "$@" ; do
+        IsInstalled "$pkg" >& /dev/null || pkgs+=("$pkg")
+    done
+    test -z "$pkgs" && {
+        echo "$*: $INSTALL_ALREADY" | $yadcmd
+        return
+    }
+    while true ; do
+        echo "$INSTALL_ING ${pkgs[*]} ..."
+        pkexec pacman -S --noconfirm "${pkgs[@]}"
+        echo "$INSTALL_DONE"
+        break
+    done |& $yadcmd
+}
+export -f yad_Install
+
+yad_Remove() {
+    # Remove one or more given packages.
+
+    # TODO: translate these!
+    local REMOVER="Remover"
+    local REMOVING="Removing"
+    local NOT_INSTALLED="not installed"
+
+    local yadcmd="ba_yad --text-info --title="$REMOVER" --wrap --tail --width=600 --height=500 --button=yad-quit:0"
+
+    local pkg pkgs=()
+    for pkg in "$@" ; do
+        IsInstalled "$pkg" >& /dev/null && pkgs+=("$pkg")
+    done
+    test -z "$pkgs" && {
+        echo "$*: $NOT_INSTALLED" | $yadcmd
+        return
+    }
+    while true ; do
+        echo "$REMOVING ${pkgs[*]} ..."
+        pkexec pacman -Rdd --noconfirm "${pkgs[@]}"
+        echo "$INSTALL_DONE"
+        break
+    done |& $yadcmd
+}
+export -f yad_Remove
+
+yad_GetCurrentDM() {
+    local current=$(ls -l /etc/systemd/system/display-manager.service | awk '{print $NF}')
+    current="$(basename $current .service)"
+    echo "$current"
+}
+export -f yad_GetCurrentDM
+
+yad_ChangeDisplayManager() {
+    local cmd count
+    local dmlist="" dm
+    local dms=(gdm lightdm lxdm sddm)
+    local current=$(yad_GetCurrentDM)
+
+    count="${#dms[@]}"
+
+    cmd=(ba_yad --list --radiolist --title="$DM_TITLE" --width=300 --height=200)
+    cmd+=(--column="$DM_COL_NAME1":rd --column="$DM_COL_NAME2")
+
+    for ((ix=0; ix<count; ix++)) ; do
+        dm="${dms[$ix]}"
+        case "$dm" in
+            $current) cmd+=(true  "$dm") ;;
+            *)        cmd+=(false "$dm") ;;
+        esac
+    done
+
+    # selected new dm
+    dm="$("${cmd[@]}" | cut -d '|' -f 2)"
+
+    case "$dm" in
+        "$current" | "") return ;;
+    esac
+
+    cmd=""
+    IsInstalled "$dm" >& /dev/null || {
+        case "$dm" in
+            lightdm) cmd+="pacman -S ${dm}{,-gtk-greeter{,-settings}} --noconfirm >& /dev/null && ";;
+            *)       cmd+="pacman -S $dm --noconfirm >& /dev/null && " ;;
+        esac
+    }
+    cmd+="systemctl disable $current && systemctl enable $dm"
+    pkexec bash -c "$cmd"
+
+    if [ "$(yad_GetCurrentDM)" = "$dm" ] ; then
+        echo "$DM_REBOOT_REQUIRED" | \
+            ba_yad --text-info --title="$DM_CHANGED $dm" --wrap --width=300 --height=200 --button=yad-quit:0
+    else
+        echo "$DM_FAILED" | \
+            ba_yad --text-info --title="$DM_WARNING_TITLE" --width=300 --height=200 --button=yad-quit:0
+    fi
+}
+export -f yad_ChangeDisplayManager
+
+yad_vanilla_xfce4_theme() {
+    local log="$HOME/.config/BA-xfce-theme.log"
+    local DE="$(ba_yad_GetDesktopName)"
+    local new_theme_name="vanilla"
+    case "$DE" in
+        XFCE)
+            local conf="$HOME/.config/xfce4"
+            local datetime="$(date '+%Y%m%d-%H:%M:%S')"
+            local msg="If you agree to change Xfce theme to $new_theme_name, your previous theme\nwill be saved into folder <b>$conf.$datetime</b>\n\n"
+            msg+="To restore the previous theme:\n     - remove folder <b>$conf</b>\n     - rename <b>$conf.$datetime</b> into <b>$conf</b>\n\n"
+            msg+="(Note: this info is stored into file $log).\n\n"
+            msg+="Reboot is required for the theme change to take effect.\n\nAccept theme change and reboot now?"
+            printf "%s\n" "$msg" | sed -e 's|\\n|\n|g' -e 's|<[/]*b>||g' > "$log"
+            ba_yad --form --title="Change Xfce theme to $new_theme_name" --text="$msg" --image=preferences-desktop-theme \
+                    --button='yad-cancel!!Do nothing':1 --button='yad-ok!!Accept theme change and reboot now':0
+            case "$?" in
+                0) mv $conf $conf.$datetime ; reboot ;;
+            esac
+            ;;
+        *)  echo "Sorry $DE user, only Xfce is supported." > "$log"
+            ;;
+    esac
+}
+export -f yad_vanilla_xfce4_theme
+
+yad_endeavouros_xfce4_theme() {
+    local log="$HOME/.config/BA-xfce-theme.log"
+    local DE="$(ba_yad_GetDesktopName)"
+    local new_theme_name="blackarch default"
+    case "$DE" in
+        XFCE)
+            local conf="$HOME/.config/xfce4"
+            local datetime="$(date '+%Y%m%d-%H:%M:%S')"
+            local msg="If you agree to change Xfce theme to $new_theme_name, your previous theme\nwill be saved into folder <b>$conf.$datetime</b>\n\n"
+            msg+="To restore the previous theme:\n     - remove folder <b>$conf</b>\n     - rename <b>$conf.$datetime</b> into <b>$conf</b>\n\n"
+            msg+="(Note: this info is stored into file $log).\n\n"
+            msg+="Reboot is required for the theme change to take effect.\n\nAccept theme change and reboot now?"
+            printf "%s\n" "$msg" | sed -e 's|\\n|\n|g' -e 's|<[/]*b>||g' > "$log"
+            ba_yad --form --title="Change Xfce theme to $new_theme_name" --text="$msg" --image=preferences-desktop-theme \
+                    --button='yad-cancel!!Do nothing':1 --button='yad-ok!!Accept theme change and reboot now':0
+            case "$?" in
+                0)
+                    mv $conf $conf.$datetime
+                    # Fetch the blackarch default Xfce theme from github.
+                    local tmpdir=$(mktemp -d)
+                    pushd $tmpdir >/dev/null
+                    git clone https://github.com/endeavouros-team/blackarch-archiso.git 2>/dev/null
+                    mv blackarch-archiso/airootfs/etc/skel/.config/xfce4   "$(dirname "$conf")"
+                    mv blackarch-archiso/airootfs/etc/skel/.config/gtk-3.0 "$(dirname "$conf")"
+                    popd >/dev/null
+                    rm -rf $tmpdir
+                    /usr/share/endeavouros/scripts/wallpaper-once -rr   # allows default wallpaper question after reboot
+                    reboot
+                    ;;
+            esac
+            ;;
+        *)  echo "Sorry $DE user, only Xfce is supported." > "$log"
+            ;;
+    esac
+}
+export -f yad_endeavouros_xfce4_theme
+
+WelcomeDevelConf() {
+    # Supported config file variables, defaults, and supported values:
+    #    local _show_change_reso=no      # yes or no
+    #
+    local varname="$1"
+    local fallback="$2"
+
+    test -n "$fallback" || {
+        echo "Error: ${FUNCNAME[1]} calling ${FUNCNAME[0]}: must give two parameters!" >&2
+        return 1
+    }
+
+    # echo "$fallback" ; return
+
+    local devconf="$HOME/.config/welcome-devel.conf"
+    local answer="$fallback"
+
+    if [ -r "$devconf" ] ; then
+        source "$devconf"
+        answer="${!varname}"
+        test -n "$answer" || answer="$fallback"
+    fi
+    echo "$answer"
+
+}
+export -f WelcomeDevelConf
+
+ShowChangeResoButton() {
+    # Allow showing a button for changing the display resolution?
+
+    [ -x /usr/bin/xrandr ] || return
+
+    local show_reso_butt="$(WelcomeDevelConf _show_change_reso no)"
+
+    if [ "$show_reso_butt" = "no" ] ; then
+        case "$(lspci -vnn)" in
+            *" QEMU "* | *VMware* | *VirtualBox*)
+                show_reso_butt=yes                  # in a VM always show the button
+                ;;
+        esac
+    fi
+    if [ -x $INSTALLER_PROGRAM ] || [ "$LOGNAME" = "$BA_LIVEUSER" ] || [ "$show_installer" = "yes" ] ; then
+        show_reso_butt=yes                  # show the button if installing
+    fi
+
+    if [ "$show_reso_butt" = "yes" ] ; then
+        tabcontents+=(--field="_align($(ltr ins_reso))!display!$(ltr ins_resotip)":fbtn   ChangeDisplayResolution)
+    fi
+}
+export -f ShowChangeResoButton
+
+INSTALL() {
+  local handle="$1"
+  local tabnum="$2"
+  local _exclamation='&#33;'   # '!'
+  local image=$system_software_install
+  local gparted="$(ba-FindAppIcon gparted)"
+  local reflector_simple="$(ba-FindAppIcon software-update-available)"
+  local user_info=info
+  local tabcontents=(
+      ba_yad
+      --plug="$handle" --tabnum="$tabnum" --form  --columns=2
+      --image=$image
+      --text="<b>$(ltr ins_text)</b>" --text-align=left
+      --field="_align($(ltr ins_start))!$system_software_install!$(ltr ins_starttip)":fbtn                 'bash -c "yad_calamares_debug choose"'
+      --field="_align($(ltr ins_up))!$system_software_update!$(ltr ins_uptip)":fbtn                        'bash -c yad_UpdateMe'
+      --field="_align($(ltr after_install_um))!$reflector_simple!$(ltr after_install_umtip)":fbtn          reflector-simple
+  )
+
+  ShowChangeResoButton
+
+  tabcontents+=(
+#      --field="_align($(ltr ins_keys))!$system_software_update!$(ltr ins_keystip)":fbtn                   'bash -c yad_InitializePacmanMirroring'
+      --field="_align($(ltr ins_pm))!$gparted!$(ltr ins_pmtip)":fbtn                          'gparted'
+      --field="_align($(ltr ins_rel))!$user_info!$(ltr ins_reltip)":fbtn                      "$_BROWSER https://endeavouros.com/latest-release"
+      --field="_align($(ltr ins_tips))!$user_info!$(ltr ins_tipstip)":fbtn                    "$_BROWSER https://endeavouros.com/docs/installation"
+      --field="_align($(ltr ins_trouble))!$user_info!$(ltr ins_troubletip)":fbtn              "$_BROWSER https://endeavouros.com/docs/system-rescue"
+  )
+
+  _align_buttons_on_tab tabcontents
+
+  "${tabcontents[@]}" >& /dev/null &
+
+  # could use 'gparted' as the icon for gparted...
+}
+
+GeneralInfo() {
+  local handle="$1"
+  local tabnum="$2"
+  IsInstalling && {
+      local user_info=info
+  }
+  local tabcontents=(
+      ba_yad
+      --plug="$handle" --tabnum="$tabnum" --form --columns=2
+      --image=dialog-question
+      --text="<b>$(ltr general_info_text)</b>" --text-align=left
+      --field="_align($(ltr general_info_ws))!$user_info!https://endeavouros.com":fbtn          "$_BROWSER https://endeavouros.com"
+      --field="_align($(ltr general_info_wi))!$user_info!$(ltr general_info_witip)":fbtn        "$_BROWSER https://endeavouros.com/wiki"
+      --field="_align($(ltr general_info_ne))!$user_info!$(ltr general_info_netip)":fbtn        "$_BROWSER https://endeavouros.com/news"
+      --field="_align($(ltr general_info_fo))!$user_info!$(ltr general_info_fotip)":fbtn        "$_BROWSER https://forum.endeavouros.com"
+      --field="_align($(ltr general_info_do))!$user_info!$(ltr general_info_dotip)":fbtn        "$_BROWSER https://endeavouros.com/donate"
+      --field="_align($(ltr general_info_ab))!$user_info!$(ltr general_info_abtip)":fbtn        "$_BROWSER https://endeavouros.com/docs/applications/welcome"
+  )
+
+  _align_buttons_on_tab tabcontents
+
+  "${tabcontents[@]}" >& /dev/null &
+}
+
+RunIfInstalled() {
+    local app pkg
+    local opt
+
+    while [ -n "$1" ] ; do
+        opt="$1"
+        case "$opt" in
+            -a=*) app="${opt#*=}" ; shift ;;
+            -p=*) pkg="${opt#*=}" ; shift ;;
+            -*) ba_yad_WARN "$FUNCNAME: unsupported option '$opt'" ; return ;;
+            *) break ;;
+        esac
+    done
+
+    app="/usr/bin/$app"
+    if [ -x "$app" ] ; then
+        "$app" "$@"
+    else
+        test -n "$pkg" || pkg="$(basename $app)"
+        ba_yad_WARN "Sorry, application '$app' from package '$pkg' is needed." \
+                     --text="Application not installed" \
+                     --width=800 --height=200
+    fi
+}
+export -f RunIfInstalled
+
+AfterInstall() {
+  local handle="$1"
+  local tabnum="$2"
+  local _exclamation='&#33;'   # '!'
+
+  local tabcontents=(
+      ba_yad
+      --plug="$handle" --tabnum="$tabnum" --form --columns=2
+      --image=dialog-information
+      --text="<b>$(ltr after_install_text)</b>"
+  )
+  if [ "$(ba_GetArch)" != "armv7h" ] ; then
+     tabcontents+=(--field="_align($(ltr after_install_um))!applications-internet!$(ltr after_install_umtip)":fbtn "bash -c 'RunIfInstalled -a=reflector-simple'")
+  fi
+  tabcontents+=(
+      --field="_align($(ltr after_install_us))!$system_software_update!$(ltr after_install_ustip)":fbtn 'bash -c yad_SystemUpdate'
+      --field="_align($(ltr after_install_pclean))!applications-system!$(ltr after_install_pcleantip)":fbtn 'paccache-service-manager'
+  )
+  test "$(ba_GetArch)" != "armv7h" && \
+      tabcontents+=(--field="_align($(ltr after_install_cdm))!preferences-desktop-display!$(ltr after_install_cdmtip)":fbtn 'bash -c yad_ChangeDisplayManager')
+
+  ShowChangeResoButton
+
+  tabcontents+=(
+      --field="_align($(ltr after_install_ew))!preferences-desktop-wallpaper!$(ltr after_install_ewtip)":fbtn    'ba-wallpaper-set DEFAULT'    # 'ba-set-background-picture'
+      --field="_align($(ltr after_install_ew2))!preferences-desktop-wallpaper!$(ltr after_install_ewtip2)":fbtn  'ba-wallpaper-set'
+  )
+
+  Check_r8168 && tabcontents+=(--field="_align(Ethernet issue? Remove r8168)!$system_software_update!Removing r8168 may fix your ethernet issue (reboot required)":fbtn "bash -c 'yad_Remove r8168'")
+
+  case "$(ba_yad_GetDesktopName)" in
+    XFCE)
+        tabcontents+=(
+            --field="_align($(ltr after_install_themevan))!preferences-desktop-theme!$(ltr after_install_themevantip)":fbtn  'bash -c yad_vanilla_xfce4_theme'
+            --field="_align($(ltr after_install_themedef))!preferences-desktop-theme!$(ltr after_install_themedeftip)":fbtn  'bash -c yad_endeavouros_xfce4_theme'
+        )
+        ;;
+  esac
+
+  _align_buttons_on_tab tabcontents
+
+  "${tabcontents[@]}" >& /dev/null &
+}
+
+UsefulTips() {
+  local handle="$1"
+  local tabnum="$2"
+  local _and='&#38;'           # '&'
+
+  local tabcontents+=(
+      ba_yad
+      --plug="$handle" --tabnum="$tabnum" --form --columns=2
+      --image=$user_info
+      --text="<b>$(ltr useful_tips_text)</b>"
+      --field="_align($(ltr after_install_pm))!$user_info!$(ltr after_install_pmtip)":fbtn     "$_BROWSER https://endeavouros.com/docs/pacman/package-management-in-endeavouros"
+      --field="_align($(ltr after_install_ay))!$user_info!$(ltr after_install_aytip)":fbtn     "$_BROWSER https://endeavouros.com/docs/aur/yay"
+      --field="_align($(ltr after_install_hn))!$user_info!$(ltr after_install_hntip)":fbtn     "$_BROWSER https://endeavouros.com/docs/hardware-and-network"
+      --field="_align($(ltr after_install_bt))!$user_info!$(ltr after_install_bttip)":fbtn     "$_BROWSER https://endeavouros.com/docs/hardware-and-network/bluetooth"
+  )
+  test "$(ba_GetArch)" != "armv7h" && \
+      tabcontents+=(--field="_align($(ltr after_install_nv))!$user_info!$(ltr after_install_nvtip)":fbtn "$_BROWSER https://endeavouros.com/docs/hardware-and-network/nvidia-installer")
+  tabcontents+=(
+      --field="_align($(ltr after_install_ft))!$user_info!$(ltr after_install_fttip)":fbtn     "$_BROWSER https://endeavouros.com/docs/forum/how-to-include-systemlogs-in-your-post"
+      --field="_align($(ltr butt_owncmds_help))!$user_info!$(ltr nb_tab_owncmdstip)":fbtn     "$_BROWSER https://github.com/endeavouros-team/PKGBUILDS/blob/master/welcome/Adding-own-commands.md"
+      --field="_align($(ltr butt_owncmds_dnd))!$BA_WICON!$(ltr butt_owncmds_dnd_help)":fbtn  "welcome-dnd"
+  )
+
+  _align_buttons_on_tab tabcontents
+
+  "${tabcontents[@]}" >& /dev/null &
+}
+
+AddMoreApps() {
+  local handle="$1"
+  local tabnum="$2"
+
+  local shown_app_buttons=0
+  local DE="$(ba_yad_GetDesktopName)"
+
+  local gufw="$(ba-FindAppIcon gufw)"
+  test -n "$gufw" || gufw="$(ba-FindAppIcon network-firewall)"
+  test -n "$gufw" || gufw="$(ba-FindAppIcon firewall-config)"
+
+  local libreoffice="$(ba-FindAppIcon libreoffice-writer)"
+  test -n "$libreoffice" || libreoffice="$(ba-FindAppIcon libreoffice)"
+
+  local chromium="$(ba-FindAppIcon chromium)"
+  test -n "$chromium" || chromium="$(ba-FindAppIcon web-browser)"
+
+  local tabcontents=(
+      ba_yad
+      --plug="$handle" --tabnum="$tabnum" --form --text-align=left --columns=2
+      --image=$system_software_install
+  )
+  IsInstalled libreoffice-fresh || {
+      ((shown_app_buttons++))
+      tabcontents+=( --field="_align(LibreOffice)!$libreoffice!$(ltr add_more_apps_lotip)":fbtn 'bash -c "yad_Install libreoffice-fresh"')
+  }
+  IsInstalled chromium || {
+      ((shown_app_buttons++))
+      tabcontents+=(--field="_align($(ltr add_more_apps_ch))!$chromium!$(ltr add_more_apps_chtip)":fbtn 'bash -c "yad_Install chromium"')
+  }
+  IsInstalled gufw || {
+      ((shown_app_buttons++))
+      tabcontents+=(--field="_align($(ltr add_more_apps_fw))!$gufw!$(ltr add_more_apps_fwtip)":fbtn 'bash -c "yad_Install gufw"')
+  }
+
+  if [ "$(ba_GetArch)" != "armv7h" ] ; then
+      IsInstalled akm || {
+          ((shown_app_buttons++))
+          tabcontents+=(--field="_align($(ltr add_more_apps_akm))!$system_software_install!$(ltr add_more_apps_akmtip)":fbtn 'bash -c "yad_Install akm"')
+      }
+  fi
+  case "$DE" in
+    XFCE)
+        while true ; do                       # Show buttons only if none of them are installed.
+            IsInstalled blueberry && break
+            IsInstalled blueman && break
+            ((shown_app_buttons+=2))
+            local bluetooth="$(ba-FindAppIcon bluetooth)"
+            tabcontents+=(
+                --field="_align($(ltr add_more_apps_bt))!$bluetooth!Blueberry":fbtn                   'bash -c "yad_Install blueberry bluez-utils"'
+                --field="_align($(ltr add_more_apps_bt_bm))!$bluetooth!Blueman":fbtn                  'bash -c "yad_Install blueman bluez-utils"'
+            )
+            break
+        done
+        ;;
+  esac
+  # General app browsing buttons:
+  if [ "$(ba_GetArch)" = "armv7h" ] ; then
+      tabcontents+=(--field="$(ltr add_more_apps_arch)!!$(ltr add_more_apps_done2_tip1)":fbtn "$_BROWSER https://www.archlinuxarm.org/packages")
+  else
+      tabcontents+=(--field="$(ltr add_more_apps_arch)!!$(ltr add_more_apps_done2_tip1)":fbtn "$_BROWSER https://www.archlinux.org/packages")
+  fi
+  tabcontents+=(--field="$(ltr add_more_apps_aur)!!$( ltr add_more_apps_done2_tip2)":fbtn "$_BROWSER https://aur.archlinux.org/packages")
+
+  if [ $shown_app_buttons -eq 0 ] ; then
+      tabcontents+=(--text="<b>$(ltr add_more_apps_done1_text)$(ltr add_more_apps_done2_text)</b>")
+  else
+      tabcontents+=(--text="<b>$(ltr add_more_apps_text).$(ltr add_more_apps_done2_text)</b>")
+  fi
+
+  _align_buttons_on_tab tabcontents
+
+  "${tabcontents[@]}" >& /dev/null &
+}
+
+OwnCommands() {
+  local handle="$1"
+  local tabnum="$2"
+  local _and='&#38;'           # '&'
+  local cols="$columns_for_own_commands"
+  local show_buttons="$show_predefined_buttons_at_own_commands"
+
+  case "$show_buttons" in
+      no) ;;
+      *) show_buttons=yes ;;
+  esac
+
+  while true ; do
+      if [ -z "$cols" ] ; then
+          cols=2
+      elif [ -n "$(echo "$cols" | tr -d '0-9')" ] ; then
+          cols=2
+          echo "Warning: value '$columns_for_own_commands' for variable 'columns_for_own_commands' is unsupported, using $cols." >&2
+      elif [ $cols -lt 1 ] || [ $cols -gt 20 ] ; then
+          cols=2
+          echo "Warning: value '$columns_for_own_commands' for variable 'columns_for_own_commands' is unsupported, using $cols." >&2
+      fi
+      break
+  done
+
+  local tabcontents=(
+      ba_yad
+      --plug="$handle" --tabnum="$tabnum" --form --columns=$cols
+      --image=applications-other
+      --text="<b>$(ltr nb_tab_owncmds_text)</b>"
+  )
+  if [ "$show_buttons" = "yes" ] ; then
+      tabcontents+=(
+          --field="_align($(ltr butt_owncmds_help))!$user_info!$(ltr nb_tab_owncmdstip)":fbtn
+                  "$_BROWSER https://github.com/endeavouros-team/PKGBUILDS/blob/master/welcome/Adding-own-commands.md"
+          --field="_align($(ltr butt_owncmds_dnd))!$BA_WICON!$(ltr butt_owncmds_dnd_help)":fbtn  "welcome-dnd"
+      )
+  fi
+  tabcontents+=("${welcome_own_commands[@]}")
+
+  _align_buttons_on_tab tabcontents
+
+  "${tabcontents[@]}" >& /dev/null &
+}
+
+About() {
+  local handle="$1"
+  local tabnum="$2"
+
+  Usage | ba_yad --plug="$handle" --tabnum="$tabnum" \
+                  --text-info \
+                  --text="<b>More info about the $PRETTY_PROGNAME app</b>" \
+                  --text-align=left \
+                  --image=help-about \
+      &> /dev/null &
+}
+
+
+# Fields explanation:
+# --field="ButtonName!IconName!Tooltip":fbtn "Command"
+
+### These variables are required:
+
+CreateNotebookCommands() {
+    IsInstalling && {
+        _NOTEBOOK_TABS=(                             # names of functions above
+            INSTALL
+            GeneralInfo
+        )
+    } || {
+        _NOTEBOOK_TABS=(                             # names of functions above
+            GeneralInfo
+            AfterInstall
+            UsefulTips
+            AddMoreApps
+            #About
+        )
+    }
+    if [ -n "$welcome_own_commands" ] ; then
+        _NOTEBOOK_TABS+=(OwnCommands)
+    fi
+}
+
+####################### DO NOT CHANGE ANYTHING AFTER THIS LINE! ######################################################
+
+DIE() {
+    local title="Error"
+    while true ; do
+        echo "Error: $1."
+        Usage
+        break
+    done | ba_yad_problem "$title" "$@"
+    exit 1
+}
+
+WelcomeHelp() {
+    Usage | ba_yad --text-info --title="$WH_BUTT_TITLE" --width=600 --height=500 \
+                    --text="<b>$WH_BUTT_TEXT</b>" \
+                    --text-align=left \
+                    --image=help-about --button=yad-ok:0
+}
+export -f WelcomeHelp
+
+WelcomeChangelog() {
+    SetBrowser
+    $_BROWSER https://github.com/endeavouros-team/PKGBUILDS/commits/master/welcome 2> /dev/null
+}
+export -f WelcomeChangelog
+
+SetBrowser() {
+    local xx
+    for xx in xdg-open exo-open firefox chromium ; do  # use one of these browser commands
+        if [ -x /usr/bin/$xx ] ; then
+            _BROWSER=/usr/bin/$xx        # for showing external links
+            return
+        fi
+    done
+    DIE "$FUNCNAME: cannot find a browser"
+}
+export -f SetBrowser
+
+PrepareTabs() {
+    local handle="$1"
+    local xx ix
+    ix=1
+    for xx in "${_NOTEBOOK_TABS[@]}" ; do
+        $xx "$handle" "$((ix++))"
+    done
+}
+
+SeparateWordsWithSpaces() { # add a space before a capital letter inside a word
+    local tabname="$1"
+
+    if [ "$(echo "$tabname" | tr -d '[a-z]')" = "$tabname" ] ; then
+        echo "$tabname"           # all capital letters ==> don't change
+    else
+        echo "$tabname" | sed -e 's|\([A-Z]\)| \1|g' -e 's|^ ||'  # add space before capital letters
+    fi
+}
+
+KillExtraYad() {
+    sleep 0.2
+    ba-kill-yad-zombies
+    return
+
+    # There may be an extra "yad" process in vain because
+    # the "save session" feature of Xfce has not stored the proper command for this app.
+    #
+    # The extra yad process will be eliminated by
+    #   - removing the extra "yad" command from the stored session
+    #   - killing the extra "yad" process if it exists
+
+    # Remove the extra "yad" command from the saved session.
+    local savefile="$(ls -1 "$HOME"/.cache/sessions/xfce4-session-* 2>/dev/null | grep -vP "\.bak$" | tail -n 1)"
+    if [ -n "$savefile" ] ; then
+        local count=$(grep ^LegacyCount= "$savefile" | cut -d '=' -f 2)
+        local endcount=$count
+        if [ "$(grep "^Legacy0_Command=yad$" "$savefile")" != "" ] || [ "$(grep "^Legacy0_Command=ba_yad$" "$savefile")" != "" ] ; then
+            ((endcount--))
+            sed -i "$savefile" \
+                -e 's|^Legacy0_Screen=.*$||' \
+                -e 's|^Legacy0_Command=.*$||' \
+                -e 's|^Legacy0_ClientMachine=.*$||'
+        fi
+        if [ $endcount -ne $count ] ; then
+            sed -i "$savefile" -e 's|^LegacyCount=.*$|LegacyCount='$endcount'|'
+        fi
+    fi
+
+    # Now check if an extra "yad" process is already running. If so, simply kill it.
+
+    sleep 0.1    # must wait a bit!
+
+    local yadlines yadline
+    local pid ppid lastword
+    local processes="$(ps -ef | grep -w yad | grep -v "grep -w yad" | grep -v "^root")"  # search 'yad' without 'root'
+    local problem_ppid=1
+
+    # search for the right "extra" yad process
+    if [ "$(echo "$processes" | awk '{print $NF}')" = "yad" ] ; then
+        readarray -t yadlines <<< "$(echo "$processes")"
+        for yadline in "${yadlines[@]}" ; do
+            lastword="$(echo "$yadline" | awk '{print $NF}')"
+            ppid="$(echo "$yadline" | awk '{print $3}')"
+            if [ "$lastword" = "yad" ] && [ "$ppid" = "$problem_ppid" ] ; then
+                # found the "extra" yad process
+                pid="$(echo "$yadline" | awk '{print $2}')"
+                kill $pid
+                echo "$yadline" > /tmp/save-session-zombie-yad-killed.log
+            fi
+        done
+    fi
+}
+
+
+WelcomeSettings() {
+    local value="$1"   # enable, disable, check
+    declare -A defaults
+    local xx
+
+    defaults[Greeter]="Greeter=enable"
+    defaults[LastCheck]="LastCheck=0"
+    defaults[OnceDaily]="OnceDaily=no"
+
+    # Make sure we have sensible initial values in the config file.
+    if [ ! -r "$WELCOME_CONFIG" ] ; then
+        cat <<EOF > "$WELCOME_CONFIG"
+## Configuration file for $PROGNAME.
+# Note: using bash syntax.
+#
+# 'Greeter'   values: enable or disable.
+# 'OnceDaily' values: no or yes; yes means $PROGNAME is shown only once a day.
+# 'LastCheck' values: automatically filled by $PROGNAME.
+
+EOF
+    fi
+
+    for xx in Greeter OnceDaily LastCheck ; do
+        if [ -z "$(grep "^${xx}=" "$WELCOME_CONFIG" 2>/dev/null)" ] ; then
+            echo "${defaults[$xx]}" >> "$WELCOME_CONFIG"
+        fi
+    done
+
+    # Now the initial values are in order.
+
+    case "$value" in
+        enable | disable)
+            sed -i "$WELCOME_CONFIG" -e 's|^Greeter=.*$|Greeter='"$value"'|'
+            ;;
+    esac
+
+    case "$value" in
+        disable)
+            echo "$(ltr settings_dis_contents)" | \
+                ba_yad --text-info --image=dialog-information --text="$(ltr settings_dis_text)" \
+                        --title="$(ltr settings_dis_title)" \
+                        --geometry=500x200 --wrap \
+                        --fontname="Monospace Regular 12" \
+                        --button=" $(ltr settings_dis_butt)!face-angel!$(ltr settings_dis_buttip)":0 >& /dev/null
+            ;;
+        check)
+            grep "^Greeter=" "$WELCOME_CONFIG" 2>/dev/null | cut -d '=' -f 2
+            ;;
+        continue)
+            # IsInstalling && { echo yes ; return ; }  # not needed, installer has default values
+            if [ "$(grep "^OnceDaily=" "$WELCOME_CONFIG" 2>/dev/null | cut -d '=' -f 2)" = "no" ] ; then
+                echo yes
+                return
+            fi
+            local date="$(date +%Y%m%d)"
+            if [ "$(grep "^LastCheck=" "$WELCOME_CONFIG" 2>/dev/null | cut -d '=' -f 2)" = "$date" ] ; then
+                echo "Info: Stopping because of setting OnceDaily=yes in file $WELCOME_CONFIG." >&2
+                echo no
+            else
+                echo yes
+            fi
+            sed -i "$WELCOME_CONFIG" -e 's|^LastCheck=.*$|LastCheck='"$date"'|'
+            ;;
+    esac
+}
+
+Check_r8168() {
+    # return 0 if r8168 is installed and no internet connection
+    IsInstalled r8168 >& /dev/null || return 1
+    ba_yad_check_internet_connection none 0 "0s" && return 1
+    return 0
+}
+export -f Check_r8168
+
+UpdateInstallScripts() {
+    # IsInstalling || return
+    if [ -x $INSTALLER_PROGRAM ] || [ "$LOGNAME" = "$BA_LIVEUSER" ] ; then
+        return
+        # the files below are needed only for installing
+    fi
+
+    local URL=https://github.com/endeavouros-team/install-scripts/raw/master
+    local scripts=(                        # may need to adjust files ...
+        calamares_switcher
+        chrooted_cleaner_script.sh
+        cleaner_script.sh
+        pacstrap_calamares
+        update-mirrorlist
+    )
+    local script
+    local tmpdir=$(mktemp -d)
+
+    for script in "${scripts[@]}"; do
+        wget -q --timeout=10 -O "$tmpdir/$script" "$URL/$script" || DIE "cannot fetch script '$script'."
+        chmod +x "$tmpdir/$script"
+    done
+    for script in "${scripts[@]}"; do
+        sudo rm -f /usr/bin/"$script"
+        sudo mv "$tmpdir/$script" /usr/bin
+    done
+    rm -rf $tmpdir
+}
+
+Usage() {
+    cat <<EOF
+Usage: $PROGNAME [options]
+
+Options:
+--startdelay=X    Wait before actually starting this app.
+                  X value syntax is the same as in 'sleep'.
+--enable | -f     Enable this $PRETTY_PROGNAME app.
+--disable         Disable this $PRETTY_PROGNAME app.
+--version         Show the version of this app.
+--lang=X          Use language X on the user interface.
+--changelog       Show the changelog of this package.
+
+Experimental options:
+--genlang=X       Generate language X support for the user interface of the Welcome app.
+                  X is a shorthand of two lowercase letters, like de, en, or fr.
+                  Note: requires package 'translate-shell' to be already installed.
+                  Try command 'trans -R' to see a list of available languages.
+
+To have $PRETTY_PROGNAME app started when you log in, make sure
+- $PRETTY_PROGNAME app is selected in the Autostart feature of the DE
+    OR
+- "Hidden=false" is set in file /etc/xdg/autostart/welcome.desktop
+
+On DEs that do not work well with Autostart:
+You may also disable the $PRETTY_PROGNAME app from the app itself
+- with the --disable option
+- with a button in the app (some DEs only)
+
+To re-enable the app, use the terminal command
+    $PROGNAME --enable
+
+Note: check also settings in the configuration file $WELCOME_CONFIG.
+
+Option --lang=X is currently experimental and supports only a very small set
+of languages. The X should consist of two lowercase letters
+(like 'en' for English or 'de' for German).
+If option --lang is not given, the (default) value is extracted from
+the first two letters of the environment variable LANG.
+EOF
+}
+export -f Usage
+# --tr-prefer=X     Prefer either 'manual' or 'generated' language on the user interface.
+#                   Note: value 'generated' is meaningful only after option --genlang has
+#                   been used at least once.
+
+
+StartHere() {
+    local arg lang
+    local yad_zombie_log=/tmp/yad-zombies.log
+    local tr_engine=bing
+    local tr_prefer=manual
+
+    # common button icons
+    local user_info="$(ba-FindAppIcon user-info)"
+    local system_software_update="$(ba-FindAppIcon system-software-update)"
+    local system_software_install="$(ba-FindAppIcon system-software-install)"
+
+    for arg in "$@" ; do
+        case "$arg" in
+            --changelog)
+                WelcomeChangelog
+                return
+                ;;
+            --lang=*) lang="${arg#*=}" ;;
+            --tr-engine=*) tr_engine="${arg#*=}" ;;
+            --tr-prefer=*) tr_prefer="${arg#*=}" ;;
+            --genlang=*)
+                lang="${arg#*=}"
+                _init_translations --tr-engine="$tr_engine" --generate "$lang"
+                return
+                ;;
+        esac
+    done
+
+    _init_translations --tr-prefer="$tr_prefer" "$lang" || { echo "language fail" >&2 ; exit 1 ; }
+
+    AfterTranslations
+
+    local WELCOME_CONFIG="$HOME/.config/BA-greeter.conf"     # "Welcome" used to be "Greeter" ...
+    KillExtraYad > $yad_zombie_log
+
+    export show_installer=no    # explicitly show the installer, for testing only
+    local start_delay=0
+    local is_installing
+    local prog_version="$(pacman -Q $PROG_PACKAGENAME | awk '{print $2}')"
+    local _NOTEBOOK_TITLE="$PRETTY_PROGNAME v$prog_version"        # main window title
+
+    #local netlog=0
+
+    for arg in "$@" ; do
+        case "$arg" in
+            --enable|-f) WelcomeSettings enable ;;
+            --disable)   WelcomeSettings disable ; return ;;
+            --startdelay=*) start_delay="${arg#*=}" ;;
+            --installer) export show_installer=yes ;;
+            --version) echo "$prog_version" >&2 ; return ;;
+            --lang=* | --tr-prefer=*) ;; # already handled!
+            #--netlog) netlog=1 ;;
+            -*) DIE "unsupported option '$arg'" ;;
+            *)  DIE "unsupported parameter '$arg'" ;;
+        esac
+    done
+
+    if [ "$(WelcomeSettings continue)" = "no" ] ; then
+        return
+    fi
+
+    local own_commands_conf="$HOME/.config/welcome-own-cmds.conf"
+
+    if [ -r    "$own_commands_conf" ] ; then
+        source "$own_commands_conf"
+    fi
+
+    CreateNotebookCommands
+
+    if [ "$(WelcomeSettings check)" != "enable" ] ; then
+        ltr2 welcome_disabled
+        return
+    fi
+
+    IsInstalling
+    test $? -eq 0 && is_installing=yes || is_installing=no
+
+    if [ "$start_delay" != "0" ] ; then
+        sleep "$start_delay"
+    fi
+
+    if [ "$is_installing" = "no" ] ; then
+        local verbosity
+        if [ "$BA_WELCOME_CONNECTION_WARNING" = "yes" ] ; then
+            verbosity=verbose
+        else
+            verbosity=none
+        fi
+        ba_yad_check_internet_connection $verbosity 20 "3s" "Welcome" || return 1
+
+        if [ -n "$TERMINAL_AT_START" ] ; then
+            arg="$(echo "$TERMINAL_AT_START" | awk '{print $1}')"
+            which "$arg" 2>/dev/null && {
+                $TERMINAL_AT_START &
+            } || {
+                echo "Warning: terminal '$arg' (setting TERMINAL_AT_START) in file /etc/ba-script-lib-yad.conf is not supported." >&2
+            }
+        fi
+    else
+        :
+        #if [ -z "$(grep '=/usr/share/endeavouros/scripts/welcome' /home/$BA_LIVEUSER/.config/xfce4/panel/launcher-*/*.desktop)" ] ; then
+        #    xfce4-panel --add=launcher $BA_SCRIPTS_DIR/welcome-panel.desktop
+        #fi
+    fi
+
+    # UpdateInstallScripts
+
+    SetBrowser
+
+    local handle="$(shuf -i 700000-999999 -n 1)"
+    local tab tabname
+    local notebook   # contains the main yad command
+
+    PrepareTabs "$handle" || DIE "PrepareTabs failed"
+
+    # Create the yad command gradually into an array 'notebook':
+
+    notebook=(ba_yad --notebook --key="$handle" --center --title="$_NOTEBOOK_TITLE")
+
+    for tab in "${_NOTEBOOK_TABS[@]}" ; do
+        tabname="$(ltr nb_tab_$tab)"
+        #tabname="$(SeparateWordsWithSpaces "$tabname")"
+        notebook+=(--tab="$tabname")
+    done
+
+    # Set the active tab number.
+    local active_tab_nr=2                             # 2 = the After Install tab
+    test "$is_installing" = "yes" && active_tab_nr=1
+    if [ -n "$welcome_own_commands" ] ; then
+        # 'activate_own_commands_tab' may have been set
+        # in the "$own_commands_conf" file
+        case "$activate_own_commands_tab" in
+            [Yy][Ee][Ss])
+                active_tab_nr=5                       # 5 = the Personal Commands tab
+                test "$is_installing" = "yes" && active_tab_nr=3
+                ;;
+        esac
+    fi
+    notebook+=(--active-tab=$active_tab_nr)
+
+    notebook+=(--button=" $(ltr butt_changelog)!applications-development!$(ltr butt_changelogtip)":"bash -c WelcomeChangelog")
+    notebook+=(--button=" $(ltr butt_help)!help-contents!":"bash -c WelcomeHelp")
+    if [ "$is_installing" = "no" ] ; then
+        notebook+=(--button=" $(ltr butt_noshow)!face-crying!$(ltr butt_noshow)":5)
+    fi
+    notebook+=(--button=" $(ltr butt_later)!face-cool!$(ltr butt_latertip)":0)
+
+    "${notebook[@]}"
+
+    local result=$?
+    case "$result" in
+        5) WelcomeSettings disable ;;
+        0|252) sleep 0.5 ; WelcomeSettings enable ;;
+        *) echo "welcome exit code was: $result" >&2 ;;
+    esac
+}
+
+StartHere "$@"
+
+exit 0

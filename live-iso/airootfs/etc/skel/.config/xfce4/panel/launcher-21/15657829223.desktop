@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=System Monitor
+Comment=System Monitor - Glances
+GenericName=System Monitor
+Exec=xfce4-terminal -e "glances --percpu"
+Icon=utilities-system-monitor
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=System;Utility;
+Path=

@@ -1,0 +1,6 @@
+layout=1
+date_font=Noto Sans 10
+time_font=Noto Sans Heavy 14
+date_format=%b %d, %Y
+time_format=%H:%M:%S
+

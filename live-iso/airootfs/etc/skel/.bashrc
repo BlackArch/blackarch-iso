@@ -1,4 +1,3 @@
-# colors
 darkgrey="$(tput bold ; tput setaf 0)"
 white="$(tput bold ; tput setaf 7)"
 blue="$(tput bold; tput setaf 4)"
