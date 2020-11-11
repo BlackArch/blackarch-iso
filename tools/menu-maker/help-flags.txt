@@ -1111,6 +1111,7 @@ fantaip ;
 faraday ;
 fasm ;
 fastnetmon --help ;
+favfreak -h ;
 fbht ;
 fbid ;
 fbi -h ;
