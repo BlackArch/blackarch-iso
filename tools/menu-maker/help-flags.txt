@@ -886,6 +886,7 @@ dnstwist -h ;
 dnsutils -h ;
 dnsvalidator -h ;
 dnswalk --help ;
+dnsx -h ;
 dnsxss -h ;
 docem -h ;
 dockerscan -h ;
