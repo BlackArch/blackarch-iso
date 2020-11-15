@@ -635,6 +635,7 @@ cppcheck-gui ;
 cppcheck -h ;
 cppcheck-htmlreport -h ;
 cr3dov3r -h ;
+crabstick -h ;
 crackclient -h ;
 crackhor -h ;
 crackle ;
