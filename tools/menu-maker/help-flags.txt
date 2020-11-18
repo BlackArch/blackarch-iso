@@ -3785,6 +3785,7 @@ sslnuke ;
 sslog -h ;
 ssl-phuck3r -h ;
 sslscan ;
+sslscan2 -h ;
 sslsniff ;
 sslsplit -h ;
 sslstrip -h ;
