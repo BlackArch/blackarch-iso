@@ -2754,6 +2754,7 @@ pdgmail -h ;
 peach ;
 peach-fuzz -h ;
 peach -h ;
+pe-bear cd /usr/share/windows/pe-bear ; ls ;
 peda -h ;
 pedis ;
 peepdf -h ;
