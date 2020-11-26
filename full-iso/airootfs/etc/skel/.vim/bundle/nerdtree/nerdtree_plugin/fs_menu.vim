@@ -34,6 +34,10 @@ if executable('xdg-open')
     call NERDTreeAddMenuItem({'text': '(o)pen the current node with system editor', 'shortcut': 'o', 'callback': 'NERDTreeExecuteFileLinux'})
 endif
 
+if nerdtree#runningWindows()
+    call NERDTreeAddMenuItem({'text': '(o)pen the current node with system editor', 'shortcut': 'o', 'callback': 'NERDTreeExecuteFileWindows'})
+endif
+
 if g:NERDTreePath.CopyingSupported()
     call NERDTreeAddMenuItem({'text': '(c)opy the current node', 'shortcut': 'c', 'callback': 'NERDTreeCopyNode'})
 endif
@@ -161,7 +165,7 @@ endfunction
 function! NERDTreeAddNode()
     let curDirNode = g:NERDTreeDirNode.GetSelected()
     let prompt = s:inputPrompt('add')
-    let newNodeName = input(prompt, curDirNode.path.str() . g:NERDTreePath.Slash(), 'file')
+    let newNodeName = input(prompt, curDirNode.path.str() . nerdtree#slash(), 'file')
 
     if newNodeName ==# ''
         call nerdtree#echo('Node Creation Aborted.')
@@ -248,8 +252,6 @@ endfunction
 
 " FUNCTION: NERDTreeDeleteNode() {{{1
 function! NERDTreeDeleteNode()
-    let l:shellslash = &shellslash
-    let &shellslash = 0
     let currentNode = g:NERDTreeFileNode.GetSelected()
     let confirmed = 0
 
@@ -285,7 +287,6 @@ function! NERDTreeDeleteNode()
     else
         call nerdtree#echo('delete aborted')
     endif
-    let &shellslash = l:shellslash
 endfunction
 
 " FUNCTION: NERDTreeListNode() {{{1
@@ -330,8 +331,6 @@ endfunction
 
 " FUNCTION: NERDTreeCopyNode() {{{1
 function! NERDTreeCopyNode()
-    let l:shellslash = &shellslash
-    let &shellslash = 0
     let currentNode = g:NERDTreeFileNode.GetSelected()
     let prompt = s:inputPrompt('copy')
     let newNodePath = input(prompt, currentNode.path.str(), 'file')
@@ -367,7 +366,6 @@ function! NERDTreeCopyNode()
     else
         call nerdtree#echo('Copy aborted.')
     endif
-    let &shellslash = l:shellslash
     redraw!
 endfunction
 
@@ -449,6 +447,17 @@ function! NERDTreeExecuteFileLinux()
     endif
 
     call system('xdg-open ' . shellescape(l:node.path.str()))
+endfunction
+
+" FUNCTION: NERDTreeExecuteFileWindows() {{{1
+function! NERDTreeExecuteFileWindows()
+    let l:node = g:NERDTreeFileNode.GetSelected()
+
+    if empty(l:node)
+        return
+    endif
+
+    call system('cmd.exe /c start "" ' . shellescape(l:node.path.str()))
 endfunction
 
 " vim: set sw=4 sts=4 et fdm=marker:
