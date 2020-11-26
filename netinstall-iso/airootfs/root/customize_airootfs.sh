@@ -56,7 +56,7 @@ echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 # remove special (not needed) scripts
 rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
 rm /root/{.automated_script.sh,.zlogin}
-rm /etc/mkinitcpio-archiso.conf
+#rm /etc/mkinitcpio-archiso.conf
 rm -r /etc/initcpio
 
 # add install.txt file
