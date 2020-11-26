@@ -38,6 +38,8 @@ pptpclient
 refind-efi
 rfkill
 rp-pppoe
+sed
+syslinux
 terminus-font
 tzdata
 usb_modeswitch
