@@ -316,6 +316,81 @@
           <command>urxvt -e sh -c 'cmsmap -h ; bash'</command>
       </action>
   </item>
+  <item label="codeql">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'codeql ; bash'</command>
+      </action>
+  </item>
+  <item label="java">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'java ; bash'</command>
+      </action>
+  </item>
+  <item label="javac">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'javac ; bash'</command>
+      </action>
+  </item>
+  <item label="keytool">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'keytool ; bash'</command>
+      </action>
+  </item>
+  <item label="rmid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmid ; bash'</command>
+      </action>
+  </item>
+  <item label="rmiregistry">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmiregistry ; bash'</command>
+      </action>
+  </item>
+  <item label="serialver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'serialver ; bash'</command>
+      </action>
+  </item>
+  <item label="tsc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsc ; bash'</command>
+      </action>
+  </item>
+  <item label="tsserver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsserver ; bash'</command>
+      </action>
+  </item>
+  <item label="java">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'java ; bash'</command>
+      </action>
+  </item>
+  <item label="javac">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'javac ; bash'</command>
+      </action>
+  </item>
+  <item label="keytool">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'keytool ; bash'</command>
+      </action>
+  </item>
+  <item label="rmid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmid ; bash'</command>
+      </action>
+  </item>
+  <item label="rmiregistry">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmiregistry ; bash'</command>
+      </action>
+  </item>
+  <item label="serialver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'serialver ; bash'</command>
+      </action>
+  </item>
   <item label="commix">
       <action name="Execute">
           <command>urxvt -e sh -c 'commix ; bash'</command>
@@ -376,9 +451,14 @@
           <command>urxvt -e sh -c 'empire -h ; bash'</command>
       </action>
   </item>
-  <item label="faraday">
+  <item label="faraday-manage">
       <action name="Execute">
-          <command>urxvt -e sh -c 'faraday ; bash'</command>
+          <command>urxvt -e sh -c 'faraday-manage ; bash'</command>
+      </action>
+  </item>
+  <item label="faraday-searcher">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'faraday-searcher ; bash'</command>
       </action>
   </item>
   <item label="faraday-server">
@@ -691,11 +771,6 @@
           <command>urxvt -e sh -c 'mutator -h ; bash'</command>
       </action>
   </item>
-  <item label="nekobot">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'nekobot ; bash'</command>
-      </action>
-  </item>
   <item label="nosqlattack">
       <action name="Execute">
           <command>urxvt -e sh -c 'nosqlattack ; bash'</command>
@@ -836,6 +911,11 @@
           <command>urxvt -e sh -c 'pureblood ; bash'</command>
       </action>
   </item>
+  <item label="pwndrop">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pwndrop -h ; bash'</command>
+      </action>
+  </item>
   <item label="pyfuscation">
       <action name="Execute">
           <command>urxvt -e sh -c 'pyfuscation -h ; bash'</command>
@@ -951,6 +1031,11 @@
           <command>urxvt -e sh -c 'sn1per ; bash'</command>
       </action>
   </item>
+  <item label="http-default-accounts-fingerprints-nndefaccts.lua">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'http-default-accounts-fingerprints-nndefaccts.lua ; bash'</command>
+      </action>
+  </item>
   <item label="inurlbr.php">
       <action name="Execute">
           <command>urxvt -e sh -c 'inurlbr.php ; bash'</command>
@@ -1006,6 +1091,11 @@
           <command>urxvt -e sh -c 'traxss -h ; bash'</command>
       </action>
   </item>
+  <item label="ttpassgen">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ttpassgen -h ; bash'</command>
+      </action>
+  </item>
   <item label="unix-privsc-check">
       <action name="Execute">
           <command>urxvt -e sh -c 'unix-privsc-check ; bash'</command>
@@ -1024,6 +1114,11 @@
   <item label="valhalla-cli">
       <action name="Execute">
           <command>urxvt -e sh -c 'valhalla-cli -h ; bash'</command>
+      </action>
+  </item>
+  <item label="vbsmin">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'vbsmin -h ; bash'</command>
       </action>
   </item>
   <item label="veil">
@@ -1127,6 +1222,11 @@
   <item label="cansend">
       <action name="Execute">
           <command>urxvt -e sh -c 'cansend ; bash'</command>
+      </action>
+  </item>
+  <item label="cansequence">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cansequence ; bash'</command>
       </action>
   </item>
   <item label="cansniffer">
@@ -1277,6 +1377,11 @@
           <command>urxvt -e sh -c 'evil-winrm -h ; bash'</command>
       </action>
   </item>
+  <item label="evilpdf">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'evilpdf -h ; bash'</command>
+      </action>
+  </item>
   <item label="exe2image">
       <action name="Execute">
           <command>urxvt -e sh -c 'exe2image ; bash'</command>
@@ -1380,6 +1485,11 @@
   <item label="powerstager">
       <action name="Execute">
           <command>urxvt -e sh -c 'powerstager -h ; bash'</command>
+      </action>
+  </item>
+  <item label="pwncat">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pwncat cd /usr/share/windows/pwncat ; ls ; bash'</command>
       </action>
   </item>
   <item label="pyrasite">
@@ -1665,6 +1775,11 @@
           <command>urxvt -e sh -c 'androsign ; bash'</command>
       </action>
   </item>
+  <item label="angr-management">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'angr-management ; bash'</command>
+      </action>
+  </item>
   <item label="avet">
       <action name="Execute">
           <command>urxvt -e sh -c 'avet ; bash'</command>
@@ -1673,6 +1788,11 @@
   <item label="backdoor-factory">
       <action name="Execute">
           <command>urxvt -e sh -c 'backdoor-factory -h ; bash'</command>
+      </action>
+  </item>
+  <item label="bagbak">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'bagbak -h ; bash'</command>
       </action>
   </item>
   <item label="BARFcfg">
@@ -1690,9 +1810,9 @@
           <command>urxvt -e sh -c 'BARFgadgets -h ; bash'</command>
       </action>
   </item>
-  <item label="bdf-proxy">
+  <item label="bdfproxy">
       <action name="Execute">
-          <command>urxvt -e sh -c 'bdf-proxy ; bash'</command>
+          <command>urxvt -e sh -c 'bdfproxy -h ; bash'</command>
       </action>
   </item>
   <item label="bgrep">
@@ -2460,11 +2580,6 @@
           <command>urxvt -e sh -c 'frida-ios-dump -h ; bash'</command>
       </action>
   </item>
-  <item label="frida-ipa-dump">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'frida-ipa-dump -h ; bash'</command>
-      </action>
-  </item>
   <item label="gadgetinspector">
       <action name="Execute">
           <command>urxvt -e sh -c 'gadgetinspector ; bash'</command>
@@ -2698,6 +2813,11 @@
   <item label="manticore">
       <action name="Execute">
           <command>urxvt -e sh -c 'manticore -h ; bash'</command>
+      </action>
+  </item>
+  <item label="manticore-verifier">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'manticore-verifier ; bash'</command>
       </action>
   </item>
   <item label="manul">
@@ -3090,6 +3210,11 @@
           <command>urxvt -e sh -c 'sea -h ; bash'</command>
       </action>
   </item>
+  <item label="sgn">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sgn ; bash'</command>
+      </action>
+  </item>
   <item label="sherlocked">
       <action name="Execute">
           <command>urxvt -e sh -c 'sherlocked ; bash'</command>
@@ -3143,6 +3268,16 @@
   <item label="strace-log-merge">
       <action name="Execute">
           <command>urxvt -e sh -c 'strace-log-merge ; bash'</command>
+      </action>
+  </item>
+  <item label="flarestrings">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'flarestrings -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rank_strings">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rank_strings -h ; bash'</command>
       </action>
   </item>
   <item label="as3compile">
@@ -3553,76 +3688,6 @@
           <command>urxvt -e sh -c 'tbsearch ; bash'</command>
       </action>
   </item>
-  <item label="ubertooth-afh">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-afh ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-btle">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-btle -h ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-debug">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-debug ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-dfu">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-dfu ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-ducky">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-ducky ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-dump">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-dump -h ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-ego">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-ego ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-follow">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-follow -h ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-rx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-rx ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-scan">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-scan ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-specan">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-specan -h ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-specan-ui">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-specan-ui ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-tx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-tx ; bash'</command>
-      </action>
-  </item>
-  <item label="ubertooth-util">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ubertooth-util -h ; bash'</command>
-      </action>
-  </item>
 </menu>
 
 <menu id="blackarch-code-audit-menu" label="code-audit">
@@ -3644,6 +3709,81 @@
   <item label="cflow">
       <action name="Execute">
           <command>urxvt -e sh -c 'cflow -h ; bash'</command>
+      </action>
+  </item>
+  <item label="codeql">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'codeql ; bash'</command>
+      </action>
+  </item>
+  <item label="java">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'java ; bash'</command>
+      </action>
+  </item>
+  <item label="javac">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'javac ; bash'</command>
+      </action>
+  </item>
+  <item label="keytool">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'keytool ; bash'</command>
+      </action>
+  </item>
+  <item label="rmid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmid ; bash'</command>
+      </action>
+  </item>
+  <item label="rmiregistry">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmiregistry ; bash'</command>
+      </action>
+  </item>
+  <item label="serialver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'serialver ; bash'</command>
+      </action>
+  </item>
+  <item label="tsc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsc ; bash'</command>
+      </action>
+  </item>
+  <item label="tsserver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsserver ; bash'</command>
+      </action>
+  </item>
+  <item label="java">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'java ; bash'</command>
+      </action>
+  </item>
+  <item label="javac">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'javac ; bash'</command>
+      </action>
+  </item>
+  <item label="keytool">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'keytool ; bash'</command>
+      </action>
+  </item>
+  <item label="rmid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmid ; bash'</command>
+      </action>
+  </item>
+  <item label="rmiregistry">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rmiregistry ; bash'</command>
+      </action>
+  </item>
+  <item label="serialver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'serialver ; bash'</command>
       </action>
   </item>
   <item label="cppcheck">
@@ -3956,6 +4096,11 @@
           <command>urxvt -e sh -c 'flawfinder -h ; bash'</command>
       </action>
   </item>
+  <item label="git-dump">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'git-dump ; bash'</command>
+      </action>
+  </item>
   <item label="graudit">
       <action name="Execute">
           <command>urxvt -e sh -c 'graudit -h ; bash'</command>
@@ -4116,6 +4261,11 @@
           <command>urxvt -e sh -c 'stags ; bash'</command>
       </action>
   </item>
+  <item label="console">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'console ; bash'</command>
+      </action>
+  </item>
   <item label="procyon">
       <action name="Execute">
           <command>urxvt -e sh -c 'procyon ; bash'</command>
@@ -4179,6 +4329,11 @@
   <item label="slither-format">
       <action name="Execute">
           <command>urxvt -e sh -c 'slither-format ; bash'</command>
+      </action>
+  </item>
+  <item label="slither-mutate">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'slither-mutate ; bash'</command>
       </action>
   </item>
   <item label="slither-simil">
@@ -4892,11 +5047,6 @@
           <command>urxvt -e sh -c 'habu.cert.names ; bash'</command>
       </action>
   </item>
-  <item label="habu.contest">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.contest ; bash'</command>
-      </action>
-  </item>
   <item label="habu.crack.luhn">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.crack.luhn ; bash'</command>
@@ -4907,19 +5057,24 @@
           <command>urxvt -e sh -c 'habu.crack.snmp ; bash'</command>
       </action>
   </item>
-  <item label="habu.cve.2018.9995">
+  <item label="habu.crypto.fernet">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cve.2018.9995 ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.fernet ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip">
+  <item label="habu.crypto.gppref">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.gppref ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip.timeline">
+  <item label="habu.crypto.xor">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip.timeline ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.xor ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.data.enrich">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.data.enrich ; bash'</command>
       </action>
   </item>
   <item label="habu.data.extract.domain">
@@ -4947,9 +5102,9 @@
           <command>urxvt -e sh -c 'habu.data.filter ; bash'</command>
       </action>
   </item>
-  <item label="habu.decrypt.gppref">
+  <item label="habu.data.select">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.decrypt.gppref ; bash'</command>
+          <command>urxvt -e sh -c 'habu.data.select ; bash'</command>
       </action>
   </item>
   <item label="habu.dhcp.discover">
@@ -4977,16 +5132,6 @@
           <command>urxvt -e sh -c 'habu.eicar ; bash'</command>
       </action>
   </item>
-  <item label="habu.expand">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.expand ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.fernet">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.fernet ; bash'</command>
-      </action>
-  </item>
   <item label="habu.forkbomb">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.forkbomb ; bash'</command>
@@ -5000,11 +5145,6 @@
   <item label="habu.gateway.find">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.gateway.find ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.h1.scope">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.h1.scope ; bash'</command>
       </action>
   </item>
   <item label="habu.host">
@@ -5027,14 +5167,14 @@
           <command>urxvt -e sh -c 'habu.http.tech ; bash'</command>
       </action>
   </item>
-  <item label="habu.interfaces">
+  <item label="habu.icmp.ping">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.interfaces ; bash'</command>
+          <command>urxvt -e sh -c 'habu.icmp.ping ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip">
+  <item label="habu.ip.asn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.asn ; bash'</command>
       </action>
   </item>
   <item label="habu.ip.geolocation">
@@ -5047,14 +5187,9 @@
           <command>urxvt -e sh -c 'habu.ip.internal ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip2asn">
+  <item label="habu.ip.public">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip2asn ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.isn">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.isn ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.public ; bash'</command>
       </action>
   </item>
   <item label="habu.karma">
@@ -5077,6 +5212,16 @@
           <command>urxvt -e sh -c 'habu.nc ; bash'</command>
       </action>
   </item>
+  <item label="habu.net.contest">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.contest ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.net.interfaces">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.interfaces ; bash'</command>
+      </action>
+  </item>
   <item label="habu.nmap.excluded">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.nmap.excluded ; bash'</command>
@@ -5092,19 +5237,9 @@
           <command>urxvt -e sh -c 'habu.nmap.ports ; bash'</command>
       </action>
   </item>
-  <item label="habu.ping">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ping ; bash'</command>
-      </action>
-  </item>
   <item label="habu.protoscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.protoscan ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.select">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.select ; bash'</command>
       </action>
   </item>
   <item label="habu.server.ftp">
@@ -5112,19 +5247,34 @@
           <command>urxvt -e sh -c 'habu.server.ftp ; bash'</command>
       </action>
   </item>
-  <item label="habu.synflood">
+  <item label="habu.tcp.flags">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.synflood ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.flags ; bash'</command>
       </action>
   </item>
-  <item label="habu.tcpflags">
+  <item label="habu.tcp.isn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.tcpflags ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.isn ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.scan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.scan ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.synflood">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.synflood ; bash'</command>
       </action>
   </item>
   <item label="habu.traceroute">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.traceroute ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.upgrade">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.upgrade ; bash'</command>
       </action>
   </item>
   <item label="habu.usercheck">
@@ -5160,11 +5310,6 @@
   <item label="habu.whois.ip">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.whois.ip ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.xor">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.xor ; bash'</command>
       </action>
   </item>
   <item label="hate-crack">
@@ -7002,6 +7147,11 @@
           <command>urxvt -e sh -c 'sn1per ; bash'</command>
       </action>
   </item>
+  <item label="http-default-accounts-fingerprints-nndefaccts.lua">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'http-default-accounts-fingerprints-nndefaccts.lua ; bash'</command>
+      </action>
+  </item>
   <item label="inurlbr.php">
       <action name="Execute">
           <command>urxvt -e sh -c 'inurlbr.php ; bash'</command>
@@ -7075,6 +7225,11 @@
   <item label="thc-smartbrute">
       <action name="Execute">
           <command>urxvt -e sh -c 'thc-smartbrute -h ; bash'</command>
+      </action>
+  </item>
+  <item label="ttpassgen">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ttpassgen -h ; bash'</command>
       </action>
   </item>
   <item label="ufo-wardriving">
@@ -7770,6 +7925,16 @@
           <command>urxvt -e sh -c 'xortool-xor ; bash'</command>
       </action>
   </item>
+  <item label="xortool">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'xortool -h ; bash'</command>
+      </action>
+  </item>
+  <item label="xortool-xor">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'xortool-xor ; bash'</command>
+      </action>
+  </item>
   <item label="zuluCrypt-cli">
       <action name="Execute">
           <command>urxvt -e sh -c 'zuluCrypt-cli -h ; bash'</command>
@@ -8089,6 +8254,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -8112,6 +8282,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -8139,6 +8314,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -8162,6 +8342,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -8205,6 +8390,11 @@
   <item label="beebug">
       <action name="Execute">
           <command>urxvt -e sh -c 'beebug -h ; bash'</command>
+      </action>
+  </item>
+  <item label="cafebabe">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cafebabe ; bash'</command>
       </action>
   </item>
   <item label="cfr">
@@ -8317,6 +8507,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -8340,6 +8535,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -8367,6 +8567,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -8390,6 +8595,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -8452,14 +8662,9 @@
           <command>urxvt -e sh -c 'retdec-getsig -h ; bash'</command>
       </action>
   </item>
-  <item label="retdec-idb2pat">
+  <item label="retdec-idr2pat">
       <action name="Execute">
-          <command>urxvt -e sh -c 'retdec-idb2pat ; bash'</command>
-      </action>
-  </item>
-  <item label="retdec-llvmir2hll">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'retdec-llvmir2hll -h ; bash'</command>
+          <command>urxvt -e sh -c 'retdec-idr2pat -h ; bash'</command>
       </action>
   </item>
   <item label="retdec-macho-extractor">
@@ -9070,6 +9275,36 @@
           <command>urxvt -e sh -c 'sswap -h ; bash'</command>
       </action>
   </item>
+  <item label="merge_sigma">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'merge_sigma -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sigma2attack">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sigma2attack -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sigma2misp">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sigma2misp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sigma_similarity">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sigma_similarity -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sigma_uuid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sigma_uuid -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sigmac">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sigmac -h ; bash'</command>
+      </action>
+  </item>
   <item label="sj-commit-results">
       <action name="Execute">
           <command>urxvt -e sh -c 'sj-commit-results -h ; bash'</command>
@@ -9250,6 +9485,16 @@
           <command>urxvt -e sh -c 'broctl ; bash'</command>
       </action>
   </item>
+  <item label="broker-benchmark">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'broker-benchmark ; bash'</command>
+      </action>
+  </item>
+  <item label="broker-cluster-benchmark">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'broker-cluster-benchmark ; bash'</command>
+      </action>
+  </item>
   <item label="paraglob-test">
       <action name="Execute">
           <command>urxvt -e sh -c 'paraglob-test ; bash'</command>
@@ -9263,6 +9508,11 @@
   <item label="zeek">
       <action name="Execute">
           <command>urxvt -e sh -c 'zeek ; bash'</command>
+      </action>
+  </item>
+  <item label="zeek-archiver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'zeek-archiver ; bash'</command>
       </action>
   </item>
   <item label="zeek-cut">
@@ -9280,19 +9530,9 @@
           <command>urxvt -e sh -c 'adtrace ; bash'</command>
       </action>
   </item>
-  <item label="bro-cut">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'bro-cut ; bash'</command>
-      </action>
-  </item>
   <item label="rst">
       <action name="Execute">
           <command>urxvt -e sh -c 'rst ; bash'</command>
-      </action>
-  </item>
-  <item label="zeek-cut">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'zeek-cut ; bash'</command>
       </action>
   </item>
   <item label="zeus">
@@ -9358,6 +9598,11 @@
           <command>urxvt -e sh -c 'apktool ; bash'</command>
       </action>
   </item>
+  <item label="angr-management">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'angr-management ; bash'</command>
+      </action>
+  </item>
   <item label="beebug">
       <action name="Execute">
           <command>urxvt -e sh -c 'beebug -h ; bash'</command>
@@ -9376,11 +9621,6 @@
   <item label="binwalk">
       <action name="Execute">
           <command>urxvt -e sh -c 'binwalk ; bash'</command>
-      </action>
-  </item>
-  <item label="bokken">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'bokken -h ; bash'</command>
       </action>
   </item>
   <item label="cstool">
@@ -9673,6 +9913,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -9696,6 +9941,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -9723,6 +9973,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -9746,6 +10001,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -9886,11 +10146,6 @@
           <command>urxvt -e sh -c 'habu.cert.names ; bash'</command>
       </action>
   </item>
-  <item label="habu.contest">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.contest ; bash'</command>
-      </action>
-  </item>
   <item label="habu.crack.luhn">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.crack.luhn ; bash'</command>
@@ -9901,19 +10156,24 @@
           <command>urxvt -e sh -c 'habu.crack.snmp ; bash'</command>
       </action>
   </item>
-  <item label="habu.cve.2018.9995">
+  <item label="habu.crypto.fernet">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cve.2018.9995 ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.fernet ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip">
+  <item label="habu.crypto.gppref">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.gppref ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip.timeline">
+  <item label="habu.crypto.xor">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip.timeline ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.xor ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.data.enrich">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.data.enrich ; bash'</command>
       </action>
   </item>
   <item label="habu.data.extract.domain">
@@ -9941,9 +10201,9 @@
           <command>urxvt -e sh -c 'habu.data.filter ; bash'</command>
       </action>
   </item>
-  <item label="habu.decrypt.gppref">
+  <item label="habu.data.select">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.decrypt.gppref ; bash'</command>
+          <command>urxvt -e sh -c 'habu.data.select ; bash'</command>
       </action>
   </item>
   <item label="habu.dhcp.discover">
@@ -9971,16 +10231,6 @@
           <command>urxvt -e sh -c 'habu.eicar ; bash'</command>
       </action>
   </item>
-  <item label="habu.expand">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.expand ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.fernet">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.fernet ; bash'</command>
-      </action>
-  </item>
   <item label="habu.forkbomb">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.forkbomb ; bash'</command>
@@ -9994,11 +10244,6 @@
   <item label="habu.gateway.find">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.gateway.find ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.h1.scope">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.h1.scope ; bash'</command>
       </action>
   </item>
   <item label="habu.host">
@@ -10021,14 +10266,14 @@
           <command>urxvt -e sh -c 'habu.http.tech ; bash'</command>
       </action>
   </item>
-  <item label="habu.interfaces">
+  <item label="habu.icmp.ping">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.interfaces ; bash'</command>
+          <command>urxvt -e sh -c 'habu.icmp.ping ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip">
+  <item label="habu.ip.asn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.asn ; bash'</command>
       </action>
   </item>
   <item label="habu.ip.geolocation">
@@ -10041,14 +10286,9 @@
           <command>urxvt -e sh -c 'habu.ip.internal ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip2asn">
+  <item label="habu.ip.public">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip2asn ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.isn">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.isn ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.public ; bash'</command>
       </action>
   </item>
   <item label="habu.karma">
@@ -10071,6 +10311,16 @@
           <command>urxvt -e sh -c 'habu.nc ; bash'</command>
       </action>
   </item>
+  <item label="habu.net.contest">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.contest ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.net.interfaces">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.interfaces ; bash'</command>
+      </action>
+  </item>
   <item label="habu.nmap.excluded">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.nmap.excluded ; bash'</command>
@@ -10086,19 +10336,9 @@
           <command>urxvt -e sh -c 'habu.nmap.ports ; bash'</command>
       </action>
   </item>
-  <item label="habu.ping">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ping ; bash'</command>
-      </action>
-  </item>
   <item label="habu.protoscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.protoscan ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.select">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.select ; bash'</command>
       </action>
   </item>
   <item label="habu.server.ftp">
@@ -10106,19 +10346,34 @@
           <command>urxvt -e sh -c 'habu.server.ftp ; bash'</command>
       </action>
   </item>
-  <item label="habu.synflood">
+  <item label="habu.tcp.flags">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.synflood ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.flags ; bash'</command>
       </action>
   </item>
-  <item label="habu.tcpflags">
+  <item label="habu.tcp.isn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.tcpflags ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.isn ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.scan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.scan ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.synflood">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.synflood ; bash'</command>
       </action>
   </item>
   <item label="habu.traceroute">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.traceroute ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.upgrade">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.upgrade ; bash'</command>
       </action>
   </item>
   <item label="habu.usercheck">
@@ -10154,11 +10409,6 @@
   <item label="habu.whois.ip">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.whois.ip ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.xor">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.xor ; bash'</command>
       </action>
   </item>
   <item label="hulk">
@@ -11177,6 +11427,11 @@
           <command>urxvt -e sh -c 'commix ; bash'</command>
       </action>
   </item>
+  <item label="crabstick">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'crabstick -h ; bash'</command>
+      </action>
+  </item>
   <item label="cme">
       <action name="Execute">
           <command>urxvt -e sh -c 'cme ; bash'</command>
@@ -11190,6 +11445,11 @@
   <item label="creak">
       <action name="Execute">
           <command>urxvt -e sh -c 'creak -h ; bash'</command>
+      </action>
+  </item>
+  <item label="cve-search-__init__">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cve-search-__init__ ; bash'</command>
       </action>
   </item>
   <item label="cve-search-cve_doc">
@@ -11220,11 +11480,6 @@
   <item label="cve-search-db_fulltext">
       <action name="Execute">
           <command>urxvt -e sh -c 'cve-search-db_fulltext -h ; bash'</command>
-      </action>
-  </item>
-  <item label="cve-search-db_mgmt">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'cve-search-db_mgmt -h ; bash'</command>
       </action>
   </item>
   <item label="cve-search-db_mgmt_admin">
@@ -11377,9 +11632,9 @@
           <command>urxvt -e sh -c 'dwarf --help ; bash'</command>
       </action>
   </item>
-  <item label="enteletaor3">
+  <item label="enteletaor">
       <action name="Execute">
-          <command>urxvt -e sh -c 'enteletaor3 -h ; bash'</command>
+          <command>urxvt -e sh -c 'enteletaor ; bash'</command>
       </action>
   </item>
   <item label="elog">
@@ -11402,9 +11657,14 @@
           <command>urxvt -e sh -c 'eyepwn ; bash'</command>
       </action>
   </item>
-  <item label="faraday">
+  <item label="faraday-manage">
       <action name="Execute">
-          <command>urxvt -e sh -c 'faraday ; bash'</command>
+          <command>urxvt -e sh -c 'faraday-manage ; bash'</command>
+      </action>
+  </item>
+  <item label="faraday-searcher">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'faraday-searcher ; bash'</command>
       </action>
   </item>
   <item label="faraday-server">
@@ -11430,6 +11690,11 @@
   <item label="chaosreader0.94">
       <action name="Execute">
           <command>urxvt -e sh -c 'chaosreader0.94 ; bash'</command>
+      </action>
+  </item>
+  <item label="fuzzbunch">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'fuzzbunch -h ; bash'</command>
       </action>
   </item>
   <item label="gcat">
@@ -11822,6 +12087,11 @@
           <command>urxvt -e sh -c 'leroy-jenkins ; bash'</command>
       </action>
   </item>
+  <item label="lethalhta">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'lethalhta -h ; bash'</command>
+      </action>
+  </item>
   <item label="leviathan">
       <action name="Execute">
           <command>urxvt -e sh -c 'leviathan ; bash'</command>
@@ -12077,11 +12347,6 @@
           <command>urxvt -e sh -c 'msfenum -h ; bash'</command>
       </action>
   </item>
-  <item label="nekobot">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'nekobot ; bash'</command>
-      </action>
-  </item>
   <item label="nimbostratus">
       <action name="Execute">
           <command>urxvt -e sh -c 'nimbostratus -h ; bash'</command>
@@ -12097,9 +12362,24 @@
           <command>urxvt -e sh -c 'nosqlmap ; bash'</command>
       </action>
   </item>
+  <item label="ntlm-theft">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ntlm-theft -h ; bash'</command>
+      </action>
+  </item>
   <item label="nullscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'nullscan -H ; bash'</command>
+      </action>
+  </item>
+  <item label="office-dde-payloads-excel">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'office-dde-payloads-excel -h ; bash'</command>
+      </action>
+  </item>
+  <item label="office-dde-payloads-word">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'office-dde-payloads-word -h ; bash'</command>
       </action>
   </item>
   <item label="opensvp">
@@ -12167,6 +12447,11 @@
           <command>urxvt -e sh -c 'pblind ; bash'</command>
       </action>
   </item>
+  <item label="phantom-evasion">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'phantom-evasion -h ; bash'</command>
+      </action>
+  </item>
   <item label="pirana">
       <action name="Execute">
           <command>urxvt -e sh -c 'pirana -h ; bash'</command>
@@ -12215,6 +12500,11 @@
   <item label="ptf">
       <action name="Execute">
           <command>urxvt -e sh -c 'ptf ; bash'</command>
+      </action>
+  </item>
+  <item label="pwndrop">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pwndrop -h ; bash'</command>
       </action>
   </item>
   <item label="pyersinia">
@@ -12467,6 +12757,11 @@
           <command>urxvt -e sh -c 'slither-format ; bash'</command>
       </action>
   </item>
+  <item label="slither-mutate">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'slither-mutate ; bash'</command>
+      </action>
+  </item>
   <item label="slither-simil">
       <action name="Execute">
           <command>urxvt -e sh -c 'slither-simil ; bash'</command>
@@ -12707,6 +13002,76 @@
           <command>urxvt -e sh -c 'xxeinjector -h ; bash'</command>
       </action>
   </item>
+  <item label="acorn">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'acorn ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="he">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'he ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="jsesc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jsesc ; bash'</command>
+      </action>
+  </item>
+  <item label="_mocha">
+      <action name="Execute">
+          <command>urxvt -e sh -c '_mocha ; bash'</command>
+      </action>
+  </item>
+  <item label="mocha">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mocha ; bash'</command>
+      </action>
+  </item>
+  <item label="semver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'semver ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="tsc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsc ; bash'</command>
+      </action>
+  </item>
+  <item label="tsserver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsserver ; bash'</command>
+      </action>
+  </item>
+  <item label="uuid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'uuid ; bash'</command>
+      </action>
+  </item>
+  <item label="which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'which ; bash'</command>
+      </action>
+  </item>
   <item label="yinjector">
       <action name="Execute">
           <command>urxvt -e sh -c 'yinjector -h ; bash'</command>
@@ -12805,6 +13170,11 @@
           <command>urxvt -e sh -c 'cmseek ; bash'</command>
       </action>
   </item>
+  <item label="cmsscan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
+      </action>
+  </item>
   <item label="cmsscanner">
       <action name="Execute">
           <command>urxvt -e sh -c 'cmsscanner -h ; bash'</command>
@@ -12812,7 +13182,7 @@
   </item>
   <item label="cmsscan">
       <action name="Execute">
-          <command>urxvt -e sh -c 'cmsscan ; bash'</command>
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
       </action>
   </item>
   <item label="letdown">
@@ -12855,14 +13225,24 @@
           <command>urxvt -e sh -c 'domi-owned -h ; bash'</command>
       </action>
   </item>
-  <item label="faraday">
+  <item label="faraday-manage">
       <action name="Execute">
-          <command>urxvt -e sh -c 'faraday ; bash'</command>
+          <command>urxvt -e sh -c 'faraday-manage ; bash'</command>
+      </action>
+  </item>
+  <item label="faraday-searcher">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'faraday-searcher ; bash'</command>
       </action>
   </item>
   <item label="faraday-server">
       <action name="Execute">
           <command>urxvt -e sh -c 'faraday-server ; bash'</command>
+      </action>
+  </item>
+  <item label="favfreak">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'favfreak -h ; bash'</command>
       </action>
   </item>
   <item label="fhttp">
@@ -13476,16 +13856,6 @@
           <command>urxvt -e sh -c 'extractusnjrnl -h ; bash'</command>
       </action>
   </item>
-  <item label="extundelete">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'extundelete -h ; bash'</command>
-      </action>
-  </item>
-  <item label="extundelete">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'extundelete -h ; bash'</command>
-      </action>
-  </item>
   <item label="foremost">
       <action name="Execute">
           <command>urxvt -e sh -c 'foremost -h ; bash'</command>
@@ -13699,6 +14069,56 @@
   <item label="mboxgrep">
       <action name="Execute">
           <command>urxvt -e sh -c 'mboxgrep ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-array">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-array ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-count">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-count ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-export">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-export ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-header">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-header ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-hexdump">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-hexdump ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-parsecsv">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-parsecsv ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-schema">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-schema ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-sql">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-sql ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-tables">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-tables ; bash'</command>
+      </action>
+  </item>
+  <item label="mdb-ver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mdb-ver ; bash'</command>
       </action>
   </item>
   <item label="memfetch">
@@ -14706,6 +15126,16 @@
           <command>urxvt -e sh -c 'stenographer -h ; bash'</command>
       </action>
   </item>
+  <item label="flarestrings">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'flarestrings -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rank_strings">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rank_strings -h ; bash'</command>
+      </action>
+  </item>
   <item label="swap-digger">
       <action name="Execute">
           <command>urxvt -e sh -c 'swap-digger -h ; bash'</command>
@@ -14841,6 +15271,16 @@
           <command>urxvt -e sh -c 'prefetch -h ; bash'</command>
       </action>
   </item>
+  <item label="CCM_RUA_Finder">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'CCM_RUA_Finder ; bash'</command>
+      </action>
+  </item>
+  <item label="PyWMIPersistenceFinder">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'PyWMIPersistenceFinder ; bash'</command>
+      </action>
+  </item>
   <item label="wyd">
       <action name="Execute">
           <command>urxvt -e sh -c 'wyd ; bash'</command>
@@ -14897,6 +15337,11 @@
   <item label="0d1n">
       <action name="Execute">
           <command>urxvt -e sh -c '0d1n ; bash'</command>
+      </action>
+  </item>
+  <item label="0d1n_view">
+      <action name="Execute">
+          <command>urxvt -e sh -c '0d1n_view ; bash'</command>
       </action>
   </item>
   <item label="abuse-ssl-bypass-waf">
@@ -15037,6 +15482,11 @@
   <item label="astra">
       <action name="Execute">
           <command>urxvt -e sh -c 'astra ; bash'</command>
+      </action>
+  </item>
+  <item label="atlas">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'atlas -h ; bash'</command>
       </action>
   </item>
   <item label="atscan">
@@ -15184,6 +15634,11 @@
           <command>urxvt -e sh -c 'crlf-injector ; bash'</command>
       </action>
   </item>
+  <item label="dalfox">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'dalfox -h ; bash'</command>
+      </action>
+  </item>
   <item label="dharma">
       <action name="Execute">
           <command>urxvt -e sh -c 'dharma -h ; bash'</command>
@@ -15244,9 +15699,14 @@
           <command>urxvt -e sh -c 'wsdl2request ; bash'</command>
       </action>
   </item>
-  <item label="faraday">
+  <item label="faraday-manage">
       <action name="Execute">
-          <command>urxvt -e sh -c 'faraday ; bash'</command>
+          <command>urxvt -e sh -c 'faraday-manage ; bash'</command>
+      </action>
+  </item>
+  <item label="faraday-searcher">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'faraday-searcher ; bash'</command>
       </action>
   </item>
   <item label="faraday-server">
@@ -15742,6 +16202,11 @@
   <item label="stty">
       <action name="Execute">
           <command>urxvt -e sh -c 'stty ; bash'</command>
+      </action>
+  </item>
+  <item label="mitm6">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mitm6 -h ; bash'</command>
       </action>
   </item>
   <item label="mongoaudit">
@@ -16706,6 +17171,9 @@
   </item>
 </menu>
 
+<menu id="blackarch-gpu-menu" label="gpu">
+</menu>
+
 <menu id="blackarch-hardware-menu" label="hardware">
   <item label="arduino">
       <action name="Execute">
@@ -17149,9 +17617,24 @@
           <command>urxvt -e sh -c 'acorn ; bash'</command>
       </action>
   </item>
+  <item label="acorn">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'acorn ; bash'</command>
+      </action>
+  </item>
   <item label="test262.whitelist">
       <action name="Execute">
           <command>urxvt -e sh -c 'test262.whitelist ; bash'</command>
+      </action>
+  </item>
+  <item label="acorn">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'acorn ; bash'</command>
+      </action>
+  </item>
+  <item label="uuid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'uuid ; bash'</command>
       </action>
   </item>
   <item label="uuid">
@@ -17199,9 +17682,9 @@
           <command>urxvt -e sh -c 'fileintel -h ; bash'</command>
       </action>
   </item>
-  <item label="flare-floss">
+  <item label="floss">
       <action name="Execute">
-          <command>urxvt -e sh -c 'flare-floss ; bash'</command>
+          <command>urxvt -e sh -c 'floss -h ; bash'</command>
       </action>
   </item>
   <item label="fprotlogparser">
@@ -17552,9 +18035,9 @@
           <command>urxvt -e sh -c 'bless ; bash'</command>
       </action>
   </item>
-  <item label="bokken">
+  <item label="bless">
       <action name="Execute">
-          <command>urxvt -e sh -c 'bokken -h ; bash'</command>
+          <command>urxvt -e sh -c 'bless ; bash'</command>
       </action>
   </item>
   <item label="BEViewer">
@@ -17682,6 +18165,11 @@
           <command>urxvt -e sh -c 'dnsfilexfer-send -h ; bash'</command>
       </action>
   </item>
+  <item label="dnsvalidator">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'dnsvalidator -h ; bash'</command>
+      </action>
+  </item>
   <item label="domlink">
       <action name="Execute">
           <command>urxvt -e sh -c 'domlink ; bash'</command>
@@ -17797,9 +18285,14 @@
           <command>urxvt -e sh -c 'fakemail -h ; bash'</command>
       </action>
   </item>
-  <item label="faraday">
+  <item label="faraday-manage">
       <action name="Execute">
-          <command>urxvt -e sh -c 'faraday ; bash'</command>
+          <command>urxvt -e sh -c 'faraday-manage ; bash'</command>
+      </action>
+  </item>
+  <item label="faraday-searcher">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'faraday-searcher ; bash'</command>
       </action>
   </item>
   <item label="faraday-server">
@@ -17985,6 +18478,11 @@
   <item label="grammarinator-process">
       <action name="Execute">
           <command>urxvt -e sh -c 'grammarinator-process -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gtfo">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gtfo -h ; bash'</command>
       </action>
   </item>
   <item label="gtfoblookup">
@@ -18902,6 +19400,11 @@
           <command>urxvt -e sh -c 'ctf_party_console ; bash'</command>
       </action>
   </item>
+  <item label="rulesfinder">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rulesfinder -h ; bash'</command>
+      </action>
+  </item>
   <item label="sakis3g">
       <action name="Execute">
           <command>urxvt -e sh -c 'sakis3g --help ; bash'</command>
@@ -18925,11 +19428,6 @@
   <item label="sh00t">
       <action name="Execute">
           <command>urxvt -e sh -c 'sh00t ; bash'</command>
-      </action>
-  </item>
-  <item label="shelling">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'shelling ; bash'</command>
       </action>
   </item>
   <item label="sipi">
@@ -19190,6 +19688,11 @@
           <command>urxvt -e sh -c 'backhack ; bash'</command>
       </action>
   </item>
+  <item label="bagbak">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'bagbak -h ; bash'</command>
+      </action>
+  </item>
   <item label="cnamulator">
       <action name="Execute">
           <command>urxvt -e sh -c 'cnamulator -h ; bash'</command>
@@ -19223,11 +19726,6 @@
   <item label="frida-ios-dump">
       <action name="Execute">
           <command>urxvt -e sh -c 'frida-ios-dump -h ; bash'</command>
-      </action>
-  </item>
-  <item label="frida-ipa-dump">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'frida-ipa-dump -h ; bash'</command>
       </action>
   </item>
   <item label="gtp-scan">
@@ -19393,6 +19891,11 @@
   <item label="quark">
       <action name="Execute">
           <command>urxvt -e sh -c 'quark --help ; bash'</command>
+      </action>
+  </item>
+  <item label="rvi-capture">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rvi-capture -h ; bash'</command>
       </action>
   </item>
   <item label="sandy">
@@ -19998,6 +20501,21 @@
           <command>urxvt -e sh -c 'mdig ; bash'</command>
       </action>
   </item>
+  <item label="named">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named ; bash'</command>
+      </action>
+  </item>
+  <item label="named-checkzone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-checkzone ; bash'</command>
+      </action>
+  </item>
+  <item label="named-compilezone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-compilezone ; bash'</command>
+      </action>
+  </item>
   <item label="named-journalprint">
       <action name="Execute">
           <command>urxvt -e sh -c 'named-journalprint ; bash'</command>
@@ -20021,6 +20539,11 @@
   <item label="nsupdate">
       <action name="Execute">
           <command>urxvt -e sh -c 'nsupdate ; bash'</command>
+      </action>
+  </item>
+  <item label="rndc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rndc ; bash'</command>
       </action>
   </item>
   <item label="arpaname">
@@ -20083,6 +20606,21 @@
           <command>urxvt -e sh -c 'mdig ; bash'</command>
       </action>
   </item>
+  <item label="named">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named ; bash'</command>
+      </action>
+  </item>
+  <item label="named-checkzone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-checkzone ; bash'</command>
+      </action>
+  </item>
+  <item label="named-compilezone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-compilezone ; bash'</command>
+      </action>
+  </item>
   <item label="named-journalprint">
       <action name="Execute">
           <command>urxvt -e sh -c 'named-journalprint ; bash'</command>
@@ -20106,6 +20644,11 @@
   <item label="nsupdate">
       <action name="Execute">
           <command>urxvt -e sh -c 'nsupdate ; bash'</command>
+      </action>
+  </item>
+  <item label="rndc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rndc ; bash'</command>
       </action>
   </item>
   <item label="binproxy">
@@ -20333,6 +20876,11 @@
           <command>urxvt -e sh -c 'dnsteal ; bash'</command>
       </action>
   </item>
+  <item label="dnsvalidator">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'dnsvalidator -h ; bash'</command>
+      </action>
+  </item>
   <item label="dnsspoof">
       <action name="Execute">
           <command>urxvt -e sh -c 'dnsspoof -h ; bash'</command>
@@ -20456,6 +21004,11 @@
   <item label="eigrp">
       <action name="Execute">
           <command>urxvt -e sh -c 'eigrp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="espionage">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'espionage -h ; bash'</command>
       </action>
   </item>
   <item label="etherape">
@@ -20706,6 +21259,36 @@
   <item label="fuzzowski">
       <action name="Execute">
           <command>urxvt -e sh -c 'fuzzowski -h ; bash'</command>
+      </action>
+  </item>
+  <item label="blitz">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'blitz -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gs-mount">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gs-mount -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gs-netcat">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gs-netcat -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gs-sftp">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gs-sftp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gs_funcs">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gs_funcs -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gs_uchroot_so">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gs_uchroot_so -h ; bash'</command>
       </action>
   </item>
   <item label="gspoof">
@@ -21093,6 +21676,11 @@
           <command>urxvt -e sh -c 'jok3r -h ; bash'</command>
       </action>
   </item>
+  <item label="jondo">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jondo ; bash'</command>
+      </action>
+  </item>
   <item label="juncli">
       <action name="Execute">
           <command>urxvt -e sh -c 'juncli ; bash'</command>
@@ -21141,6 +21729,11 @@
   <item label="ldd2bloodhound">
       <action name="Execute">
           <command>urxvt -e sh -c 'ldd2bloodhound -h ; bash'</command>
+      </action>
+  </item>
+  <item label="ldd2pretty">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ldd2pretty ; bash'</command>
       </action>
   </item>
   <item label="lft">
@@ -21326,6 +21919,16 @@
   <item label="unpacknpk">
       <action name="Execute">
           <command>urxvt -e sh -c 'unpacknpk ; bash'</command>
+      </action>
+  </item>
+  <item label="mitm">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mitm -h ; bash'</command>
+      </action>
+  </item>
+  <item label="mitm6">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mitm6 -h ; bash'</command>
       </action>
   </item>
   <item label="mitmer">
@@ -22003,9 +22606,24 @@
           <command>urxvt -e sh -c 'wmis ; bash'</command>
       </action>
   </item>
+  <item label="ptunnel">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ptunnel -h ; bash'</command>
+      </action>
+  </item>
+  <item label="ptunnel">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ptunnel -h ; bash'</command>
+      </action>
+  </item>
   <item label="pwnat">
       <action name="Execute">
           <command>urxvt -e sh -c 'pwnat -h ; bash'</command>
+      </action>
+  </item>
+  <item label="pwncat">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pwncat cd /usr/share/windows/pwncat ; ls ; bash'</command>
       </action>
   </item>
   <item label="pyersinia">
@@ -22021,6 +22639,11 @@
   <item label="pyrdp-clonecert">
       <action name="Execute">
           <command>urxvt -e sh -c 'pyrdp-clonecert -h ; bash'</command>
+      </action>
+  </item>
+  <item label="pyrdp-convert">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pyrdp-convert ; bash'</command>
       </action>
   </item>
   <item label="pyrdp-mitm">
@@ -22046,6 +22669,11 @@
   <item label="ldd2bloodhound2">
       <action name="Execute">
           <command>urxvt -e sh -c 'ldd2bloodhound2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="ldd2pretty2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ldd2pretty2 ; bash'</command>
       </action>
   </item>
   <item label="rdp-sec-check">
@@ -22171,6 +22799,11 @@
   <item label="sc_ipiddump">
       <action name="Execute">
           <command>urxvt -e sh -c 'sc_ipiddump -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sc_pinger">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sc_pinger ; bash'</command>
       </action>
   </item>
   <item label="sc_prefixscan">
@@ -22761,6 +23394,16 @@
   <item label="ssdp-scanner">
       <action name="Execute">
           <command>urxvt -e sh -c 'ssdp-scanner ; bash'</command>
+      </action>
+  </item>
+  <item label="sudoers-add">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sudoers-add ; bash'</command>
+      </action>
+  </item>
+  <item label="sudoers-add">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sudoers-add ; bash'</command>
       </action>
   </item>
   <item label="ssl-phuck3r">
@@ -23863,6 +24506,11 @@
           <command>urxvt -e sh -c 'trigcap ; bash'</command>
       </action>
   </item>
+  <item label="xxeserv">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'xxeserv -h ; bash'</command>
+      </action>
+  </item>
   <item label="airdaemon">
       <action name="Execute">
           <command>urxvt -e sh -c 'airdaemon ; bash'</command>
@@ -23908,6 +24556,11 @@
           <command>urxvt -e sh -c 'zarp -h ; bash'</command>
       </action>
   </item>
+  <item label="zdns">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'zdns -h ; bash'</command>
+      </action>
+  </item>
   <item label="bifcl">
       <action name="Execute">
           <command>urxvt -e sh -c 'bifcl ; bash'</command>
@@ -23933,6 +24586,16 @@
           <command>urxvt -e sh -c 'broctl ; bash'</command>
       </action>
   </item>
+  <item label="broker-benchmark">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'broker-benchmark ; bash'</command>
+      </action>
+  </item>
+  <item label="broker-cluster-benchmark">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'broker-cluster-benchmark ; bash'</command>
+      </action>
+  </item>
   <item label="paraglob-test">
       <action name="Execute">
           <command>urxvt -e sh -c 'paraglob-test ; bash'</command>
@@ -23946,6 +24609,11 @@
   <item label="zeek">
       <action name="Execute">
           <command>urxvt -e sh -c 'zeek ; bash'</command>
+      </action>
+  </item>
+  <item label="zeek-archiver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'zeek-archiver ; bash'</command>
       </action>
   </item>
   <item label="zeek-cut">
@@ -23963,19 +24631,9 @@
           <command>urxvt -e sh -c 'adtrace ; bash'</command>
       </action>
   </item>
-  <item label="bro-cut">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'bro-cut ; bash'</command>
-      </action>
-  </item>
   <item label="rst">
       <action name="Execute">
           <command>urxvt -e sh -c 'rst ; bash'</command>
-      </action>
-  </item>
-  <item label="zeek-cut">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'zeek-cut ; bash'</command>
       </action>
   </item>
   <item label="ztelnet">
@@ -24049,6 +24707,11 @@
           <command>urxvt -e sh -c 'stub ; bash'</command>
       </action>
   </item>
+  <item label="vbsmin">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'vbsmin -h ; bash'</command>
+      </action>
+  </item>
 </menu>
 
 <menu id="blackarch-proxy-menu" label="proxy">
@@ -24092,9 +24755,9 @@
           <command>urxvt -e sh -c 'udppm --help ; bash'</command>
       </action>
   </item>
-  <item label="bdf-proxy">
+  <item label="bdfproxy">
       <action name="Execute">
-          <command>urxvt -e sh -c 'bdf-proxy ; bash'</command>
+          <command>urxvt -e sh -c 'bdfproxy -h ; bash'</command>
       </action>
   </item>
   <item label="binproxy">
@@ -24187,14 +24850,29 @@
           <command>urxvt -e sh -c 'fakenet -h ; bash'</command>
       </action>
   </item>
+  <item label="hetty">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'hetty -h ; bash'</command>
+      </action>
+  </item>
   <item label="hyperfox">
       <action name="Execute">
           <command>urxvt -e sh -c 'hyperfox -h ; bash'</command>
       </action>
   </item>
+  <item label="jondo">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jondo ; bash'</command>
+      </action>
+  </item>
   <item label="mallory">
       <action name="Execute">
           <command>urxvt -e sh -c 'mallory -h ; bash'</command>
+      </action>
+  </item>
+  <item label="mitm">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mitm -h ; bash'</command>
       </action>
   </item>
   <item label="mitm-relay">
@@ -24332,6 +25010,11 @@
           <command>urxvt -e sh -c 'proxytunnel -h ; bash'</command>
       </action>
   </item>
+  <item label="pwncat">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pwncat cd /usr/share/windows/pwncat ; ls ; bash'</command>
+      </action>
+  </item>
   <item label="ratproxy">
       <action name="Execute">
           <command>urxvt -e sh -c 'ratproxy -h ; bash'</command>
@@ -24395,6 +25078,16 @@
   <item label="starter-page.html">
       <action name="Execute">
           <command>urxvt -e sh -c 'starter-page.html ; bash'</command>
+      </action>
+  </item>
+  <item label="sudoers-add">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sudoers-add ; bash'</command>
+      </action>
+  </item>
+  <item label="sudoers-add">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sudoers-add ; bash'</command>
       </action>
   </item>
   <item label="sslnuke">
@@ -24733,6 +25426,11 @@
 </menu>
 
 <menu id="blackarch-recon-menu" label="recon">
+  <item label="activedirectoryenum">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'activedirectoryenum ; bash'</command>
+      </action>
+  </item>
   <item label="ad-ldap-enum">
       <action name="Execute">
           <command>urxvt -e sh -c 'ad-ldap-enum -h ; bash'</command>
@@ -24898,6 +25596,21 @@
           <command>urxvt -e sh -c 'mdig ; bash'</command>
       </action>
   </item>
+  <item label="named">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named ; bash'</command>
+      </action>
+  </item>
+  <item label="named-checkzone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-checkzone ; bash'</command>
+      </action>
+  </item>
+  <item label="named-compilezone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-compilezone ; bash'</command>
+      </action>
+  </item>
   <item label="named-journalprint">
       <action name="Execute">
           <command>urxvt -e sh -c 'named-journalprint ; bash'</command>
@@ -24921,6 +25634,11 @@
   <item label="nsupdate">
       <action name="Execute">
           <command>urxvt -e sh -c 'nsupdate ; bash'</command>
+      </action>
+  </item>
+  <item label="rndc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rndc ; bash'</command>
       </action>
   </item>
   <item label="arpaname">
@@ -24983,6 +25701,21 @@
           <command>urxvt -e sh -c 'mdig ; bash'</command>
       </action>
   </item>
+  <item label="named">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named ; bash'</command>
+      </action>
+  </item>
+  <item label="named-checkzone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-checkzone ; bash'</command>
+      </action>
+  </item>
+  <item label="named-compilezone">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'named-compilezone ; bash'</command>
+      </action>
+  </item>
   <item label="named-journalprint">
       <action name="Execute">
           <command>urxvt -e sh -c 'named-journalprint ; bash'</command>
@@ -25006,6 +25739,11 @@
   <item label="nsupdate">
       <action name="Execute">
           <command>urxvt -e sh -c 'nsupdate ; bash'</command>
+      </action>
+  </item>
+  <item label="rndc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rndc ; bash'</command>
       </action>
   </item>
   <item label="bing-ip2hosts">
@@ -25123,6 +25861,11 @@
           <command>urxvt -e sh -c 'certgraph -h ; bash'</command>
       </action>
   </item>
+  <item label="chaos-client">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'chaos-client -h ; bash'</command>
+      </action>
+  </item>
   <item label="chaosmap">
       <action name="Execute">
           <command>urxvt -e sh -c 'chaosmap ; bash'</command>
@@ -25153,6 +25896,11 @@
           <command>urxvt -e sh -c 'cloudunflare ; bash'</command>
       </action>
   </item>
+  <item label="cmsscan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
+      </action>
+  </item>
   <item label="cmsscanner">
       <action name="Execute">
           <command>urxvt -e sh -c 'cmsscanner -h ; bash'</command>
@@ -25160,7 +25908,7 @@
   </item>
   <item label="cmsscan">
       <action name="Execute">
-          <command>urxvt -e sh -c 'cmsscan ; bash'</command>
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
       </action>
   </item>
   <item label="cnamulator">
@@ -25308,6 +26056,11 @@
           <command>urxvt -e sh -c 'dnswalk --help ; bash'</command>
       </action>
   </item>
+  <item label="dnsx">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'dnsx -h ; bash'</command>
+      </action>
+  </item>
   <item label="domain-analyzer">
       <action name="Execute">
           <command>urxvt -e sh -c 'domain-analyzer -h ; bash'</command>
@@ -25321,6 +26074,11 @@
   <item label="domain-stats">
       <action name="Execute">
           <command>urxvt -e sh -c 'domain-stats -h ; bash'</command>
+      </action>
+  </item>
+  <item label="domain-stats-settings">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'domain-stats-settings ; bash'</command>
       </action>
   </item>
   <item label="doork">
@@ -25398,9 +26156,9 @@
           <command>urxvt -e sh -c 'email2phonenumber -h ; bash'</command>
       </action>
   </item>
-  <item label="enteletaor3">
+  <item label="enteletaor">
       <action name="Execute">
-          <command>urxvt -e sh -c 'enteletaor3 -h ; bash'</command>
+          <command>urxvt -e sh -c 'enteletaor ; bash'</command>
       </action>
   </item>
   <item label="enum4linux">
@@ -25446,6 +26204,11 @@
   <item label="facebot">
       <action name="Execute">
           <command>urxvt -e sh -c 'facebot -h ; bash'</command>
+      </action>
+  </item>
+  <item label="favfreak">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'favfreak -h ; bash'</command>
       </action>
   </item>
   <item label="fbi">
@@ -25528,9 +26291,19 @@
           <command>urxvt -e sh -c 'git-hound -h ; bash'</command>
       </action>
   </item>
+  <item label="gitdorker">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gitdorker -h ; bash'</command>
+      </action>
+  </item>
   <item label="gitem">
       <action name="Execute">
           <command>urxvt -e sh -c 'gitem -h ; bash'</command>
+      </action>
+  </item>
+  <item label="gitgraber">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gitgraber ; bash'</command>
       </action>
   </item>
   <item label="githack">
@@ -25928,9 +26701,19 @@
           <command>urxvt -e sh -c 'ivre ; bash'</command>
       </action>
   </item>
+  <item label="jackdaw">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jackdaw -h ; bash'</command>
+      </action>
+  </item>
   <item label="jast">
       <action name="Execute">
           <command>urxvt -e sh -c 'jast -h ; bash'</command>
+      </action>
+  </item>
+  <item label="jsearch">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jsearch -h ; bash'</command>
       </action>
   </item>
   <item label="kacak">
@@ -26101,6 +26884,11 @@
   <item label="mdns-recon">
       <action name="Execute">
           <command>urxvt -e sh -c 'mdns-recon ; bash'</command>
+      </action>
+  </item>
+  <item label="metabigor">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'metabigor -h ; bash'</command>
       </action>
   </item>
   <item label="metagoofil">
@@ -26553,6 +27341,16 @@
           <command>urxvt -e sh -c 'shodan ; bash'</command>
       </action>
   </item>
+  <item label="witnessme">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'witnessme -h ; bash'</command>
+      </action>
+  </item>
+  <item label="wmapi">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'wmapi ; bash'</command>
+      </action>
+  </item>
   <item label="shodan2">
       <action name="Execute">
           <command>urxvt -e sh -c 'shodan2 ; bash'</command>
@@ -26708,6 +27506,11 @@
           <command>urxvt -e sh -c 'sc_ipiddump -h ; bash'</command>
       </action>
   </item>
+  <item label="sc_pinger">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sc_pinger ; bash'</command>
+      </action>
+  </item>
   <item label="sc_prefixscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'sc_prefixscan ; bash'</command>
@@ -26833,6 +27636,11 @@
           <command>urxvt -e sh -c 'seat -h ; bash'</command>
       </action>
   </item>
+  <item label="secretfinder">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'secretfinder -h ; bash'</command>
+      </action>
+  </item>
   <item label="seeker">
       <action name="Execute">
           <command>urxvt -e sh -c 'seeker -h ; bash'</command>
@@ -26851,6 +27659,11 @@
   <item label="sherlock">
       <action name="Execute">
           <command>urxvt -e sh -c 'sherlock -h ; bash'</command>
+      </action>
+  </item>
+  <item label="shhgit">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'shhgit -h ; bash'</command>
       </action>
   </item>
   <item label="shodanhat">
@@ -26911,6 +27724,11 @@
   <item label="sn1per">
       <action name="Execute">
           <command>urxvt -e sh -c 'sn1per ; bash'</command>
+      </action>
+  </item>
+  <item label="http-default-accounts-fingerprints-nndefaccts.lua">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'http-default-accounts-fingerprints-nndefaccts.lua ; bash'</command>
       </action>
   </item>
   <item label="inurlbr.php">
@@ -27016,6 +27834,11 @@
   <item label="subscraper">
       <action name="Execute">
           <command>urxvt -e sh -c 'subscraper -h ; bash'</command>
+      </action>
+  </item>
+  <item label="svn-extractor">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'svn-extractor -h ; bash'</command>
       </action>
   </item>
   <item label="swamp">
@@ -27908,11 +28731,6 @@
           <command>urxvt -e sh -c 'wig -h ; bash'</command>
       </action>
   </item>
-  <item label="witnessme">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'witnessme -h ; bash'</command>
-      </action>
-  </item>
   <item label="xray">
       <action name="Execute">
           <command>urxvt -e sh -c 'xray ; bash'</command>
@@ -27966,9 +28784,19 @@
           <command>urxvt -e sh -c 'apktool ; bash'</command>
       </action>
   </item>
+  <item label="angr-management">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'angr-management ; bash'</command>
+      </action>
+  </item>
   <item label="apkstudio">
       <action name="Execute">
           <command>urxvt -e sh -c 'apkstudio ; bash'</command>
+      </action>
+  </item>
+  <item label="bagbak">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'bagbak -h ; bash'</command>
       </action>
   </item>
   <item label="balbuzard">
@@ -28046,11 +28874,6 @@
           <command>urxvt -e sh -c 'binwalk ; bash'</command>
       </action>
   </item>
-  <item label="bokken">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'bokken -h ; bash'</command>
-      </action>
-  </item>
   <item label="bsdiff">
       <action name="Execute">
           <command>urxvt -e sh -c 'bsdiff ; bash'</command>
@@ -28074,6 +28897,11 @@
   <item label="bytecode-viewer">
       <action name="Execute">
           <command>urxvt -e sh -c 'bytecode-viewer ; bash'</command>
+      </action>
+  </item>
+  <item label="cafebabe">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cafebabe ; bash'</command>
       </action>
   </item>
   <item label="cstool">
@@ -28499,11 +29327,6 @@
   <item label="frida-ios-dump">
       <action name="Execute">
           <command>urxvt -e sh -c 'frida-ios-dump -h ; bash'</command>
-      </action>
-  </item>
-  <item label="frida-ipa-dump">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'frida-ipa-dump -h ; bash'</command>
       </action>
   </item>
   <item label="ghidra">
@@ -29056,6 +29879,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -29079,6 +29907,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -29106,6 +29939,11 @@
           <command>urxvt -e sh -c 'r2pm ; bash'</command>
       </action>
   </item>
+  <item label="r2r">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'r2r ; bash'</command>
+      </action>
+  </item>
   <item label="radare2">
       <action name="Execute">
           <command>urxvt -e sh -c 'radare2 -h ; bash'</command>
@@ -29129,6 +29967,11 @@
   <item label="rarun2">
       <action name="Execute">
           <command>urxvt -e sh -c 'rarun2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="rasign2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rasign2 ; bash'</command>
       </action>
   </item>
   <item label="rasm2">
@@ -29196,14 +30039,9 @@
           <command>urxvt -e sh -c 'retdec-getsig -h ; bash'</command>
       </action>
   </item>
-  <item label="retdec-idb2pat">
+  <item label="retdec-idr2pat">
       <action name="Execute">
-          <command>urxvt -e sh -c 'retdec-idb2pat ; bash'</command>
-      </action>
-  </item>
-  <item label="retdec-llvmir2hll">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'retdec-llvmir2hll -h ; bash'</command>
+          <command>urxvt -e sh -c 'retdec-idr2pat -h ; bash'</command>
       </action>
   </item>
   <item label="retdec-macho-extractor">
@@ -29355,6 +30193,11 @@
   <item label="0d1n">
       <action name="Execute">
           <command>urxvt -e sh -c '0d1n ; bash'</command>
+      </action>
+  </item>
+  <item label="0d1n_view">
+      <action name="Execute">
+          <command>urxvt -e sh -c '0d1n_view ; bash'</command>
       </action>
   </item>
   <item label="0trace">
@@ -29842,6 +30685,11 @@
           <command>urxvt -e sh -c 'cmsmap -h ; bash'</command>
       </action>
   </item>
+  <item label="cmsscan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
+      </action>
+  </item>
   <item label="cmsscanner">
       <action name="Execute">
           <command>urxvt -e sh -c 'cmsscanner -h ; bash'</command>
@@ -29849,7 +30697,7 @@
   </item>
   <item label="cmsscan">
       <action name="Execute">
-          <command>urxvt -e sh -c 'cmsscan ; bash'</command>
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
       </action>
   </item>
   <item label="comission">
@@ -30202,9 +31050,9 @@
           <command>urxvt -e sh -c 'eigrp -h ; bash'</command>
       </action>
   </item>
-  <item label="enteletaor3">
+  <item label="enteletaor">
       <action name="Execute">
-          <command>urxvt -e sh -c 'enteletaor3 -h ; bash'</command>
+          <command>urxvt -e sh -c 'enteletaor ; bash'</command>
       </action>
   </item>
   <item label="enum4linux">
@@ -30227,14 +31075,24 @@
           <command>urxvt -e sh -c 'escan -h ; bash'</command>
       </action>
   </item>
+  <item label="evine">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'evine -h ; bash'</command>
+      </action>
+  </item>
   <item label="ssrf-search">
       <action name="Execute">
           <command>urxvt -e sh -c 'ssrf-search -h ; bash'</command>
       </action>
   </item>
-  <item label="faraday">
+  <item label="faraday-manage">
       <action name="Execute">
-          <command>urxvt -e sh -c 'faraday ; bash'</command>
+          <command>urxvt -e sh -c 'faraday-manage ; bash'</command>
+      </action>
+  </item>
+  <item label="faraday-searcher">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'faraday-searcher ; bash'</command>
       </action>
   </item>
   <item label="faraday-server">
@@ -30342,6 +31200,16 @@
           <command>urxvt -e sh -c 'gggooglescan -h ; bash'</command>
       </action>
   </item>
+  <item label="git-dump">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'git-dump ; bash'</command>
+      </action>
+  </item>
+  <item label="gitdorker">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gitdorker -h ; bash'</command>
+      </action>
+  </item>
   <item label="gitrob">
       <action name="Execute">
           <command>urxvt -e sh -c 'gitrob -h ; bash'</command>
@@ -30405,6 +31273,11 @@
   <item label="grepforrfi">
       <action name="Execute">
           <command>urxvt -e sh -c 'grepforrfi ; bash'</command>
+      </action>
+  </item>
+  <item label="grype">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'grype -h ; bash'</command>
       </action>
   </item>
   <item label="gtp-scan">
@@ -30492,11 +31365,6 @@
           <command>urxvt -e sh -c 'habu.cert.names ; bash'</command>
       </action>
   </item>
-  <item label="habu.contest">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.contest ; bash'</command>
-      </action>
-  </item>
   <item label="habu.crack.luhn">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.crack.luhn ; bash'</command>
@@ -30507,19 +31375,24 @@
           <command>urxvt -e sh -c 'habu.crack.snmp ; bash'</command>
       </action>
   </item>
-  <item label="habu.cve.2018.9995">
+  <item label="habu.crypto.fernet">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cve.2018.9995 ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.fernet ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip">
+  <item label="habu.crypto.gppref">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.gppref ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip.timeline">
+  <item label="habu.crypto.xor">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip.timeline ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.xor ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.data.enrich">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.data.enrich ; bash'</command>
       </action>
   </item>
   <item label="habu.data.extract.domain">
@@ -30547,9 +31420,9 @@
           <command>urxvt -e sh -c 'habu.data.filter ; bash'</command>
       </action>
   </item>
-  <item label="habu.decrypt.gppref">
+  <item label="habu.data.select">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.decrypt.gppref ; bash'</command>
+          <command>urxvt -e sh -c 'habu.data.select ; bash'</command>
       </action>
   </item>
   <item label="habu.dhcp.discover">
@@ -30577,16 +31450,6 @@
           <command>urxvt -e sh -c 'habu.eicar ; bash'</command>
       </action>
   </item>
-  <item label="habu.expand">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.expand ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.fernet">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.fernet ; bash'</command>
-      </action>
-  </item>
   <item label="habu.forkbomb">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.forkbomb ; bash'</command>
@@ -30600,11 +31463,6 @@
   <item label="habu.gateway.find">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.gateway.find ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.h1.scope">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.h1.scope ; bash'</command>
       </action>
   </item>
   <item label="habu.host">
@@ -30627,14 +31485,14 @@
           <command>urxvt -e sh -c 'habu.http.tech ; bash'</command>
       </action>
   </item>
-  <item label="habu.interfaces">
+  <item label="habu.icmp.ping">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.interfaces ; bash'</command>
+          <command>urxvt -e sh -c 'habu.icmp.ping ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip">
+  <item label="habu.ip.asn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.asn ; bash'</command>
       </action>
   </item>
   <item label="habu.ip.geolocation">
@@ -30647,14 +31505,9 @@
           <command>urxvt -e sh -c 'habu.ip.internal ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip2asn">
+  <item label="habu.ip.public">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip2asn ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.isn">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.isn ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.public ; bash'</command>
       </action>
   </item>
   <item label="habu.karma">
@@ -30677,6 +31530,16 @@
           <command>urxvt -e sh -c 'habu.nc ; bash'</command>
       </action>
   </item>
+  <item label="habu.net.contest">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.contest ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.net.interfaces">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.interfaces ; bash'</command>
+      </action>
+  </item>
   <item label="habu.nmap.excluded">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.nmap.excluded ; bash'</command>
@@ -30692,19 +31555,9 @@
           <command>urxvt -e sh -c 'habu.nmap.ports ; bash'</command>
       </action>
   </item>
-  <item label="habu.ping">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ping ; bash'</command>
-      </action>
-  </item>
   <item label="habu.protoscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.protoscan ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.select">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.select ; bash'</command>
       </action>
   </item>
   <item label="habu.server.ftp">
@@ -30712,19 +31565,34 @@
           <command>urxvt -e sh -c 'habu.server.ftp ; bash'</command>
       </action>
   </item>
-  <item label="habu.synflood">
+  <item label="habu.tcp.flags">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.synflood ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.flags ; bash'</command>
       </action>
   </item>
-  <item label="habu.tcpflags">
+  <item label="habu.tcp.isn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.tcpflags ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.isn ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.scan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.scan ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.synflood">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.synflood ; bash'</command>
       </action>
   </item>
   <item label="habu.traceroute">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.traceroute ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.upgrade">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.upgrade ; bash'</command>
       </action>
   </item>
   <item label="habu.usercheck">
@@ -30760,11 +31628,6 @@
   <item label="habu.whois.ip">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.whois.ip ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.xor">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.xor ; bash'</command>
       </action>
   </item>
   <item label="hackredis">
@@ -30880,6 +31743,11 @@
   <item label="httprobe">
       <action name="Execute">
           <command>urxvt -e sh -c 'httprobe -h ; bash'</command>
+      </action>
+  </item>
+  <item label="httpx">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'httpx -h ; bash'</command>
       </action>
   </item>
   <item label="hawk">
@@ -31162,6 +32030,11 @@
           <command>urxvt -e sh -c 'ldd2bloodhound -h ; bash'</command>
       </action>
   </item>
+  <item label="ldd2pretty">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ldd2pretty ; bash'</command>
+      </action>
+  </item>
   <item label="ldapenum">
       <action name="Execute">
           <command>urxvt -e sh -c 'ldapenum ; bash'</command>
@@ -31417,6 +32290,11 @@
           <command>urxvt -e sh -c 'miranda ; bash'</command>
       </action>
   </item>
+  <item label="mitm6">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mitm6 -h ; bash'</command>
+      </action>
+  </item>
   <item label="modscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'modscan -h ; bash'</command>
@@ -31470,6 +32348,11 @@
   <item label="mwebfp">
       <action name="Execute">
           <command>urxvt -e sh -c 'mwebfp -h ; bash'</command>
+      </action>
+  </item>
+  <item label="naabu">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'naabu -h ; bash'</command>
       </action>
   </item>
   <item label="dnscat">
@@ -31547,11 +32430,6 @@
           <command>urxvt -e sh -c 'ncat -h ; bash'</command>
       </action>
   </item>
-  <item label="ndiff">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ndiff -h ; bash'</command>
-      </action>
-  </item>
   <item label="nmap">
       <action name="Execute">
           <command>urxvt -e sh -c 'nmap -h ; bash'</command>
@@ -31565,11 +32443,6 @@
   <item label="ncat">
       <action name="Execute">
           <command>urxvt -e sh -c 'ncat -h ; bash'</command>
-      </action>
-  </item>
-  <item label="ndiff">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'ndiff -h ; bash'</command>
       </action>
   </item>
   <item label="nmap">
@@ -31932,6 +32805,11 @@
           <command>urxvt -e sh -c 'pureblood ; bash'</command>
       </action>
   </item>
+  <item label="pwncat">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pwncat cd /usr/share/windows/pwncat ; ls ; bash'</command>
+      </action>
+  </item>
   <item label="pyersinia">
       <action name="Execute">
           <command>urxvt -e sh -c 'pyersinia -h ; bash'</command>
@@ -31970,6 +32848,11 @@
   <item label="ldd2bloodhound2">
       <action name="Execute">
           <command>urxvt -e sh -c 'ldd2bloodhound2 -h ; bash'</command>
+      </action>
+  </item>
+  <item label="ldd2pretty2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'ldd2pretty2 ; bash'</command>
       </action>
   </item>
   <item label="shodan2">
@@ -32152,6 +33035,11 @@
           <command>urxvt -e sh -c 'rustbuster --help ; bash'</command>
       </action>
   </item>
+  <item label="rustscan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rustscan -h ; bash'</command>
+      </action>
+  </item>
   <item label="s3scanner">
       <action name="Execute">
           <command>urxvt -e sh -c 's3scanner -h ; bash'</command>
@@ -32220,6 +33108,11 @@
   <item label="sc_ipiddump">
       <action name="Execute">
           <command>urxvt -e sh -c 'sc_ipiddump -h ; bash'</command>
+      </action>
+  </item>
+  <item label="sc_pinger">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sc_pinger ; bash'</command>
       </action>
   </item>
   <item label="sc_prefixscan">
@@ -32400,6 +33293,11 @@
   <item label="shortfuzzy">
       <action name="Execute">
           <command>urxvt -e sh -c 'shortfuzzy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="shuffledns">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'shuffledns -h ; bash'</command>
       </action>
   </item>
   <item label="flowcap">
@@ -32937,6 +33835,11 @@
           <command>urxvt -e sh -c 'sn1per ; bash'</command>
       </action>
   </item>
+  <item label="http-default-accounts-fingerprints-nndefaccts.lua">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'http-default-accounts-fingerprints-nndefaccts.lua ; bash'</command>
+      </action>
+  </item>
   <item label="inurlbr.php">
       <action name="Execute">
           <command>urxvt -e sh -c 'inurlbr.php ; bash'</command>
@@ -33052,6 +33955,11 @@
           <command>urxvt -e sh -c 'sslscan ; bash'</command>
       </action>
   </item>
+  <item label="sslscan2">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'sslscan2 -h ; bash'</command>
+      </action>
+  </item>
   <item label="sslyze">
       <action name="Execute">
           <command>urxvt -e sh -c 'sslyze -h ; bash'</command>
@@ -33090,6 +33998,11 @@
   <item label="subdomainer">
       <action name="Execute">
           <command>urxvt -e sh -c 'subdomainer ; bash'</command>
+      </action>
+  </item>
+  <item label="subjack">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'subjack -h ; bash'</command>
       </action>
   </item>
   <item label="sublist3r">
@@ -34650,6 +35563,11 @@
           <command>urxvt -e sh -c 'eigrp -h ; bash'</command>
       </action>
   </item>
+  <item label="espionage">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'espionage -h ; bash'</command>
+      </action>
+  </item>
   <item label="etherape">
       <action name="Execute">
           <command>urxvt -e sh -c 'etherape ; bash'</command>
@@ -34840,6 +35758,11 @@
           <command>urxvt -e sh -c 'kismet -h ; bash'</command>
       </action>
   </item>
+  <item label="kismet_discovery">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismet_discovery ; bash'</command>
+      </action>
+  </item>
   <item label="kismet_server">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismet_server -h ; bash'</command>
@@ -34873,6 +35796,11 @@
   <item label="kismetdb_to_kml">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismetdb_to_kml ; bash'</command>
+      </action>
+  </item>
+  <item label="kismetdb_to_pcap">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismetdb_to_pcap ; bash'</command>
       </action>
   </item>
   <item label="kismetdb_to_wiglecsv">
@@ -34885,6 +35813,11 @@
           <command>urxvt -e sh -c 'kismet -h ; bash'</command>
       </action>
   </item>
+  <item label="kismet_discovery">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismet_discovery ; bash'</command>
+      </action>
+  </item>
   <item label="kismet_server">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismet_server -h ; bash'</command>
@@ -34918,6 +35851,11 @@
   <item label="kismetdb_to_kml">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismetdb_to_kml ; bash'</command>
+      </action>
+  </item>
+  <item label="kismetdb_to_pcap">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismetdb_to_pcap ; bash'</command>
       </action>
   </item>
   <item label="kismetdb_to_wiglecsv">
@@ -35240,6 +36178,11 @@
           <command>urxvt -e sh -c 'pyrdp-clonecert -h ; bash'</command>
       </action>
   </item>
+  <item label="pyrdp-convert">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pyrdp-convert ; bash'</command>
+      </action>
+  </item>
   <item label="pyrdp-mitm">
       <action name="Execute">
           <command>urxvt -e sh -c 'pyrdp-mitm -h ; bash'</command>
@@ -35253,6 +36196,11 @@
   <item label="pythem">
       <action name="Execute">
           <command>urxvt -e sh -c 'pythem ; bash'</command>
+      </action>
+  </item>
+  <item label="rvi-capture">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'rvi-capture -h ; bash'</command>
       </action>
   </item>
   <item label="sessionlist">
@@ -35565,6 +36513,16 @@
           <command>urxvt -e sh -c 'broctl ; bash'</command>
       </action>
   </item>
+  <item label="broker-benchmark">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'broker-benchmark ; bash'</command>
+      </action>
+  </item>
+  <item label="broker-cluster-benchmark">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'broker-cluster-benchmark ; bash'</command>
+      </action>
+  </item>
   <item label="paraglob-test">
       <action name="Execute">
           <command>urxvt -e sh -c 'paraglob-test ; bash'</command>
@@ -35578,6 +36536,11 @@
   <item label="zeek">
       <action name="Execute">
           <command>urxvt -e sh -c 'zeek ; bash'</command>
+      </action>
+  </item>
+  <item label="zeek-archiver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'zeek-archiver ; bash'</command>
       </action>
   </item>
   <item label="zeek-cut">
@@ -35595,19 +36558,9 @@
           <command>urxvt -e sh -c 'adtrace ; bash'</command>
       </action>
   </item>
-  <item label="bro-cut">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'bro-cut ; bash'</command>
-      </action>
-  </item>
   <item label="rst">
       <action name="Execute">
           <command>urxvt -e sh -c 'rst ; bash'</command>
-      </action>
-  </item>
-  <item label="zeek-cut">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'zeek-cut ; bash'</command>
       </action>
   </item>
   <item label="zizzania">
@@ -35656,6 +36609,11 @@
   <item label="cr3dov3r">
       <action name="Execute">
           <command>urxvt -e sh -c 'cr3dov3r -h ; bash'</command>
+      </action>
+  </item>
+  <item label="credsniper">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'credsniper -h ; bash'</command>
       </action>
   </item>
   <item label="crosslinked">
@@ -36116,11 +37074,6 @@
           <command>urxvt -e sh -c 'habu.cert.names ; bash'</command>
       </action>
   </item>
-  <item label="habu.contest">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.contest ; bash'</command>
-      </action>
-  </item>
   <item label="habu.crack.luhn">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.crack.luhn ; bash'</command>
@@ -36131,19 +37084,24 @@
           <command>urxvt -e sh -c 'habu.crack.snmp ; bash'</command>
       </action>
   </item>
-  <item label="habu.cve.2018.9995">
+  <item label="habu.crypto.fernet">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cve.2018.9995 ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.fernet ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip">
+  <item label="habu.crypto.gppref">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.gppref ; bash'</command>
       </action>
   </item>
-  <item label="habu.cymon.ip.timeline">
+  <item label="habu.crypto.xor">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.cymon.ip.timeline ; bash'</command>
+          <command>urxvt -e sh -c 'habu.crypto.xor ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.data.enrich">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.data.enrich ; bash'</command>
       </action>
   </item>
   <item label="habu.data.extract.domain">
@@ -36171,9 +37129,9 @@
           <command>urxvt -e sh -c 'habu.data.filter ; bash'</command>
       </action>
   </item>
-  <item label="habu.decrypt.gppref">
+  <item label="habu.data.select">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.decrypt.gppref ; bash'</command>
+          <command>urxvt -e sh -c 'habu.data.select ; bash'</command>
       </action>
   </item>
   <item label="habu.dhcp.discover">
@@ -36201,16 +37159,6 @@
           <command>urxvt -e sh -c 'habu.eicar ; bash'</command>
       </action>
   </item>
-  <item label="habu.expand">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.expand ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.fernet">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.fernet ; bash'</command>
-      </action>
-  </item>
   <item label="habu.forkbomb">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.forkbomb ; bash'</command>
@@ -36224,11 +37172,6 @@
   <item label="habu.gateway.find">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.gateway.find ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.h1.scope">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.h1.scope ; bash'</command>
       </action>
   </item>
   <item label="habu.host">
@@ -36251,14 +37194,14 @@
           <command>urxvt -e sh -c 'habu.http.tech ; bash'</command>
       </action>
   </item>
-  <item label="habu.interfaces">
+  <item label="habu.icmp.ping">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.interfaces ; bash'</command>
+          <command>urxvt -e sh -c 'habu.icmp.ping ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip">
+  <item label="habu.ip.asn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.asn ; bash'</command>
       </action>
   </item>
   <item label="habu.ip.geolocation">
@@ -36271,14 +37214,9 @@
           <command>urxvt -e sh -c 'habu.ip.internal ; bash'</command>
       </action>
   </item>
-  <item label="habu.ip2asn">
+  <item label="habu.ip.public">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ip2asn ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.isn">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.isn ; bash'</command>
+          <command>urxvt -e sh -c 'habu.ip.public ; bash'</command>
       </action>
   </item>
   <item label="habu.karma">
@@ -36301,6 +37239,16 @@
           <command>urxvt -e sh -c 'habu.nc ; bash'</command>
       </action>
   </item>
+  <item label="habu.net.contest">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.contest ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.net.interfaces">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.net.interfaces ; bash'</command>
+      </action>
+  </item>
   <item label="habu.nmap.excluded">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.nmap.excluded ; bash'</command>
@@ -36316,19 +37264,9 @@
           <command>urxvt -e sh -c 'habu.nmap.ports ; bash'</command>
       </action>
   </item>
-  <item label="habu.ping">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.ping ; bash'</command>
-      </action>
-  </item>
   <item label="habu.protoscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.protoscan ; bash'</command>
-      </action>
-  </item>
-  <item label="habu.select">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.select ; bash'</command>
       </action>
   </item>
   <item label="habu.server.ftp">
@@ -36336,19 +37274,34 @@
           <command>urxvt -e sh -c 'habu.server.ftp ; bash'</command>
       </action>
   </item>
-  <item label="habu.synflood">
+  <item label="habu.tcp.flags">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.synflood ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.flags ; bash'</command>
       </action>
   </item>
-  <item label="habu.tcpflags">
+  <item label="habu.tcp.isn">
       <action name="Execute">
-          <command>urxvt -e sh -c 'habu.tcpflags ; bash'</command>
+          <command>urxvt -e sh -c 'habu.tcp.isn ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.scan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.scan ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.tcp.synflood">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.tcp.synflood ; bash'</command>
       </action>
   </item>
   <item label="habu.traceroute">
       <action name="Execute">
           <command>urxvt -e sh -c 'habu.traceroute ; bash'</command>
+      </action>
+  </item>
+  <item label="habu.upgrade">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'habu.upgrade ; bash'</command>
       </action>
   </item>
   <item label="habu.usercheck">
@@ -36386,11 +37339,6 @@
           <command>urxvt -e sh -c 'habu.whois.ip ; bash'</command>
       </action>
   </item>
-  <item label="habu.xor">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'habu.xor ; bash'</command>
-      </action>
-  </item>
   <item label="hharp">
       <action name="Execute">
           <command>urxvt -e sh -c 'hharp -h ; bash'</command>
@@ -36414,6 +37362,16 @@
   <item label="lsrtunnel">
       <action name="Execute">
           <command>urxvt -e sh -c 'lsrtunnel ; bash'</command>
+      </action>
+  </item>
+  <item label="mitm">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mitm -h ; bash'</command>
+      </action>
+  </item>
+  <item label="mitm6">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mitm6 -h ; bash'</command>
       </action>
   </item>
   <item label="mitmf">
@@ -37796,6 +38754,11 @@
           <command>urxvt -e sh -c '0d1n ; bash'</command>
       </action>
   </item>
+  <item label="0d1n_view">
+      <action name="Execute">
+          <command>urxvt -e sh -c '0d1n_view ; bash'</command>
+      </action>
+  </item>
   <item label="abuse-ssl-bypass-waf">
       <action name="Execute">
           <command>urxvt -e sh -c 'abuse-ssl-bypass-waf -h ; bash'</command>
@@ -37971,6 +38934,11 @@
           <command>urxvt -e sh -c 'astra ; bash'</command>
       </action>
   </item>
+  <item label="atlas">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'atlas -h ; bash'</command>
+      </action>
+  </item>
   <item label="atscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'atscan ; bash'</command>
@@ -38106,6 +39074,11 @@
           <command>urxvt -e sh -c 'cmsmap -h ; bash'</command>
       </action>
   </item>
+  <item label="cmsscan">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
+      </action>
+  </item>
   <item label="cmsscanner">
       <action name="Execute">
           <command>urxvt -e sh -c 'cmsscanner -h ; bash'</command>
@@ -38113,7 +39086,7 @@
   </item>
   <item label="cmsscan">
       <action name="Execute">
-          <command>urxvt -e sh -c 'cmsscan ; bash'</command>
+          <command>urxvt -e sh -c 'cmsscan -h ; bash'</command>
       </action>
   </item>
   <item label="comission">
@@ -38151,6 +39124,11 @@
           <command>urxvt -e sh -c 'cpfinder -h ; bash'</command>
       </action>
   </item>
+  <item label="crabstick">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'crabstick -h ; bash'</command>
+      </action>
+  </item>
   <item label="crawlic">
       <action name="Execute">
           <command>urxvt -e sh -c 'crawlic -h ; bash'</command>
@@ -38174,6 +39152,11 @@
   <item label="d-tect">
       <action name="Execute">
           <command>urxvt -e sh -c 'd-tect ; bash'</command>
+      </action>
+  </item>
+  <item label="dalfox">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'dalfox -h ; bash'</command>
       </action>
   </item>
   <item label="darkd0rk3r">
@@ -38336,6 +39319,11 @@
           <command>urxvt -e sh -c 'eazy -h ; bash'</command>
       </action>
   </item>
+  <item label="evine">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'evine -h ; bash'</command>
+      </action>
+  </item>
   <item label="ssrf-search">
       <action name="Execute">
           <command>urxvt -e sh -c 'ssrf-search -h ; bash'</command>
@@ -38471,6 +39459,11 @@
           <command>urxvt -e sh -c 'h2buster ; bash'</command>
       </action>
   </item>
+  <item label="h2csmuggler">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'h2csmuggler -h ; bash'</command>
+      </action>
+  </item>
   <item label="h2t">
       <action name="Execute">
           <command>urxvt -e sh -c 'h2t -h ; bash'</command>
@@ -38489,6 +39482,11 @@
   <item label="halberd">
       <action name="Execute">
           <command>urxvt -e sh -c 'halberd -h ; bash'</command>
+      </action>
+  </item>
+  <item label="hetty">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'hetty -h ; bash'</command>
       </action>
   </item>
   <item label="host-extract">
@@ -38519,6 +39517,11 @@
   <item label="httppwnly">
       <action name="Execute">
           <command>urxvt -e sh -c 'httppwnly ; bash'</command>
+      </action>
+  </item>
+  <item label="httpx">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'httpx -h ; bash'</command>
       </action>
   </item>
   <item label="hyperfox">
@@ -38604,6 +39607,11 @@
   <item label="joomscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'joomscan -h ; bash'</command>
+      </action>
+  </item>
+  <item label="jsearch">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jsearch -h ; bash'</command>
       </action>
   </item>
   <item label="jsonbee">
@@ -38781,6 +39789,11 @@
           <command>urxvt -e sh -c 'mwebfp -h ; bash'</command>
       </action>
   </item>
+  <item label="naabu">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'naabu -h ; bash'</command>
+      </action>
+  </item>
   <item label="nikto">
       <action name="Execute">
           <command>urxvt -e sh -c 'nikto -H ; bash'</command>
@@ -38936,6 +39949,11 @@
           <command>urxvt -e sh -c 'pureblood ; bash'</command>
       </action>
   </item>
+  <item label="pwndrop">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'pwndrop -h ; bash'</command>
+      </action>
+  </item>
   <item label="pyfiscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'pyfiscan -h ; bash'</command>
@@ -38959,6 +39977,16 @@
   <item label="js-beautify">
       <action name="Execute">
           <command>urxvt -e sh -c 'js-beautify -h ; bash'</command>
+      </action>
+  </item>
+  <item label="witnessme">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'witnessme -h ; bash'</command>
+      </action>
+  </item>
+  <item label="wmapi">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'wmapi ; bash'</command>
       </action>
   </item>
   <item label="js-beautify2">
@@ -39041,6 +40069,11 @@
           <command>urxvt -e sh -c 'scanqli -h ; bash'</command>
       </action>
   </item>
+  <item label="secretfinder">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'secretfinder -h ; bash'</command>
+      </action>
+  </item>
   <item label="secscan">
       <action name="Execute">
           <command>urxvt -e sh -c 'secscan -h ; bash'</command>
@@ -39059,6 +40092,11 @@
   <item label="shortfuzzy">
       <action name="Execute">
           <command>urxvt -e sh -c 'shortfuzzy -h ; bash'</command>
+      </action>
+  </item>
+  <item label="shuffledns">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'shuffledns -h ; bash'</command>
       </action>
   </item>
   <item label="sitadel">
@@ -39571,11 +40609,6 @@
           <command>urxvt -e sh -c 'witchxtool -h ; bash'</command>
       </action>
   </item>
-  <item label="witnessme">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'witnessme -h ; bash'</command>
-      </action>
-  </item>
   <item label="wmat">
       <action name="Execute">
           <command>urxvt -e sh -c 'wmat ; bash'</command>
@@ -39741,6 +40774,76 @@
           <command>urxvt -e sh -c 'xxeinjector -h ; bash'</command>
       </action>
   </item>
+  <item label="acorn">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'acorn ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="he">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'he ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="jsesc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jsesc ; bash'</command>
+      </action>
+  </item>
+  <item label="_mocha">
+      <action name="Execute">
+          <command>urxvt -e sh -c '_mocha ; bash'</command>
+      </action>
+  </item>
+  <item label="mocha">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'mocha ; bash'</command>
+      </action>
+  </item>
+  <item label="semver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'semver ; bash'</command>
+      </action>
+  </item>
+  <item label="node-which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'node-which ; bash'</command>
+      </action>
+  </item>
+  <item label="tsc">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsc ; bash'</command>
+      </action>
+  </item>
+  <item label="tsserver">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'tsserver ; bash'</command>
+      </action>
+  </item>
+  <item label="uuid">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'uuid ; bash'</command>
+      </action>
+  </item>
+  <item label="which">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'which ; bash'</command>
+      </action>
+  </item>
   <item label="yaaf">
       <action name="Execute">
           <command>urxvt -e sh -c 'yaaf -h ; bash'</command>
@@ -39854,6 +40957,11 @@
           <command>urxvt -e sh -c 'fred ; bash'</command>
       </action>
   </item>
+  <item label="gene">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'gene -h ; bash'</command>
+      </action>
+  </item>
   <item label="ghostdelivery">
       <action name="Execute">
           <command>urxvt -e sh -c 'ghostdelivery ; bash'</command>
@@ -39887,6 +40995,16 @@
   <item label="indxcarver">
       <action name="Execute">
           <command>urxvt -e sh -c 'indxcarver -h ; bash'</command>
+      </action>
+  </item>
+  <item label="jackdaw">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'jackdaw -h ; bash'</command>
+      </action>
+  </item>
+  <item label="lethalhta">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'lethalhta -h ; bash'</command>
       </action>
   </item>
   <item label="log-file-parser">
@@ -39954,21 +41072,6 @@
           <command>urxvt -e sh -c 'minidump ; bash'</command>
       </action>
   </item>
-  <item label="getS4U2proxy">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'getS4U2proxy ; bash'</command>
-      </action>
-  </item>
-  <item label="getTGS">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'getTGS ; bash'</command>
-      </action>
-  </item>
-  <item label="getTGT">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'getTGT ; bash'</command>
-      </action>
-  </item>
   <item label="minidump2">
       <action name="Execute">
           <command>urxvt -e sh -c 'minidump2 ; bash'</command>
@@ -40019,59 +41122,19 @@
           <command>urxvt -e sh -c 'Akatsuki64.cd ; bash'</command>
       </action>
   </item>
-  <item label="Chiyoda64.cd">
+  <item label="Fubuki32.cd">
       <action name="Execute">
-          <command>urxvt -e sh -c 'Chiyoda64.cd ; bash'</command>
+          <command>urxvt -e sh -c 'Fubuki32.cd ; bash'</command>
       </action>
   </item>
-  <item label="Fujinami.cd">
+  <item label="Fubuki64.cd">
       <action name="Execute">
-          <command>urxvt -e sh -c 'Fujinami.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="Ikazuchi32.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'Ikazuchi32.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="Ikazuchi64.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'Ikazuchi64.cd ; bash'</command>
+          <command>urxvt -e sh -c 'Fubuki64.cd ; bash'</command>
       </action>
   </item>
   <item label="Kamikaze.cd">
       <action name="Execute">
           <command>urxvt -e sh -c 'Kamikaze.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="fubuki32.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'fubuki32.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="fubuki64.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'fubuki64.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="hibiki32.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'hibiki32.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="hibiki64.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'hibiki64.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="kongou32.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'kongou32.cd ; bash'</command>
-      </action>
-  </item>
-  <item label="kongou64.cd">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'kongou64.cd ; bash'</command>
       </action>
   </item>
   <item label="usnparser">
@@ -40460,11 +41523,6 @@
   <item label="genpmk">
       <action name="Execute">
           <command>urxvt -e sh -c 'genpmk -h ; bash'</command>
-      </action>
-  </item>
-  <item label="create_ap">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'create_ap ; bash'</command>
       </action>
   </item>
   <item label="create_ap">
@@ -40907,11 +41965,6 @@
           <command>urxvt -e sh -c 'hcxmactool ; bash'</command>
       </action>
   </item>
-  <item label="hcxpcaptool">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'hcxpcaptool ; bash'</command>
-      </action>
-  </item>
   <item label="hcxpmkidtool">
       <action name="Execute">
           <command>urxvt -e sh -c 'hcxpmkidtool ; bash'</command>
@@ -40930,41 +41983,6 @@
   <item label="wlancap2wpasec">
       <action name="Execute">
           <command>urxvt -e sh -c 'wlancap2wpasec ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanhcx2john">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcx2john -h ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanhcx2ssid">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcx2ssid -h ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanhcxcat">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcxcat ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanhcxinfo">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcxinfo -h ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanjohn2hcx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanjohn2hcx ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanpmk2hcx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanpmk2hcx ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanwkp2hcx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanwkp2hcx ; bash'</command>
       </action>
   </item>
   <item label="hcxessidtool">
@@ -40977,11 +41995,6 @@
           <command>urxvt -e sh -c 'hcxmactool ; bash'</command>
       </action>
   </item>
-  <item label="hcxpcaptool">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'hcxpcaptool ; bash'</command>
-      </action>
-  </item>
   <item label="hcxpmkidtool">
       <action name="Execute">
           <command>urxvt -e sh -c 'hcxpmkidtool ; bash'</command>
@@ -41002,41 +42015,6 @@
           <command>urxvt -e sh -c 'wlancap2wpasec ; bash'</command>
       </action>
   </item>
-  <item label="wlanhcx2john">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcx2john -h ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanhcx2ssid">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcx2ssid -h ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanhcxcat">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcxcat ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanhcxinfo">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanhcxinfo -h ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanjohn2hcx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanjohn2hcx ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanpmk2hcx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanpmk2hcx ; bash'</command>
-      </action>
-  </item>
-  <item label="wlanwkp2hcx">
-      <action name="Execute">
-          <command>urxvt -e sh -c 'wlanwkp2hcx ; bash'</command>
-      </action>
-  </item>
   <item label="hoover">
       <action name="Execute">
           <command>urxvt -e sh -c 'hoover -h ; bash'</command>
@@ -41047,9 +42025,9 @@
           <command>urxvt -e sh -c 'hostapd-wpe ; bash'</command>
       </action>
   </item>
-  <item label="hostapd-wpe-cli">
+  <item label="hostapd-wpe_cli">
       <action name="Execute">
-          <command>urxvt -e sh -c 'hostapd-wpe-cli -h ; bash'</command>
+          <command>urxvt -e sh -c 'hostapd-wpe_cli ; bash'</command>
       </action>
   </item>
   <item label="hotspotter">
@@ -41162,6 +42140,11 @@
           <command>urxvt -e sh -c 'kismet -h ; bash'</command>
       </action>
   </item>
+  <item label="kismet_discovery">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismet_discovery ; bash'</command>
+      </action>
+  </item>
   <item label="kismet_server">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismet_server -h ; bash'</command>
@@ -41195,6 +42178,11 @@
   <item label="kismetdb_to_kml">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismetdb_to_kml ; bash'</command>
+      </action>
+  </item>
+  <item label="kismetdb_to_pcap">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismetdb_to_pcap ; bash'</command>
       </action>
   </item>
   <item label="kismetdb_to_wiglecsv">
@@ -41207,6 +42195,11 @@
           <command>urxvt -e sh -c 'kismet -h ; bash'</command>
       </action>
   </item>
+  <item label="kismet_discovery">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismet_discovery ; bash'</command>
+      </action>
+  </item>
   <item label="kismet_server">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismet_server -h ; bash'</command>
@@ -41240,6 +42233,11 @@
   <item label="kismetdb_to_kml">
       <action name="Execute">
           <command>urxvt -e sh -c 'kismetdb_to_kml ; bash'</command>
+      </action>
+  </item>
+  <item label="kismetdb_to_pcap">
+      <action name="Execute">
+          <command>urxvt -e sh -c 'kismetdb_to_pcap ; bash'</command>
       </action>
   </item>
   <item label="kismetdb_to_wiglecsv">
@@ -41738,6 +42736,7 @@
   <menu id="blackarch-firmware-menu"/>
   <menu id="blackarch-forensic-menu"/>
   <menu id="blackarch-fuzzer-menu"/>
+  <menu id="blackarch-gpu-menu"/>
   <menu id="blackarch-hardware-menu"/>
   <menu id="blackarch-honeypot-menu"/>
   <menu id="blackarch-ids-menu"/>
