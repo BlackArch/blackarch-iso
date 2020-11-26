@@ -1,6 +1,7 @@
 ===> 2020.12.01
 
 	- added more than 100 new tools
+	- renamed 'live iso' to 'full iso'
 	- updated blackarch-installer to v1.2.16
 	- included linux kernel 5.9.11
 	- QA'ed and fixed a lot of packages (runtime exec, missing dependencies)
