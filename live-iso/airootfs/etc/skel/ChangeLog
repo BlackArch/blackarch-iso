@@ -1,3 +1,14 @@
+===> 2020.12.01
+
+	- added more than 100 new tools
+	- updated blackarch-installer to v1.2.16
+	- included linux kernel 5.9.11
+	- QA'ed and fixed a lot of packages (runtime exec, missing dependencies)
+	- updated all vim plugins and improved vim config options
+	- updated all blackarch tools and packages including config files
+	- updated all system packages
+	- updated all window manager menus (awesome, fluxbox, openbox)
+
 ===> 2020.06.01
 
 	- added more than 150 new tools
