@@ -152,6 +152,7 @@ bandicoot
 barf
 barmie
 barq
+base
 base64dump
 base-devel
 basedomainname
@@ -257,6 +258,7 @@ braa
 braces
 brakeman
 bridge-utils
+brltty
 brosec
 browselist
 browser-fuzzer
@@ -1279,6 +1281,7 @@ luksipc
 lulzbuster
 lunar
 luyten
+lvm2
 lxdm
 lynis
 lyricpass
@@ -1381,6 +1384,8 @@ mitmproxy
 mitm-relay
 mkbrutus
 mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
 mkyara
 mlocate
 mobiusft
@@ -2183,6 +2188,7 @@ sqlpat
 sqlping
 sqlpowerinjector
 sqlsus
+squashfs-tools
 ssdeep
 ssdp-scanner
 sshatter
@@ -2571,6 +2577,7 @@ winpwn
 winregfs
 winrelay
 wireless-ids
+wireless-regdb
 wireless_tools
 wireshark-cli
 wireshark-qt
