@@ -1547,7 +1547,6 @@ obexstress
 obfs4proxy
 obfsproxy
 objection
-oblogout
 ocs
 office-dde-payloads
 ofp-sniffer
@@ -2555,8 +2554,6 @@ whatwaf
 whatweb
 whichcdn
 whitewidow
-wicd
-wicd-gtk
 wi-feye
 wifi-autopwner
 wifibroot

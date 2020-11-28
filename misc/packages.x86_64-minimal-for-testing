@@ -75,7 +75,6 @@ ntfs-3g
 ntp
 obconf
 obfsproxy
-oblogout
 openbox
 openconnect
 openssh
@@ -104,8 +103,6 @@ usb_modeswitch
 vim
 virtualbox-guest-utils
 wavemon
-wicd
-wicd-gtk
 wifite
 wireless_tools
 wpa_supplicant
