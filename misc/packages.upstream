@@ -4,6 +4,7 @@ afl
 afpfs-ng
 aircrack-ng
 alsa-utils
+amd-ucode
 arch-install-scripts
 archlinux-keyring
 arduino
@@ -26,6 +27,7 @@ bluez
 bluez-hid2hci
 bluez-utils
 bridge-utils
+broadcom-wl
 bsdiff
 btrfs-progs
 bully
@@ -38,6 +40,7 @@ cmake
 corkscrew
 cowpatty
 cppcheck
+crda
 create_ap
 cryptsetup
 ctags
@@ -58,9 +61,11 @@ dnsutils
 dosfstools
 dscanner
 dsniff
+efitools
 elfkickers
 elinks
 etherape
+ethtool
 ettercap
 evilginx
 exiv2
@@ -109,6 +114,7 @@ hydra
 i3
 impacket
 inotify-tools
+intel-ucode
 iodine
 ipmitool
 iputils
@@ -125,6 +131,7 @@ kcptun
 kismet
 lftp
 libpst
+linux
 linux-atm
 linux-firmware
 lldb
@@ -216,6 +223,7 @@ scanmem
 scapy
 scrapy
 scrot
+sed
 shellcheck
 siege
 sleuthkit
@@ -240,6 +248,7 @@ sudo
 swaks
 swftools
 sysdig
+systemd-resolvconf
 tcpdump
 tcpflow
 tcpreplay
@@ -275,6 +284,7 @@ volatility
 vpnc
 vulscan
 wavemon
+wget
 wicd
 wicd-gtk
 wifite
