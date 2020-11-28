@@ -45,6 +45,7 @@ alsa-utils
 altdns
 amass
 amber
+amd-ucode
 amoco
 analyzemft
 analyzepesig
@@ -259,6 +260,7 @@ braces
 brakeman
 bridge-utils
 brltty
+broadcom-wl
 brosec
 browselist
 browser-fuzzer
@@ -418,6 +420,7 @@ crackmapexec
 crackq
 crackserver
 crawlic
+crda
 creak
 create_ap
 creddump
@@ -621,6 +624,7 @@ easyfuzzer
 eazy
 ecfs
 edb
+efitools
 eggshell
 eigrp-tools
 eindeutig
@@ -655,6 +659,7 @@ eternal-scanner
 etherape
 etherchange
 etherflood
+ethtool
 ettercap
 evilclippy
 evilginx
@@ -1063,6 +1068,7 @@ insanity
 instagramosint
 instashell
 intelplot
+intel-ucode
 intensio-obfuscator
 intercepter-ng
 interlace
@@ -1251,6 +1257,7 @@ linikatz
 linkedin2username
 linkfinder
 linset
+linux
 linux-atm
 linux-exploit-suggester
 linux-exploit-suggester.sh
@@ -2006,6 +2013,7 @@ secretfinder
 secscan
 secure2csv
 secure-delete
+sed
 seeker
 sees
 sensepost-xrdp
@@ -2280,6 +2288,7 @@ syringe
 sysdig
 sysinternals-suite
 syslinux
+systemd-resolvconf
 t50
 tabi
 tachyon-scanner
@@ -2536,6 +2545,7 @@ weirdaal
 wepbuster
 wesng
 wfuzz
+wget
 whapa
 whatbreach
 whatportis
