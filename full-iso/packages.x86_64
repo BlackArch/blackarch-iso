@@ -52,10 +52,7 @@ analyzepesig
 androbugs
 androguard
 androick
-android-apktool
-android-ndk
 androidpincrack
-android-sdk
 androidsniffer
 android-udev-rules
 androwarn
@@ -186,9 +183,9 @@ bgrep
 billcipher
 binaryninja-demo
 binaryninja-python
+bind
 bindead
 bindiff
-bind-tools
 binex
 binflow
 bing-ip2hosts
@@ -293,7 +290,6 @@ burpsuite
 buster
 buttinsky
 bvi
-byepass
 bypass-firewall-dns-history
 bytecode-viewer
 c5scan
@@ -436,7 +432,6 @@ crowbar
 crozono
 crunch
 crypthook
-cryptohazemultiforcer
 cryptonark
 cryptsetup
 csrftester
@@ -1130,11 +1125,6 @@ jcrack
 jdeserialize
 jd-gui
 jeangrey
-jeb-android
-jeb-arm
-jeb-intel
-jeb-mips
-jeb-webasm
 jeopardize
 jexboss
 jhead
@@ -1303,7 +1293,6 @@ magictree
 mail-crawl
 make-pdf
 maketh
-malboxes
 malcom
 malheur
 malice
@@ -1631,7 +1620,6 @@ pastejacker
 pasv-agrsv
 patator
 patchkit
-pathod
 pathzuzu
 payloadmask
 payloadsallthethings
@@ -1884,7 +1872,7 @@ redirectpoison
 redpoint
 redsocks
 reelphish
-refind-efi
+refind
 regeorg
 regipy
 reglookup
@@ -1908,7 +1896,6 @@ rfcat
 rfdump
 rfidiot
 rfidtool
-rfkill
 rhodiola
 richsploit
 ridenum
@@ -1989,7 +1976,6 @@ scannerl
 scanqli
 scansploit
 scanssh
-scap-security-guide
 scap-workbench
 scapy
 scavenger
@@ -2440,6 +2426,7 @@ usernamer
 userrecon
 userrecon-py
 usnparser
+util-linux
 uw-loveimap
 uw-offish
 uw-udpscan
@@ -2461,7 +2448,6 @@ vega
 veil
 veles
 veracrypt
-verinice
 vfeed
 vhostscan
 videosnarf
