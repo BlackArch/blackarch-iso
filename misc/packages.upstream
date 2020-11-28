@@ -71,7 +71,6 @@ evilginx
 exiv2
 expac
 exploitdb
-extundelete
 f2fs-tools
 fcrackzip
 feh
@@ -285,15 +284,12 @@ vpnc
 vulscan
 wavemon
 wget
-wicd
-wicd-gtk
 wifite
 wine
 wine-mono
 winetricks
 wireless_tools
 wireshark-cli
-wireshark-gtk
 wireshark-qt
 wpa_supplicant
 wpscan
