@@ -36,11 +36,11 @@ fi
 echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 # disable network stuff
-rm /etc/udev/rules.d/81-dhcpcd.rules
+rm -f /etc/udev/rules.d/81-dhcpcd.rules
 systemctl disable dhcpcd sshd rpcbind.service
 
 # remove special (not needed) files
-rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
+rm -f /etc/systemd/system/getty@tty1.service.d/autologin.conf
 rm /root/{.automated_script.sh,.zlogin}
 
 # setting root password
@@ -62,8 +62,8 @@ sync
 
 # font configuration
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
-rm /etc/fonts/conf.d/05-reset-dirs-sample.conf
-rm /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
+rm -f /etc/fonts/conf.d/05-reset-dirs-sample.conf
+rm -f /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
 
 # default shell
 chsh -s /bin/bash
@@ -118,13 +118,13 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
 
 # remove not needed .desktop entries
-rm -rf /usr/share/xsessions/blackarch-dwm.desktop
-rm -rf /usr/share/xsessions/openbox-kde.desktop
-rm -rf /usr/share/xsessions/i3-with-shmlog.desktop
-rm -rf /usr/share/xsessions/xfce.desktop
-rm -rf /usr/share/xsessions/*gnome*.desktop
-rm -rf /usr/share/xsessions/*kde*.desktop
-rm -rf /root/install.txt
+rm -f /usr/share/xsessions/blackarch-dwm.desktop
+rm -f /usr/share/xsessions/openbox-kde.desktop
+rm -f /usr/share/xsessions/i3-with-shmlog.desktop
+rm -f /usr/share/xsessions/xfce.desktop
+rm -f /usr/share/xsessions/*gnome*.desktop
+rm -f /usr/share/xsessions/*kde*.desktop
+rm -f /root/install.txt
 
 # add install.txt file
 echo "Type blackarch-install and follow the instructions." > /root/INSTALL

@@ -54,11 +54,12 @@ chsh -s /bin/bash
 echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
 # remove special (not needed) scripts
-rm /etc/systemd/system/getty@tty1.service.d/autologin.conf
-rm /root/{.automated_script.sh,.zlogin}
+rm -f /etc/systemd/system/getty@tty1.service.d/autologin.conf
+rm -f /root/{.automated_script.sh,.zlogin}
 #rm /etc/mkinitcpio-archiso.conf
-rm -r /etc/initcpio
+rm -rf /etc/initcpio
 
 # add install.txt file
 echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 rm -rf /root/install.txt
+
