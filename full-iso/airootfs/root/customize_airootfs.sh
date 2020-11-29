@@ -70,7 +70,7 @@ chsh -s /bin/bash
 
 # download and install exploits, but remove bin-sploits from exploit-db
 mkdir -p /usr/share/exploits/exploit-db
-sploitctl -f 0 -t 10 -XR
+sploitctl -f 0 -t 5 -r 2 -XR
 rm -rf /usr/share/exploits/exploit-db/exploitdb-bin-sploits
 
 # temporary fixes for ruby based tools
