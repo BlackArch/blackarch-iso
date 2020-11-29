@@ -35,6 +35,7 @@ mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
 mlocate
+nbd
 netctl
 ntp
 openssh
