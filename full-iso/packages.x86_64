@@ -385,7 +385,6 @@ cmseek
 cms-explorer
 cms-few
 cmsfuzz
-cmsmap
 cmsscan
 cmsscanner
 cnamulator
@@ -609,7 +608,6 @@ dumpzilla
 dutas
 dvcs-ripper
 dwarf
-dynamorio
 eapeak
 eaphammer
 eapmd5pass
@@ -646,7 +644,6 @@ enumiax
 enum-shares
 enyelkm
 epicwebhoneypot
-eraser
 erase-registrations
 eresi
 espionage
@@ -675,7 +672,6 @@ exiv2
 expac
 expimp-lookup
 exploitpack
-expose
 exrex
 extended-ssrf-search
 extracthosts
@@ -726,7 +722,6 @@ find-dns
 findmyhash
 findmyiphone
 findomain
-findsploit
 fingerprinter
 firecat
 firefox
@@ -1682,7 +1677,6 @@ phpstress
 php-vulnerability-hunter
 phrasendrescher
 pidense
-pin
 pingcastle
 pintool
 pintool2
@@ -1990,7 +1984,6 @@ sdn-toolkit
 sea
 search1337
 seat
-seclists
 secretfinder
 secscan
 secure2csv
@@ -2049,7 +2042,6 @@ silk
 simple-ducky
 simpleemailspoofer
 simple-lan-scan
-simplify
 simplyemail
 simtrace2
 sinfp
@@ -2312,7 +2304,6 @@ thc-pptp-bruter
 thc-smartbrute
 thc-ssl-dos
 thedorkbox
-thefatrat
 thefuzz
 theharvester
 themole
@@ -2680,7 +2671,6 @@ yawast
 yay
 ycrawler
 yersinia
-yeti
 yinjector
 ysoserial
 zackattack
