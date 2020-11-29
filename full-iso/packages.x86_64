@@ -385,6 +385,7 @@ cmseek
 cms-explorer
 cms-few
 cmsfuzz
+cmsmap
 cmsscan
 cmsscanner
 cnamulator
@@ -1658,6 +1659,7 @@ pe-sieve
 petools
 pev
 pextractor
+pfff
 pftriage
 pgdbf
 phantap
@@ -1985,6 +1987,7 @@ sdn-toolkit
 sea
 search1337
 seat
+seclists
 secretfinder
 secscan
 secure2csv
