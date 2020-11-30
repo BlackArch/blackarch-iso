@@ -69,6 +69,7 @@ rm -f /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
 chsh -s /bin/bash
 
 # download and install exploits, but remove bin-sploits from exploit-db
+sploitctl -f 1 -t 5 -r 2 -XR
 sploitctl -f 2 -t 5 -r 2 -XR
 sploitctl -f 3 -t 5 -r 2 -XR
 rm -rf /usr/share/exploits/exploit-db/exploitdb-bin-sploits
