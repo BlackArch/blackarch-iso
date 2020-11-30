@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# vbox foo
+vbox=$(dmesg |grep -io virtualbox)
+if [ ! -z "$vbox" ]
+then
+  /usr/bin/VBoxClient --seamless
+  /usr/bin/VBoxClient --clipboard
+  /usr/bin/VBoxClient --vmsvga
+fi
+
+# wallpaper
+exec feh --bg-scale /usr/share/blackarch/wallpaper.jpg &
+
