@@ -3563,6 +3563,7 @@ sipvicious-svcrash -h ;
 sipvicious-svmap -h ;
 sipvicious-svreport -h ;
 sipvicious-svwar -h ;
+sireprat -h ;
 sitadel -h ;
 sitediff -h ;
 sj-commit-results -h ;
