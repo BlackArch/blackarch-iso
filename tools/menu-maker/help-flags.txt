@@ -963,6 +963,7 @@ dump_router6 ;
 dumpusers cd /usr/share/windows/dumpusers ; ls ;
 dumpzilla -h ;
 dupemap ;
+duplicut -h ;
 dutas -h ;
 dwarf --help ;
 eapeak -h ;
