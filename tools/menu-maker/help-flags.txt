@@ -2371,6 +2371,7 @@ mxtract -h ;
 mybff -h ;
 mycrawler2 ;
 mycrypt ;
+myjwt -h ;
 mylg help ;
 mysql2sqlite -h ;
 mysql_login ;
