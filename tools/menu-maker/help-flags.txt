@@ -3100,6 +3100,7 @@ rauserdata ;
 raven -h ;
 raw2dyna ;
 rawr -h ;
+rawsec-cli --help ;
 rawshark ;
 rax2 ;
 rbmonkey ;
