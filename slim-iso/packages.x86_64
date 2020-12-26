@@ -90,7 +90,6 @@ xl2tpd
 
 
 ### xorg
-xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
 xorg-fonts-100dpi
@@ -409,6 +408,7 @@ maltego
 maskprocessor
 masscan
 metasploit
+msfdb
 mimikatz
 mitmproxy
 multimac
@@ -446,12 +446,14 @@ samdump2
 sbd
 scalpel
 scrounge-ntfs
+seclists
 set
 skipfish
 sleuthkit
 smbmap
 snmpcheck
 socat
+sploitctl
 spiderfoot
 spooftooph
 sqlmap
@@ -467,6 +469,7 @@ tcpick
 tcpreplay
 thc-ipv6
 thc-pptp-bruter
+torctl
 theharvester
 udptunnel
 unix-privesc-check
@@ -482,6 +485,6 @@ wifite
 windows-binaries
 winexe
 wireshark
-seclists
+wordlistctl
 wpscan
 zaproxy
