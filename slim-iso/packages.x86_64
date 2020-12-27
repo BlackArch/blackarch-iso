@@ -184,7 +184,7 @@ which
 
 ### vm
 open-vm-tools
-virtualbox-guest-modules-arch
+virtualbox-guest-dkms
 virtualbox-guest-utils
 
 
@@ -351,7 +351,6 @@ xfce4-verve-plugin
 xfce4-wavelan-plugin
 xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
-xfce4-panel-profiles
 
 
 ### pentesting tools
@@ -423,7 +422,6 @@ nikto
 nmap
 onesixtyone
 ophcrack
-passing-the-hash
 patator
 pdfid
 pdf-parser
@@ -432,6 +430,7 @@ pixiewps
 powersploit
 proxychains-ng
 proxytunnel
+pth-toolkit
 ptunnel
 pwnat
 radare2
@@ -484,7 +483,7 @@ whois
 wifite
 windows-binaries
 winexe
-wireshark
+wireshark-qt
 wordlistctl
 wpscan
 zaproxy
