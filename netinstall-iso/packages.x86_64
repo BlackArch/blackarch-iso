@@ -26,6 +26,7 @@ intel-ucode
 ipw2100-fw
 ipw2200-fw
 iw
+iwd
 linux
 linux-atm
 linux-firmware
