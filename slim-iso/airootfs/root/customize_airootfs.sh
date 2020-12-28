@@ -22,7 +22,7 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus' 'pacman-init')
+enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus' 'pacman-init')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
@@ -49,17 +49,6 @@ echo "root:blackarch" | chpasswd
 # copy files over to home
 cp -r /etc/skel/. /root/.
 
-# setup repository, add pacman.conf entry, sync databases
-curl -s https://blackarch.org/strap.sh | sh
-pacman -Syy --noconfirm
-pacman-key --init
-pacman-key --populate blackarch archlinux
-pkgfile -u
-pacman -Fyy
-pacman-db-upgrade
-updatedb
-sync
-
 # font configuration
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
 rm -f /etc/fonts/conf.d/05-reset-dirs-sample.conf
@@ -67,12 +56,6 @@ rm -f /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
 
 # default shell
 chsh -s /bin/bash
-
-# download and install exploits, but remove bin-sploits from exploit-db
-sploitctl -f 1 -t 5 -r 2 -XR
-sploitctl -f 2 -t 5 -r 2 -XR
-sploitctl -f 3 -t 5 -r 2 -XR
-rm -rf /usr/share/exploits/exploit-db/exploitdb-bin-sploits
 
 # temporary fixes for ruby based tools
 cd /usr/share/arachni/ && rm -f Gemfile.lock &&
@@ -122,7 +105,6 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
 rm -f /usr/share/xsessions/blackarch-dwm.desktop
 rm -f /usr/share/xsessions/openbox-kde.desktop
 rm -f /usr/share/xsessions/i3-with-shmlog.desktop
-rm -f /usr/share/xsessions/xfce.desktop
 rm -f /usr/share/xsessions/*gnome*.desktop
 rm -f /usr/share/xsessions/*kde*.desktop
 rm -f /root/install.txt
@@ -132,7 +114,3 @@ echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache
-
-# tmp fix for awesome exit()
-sed -i 's|local visible, action = cmd(item, self)|local visible, action = cmd(0, 0)|' /usr/share/awesome/lib/awful/menu.lua
-

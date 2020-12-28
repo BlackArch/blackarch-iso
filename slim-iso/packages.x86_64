@@ -1,42 +1,43 @@
 ### archiso
 amd-ucode
 arch-install-scripts
+b43-fwcutter
 bind-tools
+brltty
 broadcom-wl
 btrfs-progs
 clonezilla
 crda
-cryptsetup
 darkhttpd
 ddrescue
 dhclient
-dialog
+dhcpcd
 diffutils
 dmraid
 dnsmasq
-dnsutils
 dosfstools
+edk2-shell
 efibootmgr
+espeakup
 ethtool
 exfatprogs
 f2fs-tools
+fatresize
 fsarchiver
 gnu-netcat
+gpart
 gpm
 gptfdisk
-grub
 haveged
 hdparm
 intel-ucode
 ipw2100-fw
 ipw2200-fw
-irssi
 jfsutils
 linux
-linux-headers
 linux-atm
 linux-firmware
-logrotate
+linux-headers
 lsscsi
 lvm2
 man-db
@@ -54,11 +55,9 @@ nfs-utils
 nilfs-utils
 ntfs-3g
 nvme-cli
-ntp
 openconnect
 openssh
 openvpn
-os-prober
 partclone
 parted
 partimage
@@ -71,72 +70,30 @@ rsync
 sdparm
 sg3_utils
 smartmontools
+squashfs-tools
 sudo
 syslinux
+systemd-resolvconf
 tcpdump
 terminus-font
 testdisk
+tmux
+udftools
 usb_modeswitch
 usbutils
 vim
 vpnc
-wget
 wireless-regdb
 wireless_tools
 wpa_supplicant
 wvdial
 xfsprogs
 xl2tpd
+zsh
 
 
 ### xorg
-xorg-bdftopcf
-xorg-docs
-xorg-fonts-100dpi
-xorg-fonts-75dpi
-xorg-fonts-encodings
-xorg-font-util
-xorg-iceauth
-xorg-mkfontscale
-xorg-server
-xorg-server-common
-xorg-server-devel
-xorg-server-xephyr
-xorg-server-xnest
-xorg-server-xvfb
-xorg-sessreg
-xorg-setxkbmap
-xorg-smproxy
-xorg-x11perf
-xorg-xauth
-xorg-xbacklight
-xorg-xcmsdb
-xorg-xcursorgen
-xorg-xdpyinfo
-xorg-xdriinfo
-xorg-xev
-xorg-xgamma
-xorg-xhost
-xorg-xinput
-xorg-xkbcomp
-xorg-xkbevd
-xorg-xkbutils
-xorg-xkill
-xorg-xlsatoms
-xorg-xlsclients
-xorg-xmodmap
-xorg-xpr
-xorg-xprop
-xorg-xrandr
-xorg-xrdb
-xorg-xrefresh
-xorg-xset
-xorg-xsetroot
-xorg-xvinfo
-xorg-xwayland
-xorg-xwd
-xorg-xwininfo
-xorg-xwud
+xorg
 xorg-xinit
 
 ### video
@@ -157,30 +114,7 @@ mesa
 
 ### base and base-devel
 base
-autoconf
-automake
-binutils
-bison
-fakeroot
-file
-findutils
-flex
-gawk
-gcc
-gettext
-grep
-groff
-gzip
-libtool
-m4
-make
-pacman
-patch
-pkgconf
-sed
-sudo
-texinfo
-which
+base-devel
 
 ### vm
 open-vm-tools
@@ -232,10 +166,17 @@ gvfs-mtp
 gvfs-nfs
 gvfs-smb
 mtpfs
-udiskie
 udisks2
 xdg-user-dirs
 xdg-user-dirs-gtk
+
+### development
+ccache
+cmake
+gdb
+go
+go-tools
+rustup
 
 ### tumbler
 tumbler
@@ -249,10 +190,13 @@ poppler-qt5
 ### applications
 chromium
 firefox
+hexchat
+htop
 galculator
-transmission-gtk
-scrot
+qbittorrent
+qpdfview
 vlc
+xarchiver
 
 ### fonts
 adobe-source-sans-pro-fonts
@@ -271,31 +215,42 @@ arc-gtk-theme
 kvantum-qt5
 
 ### utilities
+arj
 bash-completion
+binutils
+bzip2
+cpio
 cronie
+flatpak
+fwupd
 git
 gnome-keyring
+gzip
 htop
-intltool
-iw
-jsoncpp
-libmtp
-lsb-release
+lha
+lrzip
+lz4
+lzip
+lzop
 mlocate
 p7zip
-polkit
-polkit-gnome
 redshift
+snapd
+tar
 tlp
 tlp-rdw
 ufw
 unace
+unarj
 unrar
 unzip
 xdg-desktop-portal-gtk
+xz
+yay
+zip
+zstd
 
 ### lightdm
-accountsservice
 lightdm
 lightdm-gtk-greeter
 
@@ -307,51 +262,26 @@ mugshot
 xiccd
 
 ### xfce4
-exo
-garcon
-thunar
-thunar-volman
-tumbler
-xfce4-appfinder
-xfce4-panel
-xfce4-power-manager
-xfce4-session
-xfce4-settings
-xfce4-terminal
-xfconf
-xfdesktop
-xfwm4
-xfwm4-themes
+xfce4
 mousepad
 ristretto
 thunar-archive-plugin
 thunar-media-tags-plugin
 xfce4-battery-plugin
 xfce4-clipman-plugin
-xfce4-cpufreq-plugin
-xfce4-cpugraph-plugin
 xfce4-datetime-plugin
-xfce4-diskperf-plugin
-xfce4-fsguard-plugin
-xfce4-genmon-plugin
-xfce4-mailwatch-plugin
 xfce4-mount-plugin
-xfce4-notes-plugin
 xfce4-notifyd
 xfce4-pulseaudio-plugin
 xfce4-screensaver
 xfce4-screenshooter
-xfce4-sensors-plugin
-xfce4-smartbookmark-plugin
-xfce4-systemload-plugin
-xfce4-taskmanager
-xfce4-time-out-plugin
-xfce4-timer-plugin
-xfce4-verve-plugin
-xfce4-wavelan-plugin
 xfce4-whiskermenu-plugin
 xfce4-xkb-plugin
 
+### blackarch setup
+blackarch-keyring
+blackarch-mirrorlist
+blackarch-installer
 
 ### pentesting tools
 aircrack-ng
