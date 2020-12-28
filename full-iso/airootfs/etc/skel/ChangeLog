@@ -2,8 +2,8 @@
 
 	- added more than 100 new tools
 	- renamed 'live iso' to 'full iso'
-	- updated blackarch-installer to v1.2.16
-	- included linux kernel 5.9.11
+	- updated blackarch-installer to v1.2.19
+	- included linux kernel 5.9.14
 	- adapted ISO creation to the new archiso version (work in progress)
 	- removed unnecessary files from the ISO env
 	- QA'ed and fixed a lot of packages (runtime exec, missing dependencies)
