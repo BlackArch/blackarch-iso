@@ -147,6 +147,7 @@ pulseaudio-bluetooth
 
 ### network
 avahi
+iwd
 nss-mdns
 mobile-broadband-provider-info
 modemmanager
