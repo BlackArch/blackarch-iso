@@ -70,6 +70,7 @@ rsync
 sdparm
 sg3_utils
 smartmontools
+sof-firmware
 squashfs-tools
 sudo
 syslinux
@@ -110,7 +111,6 @@ xf86-video-nouveau
 xf86-video-openchrome
 xf86-video-vesa
 xf86-video-vmware
-mesa
 
 ### base and base-devel
 base
@@ -124,16 +124,7 @@ virtualbox-guest-utils
 
 ### audio
 alsa-firmware
-alsa-plugins
 alsa-lib
-alsa-utils
-gst-libav
-gst-plugins-bad
-gst-plugins-base
-gst-plugins-good
-gst-plugins-ugly
-gstreamer
-libdvdcss
 pulseaudio
 pulseaudio-alsa
 pavucontrol
@@ -141,15 +132,9 @@ pavucontrol
 ### bluetooth
 bluez
 bluez-libs
-bluez-utils
 blueman
-pulseaudio-bluetooth
 
 ### network
-avahi
-iwd
-nss-mdns
-mobile-broadband-provider-info
 modemmanager
 networkmanager
 network-manager-applet
@@ -157,16 +142,10 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
-openresolv
 
 ### file management
 gvfs
-gvfs-afc
-gvfs-gphoto2
 gvfs-mtp
-gvfs-nfs
-gvfs-smb
-mtpfs
 udisks2
 xdg-user-dirs
 xdg-user-dirs-gtk
@@ -176,17 +155,7 @@ ccache
 cmake
 gdb
 go
-go-tools
 rustup
-
-### tumbler
-tumbler
-ffmpegthumbnailer
-freetype2
-libgsf
-libopenraw
-poppler-glib
-poppler-qt5
 
 ### applications
 chromium
@@ -200,27 +169,22 @@ vlc
 xarchiver
 
 ### fonts
-adobe-source-sans-pro-fonts
 noto-fonts
-ttf-dejavu
-ttf-droid
-ttf-hack
 ttf-roboto
-ttf-ubuntu-font-family
 
 ### icons
 papirus-icon-theme
 
 ### themes
 arc-gtk-theme
-kvantum-qt5
+
+### gtk engines
+gtk-engines
+gtk-engine-murrine
 
 ### utilities
-arj
 bash-completion
-binutils
 bzip2
-cpio
 cronie
 flatpak
 fwupd
@@ -228,11 +192,6 @@ git
 gnome-keyring
 gzip
 htop
-lha
-lrzip
-lz4
-lzip
-lzop
 mlocate
 p7zip
 redshift
@@ -240,9 +199,6 @@ snapd
 tar
 tlp
 tlp-rdw
-ufw
-unace
-unarj
 unrar
 unzip
 xdg-desktop-portal-gtk
@@ -255,9 +211,6 @@ zstd
 lightdm
 lightdm-gtk-greeter
 
-### compositor
-picom
-
 ### xfce4 deps
 mugshot
 xiccd
@@ -267,11 +220,9 @@ xfce4
 mousepad
 ristretto
 thunar-archive-plugin
-thunar-media-tags-plugin
 xfce4-battery-plugin
 xfce4-clipman-plugin
 xfce4-datetime-plugin
-xfce4-mount-plugin
 xfce4-notifyd
 xfce4-pulseaudio-plugin
 xfce4-screensaver
@@ -283,6 +234,7 @@ xfce4-xkb-plugin
 blackarch-keyring
 blackarch-mirrorlist
 blackarch-installer
+blackarch-menus
 
 ### pentesting tools
 aircrack-ng

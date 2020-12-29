@@ -114,3 +114,12 @@ echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache
+
+
+# setup Blackarch repositories
+sed -i '/blackarch/{N;d}' /etc/pacman.conf
+
+  cat >> "/etc/pacman.conf" << EOF
+[blackarch]
+Include = /etc/pacman.d/blackarch-mirrorlist
+EOF
