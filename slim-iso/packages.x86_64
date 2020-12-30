@@ -163,26 +163,19 @@ firefox
 hexchat
 htop
 galculator
-qbittorrent
-qpdfview
-vlc
+parole
 xarchiver
 
 ### fonts
 noto-fonts
 ttf-roboto
 
-### icons
-papirus-icon-theme
-
-### themes
-arc-gtk-theme
-
 ### gtk engines
 gtk-engines
 gtk-engine-murrine
 
 ### utilities
+apache
 bash-completion
 bzip2
 cronie
@@ -194,8 +187,11 @@ gzip
 htop
 mlocate
 p7zip
+php
+php-apache
 redshift
 snapd
+irqbalance
 tar
 tlp
 tlp-rdw

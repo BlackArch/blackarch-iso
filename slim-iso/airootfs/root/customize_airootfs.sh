@@ -22,7 +22,7 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus' 'pacman-init')
+enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus' 'pacman-init' 'NetworkManager' 'irqbalance')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
@@ -101,12 +101,6 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
 
-# remove not needed .desktop entries
-rm -f /usr/share/xsessions/blackarch-dwm.desktop
-rm -f /usr/share/xsessions/openbox-kde.desktop
-rm -f /usr/share/xsessions/i3-with-shmlog.desktop
-rm -f /usr/share/xsessions/*gnome*.desktop
-rm -f /usr/share/xsessions/*kde*.desktop
 rm -f /root/install.txt
 
 # add install.txt file
@@ -114,12 +108,3 @@ echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache
-
-
-# setup Blackarch repositories
-sed -i '/blackarch/{N;d}' /etc/pacman.conf
-
-  cat >> "/etc/pacman.conf" << EOF
-[blackarch]
-Include = /etc/pacman.d/blackarch-mirrorlist
-EOF

@@ -1,8 +1,0 @@
-#
-# This file is parsed by pam_env module
-#
-# Syntax: simple "KEY=VAL" pairs on separate lines
-#
-QT_QPA_PLATFORMTHEME=kvantum
-QT_STYLE_OVERRIDE=kvantum
-QT_AUTO_SCREEN_SCALE_FACTOR=0
