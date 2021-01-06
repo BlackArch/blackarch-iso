@@ -1885,6 +1885,7 @@ jbrofuzz ;
 jbrute --help ;
 jcat ;
 jcrack ;
+jd-cli -h ;
 jdeserialize ;
 jd-gui ;
 jeangrey cd /usr/share/jeangrey ; ls ;
