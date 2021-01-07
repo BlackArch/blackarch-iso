@@ -231,6 +231,9 @@ blackarch-keyring
 blackarch-mirrorlist
 blackarch-installer
 blackarch-menus
+blackarch-config-cursor
+blackarch-config-icons
+blackarch-config-xfce
 
 ### pentesting tools
 aircrack-ng
