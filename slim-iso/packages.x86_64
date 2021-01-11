@@ -190,7 +190,6 @@ p7zip
 php
 php-apache
 redshift
-snapd
 irqbalance
 tar
 tlp
@@ -234,6 +233,8 @@ blackarch-menus
 blackarch-config-cursor
 blackarch-config-icons
 blackarch-config-xfce
+blackarch-config-bash
+blackarch-config-zsh
 
 ### pentesting tools
 aircrack-ng

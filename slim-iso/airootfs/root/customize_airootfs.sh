@@ -45,6 +45,19 @@ rm /root/{.automated_script.sh,.zlogin}
 
 # setting root password
 echo "root:blackarch" | chpasswd
+passwd -l root
+chsh -s /usr/bin/nologin
+
+# copy config files to skel
+cp /usr/share/blackarch/config/bash/bashrc /etc/skel/.bashrc
+cp /usr/share/blackarch/config/bash/bash_profile /etc/skel/.bash_profile
+cp -a /usr/share/blackarch/config/zsh/zsh /etc/skel/.zsh
+cp /usr/share/blackarch/config/zsh/zshrc /etc/skel/.zshrc
+
+# setup user
+useradd -m -g users -G wheel,power,audio,video,storage -s /bin/zsh user
+echo "user:blackarch" | chpasswd
+ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg /home/user/.face
 
 # copy files over to home
 cp -r /etc/skel/. /root/.
@@ -54,57 +67,10 @@ ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
 rm -f /etc/fonts/conf.d/05-reset-dirs-sample.conf
 rm -f /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
 
-# default shell
-chsh -s /bin/bash
-
 # temporary fixes for ruby based tools
-cd /usr/share/arachni/ && rm -f Gemfile.lock &&
-  bundle-2.3 config build.nokogiri --use-system-libraries &&
-  bundle-2.3 install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/smbexec/ && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/beef/ && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/catphish && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/wpbrute-rpc && rm -f Gemfile.lock
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --without test development --path vendor/bundle &&
-cd /usr/share/staekka && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  build install --no-cache --deployment --path vendor/bundle &&
-cd /usr/share/vane && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --without test development --path vendor/bundle &&
-cd /usr/share/vcsmap && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --without test development --path vendor/bundle &&
-cd /usr/share/vsaudit && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/whitewidow && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/sitediff && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/wordpress-exploit-framework && rm -f Gemfile.lock
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lock
-cd /usr/share/kautilya && rm -f Gemfile.lock &&
-  bundle config build.nokogiri --use-system-libraries &&
-  bundle install --path vendor/bundle && rm -f Gemfile.lockk
 cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
-
-rm -f /root/install.txt
-
-# add install.txt file
-echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache
