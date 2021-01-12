@@ -2566,6 +2566,7 @@ nwtrustee -h ;
 nwuserlist -h ;
 nwvolinfo -h ;
 nxcrypt -h ;
+o365spray -h ;
 oat ;
 obevilion --help ;
 obexstress -h ;
