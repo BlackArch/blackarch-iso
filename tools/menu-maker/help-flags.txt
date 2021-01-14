@@ -3985,6 +3985,7 @@ themole -h ;
 thezoo -h ;
 thin ;
 thor ;
+threatspec -h ;
 thumbcacheviewer ;
 tigercron -h ;
 tigerdeep -h ;
