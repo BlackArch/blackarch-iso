@@ -28,6 +28,7 @@ gnu-netcat
 gpart
 gpm
 gptfdisk
+grub
 haveged
 hdparm
 intel-ucode
@@ -58,6 +59,7 @@ nvme-cli
 openconnect
 openssh
 openvpn
+os-prober
 partclone
 parted
 partimage
@@ -208,6 +210,9 @@ lightdm-gtk-greeter
 mugshot
 xiccd
 
+### installer
+calamares
+
 ### xfce4
 xfce4
 mousepad
@@ -226,7 +231,6 @@ xfce4-xkb-plugin
 ### blackarch setup
 blackarch-keyring
 blackarch-mirrorlist
-blackarch-installer
 blackarch-menus
 blackarch-config-cursor
 blackarch-config-icons
