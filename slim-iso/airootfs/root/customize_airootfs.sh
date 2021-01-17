@@ -55,9 +55,9 @@ cp -a /usr/share/blackarch/config/zsh/zsh /etc/skel/.zsh
 cp /usr/share/blackarch/config/zsh/zshrc /etc/skel/.zshrc
 
 # setup user
-useradd -m -g users -G wheel,power,audio,video,storage -s /bin/zsh user
-echo "user:blackarch" | chpasswd
-ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg /home/user/.face
+useradd -m -g users -G wheel,power,audio,video,storage -s /bin/zsh liveuser
+echo "liveuser:blackarch" | chpasswd
+ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg /home/liveuser/.face
 
 # copy files over to home
 cp -r /etc/skel/. /root/.
