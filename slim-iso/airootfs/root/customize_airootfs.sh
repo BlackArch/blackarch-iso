@@ -22,7 +22,8 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus' 'pacman-init' 'NetworkManager' 'irqbalance')
+enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus' 'pacman-init'
+  'NetworkManager' 'irqbalance' 'vboxservice')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
@@ -58,6 +59,12 @@ cp /usr/share/blackarch/config/zsh/zshrc /etc/skel/.zshrc
 useradd -m -g users -G wheel,power,audio,video,storage -s /bin/zsh liveuser
 echo "liveuser:blackarch" | chpasswd
 ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg /home/liveuser/.face
+mkdir /home/liveuser/Desktop
+chown -R liveuser:users /home/liveuser/Desktop
+chmod -R 755 /home/liveuser/Desktop
+ln -sf /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+ln -sf /usr/share/applications/xfce4-terminal-emulator.desktop /home/liveuser/Desktop/terminal.desktop
+chmod +x /home/liveuser/Desktop/*.desktop
 
 # copy files over to home
 cp -r /etc/skel/. /root/.
