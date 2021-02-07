@@ -4187,6 +4187,7 @@ vDesigner ;
 vega ;
 veil ;
 veles ;
+venom_admin ;
 veracrypt ;
 verbal -h ;
 verinice ;
