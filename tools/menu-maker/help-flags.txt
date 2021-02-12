@@ -3765,6 +3765,7 @@ sploitctl -H ;
 sploitego -h ;
 spoofcheck ;
 spooftooph -h ;
+spotbugs -h ;
 sppokflare ;
 sprayingtoolkit-aerosol -h ;
 sprayingtoolkit-atomizer -h ;
