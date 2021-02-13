@@ -743,6 +743,7 @@ darkcgi.pl ;
 darkcgi.py ;
 darkd0rk3r ; rm -rf darkd0rk3r-*.txt ;
 dark-dork-search cd /usr/share/windows/dark-dork-searcher ; ls ;
+darkdump -h ;
 darkjumper cd /usr/share/darkjumper ; ls ;
 darkjumper -h ;
 darkjumper.py -h ;
