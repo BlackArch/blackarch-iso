@@ -793,6 +793,7 @@ detect-new-ip6 ;
 detect_sniffer6 ;
 detect-sniffer -h ;
 det -h ;
+devaudit -h ;
 device-pharmer -h ;
 devilzc0de ;
 devilzc0de.py ;
