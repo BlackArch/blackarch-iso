@@ -904,6 +904,7 @@ dockerscan -h ;
 domain-analyzer-crawler -h ;
 domain-analyzer -h ;
 domain-analyzer-pytext2pdf ;
+domainhunter -h ;
 domain-stats -h ;
 domato ;
 domi-owned -h ;
