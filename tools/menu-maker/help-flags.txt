@@ -3418,6 +3418,7 @@ s3scanner -h ;
 safecopy ;
 sagan -h ;
 sakis3g --help ;
+saleae-logic ;
 sambascan -h ;
 samdump2 ;
 samplicate -h ;
