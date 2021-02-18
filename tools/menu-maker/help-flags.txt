@@ -1021,6 +1021,7 @@ enteletaor3 -h ;
 entropy -h ;
 enum4linux ;
 enum4linux-ng -h ;
+enumerate-iam -h ;
 enumerid -h ;
 enumiax ;
 enum-shares -h ;
