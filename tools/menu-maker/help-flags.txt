@@ -3806,6 +3806,7 @@ sshfuzz -h ;
 ssh-honeypot -h ;
 ssh_login ;
 sshmitm -h ;
+ssh-mitm-py -h ;
 sshow -h ;
 sshprank -H ;
 ssh-privkey-crack ;
