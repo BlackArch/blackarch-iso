@@ -1,0 +1,5 @@
+*.pyc
+*.vmb
+*.cache
+tags
+*.swp
