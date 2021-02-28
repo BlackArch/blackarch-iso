@@ -63,6 +63,7 @@ mkdir /home/liveuser/Desktop
 chown -R liveuser:users /home/liveuser/Desktop
 chmod -R 755 /home/liveuser/Desktop
 ln -sf /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+sed -i -e "s|Install System|Install BlackArch|g" /usr/share/applications/calamares.desktop
 ln -sf /usr/share/applications/xfce4-terminal-emulator.desktop /home/liveuser/Desktop/terminal.desktop
 chmod +x /home/liveuser/Desktop/*.desktop
 
