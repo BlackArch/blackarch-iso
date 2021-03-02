@@ -52,7 +52,6 @@ chsh -s /usr/bin/nologin
 # copy config files to skel
 cp /usr/share/blackarch/config/bash/bashrc /etc/skel/.bashrc
 cp /usr/share/blackarch/config/bash/bash_profile /etc/skel/.bash_profile
-cp -a /usr/share/blackarch/config/zsh/zsh /etc/skel/.zsh
 cp /usr/share/blackarch/config/zsh/zshrc /etc/skel/.zshrc
 
 # setup user
