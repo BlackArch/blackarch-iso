@@ -249,6 +249,7 @@ bulk-extractor
 bully
 burpsuite
 cewl
+chaos-client
 chntpw
 commix
 crackmapexec
@@ -268,9 +269,11 @@ exiv2
 exploitdb
 faradaysec
 fern-wifi-cracker
+ffuf
 fierce
 findomain
 fping
+gobuster
 guymager
 hashcat
 hashcat-utils
@@ -288,6 +291,7 @@ kismet
 laudanum
 lbd
 legion
+lulzbuster
 macchanger
 magicrescue
 maltego
@@ -307,6 +311,8 @@ netsniff-ng
 ngrep
 nikto
 nmap
+nuclei
+nuclei-templates
 onesixtyone
 ophcrack
 patator
@@ -349,6 +355,7 @@ sslsplit
 sslyze
 statsprocessor
 stunnel
+subfinder
 swaks
 tcpdump
 tcpick
