@@ -79,5 +79,8 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle config build.nokogiri --use-system-libraries &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
 
+# change default jdk
+archlinux-java set java-15-openjdk
+
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache
