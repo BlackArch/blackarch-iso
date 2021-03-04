@@ -264,6 +264,7 @@ dns2tcp
 dnschef
 dnsenum
 dnsrecon
+dnsx
 enum4linux
 exiv2
 exploitdb
@@ -282,6 +283,7 @@ hashid
 hash-identifier
 hping
 hotpatch
+httpx
 hydra
 ike-scan
 inetsim
@@ -296,6 +298,7 @@ macchanger
 magicrescue
 maltego
 maskprocessor
+massdns
 masscan
 metasploit
 msfdb
@@ -323,6 +326,7 @@ pixiewps
 powersploit
 proxychains-ng
 proxytunnel
+proxify
 pth-toolkit
 ptunnel
 pwnat
@@ -381,3 +385,6 @@ wireshark-qt
 wordlistctl
 wpscan
 zaproxy
+zdns
+zgrab2
+zmap
