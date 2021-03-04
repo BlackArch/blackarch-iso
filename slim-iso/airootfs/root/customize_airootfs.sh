@@ -82,5 +82,8 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
 # change default jdk
 archlinux-java set java-15-openjdk
 
+# Temporary fix for calamares
+pacman -U --noconfirm https://archive.archlinux.org/packages/d/dosfstools/dosfstools-4.1-3-x86_64.pkg.tar.xz
+
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache
