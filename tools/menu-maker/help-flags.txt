@@ -2377,6 +2377,7 @@ ms-sys -h ;
 msvpwn -h ;
 mtr -h ;
 mtscan ;
+mubeng -h ;
 MultiInjector ;
 multiinjector -h ;
 multimac -h ;
