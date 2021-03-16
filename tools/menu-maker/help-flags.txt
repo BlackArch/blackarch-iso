@@ -1162,6 +1162,7 @@ featherduster -h ;
 fern ;
 fernflower -h ;
 fernmelder -h ;
+feroxbuster -h ;
 ferret ;
 ffdec ;
 ffind ;
