@@ -2760,6 +2760,7 @@ passe-partout -h ;
 passhunt -h ;
 passive_discovery6 ;
 passivedns -h ;
+pass-station -h ;
 passtime -h ;
 pastejacker ;
 pastenum -h ;
