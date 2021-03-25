@@ -1380,6 +1380,7 @@ github-dorks -h ;
 gitleaks -h ;
 gitmails -h ;
 gitminer -h ;
+gitrecon -h ;
 gitrob -h ;
 gittools-extractor ;
 gittools-gitdumper ;
