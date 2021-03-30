@@ -2119,6 +2119,7 @@ libpst -h ;
 liffy -h ;
 lightbulb -h ;
 limeaide ;
+limelighter -h ;
 linenum -h ;
 linikatz ;
 linkedin2username -h ;
