@@ -3451,6 +3451,7 @@ sakis3g --help ;
 saleae-logic ;
 sambascan -h ;
 samdump2 ;
+samesame -h ;
 samplicate -h ;
 samydeluxe -h ;
 sancastle -h ;
