@@ -2831,6 +2831,7 @@ pehash ;
 pemcrack ;
 pemcracker ;
 penbox ;
+pencode -h ;
 pentbox ;
 pentestly -h ;
 pentmenu ;
