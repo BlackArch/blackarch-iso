@@ -2864,6 +2864,7 @@ phoss -h ;
 PHoss -h ;
 photon -h ;
 php-findsock-shell ;
+phpggc -h ;
 php_mt_seed ;
 phpsploit ;
 phpstan -h ;
