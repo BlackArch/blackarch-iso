@@ -46,8 +46,6 @@ rm /root/{.automated_script.sh,.zlogin}
 
 # setting root password
 echo "root:blackarch" | chpasswd
-passwd -l root
-chsh -s /usr/bin/nologin
 
 # copy config files to skel
 cp /usr/share/blackarch/config/bash/bashrc /etc/skel/.bashrc
