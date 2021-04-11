@@ -2013,6 +2013,7 @@ kismet_drone -h ;
 kismet-earth cd /usr/share/kismet-earth ; ls ;
 kismet -h ;
 kismet_server -h ;
+kiterunner -h ;
 kitty-template-tester -h ;
 kitty-tool -h ;
 kitty-web-client -h ;
