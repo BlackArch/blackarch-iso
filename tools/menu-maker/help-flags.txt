@@ -4381,6 +4381,7 @@ whatwaf -h ;
 whatweb -h ;
 whichcdn -h ;
 whirlpooldeep -h ;
+whispers -h ;
 whitewidow -h ;
 whob ;
 whois -h ;
