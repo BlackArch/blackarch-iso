@@ -4060,6 +4060,7 @@ tinyproxy -h ;
 tkiptun-ng --help ;
 tls-attacker ;
 tlsenum -h ;
+tls-map -h ;
 tlspretense ;
 tls-prober -h ;
 tlssled -h ;
