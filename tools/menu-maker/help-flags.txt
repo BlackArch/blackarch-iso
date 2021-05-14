@@ -3081,6 +3081,7 @@ pyxswf ;
 qark ;
 qrgen -h ;
 qrljacker -h ;
+qsreplace -h ;
 qtmsfconsole ;
 quantumdetect -h ;
 quantuminject -h ;
