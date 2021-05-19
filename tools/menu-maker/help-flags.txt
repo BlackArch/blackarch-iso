@@ -3170,6 +3170,7 @@ rawr -h ;
 rawsec-cli --help ;
 rawshark ;
 rax2 ;
+rbasefind -h ;
 rbmonkey ;
 rbndr ;
 rcrack ;
