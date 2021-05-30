@@ -3748,6 +3748,7 @@ snyk -h ;
 soapui ;
 socailscan -h ;
 socat -h ;
+social-analyzer -h ;
 socialfish ;
 social-mapper ;
 social-vuln-scanner -h ;
