@@ -2752,6 +2752,7 @@ pacumen_train.py ;
 pacumen_visualize.py ;
 padbuster -h ;
 pafish cd /usr/share/windows/pafish ; ls ;
+pagodo -h ;
 paketto-lc -h ;
 panhunt -h ;
 panoptic -h ;
