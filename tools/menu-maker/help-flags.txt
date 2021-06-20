@@ -835,6 +835,8 @@ dhcpig -h ;
 dhcpoptinj -h ;
 dhcp-responder -h ;
 dictionary-erldp -h ;
+die ;
+diec ;
 dig -h ;
 dighosts ;
 dinouml -h ;
