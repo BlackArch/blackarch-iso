@@ -172,6 +172,7 @@ xarchiver
 ### fonts
 noto-fonts
 ttf-roboto
+adobe-source-han-sans-kr-fonts
 
 ### gtk engines
 gtk-engines
