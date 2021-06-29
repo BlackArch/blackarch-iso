@@ -1032,6 +1032,7 @@ electric-fence ;
 elettra ;
 elettra-gui ;
 elettra_gui ;
+elevate -h ;
 elfdiff ;
 elfls ;
 elfparser-cli --help ;
