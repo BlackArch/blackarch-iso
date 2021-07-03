@@ -2509,6 +2509,7 @@ netscan -h ;
 netsed -h ;
 netsniff-ng -h ;
 netstumbler cd /usr/share/windows/netstumbler ; ls ;
+nettacker -h ;
 network-app-stress-tester ;
 networkmap -h ;
 networkminer ;
