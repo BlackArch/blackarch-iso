@@ -3227,6 +3227,7 @@ red-hawk ;
 redir6 ;
 redirectpoison ;
 redirsniff6 ;
+redress -h ;
 redsocks -h ;
 reelphish -h ;
 reg-compname -h ;
