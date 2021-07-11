@@ -1949,6 +1949,7 @@ jeopardize -h ;
 jexboss -h ;
 jhead -h ;
 jigsaw -h ;
+jira-scan ;
 jls ;
 jnetmap ;
 john ;
