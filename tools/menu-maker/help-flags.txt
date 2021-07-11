@@ -3105,6 +3105,7 @@ quantuminject -h ;
 quark --help ;
 quickrecon -h ;
 quicksand ;
+quickscope -h ;
 r2agent -h ;
 r2 -h ;
 r2pm ;
