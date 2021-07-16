@@ -3554,6 +3554,7 @@ secscan -h ;
 secure2csv -h ;
 seeker -h ;
 sees -h ;
+see-surf -h ;
 seitan -h ;
 sendpees6 ;
 sendpeesmp6 ;
