@@ -1377,6 +1377,7 @@ getpermit ;
 getsids ;
 getsploit -h ;
 gggooglescan -h ;
+gg-images ;
 ghettotooth ;
 ghidra ;
 ghost-phisher ;
