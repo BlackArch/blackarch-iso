@@ -3207,6 +3207,7 @@ rd6 ;
 rdesktop-brute -h ;
 rdisc ;
 rdpassspray -h ;
+rdp-cipher-checker ;
 rdp-sec-check -h ;
 readecfs ;
 readpe ;
