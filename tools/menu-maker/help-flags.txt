@@ -4119,6 +4119,8 @@ torctl ;
 tor-gencert ;
 tor -h ;
 torify -h ;
+torpy-cli -h ;
+torpy-socks -h ;
 tor-resolve ;
 torshammer ;
 torsocks -h ;
