@@ -1183,6 +1183,7 @@ feroxbuster -h ;
 ferret ;
 ffdec ;
 ffind ;
+ffm -h ;
 ffuf ;
 fgscan --help ;
 fgscanner -h ;
