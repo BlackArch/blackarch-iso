@@ -4570,6 +4570,8 @@ xwaf -h ;
 xxeinjector -h ;
 xxeserv -h ;
 xxexploiter -h ;
+xxxpwn -h ;
+xxxpwn-smart -h ;
 yaaf -h ;
 yafcollect -h ;
 yaf --help ;
