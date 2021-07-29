@@ -2064,6 +2064,7 @@ ktflab -h ;
 ktflinker -h ;
 ktfrun -h ;
 kube-hunter -h ;
+kubestriker ;
 kubolt -h ;
 kwetza --help ;
 l0l ;
