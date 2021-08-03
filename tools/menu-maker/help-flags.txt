@@ -2640,6 +2640,7 @@ nwtrustee -h ;
 nwuserlist -h ;
 nwvolinfo -h ;
 nxcrypt -h ;
+nzyme ;
 o365spray -h ;
 oat ;
 obevilion --help ;
