@@ -837,6 +837,7 @@ dff-cli -h ;
 dff-gui ;
 dff-scanner cd /usr/share/dff-scanner ;
 dftest ;
+dftimewolf -h ;
 dga-detection -h ;
 dharma -h ;
 dhcdrop -h ;
