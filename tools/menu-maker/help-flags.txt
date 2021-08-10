@@ -48,7 +48,6 @@ affxml ;
 afl-analyze -h ;
 afl-cc -h ;
 afl-c++ -h ;
-afl-clang-fast++ ;
 afl-clang-fast -h ;
 afl-clang-fast++ -h ;
 afl-clang -h ;
