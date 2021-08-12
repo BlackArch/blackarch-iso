@@ -19,10 +19,12 @@ bash-completion
 batctl
 bc
 bettercap
+bind
 bind-tools
 binwalk
 blackarch-installer
 blackarch-keyring
+bless
 bluez
 bluez-hid2hci
 bluez-utils
@@ -63,6 +65,7 @@ dscanner
 dsniff
 efitools
 elfkickers
+elfutils
 elinks
 etherape
 ethtool
@@ -75,16 +78,19 @@ f2fs-tools
 fcrackzip
 feh
 findmyhash
+findomain
 firefox
 flashplugin
 flawfinder
 fluxbox
 foremost
 fping
+freeipmi
 freeradius
 gdb
 gdb-common
 geoip
+ghidra
 git
 gnu-netcat
 gnuradio
@@ -110,7 +116,9 @@ httping
 httptunnel
 httrack
 hydra
+i2pd
 i3
+iaito
 impacket
 inotify-tools
 intel-ucode
@@ -136,11 +144,14 @@ linux-firmware
 lldb
 lorcon
 lsof
+ltrace
 lxdm
 lynis
 macchanger
 masscan
+mat2
 mdk3
+mdk4
 medusa
 mercurial
 mesa
@@ -168,6 +179,7 @@ ntfs-3g
 ntp
 obconf
 obfsproxy
+onionshare
 openbox
 openconnect
 open-iscsi
@@ -202,6 +214,7 @@ python2-jsbeautifier
 python2-yara
 python-capstone
 python-jsbeautifier
+r2ghidra
 radamsa
 radare2
 radare2-cutter
@@ -233,6 +246,7 @@ spectrwm
 splint
 sqlmap
 ssdeep
+ssh-audit
 sshtunnel
 sshuttle
 sslh
@@ -278,6 +292,7 @@ vim
 virtualbox-guest-dkms
 virtualbox-guest-utils
 volatility
+volatility3
 vpnc
 vulscan
 wavemon
@@ -309,6 +324,7 @@ xorg-server
 xorg-xbacklight
 xorg-xdm
 xorg-xinit
+xortool
 xterm
 yara
 zaproxy
