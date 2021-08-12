@@ -121,7 +121,6 @@ base-devel
 
 ### vm
 open-vm-tools
-virtualbox-guest-dkms
 virtualbox-guest-utils
 
 
