@@ -37,7 +37,6 @@ expac
 f2fs-tools
 feh
 firefox
-flashplugin
 fluxbox
 foremost
 gdb
@@ -76,7 +75,6 @@ nilfs-utils
 ntfs-3g
 ntp
 obconf
-obfsproxy
 openbox
 openconnect
 openssh
