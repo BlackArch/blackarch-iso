@@ -54,7 +54,7 @@ curl -s https://blackarch.org/strap.sh | sh
 pacman -Syy --noconfirm
 pacman-key --init
 pacman-key --populate blackarch archlinux
-pkgfile -u
+#pkgfile -u
 pacman -Fyy
 pacman-db-upgrade
 updatedb
