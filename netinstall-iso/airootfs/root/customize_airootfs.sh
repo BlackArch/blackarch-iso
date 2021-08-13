@@ -44,7 +44,7 @@ curl -s https://blackarch.org/strap.sh | sh
 pacman -Syyu --noconfirm
 pacman-db-upgrade
 updatedb
-pkgfile -u
+#pkgfile -u
 sync
 
 # default shell

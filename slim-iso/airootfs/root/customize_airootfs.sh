@@ -42,7 +42,7 @@ systemctl disable dhcpcd sshd rpcbind.service
 
 # remove special (not needed) files
 rm -f /etc/systemd/system/getty@tty1.service.d/autologin.conf
-rm /root/{.automated_script.sh,.zlogin}
+rm -f /root/{.automated_script.sh,.zlogin}
 
 # setting root password
 echo "root:blackarch" | chpasswd
