@@ -138,7 +138,7 @@ sed -i 's|local visible, action = cmd(item, self)|local visible, action = cmd(0,
 
 # lxdm
 rm -rf /etc/lxdm
-mv /etc/lxdm-blackarch /etx/lxdm
+mv /etc/lxdm-blackarch /etc/lxdm
 
 # fluxbox
 rm -rf /usr/share/fluxbox
