@@ -16,6 +16,7 @@ dhclient
 dhcpcd
 dialog
 dosfstools
+edk2-shell
 efitools
 ethtool
 expac
