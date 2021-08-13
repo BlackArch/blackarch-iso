@@ -2,6 +2,7 @@ ack
 acpi
 afpfs-ng
 alsa-utils
+amd-ucode
 arch-install-scripts
 archlinux-keyring
 awesome
@@ -16,6 +17,7 @@ bluez
 bluez-hid2hci
 bluez-utils
 bridge-utils
+brltty
 bsdiff
 btrfs-progs
 chntpw
@@ -32,6 +34,8 @@ dnsmasq
 dnsutils
 dosfstools
 edk2-shell
+efibootmgr
+espeakup
 exiv2
 expac
 f2fs-tools
@@ -51,6 +55,7 @@ hdparm
 htop
 i3
 inotify-tools
+intel-ucode
 iodine
 iputils
 ipw2100-fw
@@ -58,15 +63,18 @@ ipw2200-fw
 iw
 jhead
 libpst
+linux
 linux-atm
 linux-firmware
+linux-headers
 lsof
 lxdm
 mdk3
-memtest86+
 mercurial
 mesa
 mkinitcpio
+mkinitcpio-archiso
+mkinitcpio-nfs-utils
 mlocate
 moreutils
 mtools
@@ -79,6 +87,7 @@ openbox
 openconnect
 openssh
 open-vm-tools
+os-prober
 partclone
 parted
 partimage
@@ -90,6 +99,7 @@ scrot
 smali
 smartmontools
 spectrwm
+squashfs-tools
 sudo
 swaks
 syslinux
