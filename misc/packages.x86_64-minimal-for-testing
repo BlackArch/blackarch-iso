@@ -31,6 +31,7 @@ dmraid
 dnsmasq
 dnsutils
 dosfstools
+edk2-shell
 exiv2
 expac
 f2fs-tools
@@ -63,6 +64,7 @@ linux-firmware
 lsof
 lxdm
 mdk3
+memtest86+
 mercurial
 mesa
 mkinitcpio
@@ -92,6 +94,7 @@ smartmontools
 spectrwm
 sudo
 swaks
+syslinux
 tcpdump
 terminus-font
 terminus-font-ttf
