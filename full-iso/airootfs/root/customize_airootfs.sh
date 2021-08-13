@@ -136,3 +136,6 @@ gdk-pixbuf-query-loaders --update-cache
 # tmp fix for awesome exit()
 sed -i 's|local visible, action = cmd(item, self)|local visible, action = cmd(0, 0)|' /usr/share/awesome/lib/awful/menu.lua
 
+# lxdm
+rm -rf /etc/lxdm
+mv /etc/lxdm-blackarch /etx/lxdm
