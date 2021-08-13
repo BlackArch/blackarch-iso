@@ -11,7 +11,7 @@ locale-gen
 ln -sf /usr/share/zoneinfo/UTC /etc/localtime
 
 # enabling all mirrors
-sed -i "s|#Server|Server|g" /etc/pacman.d/mirrorlist
+#sed -i "s|#Server|Server|g" /etc/pacman.d/mirrorlist
 
 # storing the system journal in RAM
 sed -i 's/#\(Storage=\)auto/\1volatile/' /etc/systemd/journald.conf
@@ -66,6 +66,16 @@ chmod +x /home/liveuser/Desktop/*.desktop
 
 # copy files over to home
 cp -r /etc/skel/. /root/.
+
+# repo + database
+curl -s https://blackarch.org/strap.sh | sh
+pacman -Syy --noconfirm
+pacman-key --init
+pacman-key --populate blackarch archlinux
+pacman -Fyy
+pacman-db-upgrade
+updatedb
+sync
 
 # font configuration
 ln -sf /etc/fonts/conf.avail/* /etc/fonts/conf.d
