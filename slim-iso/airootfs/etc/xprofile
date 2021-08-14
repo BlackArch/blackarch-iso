@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+# vbox foo
+vbox=$(dmesg |grep -io virtualbox)
+if [ ! -z "$vbox" ]
+then
+  /usr/bin/VBoxClient --seamless
+  /usr/bin/VBoxClient --clipboard
+  /usr/bin/VBoxClient --draganddrop
+  /usr/bin/VBoxClient --vmsvga
+fi
+
