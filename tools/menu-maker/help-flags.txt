@@ -1392,6 +1392,7 @@ gittools-gitfinder -h ;
 gloom ;
 glue -h ;
 gmdb2 ;
+gmsadumper -h ;
 gnuradio-companion -h ;
 gnuradio-config-info -h ;
 gnuradio -h ;
