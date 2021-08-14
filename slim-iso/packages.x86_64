@@ -95,7 +95,6 @@ xfsprogs
 xl2tpd
 zsh
 
-
 ### xorg
 xorg
 xorg-xinit
@@ -239,6 +238,7 @@ blackarch-config-icons
 blackarch-config-xfce
 blackarch-config-bash
 blackarch-config-zsh
+blackarch-config-vim
 
 ### pentesting tools
 aircrack-ng
