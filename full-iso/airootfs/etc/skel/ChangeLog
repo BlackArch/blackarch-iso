@@ -3,7 +3,8 @@
 	- added more than 130 new tools
 	- updated blackarch-installer to v1.2.XX
 	- included linux kernel 5.13.10
-	- QA'ed and fixed a lot of packages (runtime exec, missing dependencies)
+	- adapted ISO creation to the new archiso version (done)
+	- QA'ed and fixed a lot of packages (runtime exec, missing dependencies, etc.)
 	- added new vim plugins: YouCompleteMe, c.vim and indentLines
 	- updated all vim plugins and improved vim config options
 	- updated all blackarch tools and packages including config files
