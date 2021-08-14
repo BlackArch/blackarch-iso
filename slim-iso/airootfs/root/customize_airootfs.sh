@@ -56,7 +56,7 @@ cp /usr/share/blackarch/config/zsh/zshrc /etc/skel/.zshrc
 useradd -m -g users -G wheel,power,audio,video,storage -s /bin/zsh liveuser
 echo "liveuser:blackarch" | chpasswd
 ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg /home/liveuser/.face
-mkdir /home/liveuser/Desktop
+mkdir -p /home/liveuser/Desktop
 chown -R liveuser:users /home/liveuser/Desktop
 chmod -R 755 /home/liveuser/Desktop
 ln -sf /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
@@ -88,7 +88,7 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
 
 # change default jdk
-archlinux-java set java-15-openjdk
+#archlinux-java set java-15-openjdk
 
 # Temporary fix for calamares
 pacman -U --noconfirm https://archive.archlinux.org/packages/d/dosfstools/dosfstools-4.1-3-x86_64.pkg.tar.xz
