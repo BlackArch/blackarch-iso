@@ -33,6 +33,7 @@ linux-atm
 linux-firmware
 lsof
 lvm2
+memtest86+
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
