@@ -1,7 +1,7 @@
 ===> 2021.09.01
 
 	- added more than 130 new tools
-	- updated blackarch-installer to v1.2.XX
+	- updated blackarch-installer to v1.2.21
 	- included linux kernel 5.13.10
 	- adapted ISO creation to the new archiso version (done)
 	- added new vim plugins: YouCompleteMe, c.vim, go-vim and indentLines
