@@ -3670,6 +3670,7 @@ skipfish -h ;
 skiptracer --help ;
 skscandiff -h ;
 skul ;
+skydive ;
 skyjack --help ;
 skype-dump cd /usr/share/windows/skype-dump ; ls ;
 skypefreak -h ;
