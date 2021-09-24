@@ -3003,6 +3003,7 @@ proxmark3 -h ;
 proxmark-flasher ;
 proxmark-fpga-compress ;
 proxmark-unbind-proxmark ;
+proxybroker -h ;
 proxychains ;
 proxychains4 ;
 proxychains-ng -h ;
