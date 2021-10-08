@@ -24,7 +24,7 @@ exfatprogs
 f2fs-tools
 fatresize
 fsarchiver
-gnu-netcat
+openbsd-netcat
 gpart
 gpm
 gptfdisk
