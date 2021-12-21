@@ -2165,6 +2165,7 @@ locasploit -h ;
 lodowep -h ;
 log2asc ;
 log2long ;
+log4j-bypass -h ;
 log-file-parser -h ;
 logkeys -h ;
 logkeys-kill.sh ;
