@@ -2171,6 +2171,7 @@ log-file-parser -h ;
 logkeys -h ;
 logkeys-kill.sh ;
 logkeys-start.sh ;
+logmepwn -h ;
 loic cd /usr/share/windows/loic ; ls ;
 loki.py ;
 loki-scanner -h ;
