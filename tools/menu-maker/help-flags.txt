@@ -1197,6 +1197,7 @@ fingerprinter -h ;
 fingerprintls -h ;
 fingerprintout -h ;
 firecat ;
+firefox-decrypt -h ;
 firefox-security-toolkit ;
 firewalk -h ;
 firewall6 ;
