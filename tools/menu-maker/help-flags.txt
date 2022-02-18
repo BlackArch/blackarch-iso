@@ -15,6 +15,7 @@ adape-script cd /usr/share/windows/adape-script ; ls ;
 addr6 ;
 address6 ;
 adfind -h ;
+adidnsdump -h ;
 ad-ldap-enum -h ;
 ADMdnsfuckr ;
 adminpagefinder -h ;
