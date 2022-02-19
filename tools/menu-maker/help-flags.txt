@@ -2808,6 +2808,7 @@ passivedns -h ;
 pass-station -h ;
 passtime -h ;
 pastejacker ;
+pastemonitor -h ;
 pastenum -h ;
 pasv-agrsv -h ;
 patator --help ;
