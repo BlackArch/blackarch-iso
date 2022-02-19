@@ -2432,6 +2432,7 @@ msfrpc -h ;
 msfupdate -h ;
 msfvenom -h ;
 msgsnarf -h ;
+msmailprobe -h ;
 ms_print ;
 mssql_login ;
 mssqlscan -h ;
