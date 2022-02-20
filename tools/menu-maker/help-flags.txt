@@ -4048,6 +4048,7 @@ tachyon-scanner ;
 tailer --help ;
 taipan ;
 takeover ;
+talon -h ;
 tanya ;
 taof ;
 tbear -h ;
