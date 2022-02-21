@@ -2323,6 +2323,7 @@ merlin-server -h ;
 metabigor -h ;
 metacopy -h ;
 metacoretex ;
+metafinder -h ;
 metagoofil ;
 metame -h ;
 metasploit -h ;
