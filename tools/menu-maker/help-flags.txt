@@ -1410,6 +1410,7 @@ gitrob -h ;
 gittools-extractor ;
 gittools-gitdumper ;
 gittools-gitfinder -h ;
+git-wild-hunt -h ;
 gloom ;
 glue -h ;
 gmdb2 ;
