@@ -4151,6 +4151,7 @@ tlspretense ;
 tls-prober -h ;
 tlssled -h ;
 tnscmd ;
+token-hunter -h ;
 token-reverser -h ;
 tomcatwardeployer -h ;
 toobig6 ;
