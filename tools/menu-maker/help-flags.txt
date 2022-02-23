@@ -3595,6 +3595,7 @@ sc_warts2text -h ;
 sc_wartscat -h ;
 sc_wartsdump -h ;
 sc_wartsfix -h ;
+scylla -h ;
 sdel -h ;
 sdnpwn ;
 SDS_get_index.py ;
