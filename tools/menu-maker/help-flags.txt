@@ -415,6 +415,7 @@ bokken -h ;
 bokken-hg -h ;
 bombardment ;
 bonesi ;
+boofuzz -h ;
 boop -h ;
 boopsniff-gui ;
 boopsniff -h ;
