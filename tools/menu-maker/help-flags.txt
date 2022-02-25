@@ -4104,6 +4104,7 @@ tcptraceroute ;
 tcpwatch ;
 tcpxtract -h ;
 teamserver ;
+teamsuserenum -h ;
 teardown ;
 tekdefense-automater -h ;
 tell-me-your-secrets -h ;
