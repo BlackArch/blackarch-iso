@@ -1973,6 +1973,7 @@ jhead -h ;
 jigsaw -h ;
 jira-scan ;
 jls ;
+jndi-injection-exploit -h ;
 jnetmap ;
 john ;
 john-mailer ;
