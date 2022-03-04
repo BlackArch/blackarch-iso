@@ -16,6 +16,7 @@ addr6 ;
 address6 ;
 adenum -h ;
 adfind -h ;
+adfspray -h ;
 adidnsdump -h ;
 ad-ldap-enum -h ;
 ADMdnsfuckr ;
