@@ -2272,6 +2272,7 @@ mana-nat-simple ;
 mana-noupstream ;
 mana-noupstream-eap ;
 mando.me -h ;
+manspider -h ;
 manticore -h ;
 manul -h ;
 mapsid ;
