@@ -3982,6 +3982,7 @@ sswap -h ;
 stack ;
 stackflow -h ;
 stacoan -h ;
+stacs -h ;
 stager_reverse_https.bin ;
 stags ;
 stamp-h1 ;
