@@ -2960,6 +2960,7 @@ pixload-bmp ;
 pixload-gif ;
 pixload-jpg ;
 pixload-png ;
+pixload-webp ;
 pkcrack ;
 pkcrack-extract ;
 pkcrack-findkey ;
