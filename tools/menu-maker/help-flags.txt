@@ -4218,6 +4218,7 @@ trape -h ;
 traxss -h ;
 treasure ;
 tree_mft.py ;
+trevorspray -h ;
 trid -h ;
 trinity -h ;
 trivy -h ;
