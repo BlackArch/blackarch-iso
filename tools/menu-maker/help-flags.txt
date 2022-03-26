@@ -1054,6 +1054,7 @@ elog ;
 email2phonenumber -h ;
 email-parser ;
 emldump -h ;
+emp3r0r -h ;
 empire -h ;
 em-proxy -h ;
 enabler ;
