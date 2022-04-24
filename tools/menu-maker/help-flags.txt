@@ -1394,6 +1394,7 @@ gets4uticket -h ;
 getsids ;
 getsploit -h ;
 gettgtpkinit -h ;
+gf -h ;
 gggooglescan -h ;
 gg-images ;
 gh-dork -h ;
