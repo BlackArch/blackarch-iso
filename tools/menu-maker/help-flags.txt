@@ -2093,6 +2093,8 @@ ktflab -h ;
 ktflinker -h ;
 ktfrun -h ;
 kube-hunter -h ;
+kubesploit-agent -h ;
+kubesploit-server -h ;
 kubestriker ;
 kubolt -h ;
 kwetza --help ;
