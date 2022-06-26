@@ -519,6 +519,7 @@ cardpwn ;
 carwhisperer -h ;
 casefile --help ;
 CAT ;
+catana ;
 catnthecanary ;
 catphish -h ;
 ccrawldns -h ;
