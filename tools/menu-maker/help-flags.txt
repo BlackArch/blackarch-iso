@@ -671,6 +671,7 @@ crackmapexec -h ;
 crack-prng ;
 crackq ;
 crackqcli ;
+crackql -h ;
 crackserver -h ;
 crack-standalone -h ;
 crawlic -h ;
