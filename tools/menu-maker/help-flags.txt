@@ -2028,6 +2028,7 @@ jwscan -h ;
 jwtcat -h ;
 jwt-cracker ;
 jwt-hack -h ;
+jwt-key-recovery -h ;
 jwt-tool -h ;
 jynx2 -h ;
 k2db -h ;
