@@ -1401,6 +1401,7 @@ gettgtpkinit -h ;
 gf -h ;
 gggooglescan -h ;
 gg-images ;
+ghauri -h ;
 gh-dork -h ;
 ghettotooth ;
 ghidra ;
