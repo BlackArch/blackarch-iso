@@ -4189,6 +4189,7 @@ tigexp -h ;
 tilt -h ;
 tilt.py ;
 timegen -h ;
+timeverter -h ;
 tincd ;
 tinc -h ;
 tinfoleak ;
