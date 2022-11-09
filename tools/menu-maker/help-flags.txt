@@ -434,6 +434,7 @@ box-js -h ;
 bpfc ;
 braa -h ;
 braces -h ;
+bridgekeeper -h ;
 bro-cut ;
 bro -h ;
 bros --help ;
