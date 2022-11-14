@@ -2256,6 +2256,7 @@ magicsort ;
 magictree ;
 maigret -h ;
 mail-crawl -h ;
+mailsend-go -h ;
 mailsnarf -h ;
 makeder.sh ;
 makeivs-ng -h ;
