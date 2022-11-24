@@ -598,6 +598,7 @@ cisco-torch -h ;
 citadel -h ;
 cjexploiter cd /usr/share/cjexploiter ; ls ;
 clair -h ;
+clairvoyance -h ;
 clamlogparser ;
 clamscanlogparser ;
 clash -h ;
