@@ -1476,6 +1476,8 @@ graffiti -h ;
 grammarinator-generate -h ;
 grammarinator-parse -h ;
 grammarinator-process -h ;
+graphinder -h ;
+graphql-cop -h ;
 graphqlmap -h ;
 graphql-path-enum -h ;
 graphw00f -h ;
