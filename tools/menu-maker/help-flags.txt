@@ -4039,6 +4039,7 @@ steghide --help ;
 stegolego ;
 stegosip ;
 stegoveritas -h ;
+stegseek -h ;
 stegsolve ;
 stenographer -h ;
 stepic -h ;
