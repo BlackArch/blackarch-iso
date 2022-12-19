@@ -1784,6 +1784,7 @@ icmpsh-m ;
 icmpsh-m-pl ;
 icmpsh-m-py ;
 icmptx ;
+ida64 ;
 idb ;
 id-entify ;
 identywaf -h ;
