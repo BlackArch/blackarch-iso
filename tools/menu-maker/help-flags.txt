@@ -3870,6 +3870,7 @@ snort -h ;
 snow -h ;
 snowman cd /usr/share/windows/snowman ; ls ;
 snscan cd /usr/share/windows/snscan ; ls ;
+snscape -h ;
 snuck ;
 snyk -h ;
 soapui ;
