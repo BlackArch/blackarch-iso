@@ -4217,6 +4217,7 @@ tls-map -h ;
 tlspretense ;
 tls-prober -h ;
 tlssled -h ;
+tlsx -h ;
 tnscmd ;
 token-hunter -h ;
 token-reverser -h ;
