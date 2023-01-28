@@ -2050,6 +2050,7 @@ kacak -h ;
 kadimus -h ;
 kal -h ;
 kamerka -h ;
+katana -h ;
 katana-ktfconsole ;
 katana-ktflinker ;
 katana-ktfrun ;
