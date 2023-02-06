@@ -800,6 +800,8 @@ dbpwaudit -h ;
 dbus-map -h ;
 dbxparse -h ;
 dc3dd --help ;
+dcdetector -h ;
+dcd -h ;
 dcfldd --help ;
 dcrawl -h ;
 ddosify -h ;
