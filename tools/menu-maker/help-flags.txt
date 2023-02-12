@@ -3715,6 +3715,7 @@ shellnoob -h ;
 shellpop -h ;
 shellsploit ;
 shellter ;
+shellz -h ;
 sherlocked ;
 sherlock -h ;
 shhgit -h ;
