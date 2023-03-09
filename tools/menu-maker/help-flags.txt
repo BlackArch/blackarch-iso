@@ -667,6 +667,7 @@ covert_send6d ;
 cowpatty -h ;
 cpfinder -h ;
 cpnt ;
+cpp2il -h ;
 cppcheck-gui ;
 cppcheck -h ;
 cppcheck-htmlreport -h ;
