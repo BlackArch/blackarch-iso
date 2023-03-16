@@ -136,7 +136,7 @@ echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 gdk-pixbuf-query-loaders --update-cache
 
 # tmp fix for awesome exit()
-sed -i 's|local visible, action = cmd(item, self)|local visible, action = cmd(0, 0)|' /usr/share/awesome/lib/awful/menu.lua
+sed -i 's|local visible, action = cmd(item, self)|local visible, action = cmd(0, self)|' /usr/share/awesome/lib/awful/menu.lua
 
 # lxdm
 rm -rf /etc/lxdm
