@@ -28,6 +28,9 @@
           [exec] (srm) {urxvt -e sh -c 'srm -h ; bash'}
           [exec] (sswap) {urxvt -e sh -c 'sswap -h ; bash'}
           [exec] (steghide) {urxvt -e sh -c 'steghide --help ; bash'}
+          [exec] (zsteg) {urxvt -e sh -c 'zsteg -h ; bash'}
+          [exec] (zsteg-mask) {urxvt -e sh -c 'zsteg-mask ; bash'}
+          [exec] (zsteg-reflow) {urxvt -e sh -c 'zsteg-reflow ; bash'}
       [end]
 
       [submenu] (automation)
@@ -60,16 +63,27 @@
           [exec] (checksec) {urxvt -e sh -c 'checksec --help ; bash'}
           [exec] (cisco-snmp-enumeration) {urxvt -e sh -c 'cisco-snmp-enumeration ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
           [exec] (zuul-es5.yml) {urxvt -e sh -c 'zuul-es5.yml ; bash'}
           [exec] (zuul-es6.yml) {urxvt -e sh -c 'zuul-es6.yml ; bash'}
-          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (he) {urxvt -e sh -c 'he ; bash'}
           [exec] (jsesc) {urxvt -e sh -c 'jsesc ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (_mocha) {urxvt -e sh -c '_mocha ; bash'}
           [exec] (mocha) {urxvt -e sh -c 'mocha ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
           [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (resolve) {urxvt -e sh -c 'resolve ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (vm2) {urxvt -e sh -c 'vm2 ; bash'}
+          [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
           [exec] (which) {urxvt -e sh -c 'which ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (clusterd) {urxvt -e sh -c 'clusterd -h ; bash'}
           [exec] (cmsmap) {urxvt -e sh -c 'cmsmap -h ; bash'}
           [exec] (codeql) {urxvt -e sh -c 'codeql ; bash'}
@@ -84,7 +98,6 @@
           [exec] (java) {urxvt -e sh -c 'java ; bash'}
           [exec] (javac) {urxvt -e sh -c 'javac ; bash'}
           [exec] (keytool) {urxvt -e sh -c 'keytool ; bash'}
-          [exec] (rmid) {urxvt -e sh -c 'rmid ; bash'}
           [exec] (rmiregistry) {urxvt -e sh -c 'rmiregistry ; bash'}
           [exec] (serialver) {urxvt -e sh -c 'serialver ; bash'}
           [exec] (commix) {urxvt -e sh -c 'commix ; bash'}
@@ -95,14 +108,16 @@
           [exec] (deathstar) {urxvt -e sh -c 'deathstar -h ; bash'}
           [exec] (domained) {urxvt -e sh -c 'domained -h ; bash'}
           [exec] (dorknet) {urxvt -e sh -c 'dorknet -h ; bash'}
+          [exec] (dorkscout) {urxvt -e sh -c 'dorkscout -h ; bash'}
           [exec] (dracnmap) {urxvt -e sh -c 'dracnmap ; bash'}
           [exec] (dracnmap-drac0s) {urxvt -e sh -c 'dracnmap-drac0s ; bash'}
           [exec] (dumb0) {urxvt -e sh -c 'dumb0 -h ; bash'}
           [exec] (easy-creds) {urxvt -e sh -c 'easy-creds ; bash'}
           [exec] (easyda) {urxvt -e sh -c 'easyda ; bash'}
-          [exec] (empire) {urxvt -e sh -c 'empire -h ; bash'}
+          [exec] (emp3r0r) {urxvt -e sh -c 'emp3r0r -h ; bash'}
+          [exec] (empire-client) {urxvt -e sh -c 'empire-client ; bash'}
+          [exec] (empire-server) {urxvt -e sh -c 'empire-server ; bash'}
           [exec] (faraday-manage) {urxvt -e sh -c 'faraday-manage ; bash'}
-          [exec] (faraday-searcher) {urxvt -e sh -c 'faraday-searcher ; bash'}
           [exec] (faraday-server) {urxvt -e sh -c 'faraday-server ; bash'}
           [exec] (firstorder) {urxvt -e sh -c 'firstorder -h ; bash'}
           [exec] (fstealer) {urxvt -e sh -c 'fstealer -h ; bash'}
@@ -173,6 +188,7 @@
           [exec] (oscap-chroot) {urxvt -e sh -c 'oscap-chroot -h ; bash'}
           [exec] (oscap-docker) {urxvt -e sh -c 'oscap-docker -h ; bash'}
           [exec] (oscap-podman) {urxvt -e sh -c 'oscap-podman -h ; bash'}
+          [exec] (oscap-remediate-offline) {urxvt -e sh -c 'oscap-remediate-offline ; bash'}
           [exec] (oscap-run-sce-script) {urxvt -e sh -c 'oscap-run-sce-script ; bash'}
           [exec] (oscap-vm) {urxvt -e sh -c 'oscap-vm -h ; bash'}
           [exec] (scap-as-rpm) {urxvt -e sh -c 'scap-as-rpm -h ; bash'}
@@ -180,6 +196,7 @@
           [exec] (owtf) {urxvt -e sh -c 'owtf ; bash'}
           [exec] (panoptic) {urxvt -e sh -c 'panoptic -h ; bash'}
           [exec] (pastejacker) {urxvt -e sh -c 'pastejacker ; bash'}
+          [exec] (pastemonitor) {urxvt -e sh -c 'pastemonitor -h ; bash'}
           [exec] (pasv-agrsv) {urxvt -e sh -c 'pasv-agrsv -h ; bash'}
           [exec] (penbox) {urxvt -e sh -c 'penbox ; bash'}
           [exec] (pentestly) {urxvt -e sh -c 'pentestly -h ; bash'}
@@ -211,6 +228,7 @@
           [exec] (shellerator) {urxvt -e sh -c 'shellerator -h ; bash'}
           [exec] (shellme) {urxvt -e sh -c 'shellme -h ; bash'}
           [exec] (shellpop) {urxvt -e sh -c 'shellpop -h ; bash'}
+          [exec] (shellz) {urxvt -e sh -c 'shellz -h ; bash'}
           [exec] (sign) {urxvt -e sh -c 'sign ; bash'}
           [exec] (sipvicious-svcrack) {urxvt -e sh -c 'sipvicious-svcrack -h ; bash'}
           [exec] (sipvicious-svmap) {urxvt -e sh -c 'sipvicious-svmap -h ; bash'}
@@ -243,7 +261,7 @@
           [exec] (wnmap) {urxvt -e sh -c 'wnmap -h ; bash'}
           [exec] (xcat) {urxvt -e sh -c 'xcat ; bash'}
           [exec] (yinjector) {urxvt -e sh -c 'yinjector -h ; bash'}
-          [exec] (zeratool) {urxvt -e sh -c 'zeratool -h ; bash'}
+          [exec] (zerapwn) {urxvt -e sh -c 'zerapwn ; bash'}
           [exec] (zirikatu) {urxvt -e sh -c 'zirikatu ; bash'}
       [end]
 
@@ -315,6 +333,7 @@
           [exec] (pixload-bmp) {urxvt -e sh -c 'pixload-bmp ; bash'}
           [exec] (pixload-gif) {urxvt -e sh -c 'pixload-gif ; bash'}
           [exec] (pixload-jpg) {urxvt -e sh -c 'pixload-jpg ; bash'}
+          [exec] (pixload-webp) {urxvt -e sh -c 'pixload-webp ; bash'}
           [exec] (powerstager) {urxvt -e sh -c 'powerstager -h ; bash'}
           [exec] (pwncat) {urxvt -e sh -c 'pwncat cd /usr/share/windows/pwncat ; ls ; bash'}
           [exec] (pyrasite) {urxvt -e sh -c 'pyrasite -h ; bash'}
@@ -362,6 +381,9 @@
           [exec] (bdfproxy) {urxvt -e sh -c 'bdfproxy -h ; bash'}
           [exec] (bgrep) {urxvt -e sh -c 'bgrep ; bash'}
           [exec] (binaryninja-demo) {urxvt -e sh -c 'binaryninja-demo ; bash'}
+          [exec] (lldb) {urxvt -e sh -c 'lldb ; bash'}
+          [exec] (lldb-argdumper) {urxvt -e sh -c 'lldb-argdumper ; bash'}
+          [exec] (lldb-server) {urxvt -e sh -c 'lldb-server ; bash'}
           [exec] (bindead) {urxvt -e sh -c 'bindead ; bash'}
           [exec] (bindiff) {urxvt -e sh -c 'bindiff ; bash'}
           [exec] (binexport2dump) {urxvt -e sh -c 'binexport2dump ; bash'}
@@ -371,14 +393,13 @@
           [exec] (binwally) {urxvt -e sh -c 'binwally -h ; bash'}
           [exec] (bsdiff) {urxvt -e sh -c 'bsdiff ; bash'}
           [exec] (bspatch) {urxvt -e sh -c 'bspatch ; bash'}
-          [exec] (bsdiff) {urxvt -e sh -c 'bsdiff ; bash'}
-          [exec] (bspatch) {urxvt -e sh -c 'bspatch ; bash'}
           [exec] (bmore) {urxvt -e sh -c 'bmore ; bash'}
           [exec] (bvedit) {urxvt -e sh -c 'bvedit -h ; bash'}
           [exec] (bvi) {urxvt -e sh -c 'bvi -h ; bash'}
           [exec] (bview) {urxvt -e sh -c 'bview -h ; bash'}
           [exec] (bytecode-viewer) {urxvt -e sh -c 'bytecode-viewer ; bash'}
           [exec] (cminer) {urxvt -e sh -c 'cminer ; bash'}
+          [exec] (cpp2il) {urxvt -e sh -c 'cpp2il -h ; bash'}
           [exec] (damm) {urxvt -e sh -c 'damm -h ; bash'}
           [exec] (die) {urxvt -e sh -c 'die ; bash'}
           [exec] (diec) {urxvt -e sh -c 'diec ; bash'}
@@ -515,6 +536,7 @@
           [exec] (haystack-volatility-dump) {urxvt -e sh -c 'haystack-volatility-dump ; bash'}
           [exec] (hercules-payload) {urxvt -e sh -c 'hercules-payload ; bash'}
           [exec] (hopper) {urxvt -e sh -c 'hopper ; bash'}
+          [exec] (ida64) {urxvt -e sh -c 'ida64 ; bash'}
           [exec] (jpegdump) {urxvt -e sh -c 'jpegdump -h ; bash'}
           [exec] (jwscan) {urxvt -e sh -c 'jwscan -h ; bash'}
           [exec] (gen-bout) {urxvt -e sh -c 'gen-bout ; bash'}
@@ -581,11 +603,15 @@
           [exec] (procdump) {urxvt -e sh -c 'procdump ; bash'}
           [exec] (proctal) {urxvt -e sh -c 'proctal -h ; bash'}
           [exec] (frida) {urxvt -e sh -c 'frida -h ; bash'}
+          [exec] (frida-compile) {urxvt -e sh -c 'frida-compile ; bash'}
           [exec] (frida-create) {urxvt -e sh -c 'frida-create ; bash'}
           [exec] (frida-discover) {urxvt -e sh -c 'frida-discover -h ; bash'}
           [exec] (frida-join) {urxvt -e sh -c 'frida-join ; bash'}
           [exec] (frida-kill) {urxvt -e sh -c 'frida-kill -h ; bash'}
+          [exec] (frida-ls) {urxvt -e sh -c 'frida-ls ; bash'}
           [exec] (frida-ls-devices) {urxvt -e sh -c 'frida-ls-devices -h ; bash'}
+          [exec] (frida-pull) {urxvt -e sh -c 'frida-pull ; bash'}
+          [exec] (frida-rm) {urxvt -e sh -c 'frida-rm ; bash'}
           [exec] (frida-trace) {urxvt -e sh -c 'frida-trace -h ; bash'}
           [exec] (ezhexviewer) {urxvt -e sh -c 'ezhexviewer ; bash'}
           [exec] (ftguess) {urxvt -e sh -c 'ftguess ; bash'}
@@ -602,11 +628,15 @@
           [exec] (olevba) {urxvt -e sh -c 'olevba ; bash'}
           [exec] (pyxswf) {urxvt -e sh -c 'pyxswf ; bash'}
           [exec] (rtfobj) {urxvt -e sh -c 'rtfobj ; bash'}
+          [exec] (frida-compile2) {urxvt -e sh -c 'frida-compile2 ; bash'}
           [exec] (frida-create2) {urxvt -e sh -c 'frida-create2 ; bash'}
           [exec] (frida-discover2) {urxvt -e sh -c 'frida-discover2 ; bash'}
           [exec] (frida-join2) {urxvt -e sh -c 'frida-join2 ; bash'}
           [exec] (frida-kill2) {urxvt -e sh -c 'frida-kill2 ; bash'}
           [exec] (frida-ls-devices2) {urxvt -e sh -c 'frida-ls-devices2 ; bash'}
+          [exec] (frida-ls2) {urxvt -e sh -c 'frida-ls2 ; bash'}
+          [exec] (frida-pull2) {urxvt -e sh -c 'frida-pull2 ; bash'}
+          [exec] (frida-rm2) {urxvt -e sh -c 'frida-rm2 ; bash'}
           [exec] (frida-trace2) {urxvt -e sh -c 'frida-trace2 ; bash'}
           [exec] (frida2) {urxvt -e sh -c 'frida2 ; bash'}
           [exec] (ezhexviewer2) {urxvt -e sh -c 'ezhexviewer2 ; bash'}
@@ -688,7 +718,6 @@
           [exec] (wcc) {urxvt -e sh -c 'wcc -h ; bash'}
           [exec] (wcch) {urxvt -e sh -c 'wcch -h ; bash'}
           [exec] (wld) {urxvt -e sh -c 'wld -h ; bash'}
-          [exec] (wldd) {urxvt -e sh -c 'wldd -h ; bash'}
           [exec] (wxHexEditor) {urxvt -e sh -c 'wxHexEditor ; bash'}
           [exec] (zelos) {urxvt -e sh -c 'zelos -h ; bash'}
       [end]
@@ -765,7 +794,6 @@
           [exec] (java) {urxvt -e sh -c 'java ; bash'}
           [exec] (javac) {urxvt -e sh -c 'javac ; bash'}
           [exec] (keytool) {urxvt -e sh -c 'keytool ; bash'}
-          [exec] (rmid) {urxvt -e sh -c 'rmid ; bash'}
           [exec] (rmiregistry) {urxvt -e sh -c 'rmiregistry ; bash'}
           [exec] (serialver) {urxvt -e sh -c 'serialver ; bash'}
           [exec] (cppcheck) {urxvt -e sh -c 'cppcheck -h ; bash'}
@@ -850,6 +878,7 @@
           [exec] (which) {urxvt -e sh -c 'which ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
           [exec] (without_eval) {urxvt -e sh -c 'without_eval ; bash'}
+          [exec] (local-php-security-checker) {urxvt -e sh -c 'local-php-security-checker -h ; bash'}
           [exec] (mosca) {urxvt -e sh -c 'mosca ; bash'}
           [exec] (peach-fuzz) {urxvt -e sh -c 'peach-fuzz -h ; bash'}
           [exec] (codequery) {urxvt -e sh -c 'codequery ; bash'}
@@ -861,20 +890,25 @@
           [exec] (sgrep) {urxvt -e sh -c 'sgrep ; bash'}
           [exec] (spatch) {urxvt -e sh -c 'spatch ; bash'}
           [exec] (stags) {urxvt -e sh -c 'stags ; bash'}
+          [exec] (php-malware-finder) {urxvt -e sh -c 'php-malware-finder -h ; bash'}
           [exec] (console) {urxvt -e sh -c 'console ; bash'}
           [exec] (procyon) {urxvt -e sh -c 'procyon ; bash'}
           [exec] (pscan) {urxvt -e sh -c 'pscan -h ; bash'}
           [exec] (rats) {urxvt -e sh -c 'rats -h ; bash'}
           [exec] (retire) {urxvt -e sh -c 'retire -h ; bash'}
+          [exec] (semgrep) {urxvt -e sh -c 'semgrep ; bash'}
           [exec] (shellcheck) {urxvt -e sh -c 'shellcheck ; bash'}
           [exec] (slither) {urxvt -e sh -c 'slither -h ; bash'}
           [exec] (slither-check-erc) {urxvt -e sh -c 'slither-check-erc ; bash'}
           [exec] (slither-check-kspec) {urxvt -e sh -c 'slither-check-kspec ; bash'}
           [exec] (slither-check-upgradeability) {urxvt -e sh -c 'slither-check-upgradeability ; bash'}
+          [exec] (slither-doctor) {urxvt -e sh -c 'slither-doctor ; bash'}
+          [exec] (slither-documentation) {urxvt -e sh -c 'slither-documentation ; bash'}
           [exec] (slither-find-paths) {urxvt -e sh -c 'slither-find-paths ; bash'}
           [exec] (slither-flat) {urxvt -e sh -c 'slither-flat ; bash'}
           [exec] (slither-format) {urxvt -e sh -c 'slither-format ; bash'}
           [exec] (slither-mutate) {urxvt -e sh -c 'slither-mutate ; bash'}
+          [exec] (slither-read-storage) {urxvt -e sh -c 'slither-read-storage ; bash'}
           [exec] (slither-simil) {urxvt -e sh -c 'slither-simil ; bash'}
           [exec] (smalisca) {urxvt -e sh -c 'smalisca --help ; bash'}
           [exec] (snyk) {urxvt -e sh -c 'snyk -h ; bash'}
@@ -940,10 +974,14 @@
 
       [submenu] (config)
           [exec] (bactl) {urxvt -e sh -c 'bactl ; bash'}
+          [exec] (app) {urxvt -e sh -c 'app ; bash'}
+          [exec] (binary_file) {urxvt -e sh -c 'binary_file ; bash'}
+          [exec] (empty_file) {urxvt -e sh -c 'empty_file ; bash'}
       [end]
 
       [submenu] (cracker)
           [exec] (acccheck) {urxvt -e sh -c 'acccheck -h ; bash'}
+          [exec] (adfspray) {urxvt -e sh -c 'adfspray -h ; bash'}
           [exec] (aesfix) {urxvt -e sh -c 'aesfix ; bash'}
           [exec] (against) {urxvt -e sh -c 'against ; bash'}
           [exec] (androidpincrack) {urxvt -e sh -c 'androidpincrack -h ; bash'}
@@ -962,7 +1000,6 @@
           [exec] (bob_admin-sse2) {urxvt -e sh -c 'bob_admin-sse2 -h ; bash'}
           [exec] (bob_client-sse2) {urxvt -e sh -c 'bob_client-sse2 -h ; bash'}
           [exec] (bob_server-sse2) {urxvt -e sh -c 'bob_server-sse2 -h ; bash'}
-          [exec] (brut3k1t) {urxvt -e sh -c 'brut3k1t -h ; bash'}
           [exec] (brute-force) {urxvt -e sh -c 'brute-force -h ; bash'}
           [exec] (bruteforce-luks) {urxvt -e sh -c 'bruteforce-luks -h ; bash'}
           [exec] (bruteforce-salted-openssl) {urxvt -e sh -c 'bruteforce-salted-openssl -h ; bash'}
@@ -977,8 +1014,6 @@
           [exec] (cewl) {urxvt -e sh -c 'cewl -h ; bash'}
           [exec] (cewl-fab) {urxvt -e sh -c 'cewl-fab ; bash'}
           [exec] (chapcrack) {urxvt -e sh -c 'chapcrack -h ; bash'}
-          [exec] (checkpwd) {urxvt -e sh -c 'checkpwd -h ; bash'}
-          [exec] (checkpwd_nopw) {urxvt -e sh -c 'checkpwd_nopw ; bash'}
           [exec] (chntpw) {urxvt -e sh -c 'chntpw ; bash'}
           [exec] (cpnt) {urxvt -e sh -c 'cpnt ; bash'}
           [exec] (reged) {urxvt -e sh -c 'reged ; bash'}
@@ -1035,6 +1070,7 @@
           [exec] (fern-wifi-cracker) {urxvt -e sh -c 'fern-wifi-cracker ; bash'}
           [exec] (ftp-scanner) {urxvt -e sh -c 'ftp-scanner -h ; bash'}
           [exec] (ftp-spider) {urxvt -e sh -c 'ftp-spider -h ; bash'}
+          [exec] (gomapenum) {urxvt -e sh -c 'gomapenum -h ; bash'}
           [exec] (gpocrack) {urxvt -e sh -c 'gpocrack -h ; bash'}
           [exec] (habu.arp.ping) {urxvt -e sh -c 'habu.arp.ping ; bash'}
           [exec] (habu.arp.poison) {urxvt -e sh -c 'habu.arp.poison ; bash'}
@@ -1363,14 +1399,15 @@
           [exec] (johnny) {urxvt -e sh -c 'johnny ; bash'}
           [exec] (jooforce) {urxvt -e sh -c 'jooforce ; bash'}
           [exec] (jwt-cracker) {urxvt -e sh -c 'jwt-cracker ; bash'}
+          [exec] (jwt-hack) {urxvt -e sh -c 'jwt-hack -h ; bash'}
           [exec] (jwt-tool) {urxvt -e sh -c 'jwt-tool -h ; bash'}
           [exec] (jwtcat) {urxvt -e sh -c 'jwtcat -h ; bash'}
-          [exec] (katana-ktf.gui) {urxvt -e sh -c 'katana-ktf.gui ; bash'}
-          [exec] (katana-ktfconsole) {urxvt -e sh -c 'katana-ktfconsole ; bash'}
-          [exec] (katana-ktfktf) {urxvt -e sh -c 'katana-ktfktf ; bash'}
-          [exec] (katana-ktflinker) {urxvt -e sh -c 'katana-ktflinker ; bash'}
-          [exec] (katana-ktfrun) {urxvt -e sh -c 'katana-ktfrun ; bash'}
-          [exec] (katana-ktfupdate) {urxvt -e sh -c 'katana-ktfupdate ; bash'}
+          [exec] (katana-framework-ktf.gui) {urxvt -e sh -c 'katana-framework-ktf.gui ; bash'}
+          [exec] (katana-framework-ktfconsole) {urxvt -e sh -c 'katana-framework-ktfconsole ; bash'}
+          [exec] (katana-framework-ktfktf) {urxvt -e sh -c 'katana-framework-ktfktf ; bash'}
+          [exec] (katana-framework-ktflinker) {urxvt -e sh -c 'katana-framework-ktflinker ; bash'}
+          [exec] (katana-framework-ktfrun) {urxvt -e sh -c 'katana-framework-ktfrun ; bash'}
+          [exec] (katana-framework-ktfupdate) {urxvt -e sh -c 'katana-framework-ktfupdate ; bash'}
           [exec] (keimpx) {urxvt -e sh -c 'keimpx -h ; bash'}
           [exec] (khc) {urxvt -e sh -c 'khc ; bash'}
           [exec] (ldap-brute) {urxvt -e sh -c 'ldap-brute -h ; bash'}
@@ -1393,6 +1430,7 @@
           [exec] (mybff) {urxvt -e sh -c 'mybff -h ; bash'}
           [exec] (myjwt) {urxvt -e sh -c 'myjwt -h ; bash'}
           [exec] (ncrack) {urxvt -e sh -c 'ncrack -h ; bash'}
+          [exec] (o365enum) {urxvt -e sh -c 'o365enum -h ; bash'}
           [exec] (o365spray) {urxvt -e sh -c 'o365spray -h ; bash'}
           [exec] (obevilion) {urxvt -e sh -c 'obevilion --help ; bash'}
           [exec] (ocs-cisco) {urxvt -e sh -c 'ocs-cisco ; bash'}
@@ -1442,6 +1480,7 @@
           [exec] (rootbrute) {urxvt -e sh -c 'rootbrute -h ; bash'}
           [exec] (rpdscan) {urxvt -e sh -c 'rpdscan -h ; bash'}
           [exec] (rsactftool) {urxvt -e sh -c 'rsactftool -h ; bash'}
+          [exec] (rustpad) {urxvt -e sh -c 'rustpad -h ; bash'}
           [exec] (samydeluxe) {urxvt -e sh -c 'samydeluxe -h ; bash'}
           [exec] (sb0x) {urxvt -e sh -c 'sb0x -h ; bash'}
           [exec] (shreder) {urxvt -e sh -c 'shreder -h ; bash'}
@@ -1463,14 +1502,20 @@
           [exec] (sparta) {urxvt -e sh -c 'sparta ; bash'}
           [exec] (speedport-arcadyan) {urxvt -e sh -c 'speedport-arcadyan ; bash'}
           [exec] (speedpwn) {urxvt -e sh -c 'speedpwn -h ; bash'}
+          [exec] (spray365) {urxvt -e sh -c 'spray365 -h ; bash'}
+          [exec] (sc) {urxvt -e sh -c 'sc ; bash'}
+          [exec] (spraycharles) {urxvt -e sh -c 'spraycharles -h ; bash'}
           [exec] (sqlbf) {urxvt -e sh -c 'sqlbf ; bash'}
           [exec] (sslnuke) {urxvt -e sh -c 'sslnuke ; bash'}
           [exec] (sucrack) {urxvt -e sh -c 'sucrack ; bash'}
           [exec] (swarm) {urxvt -e sh -c 'swarm -h ; bash'}
+          [exec] (talon) {urxvt -e sh -c 'talon -h ; bash'}
           [exec] (tftpbrute) {urxvt -e sh -c 'tftpbrute ; bash'}
           [exec] (keyfinder) {urxvt -e sh -c 'keyfinder ; bash'}
           [exec] (thc-pptp-bruter) {urxvt -e sh -c 'thc-pptp-bruter ; bash'}
           [exec] (thc-smartbrute) {urxvt -e sh -c 'thc-smartbrute -h ; bash'}
+          [exec] (timeverter) {urxvt -e sh -c 'timeverter -h ; bash'}
+          [exec] (trevorspray) {urxvt -e sh -c 'trevorspray -h ; bash'}
           [exec] (ttpassgen) {urxvt -e sh -c 'ttpassgen -h ; bash'}
           [exec] (ufo-wardriving) {urxvt -e sh -c 'ufo-wardriving ; bash'}
           [exec] (vnc-bypauth) {urxvt -e sh -c 'vnc-bypauth ; bash'}
@@ -1572,6 +1617,7 @@
           [exec] (rsactftool) {urxvt -e sh -c 'rsactftool -h ; bash'}
           [exec] (rsatool) {urxvt -e sh -c 'rsatool -h ; bash'}
           [exec] (rupture) {urxvt -e sh -c 'rupture -h ; bash'}
+          [exec] (rustpad) {urxvt -e sh -c 'rustpad -h ; bash'}
           [exec] (sandy) {urxvt -e sh -c 'sandy -h ; bash'}
           [exec] (sbd) {urxvt -e sh -c 'sbd -h ; bash'}
           [exec] (sha1dcsum) {urxvt -e sh -c 'sha1dcsum ; bash'}
@@ -1582,6 +1628,8 @@
           [exec] (skul) {urxvt -e sh -c 'skul ; bash'}
           [exec] (snapception) {urxvt -e sh -c 'snapception --help ; bash'}
           [exec] (snow) {urxvt -e sh -c 'snow -h ; bash'}
+          [exec] (spipe) {urxvt -e sh -c 'spipe ; bash'}
+          [exec] (spiped) {urxvt -e sh -c 'spiped ; bash'}
           [exec] (spipe) {urxvt -e sh -c 'spipe ; bash'}
           [exec] (spiped) {urxvt -e sh -c 'spiped ; bash'}
           [exec] (ssdeep) {urxvt -e sh -c 'ssdeep ; bash'}
@@ -1654,6 +1702,7 @@
           [exec] (ghidra-analyzeHeadless) {urxvt -e sh -c 'ghidra-analyzeHeadless ; bash'}
           [exec] (ghidra) {urxvt -e sh -c 'ghidra ; bash'}
           [exec] (ghidra-analyzeHeadless) {urxvt -e sh -c 'ghidra-analyzeHeadless ; bash'}
+          [exec] (heaptrace) {urxvt -e sh -c 'heaptrace -h ; bash'}
           [exec] (iaito) {urxvt -e sh -c 'iaito ; bash'}
           [exec] (gen-bout) {urxvt -e sh -c 'gen-bout ; bash'}
           [exec] (gen-random-bout) {urxvt -e sh -c 'gen-random-bout ; bash'}
@@ -1674,6 +1723,7 @@
           [exec] (malwasm) {urxvt -e sh -c 'malwasm ; bash'}
           [exec] (ollydbg) {urxvt -e sh -c 'ollydbg ; bash'}
           [exec] (plasma-disasm) {urxvt -e sh -c 'plasma-disasm -h ; bash'}
+          [exec] (sleighc) {urxvt -e sh -c 'sleighc ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -1685,8 +1735,8 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -1698,9 +1748,10 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (rr) {urxvt -e sh -c 'rr -h ; bash'}
+          [exec] (cutter) {urxvt -e sh -c 'cutter ; bash'}
           [exec] (saleae-logic) {urxvt -e sh -c 'saleae-logic ; bash'}
           [exec] (cygdb) {urxvt -e sh -c 'cygdb ; bash'}
           [exec] (cython) {urxvt -e sh -c 'cython ; bash'}
@@ -1720,6 +1771,7 @@
           [exec] (gadgetinspector) {urxvt -e sh -c 'gadgetinspector ; bash'}
           [exec] (hopper) {urxvt -e sh -c 'hopper ; bash'}
           [exec] (iaito) {urxvt -e sh -c 'iaito ; bash'}
+          [exec] (ida64) {urxvt -e sh -c 'ida64 ; bash'}
           [exec] (jadx) {urxvt -e sh -c 'jadx -h ; bash'}
           [exec] (jadx-gui) {urxvt -e sh -c 'jadx-gui ; bash'}
           [exec] (jadx) {urxvt -e sh -c 'jadx -h ; bash'}
@@ -1735,6 +1787,7 @@
           [exec] (pcode2code) {urxvt -e sh -c 'pcode2code -h ; bash'}
           [exec] (procyon) {urxvt -e sh -c 'procyon ; bash'}
           [exec] (pydisassemble) {urxvt -e sh -c 'pydisassemble ; bash'}
+          [exec] (sleighc) {urxvt -e sh -c 'sleighc ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -1746,8 +1799,8 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -1759,8 +1812,8 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (recaf) {urxvt -e sh -c 'recaf ; bash'}
           [exec] (recstudio) {urxvt -e sh -c 'recstudio ; bash'}
           [exec] (retdec-ar-extractor) {urxvt -e sh -c 'retdec-ar-extractor -h ; bash'}
@@ -1777,6 +1830,7 @@
           [exec] (retdec-unpacker) {urxvt -e sh -c 'retdec-unpacker -h ; bash'}
           [exec] (retdec-utils) {urxvt -e sh -c 'retdec-utils -h ; bash'}
           [exec] (retdec-yarac) {urxvt -e sh -c 'retdec-yarac ; bash'}
+          [exec] (cutter) {urxvt -e sh -c 'cutter ; bash'}
       [end]
 
       [submenu] (defensive)
@@ -1824,9 +1878,11 @@
           [exec] (beholder) {urxvt -e sh -c 'beholder -h ; bash'}
           [exec] (camscan) {urxvt -e sh -c 'camscan -h ; bash'}
           [exec] (centry) {urxvt -e sh -c 'centry -h ; bash'}
+          [exec] (chainsaw) {urxvt -e sh -c 'chainsaw -h ; bash'}
           [exec] (chkrootkit) {urxvt -e sh -c 'chkrootkit -h ; bash'}
           [exec] (credmap) {urxvt -e sh -c 'credmap -h ; bash'}
           [exec] (dbpwaudit) {urxvt -e sh -c 'dbpwaudit -h ; bash'}
+          [exec] (dependency-check) {urxvt -e sh -c 'dependency-check ; bash'}
           [exec] (detect-sniffer) {urxvt -e sh -c 'detect-sniffer -h ; bash'}
           [exec] (exabgp) {urxvt -e sh -c 'exabgp ; bash'}
           [exec] (exabgp-cli) {urxvt -e sh -c 'exabgp-cli ; bash'}
@@ -1857,7 +1913,6 @@
           [exec] (munin-host) {urxvt -e sh -c 'munin-host -h ; bash'}
           [exec] (nipe) {urxvt -e sh -c 'nipe help ; bash'}
           [exec] (nohidy) {urxvt -e sh -c 'nohidy ; bash'}
-          [exec] (nsia) {urxvt -e sh -c 'nsia -h ; bash'}
           [exec] (nzyme) {urxvt -e sh -c 'nzyme ; bash'}
           [exec] (onionscan) {urxvt -e sh -c 'onionscan ; bash'}
           [exec] (autotailor) {urxvt -e sh -c 'autotailor ; bash'}
@@ -1865,6 +1920,7 @@
           [exec] (oscap-chroot) {urxvt -e sh -c 'oscap-chroot -h ; bash'}
           [exec] (oscap-docker) {urxvt -e sh -c 'oscap-docker -h ; bash'}
           [exec] (oscap-podman) {urxvt -e sh -c 'oscap-podman -h ; bash'}
+          [exec] (oscap-remediate-offline) {urxvt -e sh -c 'oscap-remediate-offline ; bash'}
           [exec] (oscap-run-sce-script) {urxvt -e sh -c 'oscap-run-sce-script ; bash'}
           [exec] (oscap-vm) {urxvt -e sh -c 'oscap-vm -h ; bash'}
           [exec] (scap-as-rpm) {urxvt -e sh -c 'scap-as-rpm -h ; bash'}
@@ -1913,15 +1969,15 @@
           [exec] (stegdeimage) {urxvt -e sh -c 'stegdeimage --help ; bash'}
           [exec] (stegdetect) {urxvt -e sh -c 'stegdetect --help ; bash'}
           [exec] (suricata) {urxvt -e sh -c 'suricata ; bash'}
+          [exec] (suricata-update) {urxvt -e sh -c 'suricata-update ; bash'}
           [exec] (suricatactl) {urxvt -e sh -c 'suricatactl ; bash'}
           [exec] (suricatasc) {urxvt -e sh -c 'suricatasc ; bash'}
           [exec] (tabi) {urxvt -e sh -c 'tabi -h ; bash'}
           [exec] (tfsec) {urxvt -e sh -c 'tfsec -h ; bash'}
           [exec] (threatspec) {urxvt -e sh -c 'threatspec -h ; bash'}
           [exec] (tor-autocircuit) {urxvt -e sh -c 'tor-autocircuit ; bash'}
-          [exec] (tor-browser-en) {urxvt -e sh -c 'tor-browser-en ; bash'}
+          [exec] (tor-browser) {urxvt -e sh -c 'tor-browser ; bash'}
           [exec] (tor-router) {urxvt -e sh -c 'tor-router ; bash'}
-          [exec] (truecrypt) {urxvt -e sh -c 'truecrypt -t -h ; bash'}
           [exec] (usb-canary) {urxvt -e sh -c 'usb-canary -h ; bash'}
           [exec] (veracrypt) {urxvt -e sh -c 'veracrypt ; bash'}
           [exec] (wireless-ids) {urxvt -e sh -c 'wireless-ids -h ; bash'}
@@ -1931,11 +1987,7 @@
           [exec] (marked) {urxvt -e sh -c 'marked ; bash'}
           [exec] (bifcl) {urxvt -e sh -c 'bifcl ; bash'}
           [exec] (binpac) {urxvt -e sh -c 'binpac ; bash'}
-          [exec] (bro) {urxvt -e sh -c 'bro -h ; bash'}
-          [exec] (bro-cut) {urxvt -e sh -c 'bro-cut ; bash'}
-          [exec] (broctl) {urxvt -e sh -c 'broctl ; bash'}
           [exec] (broker-benchmark) {urxvt -e sh -c 'broker-benchmark ; bash'}
-          [exec] (broker-cluster-benchmark) {urxvt -e sh -c 'broker-cluster-benchmark ; bash'}
           [exec] (btest) {urxvt -e sh -c 'btest ; bash'}
           [exec] (btest-ask-update) {urxvt -e sh -c 'btest-ask-update ; bash'}
           [exec] (btest-bg-run) {urxvt -e sh -c 'btest-bg-run ; bash'}
@@ -1947,10 +1999,19 @@
           [exec] (btest-rst-include) {urxvt -e sh -c 'btest-rst-include ; bash'}
           [exec] (btest-rst-pipe) {urxvt -e sh -c 'btest-rst-pipe ; bash'}
           [exec] (btest-setsid) {urxvt -e sh -c 'btest-setsid ; bash'}
+          [exec] (gen-zam) {urxvt -e sh -c 'gen-zam ; bash'}
+          [exec] (hiltic) {urxvt -e sh -c 'hiltic ; bash'}
           [exec] (paraglob-test) {urxvt -e sh -c 'paraglob-test ; bash'}
+          [exec] (spicy-build) {urxvt -e sh -c 'spicy-build ; bash'}
+          [exec] (spicy-driver) {urxvt -e sh -c 'spicy-driver ; bash'}
+          [exec] (spicy-dump) {urxvt -e sh -c 'spicy-dump ; bash'}
+          [exec] (spicy-precompile-headers) {urxvt -e sh -c 'spicy-precompile-headers ; bash'}
+          [exec] (spicyc) {urxvt -e sh -c 'spicyc ; bash'}
+          [exec] (spicyz) {urxvt -e sh -c 'spicyz ; bash'}
           [exec] (trace-summary) {urxvt -e sh -c 'trace-summary ; bash'}
           [exec] (zeek) {urxvt -e sh -c 'zeek ; bash'}
           [exec] (zeek-archiver) {urxvt -e sh -c 'zeek-archiver ; bash'}
+          [exec] (zeek-client) {urxvt -e sh -c 'zeek-client ; bash'}
           [exec] (zeek-cut) {urxvt -e sh -c 'zeek-cut ; bash'}
           [exec] (zeekctl) {urxvt -e sh -c 'zeekctl ; bash'}
           [exec] (zkg) {urxvt -e sh -c 'zkg ; bash'}
@@ -1991,6 +2052,7 @@
           [exec] (ghidra-analyzeHeadless) {urxvt -e sh -c 'ghidra-analyzeHeadless ; bash'}
           [exec] (hopper) {urxvt -e sh -c 'hopper ; bash'}
           [exec] (iaito) {urxvt -e sh -c 'iaito ; bash'}
+          [exec] (ida64) {urxvt -e sh -c 'ida64 ; bash'}
           [exec] (inguma) {urxvt -e sh -c 'inguma -h ; bash'}
           [exec] (ingumagui) {urxvt -e sh -c 'ingumagui ; bash'}
           [exec] (x86dis) {urxvt -e sh -c 'x86dis ; bash'}
@@ -2030,6 +2092,7 @@
           [exec] (version) {urxvt -e sh -c 'version ; bash'}
           [exec] (pcodedmp) {urxvt -e sh -c 'pcodedmp -h ; bash'}
           [exec] (pcodedmp2) {urxvt -e sh -c 'pcodedmp2 ; bash'}
+          [exec] (sleighc) {urxvt -e sh -c 'sleighc ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -2041,8 +2104,8 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -2054,9 +2117,10 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (redasm) {urxvt -e sh -c 'redasm ; bash'}
+          [exec] (cutter) {urxvt -e sh -c 'cutter ; bash'}
           [exec] (scratchabit) {urxvt -e sh -c 'scratchabit -h ; bash'}
           [exec] (baksmali) {urxvt -e sh -c 'baksmali -h ; bash'}
           [exec] (smali) {urxvt -e sh -c 'smali -h ; bash'}
@@ -2071,6 +2135,7 @@
           [exec] (blacknurse) {urxvt -e sh -c 'blacknurse ; bash'}
           [exec] (bonesi) {urxvt -e sh -c 'bonesi ; bash'}
           [exec] (davoset) {urxvt -e sh -c 'davoset ; bash'}
+          [exec] (ddosify) {urxvt -e sh -c 'ddosify -h ; bash'}
           [exec] (dhcpig) {urxvt -e sh -c 'dhcpig -h ; bash'}
           [exec] (dnsdrdos) {urxvt -e sh -c 'dnsdrdos -H ; bash'}
           [exec] (fhttp) {urxvt -e sh -c 'fhttp -h ; bash'}
@@ -2143,12 +2208,12 @@
           [exec] (impulse) {urxvt -e sh -c 'impulse -h ; bash'}
           [exec] (inviteflood) {urxvt -e sh -c 'inviteflood -h ; bash'}
           [exec] (isip) {urxvt -e sh -c 'isip ; bash'}
-          [exec] (katana-ktf.gui) {urxvt -e sh -c 'katana-ktf.gui ; bash'}
-          [exec] (katana-ktfconsole) {urxvt -e sh -c 'katana-ktfconsole ; bash'}
-          [exec] (katana-ktfktf) {urxvt -e sh -c 'katana-ktfktf ; bash'}
-          [exec] (katana-ktflinker) {urxvt -e sh -c 'katana-ktflinker ; bash'}
-          [exec] (katana-ktfrun) {urxvt -e sh -c 'katana-ktfrun ; bash'}
-          [exec] (katana-ktfupdate) {urxvt -e sh -c 'katana-ktfupdate ; bash'}
+          [exec] (katana-framework-ktf.gui) {urxvt -e sh -c 'katana-framework-ktf.gui ; bash'}
+          [exec] (katana-framework-ktfconsole) {urxvt -e sh -c 'katana-framework-ktfconsole ; bash'}
+          [exec] (katana-framework-ktfktf) {urxvt -e sh -c 'katana-framework-ktfktf ; bash'}
+          [exec] (katana-framework-ktflinker) {urxvt -e sh -c 'katana-framework-ktflinker ; bash'}
+          [exec] (katana-framework-ktfrun) {urxvt -e sh -c 'katana-framework-ktfrun ; bash'}
+          [exec] (katana-framework-ktfupdate) {urxvt -e sh -c 'katana-framework-ktfupdate ; bash'}
           [exec] (mz) {urxvt -e sh -c 'mz -h ; bash'}
           [exec] (nkiller2) {urxvt -e sh -c 'nkiller2 -h ; bash'}
           [exec] (ntpdos) {urxvt -e sh -c 'ntpdos ; bash'}
@@ -2308,6 +2373,7 @@
 
       [submenu] (exploitation)
           [exec] (aclpwn) {urxvt -e sh -c 'aclpwn -h ; bash'}
+          [exec] (adenum) {urxvt -e sh -c 'adenum -h ; bash'}
           [exec] (aggroargs) {urxvt -e sh -c 'aggroargs -h ; bash'}
           [exec] (armitage) {urxvt -e sh -c 'armitage -h ; bash'}
           [exec] (teamserver) {urxvt -e sh -c 'teamserver ; bash'}
@@ -2324,6 +2390,10 @@
           [exec] (bfbtester) {urxvt -e sh -c 'bfbtester -h ; bash'}
           [exec] (binex) {urxvt -e sh -c 'binex -h ; bash'}
           [exec] (bitdump) {urxvt -e sh -c 'bitdump -h ; bash'}
+          [exec] (autobloody) {urxvt -e sh -c 'autobloody -h ; bash'}
+          [exec] (bloodyad) {urxvt -e sh -c 'bloodyad -h ; bash'}
+          [exec] (pathgen) {urxvt -e sh -c 'pathgen ; bash'}
+          [exec] (bluffy) {urxvt -e sh -c 'bluffy -h ; bash'}
           [exec] (botb) {urxvt -e sh -c 'botb -h ; bash'}
           [exec] (connectbackserver) {urxvt -e sh -c 'connectbackserver ; bash'}
           [exec] (trojanserver) {urxvt -e sh -c 'trojanserver -h ; bash'}
@@ -2342,10 +2412,12 @@
           [exec] (cisco-torch) {urxvt -e sh -c 'cisco-torch -h ; bash'}
           [exec] (cmseek) {urxvt -e sh -c 'cmseek ; bash'}
           [exec] (cmsmap) {urxvt -e sh -c 'cmsmap -h ; bash'}
+          [exec] (coercer) {urxvt -e sh -c 'coercer -h ; bash'}
           [exec] (commix) {urxvt -e sh -c 'commix ; bash'}
           [exec] (crabstick) {urxvt -e sh -c 'crabstick -h ; bash'}
           [exec] (cme) {urxvt -e sh -c 'cme ; bash'}
           [exec] (cmedb) {urxvt -e sh -c 'cmedb ; bash'}
+          [exec] (crackql) {urxvt -e sh -c 'crackql -h ; bash'}
           [exec] (creak) {urxvt -e sh -c 'creak -h ; bash'}
           [exec] (cve-search-__init__) {urxvt -e sh -c 'cve-search-__init__ ; bash'}
           [exec] (cve-search-cve_doc) {urxvt -e sh -c 'cve-search-cve_doc -h ; bash'}
@@ -2368,8 +2440,6 @@
           [exec] (cve-search-search) {urxvt -e sh -c 'cve-search-search -h ; bash'}
           [exec] (cve-search-search_cpe) {urxvt -e sh -c 'cve-search-search_cpe -h ; bash'}
           [exec] (cve-search-search_fulltext) {urxvt -e sh -c 'cve-search-search_fulltext -h ; bash'}
-          [exec] (cve-search-search_irc) {urxvt -e sh -c 'cve-search-search_irc -h ; bash'}
-          [exec] (cve-search-search_xmpp) {urxvt -e sh -c 'cve-search-search_xmpp -h ; bash'}
           [exec] (darkd0rk3r) {urxvt -e sh -c 'darkd0rk3r ; rm -rf darkd0rk3r-*.txt ; bash'}
           [exec] (darkmysqli) {urxvt -e sh -c 'darkmysqli -h ; bash'}
           [exec] (darkspiritz) {urxvt -e sh -c 'darkspiritz -h ; bash'}
@@ -2377,6 +2447,7 @@
           [exec] (deepce) {urxvt -e sh -c 'deepce -h ; bash'}
           [exec] (delorean) {urxvt -e sh -c 'delorean -h ; bash'}
           [exec] (dkmc) {urxvt -e sh -c 'dkmc ; bash'}
+          [exec] (dontgo403) {urxvt -e sh -c 'dontgo403 -h ; bash'}
           [exec] (donut) {urxvt -e sh -c 'donut -h ; bash'}
           [exec] (doona) {urxvt -e sh -c 'doona -h ; bash'}
           [exec] (dotdotpwn) {urxvt -e sh -c 'dotdotpwn -h ; bash'}
@@ -2398,27 +2469,21 @@
           [exec] (evil-winrm) {urxvt -e sh -c 'evil-winrm -h ; bash'}
           [exec] (eyepwn) {urxvt -e sh -c 'eyepwn ; bash'}
           [exec] (faraday-manage) {urxvt -e sh -c 'faraday-manage ; bash'}
-          [exec] (faraday-searcher) {urxvt -e sh -c 'faraday-searcher ; bash'}
           [exec] (faraday-server) {urxvt -e sh -c 'faraday-server ; bash'}
           [exec] (ffm) {urxvt -e sh -c 'ffm -h ; bash'}
           [exec] (fimap) {urxvt -e sh -c 'fimap -h ; bash'}
           [exec] (firstorder) {urxvt -e sh -c 'firstorder -h ; bash'}
+          [exec] (fortiscan) {urxvt -e sh -c 'fortiscan -h ; bash'}
           [exec] (fs-nyarl) {urxvt -e sh -c 'fs-nyarl -h ; bash'}
           [exec] (chaosreader0.94) {urxvt -e sh -c 'chaosreader0.94 ; bash'}
           [exec] (fuzzbunch) {urxvt -e sh -c 'fuzzbunch -h ; bash'}
           [exec] (gcat) {urxvt -e sh -c 'gcat --help ; bash'}
+          [exec] (ghauri) {urxvt -e sh -c 'ghauri -h ; bash'}
           [exec] (ghostdelivery) {urxvt -e sh -c 'ghostdelivery ; bash'}
           [exec] (gloom) {urxvt -e sh -c 'gloom ; bash'}
           [exec] (gopherus) {urxvt -e sh -c 'gopherus ; bash'}
           [exec] (graphql-path-enum) {urxvt -e sh -c 'graphql-path-enum -h ; bash'}
           [exec] (graphqlmap) {urxvt -e sh -c 'graphqlmap -h ; bash'}
-          [exec] (gsad) {urxvt -e sh -c 'gsad -h ; bash'}
-          [exec] (database-statistics-sqlite) {urxvt -e sh -c 'database-statistics-sqlite ; bash'}
-          [exec] (greenbone-certdata-sync) {urxvt -e sh -c 'greenbone-certdata-sync -h ; bash'}
-          [exec] (greenbone-scapdata-sync) {urxvt -e sh -c 'greenbone-scapdata-sync -h ; bash'}
-          [exec] (gvm-manage-certs) {urxvt -e sh -c 'gvm-manage-certs ; bash'}
-          [exec] (gvm-migrate-to-postgres) {urxvt -e sh -c 'gvm-migrate-to-postgres ; bash'}
-          [exec] (gvm-portnames-update) {urxvt -e sh -c 'gvm-portnames-update ; bash'}
           [exec] (hackredis) {urxvt -e sh -c 'hackredis -h ; bash'}
           [exec] (hakku) {urxvt -e sh -c 'hakku ; bash'}
           [exec] (ferret) {urxvt -e sh -c 'ferret ; bash'}
@@ -2427,6 +2492,7 @@
           [exec] (heartleech) {urxvt -e sh -c 'heartleech -h ; bash'}
           [exec] (homepwn) {urxvt -e sh -c 'homepwn -h ; bash'}
           [exec] (hqlmap) {urxvt -e sh -c 'hqlmap -h ; bash'}
+          [exec] (http2smugl) {urxvt -e sh -c 'http2smugl -h ; bash'}
           [exec] (incept) {urxvt -e sh -c 'incept ; bash'}
           [exec] (inguma) {urxvt -e sh -c 'inguma -h ; bash'}
           [exec] (ingumagui) {urxvt -e sh -c 'ingumagui ; bash'}
@@ -2455,12 +2521,12 @@
           [exec] (jsql-injection) {urxvt -e sh -c 'jsql-injection ; bash'}
           [exec] (k55) {urxvt -e sh -c 'k55 -h ; bash'}
           [exec] (kadimus) {urxvt -e sh -c 'kadimus -h ; bash'}
-          [exec] (katana-ktf.gui) {urxvt -e sh -c 'katana-ktf.gui ; bash'}
-          [exec] (katana-ktfconsole) {urxvt -e sh -c 'katana-ktfconsole ; bash'}
-          [exec] (katana-ktfktf) {urxvt -e sh -c 'katana-ktfktf ; bash'}
-          [exec] (katana-ktflinker) {urxvt -e sh -c 'katana-ktflinker ; bash'}
-          [exec] (katana-ktfrun) {urxvt -e sh -c 'katana-ktfrun ; bash'}
-          [exec] (katana-ktfupdate) {urxvt -e sh -c 'katana-ktfupdate ; bash'}
+          [exec] (katana-framework-ktf.gui) {urxvt -e sh -c 'katana-framework-ktf.gui ; bash'}
+          [exec] (katana-framework-ktfconsole) {urxvt -e sh -c 'katana-framework-ktfconsole ; bash'}
+          [exec] (katana-framework-ktfktf) {urxvt -e sh -c 'katana-framework-ktfktf ; bash'}
+          [exec] (katana-framework-ktflinker) {urxvt -e sh -c 'katana-framework-ktflinker ; bash'}
+          [exec] (katana-framework-ktfrun) {urxvt -e sh -c 'katana-framework-ktfrun ; bash'}
+          [exec] (katana-framework-ktfupdate) {urxvt -e sh -c 'katana-framework-ktfupdate ; bash'}
           [exec] (kernelpop) {urxvt -e sh -c 'kernelpop -h ; bash'}
           [exec] (killcast) {urxvt -e sh -c 'killcast -h ; bash'}
           [exec] (kbbootloader) {urxvt -e sh -c 'kbbootloader -h ; bash'}
@@ -2546,9 +2612,9 @@
           [exec] (office-dde-payloads-word) {urxvt -e sh -c 'office-dde-payloads-word -h ; bash'}
           [exec] (opensvp) {urxvt -e sh -c 'opensvp -h ; bash'}
           [exec] (greenbone-nvt-sync) {urxvt -e sh -c 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas) {urxvt -e sh -c 'openvas ; bash'}
           [exec] (openvas-nasl) {urxvt -e sh -c 'openvas-nasl ; bash'}
           [exec] (openvas-nasl-lint) {urxvt -e sh -c 'openvas-nasl-lint ; bash'}
-          [exec] (openvassd) {urxvt -e sh -c 'openvassd -h ; bash'}
           [exec] (osueta) {urxvt -e sh -c 'osueta -h ; bash'}
           [exec] (otori) {urxvt -e sh -c 'otori -h ; bash'}
           [exec] (owasp-zsc) {urxvt -e sh -c 'owasp-zsc ; bash'}
@@ -2560,12 +2626,15 @@
           [exec] (phantom-evasion) {urxvt -e sh -c 'phantom-evasion -h ; bash'}
           [exec] (phpggc) {urxvt -e sh -c 'phpggc -h ; bash'}
           [exec] (pirana) {urxvt -e sh -c 'pirana -h ; bash'}
+          [exec] (gets4uticket) {urxvt -e sh -c 'gets4uticket -h ; bash'}
+          [exec] (gettgtpkinit) {urxvt -e sh -c 'gettgtpkinit -h ; bash'}
           [exec] (pmcma) {urxvt -e sh -c 'pmcma ; bash'}
           [exec] (pcs-attack) {urxvt -e sh -c 'pcs-attack ; bash'}
           [exec] (pcs-console) {urxvt -e sh -c 'pcs-console ; bash'}
           [exec] (pcs-verify) {urxvt -e sh -c 'pcs-verify ; bash'}
           [exec] (pocsuite) {urxvt -e sh -c 'pocsuite -h ; bash'}
           [exec] (postenum) {urxvt -e sh -c 'postenum -h ; bash'}
+          [exec] (ppmap) {urxvt -e sh -c 'ppmap -h ; bash'}
           [exec] (pret) {urxvt -e sh -c 'pret -h ; bash'}
           [exec] (ps1encode) {urxvt -e sh -c 'ps1encode -h ; bash'}
           [exec] (ptf) {urxvt -e sh -c 'ptf ; bash'}
@@ -2582,6 +2651,7 @@
           [exec] (rfcat_bootloader) {urxvt -e sh -c 'rfcat_bootloader ; bash'}
           [exec] (rfcat_msfrelay) {urxvt -e sh -c 'rfcat_msfrelay ; bash'}
           [exec] (rfcat_server) {urxvt -e sh -c 'rfcat_server ; bash'}
+          [exec] (rmiscout) {urxvt -e sh -c 'rmiscout ; bash'}
           [exec] (rombuster) {urxvt -e sh -c 'rombuster -h ; bash'}
           [exec] (ROPgadget) {urxvt -e sh -c 'ROPgadget ; bash'}
           [exec] (ropper) {urxvt -e sh -c 'ropper ; bash'}
@@ -2618,10 +2688,13 @@
           [exec] (slither-check-erc) {urxvt -e sh -c 'slither-check-erc ; bash'}
           [exec] (slither-check-kspec) {urxvt -e sh -c 'slither-check-kspec ; bash'}
           [exec] (slither-check-upgradeability) {urxvt -e sh -c 'slither-check-upgradeability ; bash'}
+          [exec] (slither-doctor) {urxvt -e sh -c 'slither-doctor ; bash'}
+          [exec] (slither-documentation) {urxvt -e sh -c 'slither-documentation ; bash'}
           [exec] (slither-find-paths) {urxvt -e sh -c 'slither-find-paths ; bash'}
           [exec] (slither-flat) {urxvt -e sh -c 'slither-flat ; bash'}
           [exec] (slither-format) {urxvt -e sh -c 'slither-format ; bash'}
           [exec] (slither-mutate) {urxvt -e sh -c 'slither-mutate ; bash'}
+          [exec] (slither-read-storage) {urxvt -e sh -c 'slither-read-storage ; bash'}
           [exec] (slither-simil) {urxvt -e sh -c 'slither-simil ; bash'}
           [exec] (smap) {urxvt -e sh -c 'smap -h ; bash'}
           [exec] (smikims-cage) {urxvt -e sh -c 'smikims-cage ; bash'}
@@ -2642,6 +2715,8 @@
           [exec] (sslstrip) {urxvt -e sh -c 'sslstrip -h ; bash'}
           [exec] (ssrfmap) {urxvt -e sh -c 'ssrfmap -h ; bash'}
           [exec] (stackflow) {urxvt -e sh -c 'stackflow -h ; bash'}
+          [exec] (stowaway-admin) {urxvt -e sh -c 'stowaway-admin -h ; bash'}
+          [exec] (stowaway-agent) {urxvt -e sh -c 'stowaway-agent -h ; bash'}
           [exec] (subterfuge) {urxvt -e sh -c 'subterfuge ; bash'}
           [exec] (suid3num) {urxvt -e sh -c 'suid3num -h ; bash'}
           [exec] (swarm) {urxvt -e sh -c 'swarm -h ; bash'}
@@ -2673,22 +2748,18 @@
           [exec] (xsser) {urxvt -e sh -c 'xsser -h ; bash'}
           [exec] (xxeinjector) {urxvt -e sh -c 'xxeinjector -h ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (he) {urxvt -e sh -c 'he ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (jsesc) {urxvt -e sh -c 'jsesc ; bash'}
           [exec] (_mocha) {urxvt -e sh -c '_mocha ; bash'}
-          [exec] (mocha) {urxvt -e sh -c 'mocha ; bash'}
           [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (tsc) {urxvt -e sh -c 'tsc ; bash'}
           [exec] (tsserver) {urxvt -e sh -c 'tsserver ; bash'}
           [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
-          [exec] (which) {urxvt -e sh -c 'which ; bash'}
+          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (yinjector) {urxvt -e sh -c 'yinjector -h ; bash'}
           [exec] (ysoserial) {urxvt -e sh -c 'ysoserial ; bash'}
           [exec] (zarp) {urxvt -e sh -c 'zarp -h ; bash'}
-          [exec] (zeratool) {urxvt -e sh -c 'zeratool -h ; bash'}
+          [exec] (zerapwn) {urxvt -e sh -c 'zerapwn ; bash'}
           [exec] (zirikatu) {urxvt -e sh -c 'zirikatu ; bash'}
       [end]
 
@@ -2719,7 +2790,6 @@
           [exec] (dnsmap-bulk) {urxvt -e sh -c 'dnsmap-bulk ; bash'}
           [exec] (domi-owned) {urxvt -e sh -c 'domi-owned -h ; bash'}
           [exec] (faraday-manage) {urxvt -e sh -c 'faraday-manage ; bash'}
-          [exec] (faraday-searcher) {urxvt -e sh -c 'faraday-searcher ; bash'}
           [exec] (faraday-server) {urxvt -e sh -c 'faraday-server ; bash'}
           [exec] (favfreak) {urxvt -e sh -c 'favfreak -h ; bash'}
           [exec] (fhttp) {urxvt -e sh -c 'fhttp -h ; bash'}
@@ -2727,10 +2797,12 @@
           [exec] (fl0p) {urxvt -e sh -c 'fl0p -h ; bash'}
           [exec] (fpdns) {urxvt -e sh -c 'fpdns ; bash'}
           [exec] (ftpmap) {urxvt -e sh -c 'ftpmap -h ; bash'}
+          [exec] (graphw00f) {urxvt -e sh -c 'graphw00f -h ; bash'}
           [exec] (hakku) {urxvt -e sh -c 'hakku ; bash'}
           [exec] (htrosbif) {urxvt -e sh -c 'htrosbif -h ; bash'}
           [exec] (httprint) {urxvt -e sh -c 'httprint -h ; bash'}
           [exec] (identywaf) {urxvt -e sh -c 'identywaf -h ; bash'}
+          [exec] (juumla) {urxvt -e sh -c 'juumla -h ; bash'}
           [exec] (kolkata) {urxvt -e sh -c 'kolkata ; bash'}
           [exec] (aprof) {urxvt -e sh -c 'aprof ; bash'}
           [exec] (lbmap) {urxvt -e sh -c 'lbmap -h ; bash'}
@@ -2750,7 +2822,6 @@
           [exec] (p0f-sendsyn6) {urxvt -e sh -c 'p0f-sendsyn6 ; bash'}
           [exec] (plecost) {urxvt -e sh -c 'plecost -h ; bash'}
           [exec] (propecia) {urxvt -e sh -c 'propecia ; bash'}
-          [exec] (webtech2) {urxvt -e sh -c 'webtech2 ; bash'}
           [exec] (rapidscan) {urxvt -e sh -c 'rapidscan ; bash'}
           [exec] (recsech) {urxvt -e sh -c 'recsech ; bash'}
           [exec] (scannerl) {urxvt -e sh -c 'scannerl ; bash'}
@@ -2760,11 +2831,15 @@
           [exec] (sn00p) {urxvt -e sh -c 'sn00p ; bash'}
           [exec] (sparta) {urxvt -e sh -c 'sparta ; bash'}
           [exec] (spartan) {urxvt -e sh -c 'spartan -h ; bash'}
+          [exec] (stews-discovery) {urxvt -e sh -c 'stews-discovery -h ; bash'}
+          [exec] (stews-fingerprint) {urxvt -e sh -c 'stews-fingerprint -h ; bash'}
+          [exec] (stews-vuln-detect) {urxvt -e sh -c 'stews-vuln-detect ; bash'}
           [exec] (thcrut) {urxvt -e sh -c 'thcrut -h ; bash'}
           [exec] (fingerprintls) {urxvt -e sh -c 'fingerprintls -h ; bash'}
           [exec] (fingerprintout) {urxvt -e sh -c 'fingerprintout -h ; bash'}
           [exec] (parselog) {urxvt -e sh -c 'parselog ; bash'}
           [exec] (tls-prober) {urxvt -e sh -c 'tls-prober -h ; bash'}
+          [exec] (udp-hunter) {urxvt -e sh -c 'udp-hunter -h ; bash'}
           [exec] (userrecon) {urxvt -e sh -c 'userrecon ; bash'}
           [exec] (vault-scanner) {urxvt -e sh -c 'vault-scanner ; bash'}
           [exec] (vulmap) {urxvt -e sh -c 'vulmap -h ; bash'}
@@ -2822,6 +2897,7 @@
           [exec] (casefile) {urxvt -e sh -c 'casefile --help ; bash'}
           [exec] (maltego) {urxvt -e sh -c 'maltego -h ; bash'}
           [exec] (maltego.ico) {urxvt -e sh -c 'maltego.ico ; bash'}
+          [exec] (chainsaw) {urxvt -e sh -c 'chainsaw -h ; bash'}
           [exec] (chaosmap) {urxvt -e sh -c 'chaosmap ; bash'}
           [exec] (chkrootkit) {urxvt -e sh -c 'chkrootkit -h ; bash'}
           [exec] (chntpw) {urxvt -e sh -c 'chntpw ; bash'}
@@ -2837,6 +2913,7 @@
           [exec] (ddrescuelog) {urxvt -e sh -c 'ddrescuelog --help ; bash'}
           [exec] (ddrescue) {urxvt -e sh -c 'ddrescue --help ; bash'}
           [exec] (ddrescuelog) {urxvt -e sh -c 'ddrescuelog --help ; bash'}
+          [exec] (fat-parser) {urxvt -e sh -c 'fat-parser ; bash'}
           [exec] (ntfs-parser) {urxvt -e sh -c 'ntfs-parser -h ; bash'}
           [exec] (vsc-mount) {urxvt -e sh -c 'vsc-mount -h ; bash'}
           [exec] (dftimewolf) {urxvt -e sh -c 'dftimewolf -h ; bash'}
@@ -2849,7 +2926,9 @@
           [exec] (dbxparse) {urxvt -e sh -c 'dbxparse -h ; bash'}
           [exec] (emldump) {urxvt -e sh -c 'emldump -h ; bash'}
           [exec] (evtkit) {urxvt -e sh -c 'evtkit -h ; bash'}
+          [exec] (exiflooter) {urxvt -e sh -c 'exiflooter -h ; bash'}
           [exec] (extractusnjrnl) {urxvt -e sh -c 'extractusnjrnl -h ; bash'}
+          [exec] (firefox-decrypt) {urxvt -e sh -c 'firefox-decrypt -h ; bash'}
           [exec] (foremost) {urxvt -e sh -c 'foremost -h ; bash'}
           [exec] (fridump) {urxvt -e sh -c 'fridump -h ; bash'}
           [exec] (fs-nyarl) {urxvt -e sh -c 'fs-nyarl -h ; bash'}
@@ -2990,11 +3069,20 @@
           [exec] (reglookup) {urxvt -e sh -c 'reglookup ; bash'}
           [exec] (reglookup-recover) {urxvt -e sh -c 'reglookup-recover ; bash'}
           [exec] (reglookup-timeline) {urxvt -e sh -c 'reglookup-timeline ; bash'}
+          [exec] (reg-antivirus) {urxvt -e sh -c 'reg-antivirus ; bash'}
           [exec] (reg-compname) {urxvt -e sh -c 'reg-compname -h ; bash'}
           [exec] (reg-filedialogmru) {urxvt -e sh -c 'reg-filedialogmru -h ; bash'}
+          [exec] (reg-gpo) {urxvt -e sh -c 'reg-gpo ; bash'}
+          [exec] (reg-kb) {urxvt -e sh -c 'reg-kb ; bash'}
           [exec] (reg-lastloggedon) {urxvt -e sh -c 'reg-lastloggedon -h ; bash'}
+          [exec] (reg-localusers) {urxvt -e sh -c 'reg-localusers ; bash'}
           [exec] (reg-mndmru) {urxvt -e sh -c 'reg-mndmru -h ; bash'}
+          [exec] (reg-mstscmru) {urxvt -e sh -c 'reg-mstscmru ; bash'}
           [exec] (reg-portproxy) {urxvt -e sh -c 'reg-portproxy -h ; bash'}
+          [exec] (reg-printer-history) {urxvt -e sh -c 'reg-printer-history ; bash'}
+          [exec] (reg-printer-ports) {urxvt -e sh -c 'reg-printer-ports ; bash'}
+          [exec] (reg-proxy) {urxvt -e sh -c 'reg-proxy ; bash'}
+          [exec] (reg-putty) {urxvt -e sh -c 'reg-putty ; bash'}
           [exec] (reg-rdphint) {urxvt -e sh -c 'reg-rdphint -h ; bash'}
           [exec] (reg-recentdocs) {urxvt -e sh -c 'reg-recentdocs -h ; bash'}
           [exec] (reg-regtime) {urxvt -e sh -c 'reg-regtime -h ; bash'}
@@ -3003,10 +3091,14 @@
           [exec] (reg-services) {urxvt -e sh -c 'reg-services -h ; bash'}
           [exec] (reg-srum) {urxvt -e sh -c 'reg-srum -h ; bash'}
           [exec] (reg-sysinternals) {urxvt -e sh -c 'reg-sysinternals -h ; bash'}
+          [exec] (reg-systeminfo) {urxvt -e sh -c 'reg-systeminfo ; bash'}
+          [exec] (reg-tasks) {urxvt -e sh -c 'reg-tasks ; bash'}
+          [exec] (reg-teamviewer) {urxvt -e sh -c 'reg-teamviewer ; bash'}
           [exec] (reg-timezone) {urxvt -e sh -c 'reg-timezone -h ; bash'}
           [exec] (reg-typedurls) {urxvt -e sh -c 'reg-typedurls -h ; bash'}
           [exec] (reg-uninstall) {urxvt -e sh -c 'reg-uninstall -h ; bash'}
           [exec] (reg-userassist) {urxvt -e sh -c 'reg-userassist -h ; bash'}
+          [exec] (reg-usersids) {urxvt -e sh -c 'reg-usersids ; bash'}
           [exec] (reg-version) {urxvt -e sh -c 'reg-version -h ; bash'}
           [exec] (regrip) {urxvt -e sh -c 'regrip -h ; bash'}
           [exec] (rekal) {urxvt -e sh -c 'rekal -h ; bash'}
@@ -3048,6 +3140,7 @@
           [exec] (srch_strings) {urxvt -e sh -c 'srch_strings ; bash'}
           [exec] (tsk_comparedir) {urxvt -e sh -c 'tsk_comparedir ; bash'}
           [exec] (tsk_gettimes) {urxvt -e sh -c 'tsk_gettimes ; bash'}
+          [exec] (tsk_imageinfo) {urxvt -e sh -c 'tsk_imageinfo ; bash'}
           [exec] (tsk_loaddb) {urxvt -e sh -c 'tsk_loaddb ; bash'}
           [exec] (tsk_recover) {urxvt -e sh -c 'tsk_recover ; bash'}
           [exec] (usnjls) {urxvt -e sh -c 'usnjls ; bash'}
@@ -3080,6 +3173,7 @@
           [exec] (srch_strings) {urxvt -e sh -c 'srch_strings ; bash'}
           [exec] (tsk_comparedir) {urxvt -e sh -c 'tsk_comparedir ; bash'}
           [exec] (tsk_gettimes) {urxvt -e sh -c 'tsk_gettimes ; bash'}
+          [exec] (tsk_imageinfo) {urxvt -e sh -c 'tsk_imageinfo ; bash'}
           [exec] (tsk_loaddb) {urxvt -e sh -c 'tsk_loaddb ; bash'}
           [exec] (tsk_recover) {urxvt -e sh -c 'tsk_recover ; bash'}
           [exec] (usnjls) {urxvt -e sh -c 'usnjls ; bash'}
@@ -3095,7 +3189,6 @@
           [exec] (flarestrings) {urxvt -e sh -c 'flarestrings -h ; bash'}
           [exec] (rank_strings) {urxvt -e sh -c 'rank_strings -h ; bash'}
           [exec] (swap-digger) {urxvt -e sh -c 'swap-digger -h ; bash'}
-          [exec] (syft) {urxvt -e sh -c 'syft -h ; bash'}
           [exec] (tchunt-ng) {urxvt -e sh -c 'tchunt-ng -h ; bash'}
           [exec] (automater) {urxvt -e sh -c 'automater -h ; bash'}
           [exec] (tell-me-your-secrets) {urxvt -e sh -c 'tell-me-your-secrets -h ; bash'}
@@ -3169,6 +3262,7 @@
           [exec] (bing-lfi-rfi) {urxvt -e sh -c 'bing-lfi-rfi -h ; bash'}
           [exec] (birp) {urxvt -e sh -c 'birp -h ; bash'}
           [exec] (bluebox-ng) {urxvt -e sh -c 'bluebox-ng -h ; bash'}
+          [exec] (boofuzz) {urxvt -e sh -c 'boofuzz -h ; bash'}
           [exec] (bf3) {urxvt -e sh -c 'bf3 ; bash'}
           [exec] (brutexss) {urxvt -e sh -c 'brutexss ; bash'}
           [exec] (bss) {urxvt -e sh -c 'bss -h ; bash'}
@@ -3188,6 +3282,7 @@
           [exec] (cmsfuzz) {urxvt -e sh -c 'cmsfuzz ; bash'}
           [exec] (conscan) {urxvt -e sh -c 'conscan -h ; bash'}
           [exec] (cookie-cadger) {urxvt -e sh -c 'cookie-cadger ; bash'}
+          [exec] (crackql) {urxvt -e sh -c 'crackql -h ; bash'}
           [exec] (crlf-injector) {urxvt -e sh -c 'crlf-injector ; bash'}
           [exec] (dalfox) {urxvt -e sh -c 'dalfox -h ; bash'}
           [exec] (dharma) {urxvt -e sh -c 'dharma -h ; bash'}
@@ -3203,7 +3298,6 @@
           [exec] (prepare4easyfuzzer) {urxvt -e sh -c 'prepare4easyfuzzer ; bash'}
           [exec] (wsdl2request) {urxvt -e sh -c 'wsdl2request ; bash'}
           [exec] (faraday-manage) {urxvt -e sh -c 'faraday-manage ; bash'}
-          [exec] (faraday-searcher) {urxvt -e sh -c 'faraday-searcher ; bash'}
           [exec] (faraday-server) {urxvt -e sh -c 'faraday-server ; bash'}
           [exec] (feroxbuster) {urxvt -e sh -c 'feroxbuster -h ; bash'}
           [exec] (ffuf) {urxvt -e sh -c 'ffuf ; bash'}
@@ -3239,14 +3333,7 @@
           [exec] (grammarinator-process) {urxvt -e sh -c 'grammarinator-process -h ; bash'}
           [exec] (graphql-path-enum) {urxvt -e sh -c 'graphql-path-enum -h ; bash'}
           [exec] (graphqlmap) {urxvt -e sh -c 'graphqlmap -h ; bash'}
-          [exec] (gsad) {urxvt -e sh -c 'gsad -h ; bash'}
           [exec] (grrcov) {urxvt -e sh -c 'grrcov --help ; bash'}
-          [exec] (database-statistics-sqlite) {urxvt -e sh -c 'database-statistics-sqlite ; bash'}
-          [exec] (greenbone-certdata-sync) {urxvt -e sh -c 'greenbone-certdata-sync -h ; bash'}
-          [exec] (greenbone-scapdata-sync) {urxvt -e sh -c 'greenbone-scapdata-sync -h ; bash'}
-          [exec] (gvm-manage-certs) {urxvt -e sh -c 'gvm-manage-certs ; bash'}
-          [exec] (gvm-migrate-to-postgres) {urxvt -e sh -c 'gvm-migrate-to-postgres ; bash'}
-          [exec] (gvm-portnames-update) {urxvt -e sh -c 'gvm-portnames-update ; bash'}
           [exec] (hodor) {urxvt -e sh -c 'hodor -h ; bash'}
           [exec] (homepwn) {urxvt -e sh -c 'homepwn -h ; bash'}
           [exec] (honggfuzz) {urxvt -e sh -c 'honggfuzz -h ; bash'}
@@ -3274,6 +3361,10 @@
           [exec] (liffy) {urxvt -e sh -c 'liffy -h ; bash'}
           [exec] (lbb.db) {urxvt -e sh -c 'lbb.db ; bash'}
           [exec] (littleblackbox) {urxvt -e sh -c 'littleblackbox -h ; bash'}
+          [exec] (log4j-bypass) {urxvt -e sh -c 'log4j-bypass -h ; bash'}
+          [exec] (log4j-scan) {urxvt -e sh -c 'log4j-scan -h ; bash'}
+          [exec] (logmepwn) {urxvt -e sh -c 'logmepwn -h ; bash'}
+          [exec] (lorsrf) {urxvt -e sh -c 'lorsrf -h ; bash'}
           [exec] (maligno-clientgen) {urxvt -e sh -c 'maligno-clientgen ; bash'}
           [exec] (maligno-srv) {urxvt -e sh -c 'maligno-srv ; bash'}
           [exec] (malybuzz) {urxvt -e sh -c 'malybuzz -h ; bash'}
@@ -3312,9 +3403,9 @@
           [exec] (nullscan) {urxvt -e sh -c 'nullscan -H ; bash'}
           [exec] (ohrwurm) {urxvt -e sh -c 'ohrwurm -h ; bash'}
           [exec] (greenbone-nvt-sync) {urxvt -e sh -c 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas) {urxvt -e sh -c 'openvas ; bash'}
           [exec] (openvas-nasl) {urxvt -e sh -c 'openvas-nasl ; bash'}
           [exec] (openvas-nasl-lint) {urxvt -e sh -c 'openvas-nasl-lint ; bash'}
-          [exec] (openvassd) {urxvt -e sh -c 'openvassd -h ; bash'}
           [exec] (oscanner) {urxvt -e sh -c 'oscanner -h ; bash'}
           [exec] (reportviewer) {urxvt -e sh -c 'reportviewer -h ; bash'}
           [exec] (owtf) {urxvt -e sh -c 'owtf ; bash'}
@@ -3339,8 +3430,7 @@
           [exec] (rapidscan) {urxvt -e sh -c 'rapidscan ; bash'}
           [exec] (ratproxy) {urxvt -e sh -c 'ratproxy -h ; bash'}
           [exec] (responder) {urxvt -e sh -c 'responder -h ; bash'}
-          [exec] (responder-dhcp) {urxvt -e sh -c 'responder-dhcp ; bash'}
-          [exec] (responder-dhcp-auto) {urxvt -e sh -c 'responder-dhcp-auto ; bash'}
+          [exec] (responder-dnsupdate) {urxvt -e sh -c 'responder-dnsupdate ; bash'}
           [exec] (responder-findsqlsrv) {urxvt -e sh -c 'responder-findsqlsrv ; bash'}
           [exec] (responder-icmp-redirect) {urxvt -e sh -c 'responder-icmp-redirect ; bash'}
           [exec] (responder-multirelay) {urxvt -e sh -c 'responder-multirelay ; bash'}
@@ -3445,6 +3535,9 @@
           [exec] (sqlmapapi) {urxvt -e sh -c 'sqlmapapi ; bash'}
           [exec] (sqlninja) {urxvt -e sh -c 'sqlninja -h ; bash'}
           [exec] (ssrfmap) {urxvt -e sh -c 'ssrfmap -h ; bash'}
+          [exec] (stews-discovery) {urxvt -e sh -c 'stews-discovery -h ; bash'}
+          [exec] (stews-fingerprint) {urxvt -e sh -c 'stews-fingerprint -h ; bash'}
+          [exec] (stews-vuln-detect) {urxvt -e sh -c 'stews-vuln-detect ; bash'}
           [exec] (taof) {urxvt -e sh -c 'taof ; bash'}
           [exec] (tcpcontrol-fuzzer) {urxvt -e sh -c 'tcpcontrol-fuzzer ; bash'}
           [exec] (tcpjunk) {urxvt -e sh -c 'tcpjunk -h ; bash'}
@@ -3452,6 +3545,7 @@
           [exec] (tftp-fuzz) {urxvt -e sh -c 'tftp-fuzz -h ; bash'}
           [exec] (thefuzz) {urxvt -e sh -c 'thefuzz -h ; bash'}
           [exec] (trinity) {urxvt -e sh -c 'trinity -h ; bash'}
+          [exec] (udp-hunter) {urxvt -e sh -c 'udp-hunter -h ; bash'}
           [exec] (udsim) {urxvt -e sh -c 'udsim -h ; bash'}
           [exec] (umap) {urxvt -e sh -c 'umap -h ; bash'}
           [exec] (unifuzzer) {urxvt -e sh -c 'unifuzzer ; bash'}
@@ -3561,6 +3655,7 @@
           [exec] (u2spewfoo) {urxvt -e sh -c 'u2spewfoo ; bash'}
           [exec] (u2streamer) {urxvt -e sh -c 'u2streamer ; bash'}
           [exec] (suricata) {urxvt -e sh -c 'suricata ; bash'}
+          [exec] (suricata-update) {urxvt -e sh -c 'suricata-update ; bash'}
           [exec] (suricatactl) {urxvt -e sh -c 'suricatactl ; bash'}
           [exec] (suricatasc) {urxvt -e sh -c 'suricatasc ; bash'}
           [exec] (suricata-verify) {urxvt -e sh -c 'suricata-verify ; bash'}
@@ -3591,16 +3686,17 @@
           [exec] (bdlogparser) {urxvt -e sh -c 'bdlogparser ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
           [exec] (test262.whitelist) {urxvt -e sh -c 'test262.whitelist ; bash'}
+          [exec] (he) {urxvt -e sh -c 'he ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
           [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
           [exec] (vm2) {urxvt -e sh -c 'vm2 ; bash'}
+          [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
           [exec] (captipper) {urxvt -e sh -c 'captipper ; bash'}
           [exec] (clamscanlogparser) {urxvt -e sh -c 'clamscanlogparser ; bash'}
           [exec] (cuckoo) {urxvt -e sh -c 'cuckoo ; bash'}
           [exec] (damm) {urxvt -e sh -c 'damm -h ; bash'}
           [exec] (darkarmour) {urxvt -e sh -c 'darkarmour ; bash'}
           [exec] (depdep) {urxvt -e sh -c 'depdep -h ; bash'}
-          [exec] (fakenet) {urxvt -e sh -c 'fakenet -h ; bash'}
           [exec] (fileintel) {urxvt -e sh -c 'fileintel -h ; bash'}
           [exec] (floss) {urxvt -e sh -c 'floss -h ; bash'}
           [exec] (fprotlogparser) {urxvt -e sh -c 'fprotlogparser ; bash'}
@@ -3632,6 +3728,7 @@
           [exec] (peframe) {urxvt -e sh -c 'peframe ; bash'}
           [exec] (pepper) {urxvt -e sh -c 'pepper -h ; bash'}
           [exec] (pftriage) {urxvt -e sh -c 'pftriage -h ; bash'}
+          [exec] (php-malware-finder) {urxvt -e sh -c 'php-malware-finder -h ; bash'}
           [exec] (polyswarm) {urxvt -e sh -c 'polyswarm -h ; bash'}
           [exec] (pyew) {urxvt -e sh -c 'pyew -h ; bash'}
           [exec] (mmbot) {urxvt -e sh -c 'mmbot -h ; bash'}
@@ -3672,6 +3769,7 @@
           [exec] (avml) {urxvt -e sh -c 'avml -h ; bash'}
           [exec] (base64dump) {urxvt -e sh -c 'base64dump -h ; bash'}
           [exec] (bless) {urxvt -e sh -c 'bless ; bash'}
+          [exec] (bqm) {urxvt -e sh -c 'bqm -h ; bash'}
           [exec] (BEViewer) {urxvt -e sh -c 'BEViewer -h ; bash'}
           [exec] (bulk_extractor) {urxvt -e sh -c 'bulk_extractor ; bash'}
           [exec] (plugin_test) {urxvt -e sh -c 'plugin_test ; bash'}
@@ -3679,16 +3777,20 @@
           [exec] (bvedit) {urxvt -e sh -c 'bvedit -h ; bash'}
           [exec] (bvi) {urxvt -e sh -c 'bvi -h ; bash'}
           [exec] (bview) {urxvt -e sh -c 'bview -h ; bash'}
+          [exec] (catana) {urxvt -e sh -c 'catana ; bash'}
           [exec] (centry) {urxvt -e sh -c 'centry -h ; bash'}
           [exec] (checkiban) {urxvt -e sh -c 'checkiban -h ; bash'}
           [exec] (cloakify) {urxvt -e sh -c 'cloakify ; bash'}
           [exec] (decloakify) {urxvt -e sh -c 'decloakify ; bash'}
+          [exec] (commentor) {urxvt -e sh -c 'commentor -h ; bash'}
+          [exec] (cracken) {urxvt -e sh -c 'cracken -h ; bash'}
           [exec] (credmap) {urxvt -e sh -c 'credmap -h ; bash'}
           [exec] (ct-ng) {urxvt -e sh -c 'ct-ng -h ; bash'}
           [exec] (ctf-party) {urxvt -e sh -c 'ctf-party ; bash'}
-          [exec] (ctf_party_console) {urxvt -e sh -c 'ctf_party_console ; bash'}
+          [exec] (ctf-party_console) {urxvt -e sh -c 'ctf-party_console ; bash'}
           [exec] (cve-api) {urxvt -e sh -c 'cve-api -h ; bash'}
           [exec] (dbd) {urxvt -e sh -c 'dbd -h ; bash'}
+          [exec] (ddosify) {urxvt -e sh -c 'ddosify -h ; bash'}
           [exec] (decodify) {urxvt -e sh -c 'decodify -h ; bash'}
           [exec] (deen) {urxvt -e sh -c 'deen ; bash'}
           [exec] (densityscout) {urxvt -e sh -c 'densityscout -h ; bash'}
@@ -3704,6 +3806,7 @@
           [exec] (dnsvalidator) {urxvt -e sh -c 'dnsvalidator -h ; bash'}
           [exec] (domlink) {urxvt -e sh -c 'domlink ; bash'}
           [exec] (dradis-ce) {urxvt -e sh -c 'dradis-ce ; bash'}
+          [exec] (heroku) {urxvt -e sh -c 'heroku ; bash'}
           [exec] (rails) {urxvt -e sh -c 'rails ; bash'}
           [exec] (rake) {urxvt -e sh -c 'rake ; bash'}
           [exec] (rspec) {urxvt -e sh -c 'rspec ; bash'}
@@ -3725,16 +3828,18 @@
           [exec] (dismissauth.xpi) {urxvt -e sh -c 'dismissauth.xpi ; bash'}
           [exec] (fakemail) {urxvt -e sh -c 'fakemail -h ; bash'}
           [exec] (faraday-manage) {urxvt -e sh -c 'faraday-manage ; bash'}
-          [exec] (faraday-searcher) {urxvt -e sh -c 'faraday-searcher ; bash'}
           [exec] (faraday-server) {urxvt -e sh -c 'faraday-server ; bash'}
+          [exec] (find3) {urxvt -e sh -c 'find3 ; bash'}
           [exec] (firefox-security-toolkit) {urxvt -e sh -c 'firefox-security-toolkit ; bash'}
           [exec] (flare) {urxvt -e sh -c 'flare -h ; bash'}
           [exec] (fstealer) {urxvt -e sh -c 'fstealer -h ; bash'}
           [exec] (genlist) {urxvt -e sh -c 'genlist ; bash'}
           [exec] (geoipgen) {urxvt -e sh -c 'geoipgen -h ; bash'}
           [exec] (gerix-wifi-cracker) {urxvt -e sh -c 'gerix-wifi-cracker ; bash'}
+          [exec] (gf) {urxvt -e sh -c 'gf -h ; bash'}
           [exec] (gg-images) {urxvt -e sh -c 'gg-images ; bash'}
           [exec] (githubcloner) {urxvt -e sh -c 'githubcloner -h ; bash'}
+          [exec] (gmsadumper) {urxvt -e sh -c 'gmsadumper -h ; bash'}
           [exec] (graffiti) {urxvt -e sh -c 'graffiti -h ; bash'}
           [exec] (grammarinator-generate) {urxvt -e sh -c 'grammarinator-generate -h ; bash'}
           [exec] (grammarinator-parse) {urxvt -e sh -c 'grammarinator-parse -h ; bash'}
@@ -3848,6 +3953,7 @@
           [exec] (intelmq.bots.experts.cymru_whois.expert) {urxvt -e sh -c 'intelmq.bots.experts.cymru_whois.expert ; bash'}
           [exec] (intelmq.bots.experts.do_portal.expert) {urxvt -e sh -c 'intelmq.bots.experts.do_portal.expert ; bash'}
           [exec] (intelmq.bots.experts.domain_suffix.expert) {urxvt -e sh -c 'intelmq.bots.experts.domain_suffix.expert ; bash'}
+          [exec] (intelmq.bots.experts.domain_valid.expert) {urxvt -e sh -c 'intelmq.bots.experts.domain_valid.expert ; bash'}
           [exec] (intelmq.bots.experts.field_reducer.expert) {urxvt -e sh -c 'intelmq.bots.experts.field_reducer.expert ; bash'}
           [exec] (intelmq.bots.experts.filter.expert) {urxvt -e sh -c 'intelmq.bots.experts.filter.expert ; bash'}
           [exec] (intelmq.bots.experts.format_field.expert) {urxvt -e sh -c 'intelmq.bots.experts.format_field.expert ; bash'}
@@ -3856,6 +3962,7 @@
           [exec] (intelmq.bots.experts.http.expert_content) {urxvt -e sh -c 'intelmq.bots.experts.http.expert_content ; bash'}
           [exec] (intelmq.bots.experts.http.expert_status) {urxvt -e sh -c 'intelmq.bots.experts.http.expert_status ; bash'}
           [exec] (intelmq.bots.experts.idea.expert) {urxvt -e sh -c 'intelmq.bots.experts.idea.expert ; bash'}
+          [exec] (intelmq.bots.experts.jinja.expert) {urxvt -e sh -c 'intelmq.bots.experts.jinja.expert ; bash'}
           [exec] (intelmq.bots.experts.lookyloo.expert) {urxvt -e sh -c 'intelmq.bots.experts.lookyloo.expert ; bash'}
           [exec] (intelmq.bots.experts.maxmind_geoip.expert) {urxvt -e sh -c 'intelmq.bots.experts.maxmind_geoip.expert ; bash'}
           [exec] (intelmq.bots.experts.mcafee.expert_mar) {urxvt -e sh -c 'intelmq.bots.experts.mcafee.expert_mar ; bash'}
@@ -3864,11 +3971,11 @@
           [exec] (intelmq.bots.experts.national_cert_contact_certat.expert) {urxvt -e sh -c 'intelmq.bots.experts.national_cert_contact_certat.expert ; bash'}
           [exec] (intelmq.bots.experts.rdap.expert) {urxvt -e sh -c 'intelmq.bots.experts.rdap.expert ; bash'}
           [exec] (intelmq.bots.experts.recordedfuture_iprisk.expert) {urxvt -e sh -c 'intelmq.bots.experts.recordedfuture_iprisk.expert ; bash'}
+          [exec] (intelmq.bots.experts.remove_affix.expert) {urxvt -e sh -c 'intelmq.bots.experts.remove_affix.expert ; bash'}
           [exec] (intelmq.bots.experts.reverse_dns.expert) {urxvt -e sh -c 'intelmq.bots.experts.reverse_dns.expert ; bash'}
           [exec] (intelmq.bots.experts.rfc1918.expert) {urxvt -e sh -c 'intelmq.bots.experts.rfc1918.expert ; bash'}
           [exec] (intelmq.bots.experts.ripe.expert) {urxvt -e sh -c 'intelmq.bots.experts.ripe.expert ; bash'}
           [exec] (intelmq.bots.experts.sieve.expert) {urxvt -e sh -c 'intelmq.bots.experts.sieve.expert ; bash'}
-          [exec] (intelmq.bots.experts.sieve.validator) {urxvt -e sh -c 'intelmq.bots.experts.sieve.validator ; bash'}
           [exec] (intelmq.bots.experts.taxonomy.expert) {urxvt -e sh -c 'intelmq.bots.experts.taxonomy.expert ; bash'}
           [exec] (intelmq.bots.experts.tor_nodes.expert) {urxvt -e sh -c 'intelmq.bots.experts.tor_nodes.expert ; bash'}
           [exec] (intelmq.bots.experts.truncate_by_delimiter.expert) {urxvt -e sh -c 'intelmq.bots.experts.truncate_by_delimiter.expert ; bash'}
@@ -3879,6 +3986,7 @@
           [exec] (intelmq.bots.experts.wait.expert) {urxvt -e sh -c 'intelmq.bots.experts.wait.expert ; bash'}
           [exec] (intelmq.bots.outputs.amqptopic.output) {urxvt -e sh -c 'intelmq.bots.outputs.amqptopic.output ; bash'}
           [exec] (intelmq.bots.outputs.blackhole.output) {urxvt -e sh -c 'intelmq.bots.outputs.blackhole.output ; bash'}
+          [exec] (intelmq.bots.outputs.bro_file.output) {urxvt -e sh -c 'intelmq.bots.outputs.bro_file.output ; bash'}
           [exec] (intelmq.bots.outputs.elasticsearch.output) {urxvt -e sh -c 'intelmq.bots.outputs.elasticsearch.output ; bash'}
           [exec] (intelmq.bots.outputs.file.output) {urxvt -e sh -c 'intelmq.bots.outputs.file.output ; bash'}
           [exec] (intelmq.bots.outputs.files.output) {urxvt -e sh -c 'intelmq.bots.outputs.files.output ; bash'}
@@ -3886,9 +3994,9 @@
           [exec] (intelmq.bots.outputs.misp.output_api) {urxvt -e sh -c 'intelmq.bots.outputs.misp.output_api ; bash'}
           [exec] (intelmq.bots.outputs.misp.output_feed) {urxvt -e sh -c 'intelmq.bots.outputs.misp.output_feed ; bash'}
           [exec] (intelmq.bots.outputs.mongodb.output) {urxvt -e sh -c 'intelmq.bots.outputs.mongodb.output ; bash'}
-          [exec] (intelmq.bots.outputs.postgresql.output) {urxvt -e sh -c 'intelmq.bots.outputs.postgresql.output ; bash'}
           [exec] (intelmq.bots.outputs.redis.output) {urxvt -e sh -c 'intelmq.bots.outputs.redis.output ; bash'}
           [exec] (intelmq.bots.outputs.restapi.output) {urxvt -e sh -c 'intelmq.bots.outputs.restapi.output ; bash'}
+          [exec] (intelmq.bots.outputs.rpz_file.output) {urxvt -e sh -c 'intelmq.bots.outputs.rpz_file.output ; bash'}
           [exec] (intelmq.bots.outputs.rt.output) {urxvt -e sh -c 'intelmq.bots.outputs.rt.output ; bash'}
           [exec] (intelmq.bots.outputs.smtp.output) {urxvt -e sh -c 'intelmq.bots.outputs.smtp.output ; bash'}
           [exec] (intelmq.bots.outputs.sql.output) {urxvt -e sh -c 'intelmq.bots.outputs.sql.output ; bash'}
@@ -3920,8 +4028,6 @@
           [exec] (intelmq.bots.parsers.github_feed.parser) {urxvt -e sh -c 'intelmq.bots.parsers.github_feed.parser ; bash'}
           [exec] (intelmq.bots.parsers.hibp.parser_callback) {urxvt -e sh -c 'intelmq.bots.parsers.hibp.parser_callback ; bash'}
           [exec] (intelmq.bots.parsers.html_table.parser) {urxvt -e sh -c 'intelmq.bots.parsers.html_table.parser ; bash'}
-          [exec] (intelmq.bots.parsers.malc0de.parser) {urxvt -e sh -c 'intelmq.bots.parsers.malc0de.parser ; bash'}
-          [exec] (intelmq.bots.parsers.malwaredomains.parser) {urxvt -e sh -c 'intelmq.bots.parsers.malwaredomains.parser ; bash'}
           [exec] (intelmq.bots.parsers.malwarepatrol.parser_dansguardian) {urxvt -e sh -c 'intelmq.bots.parsers.malwarepatrol.parser_dansguardian ; bash'}
           [exec] (intelmq.bots.parsers.malwareurl.parser) {urxvt -e sh -c 'intelmq.bots.parsers.malwareurl.parser ; bash'}
           [exec] (intelmq.bots.parsers.mcafee.parser_atd) {urxvt -e sh -c 'intelmq.bots.parsers.mcafee.parser_atd ; bash'}
@@ -3981,11 +4087,14 @@
           [exec] (luyten) {urxvt -e sh -c 'luyten ; bash'}
           [exec] (macchanger) {urxvt -e sh -c 'macchanger --help ; bash'}
           [exec] (magictree) {urxvt -e sh -c 'magictree ; bash'}
+          [exec] (mailsend-go) {urxvt -e sh -c 'mailsend-go -h ; bash'}
           [exec] (malice) {urxvt -e sh -c 'malice ; bash'}
+          [exec] (mapcidr) {urxvt -e sh -c 'mapcidr -h ; bash'}
           [exec] (maskprocessor) {urxvt -e sh -c 'maskprocessor -h ; bash'}
           [exec] (mat) {urxvt -e sh -c 'mat -h ; bash'}
           [exec] (mat-gui) {urxvt -e sh -c 'mat-gui ; bash'}
           [exec] (mat2) {urxvt -e sh -c 'mat2 -h ; bash'}
+          [exec] (metaforge) {urxvt -e sh -c 'metaforge ; bash'}
           [exec] (mibblebrowser) {urxvt -e sh -c 'mibblebrowser ; bash'}
           [exec] (mibbleprinter) {urxvt -e sh -c 'mibbleprinter ; bash'}
           [exec] (mibblevalidator) {urxvt -e sh -c 'mibblevalidator ; bash'}
@@ -3994,12 +4103,20 @@
           [exec] (msfdb-blackarch) {urxvt -e sh -c 'msfdb-blackarch ; bash'}
           [exec] (mutator) {urxvt -e sh -c 'mutator -h ; bash'}
           [exec] (mysql2sqlite) {urxvt -e sh -c 'mysql2sqlite -h ; bash'}
+          [exec] (nclean) {urxvt -e sh -c 'nclean -h ; bash'}
+          [exec] (ncom) {urxvt -e sh -c 'ncom -h ; bash'}
+          [exec] (nhance) {urxvt -e sh -c 'nhance -h ; bash'}
+          [exec] (ninc) {urxvt -e sh -c 'ninc -h ; bash'}
+          [exec] (nleet) {urxvt -e sh -c 'nleet -h ; bash'}
+          [exec] (nrev) {urxvt -e sh -c 'nrev -h ; bash'}
+          [exec] (nwiz) {urxvt -e sh -c 'nwiz -h ; bash'}
           [exec] (netactview) {urxvt -e sh -c 'netactview ; bash'}
           [exec] (netactview_polkit) {urxvt -e sh -c 'netactview_polkit ; bash'}
           [exec] (networkmap) {urxvt -e sh -c 'networkmap -h ; bash'}
           [exec] (nmap-parse-output) {urxvt -e sh -c 'nmap-parse-output ; bash'}
           [exec] (nsearch) {urxvt -e sh -c 'nsearch ; bash'}
           [exec] (one-lin3r) {urxvt -e sh -c 'one-lin3r -h ; bash'}
+          [exec] (brcm_iscsiuio) {urxvt -e sh -c 'brcm_iscsiuio ; bash'}
           [exec] (iscsi-gen-initiatorname) {urxvt -e sh -c 'iscsi-gen-initiatorname ; bash'}
           [exec] (iscsi-iname) {urxvt -e sh -c 'iscsi-iname ; bash'}
           [exec] (iscsi_discovery) {urxvt -e sh -c 'iscsi_discovery ; bash'}
@@ -4009,6 +4126,7 @@
           [exec] (iscsid) {urxvt -e sh -c 'iscsid ; bash'}
           [exec] (iscsistart) {urxvt -e sh -c 'iscsistart ; bash'}
           [exec] (iscsiuio) {urxvt -e sh -c 'iscsiuio ; bash'}
+          [exec] (brcm_iscsiuio) {urxvt -e sh -c 'brcm_iscsiuio ; bash'}
           [exec] (iscsi-gen-initiatorname) {urxvt -e sh -c 'iscsi-gen-initiatorname ; bash'}
           [exec] (iscsi-iname) {urxvt -e sh -c 'iscsi-iname ; bash'}
           [exec] (iscsi_discovery) {urxvt -e sh -c 'iscsi_discovery ; bash'}
@@ -4018,15 +4136,17 @@
           [exec] (iscsid) {urxvt -e sh -c 'iscsid ; bash'}
           [exec] (iscsistart) {urxvt -e sh -c 'iscsistart ; bash'}
           [exec] (iscsiuio) {urxvt -e sh -c 'iscsiuio ; bash'}
+          [exec] (openrisk) {urxvt -e sh -c 'openrisk -h ; bash'}
+          [exec] (osert) {urxvt -e sh -c 'osert -h ; bash'}
           [exec] (outguess) {urxvt -e sh -c 'outguess ; bash'}
           [exec] (packetq) {urxvt -e sh -c 'packetq -h ; bash'}
           [exec] (pass-station) {urxvt -e sh -c 'pass-station -h ; bash'}
           [exec] (pass-station_console) {urxvt -e sh -c 'pass-station_console ; bash'}
+          [exec] (pastemonitor) {urxvt -e sh -c 'pastemonitor -h ; bash'}
           [exec] (pcapfix) {urxvt -e sh -c 'pcapfix ; bash'}
           [exec] (pdfwalker) {urxvt -e sh -c 'pdfwalker ; bash'}
           [exec] (pencode) {urxvt -e sh -c 'pencode -h ; bash'}
           [exec] (pixd) {urxvt -e sh -c 'pixd -h ; bash'}
-          [exec] (plumber) {urxvt -e sh -c 'plumber ; bash'}
           [exec] (plutil) {urxvt -e sh -c 'plutil ; bash'}
           [exec] (princeprocessor) {urxvt -e sh -c 'princeprocessor -h ; bash'}
           [exec] (procdump) {urxvt -e sh -c 'procdump ; bash'}
@@ -4062,6 +4182,7 @@
           [exec] (smali-cfgs-xref) {urxvt -e sh -c 'smali-cfgs-xref -h ; bash'}
           [exec] (snow) {urxvt -e sh -c 'snow -h ; bash'}
           [exec] (sslcat) {urxvt -e sh -c 'sslcat ; bash'}
+          [exec] (stacs) {urxvt -e sh -c 'stacs -h ; bash'}
           [exec] (suricata-verify) {urxvt -e sh -c 'suricata-verify ; bash'}
           [exec] (tcpxtract) {urxvt -e sh -c 'tcpxtract -h ; bash'}
           [exec] (tempomail) {urxvt -e sh -c 'tempomail -h ; bash'}
@@ -4084,9 +4205,7 @@
           [exec] (wcc) {urxvt -e sh -c 'wcc -h ; bash'}
           [exec] (wcch) {urxvt -e sh -c 'wcch -h ; bash'}
           [exec] (wld) {urxvt -e sh -c 'wld -h ; bash'}
-          [exec] (wldd) {urxvt -e sh -c 'wldd -h ; bash'}
           [exec] (web2ldap) {urxvt -e sh -c 'web2ldap ; bash'}
-          [exec] (web2ldap.wsgi) {urxvt -e sh -c 'web2ldap.wsgi ; bash'}
           [exec] (whapa) {urxvt -e sh -c 'whapa -h ; bash'}
           [exec] (whatportis) {urxvt -e sh -c 'whatportis --help ; bash'}
           [exec] (wikigen) {urxvt -e sh -c 'wikigen ; bash'}
@@ -4146,17 +4265,25 @@
           [exec] (phoneinfoga) {urxvt -e sh -c 'phoneinfoga -h ; bash'}
           [exec] (apkinfo) {urxvt -e sh -c 'apkinfo --help ; bash'}
           [exec] (frida) {urxvt -e sh -c 'frida -h ; bash'}
+          [exec] (frida-compile) {urxvt -e sh -c 'frida-compile ; bash'}
           [exec] (frida-create) {urxvt -e sh -c 'frida-create ; bash'}
           [exec] (frida-discover) {urxvt -e sh -c 'frida-discover -h ; bash'}
           [exec] (frida-join) {urxvt -e sh -c 'frida-join ; bash'}
           [exec] (frida-kill) {urxvt -e sh -c 'frida-kill -h ; bash'}
+          [exec] (frida-ls) {urxvt -e sh -c 'frida-ls ; bash'}
           [exec] (frida-ls-devices) {urxvt -e sh -c 'frida-ls-devices -h ; bash'}
+          [exec] (frida-pull) {urxvt -e sh -c 'frida-pull ; bash'}
+          [exec] (frida-rm) {urxvt -e sh -c 'frida-rm ; bash'}
           [exec] (frida-trace) {urxvt -e sh -c 'frida-trace -h ; bash'}
+          [exec] (frida-compile2) {urxvt -e sh -c 'frida-compile2 ; bash'}
           [exec] (frida-create2) {urxvt -e sh -c 'frida-create2 ; bash'}
           [exec] (frida-discover2) {urxvt -e sh -c 'frida-discover2 ; bash'}
           [exec] (frida-join2) {urxvt -e sh -c 'frida-join2 ; bash'}
           [exec] (frida-kill2) {urxvt -e sh -c 'frida-kill2 ; bash'}
           [exec] (frida-ls-devices2) {urxvt -e sh -c 'frida-ls-devices2 ; bash'}
+          [exec] (frida-ls2) {urxvt -e sh -c 'frida-ls2 ; bash'}
+          [exec] (frida-pull2) {urxvt -e sh -c 'frida-pull2 ; bash'}
+          [exec] (frida-rm2) {urxvt -e sh -c 'frida-rm2 ; bash'}
           [exec] (frida-trace2) {urxvt -e sh -c 'frida-trace2 ; bash'}
           [exec] (frida2) {urxvt -e sh -c 'frida2 ; bash'}
           [exec] (qark) {urxvt -e sh -c 'qark ; bash'}
@@ -4265,6 +4392,7 @@
           [exec] (arpalert) {urxvt -e sh -c 'arpalert -h ; bash'}
           [exec] (arptools) {urxvt -e sh -c 'arptools ; bash'}
           [exec] (arpwner) {urxvt -e sh -c 'arpwner -h ; bash'}
+          [exec] (asnmap) {urxvt -e sh -c 'asnmap -h ; bash'}
           [exec] (atftp) {urxvt -e sh -c 'atftp ; bash'}
           [exec] (atftpd) {urxvt -e sh -c 'atftpd ; bash'}
           [exec] (atftp) {urxvt -e sh -c 'atftp ; bash'}
@@ -4277,8 +4405,6 @@
           [exec] (delv) {urxvt -e sh -c 'delv ; bash'}
           [exec] (dig) {urxvt -e sh -c 'dig -h ; bash'}
           [exec] (dnssec-cds) {urxvt -e sh -c 'dnssec-cds ; bash'}
-          [exec] (dnssec-checkds) {urxvt -e sh -c 'dnssec-checkds ; bash'}
-          [exec] (dnssec-coverage) {urxvt -e sh -c 'dnssec-coverage ; bash'}
           [exec] (dnssec-revoke) {urxvt -e sh -c 'dnssec-revoke ; bash'}
           [exec] (dnssec-settime) {urxvt -e sh -c 'dnssec-settime ; bash'}
           [exec] (dnssec-signzone) {urxvt -e sh -c 'dnssec-signzone ; bash'}
@@ -4298,8 +4424,6 @@
           [exec] (delv) {urxvt -e sh -c 'delv ; bash'}
           [exec] (dig) {urxvt -e sh -c 'dig -h ; bash'}
           [exec] (dnssec-cds) {urxvt -e sh -c 'dnssec-cds ; bash'}
-          [exec] (dnssec-checkds) {urxvt -e sh -c 'dnssec-checkds ; bash'}
-          [exec] (dnssec-coverage) {urxvt -e sh -c 'dnssec-coverage ; bash'}
           [exec] (dnssec-revoke) {urxvt -e sh -c 'dnssec-revoke ; bash'}
           [exec] (dnssec-settime) {urxvt -e sh -c 'dnssec-settime ; bash'}
           [exec] (dnssec-signzone) {urxvt -e sh -c 'dnssec-signzone ; bash'}
@@ -4337,11 +4461,14 @@
           [exec] (cidr2range) {urxvt -e sh -c 'cidr2range -h ; bash'}
           [exec] (cisco-snmp-enumeration) {urxvt -e sh -c 'cisco-snmp-enumeration ; bash'}
           [exec] (cisco-snmp-slap) {urxvt -e sh -c 'cisco-snmp-slap -h ; bash'}
+          [exec] (coercer) {urxvt -e sh -c 'coercer -h ; bash'}
           [exec] (corkscrew) {urxvt -e sh -c 'corkscrew ; bash'}
           [exec] (creak) {urxvt -e sh -c 'creak -h ; bash'}
           [exec] (cyberscan) {urxvt -e sh -c 'cyberscan -h ; bash'}
           [exec] (darkstat) {urxvt -e sh -c 'darkstat -h ; bash'}
           [exec] (datajackproxy) {urxvt -e sh -c 'datajackproxy -h ; bash'}
+          [exec] (dcd) {urxvt -e sh -c 'dcd -h ; bash'}
+          [exec] (dcdetector) {urxvt -e sh -c 'dcdetector -h ; bash'}
           [exec] (depdep) {urxvt -e sh -c 'depdep -h ; bash'}
           [exec] (det) {urxvt -e sh -c 'det -h ; bash'}
           [exec] (detect-sniffer) {urxvt -e sh -c 'detect-sniffer -h ; bash'}
@@ -4355,6 +4482,7 @@
           [exec] (dnstraceroute) {urxvt -e sh -c 'dnstraceroute ; bash'}
           [exec] (dnsfilexfer-recv) {urxvt -e sh -c 'dnsfilexfer-recv -h ; bash'}
           [exec] (dnsfilexfer-send) {urxvt -e sh -c 'dnsfilexfer-send -h ; bash'}
+          [exec] (dnsobserver) {urxvt -e sh -c 'dnsobserver -h ; bash'}
           [exec] (dnsteal) {urxvt -e sh -c 'dnsteal ; bash'}
           [exec] (dnsvalidator) {urxvt -e sh -c 'dnsvalidator -h ; bash'}
           [exec] (dnsspoof) {urxvt -e sh -c 'dnsspoof -h ; bash'}
@@ -4395,7 +4523,6 @@
           [exec] (exabgp-cli) {urxvt -e sh -c 'exabgp-cli ; bash'}
           [exec] (exabgp-healthcheck) {urxvt -e sh -c 'exabgp-healthcheck ; bash'}
           [exec] (exabgpcli) {urxvt -e sh -c 'exabgpcli ; bash'}
-          [exec] (fakenet) {urxvt -e sh -c 'fakenet -h ; bash'}
           [exec] (fakenetbiosdgm) {urxvt -e sh -c 'fakenetbiosdgm -h ; bash'}
           [exec] (fakenetbiosns) {urxvt -e sh -c 'fakenetbiosns -h ; bash'}
           [exec] (filibuster) {urxvt -e sh -c 'filibuster -h ; bash'}
@@ -4461,6 +4588,11 @@
           [exec] (gs-netcat) {urxvt -e sh -c 'gs-netcat -h ; bash'}
           [exec] (gs-sftp) {urxvt -e sh -c 'gs-sftp -h ; bash'}
           [exec] (gsocket) {urxvt -e sh -c 'gsocket ; bash'}
+          [exec] (blitz) {urxvt -e sh -c 'blitz -h ; bash'}
+          [exec] (gs-mount) {urxvt -e sh -c 'gs-mount -h ; bash'}
+          [exec] (gs-netcat) {urxvt -e sh -c 'gs-netcat -h ; bash'}
+          [exec] (gs-sftp) {urxvt -e sh -c 'gs-sftp -h ; bash'}
+          [exec] (gsocket) {urxvt -e sh -c 'gsocket ; bash'}
           [exec] (gspoof) {urxvt -e sh -c 'gspoof -h ; bash'}
           [exec] (gtp-scan) {urxvt -e sh -c 'gtp-scan -h ; bash'}
           [exec] (gwcheck) {urxvt -e sh -c 'gwcheck -h ; bash'}
@@ -4498,19 +4630,11 @@
           [exec] (ipmitool) {urxvt -e sh -c 'ipmitool -h ; bash'}
           [exec] (arping) {urxvt -e sh -c 'arping -h ; bash'}
           [exec] (clockdiff) {urxvt -e sh -c 'clockdiff ; bash'}
-          [exec] (ninfod) {urxvt -e sh -c 'ninfod ; bash'}
           [exec] (ping) {urxvt -e sh -c 'ping ; bash'}
-          [exec] (rarpd) {urxvt -e sh -c 'rarpd ; bash'}
-          [exec] (rdisc) {urxvt -e sh -c 'rdisc ; bash'}
-          [exec] (tftpd) {urxvt -e sh -c 'tftpd ; bash'}
           [exec] (tracepath) {urxvt -e sh -c 'tracepath -h ; bash'}
           [exec] (arping) {urxvt -e sh -c 'arping -h ; bash'}
           [exec] (clockdiff) {urxvt -e sh -c 'clockdiff ; bash'}
-          [exec] (ninfod) {urxvt -e sh -c 'ninfod ; bash'}
           [exec] (ping) {urxvt -e sh -c 'ping ; bash'}
-          [exec] (rarpd) {urxvt -e sh -c 'rarpd ; bash'}
-          [exec] (rdisc) {urxvt -e sh -c 'rdisc ; bash'}
-          [exec] (tftpd) {urxvt -e sh -c 'tftpd ; bash'}
           [exec] (tracepath) {urxvt -e sh -c 'tracepath -h ; bash'}
           [exec] (ipv4bypass) {urxvt -e sh -c 'ipv4bypass -h ; bash'}
           [exec] (ipv666) {urxvt -e sh -c 'ipv666 -h ; bash'}
@@ -4560,6 +4684,7 @@
           [exec] (mallory) {urxvt -e sh -c 'mallory -h ; bash'}
           [exec] (maltrail-sensor) {urxvt -e sh -c 'maltrail-sensor -h ; bash'}
           [exec] (maltrail-server) {urxvt -e sh -c 'maltrail-server -h ; bash'}
+          [exec] (mapcidr) {urxvt -e sh -c 'mapcidr -h ; bash'}
           [exec] (massdns) {urxvt -e sh -c 'massdns ; bash'}
           [exec] (mz) {urxvt -e sh -c 'mz -h ; bash'}
           [exec] (msf-ws.ru) {urxvt -e sh -c 'msf-ws.ru ; bash'}
@@ -4732,11 +4857,11 @@
           [exec] (ldapdomaindump2) {urxvt -e sh -c 'ldapdomaindump2 -h ; bash'}
           [exec] (ldd2bloodhound2) {urxvt -e sh -c 'ldd2bloodhound2 -h ; bash'}
           [exec] (ldd2pretty2) {urxvt -e sh -c 'ldd2pretty2 ; bash'}
+          [exec] (rathole) {urxvt -e sh -c 'rathole -h ; bash'}
           [exec] (rdp-sec-check) {urxvt -e sh -c 'rdp-sec-check -h ; bash'}
           [exec] (redsocks) {urxvt -e sh -c 'redsocks -h ; bash'}
           [exec] (responder) {urxvt -e sh -c 'responder -h ; bash'}
-          [exec] (responder-dhcp) {urxvt -e sh -c 'responder-dhcp ; bash'}
-          [exec] (responder-dhcp-auto) {urxvt -e sh -c 'responder-dhcp-auto ; bash'}
+          [exec] (responder-dnsupdate) {urxvt -e sh -c 'responder-dnsupdate ; bash'}
           [exec] (responder-findsqlsrv) {urxvt -e sh -c 'responder-findsqlsrv ; bash'}
           [exec] (responder-icmp-redirect) {urxvt -e sh -c 'responder-icmp-redirect ; bash'}
           [exec] (responder-multirelay) {urxvt -e sh -c 'responder-multirelay ; bash'}
@@ -4749,6 +4874,7 @@
           [exec] (rinetd) {urxvt -e sh -c 'rinetd -h ; bash'}
           [exec] (routerhunter) {urxvt -e sh -c 'routerhunter -h ; bash'}
           [exec] (rtpbreak) {urxvt -e sh -c 'rtpbreak -h ; bash'}
+          [exec] (rcat) {urxvt -e sh -c 'rcat ; bash'}
           [exec] (sbd) {urxvt -e sh -c 'sbd -h ; bash'}
           [exec] (sc_ally) {urxvt -e sh -c 'sc_ally -h ; bash'}
           [exec] (sc_analysis_dump) {urxvt -e sh -c 'sc_analysis_dump -h ; bash'}
@@ -4842,6 +4968,7 @@
           [exec] (rwtotal) {urxvt -e sh -c 'rwtotal ; bash'}
           [exec] (rwtuc) {urxvt -e sh -c 'rwtuc ; bash'}
           [exec] (rwuniq) {urxvt -e sh -c 'rwuniq ; bash'}
+          [exec] (skydive) {urxvt -e sh -c 'skydive ; bash'}
           [exec] (smikims-cage) {urxvt -e sh -c 'smikims-cage ; bash'}
           [exec] (smikims-sweep) {urxvt -e sh -c 'smikims-sweep ; bash'}
           [exec] (sn00p) {urxvt -e sh -c 'sn00p ; bash'}
@@ -4857,7 +4984,6 @@
           [exec] (regexgen) {urxvt -e sh -c 'regexgen ; bash'}
           [exec] (sniffles) {urxvt -e sh -c 'sniffles --help ; bash'}
           [exec] (sniffles-rulegen) {urxvt -e sh -c 'sniffles-rulegen ; bash'}
-          [exec] (snmpbrute) {urxvt -e sh -c 'snmpbrute ; bash'}
           [exec] (snmp-fuzzer) {urxvt -e sh -c 'snmp-fuzzer ; bash'}
           [exec] (snmpattack) {urxvt -e sh -c 'snmpattack -h ; bash'}
           [exec] (snmpcheck-nothink) {urxvt -e sh -c 'snmpcheck-nothink -h ; bash'}
@@ -4875,8 +5001,9 @@
           [exec] (sparta) {urxvt -e sh -c 'sparta ; bash'}
           [exec] (spipe) {urxvt -e sh -c 'spipe ; bash'}
           [exec] (spiped) {urxvt -e sh -c 'spiped ; bash'}
+          [exec] (spipe) {urxvt -e sh -c 'spipe ; bash'}
+          [exec] (spiped) {urxvt -e sh -c 'spiped ; bash'}
           [exec] (ssdp-scanner) {urxvt -e sh -c 'ssdp-scanner ; bash'}
-          [exec] (sudoers-add) {urxvt -e sh -c 'sudoers-add ; bash'}
           [exec] (ssl-phuck3r) {urxvt -e sh -c 'ssl-phuck3r -h ; bash'}
           [exec] (sslh) {urxvt -e sh -c 'sslh -h ; bash'}
           [exec] (sslh-fork) {urxvt -e sh -c 'sslh-fork -h ; bash'}
@@ -5052,6 +5179,7 @@
           [exec] (torify) {urxvt -e sh -c 'torify -h ; bash'}
           [exec] (tunna-proxy) {urxvt -e sh -c 'tunna-proxy ; bash'}
           [exec] (tunna-webserver) {urxvt -e sh -c 'tunna-webserver ; bash'}
+          [exec] (turner) {urxvt -e sh -c 'turner -h ; bash'}
           [exec] (udp2raw) {urxvt -e sh -c 'udp2raw ; bash'}
           [exec] (udpastcp) {urxvt -e sh -c 'udpastcp ; bash'}
           [exec] (udptunnel) {urxvt -e sh -c 'udptunnel -h ; bash'}
@@ -5105,11 +5233,7 @@
           [exec] (zdns) {urxvt -e sh -c 'zdns -h ; bash'}
           [exec] (bifcl) {urxvt -e sh -c 'bifcl ; bash'}
           [exec] (binpac) {urxvt -e sh -c 'binpac ; bash'}
-          [exec] (bro) {urxvt -e sh -c 'bro -h ; bash'}
-          [exec] (bro-cut) {urxvt -e sh -c 'bro-cut ; bash'}
-          [exec] (broctl) {urxvt -e sh -c 'broctl ; bash'}
           [exec] (broker-benchmark) {urxvt -e sh -c 'broker-benchmark ; bash'}
-          [exec] (broker-cluster-benchmark) {urxvt -e sh -c 'broker-cluster-benchmark ; bash'}
           [exec] (btest) {urxvt -e sh -c 'btest ; bash'}
           [exec] (btest-ask-update) {urxvt -e sh -c 'btest-ask-update ; bash'}
           [exec] (btest-bg-run) {urxvt -e sh -c 'btest-bg-run ; bash'}
@@ -5121,10 +5245,19 @@
           [exec] (btest-rst-include) {urxvt -e sh -c 'btest-rst-include ; bash'}
           [exec] (btest-rst-pipe) {urxvt -e sh -c 'btest-rst-pipe ; bash'}
           [exec] (btest-setsid) {urxvt -e sh -c 'btest-setsid ; bash'}
+          [exec] (gen-zam) {urxvt -e sh -c 'gen-zam ; bash'}
+          [exec] (hiltic) {urxvt -e sh -c 'hiltic ; bash'}
           [exec] (paraglob-test) {urxvt -e sh -c 'paraglob-test ; bash'}
+          [exec] (spicy-build) {urxvt -e sh -c 'spicy-build ; bash'}
+          [exec] (spicy-driver) {urxvt -e sh -c 'spicy-driver ; bash'}
+          [exec] (spicy-dump) {urxvt -e sh -c 'spicy-dump ; bash'}
+          [exec] (spicy-precompile-headers) {urxvt -e sh -c 'spicy-precompile-headers ; bash'}
+          [exec] (spicyc) {urxvt -e sh -c 'spicyc ; bash'}
+          [exec] (spicyz) {urxvt -e sh -c 'spicyz ; bash'}
           [exec] (trace-summary) {urxvt -e sh -c 'trace-summary ; bash'}
           [exec] (zeek) {urxvt -e sh -c 'zeek ; bash'}
           [exec] (zeek-archiver) {urxvt -e sh -c 'zeek-archiver ; bash'}
+          [exec] (zeek-client) {urxvt -e sh -c 'zeek-client ; bash'}
           [exec] (zeek-cut) {urxvt -e sh -c 'zeek-cut ; bash'}
           [exec] (zeekctl) {urxvt -e sh -c 'zeekctl ; bash'}
           [exec] (zkg) {urxvt -e sh -c 'zkg ; bash'}
@@ -5175,7 +5308,6 @@
           [exec] (dnschef) {urxvt -e sh -c 'dnschef -h ; bash'}
           [exec] (elite-proxy-finder) {urxvt -e sh -c 'elite-proxy-finder -h ; bash'}
           [exec] (fakedns) {urxvt -e sh -c 'fakedns ; bash'}
-          [exec] (fakenet) {urxvt -e sh -c 'fakenet -h ; bash'}
           [exec] (hetty) {urxvt -e sh -c 'hetty -h ; bash'}
           [exec] (hyperfox) {urxvt -e sh -c 'hyperfox -h ; bash'}
           [exec] (jondo) {urxvt -e sh -c 'jondo ; bash'}
@@ -5197,6 +5329,7 @@
           [exec] (proxenet-control-cli) {urxvt -e sh -c 'proxenet-control-cli ; bash'}
           [exec] (proxenet-control-web) {urxvt -e sh -c 'proxenet-control-web ; bash'}
           [exec] (proxify) {urxvt -e sh -c 'proxify -h ; bash'}
+          [exec] (proxybroker) {urxvt -e sh -c 'proxybroker -h ; bash'}
           [exec] (proxychains) {urxvt -e sh -c 'proxychains ; bash'}
           [exec] (proxychains4) {urxvt -e sh -c 'proxychains4 ; bash'}
           [exec] (proxychains4-daemon) {urxvt -e sh -c 'proxychains4-daemon ; bash'}
@@ -5207,6 +5340,7 @@
           [exec] (proxyp) {urxvt -e sh -c 'proxyp -h ; bash'}
           [exec] (proxytunnel) {urxvt -e sh -c 'proxytunnel -h ; bash'}
           [exec] (pwncat) {urxvt -e sh -c 'pwncat cd /usr/share/windows/pwncat ; ls ; bash'}
+          [exec] (rathole) {urxvt -e sh -c 'rathole -h ; bash'}
           [exec] (ratproxy) {urxvt -e sh -c 'ratproxy -h ; bash'}
           [exec] (redsocks) {urxvt -e sh -c 'redsocks -h ; bash'}
           [exec] (regeorg) {urxvt -e sh -c 'regeorg -h ; bash'}
@@ -5220,7 +5354,6 @@
           [exec] (soapui-errors.log) {urxvt -e sh -c 'soapui-errors.log ; bash'}
           [exec] (soapui.log) {urxvt -e sh -c 'soapui.log ; bash'}
           [exec] (starter-page.html) {urxvt -e sh -c 'starter-page.html ; bash'}
-          [exec] (sudoers-add) {urxvt -e sh -c 'sudoers-add ; bash'}
           [exec] (sslnuke) {urxvt -e sh -c 'sslnuke ; bash'}
           [exec] (sslstrip) {urxvt -e sh -c 'sslstrip -h ; bash'}
           [exec] (ssrf-proxy) {urxvt -e sh -c 'ssrf-proxy -h ; bash'}
@@ -5228,6 +5361,8 @@
           [exec] (setup) {urxvt -e sh -c 'setup ; bash'}
           [exec] (ssrf-proxy) {urxvt -e sh -c 'ssrf-proxy -h ; bash'}
           [exec] (mitm_listener) {urxvt -e sh -c 'mitm_listener ; bash'}
+          [exec] (stowaway-admin) {urxvt -e sh -c 'stowaway-admin -h ; bash'}
+          [exec] (stowaway-agent) {urxvt -e sh -c 'stowaway-agent -h ; bash'}
           [exec] (striptls) {urxvt -e sh -c 'striptls -h ; bash'}
           [exec] (tftp-proxy) {urxvt -e sh -c 'tftp-proxy -h ; bash'}
           [exec] (tinyproxy) {urxvt -e sh -c 'tinyproxy -h ; bash'}
@@ -5244,6 +5379,7 @@
           [exec] (torsocks) {urxvt -e sh -c 'torsocks -h ; bash'}
           [exec] (tunna-proxy) {urxvt -e sh -c 'tunna-proxy ; bash'}
           [exec] (tunna-webserver) {urxvt -e sh -c 'tunna-webserver ; bash'}
+          [exec] (turner) {urxvt -e sh -c 'turner -h ; bash'}
           [exec] (venom-admin) {urxvt -e sh -c 'venom-admin ; bash'}
           [exec] (venom-agent) {urxvt -e sh -c 'venom-agent ; bash'}
           [exec] (webfixy) {urxvt -e sh -c 'webfixy -h ; bash'}
@@ -5278,17 +5414,30 @@
           [exec] (hackrf_operacake) {urxvt -e sh -c 'hackrf_operacake ; bash'}
           [exec] (hackrf_sweep) {urxvt -e sh -c 'hackrf_sweep ; bash'}
           [exec] (hackrf_transfer) {urxvt -e sh -c 'hackrf_transfer ; bash'}
+          [exec] (osmo-aka-verify) {urxvt -e sh -c 'osmo-aka-verify ; bash'}
           [exec] (osmo-arfcn) {urxvt -e sh -c 'osmo-arfcn ; bash'}
           [exec] (osmo-auc-gen) {urxvt -e sh -c 'osmo-auc-gen ; bash'}
           [exec] (multimon-ng) {urxvt -e sh -c 'multimon-ng ; bash'}
           [exec] (proxmark) {urxvt -e sh -c 'proxmark ; bash'}
           [exec] (proxmark-fpga-compress) {urxvt -e sh -c 'proxmark-fpga-compress ; bash'}
+          [exec] (mf_nonce_brute) {urxvt -e sh -c 'mf_nonce_brute ; bash'}
+          [exec] (mf_trace_brute) {urxvt -e sh -c 'mf_trace_brute ; bash'}
+          [exec] (mfd_aes_brute) {urxvt -e sh -c 'mfd_aes_brute ; bash'}
+          [exec] (mfd_multi_brute) {urxvt -e sh -c 'mfd_multi_brute ; bash'}
+          [exec] (pm3) {urxvt -e sh -c 'pm3 -h ; bash'}
+          [exec] (proxmark3) {urxvt -e sh -c 'proxmark3 -h ; bash'}
+          [exec] (mf_nonce_brute) {urxvt -e sh -c 'mf_nonce_brute ; bash'}
+          [exec] (mf_trace_brute) {urxvt -e sh -c 'mf_trace_brute ; bash'}
+          [exec] (mfd_aes_brute) {urxvt -e sh -c 'mfd_aes_brute ; bash'}
+          [exec] (mfd_multi_brute) {urxvt -e sh -c 'mfd_multi_brute ; bash'}
+          [exec] (pm3) {urxvt -e sh -c 'pm3 -h ; bash'}
+          [exec] (proxmark3) {urxvt -e sh -c 'proxmark3 -h ; bash'}
           [exec] (rtlamr) {urxvt -e sh -c 'rtlamr -h ; bash'}
           [exec] (rtlizer) {urxvt -e sh -c 'rtlizer -h ; bash'}
+          [exec] (simtrace2-cardem-pcsc) {urxvt -e sh -c 'simtrace2-cardem-pcsc ; bash'}
           [exec] (simtrace2-list) {urxvt -e sh -c 'simtrace2-list -h ; bash'}
-          [exec] (simtrace2-remsim) {urxvt -e sh -c 'simtrace2-remsim -h ; bash'}
-          [exec] (simtrace2-remsim-usb2udp) {urxvt -e sh -c 'simtrace2-remsim-usb2udp -h ; bash'}
           [exec] (simtrace2-sniff) {urxvt -e sh -c 'simtrace2-sniff -h ; bash'}
+          [exec] (simtrace2-tool) {urxvt -e sh -c 'simtrace2-tool ; bash'}
           [exec] (urh) {urxvt -e sh -c 'urh ; bash'}
           [exec] (urh_cli) {urxvt -e sh -c 'urh_cli ; bash'}
           [exec] (urh) {urxvt -e sh -c 'urh ; bash'}
@@ -5299,6 +5448,7 @@
           [exec] (activedirectoryenum) {urxvt -e sh -c 'activedirectoryenum ; bash'}
           [exec] (ad-ldap-enum) {urxvt -e sh -c 'ad-ldap-enum -h ; bash'}
           [exec] (adfind) {urxvt -e sh -c 'adfind -h ; bash'}
+          [exec] (adidnsdump) {urxvt -e sh -c 'adidnsdump -h ; bash'}
           [exec] (aiodnsbrute) {urxvt -e sh -c 'aiodnsbrute --help ; bash'}
           [exec] (altdns) {urxvt -e sh -c 'altdns -h ; bash'}
           [exec] (amass) {urxvt -e sh -c 'amass -h ; bash'}
@@ -5322,8 +5472,6 @@
           [exec] (delv) {urxvt -e sh -c 'delv ; bash'}
           [exec] (dig) {urxvt -e sh -c 'dig -h ; bash'}
           [exec] (dnssec-cds) {urxvt -e sh -c 'dnssec-cds ; bash'}
-          [exec] (dnssec-checkds) {urxvt -e sh -c 'dnssec-checkds ; bash'}
-          [exec] (dnssec-coverage) {urxvt -e sh -c 'dnssec-coverage ; bash'}
           [exec] (dnssec-revoke) {urxvt -e sh -c 'dnssec-revoke ; bash'}
           [exec] (dnssec-settime) {urxvt -e sh -c 'dnssec-settime ; bash'}
           [exec] (dnssec-signzone) {urxvt -e sh -c 'dnssec-signzone ; bash'}
@@ -5343,8 +5491,6 @@
           [exec] (delv) {urxvt -e sh -c 'delv ; bash'}
           [exec] (dig) {urxvt -e sh -c 'dig -h ; bash'}
           [exec] (dnssec-cds) {urxvt -e sh -c 'dnssec-cds ; bash'}
-          [exec] (dnssec-checkds) {urxvt -e sh -c 'dnssec-checkds ; bash'}
-          [exec] (dnssec-coverage) {urxvt -e sh -c 'dnssec-coverage ; bash'}
           [exec] (dnssec-revoke) {urxvt -e sh -c 'dnssec-revoke ; bash'}
           [exec] (dnssec-settime) {urxvt -e sh -c 'dnssec-settime ; bash'}
           [exec] (dnssec-signzone) {urxvt -e sh -c 'dnssec-signzone ; bash'}
@@ -5364,10 +5510,9 @@
           [exec] (birp) {urxvt -e sh -c 'birp -h ; bash'}
           [exec] (blackbox-scanner) {urxvt -e sh -c 'blackbox-scanner -h ; bash'}
           [exec] (bloodhound) {urxvt -e sh -c 'bloodhound -h ; bash'}
-          [exec] (handlebars) {urxvt -e sh -c 'handlebars ; bash'}
+          [exec] (which) {urxvt -e sh -c 'which ; bash'}
           [exec] (he) {urxvt -e sh -c 'he ; bash'}
           [exec] (mustache) {urxvt -e sh -c 'mustache ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
           [exec] (bluto) {urxvt -e sh -c 'bluto ; bash'}
           [exec] (buster) {urxvt -e sh -c 'buster -h ; bash'}
@@ -5382,10 +5527,12 @@
           [exec] (maltego.ico) {urxvt -e sh -c 'maltego.ico ; bash'}
           [exec] (catnthecanary) {urxvt -e sh -c 'catnthecanary ; bash'}
           [exec] (ccrawldns) {urxvt -e sh -c 'ccrawldns -h ; bash'}
+          [exec] (cero) {urxvt -e sh -c 'cero -h ; bash'}
           [exec] (certgraph) {urxvt -e sh -c 'certgraph -h ; bash'}
           [exec] (chaos-client) {urxvt -e sh -c 'chaos-client -h ; bash'}
           [exec] (chaosmap) {urxvt -e sh -c 'chaosmap ; bash'}
           [exec] (citadel) {urxvt -e sh -c 'citadel -h ; bash'}
+          [exec] (clairvoyance) {urxvt -e sh -c 'clairvoyance -h ; bash'}
           [exec] (cloud-buster) {urxvt -e sh -c 'cloud-buster -h ; bash'}
           [exec] (cloudfail) {urxvt -e sh -c 'cloudfail -h ; bash'}
           [exec] (cloudlist) {urxvt -e sh -c 'cloudlist -h ; bash'}
@@ -5406,6 +5553,8 @@
           [exec] (d-tect) {urxvt -e sh -c 'd-tect ; bash'}
           [exec] (darkscrape) {urxvt -e sh -c 'darkscrape ; bash'}
           [exec] (davscan) {urxvt -e sh -c 'davscan -h ; bash'}
+          [exec] (dcd) {urxvt -e sh -c 'dcd -h ; bash'}
+          [exec] (dcdetector) {urxvt -e sh -c 'dcdetector -h ; bash'}
           [exec] (detectem) {urxvt -e sh -c 'detectem --help ; bash'}
           [exec] (dga-detection) {urxvt -e sh -c 'dga-detection -h ; bash'}
           [exec] (dns-parallel-prober) {urxvt -e sh -c 'dns-parallel-prober -h ; bash'}
@@ -5431,7 +5580,9 @@
           [exec] (domained) {urxvt -e sh -c 'domained -h ; bash'}
           [exec] (domainhunter) {urxvt -e sh -c 'domainhunter -h ; bash'}
           [exec] (doork) {urxvt -e sh -c 'doork -h ; bash'}
+          [exec] (dorkscout) {urxvt -e sh -c 'dorkscout -h ; bash'}
           [exec] (dradis-ce) {urxvt -e sh -c 'dradis-ce ; bash'}
+          [exec] (heroku) {urxvt -e sh -c 'heroku ; bash'}
           [exec] (rails) {urxvt -e sh -c 'rails ; bash'}
           [exec] (rake) {urxvt -e sh -c 'rake ; bash'}
           [exec] (rspec) {urxvt -e sh -c 'rspec ; bash'}
@@ -5474,7 +5625,9 @@
           [exec] (genisys-scraper) {urxvt -e sh -c 'genisys-scraper -h ; bash'}
           [exec] (genisys-tsadder) {urxvt -e sh -c 'genisys-tsadder -h ; bash'}
           [exec] (geoedge) {urxvt -e sh -c 'geoedge ; bash'}
+          [exec] (gh-dork) {urxvt -e sh -c 'gh-dork -h ; bash'}
           [exec] (git-hound) {urxvt -e sh -c 'git-hound -h ; bash'}
+          [exec] (git-wild-hunt) {urxvt -e sh -c 'git-wild-hunt -h ; bash'}
           [exec] (gitdorker) {urxvt -e sh -c 'gitdorker -h ; bash'}
           [exec] (gitem) {urxvt -e sh -c 'gitem -h ; bash'}
           [exec] (gitgraber) {urxvt -e sh -c 'gitgraber ; bash'}
@@ -5486,6 +5639,7 @@
           [exec] (gitrecon) {urxvt -e sh -c 'gitrecon -h ; bash'}
           [exec] (gloom) {urxvt -e sh -c 'gloom ; bash'}
           [exec] (goddi) {urxvt -e sh -c 'goddi -h ; bash'}
+          [exec] (gomapenum) {urxvt -e sh -c 'gomapenum -h ; bash'}
           [exec] (goodork) {urxvt -e sh -c 'goodork ; bash'}
           [exec] (goofile) {urxvt -e sh -c 'goofile ; bash'}
           [exec] (goog-mail) {urxvt -e sh -c 'goog-mail ; bash'}
@@ -5494,12 +5648,7 @@
           [exec] (goop) {urxvt -e sh -c 'goop ; bash'}
           [exec] (gosint) {urxvt -e sh -c 'gosint -h ; bash'}
           [exec] (gowitness) {urxvt -e sh -c 'gowitness -h ; bash'}
-          [exec] (database-statistics-sqlite) {urxvt -e sh -c 'database-statistics-sqlite ; bash'}
-          [exec] (greenbone-certdata-sync) {urxvt -e sh -c 'greenbone-certdata-sync -h ; bash'}
-          [exec] (greenbone-scapdata-sync) {urxvt -e sh -c 'greenbone-scapdata-sync -h ; bash'}
-          [exec] (gvm-manage-certs) {urxvt -e sh -c 'gvm-manage-certs ; bash'}
-          [exec] (gvm-migrate-to-postgres) {urxvt -e sh -c 'gvm-migrate-to-postgres ; bash'}
-          [exec] (gvm-portnames-update) {urxvt -e sh -c 'gvm-portnames-update ; bash'}
+          [exec] (graphinder) {urxvt -e sh -c 'graphinder -h ; bash'}
           [exec] (gwtenum) {urxvt -e sh -c 'gwtenum -h ; bash'}
           [exec] (gwtfuzzer) {urxvt -e sh -c 'gwtfuzzer -h ; bash'}
           [exec] (gwtparse) {urxvt -e sh -c 'gwtparse -h ; bash'}
@@ -5516,6 +5665,7 @@
           [exec] (rake) {urxvt -e sh -c 'rake ; bash'}
           [exec] (setup) {urxvt -e sh -c 'setup ; bash'}
           [exec] (spring) {urxvt -e sh -c 'spring ; bash'}
+          [exec] (holehe) {urxvt -e sh -c 'holehe -h ; bash'}
           [exec] (homepwn) {urxvt -e sh -c 'homepwn -h ; bash'}
           [exec] (hoper) {urxvt -e sh -c 'hoper ; bash'}
           [exec] (console) {urxvt -e sh -c 'console ; bash'}
@@ -5562,14 +5712,15 @@
           [exec] (jackdaw) {urxvt -e sh -c 'jackdaw -h ; bash'}
           [exec] (jast) {urxvt -e sh -c 'jast -h ; bash'}
           [exec] (jsearch) {urxvt -e sh -c 'jsearch -h ; bash'}
+          [exec] (juumla) {urxvt -e sh -c 'juumla -h ; bash'}
           [exec] (kacak) {urxvt -e sh -c 'kacak -h ; bash'}
           [exec] (kamerka) {urxvt -e sh -c 'kamerka -h ; bash'}
-          [exec] (katana-ktf.gui) {urxvt -e sh -c 'katana-ktf.gui ; bash'}
-          [exec] (katana-ktfconsole) {urxvt -e sh -c 'katana-ktfconsole ; bash'}
-          [exec] (katana-ktfktf) {urxvt -e sh -c 'katana-ktfktf ; bash'}
-          [exec] (katana-ktflinker) {urxvt -e sh -c 'katana-ktflinker ; bash'}
-          [exec] (katana-ktfrun) {urxvt -e sh -c 'katana-ktfrun ; bash'}
-          [exec] (katana-ktfupdate) {urxvt -e sh -c 'katana-ktfupdate ; bash'}
+          [exec] (katana-framework-ktf.gui) {urxvt -e sh -c 'katana-framework-ktf.gui ; bash'}
+          [exec] (katana-framework-ktfconsole) {urxvt -e sh -c 'katana-framework-ktfconsole ; bash'}
+          [exec] (katana-framework-ktfktf) {urxvt -e sh -c 'katana-framework-ktfktf ; bash'}
+          [exec] (katana-framework-ktflinker) {urxvt -e sh -c 'katana-framework-ktflinker ; bash'}
+          [exec] (katana-framework-ktfrun) {urxvt -e sh -c 'katana-framework-ktfrun ; bash'}
+          [exec] (katana-framework-ktfupdate) {urxvt -e sh -c 'katana-framework-ktfupdate ; bash'}
           [exec] (keye) {urxvt -e sh -c 'keye -h ; bash'}
           [exec] (kiterunner) {urxvt -e sh -c 'kiterunner -h ; bash'}
           [exec] (knock) {urxvt -e sh -c 'knock ; bash'}
@@ -5590,13 +5741,16 @@
           [exec] (lte-cell-scanner) {urxvt -e sh -c 'lte-cell-scanner --help ; bash'}
           [exec] (lulzbuster) {urxvt -e sh -c 'lulzbuster -H ; bash'}
           [exec] (machinae) {urxvt -e sh -c 'machinae -h ; bash'}
+          [exec] (maigret) {urxvt -e sh -c 'maigret -h ; bash'}
           [exec] (mail-crawl) {urxvt -e sh -c 'mail-crawl -h ; bash'}
           [exec] (maltego) {urxvt -e sh -c 'maltego -h ; bash'}
           [exec] (maltego.ico) {urxvt -e sh -c 'maltego.ico ; bash'}
+          [exec] (manspider) {urxvt -e sh -c 'manspider -h ; bash'}
           [exec] (maryam) {urxvt -e sh -c 'maryam ; bash'}
           [exec] (massbleed) {urxvt -e sh -c 'massbleed ; bash'}
           [exec] (mdns-recon) {urxvt -e sh -c 'mdns-recon ; bash'}
           [exec] (metabigor) {urxvt -e sh -c 'metabigor -h ; bash'}
+          [exec] (metafinder) {urxvt -e sh -c 'metafinder -h ; bash'}
           [exec] (metagoofil) {urxvt -e sh -c 'metagoofil ; bash'}
           [exec] (msf-ws.ru) {urxvt -e sh -c 'msf-ws.ru ; bash'}
           [exec] (msfconsole) {urxvt -e sh -c 'msfconsole -h ; bash'}
@@ -5624,6 +5778,7 @@
           [exec] (mptcp-fragmenter) {urxvt -e sh -c 'mptcp-fragmenter ; bash'}
           [exec] (mptcp-scanner) {urxvt -e sh -c 'mptcp-scanner ; bash'}
           [exec] (mqtt-pwn) {urxvt -e sh -c 'mqtt-pwn -h ; bash'}
+          [exec] (msmailprobe) {urxvt -e sh -c 'msmailprobe -h ; bash'}
           [exec] (mylg) {urxvt -e sh -c 'mylg help ; bash'}
           [exec] (nasnum) {urxvt -e sh -c 'nasnum ; bash'}
           [exec] (dnscat) {urxvt -e sh -c 'dnscat -h ; bash'}
@@ -5659,15 +5814,17 @@
           [exec] (nullinux) {urxvt -e sh -c 'nullinux ; bash'}
           [exec] (nullscan) {urxvt -e sh -c 'nullscan -H ; bash'}
           [exec] (o-saft) {urxvt -e sh -c 'o-saft -h ; bash'}
+          [exec] (o365enum) {urxvt -e sh -c 'o365enum -h ; bash'}
           [exec] (o365spray) {urxvt -e sh -c 'o365spray -h ; bash'}
           [exec] (omnibus) {urxvt -e sh -c 'omnibus ; bash'}
           [exec] (onioff) {urxvt -e sh -c 'onioff -h ; bash'}
           [exec] (greenbone-nvt-sync) {urxvt -e sh -c 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas) {urxvt -e sh -c 'openvas ; bash'}
           [exec] (openvas-nasl) {urxvt -e sh -c 'openvas-nasl ; bash'}
           [exec] (openvas-nasl-lint) {urxvt -e sh -c 'openvas-nasl-lint ; bash'}
-          [exec] (openvassd) {urxvt -e sh -c 'openvassd -h ; bash'}
           [exec] (osi.ig) {urxvt -e sh -c 'osi.ig -h ; bash'}
           [exec] (osinterator) {urxvt -e sh -c 'osinterator -h ; bash'}
+          [exec] (osintgram) {urxvt -e sh -c 'osintgram -h ; bash'}
           [exec] (osr-alias_generator) {urxvt -e sh -c 'osr-alias_generator -h ; bash'}
           [exec] (osr-checkfy) {urxvt -e sh -c 'osr-checkfy ; bash'}
           [exec] (osr-domainfy) {urxvt -e sh -c 'osr-domainfy -h ; bash'}
@@ -5681,6 +5838,7 @@
           [exec] (parsero) {urxvt -e sh -c 'parsero -h ; bash'}
           [exec] (pass-station) {urxvt -e sh -c 'pass-station -h ; bash'}
           [exec] (pass-station_console) {urxvt -e sh -c 'pass-station_console ; bash'}
+          [exec] (pastemonitor) {urxvt -e sh -c 'pastemonitor -h ; bash'}
           [exec] (pasv-agrsv) {urxvt -e sh -c 'pasv-agrsv -h ; bash'}
           [exec] (pdfgrab) {urxvt -e sh -c 'pdfgrab -h ; bash'}
           [exec] (peepingtom) {urxvt -e sh -c 'peepingtom -h ; bash'}
@@ -5690,10 +5848,24 @@
           [exec] (postenum) {urxvt -e sh -c 'postenum -h ; bash'}
           [exec] (pown) {urxvt -e sh -c 'pown ; bash'}
           [exec] (pret) {urxvt -e sh -c 'pret -h ; bash'}
+          [exec] (protosint) {urxvt -e sh -c 'protosint -h ; bash'}
           [exec] (proxmark) {urxvt -e sh -c 'proxmark ; bash'}
           [exec] (proxmark-fpga-compress) {urxvt -e sh -c 'proxmark-fpga-compress ; bash'}
+          [exec] (mf_nonce_brute) {urxvt -e sh -c 'mf_nonce_brute ; bash'}
+          [exec] (mf_trace_brute) {urxvt -e sh -c 'mf_trace_brute ; bash'}
+          [exec] (mfd_aes_brute) {urxvt -e sh -c 'mfd_aes_brute ; bash'}
+          [exec] (mfd_multi_brute) {urxvt -e sh -c 'mfd_multi_brute ; bash'}
+          [exec] (pm3) {urxvt -e sh -c 'pm3 -h ; bash'}
+          [exec] (proxmark3) {urxvt -e sh -c 'proxmark3 -h ; bash'}
+          [exec] (mf_nonce_brute) {urxvt -e sh -c 'mf_nonce_brute ; bash'}
+          [exec] (mf_trace_brute) {urxvt -e sh -c 'mf_trace_brute ; bash'}
+          [exec] (mfd_aes_brute) {urxvt -e sh -c 'mfd_aes_brute ; bash'}
+          [exec] (mfd_multi_brute) {urxvt -e sh -c 'mfd_multi_brute ; bash'}
+          [exec] (pm3) {urxvt -e sh -c 'pm3 -h ; bash'}
+          [exec] (proxmark3) {urxvt -e sh -c 'proxmark3 -h ; bash'}
           [exec] (ptf) {urxvt -e sh -c 'ptf ; bash'}
           [exec] (punter) {urxvt -e sh -c 'punter -h ; bash'}
+          [exec] (pwndora) {urxvt -e sh -c 'pwndora -h ; bash'}
           [exec] (pwned) {urxvt -e sh -c 'pwned -h ; bash'}
           [exec] (pwned-search) {urxvt -e sh -c 'pwned-search ; bash'}
           [exec] (pwnedornot) {urxvt -e sh -c 'pwnedornot -h ; bash'}
@@ -5703,12 +5875,12 @@
           [exec] (witnessme) {urxvt -e sh -c 'witnessme -h ; bash'}
           [exec] (wmapi) {urxvt -e sh -c 'wmapi ; bash'}
           [exec] (shodan2) {urxvt -e sh -c 'shodan2 ; bash'}
-          [exec] (webtech2) {urxvt -e sh -c 'webtech2 ; bash'}
           [exec] (quickrecon) {urxvt -e sh -c 'quickrecon -h ; bash'}
           [exec] (raccoon) {urxvt -e sh -c 'raccoon --help ; bash'}
           [exec] (ranger-scanner) {urxvt -e sh -c 'ranger-scanner ; bash'}
           [exec] (rapidscan) {urxvt -e sh -c 'rapidscan ; bash'}
           [exec] (raven) {urxvt -e sh -c 'raven -h ; bash'}
+          [exec] (rdwarecon) {urxvt -e sh -c 'rdwarecon -h ; bash'}
           [exec] (recon-cli) {urxvt -e sh -c 'recon-cli ; bash'}
           [exec] (recon-ng) {urxvt -e sh -c 'recon-ng cd /usr/share/recon-ng ; ./recon-ng -h ; bash'}
           [exec] (recon-web) {urxvt -e sh -c 'recon-web ; bash'}
@@ -5751,6 +5923,8 @@
           [exec] (sc_wartsfix) {urxvt -e sh -c 'sc_wartsfix -h ; bash'}
           [exec] (scamper) {urxvt -e sh -c 'scamper -h ; bash'}
           [exec] (scavenger) {urxvt -e sh -c 'scavenger -h ; bash'}
+          [exec] (scrying) {urxvt -e sh -c 'scrying -h ; bash'}
+          [exec] (scylla) {urxvt -e sh -c 'scylla -h ; bash'}
           [exec] (of-access) {urxvt -e sh -c 'of-access -h ; bash'}
           [exec] (of-check) {urxvt -e sh -c 'of-check -h ; bash'}
           [exec] (of-enum) {urxvt -e sh -c 'of-enum -h ; bash'}
@@ -5773,6 +5947,7 @@
           [exec] (smbhunt) {urxvt -e sh -c 'smbhunt -h ; bash'}
           [exec] (smblist) {urxvt -e sh -c 'smblist -h ; bash'}
           [exec] (smbmap) {urxvt -e sh -c 'smbmap -h ; bash'}
+          [exec] (smbsr) {urxvt -e sh -c 'smbsr -h ; bash'}
           [exec] (smod) {urxvt -e sh -c 'smod ; bash'}
           [exec] (smtp-user-enum) {urxvt -e sh -c 'smtp-user-enum -h ; bash'}
           [exec] (sn00p) {urxvt -e sh -c 'sn00p ; bash'}
@@ -5782,14 +5957,17 @@
           [exec] (nmap-bootstrap.xsl) {urxvt -e sh -c 'nmap-bootstrap.xsl ; bash'}
           [exec] (snmpcheck-nothink) {urxvt -e sh -c 'snmpcheck-nothink -h ; bash'}
           [exec] (snoopbrute) {urxvt -e sh -c 'snoopbrute ; bash'}
+          [exec] (snscrape) {urxvt -e sh -c 'snscrape ; bash'}
           [exec] (social-analyzer) {urxvt -e sh -c 'social-analyzer -h ; bash'}
           [exec] (social-vuln-scanner) {urxvt -e sh -c 'social-vuln-scanner -h ; bash'}
+          [exec] (socialpwned) {urxvt -e sh -c 'socialpwned -h ; bash'}
           [exec] (socialscan) {urxvt -e sh -c 'socialscan ; bash'}
           [exec] (sooty) {urxvt -e sh -c 'sooty ; bash'}
           [exec] (spfmap) {urxvt -e sh -c 'spfmap -h ; bash'}
           [exec] (spiderfoot) {urxvt -e sh -c 'spiderfoot ; bash'}
           [exec] (spiderfoot-cli) {urxvt -e sh -c 'spiderfoot-cli ; bash'}
           [exec] (spoofcheck) {urxvt -e sh -c 'spoofcheck ; bash'}
+          [exec] (spray365) {urxvt -e sh -c 'spray365 -h ; bash'}
           [exec] (ssl-hostname-resolver) {urxvt -e sh -c 'ssl-hostname-resolver -h ; bash'}
           [exec] (stardox) {urxvt -e sh -c 'stardox ; bash'}
           [exec] (striker) {urxvt -e sh -c 'striker ; bash'}
@@ -5803,17 +5981,12 @@
           [exec] (swamp) {urxvt -e sh -c 'swamp -h ; bash'}
           [exec] (swarm) {urxvt -e sh -c 'swarm -h ; bash'}
           [exec] (syborg) {urxvt -e sh -c 'syborg -h ; bash'}
-          [exec] (csysdig) {urxvt -e sh -c 'csysdig ; bash'}
-          [exec] (sysdig) {urxvt -e sh -c 'sysdig -h ; bash'}
-          [exec] (sysdig-probe-loader) {urxvt -e sh -c 'sysdig-probe-loader ; bash'}
-          [exec] (csysdig) {urxvt -e sh -c 'csysdig ; bash'}
-          [exec] (sysdig) {urxvt -e sh -c 'sysdig -h ; bash'}
-          [exec] (sysdig-probe-loader) {urxvt -e sh -c 'sysdig-probe-loader ; bash'}
           [exec] (easywin) {urxvt -e sh -c 'easywin -h ; bash'}
           [exec] (letmein) {urxvt -e sh -c 'letmein -h ; bash'}
           [exec] (netdork) {urxvt -e sh -c 'netdork -h ; bash'}
           [exec] (poriluk) {urxvt -e sh -c 'poriluk -h ; bash'}
           [exec] (seitan) {urxvt -e sh -c 'seitan -h ; bash'}
+          [exec] (teamsuserenum) {urxvt -e sh -c 'teamsuserenum -h ; bash'}
           [exec] (address6) {urxvt -e sh -c 'address6 ; bash'}
           [exec] (alive6) {urxvt -e sh -c 'alive6 ; bash'}
           [exec] (connect6) {urxvt -e sh -c 'connect6 ; bash'}
@@ -5944,6 +6117,7 @@
           [exec] (theharvester) {urxvt -e sh -c 'theharvester ; bash'}
           [exec] (tinfoleak) {urxvt -e sh -c 'tinfoleak ; bash'}
           [exec] (tinfoleak2) {urxvt -e sh -c 'tinfoleak2 -h ; bash'}
+          [exec] (token-hunter) {urxvt -e sh -c 'token-hunter -h ; bash'}
           [exec] (traceroute) {urxvt -e sh -c 'traceroute --help ; bash'}
           [exec] (trape) {urxvt -e sh -c 'trape -h ; bash'}
           [exec] (treasure) {urxvt -e sh -c 'treasure ; bash'}
@@ -5955,6 +6129,7 @@
           [exec] (udork) {urxvt -e sh -c 'udork -h ; bash'}
           [exec] (uhoh365) {urxvt -e sh -c 'uhoh365 -h ; bash'}
           [exec] (ufb-scraper) {urxvt -e sh -c 'ufb-scraper ; bash'}
+          [exec] (uncover) {urxvt -e sh -c 'uncover -h ; bash'}
           [exec] (urlextractor) {urxvt -e sh -c 'urlextractor ; bash'}
           [exec] (userrecon) {urxvt -e sh -c 'userrecon ; bash'}
           [exec] (v3n0m) {urxvt -e sh -c 'v3n0m -h ; bash'}
@@ -6004,6 +6179,9 @@
           [exec] (BARFgadgets) {urxvt -e sh -c 'BARFgadgets -h ; bash'}
           [exec] (beebug) {urxvt -e sh -c 'beebug -h ; bash'}
           [exec] (binaryninja-demo) {urxvt -e sh -c 'binaryninja-demo ; bash'}
+          [exec] (lldb) {urxvt -e sh -c 'lldb ; bash'}
+          [exec] (lldb-argdumper) {urxvt -e sh -c 'lldb-argdumper ; bash'}
+          [exec] (lldb-server) {urxvt -e sh -c 'lldb-server ; bash'}
           [exec] (bindead) {urxvt -e sh -c 'bindead ; bash'}
           [exec] (bindiff) {urxvt -e sh -c 'bindiff ; bash'}
           [exec] (binexport2dump) {urxvt -e sh -c 'binexport2dump ; bash'}
@@ -6011,12 +6189,11 @@
           [exec] (binwalk) {urxvt -e sh -c 'binwalk ; bash'}
           [exec] (bsdiff) {urxvt -e sh -c 'bsdiff ; bash'}
           [exec] (bspatch) {urxvt -e sh -c 'bspatch ; bash'}
-          [exec] (bsdiff) {urxvt -e sh -c 'bsdiff ; bash'}
-          [exec] (bspatch) {urxvt -e sh -c 'bspatch ; bash'}
           [exec] (bytecode-viewer) {urxvt -e sh -c 'bytecode-viewer ; bash'}
           [exec] (cafebabe) {urxvt -e sh -c 'cafebabe ; bash'}
           [exec] (cstool) {urxvt -e sh -c 'cstool ; bash'}
           [exec] (suture) {urxvt -e sh -c 'suture ; bash'}
+          [exec] (cpp2il) {urxvt -e sh -c 'cpp2il -h ; bash'}
           [exec] (damm) {urxvt -e sh -c 'damm -h ; bash'}
           [exec] (die) {urxvt -e sh -c 'die ; bash'}
           [exec] (diec) {urxvt -e sh -c 'diec ; bash'}
@@ -6103,6 +6280,7 @@
           [exec] (gostringsr2) {urxvt -e sh -c 'gostringsr2 -h ; bash'}
           [exec] (hopper) {urxvt -e sh -c 'hopper ; bash'}
           [exec] (iaito) {urxvt -e sh -c 'iaito ; bash'}
+          [exec] (ida64) {urxvt -e sh -c 'ida64 ; bash'}
           [exec] (innounp) {urxvt -e sh -c 'innounp ; bash'}
           [exec] (jad) {urxvt -e sh -c 'jad -h ; bash'}
           [exec] (jadx) {urxvt -e sh -c 'jadx -h ; bash'}
@@ -6185,22 +6363,31 @@
           [exec] (pwntools-update) {urxvt -e sh -c 'pwntools-update -h ; bash'}
           [exec] (version) {urxvt -e sh -c 'version ; bash'}
           [exec] (frida) {urxvt -e sh -c 'frida -h ; bash'}
+          [exec] (frida-compile) {urxvt -e sh -c 'frida-compile ; bash'}
           [exec] (frida-create) {urxvt -e sh -c 'frida-create ; bash'}
           [exec] (frida-discover) {urxvt -e sh -c 'frida-discover -h ; bash'}
           [exec] (frida-join) {urxvt -e sh -c 'frida-join ; bash'}
           [exec] (frida-kill) {urxvt -e sh -c 'frida-kill -h ; bash'}
+          [exec] (frida-ls) {urxvt -e sh -c 'frida-ls ; bash'}
           [exec] (frida-ls-devices) {urxvt -e sh -c 'frida-ls-devices -h ; bash'}
+          [exec] (frida-pull) {urxvt -e sh -c 'frida-pull ; bash'}
+          [exec] (frida-rm) {urxvt -e sh -c 'frida-rm ; bash'}
           [exec] (frida-trace) {urxvt -e sh -c 'frida-trace -h ; bash'}
           [exec] (js-beautify) {urxvt -e sh -c 'js-beautify -h ; bash'}
+          [exec] (frida-compile2) {urxvt -e sh -c 'frida-compile2 ; bash'}
           [exec] (frida-create2) {urxvt -e sh -c 'frida-create2 ; bash'}
           [exec] (frida-discover2) {urxvt -e sh -c 'frida-discover2 ; bash'}
           [exec] (frida-join2) {urxvt -e sh -c 'frida-join2 ; bash'}
           [exec] (frida-kill2) {urxvt -e sh -c 'frida-kill2 ; bash'}
           [exec] (frida-ls-devices2) {urxvt -e sh -c 'frida-ls-devices2 ; bash'}
+          [exec] (frida-ls2) {urxvt -e sh -c 'frida-ls2 ; bash'}
+          [exec] (frida-pull2) {urxvt -e sh -c 'frida-pull2 ; bash'}
+          [exec] (frida-rm2) {urxvt -e sh -c 'frida-rm2 ; bash'}
           [exec] (frida-trace2) {urxvt -e sh -c 'frida-trace2 ; bash'}
           [exec] (frida2) {urxvt -e sh -c 'frida2 ; bash'}
           [exec] (js-beautify2) {urxvt -e sh -c 'js-beautify2 -h ; bash'}
           [exec] (quickscope) {urxvt -e sh -c 'quickscope -h ; bash'}
+          [exec] (sleighc) {urxvt -e sh -c 'sleighc ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -6212,8 +6399,8 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (r2) {urxvt -e sh -c 'r2 -h ; bash'}
           [exec] (r2agent) {urxvt -e sh -c 'r2agent -h ; bash'}
           [exec] (r2pm) {urxvt -e sh -c 'r2pm ; bash'}
@@ -6225,8 +6412,8 @@
           [exec] (rarun2) {urxvt -e sh -c 'rarun2 -h ; bash'}
           [exec] (rasign2) {urxvt -e sh -c 'rasign2 ; bash'}
           [exec] (rasm2) {urxvt -e sh -c 'rasm2 -h ; bash'}
+          [exec] (ravc2) {urxvt -e sh -c 'ravc2 ; bash'}
           [exec] (rax2) {urxvt -e sh -c 'rax2 ; bash'}
-          [exec] (rvc2) {urxvt -e sh -c 'rvc2 ; bash'}
           [exec] (recaf) {urxvt -e sh -c 'recaf ; bash'}
           [exec] (recstudio) {urxvt -e sh -c 'recstudio ; bash'}
           [exec] (redasm) {urxvt -e sh -c 'redasm ; bash'}
@@ -6245,6 +6432,7 @@
           [exec] (retdec-unpacker) {urxvt -e sh -c 'retdec-unpacker -h ; bash'}
           [exec] (retdec-utils) {urxvt -e sh -c 'retdec-utils -h ; bash'}
           [exec] (retdec-yarac) {urxvt -e sh -c 'retdec-yarac ; bash'}
+          [exec] (cutter) {urxvt -e sh -c 'cutter ; bash'}
           [exec] (scanmem) {urxvt -e sh -c 'scanmem -h ; bash'}
           [exec] (serializationdumper) {urxvt -e sh -c 'serializationdumper ; bash'}
           [exec] (shed) {urxvt -e sh -c 'shed ; bash'}
@@ -6271,6 +6459,7 @@
           [exec] (0d1n_view) {urxvt -e sh -c '0d1n_view ; bash'}
           [exec] (0trace) {urxvt -e sh -c '0trace ; bash'}
           [exec] (a2sv) {urxvt -e sh -c 'a2sv -h ; bash'}
+          [exec] (adenum) {urxvt -e sh -c 'adenum -h ; bash'}
           [exec] (adminpagefinder) {urxvt -e sh -c 'adminpagefinder -h ; bash'}
           [exec] (admsnmp) {urxvt -e sh -c 'admsnmp ; bash'}
           [exec] (allthevhosts) {urxvt -e sh -c 'allthevhosts ; bash'}
@@ -6278,6 +6467,7 @@
           [exec] (androidsniffer) {urxvt -e sh -c 'androidsniffer -h ; bash'}
           [exec] (anti-xss) {urxvt -e sh -c 'anti-xss -h ; bash'}
           [exec] (apache-users) {urxvt -e sh -c 'apache-users ; bash'}
+          [exec] (apachetomcatscanner) {urxvt -e sh -c 'apachetomcatscanner -h ; bash'}
           [exec] (apnbf) {urxvt -e sh -c 'apnbf -h ; bash'}
           [exec] (appmon) {urxvt -e sh -c 'appmon ; bash'}
           [exec] (arjun) {urxvt -e sh -c 'arjun -h ; bash'}
@@ -6338,6 +6528,7 @@
           [exec] (maltego) {urxvt -e sh -c 'maltego -h ; bash'}
           [exec] (maltego.ico) {urxvt -e sh -c 'maltego.ico ; bash'}
           [exec] (cecster) {urxvt -e sh -c 'cecster -h ; bash'}
+          [exec] (cero) {urxvt -e sh -c 'cero -h ; bash'}
           [exec] (changeme) {urxvt -e sh -c 'changeme -h ; bash'}
           [exec] (chaosmap) {urxvt -e sh -c 'chaosmap ; bash'}
           [exec] (checksec) {urxvt -e sh -c 'checksec --help ; bash'}
@@ -6354,20 +6545,32 @@
           [exec] (ciscos) {urxvt -e sh -c 'ciscos ; bash'}
           [exec] (clair) {urxvt -e sh -c 'clair -h ; bash'}
           [exec] (clairctl) {urxvt -e sh -c 'clairctl ; bash'}
+          [exec] (clairvoyance) {urxvt -e sh -c 'clairvoyance -h ; bash'}
           [exec] (climber) {urxvt -e sh -c 'climber -h ; bash'}
           [exec] (cloudflare-enum) {urxvt -e sh -c 'cloudflare-enum ; bash'}
           [exec] (cloudmare) {urxvt -e sh -c 'cloudmare -h ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
           [exec] (zuul-es5.yml) {urxvt -e sh -c 'zuul-es5.yml ; bash'}
           [exec] (zuul-es6.yml) {urxvt -e sh -c 'zuul-es6.yml ; bash'}
-          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (he) {urxvt -e sh -c 'he ; bash'}
           [exec] (jsesc) {urxvt -e sh -c 'jsesc ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (_mocha) {urxvt -e sh -c '_mocha ; bash'}
           [exec] (mocha) {urxvt -e sh -c 'mocha ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
           [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (resolve) {urxvt -e sh -c 'resolve ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
+          [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (vm2) {urxvt -e sh -c 'vm2 ; bash'}
+          [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
           [exec] (which) {urxvt -e sh -c 'which ; bash'}
+          [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
           [exec] (cloudunflare) {urxvt -e sh -c 'cloudunflare ; bash'}
           [exec] (cms-few) {urxvt -e sh -c 'cms-few -h ; bash'}
           [exec] (cmsfuzz) {urxvt -e sh -c 'cmsfuzz ; bash'}
@@ -6406,6 +6609,7 @@
           [exec] (dcrawl) {urxvt -e sh -c 'dcrawl -h ; bash'}
           [exec] (deblaze) {urxvt -e sh -c 'deblaze ; bash'}
           [exec] (delldrac) {urxvt -e sh -c 'delldrac -h ; bash'}
+          [exec] (dependency-check) {urxvt -e sh -c 'dependency-check ; bash'}
           [exec] (dhcpig) {urxvt -e sh -c 'dhcpig -h ; bash'}
           [exec] (html2dic) {urxvt -e sh -c 'html2dic ; bash'}
           [exec] (dirhunt) {urxvt -e sh -c 'dirhunt --help ; bash'}
@@ -6413,11 +6617,13 @@
           [exec] (dirscraper) {urxvt -e sh -c 'dirscraper -h ; bash'}
           [exec] (dirsearch) {urxvt -e sh -c 'dirsearch -h ; bash'}
           [exec] (dirstalk) {urxvt -e sh -c 'dirstalk -h ; bash'}
+          [exec] (dive) {urxvt -e sh -c 'dive -h ; bash'}
           [exec] (dmitry) {urxvt -e sh -c 'dmitry ; bash'}
           [exec] (dns2geoip) {urxvt -e sh -c 'dns2geoip -h ; bash'}
           [exec] (dnsa-ng) {urxvt -e sh -c 'dnsa-ng ; bash'}
           [exec] (dnsbf) {urxvt -e sh -c 'dnsbf ; bash'}
           [exec] (dnsbrute) {urxvt -e sh -c 'dnsbrute -h ; bash'}
+          [exec] (dnscan) {urxvt -e sh -c 'dnscan -h ; bash'}
           [exec] (dnsenum) {urxvt -e sh -c 'dnsenum ; bash'}
           [exec] (dnsgoblin) {urxvt -e sh -c 'dnsgoblin ; bash'}
           [exec] (dnspredict) {urxvt -e sh -c 'dnspredict --help ; bash'}
@@ -6425,6 +6631,7 @@
           [exec] (dnstwist) {urxvt -e sh -c 'dnstwist -h ; bash'}
           [exec] (dnswalk) {urxvt -e sh -c 'dnswalk --help ; bash'}
           [exec] (dockerscan) {urxvt -e sh -c 'dockerscan -h ; bash'}
+          [exec] (dontgo403) {urxvt -e sh -c 'dontgo403 -h ; bash'}
           [exec] (dorkbot) {urxvt -e sh -c 'dorkbot -h ; bash'}
           [exec] (dorkme) {urxvt -e sh -c 'dorkme -h ; bash'}
           [exec] (driftnet) {urxvt -e sh -c 'driftnet -h ; bash'}
@@ -6458,7 +6665,6 @@
           [exec] (evine) {urxvt -e sh -c 'evine -h ; bash'}
           [exec] (ssrf-search) {urxvt -e sh -c 'ssrf-search -h ; bash'}
           [exec] (faraday-manage) {urxvt -e sh -c 'faraday-manage ; bash'}
-          [exec] (faraday-searcher) {urxvt -e sh -c 'faraday-searcher ; bash'}
           [exec] (faraday-server) {urxvt -e sh -c 'faraday-server ; bash'}
           [exec] (fernmelder) {urxvt -e sh -c 'fernmelder -h ; bash'}
           [exec] (feroxbuster) {urxvt -e sh -c 'feroxbuster -h ; bash'}
@@ -6470,9 +6676,11 @@
           [exec] (firewalk) {urxvt -e sh -c 'firewalk -h ; bash'}
           [exec] (flunym0us) {urxvt -e sh -c 'flunym0us ; bash'}
           [exec] (forkingportscanner) {urxvt -e sh -c 'forkingportscanner ; bash'}
+          [exec] (fortiscan) {urxvt -e sh -c 'fortiscan -h ; bash'}
           [exec] (fping) {urxvt -e sh -c 'fping -h ; bash'}
           [exec] (fs-nyarl) {urxvt -e sh -c 'fs-nyarl -h ; bash'}
           [exec] (chaosreader0.94) {urxvt -e sh -c 'chaosreader0.94 ; bash'}
+          [exec] (fscan) {urxvt -e sh -c 'fscan -h ; bash'}
           [exec] (fsnoop) {urxvt -e sh -c 'fsnoop -h ; bash'}
           [exec] (ftp-scanner) {urxvt -e sh -c 'ftp-scanner -h ; bash'}
           [exec] (ftp-spider) {urxvt -e sh -c 'ftp-spider -h ; bash'}
@@ -6493,16 +6701,11 @@
           [exec] (gospider) {urxvt -e sh -c 'gospider -h ; bash'}
           [exec] (gpredict) {urxvt -e sh -c 'gpredict -h ; bash'}
           [exec] (grabbb) {urxvt -e sh -c 'grabbb ; bash'}
-          [exec] (gsad) {urxvt -e sh -c 'gsad -h ; bash'}
+          [exec] (graphinder) {urxvt -e sh -c 'graphinder -h ; bash'}
+          [exec] (graphql-cop) {urxvt -e sh -c 'graphql-cop -h ; bash'}
           [exec] (grepforrfi) {urxvt -e sh -c 'grepforrfi ; bash'}
           [exec] (grype) {urxvt -e sh -c 'grype -h ; bash'}
           [exec] (gtp-scan) {urxvt -e sh -c 'gtp-scan -h ; bash'}
-          [exec] (database-statistics-sqlite) {urxvt -e sh -c 'database-statistics-sqlite ; bash'}
-          [exec] (greenbone-certdata-sync) {urxvt -e sh -c 'greenbone-certdata-sync -h ; bash'}
-          [exec] (greenbone-scapdata-sync) {urxvt -e sh -c 'greenbone-scapdata-sync -h ; bash'}
-          [exec] (gvm-manage-certs) {urxvt -e sh -c 'gvm-manage-certs ; bash'}
-          [exec] (gvm-migrate-to-postgres) {urxvt -e sh -c 'gvm-migrate-to-postgres ; bash'}
-          [exec] (gvm-portnames-update) {urxvt -e sh -c 'gvm-portnames-update ; bash'}
           [exec] (gwcheck) {urxvt -e sh -c 'gwcheck -h ; bash'}
           [exec] (h2buster) {urxvt -e sh -c 'h2buster ; bash'}
           [exec] (h2t) {urxvt -e sh -c 'h2t -h ; bash'}
@@ -6585,11 +6788,12 @@
           [exec] (hsecscan) {urxvt -e sh -c 'hsecscan -h ; bash'}
           [exec] (htcap) {urxvt -e sh -c 'htcap -h ; bash'}
           [exec] (http-enum) {urxvt -e sh -c 'http-enum -h ; bash'}
+          [exec] (http2smugl) {urxvt -e sh -c 'http2smugl -h ; bash'}
           [exec] (httpextract) {urxvt -e sh -c 'httpextract -h ; bash'}
           [exec] (httpforge) {urxvt -e sh -c 'httpforge -h ; bash'}
           [exec] (httpgrep) {urxvt -e sh -c 'httpgrep -H ; bash'}
           [exec] (httprobe) {urxvt -e sh -c 'httprobe -h ; bash'}
-          [exec] (httpx) {urxvt -e sh -c 'httpx -h ; bash'}
+          [exec] (httpx-pd) {urxvt -e sh -c 'httpx-pd ; bash'}
           [exec] (hawk) {urxvt -e sh -c 'hawk --help ; bash'}
           [exec] (hwk-eagle) {urxvt -e sh -c 'hwk-eagle --help ; bash'}
           [exec] (iax-scan-hosts) {urxvt -e sh -c 'iax-scan-hosts -h ; bash'}
@@ -6632,14 +6836,16 @@
           [exec] (jok3r) {urxvt -e sh -c 'jok3r -h ; bash'}
           [exec] (joomlascan) {urxvt -e sh -c 'joomlascan -h ; bash'}
           [exec] (joomlavs) {urxvt -e sh -c 'joomlavs ; bash'}
+          [exec] (juumla) {urxvt -e sh -c 'juumla -h ; bash'}
           [exec] (kadimus) {urxvt -e sh -c 'kadimus -h ; bash'}
           [exec] (kal) {urxvt -e sh -c 'kal -h ; bash'}
-          [exec] (katana-ktf.gui) {urxvt -e sh -c 'katana-ktf.gui ; bash'}
-          [exec] (katana-ktfconsole) {urxvt -e sh -c 'katana-ktfconsole ; bash'}
-          [exec] (katana-ktfktf) {urxvt -e sh -c 'katana-ktfktf ; bash'}
-          [exec] (katana-ktflinker) {urxvt -e sh -c 'katana-ktflinker ; bash'}
-          [exec] (katana-ktfrun) {urxvt -e sh -c 'katana-ktfrun ; bash'}
-          [exec] (katana-ktfupdate) {urxvt -e sh -c 'katana-ktfupdate ; bash'}
+          [exec] (katana-framework-ktf.gui) {urxvt -e sh -c 'katana-framework-ktf.gui ; bash'}
+          [exec] (katana-framework-ktfconsole) {urxvt -e sh -c 'katana-framework-ktfconsole ; bash'}
+          [exec] (katana-framework-ktfktf) {urxvt -e sh -c 'katana-framework-ktfktf ; bash'}
+          [exec] (katana-framework-ktflinker) {urxvt -e sh -c 'katana-framework-ktflinker ; bash'}
+          [exec] (katana-framework-ktfrun) {urxvt -e sh -c 'katana-framework-ktfrun ; bash'}
+          [exec] (katana-framework-ktfupdate) {urxvt -e sh -c 'katana-framework-ktfupdate ; bash'}
+          [exec] (katana) {urxvt -e sh -c 'katana -h ; bash'}
           [exec] (kiterunner) {urxvt -e sh -c 'kiterunner -h ; bash'}
           [exec] (knock) {urxvt -e sh -c 'knock ; bash'}
           [exec] (knxmap) {urxvt -e sh -c 'knxmap -h ; bash'}
@@ -6664,7 +6870,11 @@
           [exec] (list-urls) {urxvt -e sh -c 'list-urls ; bash'}
           [exec] (lbb.db) {urxvt -e sh -c 'lbb.db ; bash'}
           [exec] (littleblackbox) {urxvt -e sh -c 'littleblackbox -h ; bash'}
+          [exec] (log4j-bypass) {urxvt -e sh -c 'log4j-bypass -h ; bash'}
+          [exec] (log4j-scan) {urxvt -e sh -c 'log4j-scan -h ; bash'}
+          [exec] (logmepwn) {urxvt -e sh -c 'logmepwn -h ; bash'}
           [exec] (loki-scanner) {urxvt -e sh -c 'loki-scanner -h ; bash'}
+          [exec] (lorsrf) {urxvt -e sh -c 'lorsrf -h ; bash'}
           [exec] (lotophagi) {urxvt -e sh -c 'lotophagi -h ; bash'}
           [exec] (lte-cell-scanner) {urxvt -e sh -c 'lte-cell-scanner --help ; bash'}
           [exec] (lulzbuster) {urxvt -e sh -c 'lulzbuster -H ; bash'}
@@ -6675,6 +6885,7 @@
           [exec] (maligno-srv) {urxvt -e sh -c 'maligno-srv ; bash'}
           [exec] (maltego) {urxvt -e sh -c 'maltego -h ; bash'}
           [exec] (maltego.ico) {urxvt -e sh -c 'maltego.ico ; bash'}
+          [exec] (manspider) {urxvt -e sh -c 'manspider -h ; bash'}
           [exec] (maryam) {urxvt -e sh -c 'maryam ; bash'}
           [exec] (massbleed) {urxvt -e sh -c 'massbleed ; bash'}
           [exec] (masscan) {urxvt -e sh -c 'masscan --help ; bash'}
@@ -6707,6 +6918,7 @@
           [exec] (mptcp-fragmenter) {urxvt -e sh -c 'mptcp-fragmenter ; bash'}
           [exec] (mptcp-scanner) {urxvt -e sh -c 'mptcp-scanner ; bash'}
           [exec] (mqtt-pwn) {urxvt -e sh -c 'mqtt-pwn -h ; bash'}
+          [exec] (msmailprobe) {urxvt -e sh -c 'msmailprobe -h ; bash'}
           [exec] (mssqlscan) {urxvt -e sh -c 'mssqlscan -h ; bash'}
           [exec] (multiscanner) {urxvt -e sh -c 'multiscanner -h ; bash'}
           [exec] (multiscanner-api) {urxvt -e sh -c 'multiscanner-api ; bash'}
@@ -6722,6 +6934,7 @@
           [exec] (nbtscan) {urxvt -e sh -c 'nbtscan -h ; bash'}
           [exec] (netreconn) {urxvt -e sh -c 'netreconn -h ; bash'}
           [exec] (netscan) {urxvt -e sh -c 'netscan -h ; bash'}
+          [exec] (nettacker) {urxvt -e sh -c 'nettacker -h ; bash'}
           [exec] (netz) {urxvt -e sh -c 'netz -h ; bash'}
           [exec] (nextnet) {urxvt -e sh -c 'nextnet -h ; bash'}
           [exec] (nikto) {urxvt -e sh -c 'nikto -H ; bash'}
@@ -6740,7 +6953,6 @@
           [exec] (n3map) {urxvt -e sh -c 'n3map -h ; bash'}
           [exec] (n3map-johnify) {urxvt -e sh -c 'n3map-johnify ; bash'}
           [exec] (n3map-nsec3-lookup) {urxvt -e sh -c 'n3map-nsec3-lookup ; bash'}
-          [exec] (nsia) {urxvt -e sh -c 'nsia -h ; bash'}
           [exec] (nsoq) {urxvt -e sh -c 'nsoq ; bash'}
           [exec] (ntlm-challenger) {urxvt -e sh -c 'ntlm-challenger -h ; bash'}
           [exec] (ntlm-scanner) {urxvt -e sh -c 'ntlm-scanner -h ; bash'}
@@ -6761,13 +6973,14 @@
           [exec] (oscap-chroot) {urxvt -e sh -c 'oscap-chroot -h ; bash'}
           [exec] (oscap-docker) {urxvt -e sh -c 'oscap-docker -h ; bash'}
           [exec] (oscap-podman) {urxvt -e sh -c 'oscap-podman -h ; bash'}
+          [exec] (oscap-remediate-offline) {urxvt -e sh -c 'oscap-remediate-offline ; bash'}
           [exec] (oscap-run-sce-script) {urxvt -e sh -c 'oscap-run-sce-script ; bash'}
           [exec] (oscap-vm) {urxvt -e sh -c 'oscap-vm -h ; bash'}
           [exec] (scap-as-rpm) {urxvt -e sh -c 'scap-as-rpm -h ; bash'}
           [exec] (greenbone-nvt-sync) {urxvt -e sh -c 'greenbone-nvt-sync -h ; bash'}
+          [exec] (openvas) {urxvt -e sh -c 'openvas ; bash'}
           [exec] (openvas-nasl) {urxvt -e sh -c 'openvas-nasl ; bash'}
           [exec] (openvas-nasl-lint) {urxvt -e sh -c 'openvas-nasl-lint ; bash'}
-          [exec] (openvassd) {urxvt -e sh -c 'openvassd -h ; bash'}
           [exec] (owasp-bywaf) {urxvt -e sh -c 'owasp-bywaf -h ; bash'}
           [exec] (owtf) {urxvt -e sh -c 'owtf ; bash'}
           [exec] (pagodo) {urxvt -e sh -c 'pagodo -h ; bash'}
@@ -6781,9 +6994,11 @@
           [exec] (pbscan) {urxvt -e sh -c 'pbscan -h ; bash'}
           [exec] (pcredz) {urxvt -e sh -c 'pcredz -h ; bash'}
           [exec] (linpeas) {urxvt -e sh -c 'linpeas ; bash'}
+          [exec] (linpeas_fat) {urxvt -e sh -c 'linpeas_fat ; bash'}
           [exec] (pentbox) {urxvt -e sh -c 'pentbox ; bash'}
           [exec] (pentestly) {urxvt -e sh -c 'pentestly -h ; bash'}
           [exec] (phonia) {urxvt -e sh -c 'phonia -h ; bash'}
+          [exec] (php-malware-finder) {urxvt -e sh -c 'php-malware-finder -h ; bash'}
           [exec] (plcscan) {urxvt -e sh -c 'plcscan -h ; bash'}
           [exec] (pnscan) {urxvt -e sh -c 'pnscan -h ; bash'}
           [exec] (t_listen) {urxvt -e sh -c 't_listen ; bash'}
@@ -6791,6 +7006,7 @@
           [exec] (postenum) {urxvt -e sh -c 'postenum -h ; bash'}
           [exec] (pown) {urxvt -e sh -c 'pown ; bash'}
           [exec] (ppfuzz) {urxvt -e sh -c 'ppfuzz -h ; bash'}
+          [exec] (ppmap) {urxvt -e sh -c 'ppmap -h ; bash'}
           [exec] (prads) {urxvt -e sh -c 'prads -h ; bash'}
           [exec] (prads-asset-report) {urxvt -e sh -c 'prads-asset-report ; bash'}
           [exec] (prads2snort) {urxvt -e sh -c 'prads2snort ; bash'}
@@ -6800,12 +7016,26 @@
           [exec] (prowler) {urxvt -e sh -c 'prowler -h ; bash'}
           [exec] (proxmark) {urxvt -e sh -c 'proxmark ; bash'}
           [exec] (proxmark-fpga-compress) {urxvt -e sh -c 'proxmark-fpga-compress ; bash'}
+          [exec] (mf_nonce_brute) {urxvt -e sh -c 'mf_nonce_brute ; bash'}
+          [exec] (mf_trace_brute) {urxvt -e sh -c 'mf_trace_brute ; bash'}
+          [exec] (mfd_aes_brute) {urxvt -e sh -c 'mfd_aes_brute ; bash'}
+          [exec] (mfd_multi_brute) {urxvt -e sh -c 'mfd_multi_brute ; bash'}
+          [exec] (pm3) {urxvt -e sh -c 'pm3 -h ; bash'}
+          [exec] (proxmark3) {urxvt -e sh -c 'proxmark3 -h ; bash'}
+          [exec] (mf_nonce_brute) {urxvt -e sh -c 'mf_nonce_brute ; bash'}
+          [exec] (mf_trace_brute) {urxvt -e sh -c 'mf_trace_brute ; bash'}
+          [exec] (mfd_aes_brute) {urxvt -e sh -c 'mfd_aes_brute ; bash'}
+          [exec] (mfd_multi_brute) {urxvt -e sh -c 'mfd_multi_brute ; bash'}
+          [exec] (pm3) {urxvt -e sh -c 'pm3 -h ; bash'}
+          [exec] (proxmark3) {urxvt -e sh -c 'proxmark3 -h ; bash'}
+          [exec] (proxybroker) {urxvt -e sh -c 'proxybroker -h ; bash'}
           [exec] (proxycheck) {urxvt -e sh -c 'proxycheck -h ; bash'}
           [exec] (proxyp) {urxvt -e sh -c 'proxyp -h ; bash'}
           [exec] (proxyscan) {urxvt -e sh -c 'proxyscan -h ; bash'}
           [exec] (ptf) {urxvt -e sh -c 'ptf ; bash'}
           [exec] (pureblood) {urxvt -e sh -c 'pureblood ; bash'}
           [exec] (pwncat) {urxvt -e sh -c 'pwncat cd /usr/share/windows/pwncat ; ls ; bash'}
+          [exec] (pwndora) {urxvt -e sh -c 'pwndora -h ; bash'}
           [exec] (pyersinia) {urxvt -e sh -c 'pyersinia -h ; bash'}
           [exec] (pyfiscan) {urxvt -e sh -c 'pyfiscan -h ; bash'}
           [exec] (pyssltest) {urxvt -e sh -c 'pyssltest -h ; bash'}
@@ -6816,7 +7046,6 @@
           [exec] (ldd2bloodhound2) {urxvt -e sh -c 'ldd2bloodhound2 -h ; bash'}
           [exec] (ldd2pretty2) {urxvt -e sh -c 'ldd2pretty2 ; bash'}
           [exec] (shodan2) {urxvt -e sh -c 'shodan2 ; bash'}
-          [exec] (webtech2) {urxvt -e sh -c 'webtech2 ; bash'}
           [exec] (qark) {urxvt -e sh -c 'qark ; bash'}
           [exec] (quickrecon) {urxvt -e sh -c 'quickrecon -h ; bash'}
           [exec] (raccoon) {urxvt -e sh -c 'raccoon --help ; bash'}
@@ -6833,8 +7062,7 @@
           [exec] (redfang) {urxvt -e sh -c 'redfang --help ; bash'}
           [exec] (relay-scanner) {urxvt -e sh -c 'relay-scanner -help ; bash'}
           [exec] (responder) {urxvt -e sh -c 'responder -h ; bash'}
-          [exec] (responder-dhcp) {urxvt -e sh -c 'responder-dhcp ; bash'}
-          [exec] (responder-dhcp-auto) {urxvt -e sh -c 'responder-dhcp-auto ; bash'}
+          [exec] (responder-dnsupdate) {urxvt -e sh -c 'responder-dnsupdate ; bash'}
           [exec] (responder-findsqlsrv) {urxvt -e sh -c 'responder-findsqlsrv ; bash'}
           [exec] (responder-icmp-redirect) {urxvt -e sh -c 'responder-icmp-redirect ; bash'}
           [exec] (responder-multirelay) {urxvt -e sh -c 'responder-multirelay ; bash'}
@@ -6898,6 +7126,7 @@
           [exec] (of-switch) {urxvt -e sh -c 'of-switch -h ; bash'}
           [exec] (sdnpwn) {urxvt -e sh -c 'sdnpwn ; bash'}
           [exec] (seat) {urxvt -e sh -c 'seat -h ; bash'}
+          [exec] (second-order) {urxvt -e sh -c 'second-order -h ; bash'}
           [exec] (secscan) {urxvt -e sh -c 'secscan -h ; bash'}
           [exec] (see-surf) {urxvt -e sh -c 'see-surf -h ; bash'}
           [exec] (shareenum) {urxvt -e sh -c 'shareenum ; bash'}
@@ -7004,6 +7233,7 @@
           [exec] (smblist) {urxvt -e sh -c 'smblist -h ; bash'}
           [exec] (smbmap) {urxvt -e sh -c 'smbmap -h ; bash'}
           [exec] (smbspider) {urxvt -e sh -c 'smbspider -h ; bash'}
+          [exec] (smbsr) {urxvt -e sh -c 'smbsr -h ; bash'}
           [exec] (smod) {urxvt -e sh -c 'smod ; bash'}
           [exec] (smtp-test) {urxvt -e sh -c 'smtp-test -h ; bash'}
           [exec] (smtp-user-enum) {urxvt -e sh -c 'smtp-user-enum -h ; bash'}
@@ -7037,6 +7267,10 @@
           [exec] (sslscan2) {urxvt -e sh -c 'sslscan2 -h ; bash'}
           [exec] (sslyze) {urxvt -e sh -c 'sslyze -h ; bash'}
           [exec] (ssrfmap) {urxvt -e sh -c 'ssrfmap -h ; bash'}
+          [exec] (stacs) {urxvt -e sh -c 'stacs -h ; bash'}
+          [exec] (stews-discovery) {urxvt -e sh -c 'stews-discovery -h ; bash'}
+          [exec] (stews-fingerprint) {urxvt -e sh -c 'stews-fingerprint -h ; bash'}
+          [exec] (stews-vuln-detect) {urxvt -e sh -c 'stews-vuln-detect ; bash'}
           [exec] (stig-viewer) {urxvt -e sh -c 'stig-viewer ; bash'}
           [exec] (storm-ring) {urxvt -e sh -c 'storm-ring -h ; bash'}
           [exec] (striker) {urxvt -e sh -c 'striker ; bash'}
@@ -7051,7 +7285,13 @@
           [exec] (swarm) {urxvt -e sh -c 'swarm -h ; bash'}
           [exec] (sslog) {urxvt -e sh -c 'sslog -h ; bash'}
           [exec] (synscan) {urxvt -e sh -c 'synscan -h ; bash'}
-          [exec] (tachyon) {urxvt -e sh -c 'tachyon ; bash'}
+          [exec] (csysdig) {urxvt -e sh -c 'csysdig ; bash'}
+          [exec] (scap-driver-loader) {urxvt -e sh -c 'scap-driver-loader ; bash'}
+          [exec] (sysdig) {urxvt -e sh -c 'sysdig -h ; bash'}
+          [exec] (csysdig) {urxvt -e sh -c 'csysdig ; bash'}
+          [exec] (scap-driver-loader) {urxvt -e sh -c 'scap-driver-loader ; bash'}
+          [exec] (sysdig) {urxvt -e sh -c 'sysdig -h ; bash'}
+          [exec] (tachyon-scanner) {urxvt -e sh -c 'tachyon-scanner ; bash'}
           [exec] (easywin) {urxvt -e sh -c 'easywin -h ; bash'}
           [exec] (letmein) {urxvt -e sh -c 'letmein -h ; bash'}
           [exec] (netdork) {urxvt -e sh -c 'netdork -h ; bash'}
@@ -7191,12 +7431,14 @@
           [exec] (tlsenum) {urxvt -e sh -c 'tlsenum -h ; bash'}
           [exec] (tlspretense) {urxvt -e sh -c 'tlspretense ; bash'}
           [exec] (tlssled) {urxvt -e sh -c 'tlssled -h ; bash'}
+          [exec] (tlsx) {urxvt -e sh -c 'tlsx -h ; bash'}
           [exec] (topera) {urxvt -e sh -c 'topera -h ; bash'}
           [exec] (torcrawl) {urxvt -e sh -c 'torcrawl -h ; bash'}
           [exec] (traxss) {urxvt -e sh -c 'traxss -h ; bash'}
           [exec] (trivy) {urxvt -e sh -c 'trivy -h ; bash'}
-          [exec] (typo-enumerator) {urxvt -e sh -c 'typo-enumerator ; bash'}
+          [exec] (typo3scan) {urxvt -e sh -c 'typo3scan -h ; bash'}
           [exec] (udork) {urxvt -e sh -c 'udork -h ; bash'}
+          [exec] (udp-hunter) {urxvt -e sh -c 'udp-hunter -h ; bash'}
           [exec] (udsim) {urxvt -e sh -c 'udsim -h ; bash'}
           [exec] (umap) {urxvt -e sh -c 'umap -h ; bash'}
           [exec] (fantaip) {urxvt -e sh -c 'fantaip ; bash'}
@@ -7237,6 +7479,7 @@
           [exec] (wapiti) {urxvt -e sh -c 'wapiti -h ; bash'}
           [exec] (wapiti-getcookie) {urxvt -e sh -c 'wapiti-getcookie -h ; bash'}
           [exec] (wascan) {urxvt -e sh -c 'wascan -h ; bash'}
+          [exec] (wcvs) {urxvt -e sh -c 'wcvs -h ; bash'}
           [exec] (webanalyze) {urxvt -e sh -c 'webanalyze ; bash'}
           [exec] (webborer) {urxvt -e sh -c 'webborer ; bash'}
           [exec] (webenum) {urxvt -e sh -c 'webenum -h ; bash'}
@@ -7257,6 +7500,7 @@
           [exec] (wolpertinger) {urxvt -e sh -c 'wolpertinger -h ; bash'}
           [exec] (wordpresscan) {urxvt -e sh -c 'wordpresscan -h ; bash'}
           [exec] (wpintel) {urxvt -e sh -c 'wpintel ; bash'}
+          [exec] (x8) {urxvt -e sh -c 'x8 ; bash'}
           [exec] (xcname) {urxvt -e sh -c 'xcname -h ; bash'}
           [exec] (xpire-crossdomain-scanner) {urxvt -e sh -c 'xpire-crossdomain-scanner -h ; bash'}
           [exec] (xsrfprobe) {urxvt -e sh -c 'xsrfprobe -h ; bash'}
@@ -7282,10 +7526,6 @@
           [exec] (zblacklist) {urxvt -e sh -c 'zblacklist ; bash'}
           [exec] (zmap) {urxvt -e sh -c 'zmap -h ; bash'}
           [exec] (ztee) {urxvt -e sh -c 'ztee ; bash'}
-      [end]
-
-      [submenu] (scanners)
-          [exec] (nettacker) {urxvt -e sh -c 'nettacker -h ; bash'}
       [end]
 
       [submenu] (sniffer)
@@ -7367,7 +7607,6 @@
           [exec] (etterfilter) {urxvt -e sh -c 'etterfilter -h ; bash'}
           [exec] (etterlog) {urxvt -e sh -c 'etterlog -h ; bash'}
           [exec] (evil-ssdp) {urxvt -e sh -c 'evil-ssdp -h ; bash'}
-          [exec] (fakenet) {urxvt -e sh -c 'fakenet -h ; bash'}
           [exec] (fastnetmon) {urxvt -e sh -c 'fastnetmon --help ; bash'}
           [exec] (fastnetmon-client) {urxvt -e sh -c 'fastnetmon-client ; bash'}
           [exec] (firstorder) {urxvt -e sh -c 'firstorder -h ; bash'}
@@ -7541,11 +7780,7 @@
           [exec] (xcavator) {urxvt -e sh -c 'xcavator -h ; bash'}
           [exec] (bifcl) {urxvt -e sh -c 'bifcl ; bash'}
           [exec] (binpac) {urxvt -e sh -c 'binpac ; bash'}
-          [exec] (bro) {urxvt -e sh -c 'bro -h ; bash'}
-          [exec] (bro-cut) {urxvt -e sh -c 'bro-cut ; bash'}
-          [exec] (broctl) {urxvt -e sh -c 'broctl ; bash'}
           [exec] (broker-benchmark) {urxvt -e sh -c 'broker-benchmark ; bash'}
-          [exec] (broker-cluster-benchmark) {urxvt -e sh -c 'broker-cluster-benchmark ; bash'}
           [exec] (btest) {urxvt -e sh -c 'btest ; bash'}
           [exec] (btest-ask-update) {urxvt -e sh -c 'btest-ask-update ; bash'}
           [exec] (btest-bg-run) {urxvt -e sh -c 'btest-bg-run ; bash'}
@@ -7557,10 +7792,19 @@
           [exec] (btest-rst-include) {urxvt -e sh -c 'btest-rst-include ; bash'}
           [exec] (btest-rst-pipe) {urxvt -e sh -c 'btest-rst-pipe ; bash'}
           [exec] (btest-setsid) {urxvt -e sh -c 'btest-setsid ; bash'}
+          [exec] (gen-zam) {urxvt -e sh -c 'gen-zam ; bash'}
+          [exec] (hiltic) {urxvt -e sh -c 'hiltic ; bash'}
           [exec] (paraglob-test) {urxvt -e sh -c 'paraglob-test ; bash'}
+          [exec] (spicy-build) {urxvt -e sh -c 'spicy-build ; bash'}
+          [exec] (spicy-driver) {urxvt -e sh -c 'spicy-driver ; bash'}
+          [exec] (spicy-dump) {urxvt -e sh -c 'spicy-dump ; bash'}
+          [exec] (spicy-precompile-headers) {urxvt -e sh -c 'spicy-precompile-headers ; bash'}
+          [exec] (spicyc) {urxvt -e sh -c 'spicyc ; bash'}
+          [exec] (spicyz) {urxvt -e sh -c 'spicyz ; bash'}
           [exec] (trace-summary) {urxvt -e sh -c 'trace-summary ; bash'}
           [exec] (zeek) {urxvt -e sh -c 'zeek ; bash'}
           [exec] (zeek-archiver) {urxvt -e sh -c 'zeek-archiver ; bash'}
+          [exec] (zeek-client) {urxvt -e sh -c 'zeek-client ; bash'}
           [exec] (zeek-cut) {urxvt -e sh -c 'zeek-cut ; bash'}
           [exec] (zeekctl) {urxvt -e sh -c 'zeekctl ; bash'}
           [exec] (zkg) {urxvt -e sh -c 'zkg ; bash'}
@@ -7593,11 +7837,14 @@
           [exec] (genisys-scraper) {urxvt -e sh -c 'genisys-scraper -h ; bash'}
           [exec] (genisys-tsadder) {urxvt -e sh -c 'genisys-tsadder -h ; bash'}
           [exec] (gg-images) {urxvt -e sh -c 'gg-images ; bash'}
+          [exec] (gh-dork) {urxvt -e sh -c 'gh-dork -h ; bash'}
           [exec] (git-hound) {urxvt -e sh -c 'git-hound -h ; bash'}
           [exec] (github-dorks) {urxvt -e sh -c 'github-dorks -h ; bash'}
           [exec] (gitmails) {urxvt -e sh -c 'gitmails -h ; bash'}
           [exec] (gitrecon) {urxvt -e sh -c 'gitrecon -h ; bash'}
           [exec] (gloom) {urxvt -e sh -c 'gloom ; bash'}
+          [exec] (gocabrito) {urxvt -e sh -c 'gocabrito -h ; bash'}
+          [exec] (gomapenum) {urxvt -e sh -c 'gomapenum -h ; bash'}
           [exec] (h8mail) {urxvt -e sh -c 'h8mail -h ; bash'}
           [exec] (hemingway) {urxvt -e sh -c 'hemingway ; bash'}
           [exec] (hiddeneye) {urxvt -e sh -c 'hiddeneye ; bash'}
@@ -7630,12 +7877,15 @@
           [exec] (python) {urxvt -e sh -c 'python ; bash'}
           [exec] (python3) {urxvt -e sh -c 'python3 ; bash'}
           [exec] (ngrok) {urxvt -e sh -c 'ngrok ; bash'}
+          [exec] (holehe) {urxvt -e sh -c 'holehe -h ; bash'}
           [exec] (inquisitor) {urxvt -e sh -c 'inquisitor -h ; bash'}
           [exec] (instagramosint) {urxvt -e sh -c 'instagramosint -h ; bash'}
           [exec] (jeopardize) {urxvt -e sh -c 'jeopardize -h ; bash'}
           [exec] (lazagne) {urxvt -e sh -c 'lazagne -h ; bash'}
           [exec] (linkedin2username) {urxvt -e sh -c 'linkedin2username -h ; bash'}
           [exec] (littlebrother) {urxvt -e sh -c 'littlebrother ; bash'}
+          [exec] (maigret) {urxvt -e sh -c 'maigret -h ; bash'}
+          [exec] (metaforge) {urxvt -e sh -c 'metaforge ; bash'}
           [exec] (muraena) {urxvt -e sh -c 'muraena -h ; bash'}
           [exec] (nexfil) {urxvt -e sh -c 'nexfil -h ; bash'}
           [exec] (omnibus) {urxvt -e sh -c 'omnibus ; bash'}
@@ -7654,19 +7904,23 @@
           [exec] (phoneinfoga) {urxvt -e sh -c 'phoneinfoga -h ; bash'}
           [exec] (phonia) {urxvt -e sh -c 'phonia -h ; bash'}
           [exec] (pown) {urxvt -e sh -c 'pown ; bash'}
+          [exec] (protosint) {urxvt -e sh -c 'protosint -h ; bash'}
           [exec] (pwned-search) {urxvt -e sh -c 'pwned-search ; bash'}
           [exec] (pwnedornot) {urxvt -e sh -c 'pwnedornot -h ; bash'}
           [exec] (qrljacker) {urxvt -e sh -c 'qrljacker -h ; bash'}
           [exec] (raven) {urxvt -e sh -c 'raven -h ; bash'}
           [exec] (scavenger) {urxvt -e sh -c 'scavenger -h ; bash'}
+          [exec] (scylla) {urxvt -e sh -c 'scylla -h ; bash'}
           [exec] (seeker) {urxvt -e sh -c 'seeker -h ; bash'}
           [exec] (sees) {urxvt -e sh -c 'sees -h ; bash'}
           [exec] (setoolkit) {urxvt -e sh -c 'setoolkit ; bash'}
           [exec] (sherlock) {urxvt -e sh -c 'sherlock -h ; bash'}
           [exec] (skiptracer) {urxvt -e sh -c 'skiptracer --help ; bash'}
           [exec] (slackpirate) {urxvt -e sh -c 'slackpirate --help ; bash'}
+          [exec] (snscrape) {urxvt -e sh -c 'snscrape ; bash'}
           [exec] (social-analyzer) {urxvt -e sh -c 'social-analyzer -h ; bash'}
           [exec] (social-vuln-scanner) {urxvt -e sh -c 'social-vuln-scanner -h ; bash'}
+          [exec] (socialpwned) {urxvt -e sh -c 'socialpwned -h ; bash'}
           [exec] (sooty) {urxvt -e sh -c 'sooty ; bash'}
           [exec] (spf) {urxvt -e sh -c 'spf -h ; bash'}
           [exec] (spf-report) {urxvt -e sh -c 'spf-report ; bash'}
@@ -7674,6 +7928,7 @@
           [exec] (spoofcheck) {urxvt -e sh -c 'spoofcheck ; bash'}
           [exec] (tinfoleak) {urxvt -e sh -c 'tinfoleak ; bash'}
           [exec] (tinfoleak2) {urxvt -e sh -c 'tinfoleak2 -h ; bash'}
+          [exec] (token-hunter) {urxvt -e sh -c 'token-hunter -h ; bash'}
           [exec] (trape) {urxvt -e sh -c 'trape -h ; bash'}
           [exec] (tweets-analyzer) {urxvt -e sh -c 'tweets-analyzer -h ; bash'}
           [exec] (twint) {urxvt -e sh -c 'twint -h ; bash'}
@@ -7768,6 +8023,7 @@
           [exec] (inundator) {urxvt -e sh -c 'inundator ; bash'}
           [exec] (lans) {urxvt -e sh -c 'lans -h ; bash'}
           [exec] (lsrtunnel) {urxvt -e sh -c 'lsrtunnel ; bash'}
+          [exec] (mailsend-go) {urxvt -e sh -c 'mailsend-go -h ; bash'}
           [exec] (mitm) {urxvt -e sh -c 'mitm -h ; bash'}
           [exec] (mitm6) {urxvt -e sh -c 'mitm6 -h ; bash'}
           [exec] (mitmf) {urxvt -e sh -c 'mitmf -h ; bash'}
@@ -7781,8 +8037,7 @@
           [exec] (pyminifakedns) {urxvt -e sh -c 'pyminifakedns ; bash'}
           [exec] (rbndr) {urxvt -e sh -c 'rbndr ; bash'}
           [exec] (responder) {urxvt -e sh -c 'responder -h ; bash'}
-          [exec] (responder-dhcp) {urxvt -e sh -c 'responder-dhcp ; bash'}
-          [exec] (responder-dhcp-auto) {urxvt -e sh -c 'responder-dhcp-auto ; bash'}
+          [exec] (responder-dnsupdate) {urxvt -e sh -c 'responder-dnsupdate ; bash'}
           [exec] (responder-findsqlsrv) {urxvt -e sh -c 'responder-findsqlsrv ; bash'}
           [exec] (responder-icmp-redirect) {urxvt -e sh -c 'responder-icmp-redirect ; bash'}
           [exec] (responder-multirelay) {urxvt -e sh -c 'responder-multirelay ; bash'}
@@ -7946,6 +8201,9 @@
           [exec] (stegoveritas_hide_lsb) {urxvt -e sh -c 'stegoveritas_hide_lsb ; bash'}
           [exec] (stegsolve) {urxvt -e sh -c 'stegsolve ; bash'}
           [exec] (stepic) {urxvt -e sh -c 'stepic -h ; bash'}
+          [exec] (zsteg) {urxvt -e sh -c 'zsteg -h ; bash'}
+          [exec] (zsteg-mask) {urxvt -e sh -c 'zsteg-mask ; bash'}
+          [exec] (zsteg-reflow) {urxvt -e sh -c 'zsteg-reflow ; bash'}
       [end]
 
       [submenu] (tunnel)
@@ -7975,10 +8233,12 @@
           [exec] (multitun) {urxvt -e sh -c 'multitun ; bash'}
           [exec] (neo-regeorg) {urxvt -e sh -c 'neo-regeorg ; bash'}
           [exec] (ngrok) {urxvt -e sh -c 'ngrok ; bash'}
+          [exec] (oniongrok) {urxvt -e sh -c 'oniongrok -h ; bash'}
           [exec] (packet-o-matic) {urxvt -e sh -c 'packet-o-matic -h ; bash'}
           [exec] (pr0cks) {urxvt -e sh -c 'pr0cks -h ; bash'}
           [exec] (proxytunnel) {urxvt -e sh -c 'proxytunnel -h ; bash'}
           [exec] (ptunnel) {urxvt -e sh -c 'ptunnel -h ; bash'}
+          [exec] (rathole) {urxvt -e sh -c 'rathole -h ; bash'}
           [exec] (regeorg) {urxvt -e sh -c 'regeorg -h ; bash'}
           [exec] (shootback-master) {urxvt -e sh -c 'shootback-master -h ; bash'}
           [exec] (shootback-slaver) {urxvt -e sh -c 'shootback-slaver -h ; bash'}
@@ -8003,6 +8263,7 @@
           [exec] (torify) {urxvt -e sh -c 'torify -h ; bash'}
           [exec] (tunna-proxy) {urxvt -e sh -c 'tunna-proxy ; bash'}
           [exec] (tunna-webserver) {urxvt -e sh -c 'tunna-webserver ; bash'}
+          [exec] (turner) {urxvt -e sh -c 'turner -h ; bash'}
           [exec] (udp2raw) {urxvt -e sh -c 'udp2raw ; bash'}
           [exec] (udptunnel) {urxvt -e sh -c 'udptunnel -h ; bash'}
           [exec] (vstt) {urxvt -e sh -c 'vstt -h ; bash'}
@@ -8036,11 +8297,17 @@
           [exec] (sipdump) {urxvt -e sh -c 'sipdump -h ; bash'}
           [exec] (sipffer) {urxvt -e sh -c 'sipffer -h ; bash'}
           [exec] (sipp) {urxvt -e sh -c 'sipp ; bash'}
-          [exec] (sipcracker) {urxvt -e sh -c 'sipcracker ; bash'}
-          [exec] (sipdigestleak) {urxvt -e sh -c 'sipdigestleak ; bash'}
-          [exec] (sipexten) {urxvt -e sh -c 'sipexten -h ; bash'}
-          [exec] (sipinvite) {urxvt -e sh -c 'sipinvite -h ; bash'}
-          [exec] (sipreport) {urxvt -e sh -c 'sipreport -h ; bash'}
+          [exec] (awesome-footer.tmpl) {urxvt -e sh -c 'awesome-footer.tmpl ; bash'}
+          [exec] (awesome-header.tmpl) {urxvt -e sh -c 'awesome-header.tmpl ; bash'}
+          [exec] (awesome-menu) {urxvt -e sh -c 'awesome-menu ; bash'}
+          [exec] (fluxbox-footer.tmpl) {urxvt -e sh -c 'fluxbox-footer.tmpl ; bash'}
+          [exec] (fluxbox-header.tmpl) {urxvt -e sh -c 'fluxbox-header.tmpl ; bash'}
+          [exec] (fluxbox-menu) {urxvt -e sh -c 'fluxbox-menu ; bash'}
+          [exec] (help-flags.txt) {urxvt -e sh -c 'help-flags.txt ; bash'}
+          [exec] (menu-maker.sh) {urxvt -e sh -c 'menu-maker.sh ; bash'}
+          [exec] (openbox-footer.tmpl) {urxvt -e sh -c 'openbox-footer.tmpl ; bash'}
+          [exec] (openbox-header.tmpl) {urxvt -e sh -c 'openbox-header.tmpl ; bash'}
+          [exec] (openbox-menu) {urxvt -e sh -c 'openbox-menu ; bash'}
           [exec] (storm-ring) {urxvt -e sh -c 'storm-ring -h ; bash'}
           [exec] (teardown) {urxvt -e sh -c 'teardown ; bash'}
           [exec] (vnak) {urxvt -e sh -c 'vnak ; bash'}
@@ -8060,6 +8327,7 @@
           [exec] (adminpagefinder) {urxvt -e sh -c 'adminpagefinder -h ; bash'}
           [exec] (allthevhosts) {urxvt -e sh -c 'allthevhosts ; bash'}
           [exec] (anti-xss) {urxvt -e sh -c 'anti-xss -h ; bash'}
+          [exec] (apachetomcatscanner) {urxvt -e sh -c 'apachetomcatscanner -h ; bash'}
           [exec] (arachni) {urxvt -e sh -c 'arachni -h ; bash'}
           [exec] (arachni-console) {urxvt -e sh -c 'arachni-console ; bash'}
           [exec] (arachni-multi) {urxvt -e sh -c 'arachni-multi ; bash'}
@@ -8109,6 +8377,7 @@
           [exec] (cansina) {urxvt -e sh -c 'cansina -h ; bash'}
           [exec] (chankro) {urxvt -e sh -c 'chankro -h ; bash'}
           [exec] (cintruder) {urxvt -e sh -c 'cintruder -h ; bash'}
+          [exec] (clairvoyance) {urxvt -e sh -c 'clairvoyance -h ; bash'}
           [exec] (cloudget) {urxvt -e sh -c 'cloudget -h ; bash'}
           [exec] (cms-few) {urxvt -e sh -c 'cms-few -h ; bash'}
           [exec] (cmseek) {urxvt -e sh -c 'cmseek ; bash'}
@@ -8118,6 +8387,7 @@
           [exec] (cmsscanner) {urxvt -e sh -c 'cmsscanner -h ; bash'}
           [exec] (cmsscan) {urxvt -e sh -c 'cmsscan -h ; bash'}
           [exec] (comission) {urxvt -e sh -c 'comission -h ; bash'}
+          [exec] (commentor) {urxvt -e sh -c 'commentor -h ; bash'}
           [exec] (commix) {urxvt -e sh -c 'commix ; bash'}
           [exec] (conscan) {urxvt -e sh -c 'conscan -h ; bash'}
           [exec] (corscanner) {urxvt -e sh -c 'corscanner -h ; bash'}
@@ -8125,6 +8395,7 @@
           [exec] (corsy) {urxvt -e sh -c 'corsy -h ; bash'}
           [exec] (cpfinder) {urxvt -e sh -c 'cpfinder -h ; bash'}
           [exec] (crabstick) {urxvt -e sh -c 'crabstick -h ; bash'}
+          [exec] (crackql) {urxvt -e sh -c 'crackql -h ; bash'}
           [exec] (crawlic) {urxvt -e sh -c 'crawlic -h ; bash'}
           [exec] (crlf-injector) {urxvt -e sh -c 'crlf-injector ; bash'}
           [exec] (crlfuzz) {urxvt -e sh -c 'crlfuzz -h ; bash'}
@@ -8149,6 +8420,7 @@
           [exec] (dirstalk) {urxvt -e sh -c 'dirstalk -h ; bash'}
           [exec] (docem) {urxvt -e sh -c 'docem -h ; bash'}
           [exec] (domi-owned) {urxvt -e sh -c 'domi-owned -h ; bash'}
+          [exec] (dontgo403) {urxvt -e sh -c 'dontgo403 -h ; bash'}
           [exec] (doork) {urxvt -e sh -c 'doork -h ; bash'}
           [exec] (dorknet) {urxvt -e sh -c 'dorknet -h ; bash'}
           [exec] (droopescan) {urxvt -e sh -c 'droopescan -h ; bash'}
@@ -8182,6 +8454,7 @@
           [exec] (flask-session-cookie-manager3) {urxvt -e sh -c 'flask-session-cookie-manager3 -h ; bash'}
           [exec] (flunym0us) {urxvt -e sh -c 'flunym0us ; bash'}
           [exec] (gau) {urxvt -e sh -c 'gau -h ; bash'}
+          [exec] (ghauri) {urxvt -e sh -c 'ghauri -h ; bash'}
           [exec] (git-dumper) {urxvt -e sh -c 'git-dumper -h ; bash'}
           [exec] (gitdump) {urxvt -e sh -c 'gitdump ; bash'}
           [exec] (gittools-extractor) {urxvt -e sh -c 'gittools-extractor ; bash'}
@@ -8193,8 +8466,11 @@
           [exec] (gospider) {urxvt -e sh -c 'gospider -h ; bash'}
           [exec] (gowitness) {urxvt -e sh -c 'gowitness -h ; bash'}
           [exec] (grabber-scanner) {urxvt -e sh -c 'grabber-scanner -h ; bash'}
+          [exec] (graphinder) {urxvt -e sh -c 'graphinder -h ; bash'}
+          [exec] (graphql-cop) {urxvt -e sh -c 'graphql-cop -h ; bash'}
           [exec] (graphql-path-enum) {urxvt -e sh -c 'graphql-path-enum -h ; bash'}
           [exec] (graphqlmap) {urxvt -e sh -c 'graphqlmap -h ; bash'}
+          [exec] (graphw00f) {urxvt -e sh -c 'graphw00f -h ; bash'}
           [exec] (gwtenum) {urxvt -e sh -c 'gwtenum -h ; bash'}
           [exec] (gwtfuzzer) {urxvt -e sh -c 'gwtfuzzer -h ; bash'}
           [exec] (gwtparse) {urxvt -e sh -c 'gwtparse -h ; bash'}
@@ -8207,11 +8483,12 @@
           [exec] (hetty) {urxvt -e sh -c 'hetty -h ; bash'}
           [exec] (host-extract) {urxvt -e sh -c 'host-extract -h ; bash'}
           [exec] (htcap) {urxvt -e sh -c 'htcap -h ; bash'}
+          [exec] (http2smugl) {urxvt -e sh -c 'http2smugl -h ; bash'}
           [exec] (httpextract) {urxvt -e sh -c 'httpextract -h ; bash'}
           [exec] (httpforge) {urxvt -e sh -c 'httpforge -h ; bash'}
           [exec] (httpgrep) {urxvt -e sh -c 'httpgrep -H ; bash'}
           [exec] (httppwnly) {urxvt -e sh -c 'httppwnly ; bash'}
-          [exec] (httpx) {urxvt -e sh -c 'httpx -h ; bash'}
+          [exec] (httpx-pd) {urxvt -e sh -c 'httpx-pd ; bash'}
           [exec] (hyperfox) {urxvt -e sh -c 'hyperfox -h ; bash'}
           [exec] (identywaf) {urxvt -e sh -c 'identywaf -h ; bash'}
           [exec] (injectus) {urxvt -e sh -c 'injectus ; bash'}
@@ -8236,7 +8513,10 @@
           [exec] (jsql-injection) {urxvt -e sh -c 'jsql-injection ; bash'}
           [exec] (jstillery) {urxvt -e sh -c 'jstillery -h ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
+          [exec] (juumla) {urxvt -e sh -c 'juumla -h ; bash'}
+          [exec] (jwt-hack) {urxvt -e sh -c 'jwt-hack -h ; bash'}
           [exec] (kadimus) {urxvt -e sh -c 'kadimus -h ; bash'}
+          [exec] (katana) {urxvt -e sh -c 'katana -h ; bash'}
           [exec] (keye) {urxvt -e sh -c 'keye -h ; bash'}
           [exec] (kiterunner) {urxvt -e sh -c 'kiterunner -h ; bash'}
           [exec] (kolkata) {urxvt -e sh -c 'kolkata ; bash'}
@@ -8256,6 +8536,9 @@
           [exec] (lightbulb) {urxvt -e sh -c 'lightbulb -h ; bash'}
           [exec] (linkfinder) {urxvt -e sh -c 'linkfinder -h ; bash'}
           [exec] (list-urls) {urxvt -e sh -c 'list-urls ; bash'}
+          [exec] (log4j-bypass) {urxvt -e sh -c 'log4j-bypass -h ; bash'}
+          [exec] (log4j-scan) {urxvt -e sh -c 'log4j-scan -h ; bash'}
+          [exec] (lorsrf) {urxvt -e sh -c 'lorsrf -h ; bash'}
           [exec] (lulzbuster) {urxvt -e sh -c 'lulzbuster -H ; bash'}
           [exec] (magescan) {urxvt -e sh -c 'magescan ; bash'}
           [exec] (mando.me) {urxvt -e sh -c 'mando.me -h ; bash'}
@@ -8273,7 +8556,6 @@
           [exec] (nosqli-user-pass-enum) {urxvt -e sh -c 'nosqli-user-pass-enum -h ; bash'}
           [exec] (nosqlmap) {urxvt -e sh -c 'nosqlmap ; bash'}
           [exec] (novahot) {urxvt -e sh -c 'novahot -h ; bash'}
-          [exec] (nsia) {urxvt -e sh -c 'nsia -h ; bash'}
           [exec] (nuclei) {urxvt -e sh -c 'nuclei -h ; bash'}
           [exec] (okadminfinder) {urxvt -e sh -c 'okadminfinder -h ; bash'}
           [exec] (onionsearch) {urxvt -e sh -c 'onionsearch -h ; bash'}
@@ -8289,14 +8571,17 @@
           [exec] (pblind) {urxvt -e sh -c 'pblind ; bash'}
           [exec] (peepingtom) {urxvt -e sh -c 'peepingtom -h ; bash'}
           [exec] (photon) {urxvt -e sh -c 'photon -h ; bash'}
+          [exec] (php-malware-finder) {urxvt -e sh -c 'php-malware-finder -h ; bash'}
           [exec] (phpggc) {urxvt -e sh -c 'phpggc -h ; bash'}
           [exec] (pixload-bmp) {urxvt -e sh -c 'pixload-bmp ; bash'}
           [exec] (pixload-gif) {urxvt -e sh -c 'pixload-gif ; bash'}
           [exec] (pixload-jpg) {urxvt -e sh -c 'pixload-jpg ; bash'}
+          [exec] (pixload-webp) {urxvt -e sh -c 'pixload-webp ; bash'}
           [exec] (plecost) {urxvt -e sh -c 'plecost -h ; bash'}
           [exec] (plown) {urxvt -e sh -c 'plown -h ; bash'}
           [exec] (pown) {urxvt -e sh -c 'pown ; bash'}
           [exec] (ppfuzz) {urxvt -e sh -c 'ppfuzz -h ; bash'}
+          [exec] (ppmap) {urxvt -e sh -c 'ppmap -h ; bash'}
           [exec] (proxenet) {urxvt -e sh -c 'proxenet -h ; bash'}
           [exec] (proxenet-control-cli) {urxvt -e sh -c 'proxenet-control-cli ; bash'}
           [exec] (proxenet-control-web) {urxvt -e sh -c 'proxenet-control-web ; bash'}
@@ -8309,7 +8594,6 @@
           [exec] (witnessme) {urxvt -e sh -c 'witnessme -h ; bash'}
           [exec] (wmapi) {urxvt -e sh -c 'wmapi ; bash'}
           [exec] (js-beautify2) {urxvt -e sh -c 'js-beautify2 -h ; bash'}
-          [exec] (webtech2) {urxvt -e sh -c 'webtech2 ; bash'}
           [exec] (rabid) {urxvt -e sh -c 'rabid -h ; bash'}
           [exec] (rabid_console) {urxvt -e sh -c 'rabid_console ; bash'}
           [exec] (rapidscan) {urxvt -e sh -c 'rapidscan ; bash'}
@@ -8324,6 +8608,8 @@
           [exec] (rww-attack) {urxvt -e sh -c 'rww-attack ; bash'}
           [exec] (sawef) {urxvt -e sh -c 'sawef -h ; bash'}
           [exec] (scanqli) {urxvt -e sh -c 'scanqli -h ; bash'}
+          [exec] (scrying) {urxvt -e sh -c 'scrying -h ; bash'}
+          [exec] (second-order) {urxvt -e sh -c 'second-order -h ; bash'}
           [exec] (secretfinder) {urxvt -e sh -c 'secretfinder -h ; bash'}
           [exec] (secscan) {urxvt -e sh -c 'secscan -h ; bash'}
           [exec] (see-surf) {urxvt -e sh -c 'see-surf -h ; bash'}
@@ -8358,6 +8644,9 @@
           [exec] (sqlninja) {urxvt -e sh -c 'sqlninja -h ; bash'}
           [exec] (sqlsus) {urxvt -e sh -c 'sqlsus -h ; bash'}
           [exec] (ssrfmap) {urxvt -e sh -c 'ssrfmap -h ; bash'}
+          [exec] (stews-discovery) {urxvt -e sh -c 'stews-discovery -h ; bash'}
+          [exec] (stews-fingerprint) {urxvt -e sh -c 'stews-fingerprint -h ; bash'}
+          [exec] (stews-vuln-detect) {urxvt -e sh -c 'stews-vuln-detect ; bash'}
           [exec] (striker) {urxvt -e sh -c 'striker ; bash'}
           [exec] (swarm) {urxvt -e sh -c 'swarm -h ; bash'}
           [exec] (as3compile) {urxvt -e sh -c 'as3compile ; bash'}
@@ -8380,7 +8669,7 @@
           [exec] (tinfoleak) {urxvt -e sh -c 'tinfoleak ; bash'}
           [exec] (tinfoleak2) {urxvt -e sh -c 'tinfoleak2 -h ; bash'}
           [exec] (torcrawl) {urxvt -e sh -c 'torcrawl -h ; bash'}
-          [exec] (typo-enumerator) {urxvt -e sh -c 'typo-enumerator ; bash'}
+          [exec] (typo3scan) {urxvt -e sh -c 'typo3scan -h ; bash'}
           [exec] (ua-tester) {urxvt -e sh -c 'ua-tester ; bash'}
           [exec] (ufonet) {urxvt -e sh -c 'ufonet -h ; bash'}
           [exec] (uncaptcha2) {urxvt -e sh -c 'uncaptcha2 ; bash'}
@@ -8410,6 +8699,7 @@
           [exec] (wapiti-getcookie) {urxvt -e sh -c 'wapiti-getcookie -h ; bash'}
           [exec] (wascan) {urxvt -e sh -c 'wascan -h ; bash'}
           [exec] (waybackpack) {urxvt -e sh -c 'waybackpack -h ; bash'}
+          [exec] (wcvs) {urxvt -e sh -c 'wcvs -h ; bash'}
           [exec] (web-soul) {urxvt -e sh -c 'web-soul -h ; bash'}
           [exec] (webacoo) {urxvt -e sh -c 'webacoo -h ; bash'}
           [exec] (webanalyze) {urxvt -e sh -c 'webanalyze ; bash'}
@@ -8451,6 +8741,7 @@
           [exec] (electron-1.7) {urxvt -e sh -c 'electron-1.7 ; bash'}
           [exec] (wssip) {urxvt -e sh -c 'wssip help ; bash'}
           [exec] (wuzz) {urxvt -e sh -c 'wuzz -h ; bash'}
+          [exec] (x8) {urxvt -e sh -c 'x8 ; bash'}
           [exec] (xmlrpc-bruteforcer) {urxvt -e sh -c 'xmlrpc-bruteforcer -h ; bash'}
           [exec] (xspear) {urxvt -e sh -c 'xspear -h ; bash'}
           [exec] (console) {urxvt -e sh -c 'console ; bash'}
@@ -8468,18 +8759,14 @@
           [exec] (xwaf) {urxvt -e sh -c 'xwaf -h ; bash'}
           [exec] (xxeinjector) {urxvt -e sh -c 'xxeinjector -h ; bash'}
           [exec] (acorn) {urxvt -e sh -c 'acorn ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (he) {urxvt -e sh -c 'he ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (jsesc) {urxvt -e sh -c 'jsesc ; bash'}
           [exec] (_mocha) {urxvt -e sh -c '_mocha ; bash'}
-          [exec] (mocha) {urxvt -e sh -c 'mocha ; bash'}
           [exec] (semver) {urxvt -e sh -c 'semver ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (tsc) {urxvt -e sh -c 'tsc ; bash'}
           [exec] (tsserver) {urxvt -e sh -c 'tsserver ; bash'}
           [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
-          [exec] (which) {urxvt -e sh -c 'which ; bash'}
+          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (xxxpwn) {urxvt -e sh -c 'xxxpwn -h ; bash'}
           [exec] (xxxpwn-smart) {urxvt -e sh -c 'xxxpwn-smart -h ; bash'}
           [exec] (yaaf) {urxvt -e sh -c 'yaaf -h ; bash'}
@@ -8492,20 +8779,27 @@
       [end]
 
       [submenu] (windows)
+          [exec] (adfspray) {urxvt -e sh -c 'adfspray -h ; bash'}
           [exec] (amber) {urxvt -e sh -c 'amber ; bash'}
           [exec] (bloodhound) {urxvt -e sh -c 'bloodhound -h ; bash'}
-          [exec] (handlebars) {urxvt -e sh -c 'handlebars ; bash'}
+          [exec] (which) {urxvt -e sh -c 'which ; bash'}
           [exec] (he) {urxvt -e sh -c 'he ; bash'}
           [exec] (mustache) {urxvt -e sh -c 'mustache ; bash'}
-          [exec] (node-which) {urxvt -e sh -c 'node-which ; bash'}
           [exec] (uuid) {urxvt -e sh -c 'uuid ; bash'}
+          [exec] (autobloody) {urxvt -e sh -c 'autobloody -h ; bash'}
+          [exec] (bloodyad) {urxvt -e sh -c 'bloodyad -h ; bash'}
+          [exec] (pathgen) {urxvt -e sh -c 'pathgen ; bash'}
+          [exec] (chainsaw) {urxvt -e sh -c 'chainsaw -h ; bash'}
           [exec] (cminer) {urxvt -e sh -c 'cminer ; bash'}
+          [exec] (coercer) {urxvt -e sh -c 'coercer -h ; bash'}
           [exec] (cme) {urxvt -e sh -c 'cme ; bash'}
           [exec] (cmedb) {urxvt -e sh -c 'cmedb ; bash'}
           [exec] (cachedump) {urxvt -e sh -c 'cachedump cd /usr/share/windows/cachedump ; ls ; bash'}
           [exec] (lsadump) {urxvt -e sh -c 'lsadump ; bash'}
           [exec] (pwdump) {urxvt -e sh -c 'pwdump cd /usr/share/windows/pwdump ; ls ; bash'}
           [exec] (darkarmour) {urxvt -e sh -c 'darkarmour ; bash'}
+          [exec] (dcd) {urxvt -e sh -c 'dcd -h ; bash'}
+          [exec] (dcdetector) {urxvt -e sh -c 'dcdetector -h ; bash'}
           [exec] (demiguise) {urxvt -e sh -c 'demiguise -h ; bash'}
           [exec] (evtkit) {urxvt -e sh -c 'evtkit -h ; bash'}
           [exec] (extractusnjrnl) {urxvt -e sh -c 'extractusnjrnl -h ; bash'}
@@ -8513,6 +8807,7 @@
           [exec] (gene) {urxvt -e sh -c 'gene -h ; bash'}
           [exec] (ghostdelivery) {urxvt -e sh -c 'ghostdelivery ; bash'}
           [exec] (goddi) {urxvt -e sh -c 'goddi -h ; bash'}
+          [exec] (gomapenum) {urxvt -e sh -c 'gomapenum -h ; bash'}
           [exec] (harness) {urxvt -e sh -c 'harness ; bash'}
           [exec] (hercules-payload) {urxvt -e sh -c 'hercules-payload ; bash'}
           [exec] (hxd) {urxvt -e sh -c 'hxd -h ; bash'}
@@ -8528,19 +8823,21 @@
           [exec] (mftref2name) {urxvt -e sh -c 'mftref2name -h ; bash'}
           [exec] (missidentify) {urxvt -e sh -c 'missidentify -h ; bash'}
           [exec] (msvpwn) {urxvt -e sh -c 'msvpwn -h ; bash'}
-          [exec] (nbtscan) {urxvt -e sh -c 'nbtscan -h ; bash'}
           [exec] (ntfs-file-extractor) {urxvt -e sh -c 'ntfs-file-extractor -h ; bash'}
           [exec] (ntfs-log-tracker) {urxvt -e sh -c 'ntfs-log-tracker -h ; bash'}
+          [exec] (o365enum) {urxvt -e sh -c 'o365enum -h ; bash'}
           [exec] (o365spray) {urxvt -e sh -c 'o365spray -h ; bash'}
           [exec] (ollydbg) {urxvt -e sh -c 'ollydbg ; bash'}
           [exec] (openpuff) {urxvt -e sh -c 'openpuff ; bash'}
           [exec] (osslsigncode) {urxvt -e sh -c 'osslsigncode -h ; bash'}
+          [exec] (gets4uticket) {urxvt -e sh -c 'gets4uticket -h ; bash'}
+          [exec] (gettgtpkinit) {urxvt -e sh -c 'gettgtpkinit -h ; bash'}
           [exec] (powermft) {urxvt -e sh -c 'powermft -h ; bash'}
-          [exec] (minidump) {urxvt -e sh -c 'minidump ; bash'}
           [exec] (minidump2) {urxvt -e sh -c 'minidump2 ; bash'}
           [exec] (rcrdcarver) {urxvt -e sh -c 'rcrdcarver -h ; bash'}
           [exec] (rdp-cipher-checker) {urxvt -e sh -c 'rdp-cipher-checker ; bash'}
           [exec] (rdp-sec-check) {urxvt -e sh -c 'rdp-sec-check -h ; bash'}
+          [exec] (rdwarecon) {urxvt -e sh -c 'rdwarecon -h ; bash'}
           [exec] (secure2csv) {urxvt -e sh -c 'secure2csv -h ; bash'}
           [exec] (shad0w) {urxvt -e sh -c 'shad0w -h ; bash'}
           [exec] (donut.elf) {urxvt -e sh -c 'donut.elf ; bash'}
@@ -8548,6 +8845,8 @@
           [exec] (shellter) {urxvt -e sh -c 'shellter ; bash'}
           [exec] (sigthief) {urxvt -e sh -c 'sigthief -h ; bash'}
           [exec] (sireprat) {urxvt -e sh -c 'sireprat -h ; bash'}
+          [exec] (spray365) {urxvt -e sh -c 'spray365 -h ; bash'}
+          [exec] (talon) {urxvt -e sh -c 'talon -h ; bash'}
           [exec] (tunna-proxy) {urxvt -e sh -c 'tunna-proxy ; bash'}
           [exec] (tunna-webserver) {urxvt -e sh -c 'tunna-webserver ; bash'}
           [exec] (Akatsuki64.cd) {urxvt -e sh -c 'Akatsuki64.cd ; bash'}
@@ -8691,7 +8990,6 @@
           [exec] (gr_filter_design) {urxvt -e sh -c 'gr_filter_design ; bash'}
           [exec] (gr_modtool) {urxvt -e sh -c 'gr_modtool ; bash'}
           [exec] (gr_read_file_metadata) {urxvt -e sh -c 'gr_read_file_metadata ; bash'}
-          [exec] (grc_setup_freedesktop) {urxvt -e sh -c 'grc_setup_freedesktop ; bash'}
           [exec] (grcc) {urxvt -e sh -c 'grcc ; bash'}
           [exec] (polar_channel_construction) {urxvt -e sh -c 'polar_channel_construction ; bash'}
           [exec] (uhd_fft) {urxvt -e sh -c 'uhd_fft ; bash'}
@@ -8705,7 +9003,6 @@
           [exec] (gr_filter_design) {urxvt -e sh -c 'gr_filter_design ; bash'}
           [exec] (gr_modtool) {urxvt -e sh -c 'gr_modtool ; bash'}
           [exec] (gr_read_file_metadata) {urxvt -e sh -c 'gr_read_file_metadata ; bash'}
-          [exec] (grc_setup_freedesktop) {urxvt -e sh -c 'grc_setup_freedesktop ; bash'}
           [exec] (grcc) {urxvt -e sh -c 'grcc ; bash'}
           [exec] (polar_channel_construction) {urxvt -e sh -c 'polar_channel_construction ; bash'}
           [exec] (uhd_fft) {urxvt -e sh -c 'uhd_fft ; bash'}
@@ -8714,9 +9011,6 @@
           [exec] (uhd_siggen) {urxvt -e sh -c 'uhd_siggen ; bash'}
           [exec] (uhd_siggen_gui) {urxvt -e sh -c 'uhd_siggen_gui ; bash'}
           [exec] (gqrx) {urxvt -e sh -c 'gqrx ; bash'}
-          [exec] (gqrx-alsa) {urxvt -e sh -c 'gqrx-alsa ; bash'}
-          [exec] (gqrx) {urxvt -e sh -c 'gqrx ; bash'}
-          [exec] (gqrx-alsa) {urxvt -e sh -c 'gqrx-alsa ; bash'}
           [exec] (hcxdumptool) {urxvt -e sh -c 'hcxdumptool -h ; bash'}
           [exec] (hcxpioff) {urxvt -e sh -c 'hcxpioff -h ; bash'}
           [exec] (hcxdumptool) {urxvt -e sh -c 'hcxdumptool -h ; bash'}

@@ -2,7 +2,7 @@
 amd-ucode
 arch-install-scripts
 b43-fwcutter
-bind-tools
+bind
 brltty
 broadcom-wl
 btrfs-progs
@@ -24,7 +24,6 @@ exfatprogs
 f2fs-tools
 fatresize
 fsarchiver
-gnu-netcat
 gpart
 gpm
 gptfdisk
@@ -318,6 +317,7 @@ nmap
 nuclei
 nuclei-templates
 onesixtyone
+openbsd-netcat
 ophcrack
 patator
 pdfid

@@ -2,6 +2,7 @@
 
 	- added more than 150 new tools
 	- included linux kernel 6.2.X
+	- replaced vim plugin manager 'Vundle' with 'vim-plug'
 	- QA'ed and fixed a lot of packages (runtime exec, missing dependencies, etc.)
 	- updated all vim plugins and improved vim config options
 	- updated all blackarch tools and packages including config files
