@@ -3962,6 +3962,7 @@ spotbugs -h ;
 sppokflare ;
 spray365 -h ;
 spraycharles -h ;
+sprayhound -h ;
 sprayingtoolkit-aerosol -h ;
 sprayingtoolkit-atomizer -h ;
 sprayingtoolkit-spindrift -h ;
