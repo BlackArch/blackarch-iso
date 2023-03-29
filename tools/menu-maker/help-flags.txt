@@ -4486,6 +4486,7 @@ vstt -h ;
 vstt-reader ;
 vstt-s2f ;
 vsvbp ;
+vt-cli -h ;
 vulmap -h ;
 vulnerabilities-spider ;
 vulnx -h ;
