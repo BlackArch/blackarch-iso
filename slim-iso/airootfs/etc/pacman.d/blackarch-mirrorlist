@@ -11,8 +11,12 @@
 
 # China
 #Server = https://mirror.sjtu.edu.cn/blackarch/$repo/os/$arch
+#Server = https://mirrors.nju.edu.cn/blackarch/$repo/os/$arch
+#Server = http://mirrors.nju.edu.cn/blackarch/$repo/os/$arch
 #Server = https://mirrors.tuna.tsinghua.edu.cn/blackarch/$repo/os/$arch
 #Server = https://mirrors.ustc.edu.cn/blackarch/$repo/os/$arch
+#Server = http://mirrors.aliyun.com/blackarch/$repo/os/$arch
+#Server = https://mirrors.aliyun.com/blackarch/$repo/os/$arch
 
 # Denmark
 #Server = https://mirrors.dotsrc.org/blackarch/$repo/os/$arch
@@ -27,17 +31,14 @@
 #Server = https://mirror.cedia.org.ec/blackarch/$repo/os/$arch
 
 # France
-#Server = https://www.blackarch.org/blackarch/$repo/os/$arch
-#Server = http://www.blackarch.org/blackarch/$repo/os/$arch
-#Server = http://blackarch.tamcore.eu/blackarch/$repo/os/$arch
-#Server = https://blackarch.tamcore.eu/blackarch/$repo/os/$arch
 #Server = http://blackarch.leneveu.fr/blackarch/$repo/os/$arch
 #Server = http://blackarch.pi3rrot.net/blackarch/$repo/os/$arch
 #Server = http://mirror.cyberbits.eu/blackarch/$repo/os/$arch
 #Server = https://mirror.cyberbits.eu/blackarch/$repo/os/$arch
 
 # Germany
-#Server = https://mirrors.dr460nf1r3.me/repos/blackarch/$repo/os/$arch
+#Server = https://www.blackarch.org/blackarch/$repo/os/$arch
+#Server = http://www.blackarch.org/blackarch/$repo/os/$arch
 #Server = http://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 #Server = ftp://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
@@ -53,6 +54,11 @@ Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 # Great Britain
 #Server = http://www.mirrorservice.org/sites/blackarch.org/blackarch/$repo/os/$arch
 #Server = https://www.mirrorservice.org/sites/blackarch.org/blackarch/$repo/os/$arch
+#Server = http://mirrors.gethosted.online/blackarch/blackarch/$repo/os/$arch
+#Server = https://mirrors.gethosted.online/blackarch/blackarch/$repo/os/$arch
+
+# India
+#Server = https://mirror.albony.xyz/blackarch/$repo/os/$arch
 
 # Iran
 #Server = http://mirror.blackrepo.com/$repo/os/$arch
@@ -112,15 +118,21 @@ Server = https://ftp.halifax.rwth-aachen.de/blackarch/$repo/os/$arch
 #Server = ftp://ftp.linux.org.tr/blackarch/$repo/os/$arch
 
 # Taiwan
-#Server = http://blackarch.cs.nctu.edu.tw/$repo/os/$arch
+#Server = http://blackarch.cs.nycu.edu.tw/$repo/os/$arch
+#Server = https://blackarch.cs.nycu.edu.tw/$repo/os/$arch
+#Server = http://mirror.archlinux.tw/BlackArch/$repo/os/$arch
+#Server = https://mirror.archlinux.tw/BlackArch/$repo/os/$arch
+
+# UK
+#Server = http://mirrors.gethosted.online/blackarch/$repo/os/$arch
+#Server = https://mirrors.gethosted.online/blackarch/$repo/os/$arch
 
 # USA
-#Server = http://blackarch.pr0s3c.nl/blackarch/$repo/os/$arch
-#Server = https://blackarch.pr0s3c.nl/blackarch/$repo/os/$arch
 #Server = http://mirror.math.princeton.edu/pub/blackarch/$repo/os/$arch
 #Server = http://distro.ibiblio.org/blackarch/$repo/os/$arch
 #Server = ftp://distro.ibiblio.org/blackarch/$repo/os/$arch
-#Server = https://deadbeef.ninja/blackarch/$repo/os/$arch
 #Server = http://mirror.team-cymru.com/blackarch/$repo/os/$arch
 #Server = ftp://mirror.team-cymru.com/blackarch/$repo/os/$arch
+#Server = https://mirrors.ocf.berkeley.edu/blackarch/$repo/os/$arch
+#Server = http://mirrors.ocf.berkeley.edu/blackarch/$repo/os/$arch
 
