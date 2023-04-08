@@ -3535,6 +3535,7 @@ runant.py ;
 rupture -h ;
 rustbuster --help ;
 rustcat -h ;
+rusthound -h ;
 rustpad -h ;
 rustscan -h ;
 rva2ofs ;
