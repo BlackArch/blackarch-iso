@@ -2479,6 +2479,7 @@ mptcp -h ;
 mptcp-scanner ;
 mqtt-pwn -h ;
 mraptor ;
+mrkaplan cd /usr/share/windows/mrkaplan ; ls ;
 mrsip -h ;
 msfbinscan -h ;
 msfcli -h ;
