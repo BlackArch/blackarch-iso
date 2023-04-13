@@ -3906,6 +3906,7 @@ social-vuln-scanner -h ;
 socketfuzz -h ;
 socks -h ;
 sockstat -h ;
+sonar-scanner ;
 soot -h ;
 sooty ;
 sorter ;
