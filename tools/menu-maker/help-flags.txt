@@ -2079,6 +2079,7 @@ kernelpop -h ;
 keye -h ;
 keyfinder ;
 keystore_pass ;
+kh2hc -h ;
 khc ;
 kickthemout -h ;
 killcast -h ;
