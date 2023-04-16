@@ -3152,6 +3152,7 @@ pwd-hash -h ;
 pwdlogy ;
 pwdlyser -h ;
 pwdump cd /usr/share/windows/pwdump ; ls ;
+pwfuzz-rs -h ;
 pwhash -h ;
 pw-inspector -h ;
 pwnat -h ;
