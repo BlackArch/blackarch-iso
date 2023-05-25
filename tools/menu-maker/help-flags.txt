@@ -3305,6 +3305,7 @@ rawr -h ;
 rawsec-cli --help ;
 rawshark ;
 rax2 ;
+rbac-lookup -h ;
 rbasefind -h ;
 rbmonkey ;
 rbndr ;
