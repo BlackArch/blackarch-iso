@@ -1462,6 +1462,7 @@ golismero -h ;
 gomapenum -h ;
 goodork ;
 goofile ;
+goofuzz -h ;
 google-explorer -h ;
 googlesub --help ;
 goog-mail ;
