@@ -4356,6 +4356,7 @@ umit_scheduler.py ;
 unafs ;
 uncaptcha2 ;
 uncover -h ;
+undbx -h ;
 undrop ;
 unfurl -h ;
 unhex ;
