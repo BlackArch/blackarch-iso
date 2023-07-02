@@ -173,6 +173,7 @@ aranea -h ;
 arcane -h ;
 archivebox -h ;
 arduino ;
+ares -h ;
 argdumper ;
 argon2 -h ;
 argusbug ;
