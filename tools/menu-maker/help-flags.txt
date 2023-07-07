@@ -2960,6 +2960,7 @@ pemcracker ;
 penbox ;
 pencode -h ;
 pentbox ;
+pentestgpt -h ;
 pentestly -h ;
 pentmenu ;
 pepack ;
