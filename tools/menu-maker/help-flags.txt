@@ -2953,6 +2953,8 @@ peepingtom -h ;
 pef-config ;
 peframe ;
 pehash ;
+peid -h ;
+peid-sig -h ;
 pemcrack ;
 pemcracker ;
 penbox ;
