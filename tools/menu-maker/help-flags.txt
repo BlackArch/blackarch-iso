@@ -285,6 +285,7 @@ avr-strings -h ;
 avr-strip -h ;
 awsbucketdump -h ;
 aws-extender-cli -h ;
+aws-iam-privesc -h ;
 aws-inventory -h ;
 aztarna -h ;
 b2sum -h ;
