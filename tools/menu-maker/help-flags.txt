@@ -2536,6 +2536,7 @@ mycrawler2 ;
 mycrypt --help ;
 myjwt -h ;
 mylg help ;
+myrescue -h ;
 mysql2sqlite -h ;
 mysql_login ;
 mz -h ;
