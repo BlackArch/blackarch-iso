@@ -3695,6 +3695,7 @@ seitan -h ;
 sendpees6 ;
 sendpeesmp6 ;
 sensepost-xrdp -h ;
+sentrypeer -h ;
 seproxy ;
 sequel -h ;
 sergio-proxy -h ;
