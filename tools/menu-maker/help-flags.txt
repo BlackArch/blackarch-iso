@@ -2971,6 +2971,7 @@ pepe -h ;
 pepper -h ;
 peres ;
 periscope cd /usr/share/windows/periscope ; ls ;
+persistencesniper cd /usr/share/windows/persistencesniper ; ls ;
 pescan ;
 pesec ;
 pe-sieve cd /usr/share/windows/pe-sieve ; ls ;
