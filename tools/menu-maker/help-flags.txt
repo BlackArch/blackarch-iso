@@ -4387,6 +4387,7 @@ uniofuzz -h ;
 unique ;
 unique-messages.py ;
 uniscan --help ;
+unisec -h ;
 unix-jboss-autopwn ;
 unix-privesc-check ;
 unix-privsc-check ;
