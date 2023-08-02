@@ -146,7 +146,7 @@ be more repositories linked that come in the NetInstall ISO and the Full ISO
    - [openbox](https://github.com/BlackArch/blackarch-config-openbox)
    - [fluxbox](https://github.com/BlackArch/blackarch-config-fluxbox)
    - [awesomewm](https://github.com/BlackArch/blackarch-config-awesome)
-   - [spectrewm](https://github.com/BlackArch/blackarch-config-spectrwm)
+   - [spectrwm](https://github.com/BlackArch/blackarch-config-spectrwm)
    - [LXDM](https://github.com/BlackArch/blackarch-config-lxdm)
    - [i3](https://github.com/BlackArch/blackarch-config-i3)
    - [gtk](https://github.com/BlackArch/blackarch-config-gtk)
