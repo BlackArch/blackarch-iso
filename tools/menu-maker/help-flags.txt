@@ -496,6 +496,7 @@ bytecode-viewer ;
 c++ ;
 c5c --help ;
 c5scan -h ;
+c7decrypt -h ;
 cachedump cd /usr/share/windows/cachedump ; ls ;
 cadaver -h ;
 cafebabe ;
