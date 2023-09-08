@@ -2872,6 +2872,7 @@ pacumen_timeseries.py ;
 pacumen_train.py ;
 pacumen_visualize.py ;
 padbuster -h ;
+padoracle ;
 pafish cd /usr/share/windows/pafish ; ls ;
 pagodo -h ;
 paketto-lc -h ;
