@@ -307,6 +307,7 @@ balbuzard ;
 bamfbrute -h ;
 bamfdetect -h ;
 bamf-framework -h ;
+bandit -h ;
 BARFcfg -h ;
 BARFcg -h ;
 BARFgadgets -h ;
