@@ -2593,6 +2593,7 @@ netcon -H ;
 net-creds -h ;
 netdiscover -h ;
 netdork -h ;
+netexec -h ;
 netmap -h ;
 netmask --help ;
 netreconn -h ;
