@@ -20,6 +20,7 @@ adfspray -h ;
 adidnsdump -h ;
 ad-ldap-enum -h ;
 ADMdnsfuckr ;
+ad-miner -h ;
 adminpagefinder -h ;
 adminpath.py ;
 ADMkillDNS ;
