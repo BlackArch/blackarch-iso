@@ -2446,6 +2446,7 @@ mobius ;
 mobiusft -h ;
 mobsf-manage -h ;
 mobsf-mobsfy -h ;
+modifycerttemplate -h ;
 modlishka -h ;
 modscan -h ;
 moloch-capture -h ;
