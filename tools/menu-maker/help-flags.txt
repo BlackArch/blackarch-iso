@@ -563,6 +563,7 @@ chapcrack -h ;
 cheat-sh ;
 checkiban -h ;
 check_omp -h ;
+checkov --help ;
 checkpwd -h ;
 checkpwd_nopw ;
 checkrad -h ;
