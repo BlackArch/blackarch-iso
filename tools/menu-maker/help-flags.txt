@@ -541,6 +541,7 @@ centry -h ;
 cero -h ;
 certgraph -h ;
 certipy -h ;
+certsync -h ;
 cewl-fab ;
 cewl -h ;
 cflow -h ;
