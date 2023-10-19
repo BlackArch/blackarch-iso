@@ -1668,6 +1668,7 @@ hashid ;
 hash-identifer ;
 hash-identifier ;
 hashpump -h ;
+hashrat --help ;
 hashtag -h ;
 hatcloud -h ;
 hate-crack ;
