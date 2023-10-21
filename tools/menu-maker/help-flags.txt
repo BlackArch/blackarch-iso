@@ -1146,6 +1146,7 @@ ewfmount ;
 ewfrecover ;
 ewfverify ;
 exabgp ;
+exe2hex -h ;
 exe2image ;
 exescan ;
 exiflooter -h ;
