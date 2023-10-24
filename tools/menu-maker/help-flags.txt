@@ -1691,6 +1691,7 @@ hdmi-sniff -h ;
 heaptrace -h ;
 heartbleed-honeypot -h ;
 heartleech -h ;
+hekatomb -h ;
 hellraiser -h ;
 hemingway ;
 hercules-payload ;
