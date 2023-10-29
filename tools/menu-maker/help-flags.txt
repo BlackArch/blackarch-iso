@@ -3418,6 +3418,7 @@ remove-duplicates ;
 reordercap ;
 replayproxy -h ;
 reportviewer -h ;
+reptor -h ;
 responder -h ;
 restler-fuzzer -h ;
 retdec-archive-decompiler -h ;
