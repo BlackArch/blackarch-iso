@@ -138,6 +138,7 @@ antiransom cd /usr/share/windows/antiransom ; ls ;
 anti-xss -h ;
 antRun ;
 antRun.pl ;
+anubis -h ;
 apachetomcatscanner -h ;
 ApacheTomcatScanner -h ;
 apache-users ;
