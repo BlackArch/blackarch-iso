@@ -3397,6 +3397,7 @@ reg-recentdocs -h ;
 reg-regtime -h ;
 regreport cd /usr/share/windows/regreport ; ls ;
 regrip -h ;
+regripper ;
 reg-run -h ;
 reg-runmru -h ;
 reg-services -h ;
