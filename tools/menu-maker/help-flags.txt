@@ -702,6 +702,7 @@ create-csr ;
 createnpk ;
 creddump cd /usr/share/windows/creddump ; ls ;
 credmap -h ;
+credmaster -h ;
 credsniper -h ;
 creds-py -h ;
 creepy ;
