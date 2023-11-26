@@ -1478,6 +1478,7 @@ googlesub --help ;
 goog-mail ;
 goohak ;
 goop ;
+goop-dump -h ;
 gooscan -h ;
 gophish ;
 gosint -h ;
