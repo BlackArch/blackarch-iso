@@ -735,6 +735,7 @@ CutyCapt ;
 cve-api -h ;
 cvechecker -h ;
 cvegenversdat ;
+cvemap -h ;
 cvereport ;
 cverules ;
 cve-search-cve_doc -h ;
