@@ -3953,6 +3953,7 @@ soot -h ;
 sooty ;
 sorter ;
 sort-pictures ;
+sourcemapper -h ;
 spade cd /usr/share/windows/spade ; ls ;
 spaf -h ;
 sparta ;
