@@ -2911,6 +2911,7 @@ parselog ;
 parsero -h ;
 pasco ;
 passcracking ;
+passdetective -h ;
 passe-partout -h ;
 passgan -h ;
 passhunt -h ;
