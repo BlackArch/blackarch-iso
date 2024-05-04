@@ -1487,6 +1487,7 @@ goop ;
 goop-dump -h ;
 gooscan -h ;
 gophish ;
+goshs -h ;
 gosint -h ;
 gospider -h ;
 gostringsr2 -h ;
