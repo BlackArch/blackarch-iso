@@ -1,3 +1,5 @@
+conpass -h ;
+krbjack -h ;
 0d1n ;
 0trace ;
 3proxy --help ;
