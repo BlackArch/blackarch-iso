@@ -3643,6 +3643,7 @@ rwtotal ;
 rwtuc ;
 rwuniq ;
 rww-attack ;
+s3enum -h ;
 s3-fuzzer --help ;
 s3scanner -h ;
 safecopy ;
