@@ -4139,6 +4139,7 @@ stty ;
 stub ;
 stunnel ;
 stunnel3 ;
+stunner -h ;
 sub7 cd /usr/share/windows/sub7 ; ls ;
 subbrute -h ;
 subdomainer.py -h ;
