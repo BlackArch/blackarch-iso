@@ -2316,6 +2316,7 @@ malboxes -h ;
 malcom -h ;
 malheur -h ;
 malice ;
+malicious-pdf ;
 maligno-clientgen ;
 maligno -h ;
 maligno-srv ;
