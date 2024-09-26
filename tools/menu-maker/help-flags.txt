@@ -4513,6 +4513,7 @@ vi ;
 vidalia ;
 videosnarf ;
 view.sh ;
+villain -h ;
 vinetto -h ;
 viper-cli -h ;
 viper -h ;
