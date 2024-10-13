@@ -240,6 +240,7 @@ asleap -h ;
 asm -h ;
 asnmap -h ;
 asp-audit ;
+aspisec -h ;
 assassingo -h ;
 assetfinder -h ;
 astraceroute ;
