@@ -4601,6 +4601,7 @@ wav2swf ;
 wavemon -h ;
 waybackpack -h ;
 waybackurls -h ;
+waymore -h ;
 wbxml2request ;
 wcc -h ;
 wcch -h ;
