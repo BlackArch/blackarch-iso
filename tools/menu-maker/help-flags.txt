@@ -533,6 +533,7 @@ cansend ;
 cansina -h ;
 cansniffer ;
 cantoolz -h ;
+capa -h ;
 capfuzz -h ;
 capinfos -h ;
 captipper ;
