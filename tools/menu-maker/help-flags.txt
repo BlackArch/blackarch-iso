@@ -3743,6 +3743,7 @@ sc_wartsfix -h ;
 scylla -h ;
 sdel -h ;
 sdnpwn ;
+sdrpp -h ;
 sdr-trunk ;
 SDS_get_index.py ;
 sea -h ;
