@@ -3254,6 +3254,7 @@ pyew -h ;
 pyfiscan -h ;
 pyfuscation -h ;
 pyinstaller ;
+pyinstxtractor ;
 pyjfuzz -h ;
 pykek ;
 pymeta -h ;
