@@ -2294,6 +2294,7 @@ loot ;
 lorg -h ;
 lorsrf -h ;
 lotophagi -h ;
+lrod -h ;
 lsldap -h ;
 lsnfc ;
 lspst ;
