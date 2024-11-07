@@ -1025,6 +1025,7 @@ drupwn -h ;
 dscanner -h ;
 dscomputers -h ;
 dsdeletedobjects -h ;
+dsd-fme -h ;
 dsd -h ;
 dsfileinformation -h ;
 dsfs -h ;
