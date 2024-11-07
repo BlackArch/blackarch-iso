@@ -1701,6 +1701,7 @@ hashrat --help ;
 hashtag -h ;
 hatcloud -h ;
 hate-crack ;
+havoc-c2 -h ;
 hawk --help ;
 haystack-dump -h ;
 haystack-find-heap.py ;
