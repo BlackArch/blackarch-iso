@@ -3507,6 +3507,7 @@ rfcat_server ;
 rfcat-server -h ;
 rfcomm_scan -h ;
 rfcomm_shell ;
+rfcrack -h ;
 rfdump ;
 rfidiot-cardselect -h ;
 rfidiot-ChAP -h ;
