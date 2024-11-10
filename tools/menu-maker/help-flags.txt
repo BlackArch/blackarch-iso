@@ -4737,6 +4737,7 @@ wlanscan -h ;
 wldd -h ;
 wld -h ;
 wmat ;
+wmbusmeters -h ;
 wmd ;
 wnmap -h ;
 wol-e -h ;
