@@ -4034,6 +4034,7 @@ spectrumspy -h ;
 SpectrumSpy -h ;
 speedport-arcadyan ;
 speedpwn -h ;
+spektrum ;
 spf -h ;
 spfmap -h ;
 spf-report ;
