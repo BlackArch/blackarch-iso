@@ -3715,6 +3715,7 @@ sandy -h ;
 sapacket ;
 saruman ;
 sasm ;
+savvycan ;
 sawef -h ;
 sb0x -h ;
 sbd -h ;
