@@ -3871,6 +3871,7 @@ silenttrinity-teamserver -h ;
 silk_config ;
 simple-ducky ;
 simpleemailspoofer -h ;
+simple-lan-scan3 -h ;
 simple-lan-scan -h ;
 simplify -h ;
 simplyemail -h ;
