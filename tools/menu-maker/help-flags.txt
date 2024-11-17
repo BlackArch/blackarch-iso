@@ -460,6 +460,7 @@ bpfc ;
 bqm -h ;
 braa -h ;
 braces -h ;
+breads-ad -h ;
 bridgekeeper -h ;
 bro-cut ;
 bro -h ;
