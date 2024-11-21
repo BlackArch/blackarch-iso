@@ -3268,6 +3268,7 @@ pyersinia -h ;
 pyew -h ;
 pyfiscan -h ;
 pyfuscation -h ;
+pygpoabuse -h ;
 pyinstaller ;
 pyinstxtractor ;
 pyjfuzz -h ;
