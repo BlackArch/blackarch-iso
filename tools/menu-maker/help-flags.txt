@@ -1519,6 +1519,7 @@ gostringsr2 -h ;
 gowitness -h ;
 gplist cd /usr/share/windows/gplist ; ls ;
 gpocrack -h ;
+gpowned -h ;
 gpredict -h ;
 gps-sdr-sim -h ;
 gps-sdr-sim-uhd -h ;
