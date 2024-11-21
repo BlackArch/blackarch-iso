@@ -948,6 +948,7 @@ dnseval ;
 dnsfilexfer-recv -h ;
 dnsfilexfer-send -h ;
 dns_forward ;
+dnsgen --help ;
 dnsgoblin ;
 dnsgrep -h ;
 dnsgrep-server -h ;
