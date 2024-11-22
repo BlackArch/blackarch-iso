@@ -3833,6 +3833,7 @@ sha1deep -h ;
 sha256deep -h ;
 shad0w -h ;
 shadowexplorer -h ;
+shadowfinder ;
 shard --help ;
 shareenum ;
 sharesniffer -h ;
