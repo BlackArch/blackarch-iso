@@ -2653,6 +2653,7 @@ named-journalprint ;
 named-rrchecker ;
 napp -h ;
 nasnum ;
+navgix -h ;
 nbdecode ;
 nbname cd /usr/share/windows/nbname ; ls ;
 nbnspoof -h ;
