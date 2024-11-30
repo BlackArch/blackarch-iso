@@ -1010,6 +1010,7 @@ dnstwist -h ;
 dnsutils -h ;
 dnsvalidator -h ;
 dnswalk --help ;
+dnswatch -h ;
 dnsx -h ;
 dnsxss -h ;
 docem -h ;
