@@ -4693,6 +4693,8 @@ voiper-torturer ;
 voiphopper -h ;
 voipong -h ;
 volafox -h ;
+volana-encr -h ;
+volana -h ;
 volatility-extra -h ;
 volatility -h ;
 volk-config-info ;
