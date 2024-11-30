@@ -1524,6 +1524,7 @@ gobd -h ;
 gobuster -h ;
 gocabrito -h ;
 goddi -h ;
+go-exploitdb -h ;
 goldeneye -h ;
 golismero -h ;
 gomapenum -h ;
