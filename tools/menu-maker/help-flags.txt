@@ -3887,6 +3887,7 @@ shadowfinder ;
 shard --help ;
 shareenum ;
 sharesniffer -h ;
+sharpfuzz ;
 shed ;
 shellcheck ;
 shellcode-compiler-x64 -h ;
