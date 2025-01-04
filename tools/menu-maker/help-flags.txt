@@ -422,6 +422,7 @@ blkcalc ;
 blkcat ;
 blkls ;
 blkstat ;
+bloodhound-ce-python -h ;
 bloodhound -h ;
 bloodhound-python -h ;
 bloodyad -h ;
