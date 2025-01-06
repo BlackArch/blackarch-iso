@@ -2316,6 +2316,7 @@ limelighter -h ;
 linenum -h ;
 linikatz ;
 linkedin2username -h ;
+linkedint -h ;
 linkfinder -h ;
 linpeas ;
 linset ;
