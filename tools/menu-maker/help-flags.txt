@@ -1769,6 +1769,7 @@ hetty -h ;
 hex ;
 hex2bin ;
 hex2raw -h ;
+hexhttp -h ;
 hexify-rbkb -h ;
 hexinject -h ;
 hexorbase ;
