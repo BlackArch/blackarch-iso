@@ -6,6 +6,7 @@
 a2sv -h ;
 abcdump -h ;
 abcgraph -h ;
+above -h ;
 abuse-ssl-bypass-waf -h ;
 acccheck -h ;
 ace -h ;
