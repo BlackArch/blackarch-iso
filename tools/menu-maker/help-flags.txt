@@ -4625,6 +4625,7 @@ urlextractor ;
 url_handler.sh ;
 urlsnarf -h ;
 urlview ;
+urx -h ;
 usb-canary -h ;
 usbdump -h ;
 usbrip -h ;
