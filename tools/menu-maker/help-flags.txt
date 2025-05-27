@@ -4019,6 +4019,8 @@ sleuthql -h ;
 slice-rbkb -h ;
 slist ;
 slither -h ;
+sliver-client -h ;
+sliver-server -h ;
 sloth ;
 slowhttptest -h ;
 slowloris ;
