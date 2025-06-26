@@ -4569,6 +4569,7 @@ udp_server ;
 udptunnel -h ;
 udsim -h ;
 ufb-scraper ;
+uff -h ;
 ufonet -h ;
 ufo-wardriving ;
 uhd_fft ;
