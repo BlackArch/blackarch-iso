@@ -235,6 +235,7 @@ arpoison -h ;
 arpon -h ;
 arp-scan -h ;
 arpspoof ;
+arpspoof-smikims -h ;
 arpstraw -h ;
 arptools ;
 arpwner -h ;
