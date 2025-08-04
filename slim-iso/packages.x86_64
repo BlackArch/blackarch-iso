@@ -63,7 +63,6 @@ partimage
 ppp
 pptpclient
 reflector
-reiserfsprogs
 rp-pppoe
 rsync
 sdparm
@@ -106,9 +105,7 @@ xf86-video-ati
 xf86-video-fbdev
 xf86-video-intel
 xf86-video-nouveau
-xf86-video-openchrome
 xf86-video-vesa
-xf86-video-vmware
 
 ### base and base-devel
 base
@@ -207,8 +204,8 @@ mugshot
 xiccd
 
 ### installer
-calamares
-blackarch-config-calamares
+#calamares
+#blackarch-config-calamares
 
 ### xfce4
 xfce4
