@@ -38,23 +38,6 @@ echo "root:blackarch" | chpasswd
 # copy files over to home
 cp -r /etc/skel/. /root/.
 
-# setup repository, add pacman.conf entry and sync databse
-curl -s https://blackarch.org/strap.sh | sh
-#curl -s https://blackarch.org/strap.sh | sed "s|get_mirror$|#get_mirror|1" | sh
-
-# sys updates, cleanups, etc.
-pacman -Syyu --noconfirm
-pacman-key --init
-pacman-key --populate blackarch archlinux
-pacman -Fyy
-pacman-db-upgrade
-updatedb
-#pkgfile -u
-sync
-
-# default shell
-chsh -s /bin/bash
-
 # disable pc speaker beep
 echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
 
