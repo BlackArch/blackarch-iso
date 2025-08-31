@@ -1744,6 +1744,7 @@ hashfind -h ;
 hashid ;
 hash-identifer ;
 hash-identifier ;
+hashpeek -h ;
 hashpump -h ;
 hashrat --help ;
 hashtag -h ;
