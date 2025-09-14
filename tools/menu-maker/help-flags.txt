@@ -4772,6 +4772,7 @@ wcc -h ;
 wcch -h ;
 wce cd /usr/share/windows/wce ; ls ;
 wcvs -h ;
+wdict -h ;
 web2ldap ;
 webacoo -h ;
 webanalyze ;
