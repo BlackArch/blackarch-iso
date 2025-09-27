@@ -1450,6 +1450,7 @@ gcrypt --help ;
 gdbgui -h ;
 gdb -h ;
 gdbserver --help ;
+gdir.pl -h ;
 gef cd /usr/share/gef ; ls ;
 gen-bout ;
 genconfig -h ;
