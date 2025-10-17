@@ -1500,6 +1500,7 @@ ghauri -h ;
 gh-dork -h ;
 ghettotooth ;
 ghidra ;
+ghidriff -h ;
 ghostpack cd /usr/share/windows/ghostpack ; ls ;
 ghost-phisher ;
 ghostphisher ;
