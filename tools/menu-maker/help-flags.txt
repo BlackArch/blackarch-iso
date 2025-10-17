@@ -16,6 +16,8 @@ acquire -h ;
 active-directory-enum -h ;
 ada -h ;
 adape-script cd /usr/share/windows/adape-script ; ls ;
+adaptix-c2-client -h ;
+adaptix-c2-server -h ;
 adassault -h ;
 addr6 ;
 address6 ;
