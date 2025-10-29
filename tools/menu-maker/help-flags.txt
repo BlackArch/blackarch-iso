@@ -3192,6 +3192,7 @@ pkcrack-makekey ;
 pkcrack-zipdecrypt ;
 pkt2flow -h ;
 plasma-disasm -h ;
+platypus -h ;
 plcscan -h ;
 plecost -h ;
 plotcuckoojson -h ;
