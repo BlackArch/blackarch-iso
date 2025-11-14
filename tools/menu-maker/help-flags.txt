@@ -540,6 +540,7 @@ cadaver -h ;
 cafebabe ;
 caido ;
 caido-cli -h ;
+cai -h ;
 calc_stat ;
 callgrind_annotate ;
 callgrind_control ;
