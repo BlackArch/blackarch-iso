@@ -3143,6 +3143,7 @@ pftriage -h ;
 pgdbf -h ;
 pgsql_login ;
 phantap-learn -h ;
+phantomcollect -h ;
 phantom-evasion -h ;
 phd ;
 phemail -h ;
