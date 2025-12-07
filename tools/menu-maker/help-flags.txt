@@ -3037,6 +3037,7 @@ panoptic -h ;
 pappy -h ;
 parameth -h ;
 parampampam -h ;
+paramspider -h ;
 paranoic -h ;
 parasite6 ;
 paratrace -h ;
