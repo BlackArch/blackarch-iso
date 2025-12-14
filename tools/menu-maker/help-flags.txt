@@ -3692,6 +3692,7 @@ roadrecon -h ;
 roadtx -h ;
 roguehostapd -h ;
 rombuster -h ;
+rookie -h ;
 rootbrute -h ;
 ropeadope ;
 ropeme-exploit ;
