@@ -4813,6 +4813,7 @@ wavemon -h ;
 waybackpack -h ;
 waybackurls -h ;
 waymore -h ;
+wayparam -h ;
 wbxml2request ;
 wcc -h ;
 wcch -h ;
