@@ -764,7 +764,6 @@ credmap -h ;
 credmaster -h ;
 credsniper -h ;
 creds-py -h ;
-creepy ;
 cribdrag -h ;
 cribdrag-xorstrings -h ;
 crlf-injector ;
