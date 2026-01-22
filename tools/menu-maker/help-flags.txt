@@ -1544,6 +1544,7 @@ gittools-gitdumper ;
 gittools-gitfinder -h ;
 git-wild-hunt -h ;
 gloom ;
+glpwnme -h ;
 glue -h ;
 gmdb2 ;
 gmsadumper -h ;
