@@ -144,6 +144,7 @@ androlyze ;
 androsign ;
 androsim ;
 androwarn -h ;
+angrop-cli -h ;
 anontwi -h ;
 ansistrm.py ;
 ant ;
