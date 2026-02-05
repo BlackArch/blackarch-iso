@@ -137,6 +137,7 @@ androguard -h ;
 androgui ;
 androick ;
 androiddump --help ;
+androidmeda ;
 androidpincrack -h ;
 androidsniffer -h ;
 android-udev-rules ;
