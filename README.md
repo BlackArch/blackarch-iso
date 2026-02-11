@@ -77,7 +77,7 @@ corresponding directory.
   \- hosts
 ```
 
-Aany files will by default have the the 644 permissions and directories will
+Any files will by default have the the 644 permissions and directories will
 have the 755 permissions. this can be changed in `profiledef.sh`
 
 With this overlay structure it is possible to e.g. create users and set
