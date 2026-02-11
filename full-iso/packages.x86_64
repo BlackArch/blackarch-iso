@@ -8,7 +8,6 @@ abcd
 abuse-ssl-bypass-waf
 acccheck
 ace
-ack
 aclpwn
 acpi
 activedirectoryenum
@@ -27,7 +26,6 @@ aeskeyfind
 aespipe
 aesshell
 afflib
-aflplusplus
 afpfs-ng
 agafi
 against
@@ -102,7 +100,6 @@ arptools
 arpwner
 artillery
 artlas
-arybo
 asleap
 asnmap
 asp-audit
@@ -190,8 +187,6 @@ bfuzz
 bgp-md5crack
 bgrep
 billcipher
-binaryninja-demo
-binaryninja-python
 bind
 bindead
 bindiff
@@ -275,7 +270,6 @@ bridgekeeper
 bridge-utils
 brltty
 broadcom-wl
-brosec
 browselist
 browser-fuzzer
 brute12
@@ -420,7 +414,6 @@ comission
 commentor
 commix
 commonspeak
-complemento
 compp
 configpush
 conpot
@@ -452,7 +445,6 @@ creddump
 credmap
 creds
 credsniper
-creepy
 cribdrag
 crlf-injector
 crlfuzz
@@ -915,7 +907,6 @@ gloom
 glue
 gmsadumper
 gnuradio
-gnutls2
 gobd
 gobuster
 gocabrito
@@ -924,7 +915,6 @@ goldeneye
 golismero
 gomapenum
 goodork
-goofile
 google-explorer
 googlesub
 goog-mail
@@ -1186,7 +1176,6 @@ ipscan
 ipsourcebypass
 iptodomain
 ip-tracer
-iptv
 iputils
 ipv4bypass
 ipv666
@@ -1307,7 +1296,6 @@ lazydroid
 lbd
 lbmap
 ldap-brute
-ldapdomaindump
 ldapenum
 ldapscripts
 ldeep
@@ -1407,7 +1395,6 @@ mail-crawl
 mailsend-go
 make-pdf
 maketh
-malboxes
 malcom
 malheur
 malice
@@ -1669,8 +1656,6 @@ nzyme
 o365enum
 o365spray
 oat
-obconf
-obevilion
 obexstress
 obfs4proxy
 objection
@@ -1717,7 +1702,6 @@ osi.ig
 osinterator
 osintgram
 osint-spy
-osrframework
 osslsigncode
 ostinato
 osueta
@@ -1757,7 +1741,6 @@ partclone
 parted
 partimage
 pasco
-passcracking
 passe-partout
 passhunt
 passivedns
@@ -1902,13 +1885,11 @@ procyon
 profuzz
 prometheus-firewall
 promiscdetect
-propecia
 protosint
 protos-sip
 prowler
 proxenet
 proxify
-proxmark
 proxybroker2
 proxychains-ng
 proxycheck
@@ -1945,7 +1926,6 @@ pwnedornot
 pwnedpasswords
 pwned-search
 pwnloris
-pwntools
 pyaxmlparser
 pybozocrack
 pydictor
@@ -1982,7 +1962,6 @@ python-mmbot
 python-ssh-mitm
 python-trackerjacker
 python-uncompyle6
-python-utidylib
 python-witnessme
 qark
 qrgen
@@ -2030,7 +2009,6 @@ reconnoitre
 reconscan
 recoverjpeg
 recsech
-recstudio
 recuperabit
 redasm
 redfang
@@ -2168,7 +2146,6 @@ sdnpwn
 sdn-toolkit
 sea
 search1337
-seat
 seclists
 second-order
 secretfinder
@@ -2389,7 +2366,6 @@ sshtrix
 sshtunnel
 ssh-user-enum
 sshuttle
-sslcat
 sslcaudit
 ssldump
 sslh
@@ -2492,7 +2468,6 @@ tcpdstat
 tcpdump
 tcpextract
 tcpflow
-tcpick
 tcpjunk
 tcpreplay
 tcptrace
@@ -2652,7 +2627,6 @@ v3n0m
 vais
 valabind
 valgrind
-valhalla
 vane
 vanguard
 vault-scanner
@@ -2824,7 +2798,6 @@ wpforce
 wpintel
 wpscan
 wpseku
-wpsik
 wpsweep
 wreckuests
 ws-attacker
@@ -2851,9 +2824,7 @@ xf86-video-dummy
 xf86-video-fbdev
 xf86-video-intel
 xf86-video-nouveau
-xf86-video-openchrome
 xf86-video-vesa
-xf86-video-vmware
 xf86-video-voodoo
 xfltreat
 xl2tpd
