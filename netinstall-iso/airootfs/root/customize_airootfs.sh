@@ -69,5 +69,5 @@ echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 rm -rf /root/install.txt
 
 # /etc
-echo 'BlackArch Linux' > /etc/arch-release
+echo 'BlackArch Linux' > /etc/lsb-release
 
