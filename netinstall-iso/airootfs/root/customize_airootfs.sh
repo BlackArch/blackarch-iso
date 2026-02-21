@@ -70,4 +70,8 @@ rm -rf /root/install.txt
 
 # /etc
 echo 'BlackArch Linux' > /etc/lsb-release
+echo 'BlackArch Linux' > /etc/arch-release
+echo 'BlackArch Linux' > /etc/os-release
+
+
 
