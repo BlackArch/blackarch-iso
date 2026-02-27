@@ -3530,8 +3530,6 @@ recoverdm -h ;
 recoverjpeg ;
 recovermov ;
 recsec ;
-RecStudio4CLI cd /opt/recstudio/bin ; ./RecStudio4CLI ;
-RecStudioLInux cd /opt/recstudio/bin ; ./RecStudioLinux ;
 recuperabit -h ;
 redasm ;
 redeye -h ;
