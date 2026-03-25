@@ -319,6 +319,7 @@ aws-extender-cli -h ;
 aws-iam-privesc -h ;
 aws-inventory -h ;
 aztarna -h ;
+azurehound -h ;
 b2sum -h ;
 b64-rbkb -h ;
 backcookie -h ;
