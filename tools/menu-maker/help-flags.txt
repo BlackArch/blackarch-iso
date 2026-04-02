@@ -2138,6 +2138,7 @@ jcrack ;
 jd-cli -h ;
 jdeserialize ;
 jd-gui ;
+jdwp-knife -h ;
 jeangrey cd /usr/share/jeangrey ; ls ;
 jeb-android ;
 jeb-arm ;
