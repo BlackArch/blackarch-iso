@@ -2820,6 +2820,7 @@ nosqli-user-pass-enum -h ;
 nosqlmap ;
 notspikefile ;
 novahot -h ;
+nox-cli -h ;
 nping -h ;
 nprint -h ;
 nray -h ;
