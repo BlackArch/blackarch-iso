@@ -24,7 +24,7 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus' 'pacman-init'
+enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus-broker.service' 'pacman-init'
   'NetworkManager' 'irqbalance' 'vboxservice')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
@@ -61,8 +61,8 @@ ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch
 mkdir -p /home/liveuser/Desktop
 chown -R liveuser:users /home/liveuser/Desktop
 chmod -R 755 /home/liveuser/Desktop
-ln -sf /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
-sed -i -e "s|Install System|Install BlackArch|g" /usr/share/applications/calamares.desktop
+#ln -sf /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamares.desktop
+#sed -i -e "s|Install System|Install BlackArch|g" /usr/share/applications/calamares.desktop
 ln -sf /usr/share/applications/xfce4-terminal-emulator.desktop /home/liveuser/Desktop/terminal.desktop
 chmod +x /home/liveuser/Desktop/*.desktop
 
@@ -90,7 +90,10 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
 
 # change default jdk
-archlinux-java set java-20-openjdk
+#ln -s /usr/lib/java-11-openjdk/jre /usr/lib/default
+#ln -s /usr/lib/java-11-openjdk/jre /usr/lib/default-runtime
+
+#archlinux-java set java-20-openjdk
 
 # Temporary fix for calamares
 #pacman -U --noconfirm https://archive.archlinux.org/packages/d/dosfstools/dosfstools-4.1-3-x86_64.pkg.tar.xz
