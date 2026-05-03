@@ -65,6 +65,7 @@ ln -sf /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamare
 sed -i -e "s|Install System|Install BlackArch|g" /usr/share/applications/calamares.desktop
 ln -sf /usr/share/applications/xfce4-terminal-emulator.desktop /home/liveuser/Desktop/terminal.desktop
 chmod +x /home/liveuser/Desktop/*.desktop
+rm -rf /usr/share/backgrounds/xfce/
 
 # copy files over to home
 cp -r /etc/skel/. /root/.
@@ -90,7 +91,12 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
   bundle install --path vendor/bundle && rm -f Gemfile.lock
 
 # change default jdk
-archlinux-java set java-20-openjdk
+if archlinux-java status >/dev/null 2>&1; then
+  current_java_env=$(archlinux-java status | awk '/^Available Java environments:/{flag=1; next} flag && /\(default\)$/{print $1; exit}')
+  if [ -n "${current_java_env:-}" ]; then
+    archlinux-java set "$current_java_env"
+  fi
+fi
 
 # Temporary fix for calamares
 #pacman -U --noconfirm https://archive.archlinux.org/packages/d/dosfstools/dosfstools-4.1-3-x86_64.pkg.tar.xz
