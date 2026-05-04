@@ -74,7 +74,6 @@ DISTRIB_ID="BlackArch"
 DISTRIB_RELEASE="rolling"
 DISTRIB_DESCRIPTION="BlackArch Linux"
 EOF
-echo 'BlackArch Linux' > /etc/arch-release
 cat << 'EOF' > /etc/os-release
 NAME="BlackArch Linux"
 PRETTY_NAME="BlackArch Linux"
