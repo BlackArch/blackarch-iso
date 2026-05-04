@@ -65,7 +65,6 @@ ln -sf /usr/share/applications/calamares.desktop /home/liveuser/Desktop/calamare
 sed -i -e "s|Install System|Install BlackArch|g" /usr/share/applications/calamares.desktop
 ln -sf /usr/share/applications/xfce4-terminal-emulator.desktop /home/liveuser/Desktop/terminal.desktop
 chmod +x /home/liveuser/Desktop/*.desktop
-rm -rf /usr/share/backgrounds/xfce/
 
 # copy files over to home
 cp -r /etc/skel/. /root/.
