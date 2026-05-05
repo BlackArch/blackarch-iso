@@ -69,5 +69,22 @@ echo "Type blackarch-install and follow the instructions." > /root/INSTALL
 rm -rf /root/install.txt
 
 # /etc
-echo 'BlackArch Linux' > /etc/arch-release
+cat << 'EOF' > /etc/lsb-release
+DISTRIB_ID="BlackArch"
+DISTRIB_RELEASE="rolling"
+DISTRIB_DESCRIPTION="BlackArch Linux"
+EOF
+cat << 'EOF' > /etc/os-release
+NAME="BlackArch Linux"
+PRETTY_NAME="BlackArch Linux"
+ID=blackarch
+BUILD_ID=rolling
+ANSI_COLOR="38;2;60;108;177"
+HOME_URL="https://blackarch.org/"
+DOCUMENTATION_URL="https://blackarch.org/guide.html"
+SUPPORT_URL="https://github.com/BlackArch/blackarch/discussions/new?category=support"
+BUG_REPORT_URL="https://github.com/BlackArch/blackarch/issues/new/choose"
+EOF
+
+
 
