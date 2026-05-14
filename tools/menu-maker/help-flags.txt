@@ -2795,6 +2795,7 @@ nield -h ;
 nikto -H ;
 nili ;
 nimbostratus -h ;
+nimrm -h ;
 ninc -h ;
 nipe help ;
 nipper --help ;
