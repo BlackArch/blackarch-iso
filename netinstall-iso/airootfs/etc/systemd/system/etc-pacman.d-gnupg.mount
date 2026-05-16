@@ -5,4 +5,4 @@ Description=Temporary /etc/pacman.d/gnupg directory
 What=tmpfs
 Where=/etc/pacman.d/gnupg
 Type=tmpfs
-Options=mode=0755
+Options=mode=0755,noswap
