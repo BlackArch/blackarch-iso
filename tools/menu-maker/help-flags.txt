@@ -2740,6 +2740,7 @@ neglected ;
 neighbor-fingerprint --help ;
 nekobot ;
 nemesis -h ;
+nerva -h ;
 netactview ;
 netattack -h ;
 netbios-share-scanner -h ;
