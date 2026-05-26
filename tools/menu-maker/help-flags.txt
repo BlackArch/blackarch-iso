@@ -124,6 +124,7 @@ alfred -h ;
 alive6 ;
 allthevhosts ;
 altdns -h ;
+alterx -h ;
 amass -h ;
 amber ;
 amber-handler ;
