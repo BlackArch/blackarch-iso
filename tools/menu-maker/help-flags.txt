@@ -3993,6 +3993,8 @@ shodanhat -h ;
 shootback-master -h ;
 shootback-slaver -h ;
 shortfuzzy -h ;
+shortscan -h ;
+shortutil -h ;
 shosubgo -h ;
 shreder -h ;
 shuffledns -h ;
