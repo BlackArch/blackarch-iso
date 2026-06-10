@@ -3884,6 +3884,7 @@ sc_radargun -h ;
 scrape-dns ;
 scrapy -h ;
 scratchabit -h ;
+screamer -h ;
 sc_remoted -h ;
 script6 ;
 scrounge-ntfs -h ;
