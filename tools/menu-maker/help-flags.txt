@@ -3194,6 +3194,7 @@ pip3linecmd ;
 pipal ;
 pipeline ;
 pirana -h ;
+pius-pi -h ;
 pivotc -h ;
 pivots -h ;
 pivotsuite -h ;
