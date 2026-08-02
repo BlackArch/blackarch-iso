@@ -13,6 +13,13 @@ repository.
 * Slim ISO
   *   The newest ISO, by default is configured with XFCE4 and LightDM
 
+## Quick start. 
+To build the iso just run 
+`mkarchiso -v -w work -i out/ full-iso` 
+Where work is just the working directory and the full-iso relating to 
+1 of the 3 types, this can be swapped with slim-iso for instance. 
+Recommend if you have the memory, use -w /tmp/work , to use tmpfs as that is significantly faster. 
+
 ## How the ISO is built
 
 the ISO is built with the archiso tool that can be downloaded from the official

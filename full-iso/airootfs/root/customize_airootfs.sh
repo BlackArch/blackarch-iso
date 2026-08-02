@@ -24,7 +24,8 @@ sed -i 's/#\(HandleHibernateKey=\)hibernate/\1ignore/' /etc/systemd/logind.conf
 sed -i 's/#\(HandleLidSwitch=\)suspend/\1ignore/' /etc/systemd/logind.conf
 
 # enable useful services and display manager
-enabled_services=('choose-mirror.service' 'lxdm.service' 'dbus' 'pacman-init')
+enabled_services=('choose-mirror.service' 'lightdm.service' 'dbus' 'pacman-init'
+  'NetworkManager' 'irqbalance' 'vboxservice')
 systemctl enable ${enabled_services[@]}
 systemctl set-default graphical.target
 
@@ -47,6 +48,12 @@ rm -f /root/{.automated_script.sh,.zlogin}
 
 # setting root password
 echo "root:blackarch" | chpasswd
+
+# setup user
+useradd -m -g users -G wheel,power,audio,video,storage -s /bin/bash liveuser
+echo "liveuser:blackarch" | chpasswd
+ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg \
+  /home/liveuser/.face
 
 # copy files over to home
 cp -r /etc/skel/. /root/.
@@ -77,6 +84,9 @@ sploitctl -f 3 -t 5 -r 2 -XR
 rm -rf /usr/share/exploits/exploit-db/exploitdb-bin-sploits
 
 # temporary fixes for ruby based tools
+cd /usr/share/automato && rm -f Gemfile.lock &&
+  bundle config build.nokogiri --use-system-libraries &&
+  bundle install --path vendor/bundle && rm -f Gemfile.lock
 cd /usr/share/arachni/ && rm -f Gemfile.lock &&
   bundle-2.3 config build.nokogiri --use-system-libraries &&
   bundle-2.3 install --path vendor/bundle && rm -f Gemfile.lock
@@ -124,7 +134,6 @@ cd /usr/share/whatweb && rm -f Gemfile.lock &&
 rm -f /usr/share/xsessions/blackarch-dwm.desktop
 rm -f /usr/share/xsessions/openbox-kde.desktop
 rm -f /usr/share/xsessions/i3-with-shmlog.desktop
-rm -f /usr/share/xsessions/xfce.desktop
 rm -f /usr/share/xsessions/*gnome*.desktop
 rm -f /usr/share/xsessions/*kde*.desktop
 rm -f /root/install.txt
@@ -137,10 +146,6 @@ gdk-pixbuf-query-loaders --update-cache
 
 # tmp fix for awesome exit()
 sed -i 's|local visible, action = cmd(item, self)|local visible, action = cmd(0, self)|' /usr/share/awesome/lib/awful/menu.lua
-
-# lxdm
-rm -rf /etc/lxdm
-mv /etc/lxdm-blackarch /etc/lxdm
 
 # fluxbox
 rm -rf /usr/share/fluxbox

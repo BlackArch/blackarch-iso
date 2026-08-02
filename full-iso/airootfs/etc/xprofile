@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# network tray icon (harmless no-op if a session has no systray)
+nm-applet &
+
 # vbox foo
 vbox=$(dmesg |grep -io virtualbox)
 if [ ! -z "$vbox" ]

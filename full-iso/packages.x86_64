@@ -3,6 +3,7 @@
 3proxy
 3proxy-win32
 42zip
+7zip
 a2sv
 abcd
 abuse-ssl-bypass-waf
@@ -83,7 +84,6 @@ arcane
 arch-install-scripts
 archivebox
 archlinux-keyring
-arduino
 argon2
 argus
 argus-clients
@@ -95,6 +95,7 @@ arpalert
 arpoison
 arpon
 arp-scan
+arpspoof-smikims
 arpstraw
 arptools
 arpwner
@@ -207,14 +208,16 @@ bkcrack
 bkhive
 blackarch-config-awesome
 blackarch-config-bash
+blackarch-config-cursor
 blackarch-config-fluxbox
 blackarch-config-gtk
 blackarch-config-i3
-blackarch-config-lxdm
+blackarch-config-icons
 blackarch-config-openbox
 blackarch-config-spectrwm
 blackarch-config-vim
 blackarch-config-x11
+blackarch-config-xfce
 blackarch-installer
 blackarch-keyring
 blackarch-menus
@@ -619,7 +622,6 @@ dracnmap
 dradis-ce
 dragon-backdoor
 dr-checker
-driftnet
 drinkme
 dripcap
 dripper
@@ -820,7 +822,6 @@ fred
 freeipmi
 freeradius
 freewifi
-frida
 frida-extract
 frida-ios-dump
 fridump
@@ -1183,6 +1184,7 @@ ipv6toolkit
 ipython
 ircsnapshot
 irpas
+irqbalance
 irssi
 isf
 isip
@@ -1250,7 +1252,6 @@ kalibrate-rtl
 kamerka
 katsnoop
 kautilya
-kcptun
 keimpx
 kekeo
 kerbcrack
@@ -1334,6 +1335,8 @@ libtins
 lief
 liffy
 lightbulb
+lightdm
+lightdm-gtk-greeter
 ligolo-ng
 limeaide
 limelighter
@@ -1379,7 +1382,6 @@ lulzbuster
 lunar
 luyten
 lvm2
-lxdm
 lynis
 lyricpass
 m3-gen
@@ -1492,7 +1494,6 @@ mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
 mkyara
-mlocate
 mobiusft
 mobsf
 modlishka
@@ -1503,7 +1504,6 @@ monocle
 monsoon
 mooscan
 moreutils
-morpheus
 morxbook
 morxbrute
 morxbtcrack
@@ -1516,6 +1516,7 @@ mosca
 mosquito
 mots
 motsa-dns-spoofing
+mousepad
 mp3nema
 mptcp
 mptcp-abuse
@@ -1533,6 +1534,7 @@ mtools
 mtr
 mtscan
 mubeng
+mugshot
 multiinjector
 multimac
 multimon-ng
@@ -1574,7 +1576,6 @@ netbus
 netcommander
 netcon
 net-creds
-netctl
 netdiscover
 netkit-bsd-finger
 netkit-rusers
@@ -1590,6 +1591,12 @@ netsniff-ng
 netstumbler
 nettacker
 network-app-stress-tester
+networkmanager
+network-manager-applet
+networkmanager-openconnect
+networkmanager-openvpn
+networkmanager-pptp
+networkmanager-vpnc
 networkmap
 networkminer
 netz
@@ -1713,7 +1720,6 @@ owasp-bywaf
 owasp-zsc
 owtf
 p0f
-p7zip
 pack
 packer
 packerid
@@ -1837,6 +1843,7 @@ pkt2flow
 plasma-disasm
 plcscan
 plecost
+plocate
 plown
 plumber
 plutil
@@ -1955,6 +1962,7 @@ python2-yara
 python-arsenic
 python-capstone
 python-cymruwhois
+python-frida
 python-jsbeautifier
 python-keylogger
 python-minidump
@@ -1998,7 +2006,7 @@ rdesktop-brute
 rdpassspray
 rdp-cipher-checker
 rdp-sec-check
-rdwarecon
+rdwatool
 reaver
 rebind
 recaf
@@ -2041,7 +2049,6 @@ rfcat
 rfdump
 rfidiot
 rfidtool
-rfkill
 rhodiola
 richsploit
 ridenum
@@ -2049,6 +2056,7 @@ ridrelay
 rifiuti2
 rinetd
 ripdc
+ristretto
 rita
 riwifshell
 rkhunter
@@ -2261,7 +2269,6 @@ smbmap
 smbrelay
 smbspider
 smbsr
-smikims-arpspoof
 smod
 smplshllctrlr
 smtp-fuzz
@@ -2373,7 +2380,6 @@ ssl-hostname-resolver
 ssllabs-scan
 sslmap
 sslnuke
-ssl-phuck3r
 sslscan
 sslscan2
 sslsniff
@@ -2392,10 +2398,8 @@ starttls-mitm
 statsprocessor
 stegcracker
 stegdetect
-steghide
 stegolego
 stegosip
-stegoveritas
 stegseek
 stegsolve
 stenographer
@@ -2438,7 +2442,6 @@ swamp
 swap-digger
 swarm
 swfintruder
-swftools
 syborg
 syft
 sylkie
@@ -2501,6 +2504,7 @@ theharvester
 themole
 threatspec
 thumbcacheviewer
+thunar-archive-plugin
 tidos-framework
 tiger
 tilt
@@ -2624,7 +2628,6 @@ uw-offish
 uw-udpscan
 uw-zone
 v3n0m
-vais
 valabind
 valgrind
 vane
@@ -2635,7 +2638,6 @@ vbrute
 vbscan
 vbsmin
 vcsmap
-vega
 veil
 veles
 venom
@@ -2648,7 +2650,6 @@ vim
 vinetto
 viper
 vipermonkey
-viproy-voipkit
 virtualbox-guest-utils
 virustotal
 visql
@@ -2734,7 +2735,6 @@ whatweb
 whichcdn
 whispers
 whitewidow
-wi-feye
 wifi-autopwner
 wifibroot
 wifichannelmonitor
@@ -2826,7 +2826,17 @@ xf86-video-intel
 xf86-video-nouveau
 xf86-video-vesa
 xf86-video-voodoo
+xfce4
+xfce4-battery-plugin
+xfce4-clipman-plugin
+xfce4-notifyd
+xfce4-pulseaudio-plugin
+xfce4-screensaver
+xfce4-screenshooter
+xfce4-whiskermenu-plugin
+xfce4-xkb-plugin
 xfltreat
+xiccd
 xl2tpd
 xmlrpc-bruteforcer
 xorbruteforcer
