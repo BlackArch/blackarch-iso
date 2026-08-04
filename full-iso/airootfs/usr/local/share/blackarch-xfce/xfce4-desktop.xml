@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Replacement for the xfce4-desktop.xml in blackarch-config-xfce, copied over
+  /etc/skel by customize_airootfs.sh. Two fixes against the packaged version:
+
+    * Its <property name="tooltip-size"> tag is never closed, which leaves
+      "desktop-icons" open and makes the file malformed XML. xfconf discards the
+      whole channel, so nothing in it applies and the desktop comes up bare.
+
+    * It points at /usr/share/backgrounds/blackarch.png, which no package
+      installs. The wallpaper blackarch-wallpaper actually ships is
+      /usr/share/blackarch/wallpaper.jpg, the same file /etc/xprofile and the
+      LightDM greeter config already use.
+
+  This only covers the legacy monitor0 keys. The per-connector keys xfdesktop
+  generates at runtime are handled by /usr/local/bin/blackarch-set-wallpaper.
+-->
+
+<channel name="xfce4-desktop" version="1.0">
+  <property name="backdrop" type="empty">
+    <property name="screen0" type="empty">
+      <property name="monitor0" type="empty">
+        <property name="image-path" type="string" value="/usr/share/blackarch/wallpaper.jpg"/>
+        <property name="last-image" type="string" value="/usr/share/blackarch/wallpaper.jpg"/>
+        <property name="last-single-image" type="string" value="/usr/share/blackarch/wallpaper.jpg"/>
+        <property name="image-style" type="int" value="5"/>
+      </property>
+    </property>
+  </property>
+  <property name="desktop-icons" type="empty">
+    <property name="style" type="int" value="2"/>
+    <property name="file-icons" type="empty">
+      <property name="show-removable" type="bool" value="false"/>
+    </property>
+    <property name="icon-size" type="uint" value="42"/>
+    <property name="tooltip-size" type="double" value="96.000000"/>
+  </property>
+</channel>

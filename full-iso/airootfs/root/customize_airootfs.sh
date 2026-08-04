@@ -46,6 +46,17 @@ systemctl disable dhcpcd sshd rpcbind.service
 rm -f /etc/systemd/system/getty@tty1.service.d/autologin.conf
 rm -f /root/{.automated_script.sh,.zlogin}
 
+# xfce desktop backdrop
+#
+# blackarch-config-xfce ships an xfce4-desktop.xml that xfconf cannot parse: its
+# <property name="tooltip-size"> tag is never closed, so the whole channel is
+# discarded and the desktop comes up bare. It also points at
+# /usr/share/backgrounds/blackarch.png, which no package installs. Both are fixed
+# in the replacement below. This has to happen before liveuser is created, since
+# useradd -m snapshots /etc/skel as it stands at that moment.
+install -Dm644 /usr/local/share/blackarch-xfce/xfce4-desktop.xml \
+  /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+
 # setting root password
 echo "root:blackarch" | chpasswd
 
@@ -140,6 +151,47 @@ rm -f /root/install.txt
 
 # add install.txt file
 echo "Type blackarch-install and follow the instructions." > /root/INSTALL
+
+# generate menu entries for every installed BlackArch tool
+#
+# Xfce draws its menu from XDG .desktop files, and the ~2900 CLI tools here ship
+# none -- only the handful of GUI packages do, which is why the launcher came up
+# with barely anything in it. blackarch-menus is meant to fill that gap, but its
+# generator cannot during a build: it resolves each package with
+# `pacman -Si blackarch/<pkg>`, and [blackarch] is not configured in this image
+# until strap.sh runs above, long after its post-transaction hook has fired
+# during pacstrap. Every lookup failed, so it wrote nothing at all.
+#
+# The generator below reads the local database instead, so it needs no repository
+# and no network. It also resolves each package's real binary rather than
+# assuming it matches the package name, which blackarch-menus does via TryExec --
+# silently hiding every entry where the two differ.
+#
+# DO NOT add [blackarch] to this image's /etc/pacman.conf to "fix" that. It looks
+# harmless and it is not: configuring the repository makes those failing lookups
+# start succeeding, so blackarch-menus' hook does its full per-package loop during
+# pacstrap -- roughly ten forks times every package in the transaction, which
+# exhausts the process limit and takes the build down with it. The repository is
+# added by strap.sh above, after pacstrap, which is exactly late enough.
+#
+# Drop blackarch-menus' fragment, hooks and any entries they produced first, so
+# its tree does not sit alongside the generated one. Its .directory files are
+# left alone: unreferenced once the fragment is gone, and package-owned.
+rm -f /etc/xdg/menus/applications-merged/X-BlackArch.menu
+rm -f /etc/pacman.d/hooks/blackarch-gen-desktop.hook
+rm -f /etc/pacman.d/hooks/blackarch-rem-desktop.hook
+rm -f /usr/share/applications/ba-*.desktop
+
+# Install our own regeneration hook now, after pacstrap, so that it takes effect
+# only in the booted system and never during the build. See the header comment in
+# the staged copy for why it is not shipped in the overlay directly.
+install -Dm644 /usr/local/share/blackarch-xfce/blackarch-xfce-menu.hook \
+  /etc/pacman.d/hooks/blackarch-xfce-menu.hook
+
+if ! python3 /usr/share/blackarch-menu/BlackArchXfceMenuTool.py --system --nested
+then
+  echo "WARNING: BlackArch menu generation failed, the Xfce menu will be sparse" >&2
+fi
 
 # GDK Pixbuf
 gdk-pixbuf-query-loaders --update-cache

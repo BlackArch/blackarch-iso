@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=BlackArch Wallpaper
+Comment=Apply the BlackArch desktop backdrop to every connected monitor
+Exec=/bin/sh /usr/local/bin/blackarch-set-wallpaper
+OnlyShowIn=XFCE;
+NoDisplay=true
+X-GNOME-Autostart-enabled=true

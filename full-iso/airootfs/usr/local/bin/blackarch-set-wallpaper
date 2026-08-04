@@ -1,0 +1,47 @@
+#!/bin/sh
+# Put the BlackArch wallpaper on the Xfce desktop, on every monitor.
+#
+# Two reasons this cannot be left to the files that would normally handle it:
+#
+#   * /etc/xprofile sets the wallpaper with `feh --bg-scale`, which is what the
+#     other window managers in this image use. Under Xfce it has no effect --
+#     xfdesktop owns the root window and paints over whatever feh put there.
+#
+#   * Shipping the path in xfce4-desktop.xml only covers the legacy
+#     /backdrop/screen0/monitor0/... keys. xfdesktop keys the backdrop on each
+#     monitor's connector name at runtime instead -- monitorVirtual-1,
+#     monitorHDMI-1, monitoreDP-1 -- and no static file can know those in
+#     advance, which on a live ISO booting unknown hardware is every time.
+#
+# So enumerate what xfconf actually has once the session is up, and set all of it.
+
+WALLPAPER=/usr/share/blackarch/wallpaper.jpg
+
+[ -r "$WALLPAPER" ] || exit 0
+command -v xfconf-query >/dev/null 2>&1 || exit 0
+
+# xfdesktop creates its per-monitor properties as it starts, which races with
+# autostart. Wait for them rather than firing into an empty channel.
+n=0
+while [ "$n" -lt 20 ]; do
+  if xfconf-query -c xfce4-desktop -l 2>/dev/null | grep -q '/backdrop/screen'; then
+    break
+  fi
+  n=$((n + 1))
+  sleep 0.5
+done
+
+xfconf-query -c xfce4-desktop -l 2>/dev/null |
+  grep -E '/backdrop/screen[0-9]+/monitor.*/(last-image|image-path)$' |
+  while read -r prop; do
+    xfconf-query -c xfce4-desktop -p "$prop" -s "$WALLPAPER" 2>/dev/null
+
+    # 5 is "zoomed", the value blackarch-config-xfce asks for. Setting an
+    # existing property and creating a missing one are different invocations,
+    # and which applies depends on how far xfdesktop got, so try both.
+    style="${prop%/*}/image-style"
+    xfconf-query -c xfce4-desktop -p "$style" -s 5 2>/dev/null ||
+      xfconf-query -c xfce4-desktop -p "$style" -n -t int -s 5 2>/dev/null
+  done
+
+exit 0

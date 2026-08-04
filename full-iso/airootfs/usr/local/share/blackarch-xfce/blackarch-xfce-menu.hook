@@ -1,0 +1,32 @@
+# Keep the BlackArch menu in step with what is installed.
+#
+# Staged here rather than shipped directly in the overlay at
+# /etc/pacman.d/hooks/, and installed into place by customize_airootfs.sh. The
+# overlay is copied before pacstrap runs, so anything sitting in a pacman hook
+# directory fires at the end of the ISO's own 6000-package transaction. That is
+# never wanted here: the menu is generated explicitly by customize_airootfs.sh
+# once pacstrap has finished, and a hook doing it again mid-build is pure risk for
+# no benefit. This way the hook only ever runs in the booted system.
+#
+# It replaces blackarch-menus' blackarch-gen-desktop.hook, which
+# customize_airootfs.sh removes. That one resolved every package with
+# `pacman -Si blackarch/<pkg>` -- one pacman invocation plus a handful of forks
+# per package, across every package in the transaction. The generator called here
+# reads the local database in three batched queries instead, so it needs no
+# repository, no network, and no per-package work.
+#
+# Invoked through /bin/sh rather than directly: the archiso profile overlay is
+# copied with --no-preserve=mode, so a script's execute bit does not survive into
+# the image on its own.
+
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Operation = Remove
+Target = *
+
+[Action]
+Description = Regenerating BlackArch menu entries...
+When = PostTransaction
+Exec = /bin/sh /usr/share/blackarch-menu/regen-menu.sh

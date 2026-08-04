@@ -1447,6 +1447,7 @@ memdump
 memfetch
 memimager
 memtest86+
+memtest86+-efi
 mentalist
 mercurial
 merlin-server
@@ -2687,7 +2688,6 @@ wafpass
 wafw00f
 waidps
 waldo
-wapiti
 wascan
 wavemon
 waybackpack
