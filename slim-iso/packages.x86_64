@@ -30,6 +30,7 @@ grub
 haveged
 hdparm
 intel-ucode
+intel-media-driver
 iwd
 jfsutils
 linux
@@ -42,6 +43,7 @@ man-db
 man-pages
 mdadm
 memtest86+
+mesa
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -63,7 +65,6 @@ partimage
 ppp
 pptpclient
 reflector
-reiserfsprogs
 rp-pppoe
 rsync
 sdparm
@@ -94,7 +95,6 @@ zsh
 ### xorg
 xorg
 xorg-xinit
-
 ### video
 xf86-input-elographics
 xf86-input-evdev
@@ -104,11 +104,9 @@ xf86-input-void
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-fbdev
-xf86-video-intel
+#xf86-video-intel
 xf86-video-nouveau
-xf86-video-openchrome
 xf86-video-vesa
-xf86-video-vmware
 
 ### base and base-devel
 base
@@ -207,8 +205,8 @@ mugshot
 xiccd
 
 ### installer
-calamares
-blackarch-config-calamares
+#calamares
+#blackarch-config-calamares
 
 ### xfce4
 xfce4
