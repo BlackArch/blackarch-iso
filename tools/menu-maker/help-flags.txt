@@ -4082,6 +4082,7 @@ slcanpty -h ;
 sleuthkit -h ;
 sleuthql -h ;
 slice-rbkb -h ;
+slipit -h ;
 slist ;
 slither -h ;
 sliver-client -h ;
