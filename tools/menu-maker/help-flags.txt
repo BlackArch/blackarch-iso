@@ -90,6 +90,7 @@ afpgetstatus ;
 agafi cd /usr/share/windows/agafi ; ls ;
 against ;
 aggroargs -h ;
+aide -h ;
 aiengine -h ;
 aimage -h ;
 aimap -h ;
