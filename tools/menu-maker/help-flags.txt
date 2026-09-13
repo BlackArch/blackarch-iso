@@ -1299,6 +1299,7 @@ fernmelder -h ;
 feroxbuster -h ;
 ferret ;
 ffdec ;
+ffdec -h ;
 ffind ;
 ffm -h ;
 ffuf ;
