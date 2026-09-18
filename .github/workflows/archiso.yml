@@ -1,0 +1,74 @@
+name: Build BlackArch ISO Stable
+on:
+  workflow_dispatch:
+  #schedule:
+  #   - cron:  '0 0 */7 * *'
+
+jobs:
+  Init:
+    runs-on: ubuntu-latest
+    outputs:
+      iso_version: ${{ steps.version.outputs.iso_version }}
+    steps:
+      - name: Compute ISO version
+        id: version
+        run: echo "iso_version=$(date +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
+
+  Build:
+    needs: Init
+    env:
+      ID: 'blackarch-linux'
+      ISO_VERSION: ${{ needs.Init.outputs.iso_version }}
+      ISO_ARCHITECTURE: 'x86_64'
+    runs-on: ubuntu-latest
+    container:
+      image: blackarchlinux/blackarch:latest
+      options: --privileged
+    strategy:
+      fail-fast: false
+      matrix:
+        variant: [full, netinstall, slim]
+    steps:
+      - name: Checkout files
+        uses: actions/checkout@v7
+
+      - name: Init Keys
+        run: |
+          rm -rf /etc/pacman.d/gnupg
+          pacman-key --init
+          pacman-key --populate
+          pacman -Syy
+
+      - name: Install rate-mirrors
+        run: pacman -Syyu --noconfirm rate-mirrors
+
+      - name: Set fastest mirrors
+        run: |
+          rate-mirrors --concurrency 40 --disable-comments --allow-root --save /etc/pacman.d/mirrorlist arch || true
+          rate-mirrors --concurrency 40 --disable-comments --allow-root --save /etc/pacman.d/blackarch-mirrorlist blackarch
+
+      - name: Install dependencies
+        run: pacman -Syyu --noconfirm sudo archiso aws-cli curl edk2-ovmf git github-cli gnupg jq mtools qemu-desktop rsync sshpass wget # Install also optional deps for archiso
+
+      - name: Build ArchISO
+        env:
+          VARIANT: ${{ matrix.variant }}
+        run: |
+          cd tools
+          ./build-iso.sh
+
+      - name: Upload to BlackArch Mirror
+        run: |
+          ISO="$HOME/${ID}-out/${ID}-${{ matrix.variant }}-${ISO_VERSION}-${ISO_ARCHITECTURE}.iso"
+          ls -la "$ISO" "$ISO".{md5,sha1,sha256,sha512}
+
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "${{ secrets.MIRROR_SSH_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          printf '%s\n' "${{ secrets.MIRROR_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+          rsync -avz --partial \
+            -e "ssh -p 22 -i $HOME/.ssh/id_ed25519 -o IdentitiesOnly=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts" \
+            "$ISO" "$ISO".{md5,sha1,sha256,sha512} \
+            ${{ secrets.MIRROR_USER }}@blackarch.org:

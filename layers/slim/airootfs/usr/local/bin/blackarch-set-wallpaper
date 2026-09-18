@@ -1,0 +1,27 @@
+#!/bin/sh
+# Set the BlackArch wallpaper on every monitor and workspace.
+
+IMG=/usr/share/backgrounds/blackarch/hacktheplanet.png
+[ -f "$IMG" ] || exit 0
+
+i=0
+while ! pgrep -x xfdesktop >/dev/null && [ $i -lt 20 ]; do
+  sleep 0.5; i=$((i + 1))
+done
+sleep 1
+
+monitors=$(xrandr --listmonitors 2>/dev/null | awk 'NR>1 {print $NF}')
+[ -n "$monitors" ] || monitors="monitor0"
+
+for m in $monitors; do
+  for ws in 0 1 2 3; do
+    base="/backdrop/screen0/monitor${m}/workspace${ws}"
+    xfconf-query -c xfce4-desktop -p "$base/last-image"  -n -t string -s "$IMG"
+    xfconf-query -c xfce4-desktop -p "$base/image-style" -n -t int    -s 5   # 5 = zoomed
+    xfconf-query -c xfce4-desktop -p "$base/color-style" -n -t int    -s 0
+  done
+done
+
+xfconf-query -c xfce4-desktop -l 2>/dev/null | grep '/last-image$' | while read -r p; do
+  xfconf-query -c xfce4-desktop -p "$p" -s "$IMG"
+done

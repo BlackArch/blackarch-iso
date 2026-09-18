@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=BlackArch wallpaper
+Exec=/usr/local/bin/blackarch-set-wallpaper
+OnlyShowIn=XFCE;
+NoDisplay=true
+X-GNOME-Autostart-enabled=true
