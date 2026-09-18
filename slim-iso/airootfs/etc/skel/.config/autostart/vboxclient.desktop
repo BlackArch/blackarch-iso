@@ -1,5 +1,0 @@
-[Desktop Entry]
-Name=vboxclient
-Comment=VirtualBox User Session Services
-Exec=/usr/bin/VBoxClient-all
-

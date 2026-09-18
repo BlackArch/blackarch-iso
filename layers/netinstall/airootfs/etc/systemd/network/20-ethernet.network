@@ -1,0 +1,15 @@
+[Match]
+Name=en*
+Name=eth*
+
+[Link]
+RequiredForOnline=routable
+
+[Network]
+DHCP=yes
+
+[DHCPv4]
+RouteMetric=100
+
+[IPv6AcceptRA]
+RouteMetric=100
