@@ -27,7 +27,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        variant: [full, netinstall, slim]
+        variant: [netinstall, slim]
     steps:
       - name: Checkout files
         uses: actions/checkout@v7
