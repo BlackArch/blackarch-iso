@@ -49,7 +49,6 @@ rm -f /etc/udev/rules.d/81-dhcpcd.rules
 systemctl disable dhcpcd sshd rpcbind.service
 
 # remove special (not needed) files
-rm -f /etc/polkit-1/rules.d/49-nopasswd_global.rules
 rm -f /etc/systemd/system/getty@tty1.service.d/autologin.conf
 rm -f /root/{.automated_script.sh,.zlogin}
 
