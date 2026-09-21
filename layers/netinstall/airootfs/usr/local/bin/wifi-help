@@ -134,10 +134,19 @@ if [ "${#ifaces[@]}" -eq 0 ]; then
     printf '       %siw dev %s set type managed%s\n' "$b" "$m" "$rst"
     printf '       %sip link set %s up%s\n' "$b" "$m" "$rst"
   else
+    # Each hint is shown only if its command is installed, so the user is
+    # never told to run something that answers "command not found".
+    # lspci -k first: a network controller with no "Kernel driver in use"
+    # line is the usual cause (driver or firmware missing).
+    hint() {  # hint <label> <command-to-check> <what-to-type>
+      command -v "$2" >/dev/null 2>&1 &&
+        printf '     %-26s%s%s%s\n' "$1" "$b" "$3" "$rst"
+    }
     printf ' %s[!] No Wi-Fi device detected.%s\n' "$red" "$rst"
-    printf '     List interfaces:          %sip link%s\n' "$b" "$rst"
-    printf '     Missing firmware?         %sdmesg | grep -i firmware%s\n' "$b" "$rst"
-    printf '     USB adapter plugged in?   %slsusb%s\n' "$b" "$rst"
+    hint "List interfaces:"         ip    "ip link"
+    hint "Card present, driver?"    lspci "lspci -k | grep -iA3 network"
+    hint "Missing firmware?"        dmesg "dmesg | grep -i firmware"
+    hint "USB adapter plugged in?"  lsusb "lsusb"
   fi
   echo
   exit 0
