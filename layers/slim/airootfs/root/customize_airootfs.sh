@@ -111,7 +111,12 @@ rm -f /etc/fonts/conf.d/09-autohint-if-no-hinting.conf
 )
 
 # change default jdk
-archlinux-java set java-26-openjdk
+if archlinux-java status >/dev/null 2>&1; then
+  current_java_env=$(archlinux-java status | awk '/^Available Java environments:/{flag=1; next} flag && /\(default\)$/{print $1; exit}')
+  if [ -n "${current_java_env:-}" ]; then
+    archlinux-java set "$current_java_env"
+  fi
+fi
 
 # Temporary fix for calamares
 #pacman -U --noconfirm https://archive.archlinux.org/packages/d/dosfstools/dosfstools-4.1-3-x86_64.pkg.tar.xz
