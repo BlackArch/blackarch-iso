@@ -61,12 +61,11 @@ cp /usr/share/blackarch/config/bash/bash_profile /etc/skel/.bash_profile
 cp /usr/share/blackarch/config/zsh/zshrc /etc/skel/.zshrc
 
 # setup user
+ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg /etc/skel/.face
 getent group autologin > /dev/null || groupadd -r autologin
 useradd -m -g "$LIVE_GROUP" -G wheel,power,audio,video,storage,autologin \
   -s /bin/zsh "$LIVE_USER"
 echo "${LIVE_USER}:${LIVE_PASS}" | chpasswd
-ln -sf /usr/share/icons/blackarch-icons/apps/scalable/distributor-logo-blackarch.svg \
-  "${LIVE_HOME}/.face"
 mkdir -p "${LIVE_HOME}/Desktop"
 ln -sf /usr/share/applications/calamares.desktop "${LIVE_HOME}/Desktop/calamares.desktop"
 sed -i -e "s|Install System|Install BlackArch|g" /usr/share/applications/calamares.desktop
