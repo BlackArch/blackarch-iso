@@ -109,14 +109,14 @@ The profile may contain several boot loaders. They are explained in the followin
 
 ###### efiboot directory
 
-This directory is mandatory when the uefi-x64.systemd-boot.esp or uefi-x64.systemd-boot.eltorito bootmodes are selected in profiledef.sh. It contains configuration for
+This directory is mandatory when the uefi.systemd-boot bootmode is selected in profiledef.sh. It contains configuration for
 [systemd-boot](https://www.freedesktop.org/wiki/Software/systemd/systemd-boot/).
 
 The custom template identifiers are only understood in the boot loader entry `.conf` files *(i.e. not in loader.conf).*
 
 ###### syslinux direcotry
 
-This directory is mandatory when the bios.syslinux.mbr or the bios.syslinux.eltorito bootmodes are selected in profiledef.sh. It contains configuration files for syslinux or isolinux , or pxelinux used in the resuling image. The custom template identifiers are understood in all `.cfg` files in this directory.
+This directory is mandatory when the bios.syslinux bootmode is selected in profiledef.sh. It contains configuration files for syslinux or isolinux , or pxelinux used in the resuling image. The custom template identifiers are understood in all `.cfg` files in this directory.
 
 
 # BlackArch Specific info
