@@ -9,6 +9,9 @@ f2fs-tools
 gpm
 gptfdisk
 hdparm
+intel-media-driver
+libva-intel-driver
+mesa
 mtools
 nfs-utils
 nilfs-utils
@@ -22,6 +25,9 @@ smartmontools
 sudo
 testdisk
 vpnc
+vulkan-radeon
+vulkan-intel
+vulkan-nouveau
 xl2tpd
 xorg-xinit
 xf86-input-vmmouse
