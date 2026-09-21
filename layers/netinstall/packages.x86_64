@@ -16,4 +16,5 @@ refind
 rfkill
 sed
 tzdata
+usbutils
 wget
