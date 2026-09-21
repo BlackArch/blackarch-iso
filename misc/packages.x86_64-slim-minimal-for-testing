@@ -66,7 +66,6 @@ partimage
 ppp
 pptpclient
 reflector
-reiserfsprogs
 rp-pppoe
 rsync
 sdparm
@@ -110,9 +109,7 @@ xf86-video-ati
 xf86-video-fbdev
 xf86-video-intel
 xf86-video-nouveau
-xf86-video-openchrome
 xf86-video-vesa
-xf86-video-vmware
 
 ### base and base-devel
 base
@@ -162,7 +159,6 @@ rustup
 ### applications
 chromium
 firefox
-hexchat
 htop
 galculator
 parole
@@ -171,10 +167,6 @@ xarchiver
 ### fonts
 noto-fonts
 ttf-roboto
-
-### gtk engines
-gtk-engines
-gtk-engine-murrine
 
 ### utilities
 apache
@@ -221,7 +213,6 @@ ristretto
 thunar-archive-plugin
 xfce4-battery-plugin
 xfce4-clipman-plugin
-xfce4-datetime-plugin
 xfce4-notifyd
 xfce4-pulseaudio-plugin
 xfce4-screensaver
