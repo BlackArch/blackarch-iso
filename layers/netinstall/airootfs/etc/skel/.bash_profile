@@ -53,5 +53,5 @@ alias curl="curl --user-agent 'noleak'"
 # for login shells too. Do not source completions/* here: '.' reads only
 # the first file of the glob and passes the rest to it as arguments.
 
-# tuning
-"$HOME/scripts/tuning.sh" > /dev/null 2>&1
+# ~/scripts/tuning.sh (network sysctl tuning) is available but not run at
+# login: run it by hand when wanted.
