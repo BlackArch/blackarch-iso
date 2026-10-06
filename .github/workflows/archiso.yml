@@ -7,6 +7,10 @@ on:
 permissions:
   contents: read
 
+env:
+  ID: 'blackarch-linux'
+  ISO_ARCHITECTURE: 'x86_64'
+
 jobs:
   Init:
     runs-on: ubuntu-latest
@@ -18,12 +22,9 @@ jobs:
         run: echo "iso_version=$(date +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
 
   Build:
-    environment: mirror
     needs: Init
     env:
-      ID: 'blackarch-linux'
       ISO_VERSION: ${{ needs.Init.outputs.iso_version }}
-      ISO_ARCHITECTURE: 'x86_64'
     runs-on: ubuntu-latest
     container:
       image: blackarchlinux/blackarch:latest
@@ -63,14 +64,57 @@ jobs:
           cd tools
           ./build-iso.sh
 
+      - name: Collect the ISO and checksums
+        env:
+          VARIANT: ${{ matrix.variant }}
+        run: |
+          ISO="$HOME/${ID}-out/${ID}-${VARIANT}-${ISO_VERSION}-${ISO_ARCHITECTURE}.iso"
+          ls -la "$ISO" "$ISO".{md5,sha1,sha256,sha512}
+          # relative path on purpose: ${{ github.workspace }} is the host path in container jobs
+          mkdir -p out
+          mv "$ISO" "$ISO".{md5,sha1,sha256,sha512} out/
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: iso-${{ matrix.variant }}
+          path: out/
+          retention-days: 1          # only needed until the upload job has run
+          compression-level: 0       # ISOs are already compressed
+          if-no-files-found: error
+
+  Upload:
+    needs: [Init, Build]
+    # still upload the variant that built if the other one failed
+    if: ${{ !cancelled() && needs.Init.result == 'success' }}
+    runs-on: ubuntu-latest
+    environment: mirror
+    timeout-minutes: 60
+    env:
+      ISO_VERSION: ${{ needs.Init.outputs.iso_version }}
+    steps:
+      - uses: actions/download-artifact@v8
+        continue-on-error: true      # no artifact at all when both builds failed
+        with:
+          pattern: iso-*
+          path: out
+          merge-multiple: true
+
       - name: Upload to BlackArch Mirror
         env:
           MIRROR_SSH_KEY: ${{ secrets.MIRROR_SSH_KEY }}
           MIRROR_KNOWN_HOSTS: ${{ secrets.MIRROR_KNOWN_HOSTS }}
           MIRROR_USER: ${{ secrets.MIRROR_USER }}
         run: |
-          ISO="$HOME/${ID}-out/${ID}-${{ matrix.variant }}-${ISO_VERSION}-${ISO_ARCHITECTURE}.iso"
-          ls -la "$ISO" "$ISO".{md5,sha1,sha256,sha512}
+          shopt -s nullglob
+          # only the files we expect, nothing else that may be in the artifacts
+          files=()
+          for v in netinstall slim; do
+            iso="out/${ID}-${v}-${ISO_VERSION}-${ISO_ARCHITECTURE}.iso"
+            [ -f "$iso" ] || { echo "::warning::no ISO for variant $v"; continue; }
+            files+=("$iso" "$iso".{md5,sha1,sha256,sha512})
+          done
+          (( ${#files[@]} )) || { echo "::error::no ISO was built"; exit 1; }
+          ls -la "${files[@]}"
 
           install -d -m 700 ~/.ssh
           printf '%s\n' "$MIRROR_SSH_KEY" > ~/.ssh/id_ed25519
@@ -80,5 +124,9 @@ jobs:
 
           rsync -avz --partial \
             -e "ssh -p 22 -i $HOME/.ssh/id_ed25519 -o IdentitiesOnly=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts" \
-            "$ISO" "$ISO".{md5,sha1,sha256,sha512} \
+            "${files[@]}" \
             "$MIRROR_USER@blackarch.org:"
+
+      - name: Remove the key
+        if: always()
+        run: rm -f ~/.ssh/id_ed25519
