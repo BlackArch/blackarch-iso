@@ -4,6 +4,9 @@ on:
   #schedule:
   #   - cron:  '0 0 */7 * *'
 
+permissions:
+  contents: read
+
 jobs:
   Init:
     runs-on: ubuntu-latest
@@ -15,6 +18,7 @@ jobs:
         run: echo "iso_version=$(date +%Y.%m.%d)" >> "$GITHUB_OUTPUT"
 
   Build:
+    environment: mirror
     needs: Init
     env:
       ID: 'blackarch-linux'
@@ -31,6 +35,8 @@ jobs:
     steps:
       - name: Checkout files
         uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
       - name: Init Keys
         run: |
@@ -58,17 +64,21 @@ jobs:
           ./build-iso.sh
 
       - name: Upload to BlackArch Mirror
+        env:
+          MIRROR_SSH_KEY: ${{ secrets.MIRROR_SSH_KEY }}
+          MIRROR_KNOWN_HOSTS: ${{ secrets.MIRROR_KNOWN_HOSTS }}
+          MIRROR_USER: ${{ secrets.MIRROR_USER }}
         run: |
           ISO="$HOME/${ID}-out/${ID}-${{ matrix.variant }}-${ISO_VERSION}-${ISO_ARCHITECTURE}.iso"
           ls -la "$ISO" "$ISO".{md5,sha1,sha256,sha512}
 
           install -d -m 700 ~/.ssh
-          printf '%s\n' "${{ secrets.MIRROR_SSH_KEY }}" > ~/.ssh/id_ed25519
+          printf '%s\n' "$MIRROR_SSH_KEY" > ~/.ssh/id_ed25519
           chmod 600 ~/.ssh/id_ed25519
-          printf '%s\n' "${{ secrets.MIRROR_KNOWN_HOSTS }}" > ~/.ssh/known_hosts
+          printf '%s\n' "$MIRROR_KNOWN_HOSTS" > ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
           rsync -avz --partial \
             -e "ssh -p 22 -i $HOME/.ssh/id_ed25519 -o IdentitiesOnly=yes -o UserKnownHostsFile=$HOME/.ssh/known_hosts" \
             "$ISO" "$ISO".{md5,sha1,sha256,sha512} \
-            ${{ secrets.MIRROR_USER }}@blackarch.org:
+            "$MIRROR_USER@blackarch.org:"
