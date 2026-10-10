@@ -1211,6 +1211,7 @@ evilize -h ;
 evilize-md5coll -h ;
 evillimiter -h ;
 evilmaid ;
+evil-opencode -h ;
 evilpdf -h ;
 evil-ssdp -h ;
 evil-winrm -h ;
