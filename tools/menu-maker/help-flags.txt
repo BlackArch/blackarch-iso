@@ -979,7 +979,6 @@ dnmap_server -h ;
 dns2geoip -h ;
 dns2tcpc ;
 dns2tcpd ;
-dnsa ;
 dnsbf ;
 dnsbrute -h ;
 dnscan -h ;
