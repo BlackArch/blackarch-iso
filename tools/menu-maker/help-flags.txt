@@ -3304,6 +3304,7 @@ propecia ;
 protosint -h ;
 protos-sip ;
 prowler -h ;
+proxelar -h ;
 proxenet-control-client ;
 proxenet-control-web ;
 proxenet -h ;
