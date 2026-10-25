@@ -1530,6 +1530,7 @@ ghostphisher ;
 ghunt -h ;
 gibberish-detector -h ;
 gif2swf ;
+giskard -h ;
 giskismet ;
 gitdorker -h ;
 git-dump ;
