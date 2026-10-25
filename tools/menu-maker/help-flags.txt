@@ -2526,6 +2526,7 @@ mdns-recon ;
 mdns-scan -h ;
 meanalyzer ;
 medusa -h ;
+medusa-ai -h ;
 meg -h ;
 melkor -h ;
 memdump -h ;
