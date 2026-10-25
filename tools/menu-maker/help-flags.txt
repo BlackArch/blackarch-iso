@@ -5098,6 +5098,7 @@ zipexec -h ;
 zirikatu ;
 zizzania ;
 zmap -h ;
+zond -h ;
 zsteg -h ;
 zulu ;
 zuluCrypt-cli -h ;
